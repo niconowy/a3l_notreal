@@ -11,6 +11,8 @@ disableSerialization;
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _killer = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 
+diag_log format ["%1 wurde von %3 (UID: %2) getötet.",_unit getVariable["realname", name _unit],getPlayerUID _killer,_killer getVariable["realname",name _killer]];
+
 //Set some vars
 _unit setVariable["Revive",FALSE,TRUE]; //Set the corpse to a revivable state.
 _unit setVariable["name",profileName,TRUE]; //Set my name so they can say my name.
@@ -46,7 +48,7 @@ _unit spawn
 	round(_maxTime - time) <= 0 || isNull _this || Life_request_timer};
 	
 	if (Life_request_timer) then {
-	//_maxTime = time + (life_respawn_timer);
+	_maxTime = time + (life_respawn_timer * 1);
 	waitUntil {_Timer ctrlSetText format[localize "STR_Medic_Respawn",[(_maxTime - time),"MM:SS.MS"] call BIS_fnc_secondsToString]; 
 	round(_maxTime - time) <= 0 || isNull _this};
 	};
@@ -107,8 +109,6 @@ life_hunger = 100;
 life_thirst = 100;
 life_carryWeight = 0;
 ja_dzep = 0;
-
-diag_log format ["%1 wurde von %3 (UID: %2) getötet.",profileName,getPlayerUID _killer,_killer getVariable["realname",name _killer]];
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
