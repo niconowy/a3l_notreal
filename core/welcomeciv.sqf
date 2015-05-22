@@ -18,16 +18,16 @@ _onScreenTime = 3;
 //}; 
 sleep 2; //Wait in seconds before the credits start after player is in-game
 
-_role1 = "Willkommen auf den Lakeside Reallife Server:";
-_role1names = ["A3L"];
+_role1 = "Willkommen auf dem Lakeside-Reallife Server:";
+_role1names = ["A3L - Lebe einen Traum!"];
 _role2 = "Server Admins!";
-_role2names = ["Jack Daniels","Amandeo","DiNozzo","Niggl","Oesi94"];
+_role2names = ["Jack Daniels","Amandeo","DiNozzo","Oesi94"];
 _role3 = "Webseite:";
 _role3names = ["http://arma-3-life.de"];
-_role4 = "Teamspeak:";
+_role4 = "TeamSpeak3:";
 _role4names = ["144.76.105.204:9987"];
-_role5 = "Besonderen dank";
-_role5names = ["an Tonic","und alle die an der Mod gearbeitet haben"];
+_role5 = "Besonderen Dank An:";
+_role5names = ["Tonic, Itsyuka (Altis Life RPG)","Schultze, BIS (Arma3Life)"];
  
 {
 sleep 2;

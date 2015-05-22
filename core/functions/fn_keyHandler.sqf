@@ -6,7 +6,7 @@
 	Main key handler for event 'keyDown'
 */
 #include <macro.h>
-private ["_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_player","_copPlayer","_ipdPlayer","_medPlayer"];
+private ["_coplevel","_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_player","_copPlayer","_ipdPlayer","_medPlayer"];
 _player = player;
 _ctrl = _this select 0;
 _code = _this select 1;
@@ -20,6 +20,7 @@ _veh = vehicle player;
 _copPlayer = if(playerSide == west) then {true} else {false};
 _medPlayer = if(playerSide == independent) then {true} else {false};
 _ipdPlayer = if(playerSide == east) then {true} else {false};
+_coplevel = if(__GETC__(life_donator) > 2) then {true} else {false};	// Donator Level abhängig! Wird noch geändert...
 
 _interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0}; //46 war 219
 _mapKey = actionKeys "ShowMap" select 0;
@@ -243,7 +244,7 @@ switch (_code) do
 	
 	    //F Key
 	case 33: {
-		if(_copPlayer && _ctrlKey) then {				// ***** Polizei Sirene *******
+		if(_copPlayer && _coplevel &&_ctrlKey) then {				// ***** Polizei Sirene (Rang 3 u höher) *******
 			if(vehicle player != player && !life_siren_active &&((driver vehicle player) == player)) then {
 				[] spawn {
 					life_siren_active = true;
@@ -263,7 +264,7 @@ switch (_code) do
 					};
 			};
 		};
-		
+/*		
 		if(_medPlayer && _ctrlKey) then {				// ***** Medic Sirene *******
 			if(vehicle player != player && !life_medSiren_active &&((driver vehicle player) == player)) then {
 				[] spawn {
@@ -284,7 +285,7 @@ switch (_code) do
 					};
 			};
 		};
-		
+*/		
 		if(_ipdPlayer && _ctrlKey) then {				// ***** IPD Sirene *******
 			if(vehicle player != player && !life_ipdSiren_active &&((driver vehicle player) == player)) then {
 				[] spawn {
