@@ -47,7 +47,7 @@ switch(_type) do
 		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888895,true];};
 		[[ObjNull,_msg,player,1],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		_to = "Polizei";
-		hint format["You sent %1 a message: %2",_to,_msg];
+		hint format["Du hast der %1 folgenden Notruf gesendet: %2",_to,_msg];
 		ctrlShow[888895,true];
 		closeDialog 887890;
 	};
@@ -58,7 +58,7 @@ switch(_type) do
 		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888896,true];};
 		[[ObjNull,_msg,player,2],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		_to = "Admins";
-		hint format["You sent %1 a message: %2",_to,_msg];
+		hint format["Du hast %1 folgende Nachricht gesendet: %2",_to,_msg];
 		ctrlShow[888896,true];
 		closeDialog 887890;
 	};
@@ -69,7 +69,7 @@ switch(_type) do
 		ctrlShow[888899,false];
 		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888899,true];};
 		[[ObjNull,_msg,player,3],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
-		hint format["You have sent a message to all EMS Units.",_msg];
+		hint format["Der EM-Service wurde benachrichtigt mit: %1",_msg];
 		ctrlShow[888899,true];
 		closeDialog 887890;
 	};
@@ -80,7 +80,7 @@ switch(_type) do
 		if(isNULL life_smartphoneTarget) exitWith {hint format["Keine Person ausgwählt!"];};
 		if(_msg == "") exitWith {hint "You must enter a message to send!";};
 		[[life_smartphoneTarget,_msg,player,4],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
-		hint format["Admin Message Sent To: %1 - Message: %2",name life_smartphoneTarget,_msg];
+		hint format["Admin-Nachricht gesendet zu: %1 - Message: %2",name life_smartphoneTarget,_msg];
 		closeDialog 88883;
 	};
 	//emergencyloading
@@ -111,8 +111,18 @@ switch(_type) do
 		ctrlShow[888899,false];
 		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888899,true];};
 		[[ObjNull,_msg,player,6],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
-		hint format["You have sent a message to all ADAC Units.",_msg];
+		hint format["Der IPD wurde benachrichtigt mit: %1",_msg];
 		ctrlShow[888899,true];
 		closeDialog 887890;
+	};
+	
+	//cop rundfunk
+	case 9: {
+		if(playerSide in [independent, east, civilian]) exitWith {hint "Keine Berechtigung."};
+		if(__GETC__(life_coplevel) < 4) exitWith {hint "Keine Berechtigung."};
+		if(_msg == "") exitWith {hint "Keine Berechtigung."};
+		[[ObjNull,_msg,player,7],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
+		hint format["Rundmail: %1",_msg];
+		closeDialog 888828;
 	};
 };

@@ -1,6 +1,6 @@
-author = "A3L Development Team modded by arma-3-life.de";
-onLoadName = "Lakeside Reallife v1.7.1.1";
-onLoadMission = "arma-3-life.de";
+author = "A3L Dev-Team by arma-3-life.de";
+onLoadName = "Lakeside Reallife v1.7.2.0";
+onLoadMission = "http://arma-3-life.de";
 loadScreen = "textures\E76_AppleGate_Lake.paa";
 joinUnassigned = 1;
 respawn = BASE;
@@ -64,6 +64,13 @@ class CfgSounds
 	{
 		name = "ipdSiren";
 		sound[] = {"\sounds\ipdSiren_Wail.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class busted
+	{
+		name = "busted";
+		sound[] = {"\core\fsm\busted.wss", 1.0, 1};
 		titles[] = {};
 	};
 	
@@ -182,7 +189,7 @@ class CfgDebriefing
 	{
 		title = "Polizei - Whitelist";
 		subtitle = "Du bist nicht als Polizist freigeschalten";
-		description = "Du bist nicht für diesen Polizei-Slot freigeschalten worden!";
+		description = "Du bist nicht fÃ¼r diesen Polizei-Slot freigeschalten worden!";
 		pictureBackground = "flag_NATO";
 		picture = "flag_NATO";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -192,7 +199,7 @@ class CfgDebriefing
 	{
 		title = "Medic - Whitelist";
 		subtitle = "Du bist nicht als Medic freigeschalten";
-		description = "Du bist nicht für diesen Medic-Slot freigeschalten worden!";
+		description = "Du bist nicht fÃ¼r diesen Medic-Slot freigeschalten worden!";
 		pictureBackground = "o_med";
 		picture = "o_med";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -202,7 +209,7 @@ class CfgDebriefing
 	{
 		title = "IPD - Whitelist";
 		subtitle = "Du bist nicht als IPD freigeschalten";
-		description = "Du bist nicht für diesen IPD-Slot freigeschalten worden!";
+		description = "Du bist nicht fÃ¼r diesen IPD-Slot freigeschalten worden!";
 		pictureBackground = "flag_CSAT";
 		picture = "flag_CSAT";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -212,7 +219,7 @@ class CfgDebriefing
 	{
 		title = "Admin-Slot";
 		subtitle = "Du bist kein Administrator.";
-		description = "Nur Administratoren des Servers dürfen diesen Slot benutzen.";
+		description = "Nur Administratoren des Servers dÃ¼rfen diesen Slot benutzen.";
 		pictureBackground = "KIA";
 		picture = "KIA";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -222,7 +229,7 @@ class CfgDebriefing
 	{
 		title = "Polizei Blacklist";
 		subtitle = "Du hast keine Rechte als Polizist zu spielen";
-		description = "Du darfst derzeit kein Polizist spielen. Melde dich bei einem Administrator.";
+		description = "Du darfst derzeit kein Polizist spielen. Melde dich bei einem Administrator oder bei der Polizeileitung.";
 		pictureBackground = "KIA";
 		picture = "KIA";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -234,7 +241,17 @@ class CfgDebriefing
 		subTitle = "Du wurdest entdeckt von SpyGlass";
 		description = "SpyGlass hat dich beim Versuch des Cheatens erwischt. Dies wurde einem Admin mitgeteilt. Viel Spass noch.";
 		pictureBackground = "KIA";
-		picture = "";
+		picture = "KIA";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class A3LCheat
+	{
+		title = "Arma-3-Life.de AntiCheat";
+		subTitle = "A3L AntiCheat - Bye bye Cheater";
+		description = "Unser AntiCheat hat dich dabei erwischt, wie du versucht hast Funktionen auszufÃ¼hren, zu denen du gar keinen Zugriff hast.";
+		pictureBackground = "KIA";
+		picture = "KIA";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 };
@@ -288,7 +305,7 @@ class CfgNotifications
 	
 	class PoliceDispatch
 	{
-		title = "911 Dispatch Center";
+		title = "911 Emergency Center";
 		iconPicture = "icons\messagepolice.paa";
 		description = "%1";
 		duration = 10;
@@ -306,7 +323,7 @@ class CfgNotifications
 	
 	class AdminMessage
 	{
-		title = "Admin Message";
+		title = "Staatschef Nachricht";
 		iconPicture = "icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
@@ -315,7 +332,7 @@ class CfgNotifications
 	
 	class AdacMessage
 	{
-		title = "Adac Message";
+		title = "IPD Center";
 		iconPicture = "icons\messagenew.paa";
 		description = "%1";
 		duration = 10;

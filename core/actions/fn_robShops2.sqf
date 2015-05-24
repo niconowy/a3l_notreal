@@ -60,6 +60,7 @@ if(_rip) then
 	deleteMarker "Marker200";
     if!(alive _robber) exitWith { _rip = false; };
     if(_robber distance _shop > 5) exitWith { hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht."; 5 cutText ["","PLAIN"]; _rip = false; };
+	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
     5 cutText ["","PLAIN"];
     titleText[format["Du hast %1 geklaut, nichts wie weg hier, die Cops sind auf dem Weg!",[_kassa] call life_fnc_numberText],"PLAIN"];
     ja_dzep = ja_dzep + _kassa; 

@@ -6,13 +6,14 @@
 	Description:
 	Opens the admin menu, sorry nothing special in here. Take a look for yourself.
 */
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [0] call AC_fnc_checkThatShit;};
+
 private["_display","_list","_side"];
 disableSerialization;
 waitUntil {!isNull (findDisplay 2900)};
 _display = findDisplay 2900;
 _list = _display displayCtrl 2902;
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [0] call AC_fnc_checkThatShit;};
 
 /*switch(__GETC__(life_adminlevel)) do
 {
@@ -30,4 +31,7 @@ lbClear _list;
 	_list lbAdd format["%1 - %2", _x getVariable["realname",name _x],_side];
 	_list lbSetdata [(lbSize _list)-1,str(_x)];
 } foreach playableUnits;
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0;};
+
+
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [0] call AC_fnc_checkThatShit;};
+

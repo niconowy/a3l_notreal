@@ -11,21 +11,24 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Lakeside Police Department Shop"];
+ctrlSetText[3103,"LPD Clothing Shop"];
 
 _ret = [];
 switch (_filter) do
 {
+
+	//Uniform
+	
 	case 0:
 	{
 		_ret pushBack ["fto_uni","Gefängniswärter",150];
 	
-		_ret pushBack ["A3L_Police_Uniform","LSPD",500];
+		_ret pushBack ["A3L_Police_Uniform","LSPD",450];
 		//_ret pushBack ["police_uni3","Recruit",500];
-		_ret pushBack ["cadet_uni","Recruit",500];
+		_ret pushBack ["cadet_uni","Rekrut",450];
 		
 		//_ret pushBack ["sheriff_uni1","Rec.Sheriff Uniform",500];
-		_ret pushBack ["A3L_Sheriff_Uniform","Sheriff",500];
+		_ret pushBack ["A3L_Sheriff_Uniform","Sheriff",450];
 		
 		//_ret pushBack ["doj_uni","State Police",750];
 		//_ret pushBack ["police_uni1","ST Uniform",750];
@@ -33,19 +36,21 @@ switch (_filter) do
 		//_ret pushBack ["FBI_uni","FBI",1000];
 		//_ret pushBack ["swat_uni1","SWAT",150];
 		
-		_ret pushBack ["U_B_HeliPilotCoveralls","Pilot",150];
-		_ret pushBack ["A3L_Prisoner_Outfit","Gefängnisuniform",150];
+		_ret pushBack ["U_B_HeliPilotCoveralls","Pilot",125];
+		_ret pushBack ["A3L_Prisoner_Outfit","Gefängnisuniform",125];
 	};
 	
+	//Huete
 	case 1:
 	{
 		_ret pushBack ["A3L_sargehat",nil,50];
-		_ret pushBack ["A3L_policehelmet",nil,50];
+		_ret pushBack ["A3L_policehelmet","Polizeihelm",50];
 		_ret pushBack //["H_HelmetB_black","SWAT Helm",50];
-		_ret pushBack ["H_PilotHelmetFighter_B","Pilot Helm",150];
+		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
 		
 	};
 	
+	//Glasses
 	case 2:
 	{
 		_ret = 
@@ -68,13 +73,15 @@ switch (_filter) do
 		];
 	};
 	
+	//Westen
 	case 3:
 	{
-		_ret pushBack ["A3L_policevest2","DOJ",150];
+		_ret pushBack ["A3L_policevest2","DOJ",325];
 		//_ret pushBack ["A3L_policevest1","FBI",150];
 		
-		_ret pushBack ["A3L_sheriffvest2","LSPD",300];
-		_ret pushBack ["A3L_sheriffvest1","Sheriff",300];
+		_ret pushBack ["A3L_sheriffvest2","LSPD",500];
+		_ret pushBack ["A3L_sheriffvest1","Sheriff",500];
+		_ret pushBack ["SERTvest1","Sheriff Weste",500];
 		
 		_ret pushBack ["A3L_deptjvest1","State Police",500];
 		_ret pushBack ["A3L_rangervest1","Chief",500];
@@ -82,9 +89,10 @@ switch (_filter) do
 		//_ret pushBack ["A3L_fbivest1","FBI Vest",1000];
 		//_ret pushBack ["SWATvest1","SWAT",1000];
 		
-		_ret pushBack ["V_Press_F","Presseweste nur zur Aushändigung",1000];
+		_ret pushBack ["V_Press_F","Presseweste NUR Aushändigung",1000];
 	};
 	
+	//Backpacks
 	case 4:
 	{
 		_ret =

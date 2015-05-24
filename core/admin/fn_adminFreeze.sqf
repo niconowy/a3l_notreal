@@ -5,6 +5,7 @@
  
 	Description: Freezes selected player
 */
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [5] call AC_fnc_checkThatShit;};
 if(__GETC__(life_adminlevel) < 3) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
 
 private["_unit"];
@@ -25,3 +26,5 @@ if(life_frozen) then {
 	hint format[localize "STR_ANOTF_Frozen",_unit getVariable["realname",_unit]];
 	life_frozen = true;
 };
+
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [5] call AC_fnc_checkThatShit;};

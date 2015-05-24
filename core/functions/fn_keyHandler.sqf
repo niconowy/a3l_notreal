@@ -16,11 +16,12 @@ _alt = _this select 4;
 _speed = speed cursorTarget;
 _handled = false;
 _veh = vehicle player;
+_cursorT = cursorTarget;
 
 _copPlayer = if(playerSide == west) then {true} else {false};
 _medPlayer = if(playerSide == independent) then {true} else {false};
 _ipdPlayer = if(playerSide == east) then {true} else {false};
-_coplevel = if(__GETC__(life_donator) > 2) then {true} else {false};	// Donator Level abhängig! Wird noch geändert...
+_coplevel = if(__GETC__(life_donator) >= 2) then {true} else {false};	// Donator Level abhängig! 2-3 = State, 4-5 = FBI
 
 _interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0}; //46 war 219
 _mapKey = actionKeys "ShowMap" select 0;
@@ -111,13 +112,13 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 && !(player getVariable ["restrained", false])) then
+		if(_shift && playerSide == west && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false])) then
 		{
 			[] call life_fnc_restrainAction;
 		};
 		
 		//Rebellfesseln
-		if(_shift && playerSide == civilian && (license_civ_rebel) && !isNull cursorTarget && cursorTarget isKindOf "Man" && (isPlayer cursorTarget) && alive cursorTarget && cursorTarget distance player < 3 && !(cursorTarget getVariable "Escorting") && !(cursorTarget getVariable "restrained") && speed cursorTarget < 1 && !(player getVariable ["restrained", false]) && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "") then
+		if(_shift && playerSide == civilian && (license_civ_rebel) && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false]) && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "") then
 		{
 			[] call life_fnc_restrainAction;
 		};
@@ -126,7 +127,7 @@ switch (_code) do
 	//Q Key
     case 16:
     {    
-        if((!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
+        if(playerSide != civilian && (!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
         {
             {
                 _str = [_x] call life_fnc_varToStr;
@@ -142,14 +143,14 @@ switch (_code) do
         }
     };
 	
-	//Knock out, this is experimental and yeah...
+	//Niederschlagen
 	case 34:
 	{
-		if(_shift && playerSide != independent && !isNull cursorTarget && cursorTarget isKindOf "Man" && isPlayer cursorTarget && alive cursorTarget && cursorTarget distance player < 4 && speed cursorTarget < 1) then
+		if(_shift && playerSide != independent && !isNull _cursorT && _cursorT isKindOf "Man" && isPlayer _cursorT && alive _cursorT && _cursorT distance player < 4 && _speed < 15) then
 		{
-			if((animationState cursorTarget) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
+			if((animationState _cursorT) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
 			{
-				[cursorTarget] spawn life_fnc_knockoutAction;
+				[_cursorT] spawn life_fnc_knockoutAction;
 				//player say3D "knockout";
 				[player,"knockout"] call life_fnc_globalSound;
 			};
@@ -189,11 +190,11 @@ switch (_code) do
 			}
 				else
 			{
-				if((cursorTarget isKindOf "Car" OR cursorTarget isKindOf "Air" OR cursorTarget isKindOf "Ship" OR cursorTarget isKindOf "House_F") && player distance cursorTarget < 7 && vehicle player == player && alive cursorTarget) then
+				if((_cursorT isKindOf "Car" OR _cursorT isKindOf "Air" OR _cursorT isKindOf "Ship" OR _cursorT isKindOf "House_F") && player distance _cursorT < 7 && vehicle player == player && alive _cursorT) then
 				{
-					if(cursorTarget in life_vehicles OR {!(cursorTarget getVariable ["locked",true])}) then
+					if(_cursorT in life_vehicles OR {!(_cursorT getVariable ["locked",true])}) then
 					{
-						[cursorTarget] call life_fnc_openInventory;
+						[_cursorT] call life_fnc_openInventory;
 					};
 				};
 			};
@@ -233,7 +234,7 @@ switch (_code) do
 									detach _x;
 									deleteVehicle _x;
 								};
-							}forEach attachedObjects _veh;						
+							} forEach attachedObjects _veh;						
 						};										
 					};	
 				};
@@ -244,11 +245,11 @@ switch (_code) do
 	
 	    //F Key
 	case 33: {
-		if(_copPlayer && _coplevel &&_ctrlKey) then {				// ***** Polizei Sirene (Rang 3 u höher) *******
+		if(_copPlayer && _coplevel &&_ctrlKey) then {				// ***** Polizei Sirene (FBI UND STATEPOLICE) *******
 			if(vehicle player != player && !life_siren_active &&((driver vehicle player) == player)) then {
 				[] spawn {
 					life_siren_active = true;
-					sleep 6.0;
+					sleep 4.7;
 					life_siren_active = false;
 				};
 					_veh = vehicle player;
@@ -285,7 +286,7 @@ switch (_code) do
 					};
 			};
 		};
-*/		
+	
 		if(_ipdPlayer && _ctrlKey) then {				// ***** IPD Sirene *******
 			if(vehicle player != player && !life_ipdSiren_active &&((driver vehicle player) == player)) then {
 				[] spawn {
@@ -306,6 +307,7 @@ switch (_code) do
 					};
 			};
 		};
+		*/
 	};
 	
 	
@@ -338,7 +340,7 @@ switch (_code) do
 		};
 
 	};
-	
+
 	
 	//F Key
 /*	case 33:				// Was zur Hölle soll das sein?!
@@ -377,7 +379,7 @@ switch (_code) do
 	{
 		if(!_alt && !_ctrlKey) then {
 			if(vehicle player == player) then {
-				_veh = cursorTarget;
+				_veh = _cursorT;
 			} else {
 				_veh = vehicle player;
 			};

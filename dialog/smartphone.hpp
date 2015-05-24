@@ -383,6 +383,19 @@ class Life_smartphone_notruf {
 			h = (1 / 25);
 		};
 		
+		class copRundfunk : life_RscButtonMenu
+		{
+			idc = 888828;
+			text = "RUNDFUNK";
+			colorBackground[] = {0.09,0.55,0,1};
+			onButtonClick = "[9,-1,(ctrlText 888894)] call life_fnc_newMsg;";
+			
+			x = 0.745;
+			y = 0.30;
+			w = 0.15;
+			h = (1 / 25);
+		};
+		
 		class CloseButton : Life_RscButtonMenu {
 			idc = -1;
 			text = "$STR_Global_Close";

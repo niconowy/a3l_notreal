@@ -6,9 +6,8 @@
 	Description:
 	Spectate the chosen player.
 */
-if(__GETC__(life_adminlevel) == 0) exitWith {closeDialog 0;};
-
 private["_unit"];
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [4] call AC_fnc_checkThatShit;};
 _unit = lbData[2902,lbCurSel (2902)];
 _unit = call compile format["%1", _unit];
 if(isNil "_unit") exitwith {};
@@ -23,5 +22,7 @@ if(_unit == player) exitWith {hint localize "STR_ANOTF_Error";};
 };
 
 _unit switchCamera "INTERNAL";
-hint format["You are now spectating %1 \n\n Press F10 to stop Spectating.",_unit getVariable["realname",name _unit]];
+hint format["Du beobachtest nun %1 \n\n Drücke F10 um das Beobachten abzubrechen.",_unit getVariable["realname",name _unit]];
 AM_Exit = (findDisplay 46) displayAddEventHandler ["KeyDown","if((_this select 1) == 68) then {(findDisplay 46) displayRemoveEventHandler ['KeyDown',AM_Exit];player switchCamera 'INTERNAL';hint 'You have stopped spectating';};false"];
+
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [4] call AC_fnc_checkThatShit;};

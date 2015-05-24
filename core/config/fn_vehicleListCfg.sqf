@@ -230,7 +230,8 @@ switch (_shop) do
 			["cl3_veyron_blk_wht",1000000],
 			["cl3_veyron_lblue_dblue",1000000],
 			["cl3_veyron_lblue_lblue",1000000],
-			["cl3_veyron_brn_blk",1000000]
+			["cl3_veyron_brn_blk",1000000],
+			["wirk_h3_limo",3500000]
 		];
 	};
 	
@@ -254,7 +255,8 @@ switch (_shop) do
 			["A3L_AmberLamps",25000],
 			["A3L_Laddertruck",40000],
 			["cl3_dodge_charger_emt",100000],
-			["dar_tahoeems",10000]
+			["dar_tahoeems",10000],
+			["cl3_xr_1000_emt",55000]
 		];
 	};
 	
@@ -276,6 +278,21 @@ switch (_shop) do
 			["A3L_Cooper_concept_black",80000],
 			["A3L_Cooper_concept_red",80000],
 			["A3L_Cooper_concept_white",80000],
+			
+			["cl3_enduro_yellow",375000],
+			["cl3_enduro_black",375000],
+			["cl3_enduro_blue",375000],
+			["cl3_enduro_aqua",375000],
+			["cl3_enduro_babypink",375000],
+			["cl3_enduro_red",375000],
+			["cl3_enduro_dark_green",375000],
+			
+			["cl3_xr_1000_yellow",400000],
+			["cl3_xr_1000_black",400000],
+			["cl3_xr_1000_babypink",400000],
+			["cl3_xr_1000_red",400000],
+			["cl3_xr_1000_lime",400000],
+			["cl3_xr_1000_flame",400000],
 			
 			["A3L_RX7_Blue",128000],
 			["A3L_RX7_Red",128000],
@@ -390,7 +407,6 @@ switch (_shop) do
 			["cl3_volha_black",6000],
 			["cl3_volha_grey",6000],
 			
-			["IVORY_PRIUS",50000],
 			
 			["Jonzie_Mini_Cooper",2000],
 			
@@ -704,7 +720,7 @@ switch (_shop) do
 			["A3L_CVPIFPBLBFG",45000],
 			["A3L_CVPIFPBLBCSO",45000],
 			["A3L_CVPIFPBLBSM",45000],
-			["A3L_CVPIFPBLBSP2",45000],
+			["A3L_CVPIFPBLBHP",45000],
 			/*["A3L_CVPIUCWhite",50000],
 			["A3L_CVPIUCGrey",50000],
 			["A3L_CVPIUCBlack",50000],
@@ -713,18 +729,22 @@ switch (_shop) do
 			["A3L_CVPIUCBlue",50000],*/
 			["A3L_EvoXFPBLBPD",70000], //texture falsch
 			["A3L_EvoXFPBLBSO",70000],
-			["A3L_TaurusFPBCSO",25000],
+			["A3L_EvoXFPBLBSP",70000],
+			["A3l_TaurusFPBLBCSO",25000],
 			["A3L_TaurusFPBPD",25000],
-			["A3L_TaurusFPBPDGM",25000],
-			//["A3L_EvoXFPBLBSO",25000], kaputt?
+			["A3l_TaurusFPBLBPD",25000],
+			["A3l_TaurusFPBLBSP",25000],
+			["cl3_xr_1000_police",75000],
+
 			/*["A3L_TaurusUCBlack",25000],
 			["A3L_TaurusUCGrey",25000],
 			["A3L_TaurusUCWhite",25000],
 			["A3L_TaurusUCBlue",25000],
 			["A3L_TaurusUCRed",25000],*/
 			["DAR_TahoePolice",55000],
+			["DAR_TahoePoliceSheriff",55000],
 			//["DAR_TahoePoliceDet",55000],
-			["A3L_SuburbanFG",55000],
+			//["A3L_SuburbanFG",55000],
 			["IVORY_REV",100000],
 			["A3L_jailBus",50000]
 			/*["A3L_RegalBlack",130000],
@@ -739,6 +759,69 @@ switch (_shop) do
 			["cl3_dbs_volante_black",200000],
 			["A3L_Dumptruck",200000],
 			["cl3_e63_amg_black",160000]*/
+		];
+	};
+	
+	case "fbi_cars":
+	{
+		_return =
+		[
+			["cl3_s1203_blue",3500],
+			["cl3_lada_red",3850],
+			["cl3_lada_white",3850],
+			["cl3_volha_black",4200],
+			["cl3_volha_grey",4200],
+			
+			["IVORY_PRIUS",15750],
+			
+			["Jonzie_Mini_Cooper",1450],
+			
+			["A3L_Escort",1750],
+			["A3L_EscortBlack",1750],
+			["A3L_EscortBlue",1750],
+			["A3L_EscortWhite",1750],
+			
+			["cl3_suv_black",18500],
+			
+			["cl3_civic_vti_white",15750],
+			["cl3_civic_vti_navy_blue",15750],
+			["cl3_civic_vti_lime",15750],
+			["cl3_civic_vti_gold",15750],
+			["cl3_civic_vti_black",15750],
+			
+			["A3L_PuntoRed",39350],
+			["A3L_PuntoBlack",39350],
+			["A3L_PuntoWhite",39350],
+			["A3L_PuntoGrey",39350],
+			
+			["A3L_RegalBlack",9000],
+			["A3L_RegalBlue",9000],
+			["A3L_RegalOrange",9000],
+			["A3L_RegalRed",9000],
+			["A3L_RegalWhite",9000],
+			
+			["A3L_JeepWhiteBlack",9000],
+			["A3L_JeepGreenBlack",9000],
+			["A3L_JeepRedTan",9000],
+			["A3L_JeepRedBlack",9000],
+			["A3L_JeepGrayBlack",9000],
+			
+			["cl3_range_rover_white",10000],
+			["cl3_range_rover_lime",10000],
+			["cl3_range_rover_light_yellow",10000],
+			["cl3_range_rover_grey",10000],
+			["cl3_range_rover_burgundy",10000],
+			["cl3_range_rover_black",10000],
+			
+			["A3L_F350Black",45250],
+			["A3L_F350Blue",45250],
+			["A3L_F350Red",45250],
+			["A3L_F350White",45250],
+			["A3L_Dumptruck",55000],
+			["C_Van_01_box_F",47110],
+			["C_Van_01_transport_F",2990],
+			["A3L_Bus",45250],
+			["A3L_SchoolBus",50000]
 		];
 	};
 	

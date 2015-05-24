@@ -19,6 +19,11 @@ switch (_filter) do
 	{
 		[
 		//["A3L_Zombie","Zombie",35000],
+		["KAEL_SUITS_BR_F13","Kael Suit (White)",17500],
+		["KAEL_SUITS_BR_F4","Kael Suit (Purple)",17500],
+		["KAEL_SUITS_BR_F5","Kael Suit (Pink)",17500],
+		["KAEL_SUITS_BR_F","Kael Suit (Red)",17500],
+		["KAEL_SUITS_BR_F3","Kael Suit (Blue)",17500],
 		["A3L_Bikini_Girl","Bikini Girl",25000],
 		["A3L_Priest_Uniform","Priest Uniform",10000],
 		["A3L_Suit_Uniform","Suit",17500],
@@ -141,6 +146,11 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["kio_skl_msk","Skull Mask",2500],
+			["kio_skl_msk_red","Skull Mask Red",2500],
+			["kio_skl_msk_grn","Skull Mask Green",2500],
+			["kio_vfv_mask","Anon Watches Thee",2500],
+			["TRYK_Kio_Balaclava",nil,2000],
 			["A3L_Legoman","Lego Helmet",10000],
 			["A3L_Halloween_Pumpkinhead","Pumpkin",10000],
 			["A3L_Halloween_PredatorMask","Predator",7500],
@@ -211,6 +221,22 @@ switch (_filter) do
 	{
 		[
 			["G_Shades_Black",nil,25],
+			["SFG_Tac_BeardD","Tactical Beard (Dark)",275],
+			["SFG_Tac_BeardB","Tactical Beard (Blonde)",275],
+			["SFG_Tac_BeardG","Tactical Beard (Ginger)",275],
+			["SFG_Tac_BeardO","Tactical Beard (Old)",275],
+			["SFG_Tac_ChopsD","Tactical Mutton Chops (Dark)",275],
+			["SFG_Tac_ChopsG","Tactical Mutton Chops (Ginger)",275],
+			["SFG_Tac_ChopsB","Tactical Mutton Chops (Blonde)",275],
+			["SFG_Tac_ChopsO","Tactical Mutton Chops (Old)",275],
+			["SFG_Tac_moustacheD","Tactical Moustache (Dark)",275],
+			["SFG_Tac_moustacheG","Tactical Moustache (Ginger)",275],
+			["SFG_Tac_moustacheB","Tactical Moustache (Blonde)",275],
+			["SFG_Tac_moustacheO","Tactical Moustache (Old)",275],
+			["SFG_Tac_chinlessbD","Tactical Chinless Beard (Dark)",275],
+			["SFG_Tac_chinlessbG","Tactical Chinless Beard (Ginger)",275],
+			["SFG_Tac_chinlessbB","Tactical Chinless Beard (Blonde)",275],
+			["SFG_Tac_chinlessbO","Tactical Chinless Beard (Old)",275],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],
 			["G_Sport_Checkered",nil,20],

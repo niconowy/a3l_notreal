@@ -7,6 +7,7 @@
 	Figure it out.
 */
 private["_value","_action"];
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [3] call AC_fnc_checkThatShit;};
 if(__GETC__(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
 _value = parseNumber(ctrlText 9922);
 if(_value < 0) exitWith {};
@@ -28,3 +29,5 @@ if(_action) then {
 	hint localize "STR_NOTF_ActionCancel";
 	closeDialog 0;
 };
+
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [3] call AC_fnc_checkThatShit;};

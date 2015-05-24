@@ -5,7 +5,7 @@
  
 	Description: Enables God mode for Admin
 */
-
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [6] call AC_fnc_checkThatShit;};
 if(__GETC__(life_adminlevel) < 3) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
 
 
@@ -25,3 +25,5 @@ if(life_god) then {
 	titleText ["God mode enabled","PLAIN"]; titleFadeOut 2;
 	player allowDamage false;
 }; 
+
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [6] call AC_fnc_checkThatShit;};

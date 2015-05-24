@@ -6,7 +6,7 @@
 	Description:
 	Teleport to chosen position.
 */
-if(__GETC__(life_adminlevel) == 0) exitWith {closeDialog 0;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [7] call AC_fnc_checkThatShit;};
 
 [] spawn {
   while {dialog} do {
@@ -24,3 +24,5 @@ tele={
 };
 openMap [true, false];
 onMapSingleClick "[_pos select 0, _pos select 1, _pos select 2] call tele";
+
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [7] call AC_fnc_checkThatShit;};

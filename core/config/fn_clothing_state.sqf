@@ -13,7 +13,8 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Shop Title Name
 //ctrlSetText[3104,"FBI Clothing Shop"];
 
-If (__GETC__(life_donator) != 2)exitwith{};
+If (__GETC__(life_donator) <= 1)exitwith{closeDialog 0; hint "Du bist nicht in der SWAT Abteilung tätig (-Dlvl)"};
+If (__GETC__(life_donator) >= 4)exitwith{closeDialog 0; hint "Du bist nicht in der SWAT Abteilung tätig (+Dlvl)"};
 
 switch (_filter) do
 {
@@ -24,8 +25,8 @@ switch (_filter) do
 	case 0:
 	{
 		[
-		["swat_uni1","SWAT",150],
-		["doj_uni","State Police",750]
+			["swat_uni1","SWAT",150],
+			["doj_uni","State Police",750]
 		];
 	};
 	
@@ -33,9 +34,9 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["H_HelmetB_black","SWAT Helm",50]
+			["RPIMA_helm","SWAT Helm",150],
+			["gign_Balaclava","Taktische Maske",50]
 			
-
 		];
 	};
 	
@@ -43,6 +44,7 @@ switch (_filter) do
 	case 2:
 	{
 		[
+			["Mask_M40","Gasmaske",275],
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],
@@ -63,7 +65,7 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["SWATvest1","SWAT",1000]
+			["SWATvest1","SWAT Weste",1250]
 		];
 	};
 	

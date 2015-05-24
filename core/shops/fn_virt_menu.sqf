@@ -16,7 +16,7 @@ if(_shop == "market" && playerSide != civilian) exitWith {hint localize "STR_NOT
 if(_shop == "rebel" && !license_civ_rebel) exitWith {hint localize "STR_NOTF_NotARebel"};
 if(_shop == "ems" && playerSide != independent) exitWith {hint localize "STR_NOTF_NotAMedic"};
 if(_shop == "adac" && playerSide != east) exitWith {hint localize "STR_NOTF_NotAADAC"};
-if(_shop == "itemfbi" && (__GETC__(life_donator) != 3)) exitWith {hint localize "Du gehoerst nicht zum FBI!"};
+if(_shop == "itemfbi" && (__GETC__(life_donator) <= 3)) exitWith {hint localize "Du gehoerst nicht zum FBI!"};
 createDialog "shops_menu";
 
 [] call life_fnc_virt_update;

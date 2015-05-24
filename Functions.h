@@ -30,6 +30,15 @@ class Socket_Reciever
 	};
 };*/
 
+class GetThisOffMe {
+	tag = "AC";
+	class OffMe {
+		file = "getthisoffme";
+		class checkThatShit{};
+	}
+
+};
+
 class Life_Client_Core
 {
 	tag = "life";

@@ -262,10 +262,10 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != west): {"Du bist kein Polizist"};
-			case (__GETC__(life_coplevel) == 0): {"Du bist nicht berechtigt den Polizeishop zu Benutzen!"};
+			case (__GETC__(life_coplevel) == 0): {"Du bist nicht berechtigt den Polizeishop zu nutzen!"};
 			case (__GETC__(life_coplevel) == 1):
 			{
-				["Recruit",
+				["Rekrut",
 					[
 						["A3L_Glock17",nil,2600],
 						["A3L_Glock17mag",nil,300],
@@ -326,7 +326,7 @@ switch(_shop) do
 			
 			case (__GETC__(life_coplevel) > 2):
 			{
-				["Detective or higher",
+				["Detective bis Chief of Department",
 					[
 						["RH_Mk12mod1",nil,10000],
 						["RH_30Rnd_556x45_Mk262",nil,750],
@@ -362,7 +362,7 @@ switch(_shop) do
 						["optic_DMS",nil,500],
 						["RH_qdss_nt4",nil,500],
 						["A3L_MP5Silencer",nil,500],
-						["gign_shield",nil,10000],
+						["gign_shield","Einsatzschild",10000],
 						//["R3F_M4S90",nil,2500],
 						//["R3F_7Rnd_M4S90",nil,300],
 						["R3F_AIMPOINT",nil,1300],
@@ -392,7 +392,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (!license_civ_rebel): {"You don't have a Rebel training license!"};
+			case (!license_civ_rebel): {"Du hast keine Rebellenausbildung!"};
 			case ((license_civ_rebel)):
 			{
 				["Mohammed's Jihadi Shop",
@@ -452,15 +452,130 @@ switch(_shop) do
 				];
 			};
 		};
-	};	
+	};
+
 	case "don_reb":
 	{
 		switch(true) do
 		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
 			case (__GETC__(life_donator) == 0): {"Du bist kein Donator!"};
-			
 			case (__GETC__(life_donator) == 1):
-			{["Donator Rebellenwaffen",
+			{["Spezielle Rebellenwaffen",
+				[
+					["RH_Deaglem",nil,23375],
+					["RH_demz",nil,6375],
+					["optic_Yorris",nil,4250],
+					
+					["RH_7Rnd_50_AE",nil,635],
+					["A3L_SA61",nil,38250],
+					["A3L_SA61mag",nil,765],
+					["A3L_UZI",nil,31660],
+					["A3L_UZImag",nil,805],
+					["RH_muzi",nil,29750],
+					["RH_30Rnd_9x19_UZI",nil,680],
+					
+					["A3L_AK47",nil,102000],
+					["A3L_AK47mag",nil,2125],
+					
+					["A3L_AK47s",nil,114750],
+					["A3L_AK47sgold",nil,148750],											
+					["A3L_AK47smag",nil,2335],		
+
+					["A3L_AKS74",nil,161500],
+					["A3L_AK47sMag",nil,2335],
+					
+					["RH_M4sbr_b",nil,170000],
+					["30Rnd_556x45_Stanag",nil,2380],
+					["optic_Hamr",nil,425],
+					
+					["RH_ar10",nil,191250],
+					["RH_20Rnd_762x51_AR10",nil,2550],
+					
+					["A3L_RedDot",nil,7225],
+					["RH_Delft",nil,7225],
+					["RH_qdss_nt4",nil,10625],
+					["A3L_CCO",nil,10625],
+					
+					["A3L_CZ550",nil,127500],
+					["A3L_CZ550mag",nil,40],
+					["A3L_CZ550Scope",nil,25500],
+					
+					["arifle_SDAR_F","Turtle Harpoon",42500],
+					["20Rnd_556x45_UW_mag","Underwater magazine",1275],
+					
+					//["FirstAidKit",nil,2000],
+					["ToolKit",nil,6000],
+					["Binocular",nil,210],
+					["ItemGPS",nil,210],
+					["NVGoggles_OPFOR",nil,8500],
+					
+					["tf_fadak","Kurzstreckenfunk",80],
+					["tf_mr3000","Langstreckenfunk",4250],
+					["cse_bandage_basic",nil,1500]
+					]
+				];
+			};
+			
+			case (__GETC__(life_donator) == 4):
+			{["Spezielle Rebellenwaffen",
+				[
+					["RH_Deaglem",nil,23375],
+					["RH_demz",nil,6375],
+					["optic_Yorris",nil,4250],
+					
+					["RH_7Rnd_50_AE",nil,635],
+					["A3L_SA61",nil,38250],
+					["A3L_SA61mag",nil,765],
+					["A3L_UZI",nil,31660],
+					["A3L_UZImag",nil,805],
+					["RH_muzi",nil,29750],
+					["RH_30Rnd_9x19_UZI",nil,680],
+					
+					["A3L_AK47",nil,102000],
+					["A3L_AK47mag",nil,2125],
+					
+					["A3L_AK47s",nil,114750],
+					["A3L_AK47sgold",nil,148750],											
+					["A3L_AK47smag",nil,2335],		
+
+					["A3L_AKS74",nil,161500],
+					["A3L_AK47sMag",nil,2335],
+					
+					["RH_M4sbr_b",nil,170000],
+					["30Rnd_556x45_Stanag",nil,2380],
+					["optic_Hamr",nil,425],
+					
+					["RH_ar10",nil,191250],
+					["RH_20Rnd_762x51_AR10",nil,2550],
+					
+					["A3L_RedDot",nil,7225],
+					["RH_Delft",nil,7225],
+					["RH_qdss_nt4",nil,10625],
+					["A3L_CCO",nil,10625],
+					
+					["A3L_CZ550",nil,127500],
+					["A3L_CZ550mag",nil,40],
+					["A3L_CZ550Scope",nil,25500],
+					
+					["arifle_SDAR_F","Turtle Harpoon",42500],
+					["20Rnd_556x45_UW_mag","Underwater magazine",1275],
+					
+					//["FirstAidKit",nil,2000],
+					["ToolKit",nil,6000],
+					["Binocular",nil,210],
+					["ItemGPS",nil,210],
+					["NVGoggles_OPFOR",nil,8500],
+					
+					["tf_fadak","Kurzstreckenfunk",80],
+					["tf_mr3000","Langstreckenfunk",4250],
+					["cse_bandage_basic",nil,1500]
+					]
+				];
+			};
+			
+			case (__GETC__(life_donator) == 5):
+			{["Spezielle Rebellenwaffen",
 				[
 					["RH_Deaglem",nil,23375],
 					["RH_demz",nil,6375],
@@ -523,7 +638,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (!license_civ_gun): {"Du hast keine Schusswaffen Lizens!"};
+			case (!license_civ_gun): {"Du besitzt keinen gültigen Waffenschein!"};
 			case ((license_civ_gun)):
 			{
 				["Billy Joe's Firearms",
@@ -561,7 +676,7 @@ switch(_shop) do
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (!license_civ_gun): {"Du hast keine Schusswaffen Lizens!"};
+			case (!license_civ_gun): {"Du besitzt keinen gültigen Waffenschein!"};
 			case ((license_civ_gun)):
 			{
 				["Billy Joe's Illegale Schusswaffen",
@@ -582,10 +697,70 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
 			case (__GETC__(life_donator) == 0): {"Du bist kein Donator!"};
-			
 			case (__GETC__(life_donator) == 1):
-			{["Donatorwaffenladen",
+			{["Spezielle Waffen",
+					[
+						["A3L_Glock17",nil,13260],
+						["A3L_Glock17mag",nil,425],
+						["A3L_M9",nil,14620],
+						["A3L_M9mag",nil,340],
+						["A3L_makarov",nil,12325],
+						["A3L_makarovmag",nil,210],
+						["RH_mak",nil,12750],
+						["RH_8Rnd_9x18_Mak",nil,210],
+						["RH_fn57_t",nil,14025],
+						["RH_20Rnd_57x28_FN",nil,210],
+						["RH_cz75",nil,12535],
+						["RH_16Rnd_9x19_CZ",nil,210],	
+						["RH_m9c",nil,12750],
+						["RH_15Rnd_9x19_M9",nil,210],
+						["RH_p226s",nil,10625],
+						["RH_15Rnd_9x19_SIG",nil,210],
+						["RH_vp70",nil,12325],
+						["RH_18Rnd_9x19_VP",nil,210],
+						["A3L_1911",nil,15300],
+						["A3L_1911mag",nil,510],
+						["A3L_Taurus",nil,27625],
+						["A3L_TaurusGold",nil,30000],
+						["A3L_Taurusmag",nil,820]
+					]
+				];
+			};
+			
+			case (__GETC__(life_donator) == 4):
+			{["Spezielle Waffen",
+					[
+						["A3L_Glock17",nil,13260],
+						["A3L_Glock17mag",nil,425],
+						["A3L_M9",nil,14620],
+						["A3L_M9mag",nil,340],
+						["A3L_makarov",nil,12325],
+						["A3L_makarovmag",nil,210],
+						["RH_mak",nil,12750],
+						["RH_8Rnd_9x18_Mak",nil,210],
+						["RH_fn57_t",nil,14025],
+						["RH_20Rnd_57x28_FN",nil,210],
+						["RH_cz75",nil,12535],
+						["RH_16Rnd_9x19_CZ",nil,210],	
+						["RH_m9c",nil,12750],
+						["RH_15Rnd_9x19_M9",nil,210],
+						["RH_p226s",nil,10625],
+						["RH_15Rnd_9x19_SIG",nil,210],
+						["RH_vp70",nil,12325],
+						["RH_18Rnd_9x19_VP",nil,210],
+						["A3L_1911",nil,15300],
+						["A3L_1911mag",nil,510],
+						["A3L_Taurus",nil,27625],
+						["A3L_TaurusGold",nil,30000],
+						["A3L_Taurusmag",nil,820]
+					]
+				];
+			};
+			
+			case (__GETC__(life_donator) == 5):
+			{["Spezielle Waffen",
 					[
 						["A3L_Glock17",nil,13260],
 						["A3L_Glock17mag",nil,425],

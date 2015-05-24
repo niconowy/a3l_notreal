@@ -15,9 +15,9 @@ _units = _display displayCtrl 1501;
 
 ctrlSetText [3003, ""];
 lbClear _units;
-_units lbAdd format["EMS Units"];
-_units lbAdd format["The Police"];
-_units lbAdd format["The Admins"];
+_units lbAdd format["Sanitäter"];
+_units lbAdd format["Polizei"];
+_units lbAdd format["Admins"];
 if((__GETC__(life_adminlevel) > 1)) then
 {
 	_units lbAdd format["EVERYONE"];
