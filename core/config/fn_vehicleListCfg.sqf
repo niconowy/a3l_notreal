@@ -287,6 +287,10 @@ switch (_shop) do
 			["cl3_enduro_red",375000],
 			["cl3_enduro_dark_green",375000],
 			
+			["cl3_chopper_blue",425000],
+			["cl3_chopper_green",425000],
+			["cl3_chopper_red",425000],
+			
 			["cl3_xr_1000_yellow",400000],
 			["cl3_xr_1000_black",400000],
 			["cl3_xr_1000_babypink",400000],
@@ -713,57 +717,43 @@ switch (_shop) do
 	
 	case "cop_car":
 	{
-		_return =
-		[
-			["IVORY_PRIUS",4500],
-			["A3L_CVPIFPBLBPD",45000],		
-			["A3L_CVPIFPBLBFG",45000],
-			["A3L_CVPIFPBLBCSO",45000],
-			["A3L_CVPIFPBLBSM",45000],
-			["A3L_CVPIFPBLBHP",45000],
-			/*["A3L_CVPIUCWhite",50000],
-			["A3L_CVPIUCGrey",50000],
-			["A3L_CVPIUCBlack",50000],
-			["A3L_CVPIUCRed",50000],
-			["A3L_CVPIUCPink",50000],
-			["A3L_CVPIUCBlue",50000],*/
-			["A3L_EvoXFPBLBPD",70000], //texture falsch
-			["A3L_EvoXFPBLBSO",70000],
-			["A3L_EvoXFPBLBSP",70000],
-			["A3l_TaurusFPBLBCSO",25000],
-			["A3L_TaurusFPBPD",25000],
-			["A3l_TaurusFPBLBPD",25000],
-			["A3l_TaurusFPBLBSP",25000],
-			["cl3_xr_1000_police",75000],
-
-			/*["A3L_TaurusUCBlack",25000],
-			["A3L_TaurusUCGrey",25000],
-			["A3L_TaurusUCWhite",25000],
-			["A3L_TaurusUCBlue",25000],
-			["A3L_TaurusUCRed",25000],*/
-			["DAR_TahoePolice",55000],
-			["DAR_TahoePoliceSheriff",55000],
-			//["DAR_TahoePoliceDet",55000],
-			//["A3L_SuburbanFG",55000],
-			["IVORY_REV",100000],
-			["A3L_jailBus",50000]
-			/*["A3L_RegalBlack",130000],
-			["A3L_RegalBlue",130000],
-			["A3L_PuntoWhite",120000],
-			["A3L_PuntoGrey",120000],
-			["cl3_lada_red",55000],
-			["cl3_lada_white",55000],
-			["cl3_volha_black",60000],
-			["cl3_volha_grey",60000],
-			["cl3_e60_m5_black",150000],
-			["cl3_dbs_volante_black",200000],
-			["A3L_Dumptruck",200000],
-			["cl3_e63_amg_black",160000]*/
-		];
+		if(playerSide != west) exitWith {hint "Deine Muddah is schwul."};
+		if(__GETC__(life_coplevel) > 0) then
+		{
+			_return pushBack ["IVORY_PRIUS",4500]
+		};
+		
+		if(__GETC__(life_coplevel) > 1) then
+		{
+			_return pushBack ["A3L_CVPIFPBLBPD",45000],		
+			_return pushBack ["A3L_CVPIFPBLBFG",45000],
+			_return pushBack ["A3L_CVPIFPBLBCSO",45000],
+			_return pushBack ["A3L_CVPIFPBLBSM",45000],
+			_return pushBack ["A3L_CVPIFPBLBHP",45000],
+			_return pushBack ["A3l_TaurusFPBLBCSO",25000],
+			_return pushBack ["A3L_TaurusFPBPD",25000],
+			_return pushBack ["A3l_TaurusFPBLBPD",25000],
+			_return pushBack ["A3l_TaurusFPBLBSP",25000]
+		};
+			
+		if(__GETC__(life_coplevel) > 2) then
+		{
+			_return pushBack ["A3L_EvoXFPBLBPD",70000], //texture falsch
+			_return pushBack ["A3L_EvoXFPBLBSO",70000],
+			_return pushBack ["A3L_EvoXFPBLBSP",70000]
+		};
+			
+		if(__GETC__(life_coplevel) > 9) then
+		{	
+			_return pushBack ["cl3_xr_1000_police",75000],
+			_return pushBack ["IVORY_REV",100000]
+		};
 	};
 	
 	case "fbi_cars":
 	{
+		if(playerSide != west) exitWith {hint "Keine Berechtigung."};
+		if(__GETC__(life_donator) < 4) exitWith {hint "Du bist kein FBI-Agent!"};
 		_return =
 		[
 			["cl3_s1203_blue",3500],

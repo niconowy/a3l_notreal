@@ -19,6 +19,7 @@ switch (_filter) do
 	{
 		[
 		//["A3L_Zombie","Zombie",35000],
+		["TRYK_U_B_C02_Tsirt","TRYK CasualUniform (Jeans Black)",450],
 		["KAEL_SUITS_BR_F13","Kael Suit (White)",17500],
 		["KAEL_SUITS_BR_F4","Kael Suit (Purple)",17500],
 		["KAEL_SUITS_BR_F5","Kael Suit (Pink)",17500],
@@ -146,11 +147,7 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["kio_skl_msk","Skull Mask",2500],
-			["kio_skl_msk_red","Skull Mask Red",2500],
-			["kio_skl_msk_grn","Skull Mask Green",2500],
 			["kio_vfv_mask","Anon Watches Thee",2500],
-			["TRYK_Kio_Balaclava",nil,2000],
 			["A3L_Legoman","Lego Helmet",10000],
 			["A3L_Halloween_Pumpkinhead","Pumpkin",10000],
 			["A3L_Halloween_PredatorMask","Predator",7500],
@@ -256,7 +253,11 @@ switch (_filter) do
 	case 3:
 	{
 		[
-		
+			["k_cut_1","Sinister Sons",2500],
+			["k_cut_2","Gold Gunners",2500],
+			["k_cut_3","Sons of Anarchy Member",2500],
+			["k_cut_4","Sons of Anarchy President",2500],
+			["k_cut_5","Sons of Outlaws",2500]
 		];
 	};
 	

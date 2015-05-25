@@ -56,6 +56,7 @@ switch (_filter) do
 		_ret = 
 		[
 			["G_Shades_Black",nil,25],
+			["Mask_M40",nil,2500],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],
 			["G_Sport_Checkered",nil,20],

@@ -219,7 +219,8 @@ switch (_vehicle) do
 	{
 		_ret =
 		[
-			["textures\offroad_01_ext_base01_co.paa","adac"]
+			["images\textures\adac_offroad.paa","adac"],
+			["images\textures\adac_offroad.paa","adac"]
 		];
 	};
 
