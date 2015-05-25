@@ -18,6 +18,10 @@ switch (_filter) do
 	case 0:
 	{
 		[
+			["TRYK_U_B_BLK","TRYK CombatUniform (Black)",5000],
+			["TRYK_U_B_BLK_Tshirt","TRYK ShirtUniform (Black)",5000],
+			["TRYK_U_B_BLKBLK_CombatUniform","TRYK BLK+BLK Combat Uniform",5000],
+			["TRYK_U_B_BLKBLK_R_CombatUniform","TRYK BLK+BLK Combat Uniform Roll",5000],
 			["U_IG_Guerilla1_1",nil,5000],
 			["U_I_G_Story_Protagonist_F",nil,7500],
 			["U_I_G_resistanceLeader_F",nil,11500],
@@ -34,6 +38,10 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["kio_skl_msk","Skull Mask",2500],
+			["kio_skl_msk_red","Skull Mask Red",2500],
+			["kio_skl_msk_grn","Skull Mask Green",2500],
+			["TRYK_Kio_Balaclava",nil,2000],
 			["H_ShemagOpen_tan",nil,850],
 			["H_Shemag_olive",nil,850],
 			["H_ShemagOpen_khk",nil,800],
@@ -48,6 +56,7 @@ switch (_filter) do
 	{
 		[
 			["G_Aviator",nil,100],
+			["Mask_M40",nil,3500],
 			["G_Lady_Mirror",nil,150],
 			["G_Lady_Dark",nil,150],
 			["G_Lady_Blue",nil,150],			

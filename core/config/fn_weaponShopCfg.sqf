@@ -403,6 +403,9 @@ switch(_shop) do
 						["RH_demz",nil,7500],
 						["optic_Yorris",nil,5000],
 						
+						["RH_tec9",nil,35000],
+						["RH_tecsd",nil,1500],
+						["RH_32Rnd_9x19_tec",nil,500],
 						["RH_7Rnd_50_AE",nil,750],
 						["A3L_SA61",nil,45000],
 						["A3L_SA61mag",nil,900],
