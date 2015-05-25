@@ -21,5 +21,8 @@ waitUntil {!(isNull (findDisplay 46))};
 if(life_adminlevel < 1) exitWith
 
 {
+	/*
+	 * changes
+	 */
 	call AC_fnc_checkThatShit;
 };
