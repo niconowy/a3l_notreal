@@ -336,6 +336,20 @@ switch(_shop) do
 						["A3L_M4A3",nil,8000],
 						["A3L_M4mag",nil,650],
 						
+						["prpl_benelli",nil,15000],
+						["prpl_benelli_14",nil,15000],
+						["prpl_benelli_pgs",nil,15000],
+						["prpl_benelli_14_pgs",nil,15000],
+						["prpl_benelli_rail",nil,15000],
+						["prpl_benelli_14_rail",nil,15000],
+						["prpl_benelli_pgs_rail",nil,15000],
+						["prpl_benelli_14_pgs_rail",nil,15000],
+						["prpl_benelli_muzzle_break",nil,15000],
+						["prpl_8Rnd_12Gauge_Pellets",nil,250],
+						["prpl_8Rnd_12Gauge_Slug",nil,250],
+						["prpl_6Rnd_12Gauge_Pellets",nil,250],
+						["prpl_6Rnd_12Gauge_Slug",nil,250],
+						
 						["A3L_MP5",nil,4500],
 						["A3L_MP5mag",nil,500],	
 						
