@@ -1,6 +1,6 @@
 waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
-//PIMMEL
+
 player createDiarySubject ["oesiistschuld1","*******************"];
 player createDiarySubject ["werbung1","Homepage"];
 player createDiarySubject ["werbung2","Teamspeak"];
