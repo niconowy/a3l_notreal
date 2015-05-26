@@ -324,9 +324,9 @@ switch(_shop) do
 				];
 			};
 			
-			case (__GETC__(life_coplevel) > 2):
+			case (__GETC__(life_coplevel) == 3):
 			{
-				["Detective bis Chief of Department",
+				["Sergeant",
 					[
 						["RH_Mk12mod1",nil,10000],
 						["RH_30Rnd_556x45_Mk262",nil,750],
@@ -335,20 +335,6 @@ switch(_shop) do
 						["30Rnd_556x45_Stanag",nil,650],
 						["A3L_M4A3",nil,8000],
 						["A3L_M4mag",nil,650],
-						
-						["prpl_benelli",nil,15000],
-						["prpl_benelli_14",nil,15000],
-						["prpl_benelli_pgs",nil,15000],
-						["prpl_benelli_14_pgs",nil,15000],
-						["prpl_benelli_rail",nil,15000],
-						["prpl_benelli_14_rail",nil,15000],
-						["prpl_benelli_pgs_rail",nil,15000],
-						["prpl_benelli_14_pgs_rail",nil,15000],
-						["prpl_benelli_muzzle_break",nil,15000],
-						["prpl_8Rnd_12Gauge_Pellets",nil,250],
-						["prpl_8Rnd_12Gauge_Slug",nil,250],
-						["prpl_6Rnd_12Gauge_Pellets",nil,250],
-						["prpl_6Rnd_12Gauge_Slug",nil,250],
 						
 						["A3L_MP5",nil,4500],
 						["A3L_MP5mag",nil,500],	
@@ -395,6 +381,189 @@ switch(_shop) do
 						["cse_epinephrine",nil,1500],
 						["cse_bandage_basic",nil,1500]
 					
+					]
+				];
+			};
+			
+			case (__GETC__(life_coplevel) == 4):
+			{
+				["Detective",
+					[
+						["RH_Mk12mod1",nil,10000],
+						["RH_30Rnd_556x45_Mk262",nil,750],
+						["RH_M16A3",nil,8000],
+						["RH_m4",nil,8000],
+						["30Rnd_556x45_Stanag",nil,650],
+						["A3L_M4A3",nil,8000],
+						["A3L_M4mag",nil,650],
+						
+						["A3L_MP5",nil,4500],
+						["A3L_MP5mag",nil,500],	
+						
+						["A3L_Glock17",nil,2600],
+						["A3L_Glock17mag",nil,300],
+						["RH_kimber",nil,2600],
+						["RH_7Rnd_45cal_m1911",nil,300],
+						["RH_usp",nil,2600],
+						["RH_12Rnd_45cal_usp",nil,300],
+						["RH_fnp45t",nil,2600],
+						["RH_15Rnd_45cal_fnp",nil,300],
+						["RH_g18",nil,2600],
+						["RH_19Rnd_9x19_g18",nil,300],
+						
+						["Radar_Gun","Radarpistole",1000],
+						
+						["Taser_26","Taser",1000],
+						["26_cartridge",nil,50],
+						
+						["A3L_CCO",nil,500],
+						["A3L_RedDot",nil,500],
+						["A3L_M4Flashlight",nil,500],
+						["optic_Hamr",nil,500],
+						["optic_DMS",nil,500],
+						["RH_qdss_nt4",nil,500],
+						["A3L_MP5Silencer",nil,500],
+						["gign_shield","Einsatzschild",10000],
+						//["R3F_M4S90",nil,2500],
+						//["R3F_7Rnd_M4S90",nil,300],
+						["R3F_AIMPOINT",nil,1300],
+						
+						
+						
+						
+						//["FirstAidKit",nil,1500],
+						["ToolKit",nil,3500],
+						["Binocular",nil,150],
+						["Rangefinder",nil,150],
+						["ItemGPS",nil,100],
+						["NVGoggles_OPFOR",nil,2000],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
+						["tf_anprc155","Langstreckenfunk",1000],
+						["cse_epinephrine",nil,1500],
+						["cse_bandage_basic",nil,1500]
+					
+					]
+				];
+			};
+			
+			case (__GETC__(life_coplevel) == 5):
+			{
+				["Lieutenant",
+					[
+						["RH_Mk12mod1",nil,10000],
+						["RH_30Rnd_556x45_Mk262",nil,750],
+						["RH_M16A3",nil,8000],
+						["RH_m4",nil,8000],
+						["30Rnd_556x45_Stanag",nil,650],
+						["A3L_M4A3",nil,8000],
+						["A3L_M4mag",nil,650],
+						
+						["A3L_MP5",nil,4500],
+						["A3L_MP5mag",nil,500],	
+						
+						["A3L_Glock17",nil,2600],
+						["A3L_Glock17mag",nil,300],
+						["RH_kimber",nil,2600],
+						["RH_7Rnd_45cal_m1911",nil,300],
+						["RH_usp",nil,2600],
+						["RH_12Rnd_45cal_usp",nil,300],
+						["RH_fnp45t",nil,2600],
+						["RH_15Rnd_45cal_fnp",nil,300],
+						["RH_g18",nil,2600],
+						["RH_19Rnd_9x19_g18",nil,300],
+						
+						["Radar_Gun","Radarpistole",1000],
+						
+						["Taser_26","Taser",1000],
+						["26_cartridge",nil,50],
+						
+						["A3L_CCO",nil,500],
+						["A3L_RedDot",nil,500],
+						["A3L_M4Flashlight",nil,500],
+						["optic_Hamr",nil,500],
+						["optic_DMS",nil,500],
+						["RH_qdss_nt4",nil,500],
+						["A3L_MP5Silencer",nil,500],
+						["gign_shield","Einsatzschild",10000],
+						//["R3F_M4S90",nil,2500],
+						//["R3F_7Rnd_M4S90",nil,300],
+						["R3F_AIMPOINT",nil,1300],
+						
+						
+						
+						
+						//["FirstAidKit",nil,1500],
+						["ToolKit",nil,3500],
+						["Binocular",nil,150],
+						["Rangefinder",nil,150],
+						["ItemGPS",nil,100],
+						["NVGoggles_OPFOR",nil,2000],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
+						["tf_anprc155","Langstreckenfunk",1000],
+						["cse_epinephrine",nil,1500],
+						["cse_bandage_basic",nil,1500]
+					
+					]
+				];
+			};
+			
+			case (__GETC__(life_coplevel) > 6):
+			{
+				["Captain bis Chief of Department",
+					[
+						["prpl_benelli_14_pgs",nil,15000],
+						["prpl_benelli_muzzle_break",nil,15000],
+						["prpl_6Rnd_12Gauge_Pellets",nil,250],
+						
+						["RH_Mk12mod1",nil,10000],
+						["RH_30Rnd_556x45_Mk262",nil,750],
+						["RH_M16A3",nil,8000],
+						["RH_m4",nil,8000],
+						["30Rnd_556x45_Stanag",nil,650],
+						["A3L_M4A3",nil,8000],
+						["A3L_M4mag",nil,650],
+						
+						["A3L_MP5",nil,4500],
+						["A3L_MP5mag",nil,500],	
+						
+						["A3L_Glock17",nil,2600],
+						["A3L_Glock17mag",nil,300],
+						["RH_kimber",nil,2600],
+						["RH_7Rnd_45cal_m1911",nil,300],
+						["RH_usp",nil,2600],
+						["RH_12Rnd_45cal_usp",nil,300],
+						["RH_fnp45t",nil,2600],
+						["RH_15Rnd_45cal_fnp",nil,300],
+						["RH_g18",nil,2600],
+						["RH_19Rnd_9x19_g18",nil,300],
+						
+						["Radar_Gun","Radarpistole",1000],
+						
+						["Taser_26","Taser",1000],
+						["26_cartridge",nil,50],
+						
+						["A3L_CCO",nil,500],
+						["A3L_RedDot",nil,500],
+						["A3L_M4Flashlight",nil,500],
+						["optic_Hamr",nil,500],
+						["optic_DMS",nil,500],
+						["RH_qdss_nt4",nil,500],
+						["A3L_MP5Silencer",nil,500],
+						["gign_shield","Einsatzschild",10000],
+						//["R3F_M4S90",nil,2500],
+						//["R3F_7Rnd_M4S90",nil,300],
+						["R3F_AIMPOINT",nil,1300],
+						
+						//["FirstAidKit",nil,1500],
+						["ToolKit",nil,3500],
+						["Binocular",nil,150],
+						["Rangefinder",nil,150],
+						["ItemGPS",nil,100],
+						["NVGoggles_OPFOR",nil,2000],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
+						["tf_anprc155","Langstreckenfunk",1000],
+						["cse_epinephrine",nil,1500],
+						["cse_bandage_basic",nil,1500]
 					]
 				];
 			};

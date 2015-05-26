@@ -256,7 +256,8 @@ switch (_shop) do
 			["A3L_Laddertruck",40000],
 			["cl3_dodge_charger_emt",100000],
 			["dar_tahoeems",10000],
-			["cl3_xr_1000_emt",55000]
+			["cl3_xr_1000_emt",55000],
+			["A3L_EvoXFPBLBMED",125000]
 		];
 	};
 	
@@ -717,7 +718,7 @@ switch (_shop) do
 	
 	case "cop_car":
 	{
-		if(playerSide != west) exitWith {hint "Deine Muddah is schwul."};
+		if(playerSide != west) exitWith {hint "Du bist kein Cop!"};
 		if(__GETC__(life_coplevel) > 0) then
 		{
 			_return pushBack ["IVORY_PRIUS",4500]
