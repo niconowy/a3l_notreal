@@ -248,7 +248,6 @@ switch (_shop) do
 	
 	case "med_shop":
 	{
-		if(playerSide != west) exitWith {hint "Du bist kein Medic!"};
 		if(__GETC__(life_mediclevel) > 0) then
 		{
 			_return pushBack ["IVORY_PRIUS",4500]
