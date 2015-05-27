@@ -248,17 +248,34 @@ switch (_shop) do
 	
 	case "med_shop":
 	{
-		_return = [
-			["IVORY_PRIUS",5000],
-			["A3L_CVPILBFD",10000],
-			["Jonzie_Ambulance",25000],
-			["A3L_AmberLamps",25000],
-			["A3L_Laddertruck",40000],
-			["cl3_dodge_charger_emt",100000],
-			["dar_tahoeems",10000],
-			["cl3_xr_1000_emt",55000],
-			["A3L_EvoXFPBLBMED",125000]
-		];
+		if(playerSide != west) exitWith {hint "Du bist kein Medic!"};
+		if(__GETC__(life_mediclevel) > 0) then
+		{
+			_return pushBack ["IVORY_PRIUS",4500]
+		};
+		
+		if(__GETC__(life_mediclevel) > 1) then
+		{
+			_return pushBack ["Jonzie_Ambulance",25000],
+			_return pushBack ["A3L_AmberLamps",25000]
+		};
+		
+		if(__GETC__(life_mediclevel) > 2) then
+		{
+			_return pushBack ["A3L_Laddertruck",40000]
+		};
+		
+		if(__GETC__(life_mediclevel) > 3) then
+		{
+			_return pushBack ["cl3_dodge_charger_emt",100000],
+			_return pushBack ["dar_tahoeems",10000]
+		};
+		
+		if(__GETC__(life_mediclevel) > 4) then
+		{
+			_return pushBack ["cl3_xr_1000_emt",55000],
+			_return pushBack ["A3L_EvoXFPBLBMED",125000]
+		};
 	};
 	
 	case "med_air_hs": {
