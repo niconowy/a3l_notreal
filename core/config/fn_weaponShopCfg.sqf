@@ -81,9 +81,9 @@ switch(_shop) do
 				];
 			};
 			
-			case (__GETC__(life_mediclevel) >= 4):
+			case (__GETC__(life_mediclevel) == 4):
 			{
-				["Arzt bis Chefarzt",
+				["Arzt",
 					[
 						["cse_bandage_basic",nil,50],
 						["cse_packing_bandage",nil,50],
@@ -107,14 +107,14 @@ switch(_shop) do
 						["cse_bandageElastic",nil,50],
 						["cse_liquidSkin",nil,50],
 						["cse_chestseal",nil,50],
-						["cse_personal_aid_kit",nil,50],
 						["cse_surgical_kit",nil,50]
 					]
 				];
 			};
-			/* case (__GETC__(life_mediclevel) == 5):
+			
+			case (__GETC__(life_mediclevel) >= 5):
 			{
-				["Oberarzt",
+				["Oberarzt bis Chefarzt",
 					[
 					
 						//["FirstAidKit",nil,500],
