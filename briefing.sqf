@@ -1,6 +1,6 @@
 waitUntil {!isNull player && player == player};
 if(player diarySubjectExists "rules")exitwith{};
-
+//mein pferd hat in die pfanne geschissen
 player createDiarySubject ["oesiistschuld1","*******************"];
 player createDiarySubject ["werbung1","Homepage"];
 player createDiarySubject ["werbung2","Teamspeak"];
