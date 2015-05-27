@@ -261,13 +261,14 @@ switch (_shop) do
 		
 		if(__GETC__(life_mediclevel) > 2) then
 		{
-			_return pushBack ["A3L_Laddertruck",40000]
+			_return pushBack ["A3L_Laddertruck",40000],
+			_return pushBack ["A3L_CVPILBFD", 35000],
+			_return pushBack ["dar_tahoeems",10000]
 		};
 		
 		if(__GETC__(life_mediclevel) > 3) then
 		{
-			_return pushBack ["cl3_dodge_charger_emt",100000],
-			_return pushBack ["dar_tahoeems",10000]
+			_return pushBack ["cl3_dodge_charger_emt",100000]
 		};
 		
 		if(__GETC__(life_mediclevel) > 4) then
