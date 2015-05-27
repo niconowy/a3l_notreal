@@ -48,7 +48,7 @@ showMap false;
 disableUserInput true;
 sleep 10;
 ["A3LCheat",true,false] call BIS_fnc_endMission;*/
-
+/*
 playSound "busted";
 [[4,format[
 "
@@ -57,8 +57,10 @@ playSound "busted";
 <t size='1.5'>Führte eine Funktion aus, für die er gar keine Rechte besitzt!<br/><br/><br/>Bitte dem Support melden!<br/><br/><br/><br/>
 ",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 
-/*
+*/
 playSound "busted";
+showCommandingMenu "";
+showMap false;
 switch (_type) do {
 	
 	case 0: {
@@ -141,10 +143,10 @@ switch (_type) do {
 		<t size='1.6' font='PuristaBold'>Restriction:</t><br/><t size='1.5'>ExecuteGlobalMessage<br/><br/><br/>
 		",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	};
-};*/
+};
 sleep 0.7;
 disableUserInput true;
-2 cutText ["CHEATER AN DIE WAND!!!!! WIR HABEN EUCH LÄNGST ERKANNT!!!!! JETZT WIRD AUF EUCH GEZIELT, HIER WIRD NICHT MEHR GESPIELT!!!!!","BLACK FADED"];
+2 cutText ["Hoppla... wolltest du wohl etwas benutzen was du nicht darfst... Auf nie-mehr Wiedersehen. MfG Sunderland","BLACK FADED"];
 2 cutFadeOut 99999999;
 disableUserInput true;
 showCommandingMenu "";

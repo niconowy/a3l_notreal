@@ -33,5 +33,5 @@ lbClear _list;
 } foreach playableUnits;
 
 
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [0] call AC_fnc_checkThatShit;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [[0],"AC_fnc_checkThatShit",true,false] spawn life_fnc_MP;};
 

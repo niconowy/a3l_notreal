@@ -258,7 +258,7 @@ switch(_shop) do
 		{
 			case (playerSide != east): {"Du bist kein Adac"};
 			default {
-				["Adac Basic Shop",
+				["IPD Shop",
 					[
 						["ItemGPS",nil,250],
 						["Binocular",nil,1250],
@@ -343,7 +343,7 @@ switch(_shop) do
 			
 			case (__GETC__(life_coplevel) == 3):
 			{
-				["Sergeant",
+				["Detective",
 					[
 						["RH_Mk12mod1",nil,10000],
 						["RH_30Rnd_556x45_Mk262",nil,750],
@@ -404,7 +404,7 @@ switch(_shop) do
 			
 			case (__GETC__(life_coplevel) == 4):
 			{
-				["Detective",
+				["Sergeant",
 					[
 						["RH_Mk12mod1",nil,10000],
 						["RH_30Rnd_556x45_Mk262",nil,750],
@@ -524,7 +524,7 @@ switch(_shop) do
 				];
 			};
 			
-			case (__GETC__(life_coplevel) > 6):
+			case (__GETC__(life_coplevel) >= 6):
 			{
 				["Captain bis Chief of Department",
 					[
@@ -720,7 +720,7 @@ switch(_shop) do
 				];
 			};
 			
-			case (__GETC__(life_donator) == 4):
+			case (__GETC__(life_donator) == 3):
 			{["Spezielle Rebellenwaffen",
 				[
 					["RH_Deaglem",nil,23375],
@@ -833,6 +833,8 @@ switch(_shop) do
 					]
 				];
 			};
+			
+			default: {"Du bist kein Donator!"};
 		};
 	};
    
@@ -932,7 +934,7 @@ switch(_shop) do
 				];
 			};
 			
-			case (__GETC__(life_donator) == 4):
+			case (__GETC__(life_donator) == 3):
 			{["Spezielle Waffen",
 					[
 						["A3L_Glock17",nil,13260],
@@ -991,6 +993,8 @@ switch(_shop) do
 					]
 				];
 			};
+			
+			default: {"Du bist kein Donator."};
 		};
 	};
 	
