@@ -29,7 +29,9 @@ switch(_shop) do
 			{
 				["Praktikant",
 					[
-						["cse_bandage_basic",nil,50]
+						["cse_bandage_basic",nil,50],
+						["cse_packing_bandage",nil,50],
+						["cse_bandageElastic",nil,50]
 					]
 				];
 			};
@@ -41,9 +43,12 @@ switch(_shop) do
 						["cse_bandage_basic",nil,50],
 						["cse_packing_bandage",nil,50],
 						["cse_bandageElastic",nil,50],
+						["cse_tourniquet",nil,50],
+						["cse_quikclot",nil,50],
+						["cse_splint",nil,50],
 						["cse_saline_iv",nil,50],
-						["cse_saline_iv_500",nil,50],
-						["cse_saline_iv_250",nil,50]
+						["cse_saline_iv_250",nil,50],
+						["cse_saline_iv_500",nil,50]
 					]
 				];
 			};
@@ -56,46 +61,58 @@ switch(_shop) do
 						["cse_packing_bandage",nil,50],
 						["cse_bandageElastic",nil,50],
 						["cse_saline_iv",nil,50],
-						["cse_saline_iv_500",nil,50],
 						["cse_saline_iv_250",nil,50],
+						["cse_saline_iv_500",nil,50],
+						["cse_plasma_iv",nil,50],
+						["cse_plasma_iv_250",nil,50],
+						["cse_plasma_iv_500",nil,50],
+						["cse_blood_iv_250",nil,50],
+						["cse_blood_iv_500",nil,50],
 						["cse_tourniquet",nil,50],
 						["cse_splint",nil,50],
+						["cse_morphine",nil,50],
 						["cse_epinephrine",nil,50],
 						["cse_quikclot",nil,50],
+						["cse_opa",nil,50],
+						["cse_nasopharyngeal_tube",nil,50],
+						["cse_chestseal",nil,50],
 						["cse_surgical_kit",nil,50]
 					]
 				];
 			};
 			
-			case (__GETC__(life_mediclevel) == 4):
+			case (__GETC__(life_mediclevel) >= 4):
 			{
-				["Arzt",
+				["Arzt bis Chefarzt",
 					[
 						["cse_bandage_basic",nil,50],
 						["cse_packing_bandage",nil,50],
-						["cse_bandageElastic",nil,50],
-						["cse_saline_iv",nil,50],
-						["cse_saline_iv_500",nil,50],
-						["cse_saline_iv_250",nil,50],
 						["cse_tourniquet",nil,50],
 						["cse_splint",nil,50],
-						["cse_epinephrine",nil,50],
-						["cse_quikclot",nil,50],
-						["cse_surgical_kit",nil,50],
 						["cse_morphine",nil,50],
 						["cse_atropine",nil,50],
+						["cse_epinephrine",nil,50],
 						["cse_plasma_iv",nil,50],
-						["cse_plasma_iv_500",nil,50],
 						["cse_plasma_iv_250",nil,50],
+						["cse_plasma_iv_500",nil,50],
 						["cse_blood_iv",nil,50],
-						["cse_blood_iv_500",nil,50],
 						["cse_blood_iv_250",nil,50],
+						["cse_blood_iv_500",nil,50],
+						["cse_saline_iv",nil,50],
+						["cse_saline_iv_250",nil,50],
+						["cse_saline_iv_500",nil,50],
+						["cse_quikclot",nil,50],
 						["cse_nasopharyngeal_tube",nil,50],
-						["cse_opa",nil,50]
+						["cse_opa",nil,50],
+						["cse_bandageElastic",nil,50],
+						["cse_liquidSkin",nil,50],
+						["cse_chestseal",nil,50],
+						["cse_personal_aid_kit",nil,50],
+						["cse_surgical_kit",nil,50]
 					]
 				];
 			};
-			case (__GETC__(life_mediclevel) == 5):
+			/* case (__GETC__(life_mediclevel) == 5):
 			{
 				["Oberarzt",
 					[
@@ -164,7 +181,7 @@ switch(_shop) do
 						["cse_surgical_kit",nil,50]
 					]
 				]
-			};
+			}; */
 			
 		};
 	};
