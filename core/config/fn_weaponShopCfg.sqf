@@ -265,8 +265,8 @@ switch(_shop) do
 						["NVGoggles",nil,5000],
 						["ToolKit",nil,3500],
 						//["FirstAidKit",nil,1500],
-						["tf_anprc148jem","Kurzstreckenfunk",100],
-						["Item_tf_anprc152","Langstreckenfunk",1000]
+						["tf_anprc152","Kurzstreckenfunk",100],
+						["Item_tf_anprc152","Langstreckenfunk",1000],
 						["cse_bandage_basic",nil,1500]
 					]
 				];
@@ -298,7 +298,7 @@ switch(_shop) do
 						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
 						["NVGoggles_OPFOR",nil,2000],
-						["tf_anprc148jem_13","Kurzstreckenfunk",100],
+						["tf_anprc148jem","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
 						["cse_bandage_basic",nil,1500]
