@@ -148,7 +148,7 @@ switch(_shop) do
 				]
 			};
 			
-			case (__GETC__(life_mediclevel) == 6):
+			/* case (__GETC__(life_mediclevel) == 6):
 			{
 				["Chefarzt",
 					[
