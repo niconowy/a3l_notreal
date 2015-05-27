@@ -199,8 +199,8 @@ switch(_shop) do
 						["Binocular",nil,1250],
 						["NVGoggles",nil,5000],
 						["ToolKit",nil,3500],
-						["tf_anprc148jem_13","Kurzstreckenfunk",100],
-						["tf_anprc155","Langstreckenfunk",1000]
+						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["Item_tf_anprc152","Langstreckenfunk",1000]
 						
 
 						//["cse_itemBodyBag",nil,0],
@@ -265,8 +265,8 @@ switch(_shop) do
 						["NVGoggles",nil,5000],
 						["ToolKit",nil,3500],
 						//["FirstAidKit",nil,1500],
-						["tf_anprc148jem_13","Kurzstreckenfunk",2500],
-						["tf_anprc155","Langstreckenfunk",2500],
+						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["Item_tf_anprc152","Langstreckenfunk",1000]
 						["cse_bandage_basic",nil,1500]
 					]
 				];
