@@ -134,7 +134,6 @@ class Life_Client_Core
 		class surrender {};
 		class TorturePlayer {};
 		class handyEntnehmen {};
-		class handyEntnommen {};
 		class robShops {};
 		class robShops2 {};
 		class sellLicense {};
