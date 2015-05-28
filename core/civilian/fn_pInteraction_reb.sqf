@@ -74,7 +74,7 @@ if((_curTarget getVariable["Escorting",false])) then {
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
 };
 //Set _bHandy Button
-_Btn5 ctrlSetText "Funkgerät wegwerfen";
+_Btn5 ctrlSetText "Kommunikation entfernen";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen;";
 
 if(!license_civ_rebel) then

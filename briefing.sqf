@@ -364,7 +364,7 @@ Unseren ChangeLog und weitere Informationen zu UpDates findest du in unserem For
 <font color='#D60000'>Z</font><br/>Spieler-Menü öffnen / Taplet aufrufen<br/><br/>
 <font color='#D60000'>U</font><br/>Fahrzeuge auf- und zuschließen<br/><br/>
 <font color='#D60000'>T</font><br/>Kofferraum öffnen (Z-Items / Virtuelle Items)<br/><br/>
-<font color='#D60000'>SHIFT + R</font><br/>Person Fesseln (COP)<br/><br/>
+<font color='#D60000'>SHIFT + R</font><br/>Person Fesseln<br/><br/>
 <font color='#D60000'>SHIFT + G</font><br/>Person niederschlagen (MIT WAFFE)<br/><br/>
 <font color='#D60000'>WINDOWSTASTE</font><br/>Interaktionsmenü aufrufen<br/>-- Sollte WINDOWSTASTE bei dir nicht funktionieren, öffne dein ESC-Menü > Konfigurieren > Steuerung > Indiv. Steuerung > Aktionstaste 10 anders belegen.<br/><br/>
 <font color='#D60000'>WINDOWSTASTE + T</font><br/>Sammeln<br/><br/>
