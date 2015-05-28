@@ -130,8 +130,8 @@ class Mission
 	randomSeed=2004553;
 	class Intel
 	{
-		briefingName="Roleplay Life Mod";
-		overviewText="Life Mod 1.7.1.1";
+		briefingName="Lakeside Reallife";
+		overviewText="A3L 2.0.0.0";
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;
