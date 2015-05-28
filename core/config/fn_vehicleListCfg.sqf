@@ -464,11 +464,11 @@ switch (_shop) do
 			["A3L_RegalRed",13000],
 			["A3L_RegalWhite",13000],
 			
-			["A3L_JeepWhiteBlack",13000],
-			["A3L_JeepGreenBlack",13000],
-			["A3L_JeepRedTan",13000],
-			["A3L_JeepRedBlack",13000],
-			["A3L_JeepGrayBlack",13000],
+			//["A3L_JeepWhiteBlack",13000], Rücklichter kaputt
+			//["A3L_JeepGreenBlack",13000], Rücklichter kaputt
+			//["A3L_JeepRedTan",13000], Rücklichter kaputt
+			//["A3L_JeepRedBlack",13000], Rücklichter kaputt
+			//["A3L_JeepGrayBlack",13000], Rücklichter kaputt
 			
 			["cl3_range_rover_white",20000],
 			["cl3_range_rover_purple",20000],
@@ -809,11 +809,11 @@ switch (_shop) do
 			["A3L_RegalRed",9000],
 			["A3L_RegalWhite",9000],
 			
-			["A3L_JeepWhiteBlack",9000],
-			["A3L_JeepGreenBlack",9000],
-			["A3L_JeepRedTan",9000],
-			["A3L_JeepRedBlack",9000],
-			["A3L_JeepGrayBlack",9000],
+			//["A3L_JeepWhiteBlack",9000], Rücklichter kaputt
+			//["A3L_JeepGreenBlack",9000], Rücklichter kaputt
+			//["A3L_JeepRedTan",9000], Rücklichter kaputt
+			//["A3L_JeepRedBlack",9000], Rücklichter kaputt
+			//["A3L_JeepGrayBlack",9000], Rücklichter kaputt
 			
 			["cl3_range_rover_white",10000],
 			["cl3_range_rover_lime",10000],
