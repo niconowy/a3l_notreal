@@ -8,4 +8,4 @@ if(player distance _target > 3) exitWith {hint "Die Person ist zu weit weg."};
 
 //_handys = ["tf_anprc148jem","tf_anprc148jem_13","tf_anprc155","tf_fadak","tf_fadak_2","tf_mr3000"];
 
-removeAllAssignedItems _target;
+[[player],"life_fnc_handyEntnommen",_target,false] spawn life_fnc_MP;
