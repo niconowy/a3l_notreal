@@ -10,9 +10,9 @@ _shop = _this select 0;
 
 switch (_shop) do
 {
-	case "market": {["Market",["cigarette","zoobeer","Rax's Rum","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagebig","weddingring","Augenbinde"]]};
-	case "rebel": {["Rebel Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","RoadBlockRebel","boltcutter","blastingcharge","Augenbinde"]]};
-	case "gang": {["Gang Market", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter","Augenbinde"]]};
+	case "market": {["Market",["cigarette","zoobeer","Rax's Rum","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagebig","weddingring","augenbinde"]]};
+	case "rebel": {["Rebel Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","RoadBlockRebel","boltcutter","blastingcharge","augenbinde"]]};
+	case "gang": {["Gang Market", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter","augenbinde"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
 	case "coffee": {["Stratis Coffee Club",["coffee","donuts"]]};
 	case "heroin": {["Drug Dealer",["cocainep","marijuana","heroinp"]]};
@@ -23,7 +23,7 @@ switch (_shop) do
 	case "iron": {["Industrial Trader",["iron_r","copper_r"]]};
 	case "diamond": {["Diamond Dealer",["diamondc"]]};
 	case "salt": {["Salt Dealer",["salt_r"]]};
-	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","lockpick","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB","Augenbinde"]]};
+	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","lockpick","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB","augenbinde"]]};
 	case "itemfbi": {["FBI Item Shop",["blaulicht","donuts","coffee","spikeStrip","redgull","fuelF","defusekit","lockpick","BarGate","RoadBlockWood","RoadConeStripB"]]};
 	case "cement": {["Cement Dealer",["cement"]]};
 	case "gold": {["Gold Buyer",["goldbar"]]};
