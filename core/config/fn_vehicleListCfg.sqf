@@ -739,7 +739,10 @@ switch (_shop) do
 		if(playerSide != west) exitWith {hint "Du bist kein Cop!"};
 		if(__GETC__(life_coplevel) > 0) then
 		{
-			_return pushBack ["IVORY_PRIUS",4500]
+			_return pushBack ["A3l_TaurusFPBLBCSO",25000],
+			_return pushBack ["A3L_TaurusFPBPD",25000],
+			_return pushBack ["A3l_TaurusFPBLBPD",25000],
+			_return pushBack ["A3l_TaurusFPBLBSP",25000]
 		};
 		
 		if(__GETC__(life_coplevel) > 1) then
@@ -748,11 +751,7 @@ switch (_shop) do
 			_return pushBack ["A3L_CVPIFPBLBFG",45000],
 			_return pushBack ["A3L_CVPIFPBLBCSO",45000],
 			_return pushBack ["A3L_CVPIFPBLBSM",45000],
-			_return pushBack ["A3L_CVPIFPBLBHP",45000],
-			_return pushBack ["A3l_TaurusFPBLBCSO",25000],
-			_return pushBack ["A3L_TaurusFPBPD",25000],
-			_return pushBack ["A3l_TaurusFPBLBPD",25000],
-			_return pushBack ["A3l_TaurusFPBLBSP",25000]
+			_return pushBack ["A3L_CVPIFPBLBHP",45000]
 		};
 			
 		if(__GETC__(life_coplevel) > 2) then
