@@ -194,12 +194,15 @@ switch(_shop) do
 				["EMS Basic Shop",
 					[
 						["A3L_Extinguisher",nil,350],
-
+						
+						["ItemMap",nil,30],
+						["ItemWatch",nil, 20],
+						["ItemCompass",nil 10],
 						["ItemGPS",nil,250],
 						["Binocular",nil,1250],
 						["NVGoggles",nil,5000],
 						["ToolKit",nil,3500],
-						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000]
 						
 
@@ -260,12 +263,15 @@ switch(_shop) do
 			default {
 				["IPD Shop",
 					[
+						["ItemMap",nil,30],
+						["ItemWatch",nil, 20],
+						["ItemCompass",nil 10],
 						["ItemGPS",nil,250],
 						["Binocular",nil,1250],
 						["NVGoggles",nil,5000],
 						["ToolKit",nil,3500],
 						//["FirstAidKit",nil,1500],
-						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_bandage_basic",nil,1500]
 					]
@@ -293,12 +299,15 @@ switch(_shop) do
 						["26_cartridge",nil,50],
 						
 						//["FirstAidKit",nil,1500],
+						["ItemMap",nil,30],
+						["ItemWatch",nil, 20],
+						["ItemCompass",nil 10],
 						["ToolKit",nil,3500],
 						["Binocular",nil,150],
 						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
 						["NVGoggles_OPFOR",nil,2000],
-						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
 						["cse_bandage_basic",nil,1500]
@@ -328,12 +337,15 @@ switch(_shop) do
 						["A3L_RedDot",nil,500],
 						
 						//["FirstAidKit",nil,1500],
+						["ItemMap",nil,30],
+						["ItemWatch",nil, 20],
+						["ItemCompass",nil 10],
 						["ToolKit",nil,3500],
 						["Binocular",nil,150],
 						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
 						["NVGoggles_OPFOR",nil,2000],
-						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
 						["cse_bandage_basic",nil,1500]
@@ -388,12 +400,15 @@ switch(_shop) do
 						
 						
 						//["FirstAidKit",nil,1500],
+						["ItemMap",nil,30],
+						["ItemWatch",nil, 20],
+						["ItemCompass",nil 10],
 						["ToolKit",nil,3500],
 						["Binocular",nil,150],
 						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
 						["NVGoggles_OPFOR",nil,2000],
-						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
 						["cse_bandage_basic",nil,1500]
@@ -449,12 +464,15 @@ switch(_shop) do
 						
 						
 						//["FirstAidKit",nil,1500],
+						["ItemMap",nil,30],
+						["ItemWatch",nil, 20],
+						["ItemCompass",nil 10],
 						["ToolKit",nil,3500],
 						["Binocular",nil,150],
 						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
 						["NVGoggles_OPFOR",nil,2000],
-						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
 						["cse_bandage_basic",nil,1500]
@@ -510,12 +528,15 @@ switch(_shop) do
 						
 						
 						//["FirstAidKit",nil,1500],
+						["ItemMap",nil,30],
+						["ItemWatch",nil, 20],
+						["ItemCompass",nil 10],
 						["ToolKit",nil,3500],
 						["Binocular",nil,150],
 						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
 						["NVGoggles_OPFOR",nil,2000],
-						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
 						["cse_bandage_basic",nil,1500]
@@ -572,12 +593,15 @@ switch(_shop) do
 						["R3F_AIMPOINT",nil,1300],
 						
 						//["FirstAidKit",nil,1500],
+						["ItemMap",nil,30],
+						["ItemWatch",nil, 20],
+						["ItemCompass",nil 10],
 						["ToolKit",nil,3500],
 						["Binocular",nil,150],
 						["Rangefinder",nil,150],
 						["ItemGPS",nil,100],
 						["NVGoggles_OPFOR",nil,2000],
-						["tf_anprc148jem","Kurzstreckenfunk",100],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
 						["cse_bandage_basic",nil,1500]
@@ -643,6 +667,7 @@ switch(_shop) do
 						["20Rnd_556x45_UW_mag","Underwater magazine",1500],
 						
 						//["FirstAidKit",nil,2250],
+						["ItemMap",nil,70],
 						["ToolKit",nil,6000],
 						["Binocular",nil,250],
 						["ItemGPS",nil,250],
@@ -1020,7 +1045,9 @@ switch(_shop) do
 	{
 		["Altis General Store",
 			[
-				["ItemMap",nil,69],
+				["ItemMap",nil,70],
+				["ItemWatch",nil, 50],
+				["ItemCompass",nil 40],
 				//["FirstAidKit",nil,2500],
 				["tf_fadak","Kurzstreckenfunk",900],
 				["Binocular",nil,1250],
