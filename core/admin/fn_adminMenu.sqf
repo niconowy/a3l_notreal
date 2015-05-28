@@ -13,7 +13,7 @@ disableSerialization;
 waitUntil {!isNull (findDisplay 2900)};
 _display = findDisplay 2900;
 _list = _display displayCtrl 2902;
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit [[4,format["<br/><br/><br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'>%1</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Restriction:</t><br/><t size='1.5'>DisplayAdminMenu<br/><br/><br/>",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit; [[4,format["<br/><br/><br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'>%1</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Restriction:</t><br/><t size='1.5'>DisplayAdminMenu<br/><br/><br/>",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;};
 
 /*switch(__GETC__(life_adminlevel)) do
 {
@@ -33,5 +33,5 @@ lbClear _list;
 } foreach playableUnits;
 
 
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit [[4,format["<br/><br/><br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'>%1</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Restriction:</t><br/><t size='1.5'>DisplayAdminMenu<br/><br/><br/>",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit; [[4,format["<br/><br/><br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'>%1</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Restriction:</t><br/><t size='1.5'>DisplayAdminMenu<br/><br/><br/>",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;};
 
