@@ -11,7 +11,7 @@ if(isnull _civ) exitWith {};
 
 if(_intox > 0.08) then 
 {
-	hint format["%1's Intox Level: %2\nThis person is over the legal limit to drive!",name _civ,_intox];
+	hint format["%1's Intox Level: %2\nNicht Verkehrssicher!",name _civ,_intox];
 } 
 else 
 {

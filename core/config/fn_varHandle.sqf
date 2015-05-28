@@ -101,6 +101,7 @@ switch (_mode) do
 			case "Rax's Rum": {"life_inv_raxsrum"};
 			case "weddingring": {"life_inv_weddingring"};
 			case "blaulicht":{"life_inv_blaulicht"};
+			case "Augenbinde":{"life_inv_augenbinde"};
 		};
 	};
 	
@@ -193,6 +194,7 @@ switch (_mode) do
 			case "life_inv_raxsrum": {"Rax's Rum"};
 			case "life_inv_weddingring": {"weddingring"};
 			case "life_inv_blaulicht": {"blaulicht"};
+			case "life_inv_augenbinde":{"Augenbinde"};
 		};
 	};
 };

@@ -140,6 +140,8 @@ class Life_Client_Core
 		class sellLicense {};
 		class rechnungAction {};
 		class adacRepair {};
+		class augenbindeAn {};
+		class augenbindeAus {};
 	};
 	
 	class Housing

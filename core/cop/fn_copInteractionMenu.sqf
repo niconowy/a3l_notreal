@@ -16,9 +16,10 @@
 #define Btn9 37458
 #define Btn10 37459
 #define Btn11 37460
+#define Btn12 37461
 #define Title 37401
 
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9","_Btn10","_Btn11"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9","_Btn10","_Btn11","_Btn12"];
 if(!dialog) then {
 	createDialog "pInteraction_Menu";
 };
@@ -40,6 +41,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn9 = _display displayCtrl Btn9;
 		_Btn10 = _display displayCtrl Btn10;
 		_Btn11 = _display displayCtrl Btn11;
+		_Btn12 = _display displayCtrl Btn12;
 
 		life_pInact_curTarget = _curTarget;
 		
@@ -57,6 +59,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn9 ctrlShow false;
 		_Btn10 ctrlShow false;
 		_Btn11 ctrlShow false;
+		_Btn12 ctrlShow false;
 	} else {
 		closeDialog 0;
 	};
@@ -75,6 +78,7 @@ _Btn8 = _display displayCtrl Btn8;
 _Btn9 = _display displayCtrl Btn9;
 _Btn10 = _display displayCtrl Btn10;
 _Btn11 = _display displayCtrl Btn11;
+_Btn12 = _display displayCtrl Btn12;
 
 life_pInact_curTarget = _curTarget;
 
@@ -128,9 +132,17 @@ _Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_testIntox;";
 _Btn10 ctrlSetText localize "STR_pInAct_RevokeLicense";
 _Btn10 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense;";
 
-//Set _bHandy Button
-_Btn11 ctrlSetText "Funkgerät wegwerfen";
+//Kommunikation Entfrnen
+_Btn11 ctrlSetText "Kommunikation entfernen";
 _Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen;";
+
+if((_curTarget getVariable["isblinded",false])) then {
+	_Btn12 ctrlSetText "Augenbinde Anlegen"
+	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAn; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+} else {
+	_Btn12 ctrlSetText "Augenbinde Entfernen"
+	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAus; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+};
 
 //Check that you are near a place to jail them.
 if(!(player distance (getMarkerPos "jail_marker") < 50)) then 

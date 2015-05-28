@@ -23,6 +23,7 @@ life_corpse setVariable["Reviving",nil,TRUE];
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
+player setVariable["isblinded",false,true];
 
 //Load gear for a 'new life'
 switch(playerSide) do

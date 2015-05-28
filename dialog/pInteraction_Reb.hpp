@@ -115,5 +115,17 @@ class pInteraction_Reb
 			w = 0.24;
 			h = 0.038;
 		};
+		
+		class ButtonSix : life_RscButtonMenu
+		{
+			idc = 47455;
+			colorBackground[] = {0.18,0.604,0.996,1};
+			text = "";
+			sizeEx = 0.025;
+			x = BGX + 0.03;
+			y = BGY + 0.32;
+			w = 0.24;
+			h = 0.038;
+		};
 	};
 };

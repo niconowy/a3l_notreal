@@ -10,8 +10,9 @@
 #define Btn3 47452
 #define Btn4 47453
 #define Btn5 47454
+#define Btn6 47455
 
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6"];
 if(!dialog) then {
 	createDialog "pInteraction_Reb";
 };
@@ -27,6 +28,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn3 = _display displayCtrl Btn3;
 		_Btn4 = _display displayCtrl Btn4;
 		_Btn5 = _display displayCtrl Btn5;
+		_Btn6 = _display displayCtrl Btn6;
 
 		life_pInact_curTarget = _curTarget;
 		
@@ -38,6 +40,7 @@ if(_curTarget isKindOf "House_F") exitWith {
 		_Btn3 ctrlShow false;
 		_Btn4 ctrlShow false;
 		_Btn5 ctrlShow false;
+		_Btn6 ctrlShow false;
 	} else {
 		closeDialog 0;
 	};
@@ -50,6 +53,7 @@ _Btn2 = _display displayCtrl Btn2;
 _Btn3 = _display displayCtrl Btn3;
 _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
+_Btn6 = _display displayCtrl Btn6;
 
 life_pInact_curTarget = _curTarget;
 
@@ -77,10 +81,19 @@ if((_curTarget getVariable["Escorting",false])) then {
 _Btn5 ctrlSetText "Kommunikation entfernen";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen;";
 
+if((_curTarget getVariable["isblinded",false])) then {
+	_Btn6 ctrlSetText "Augenbinde Anlegen"
+	_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAn; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+} else {
+	_Btn6 ctrlSetText "Augenbinde Entfernen"
+	_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAus; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+};
+
 if(!license_civ_rebel) then
 {
     _Btn2 ctrlShow false;
     _Btn3 ctrlShow false;
     _Btn4 ctrlShow false;
 	_Btn5 ctrlShow false;
+	_Btn6 ctrlShow false;
 };
