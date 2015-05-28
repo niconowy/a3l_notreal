@@ -73,7 +73,6 @@ if((_curTarget getVariable["Escorting",false])) then {
 	_Btn4 ctrlSetText localize "STR_pInAct_Escort";
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
 };
-//Matze drüber schauen
 //Set _bHandy Button
 _Btn5 ctrlSetText "Funkgerät wegwerfen";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen;";

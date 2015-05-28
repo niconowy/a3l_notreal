@@ -104,7 +104,7 @@ class pInteraction_Reb
 			h = 0.038;
 		};
 			
-		/*class ButtonFive : life_RscButtonMenu
+		class ButtonFive : life_RscButtonMenu
 		{
 			idc = 47454;
 			colorBackground[] = {0.18,0.604,0.996,1};
@@ -114,6 +114,6 @@ class pInteraction_Reb
 			y = BGY + 0.27;
 			w = 0.24;
 			h = 0.038;
-		};*/
+		};
 	};
 };

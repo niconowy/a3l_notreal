@@ -20,9 +20,7 @@
 		8-JoinSideLogic
 		9-ExecuteGlobalMessage
 */
-private["_type"];
 
-_type = _this select 0;
 disableUserInput true;
 /*_restrictions = 
 ["DisplayAdminMenu","OpenDebugConsole","SpawnPlayerMarkers","SpawnMoney","SetCameraPosition","DisableKeyInput",
@@ -61,6 +59,7 @@ playSound "busted";
 playSound "busted";
 showCommandingMenu "";
 showMap false;
+/*
 switch (_type) do {
 	
 	case 0: {
@@ -143,10 +142,10 @@ switch (_type) do {
 		<t size='1.6' font='PuristaBold'>Restriction:</t><br/><t size='1.5'>ExecuteGlobalMessage<br/><br/><br/>
 		",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 	};
-};
+};*/
 sleep 0.7;
 disableUserInput true;
-2 cutText ["Hoppla... wolltest du wohl etwas benutzen was du nicht darfst... Auf nie-mehr Wiedersehen. MfG Sunderland","BLACK FADED"];
+2 cutText ["LEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEL HAXXXXXXXXXXXXXXX nuuuuuuuub nuuuuuubnuuuuuububububun.... Hacker Noob. l2p kiddy","BLACK FADED"];
 2 cutFadeOut 99999999;
 disableUserInput true;
 showCommandingMenu "";
