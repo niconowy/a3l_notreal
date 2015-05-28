@@ -833,8 +833,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
-			default: {"Du bist kein Donator!"};
+			default {"Du bist kein Donator!"}; //Opfer lol
 		};
 	};
    
@@ -993,8 +992,7 @@ switch(_shop) do
 					]
 				];
 			};
-			
-			default: {"Du bist kein Donator."};
+			default {"Du bist kein Donator."};
 		};
 	};
 	

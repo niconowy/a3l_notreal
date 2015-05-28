@@ -61,15 +61,15 @@ _prcentammo = (_curmagazine / _maxammo) * 100;
  
 _amountmag = {_x == (currentmagazine player)} count magazines player;
 if (_amountmag == 0) then {
-        _amountmagtext = parseText format["Ich habe keine Magazine"];
+        _amountmagtext = parseText format["Ich habe keine Magazine mehr"];
                 _magcolor = "#FFFFFF";
     } else {
     if (_amountmag == 1) then {
-        _amountmagtext = parseText format["Ich habe %1 Magazin übrig", _amountmag];
+        _amountmagtext = parseText format["Ich habe noch %1 Magazin übrig.", _amountmag];
                 _magcolor = "#FFFFFF";
     } else {
     if (_amountmag > 1) then {
-        _amountmagtext = parseText format["Ich habe %1 Magazine übrig", _amountmag];
+        _amountmagtext = parseText format["Ich habe noch %1 Magazine übrig.", _amountmag];
                 _magcolor = "#FFFFFF";
 };};};
        
@@ -155,39 +155,39 @@ if (_zeroing == 0) then {
  
 if (_playerhunger > 90) then {
                 _hungercolor = "#00FF4C";
-                _hungertext = parseText format["Nicht hungrig"];
+                _hungertext = parseText format["Keinen Hunger"];
         } else {
         if (_playerhunger > 80) then {
                 _hungercolor = "#1AFF00";
-                _hungertext = parseText format["Überhaupt nicht hungrig"];
+                _hungertext = parseText format["Überhaupt keinen Hunger"];
         } else {
         if (_playerhunger > 70) then {
                 _hungercolor = "#7BFF00";
-                _hungertext = parseText format["Könnte einige Cracker gebrauchen"];
+                _hungertext = parseText format["Ein Keks wäre gut"];
         } else {
         if (_playerhunger > 60) then {
                 _hungercolor = "#BFFF00";
-                _hungertext = parseText format["Muss bald was Essen"];
+                _hungertext = parseText format["Ein paar Kekse wären gut"];
         } else {
         if (_playerhunger > 50) then {
                 _hungercolor = "#EAFF00";
-                _hungertext = parseText format["Leeres Gefühl im Magen"];
+                _hungertext = parseText format["Habe Hunger"];
         } else {
         if (_playerhunger > 40) then {
                 _hungercolor = "#FFBF00";
-                _hungertext = parseText format["Ich sollte bald essen"];
+                _hungertext = parseText format["Mein Magen knurrt"];
         } else {
         if (_playerhunger > 30) then {
                 _hungercolor = "#FF8400";
-                _hungertext = parseText format["Mein Magen knurrt"];
+                _hungertext = parseText format["Muss dringend etwas Essen"];
         } else {
         if (_playerhunger > 20) then {
                 _hungercolor = "#FF4000";
-                _hungertext = parseText format["Ich muss jetzt was essen"];
+                _hungertext = parseText format["Habe starkes Sodbrennen"];
         } else {
         if (_playerhunger > 10) then {
                 _hungercolor = "#FF0000";
-                _hungertext = parseText format["Der Hunger tötet mich"];
+                _hungertext = parseText format["Der Hunger tötet mich noch"];
         } else {
         if (_playerhunger == 0) then {
                 _hungercolor = "#590000";
@@ -200,31 +200,31 @@ if (_playerthirst > 80) then {
         } else {
         if (_playerthirst > 70) then {
                 _thirstcolor = "#7BFF00";
-                _thirsttext = parseText format["Ein Glas wasser wäre gut"];
+                _thirsttext = parseText format["Ein Schluck Wasser wäre gut"];
         } else {
         if (_playerthirst > 60) then {
                 _thirstcolor = "#BFFF00";
-                _thirsttext = parseText format["Sollte bald etwas trinken"];
+                _thirsttext = parseText format["Ein Glas Wasser wäre gut"];
         } else {
         if (_playerthirst > 50) then {
                 _thirstcolor = "#EAFF00";
-                _thirsttext = parseText format["Kehle ist ein wenig trocken"];
+                _thirsttext = parseText format["Mund fühlt sich trocken an"];
         } else {
         if (_playerthirst > 40) then {
                 _thirstcolor = "#FFBF00";
-                _thirsttext = parseText format["Ich sollte bald etwas trinken"];
+                _thirsttext = parseText format["Kehle ist trocken"];
         } else {
         if (_playerthirst > 30) then {
                 _thirstcolor = "#FF8400";
-                _thirsttext = parseText format["Meine Kehle ist trocken"];
+                _thirsttext = parseText format["Sollte jetzt etwas trinken"];
         } else {
         if (_playerthirst > 20) then {
                 _thirstcolor = "#FF4000";
-                _thirsttext = parseText format["Ich sollte jetzt trinken"];
+                _thirsttext = parseText format["Mir ist schwindelig"];
         } else {
         if (_playerthirst > 10) then {
                 _thirstcolor = "#FF0000";
-                _thirsttext = parseText format["Dehydratisierung setzt ein"];
+                _thirsttext = parseText format["Mir geht es kotzübel"];
         } else {
         if (_playerthirst == 0) then {
                 _thirstcolor = "#590000";
@@ -233,31 +233,31 @@ if (_playerthirst > 80) then {
  
 if (_playerstamina < 0.10) then {
                 _staminacolor = "#00FF4C";
-                _staminatext = parseText format["Voller Energie "];
+                _staminatext = parseText format["Total Erholt"];
         } else {
         if (_playerstamina < 0.20) then {
                 _staminacolor = "#1AFF00";
-                _staminatext = parseText format["Kann ewig laufen"];
+                _staminatext = parseText format["Kann ewig Laufen"];
         } else {
         if (_playerstamina < 0.30) then {
                 _staminacolor = "#BFFF00";
-                _staminatext = parseText format["Beginne müde zu werden "];
+                _staminatext = parseText format["Beginne zu Schwitzen"];
         } else {
         if (_playerstamina < 0.40) then {
                 _staminacolor = "#EAFF00";
-                _staminatext = parseText format["Ich brauche eine Pause"];
+                _staminatext = parseText format["Brauche eine Verschnaufpause"];
         } else {
         if (_playerstamina < 0.50) then {
                 _staminacolor = "#FF8400";
-                _staminatext = parseText format["Sollte eine Pause nehmen"];
+                _staminatext = parseText format["Meine Fusssohlen tun weh"];
         } else {
         if (_playerstamina < 0.60) then {
                 _staminacolor = "#FF4000";
-                _staminatext = parseText format["Erschöpfung beginnt"];
+                _staminatext = parseText format["Mir geht echt die Puste aus"];
         } else {
         if (_playerstamina > 0.59) then {
                 _staminacolor = "#590000";
-                _staminatext = parseText format["Ich bin erschöpft"];
+                _staminatext = parseText format["Ich, ich kann nicht mehr..."];
 };};};};};};};
  
  
