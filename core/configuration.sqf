@@ -543,7 +543,7 @@ life_garage_prices =
 	["A3L_EvoXFPBLBPD",3500],
 	["cl3_dodge_charger_k9",3000],
 	["DAR_CVPIAuxiliary",2250],
-	["A3L_EvoXFPBLBSO",3500],
+	["A3L_EvoXFPBLBSO",3500],["A3L_EvoXFPBLBMED",3500],["A3l_evoxADAC",3500],
 	["cl3_dodge_charger_patrol",3000],
 	["A3L_CVPIUC",2500],["A3L_CVPIUCWhite",2500],["A3L_CVPIUCBlack",2500],["A3L_CVPIGrey",2500],["A3L_CVPIUCRed",2500],["A3L_CVPIUCPink",2500],["A3L_CVPIUCBlue",2500],
 	["A3L_ChargerUC",3000],["A3L_ChargerUCWhite",3000],["A3L_ChargerLB",3000],

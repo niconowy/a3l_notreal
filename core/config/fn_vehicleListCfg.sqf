@@ -275,7 +275,7 @@ switch (_shop) do
 		if(__GETC__(life_mediclevel) > 4) then
 		{
 			_return pushBack ["cl3_xr_1000_emt",75000],
-			_return pushBack ["A3L_EvoXFPBLBMED",125000]
+			_return pushBack ["A3L_EvoXFPBLBMED",70000]
 		};
 	};
 	
@@ -516,7 +516,7 @@ switch (_shop) do
 			["A3L_Towtruck",35000],
 			["B_Heli_Light_01_F",100000],
 			["A3L_TaurusWhite",35000],
-			["A3l_evoxADAC",55000]
+			["A3l_evoxADAC",70000]
 			//["I_Heli_Transport_02_F",100000] Unnötig kein Liftsystem
 		];
 	};
@@ -757,7 +757,7 @@ switch (_shop) do
 			
 		if(__GETC__(life_coplevel) > 2) then
 		{
-			_return pushBack ["A3L_EvoXFPBLBPD",70000], //texture falsch
+			_return pushBack ["A3L_EvoXFPBLBPD",70000],
 			_return pushBack ["A3L_EvoXFPBLBSO",70000],
 			_return pushBack ["A3L_EvoXFPBLBSP",70000]
 		};
