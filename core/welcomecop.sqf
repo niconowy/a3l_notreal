@@ -14,7 +14,7 @@ _onScreenTime = 3;
 
 //if(life_firstSpawn) then {
 
-//playsound "copintro";
+playsound "1ntr0";
 //}; 
 sleep 2; //Wait in seconds before the credits start after player is in-game
 
