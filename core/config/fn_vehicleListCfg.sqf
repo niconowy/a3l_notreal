@@ -1159,7 +1159,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) > 0) then
 		{
 			_return pushBack ["A3l_TaurusFPBLBCSO",25000],
-			_return pushBack ["A3L_TaurusFPBPD",25000],
+			//_return pushBack ["A3L_TaurusFPBPD",25000],
 			_return pushBack ["A3l_TaurusFPBLBPD",25000],
 			_return pushBack ["A3l_TaurusFPBLBSP",25000]
 		};
