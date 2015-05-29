@@ -449,9 +449,9 @@ __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 life_garage_prices =
 [
 	["I_Heli_Transport_02_F",5000],
-	["cl3_enduro_yellow",12000],["cl3_enduro_black",12000],["cl3_enduro_blue",12000],["cl3_enduro_aqua",12000],["cl3_enduro_babypink",12000],["cl3_enduro_red",12000],["cl3_enduro_dark_green",12000],
-	["cl3_chopper_blue",12000],["cl3_chopper_green",12000],["cl3_chopper_red",12000],
-	["cl3_xr_1000_yellow",12000],["cl3_xr_1000_black",12000],["cl3_xr_1000_babypink",12000],["cl3_xr_1000_red",12000],["cl3_xr_1000_lime",12000],["cl3_xr_1000_flame",12000],["cl3_xr_1000_police",4000],["cl3_xr_1000_emt",4000],
+	["cl3_enduro_yellow",8000],["cl3_enduro_black",8000],["cl3_enduro_blue",8000],["cl3_enduro_aqua",8000],["cl3_enduro_babypink",8000],["cl3_enduro_red",8000],["cl3_enduro_dark_green",8000],
+	["cl3_chopper_blue",8000],["cl3_chopper_green",8000],["cl3_chopper_red",8000],
+	["cl3_xr_1000_yellow",8000],["cl3_xr_1000_black",8000],["cl3_xr_1000_babypink",8000],["cl3_xr_1000_red",8000],["cl3_xr_1000_lime",8000],["cl3_xr_1000_flame",8000],["cl3_xr_1000_police",4000],["cl3_xr_1000_emt",4000],
 	["wirk_h3_limo",40000],
 	["C_Rubberboat",1500],["C_Boat_Civil_01_F",8750],["B_Boat_Transport_01_F",375],["C_Boat_Civil_01_police_F",1000],["B_SDV_01_F",5000],
 	["A3L_Karts",1250],["C_Kart_01_Blu_F",1250],["C_Kart_01_Fuel_F",1250],["C_Kart_01_Red_F",1250],["C_Kart_01_Vrana_F",1250],
