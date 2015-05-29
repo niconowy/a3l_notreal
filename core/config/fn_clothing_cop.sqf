@@ -36,7 +36,8 @@ switch (_filter) do
 		//_ret pushBack ["FBI_uni","FBI",1000];
 		//_ret pushBack ["swat_uni1","SWAT",150];
 		
-		_ret pushBack ["U_B_HeliPilotCoveralls","Pilot",125];
+		//_ret pushBack ["U_B_HeliPilotCoveralls","Pilot",125];
+		_ret pushBack ["A3L_PolicePilot","Pilot Uniform",125];
 		_ret pushBack ["A3L_Prisoner_Outfit","Gefängnisuniform",125];
 	};
 	

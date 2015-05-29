@@ -1177,7 +1177,8 @@ switch (_shop) do
 		{
 			_return pushBack ["A3L_EvoXFPBLBPD",70000],
 			_return pushBack ["A3L_EvoXFPBLBSO",70000],
-			_return pushBack ["A3L_EvoXFPBLBSP",70000]
+			_return pushBack ["A3L_EvoXFPBLBSP",70000],
+			_return pushBack ["DAR_TahoePoliceDet",50000]
 		};
 			
 		if(__GETC__(life_coplevel) > 9) then
@@ -1193,6 +1194,16 @@ switch (_shop) do
 		if(__GETC__(life_donator) < 4) exitWith {hint "Du bist kein FBI-Agent!"};
 		_return =
 		[
+			["cl3_e63_amg_white",35000],
+			["cl3_e63_amg_lime",35000],
+			["cl3_e63_amg_light_yellow",35000],
+			["cl3_e63_amg_black",35000],
+			
+			["cl3_e60_m5_white",35000],
+			["cl3_e60_m5_lime",35000],
+			["cl3_e60_m5_light_yellow",35000],
+			["cl3_e60_m5_black",35000],
+			
 			["cl3_s1203_blue",3500],
 			["cl3_lada_red",3850],
 			["cl3_lada_white",3850],
@@ -1202,6 +1213,9 @@ switch (_shop) do
 			//["IVORY_PRIUS",15750],
 			
 			["Jonzie_Mini_Cooper",1450],
+			["A3L_CVBlack",45000],
+			["A3L_CVGrey",45000],
+			["A3L_CVWhite",45000],
 			
 			//["A3L_Escort",1750], Buggy
 			//["A3L_EscortBlack",1750], Buggy
