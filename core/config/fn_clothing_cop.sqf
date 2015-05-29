@@ -84,7 +84,7 @@ switch (_filter) do
 		_ret pushBack ["A3L_sheriffvest1","Sheriff",500];
 		_ret pushBack ["SERTvest1","Sheriff Weste",500];
 		
-		_ret pushBack ["A3L_deptjvest1","State Police",500];
+		//_ret pushBack ["A3L_deptjvest1","State Police",500];
 		_ret pushBack ["A3L_rangervest1","Chief",500];
 		
 		//_ret pushBack ["A3L_fbivest1","FBI Vest",1000];

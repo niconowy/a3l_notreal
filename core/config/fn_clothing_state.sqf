@@ -65,7 +65,8 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["SWATvest1","SWAT Weste",1250]
+			["SWATvest1","SWAT Weste",1250],
+			["A3L_deptjvest1","State Police",500]
 		];
 	};
 	
