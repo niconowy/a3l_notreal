@@ -31,7 +31,13 @@ if(_state) then {
 					case "A3L_CVGrey":{				_Blight attachTo[_veh,[-0.45, -0.1, 0.17]];};
 					case "A3L_CVWhite":{				_Blight attachTo[_veh,[-0.45, -0.1, 0.17]];};
 					case "cl3_e63_amg_black":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.04]];};
+					case "cl3_e63_amg_white":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.04]];};
+					case "cl3_e63_amg_lime":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.04]];};
+					case "cl3_e63_amg_light_yellow":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.04]];};
 					case "cl3_e60_m5_black":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.16]];};
+					case "cl3_e60_m5_white":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.16]];};
+					case "cl3_e60_m5_lime":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.16]];};
+					case "cl3_e60_m5_light_yellow":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.16]];};
 					//case "DAR_TahoePolice":{		_Blight attachTo[_veh,[-0.6, -0.2, 0.45]];};
 					//case "cl3_lada":{				_Blight attachTo[_veh,[-0.6, -0.2, 0.35]];};
 					//case "C_Hatchback_01_sport_F":{	_Blight attachTo[_veh,[-0.6, -0.2, 0.35]];};
@@ -49,7 +55,13 @@ if(_state) then {
 					case "A3L_CVGrey":{				_Blight attachTo[_veh,[-0.45, -0.1, 0.17]];};
 					case "A3L_CVWhite":{				_Blight attachTo[_veh,[-0.45, -0.1, 0.17]];};
 					case "cl3_e63_amg_black":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.04]];}; //minus links,vor und zurück- minus hinten,höhe
+					case "cl3_e63_amg_white":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.04]];};
+					case "cl3_e63_amg_lime":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.04]];};
+					case "cl3_e63_amg_light_yellow":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.04]];};
 					case "cl3_e60_m5_black":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.16]];};
+					case "cl3_e60_m5_white":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.16]];};
+					case "cl3_e60_m5_lime":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.16]];};
+					case "cl3_e60_m5_light_yellow":{			_Blight attachTo[_veh,[-0.48, -0.82, 0.16]];};
 					//case "DAR_TahoePolice":{		_Blight attachTo[_veh,[-0.6, -0.2, 0.45]];};
 					//case "cl3_lada":{		_Blight attachTo[_veh,[-0.6, -0.2, 0.35]];};
 					//case "C_Hatchback_01_sport_F":{	_Blight attachTo[_veh,[-0.6, -0.2, 0.35]];};
