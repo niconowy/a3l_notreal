@@ -133,7 +133,7 @@ _Btn10 ctrlSetText localize "STR_pInAct_RevokeLicense";
 _Btn10 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense;";
 
 //Kommunikation Entfrnen
-_Btn11 ctrlSetText "Kommunikation entfernen";
+/*_Btn11 ctrlSetText "Kommunikation entfernen";
 _Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen;";
 
 if((_curTarget getVariable["isblinded",true])) then {
@@ -142,7 +142,7 @@ if((_curTarget getVariable["isblinded",true])) then {
 } else {
 	_Btn12 ctrlSetText localize "STR_pInAct_AugenbindeAus";
 	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAus; closeDialog 0;";
-};
+};*/
 
 //Check that you are near a place to jail them.
 if(!(player distance (getMarkerPos "jail_marker") < 50)) then 
