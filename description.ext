@@ -74,13 +74,6 @@ class CfgSounds
 		titles[] = {};
 	};
 	
-	class busted
-	{
-		name = "busted";
-		sound[] = {"\core\fsm\busted.wss", 1.0, 1};
-		titles[] = {};
-	};
-	
 	class medicalintro
 	{
 		name = "medicalintro";

@@ -56,7 +56,7 @@ playSound "busted";
 ",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 
 */
-playSound "busted";
+playSound "Worship";
 showCommandingMenu "";
 showMap false;
 /*
@@ -145,7 +145,7 @@ switch (_type) do {
 };*/
 sleep 0.7;
 disableUserInput true;
-2 cutText ["LEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEEL HAXXXXXXXXXXXXXXX nuuuuuuuub nuuuuuubnuuuuuububububun.... Hacker Noob. l2p kiddy","BLACK FADED"];
+2 cutText ["Script-Kiddy music. Enjoy it, 'til you get banned!!!!!","BLACK FADED"];
 2 cutFadeOut 99999999;
 disableUserInput true;
 showCommandingMenu "";
