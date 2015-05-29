@@ -75,5 +75,8 @@ if(life_removeWanted) then {
 	[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 };
 
+814945 cutText [" ","BLACK FADED"];
+814945 cutFadeOut 2;
+
 [] call SOCK_fnc_updateRequest;
 [] call life_fnc_hudUpdate; //Request update of hud.

@@ -15,7 +15,8 @@ if(!(_target getVariable["isblinded",false]) || isNull _target) exitWith {hint "
 
 _target setVariable["isblinded",false,true];
 
-814945 cutText [" ","BLACK FADED"];
-814945 cutFadeOut 5;
+/*814945 cutText [" ","BLACK FADED"];
+814945 cutFadeOut 10;*/
+//[true,"augenbinde", 1] call life_fnc_handleInv;
 
 [[1,format["Jemand entfernt gerade deine Augenbinde..."]],"life_fnc_broadcast",_target,false] spawn life_fnc_MP;
