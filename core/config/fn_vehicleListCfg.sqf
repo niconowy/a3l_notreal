@@ -231,7 +231,8 @@ switch (_shop) do
 			["cl3_veyron_lblue_dblue",1000000],
 			["cl3_veyron_lblue_lblue",1000000],
 			["cl3_veyron_brn_blk",1000000],
-			["wirk_h3_limo",3500000]
+			["wirk_h3_limo",3500000],
+			["Nhz_audia8limo",3000000]
 		];
 	};
 	
