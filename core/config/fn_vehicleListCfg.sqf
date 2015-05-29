@@ -273,7 +273,7 @@ switch (_shop) do
 		
 		if(__GETC__(life_mediclevel) > 4) then
 		{
-			_return pushBack ["cl3_xr_1000_emt",55000],
+			_return pushBack ["cl3_xr_1000_emt",75000],
 			_return pushBack ["A3L_EvoXFPBLBMED",125000]
 		};
 	};
