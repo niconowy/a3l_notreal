@@ -661,7 +661,7 @@ life_garage_sell =
 	["A3L_EvoXFPBLBPD",35000],
 	["cl3_dodge_charger_k9",30000],
 	["DAR_CVPIAuxiliary",22500],
-	["A3L_EvoXFPBLBSO",35000],
+	["A3L_EvoXFPBLBSO",35000],["A3l_evoxADAC",35000],["A3L_EvoXFPBLBMED",35000],
 	["cl3_dodge_charger_patrol",30000],
 	["A3L_CVPIUC",25000],["A3L_CVPIUCWhite",25000],["A3L_CVPIUCBlack",25000],["A3L_CVPIGrey",25000],["A3L_CVPIUCRed",25000],["A3L_CVPIUCPink",25000],["A3L_CVPIUCBlue",25000],
 	["A3L_ChargerUC",30000],["A3L_ChargerUCWhite",30000],["A3L_ChargerLB",30000],
