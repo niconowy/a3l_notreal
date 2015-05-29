@@ -516,8 +516,8 @@ switch (_shop) do
 			["A3L_Towtruck",35000],
 			["B_Heli_Light_01_F",100000],
 			["A3L_TaurusWhite",35000],
-			["A3l_evoxADAC",55000],
-			["I_Heli_Transport_02_F",100000]
+			["A3l_evoxADAC",55000]
+			//["I_Heli_Transport_02_F",100000] Unnötig kein Liftsystem
 		];
 	};
 	
