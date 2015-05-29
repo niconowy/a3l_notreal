@@ -21,18 +21,19 @@ switch (_filter) do
 		
 			["EMTRM_uni",nil,1000],
 			//["A3L_EMT1",nil,1000],
-			["A3L_EMT3",nil,1000],
-			["A3L_EMT4",nil,1000],
-			["A3L_EMT5",nil,1000],
-			["A3L_EMT6",nil,1000],
-			["A3L_EMT7",nil,1000],
-			["A3L_EMT2",nil,1000],
+			["A3L_Sani",nil,1000],
+			["A3L_Retass",nil,1000],
+			["A3L_Notarzt",nil,1000],
+			["A3L_Oberarzt",nil,1000],
+			["A3L_Chefarzt",nil,1000],
+			//["A3L_EMT2",nil,1000],
 			["fire_uni2",nil,1000],
 			["fire_uni1",nil,1000],
-			["emsoff_uni",nil,1000],
-			["emt_Uni1",nil, 1000],
-			["emt_Uni3",nil, 1000],
-			["U_O_Wetsuit",nil,1000]
+			//["emsoff_uni",nil,1000],
+			//["emt_Uni1",nil, 1000],
+			//["emt_Uni3",nil, 1000],
+			["U_O_Wetsuit",nil,1000],
+			["A3L_MotorUniM",nil,1000]
 		
 		];
 	};
@@ -46,7 +47,8 @@ switch (_filter) do
 			["H_MilCap_blue",nil,20],
 			["H_CrewHelmetHeli_B",nil,20],
 			["H_Cap_blu",nil,20],
-			["H_Cap_red",nil,20]
+			["H_Cap_red",nil,20],
+			["H_RacingHelmet_1_red_F",nil,250]
 		];
 	};
 	

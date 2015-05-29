@@ -37,8 +37,9 @@ switch (_filter) do
 		//_ret pushBack ["swat_uni1","SWAT",150];
 		
 		//_ret pushBack ["U_B_HeliPilotCoveralls","Pilot",125];
-		_ret pushBack ["A3L_PolicePilot","Pilot Uniform",125];
+		_ret pushBack ["A3L_PolicePilot",nil,125];
 		_ret pushBack ["A3L_Prisoner_Outfit","Gefängnisuniform",125];
+		_ret pushBack ["A3L_MotorUniP",nil,125];
 	};
 	
 	//Huete
@@ -48,7 +49,7 @@ switch (_filter) do
 		_ret pushBack ["A3L_policehelmet","Polizeihelm",50];
 		_ret pushBack //["H_HelmetB_black","SWAT Helm",50];
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
-		
+		_ret pushBack ["H_RacingHelmet_1_black_F",nil,250];	
 	};
 	
 	//Glasses
