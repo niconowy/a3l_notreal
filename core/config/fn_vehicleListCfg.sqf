@@ -433,12 +433,12 @@ switch (_shop) do
 			
 			["Jonzie_Mini_Cooper",2000],
 			
-			["A3L_Escort",2500],
-			["A3L_EscortTaxi",2500],
-			["A3L_EscortBlack",2500],
-			["A3L_EscortBlue",2500],
-			["A3L_EscortWhite",2500],
-			["A3L_EscortPink",2500],
+			//["A3L_Escort",2500], Buggy
+			//["A3L_EscortTaxi",2500], Buggy
+			//["A3L_EscortBlack",2500], Buggy
+			//["A3L_EscortBlue",2500], Buggy
+			//["A3L_EscortWhite",2500], Buggy
+			//["A3L_EscortPink",2500], Buggy
 			
 			["cl3_suv_black",60000],
 			["cl3_suv_taxi",75000],
@@ -1199,14 +1199,14 @@ switch (_shop) do
 			["cl3_volha_black",4200],
 			["cl3_volha_grey",4200],
 			
-			["IVORY_PRIUS",15750],
+			//["IVORY_PRIUS",15750],
 			
 			["Jonzie_Mini_Cooper",1450],
 			
-			["A3L_Escort",1750],
-			["A3L_EscortBlack",1750],
-			["A3L_EscortBlue",1750],
-			["A3L_EscortWhite",1750],
+			//["A3L_Escort",1750], Buggy
+			//["A3L_EscortBlack",1750], Buggy
+			//["A3L_EscortBlue",1750], Buggy
+			//["A3L_EscortWhite",1750], Buggy
 			
 			["cl3_suv_black",18500],
 			

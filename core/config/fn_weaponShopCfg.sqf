@@ -75,7 +75,7 @@ switch(_shop) do
 						["cse_quikclot",nil,50],
 						//["cse_opa",nil,50], Funktioniert nicht
 						["cse_nasopharyngeal_tube",nil,50],
-						["cse_chestseal",nil,50],
+						//["cse_chestseal",nil,50], Unnötig
 						["cse_surgical_kit",nil,50]
 					]
 				];
@@ -106,7 +106,7 @@ switch(_shop) do
 						//["cse_opa",nil,50],
 						["cse_bandageElastic",nil,50],
 						//["cse_liquidSkin",nil,50], Gibt keine Verbrennungen zZ.
-						["cse_chestseal",nil,50],
+						//["cse_chestseal",nil,50],
 						["cse_surgical_kit",nil,50]
 					]
 				];
@@ -141,7 +141,7 @@ switch(_shop) do
 						["cse_nasopharyngeal_tube",nil,50],
 						//["cse_opa",nil,50],
 						//["cse_liquidSkin",nil,50],
-						["cse_chestseal",nil,50],
+						//["cse_chestseal",nil,50],
 						["cse_personal_aid_kit",nil,50],
 						["cse_surgical_kit",nil,50]
 					]
@@ -176,7 +176,7 @@ switch(_shop) do
 						//["cse_opa",nil,50],
 						["cse_bandageElastic",nil,50],
 						//["cse_liquidSkin",nil,50],
-						["cse_chestseal",nil,50],
+						//["cse_chestseal",nil,50],
 						["cse_personal_aid_kit",nil,50],
 						["cse_surgical_kit",nil,50]
 					]
