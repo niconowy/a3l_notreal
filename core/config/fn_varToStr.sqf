@@ -84,7 +84,7 @@ switch (_var) do
 	case "life_inv_rawsheepmeat": {(localize "STR_Item_rawsheepmeat")};
 	case "life_inv_rawrabbit": {(localize "STR_Item_rawrabbit")};
 	case "life_inv_blaulicht": {"Blaulicht"};
-	case "life_inv_augenbinde": {"Augenbinde"};
+	case "life_inv_augenbinde": {"augenbinde"};
 	//Additions
 	case "life_inv_zoobeer": {"Zoo Beer"}; 
 	case "life_inv_RoadConeStripB": {"Leitkegel (Reihe/Licht)"};

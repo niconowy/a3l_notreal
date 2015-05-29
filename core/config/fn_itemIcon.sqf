@@ -79,4 +79,5 @@ switch (_var) do
 	case "life_inv_sunflower": {("icons\items\sonnenblume.paa")};
 	case "life_inv_cannabis": {("icons\items\weed.paa")};
 	case "life_inv_wheat": {("icons\items\wheat.paa")};
+	case "life_inv_augenbinde": {("icons\items\augen_binde.paa")};
 };

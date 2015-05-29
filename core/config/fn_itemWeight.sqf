@@ -90,7 +90,7 @@ switch (_item) do
 	case "Rax's Rum" : {1};
 	case "zoobeer": {1}; // Duff Beer
 	case "blaulicht":{5};
-	case "Augenbinde":{2};
+	case "augenbinde":{2};
 
 	default {1};
 };

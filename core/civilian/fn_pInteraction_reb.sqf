@@ -81,12 +81,12 @@ if((_curTarget getVariable["Escorting",false])) then {
 _Btn5 ctrlSetText "Kommunikation entfernen";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen;";
 
-if((_curTarget getVariable["isblinded",false])) then {
-	_Btn6 ctrlSetText "Augenbinde Entfernen";
-	_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAus; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+if((_curTarget getVariable["isblinded",true])) then {
+	_Btn12 ctrlSetText "Augenbinde Entfernen";
+	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAction; closeDialog 0;";
 } else {
-	_Btn6 ctrlSetText "Augenbinde Anlegen";
-	_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAn; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+	_Btn12 ctrlSetText "Augenbinde Anlegen";
+	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAction; closeDialog 0;";
 };
 
 if(!license_civ_rebel) then

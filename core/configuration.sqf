@@ -253,7 +253,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["opium seed",25],["coke seed",50],["cannabis seed",15],["opium",100],["heroinu",1200],["heroinp",1500],["cocaine",1000],["cocainep",1500],["cannabis",75],["opium",1500],["marijuana",1000],["turtle",2000],["blastingcharge",10000],["boltcutter",500]];
+life_illegal_items = [["augenbinde",10],["opium seed",25],["coke seed",50],["cannabis seed",15],["opium",100],["heroinu",1200],["heroinp",1500],["cocaine",1000],["cocainep",1500],["cannabis",75],["opium",1500],["marijuana",1000],["turtle",2000],["blastingcharge",10000],["boltcutter",500]];
 
 
 /*
@@ -335,7 +335,7 @@ sell_array =
 	["cigarette",5],
 	["Rax's Rum",25],
 	["weddingring",1000],
-	["Augenbinde",10]
+	["augenbinde",10]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -397,7 +397,7 @@ buy_array =
 	["cigarette",25],
 	["Rax's Rum",50],
 	["weddingring",25000],
-	["Augenbinde",855]
+	["augenbinde",855]
 ];
 __CONST__(buy_array,buy_array);
 
