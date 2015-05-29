@@ -1,13 +1,13 @@
 /*
+	File: fn_augenbindeAn.sqf
 	Author: James Sunderland
-	File: augenbindeAus
 	Server: arma-3-life.de
 	
 	Description:
-	Augenbinde bei der Person anlegen.
+	Dem Spieler wird die Augenbinde angelegt.
 */
 
-private["_unit"];
+private["_caller"];
 
 _caller = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 
@@ -20,19 +20,19 @@ while {player getVariable "isblinded"} do {
 
 	if(!alive _caller) exitWith {
 		player setVariable ["isblinded",false,true];
-		814945 cutFadeOut 5;
+		814945 cutFadeOut 10;
+		hint localize "STR_MISC_AugenBinde_DistanceTooBig";
 	};
 	
 	if(!alive player) exitWith {
 		player setVariable ["isblinded",false,true];
-		814945 cutFadeOut 5;
+		814945 cutFadeOut 1;
 	};
 	
 	if(player distance _caller >= 50) exitWith {
 		player setVariable ["isblinded",false,true];
-		814945 cutFadeOut 5;
+		814945 cutFadeOut 10;
+		hint localize "STR_MISC_AugenBinde_DistanceTooBig";
 	};
 
 };
-
-hint "Augenbinde An";

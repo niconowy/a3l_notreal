@@ -137,11 +137,11 @@ _Btn11 ctrlSetText "Kommunikation entfernen";
 _Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen;";
 
 if((_curTarget getVariable["isblinded",true])) then {
-	_Btn12 ctrlSetText "Augenbinde Entfernen";
-	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAction; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+	_Btn12 ctrlSetText localize "STR_pInAct_AugenbindeAn";
+	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAction; closeDialog 0;";
 } else {
-	_Btn12 ctrlSetText "Augenbinde Anlegen";
-	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAction; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+	_Btn12 ctrlSetText localize "STR_pInAct_AugenbindeAus";
+	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAus; closeDialog 0;";
 };
 
 //Check that you are near a place to jail them.

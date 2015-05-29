@@ -957,6 +957,12 @@
 		<Key ID="STR_pInAct_TestIntox">
 			<Original>Alkoholtest</Original>
 		</Key>
+		<Key ID="STR_pInAct_AugenbindeAn">
+			<Original>Augenbinde Anlegen</Original>
+		</Key>
+		<Key ID="STR_pInAct_AugenbindeAus">
+			<Original>Augenbinde Lösen</Original>
+		</Key>
 		<Key ID="STR_Cop_TicketNum">
 			<Original>Du hast keine echte Zahl eingegeben.</Original>
 		</Key>
@@ -1079,6 +1085,12 @@
 		</Key>
 	</Package>
 	<Package name="MISC_Strings">
+		<Key ID="STR_MISC_AugenBinde_DistanceTooBig">
+			<Original>Die Augenbinde scheint sich zu lösen...</Original>
+		</Key>
+		<Key ID="STR_MISC_AugenBinde_Attach">
+			<Original>Augenbinde wird angelegt...</Original>
+		</Key>
 		<Key ID="STR_MISC_TooMuch">
 			<Original>Du wolltest %1 %2 %3 geben, aber er hat keinen Platz in seinem Inventar und hat es darum zurückgegeben.</Original>
 		</Key>

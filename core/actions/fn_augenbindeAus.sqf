@@ -1,10 +1,10 @@
 /*
+	File: fn_augenbindeAus.sqf
 	Author: James Sunderland
-	File: augenbindeAus
 	Server: arma-3-life.de
 	
 	Description:
-	Augenbinde bei der Person entfernen.
+	Dem Ziel die Augenbinde entfernen.
 */
 
 private["_target"];
@@ -18,4 +18,4 @@ _target setVariable["isblinded",false,true];
 814945 cutText [" ","BLACK FADED"];
 814945 cutFadeOut 5;
 
-hint "Augenbinde Aus";
+[[1,format["Jemand entfernt gerade deine Augenbinde..."]],"life_fnc_broadcast",_target,false] spawn life_fnc_MP;

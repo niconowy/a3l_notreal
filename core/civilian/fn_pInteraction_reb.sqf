@@ -82,11 +82,11 @@ _Btn5 ctrlSetText "Kommunikation entfernen";
 _Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen;";
 
 if((_curTarget getVariable["isblinded",true])) then {
-	_Btn12 ctrlSetText "Augenbinde Entfernen";
-	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAction; closeDialog 0;";
+	_Btn6 ctrlSetText localize "STR_pInAct_AugenbindeAn";
+	_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAction; closeDialog 0;";
 } else {
-	_Btn12 ctrlSetText "Augenbinde Anlegen";
-	_Btn12 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAction; closeDialog 0;";
+	_Btn6 ctrlSetText localize "STR_pInAct_AugenbindeAus";
+	_Btn6 buttonSetAction "[life_pInact_curTarget] call life_fnc_augenbindeAus; closeDialog 0;";
 };
 
 if(!license_civ_rebel) then
