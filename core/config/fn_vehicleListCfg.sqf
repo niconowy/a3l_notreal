@@ -255,8 +255,8 @@ switch (_shop) do
 		
 		if(__GETC__(life_mediclevel) > 1) then
 		{
-			_return pushBack ["Jonzie_Ambulance",25000],
-			_return pushBack ["A3L_AmberLamps",25000]
+			_return pushBack ["Jonzie_Ambulance",25000]
+			//_return pushBack ["A3L_AmberLamps",25000] Medics benutzen nur den einen RTW, somit unnötig
 		};
 		
 		if(__GETC__(life_mediclevel) > 2) then
