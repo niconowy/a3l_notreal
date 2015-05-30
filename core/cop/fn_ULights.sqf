@@ -36,7 +36,25 @@ switch (typeOf _vehicle) do{
 	case "cl3_e63_amg_black":{
 		_lightleft lightAttachObject [_vehicle, [-0.48, -0.82, 0.04]];
 	};
+	case "cl3_e63_amg_white":{
+		_lightleft lightAttachObject [_vehicle, [-0.48, -0.82, 0.04]];
+	};
+	case "cl3_e63_amg_lime":{
+		_lightleft lightAttachObject [_vehicle, [-0.48, -0.82, 0.04]];
+	};
+	case "cl3_e63_amg_light_yellow":{
+		_lightleft lightAttachObject [_vehicle, [-0.48, -0.82, 0.04]];
+	};
 	case "cl3_e60_m5_black":{
+		_lightleft lightAttachObject [_vehicle, [-0.48, -0.82, 0.16]];
+	};
+	case "cl3_e60_m5_white":{
+		_lightleft lightAttachObject [_vehicle, [-0.48, -0.82, 0.16]];
+	};
+	case "cl3_e60_m5_lime":{
+		_lightleft lightAttachObject [_vehicle, [-0.48, -0.82, 0.16]];
+	};
+	case "cl3_e60_m5_light_yellow":{
 		_lightleft lightAttachObject [_vehicle, [-0.48, -0.82, 0.16]];
 	};
 		/*
