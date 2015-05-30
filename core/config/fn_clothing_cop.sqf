@@ -47,6 +47,7 @@ switch (_filter) do
 	{
 		_ret pushBack ["A3L_sargehat",nil,50];
 		_ret pushBack ["A3L_policehelmet","Polizeimütze",50];
+		//_ret pushBack ["H_HelmetB_black","FBI Helm",50];
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
 		_ret pushBack ["H_RacingHelmet_1_black_F",nil,250];
 	};
