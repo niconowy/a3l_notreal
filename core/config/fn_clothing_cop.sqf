@@ -49,7 +49,7 @@ switch (_filter) do
 		_ret pushBack ["A3L_policehelmet","Polizeihelm",50];
 		//_ret pushBack ["H_HelmetB_black","SWAT Helm",50];
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
-		_ret pushBack ["H_RacingHelmet_1_black_F",nil,250]; Funkioniert nicht, wo ist der Fehler?	
+		_ret pushBack ["H_RacingHelmet_1_black_F",nil,250];
 	};
 	
 	//Glasses
