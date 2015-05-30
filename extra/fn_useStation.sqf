@@ -36,7 +36,7 @@ while {true} do
 		
 		hintSilent parseText format["<img image='images\fuel.jpg'/><br/><br/><t size='1.1' font='TahomaB'>Betankung Läuft:</t><br/><t size='1.2' color='#ff0000'>%1%2 %3€</t>", ceil (_fuel_new * 100), "%", _spent_money];
 		
-		sleep 0.79;
+		sleep 0.75;
 	};
 
 	[1,false] call SOCK_fnc_updateRequest;
