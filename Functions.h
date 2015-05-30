@@ -473,7 +473,7 @@ class Life_Client_Core
 	{
 		file = "extra";
 		class cleanStation {};
-		class tankchanger {};
+		//class tankchanger {};
 		class useStation {};
 	};
 	
