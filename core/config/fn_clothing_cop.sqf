@@ -46,8 +46,7 @@ switch (_filter) do
 	case 1:
 	{
 		_ret pushBack ["A3L_sargehat",nil,50];
-		_ret pushBack ["A3L_policehelmet","Polizeihelm",50];
-		//_ret pushBack ["H_HelmetB_black","SWAT Helm",50];
+		_ret pushBack ["A3L_policehelmet","Polizeimütze",50];
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
 		_ret pushBack ["H_RacingHelmet_1_black_F",nil,250];
 	};
@@ -100,7 +99,7 @@ switch (_filter) do
 		
 		_ret pushBack ["A3L_sheriffvest2","LSPD",500];
 		_ret pushBack ["A3L_sheriffvest1","Sheriff",500];
-		_ret pushBack ["SERTvest1","Sheriff Weste",500];
+		//_ret pushBack ["SERTvest1","Sheriff Weste",500];
 		
 		//_ret pushBack ["A3L_deptjvest1","State Police",500];
 		_ret pushBack ["A3L_rangervest1","Chief",500];

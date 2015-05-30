@@ -24,6 +24,7 @@ switch (_filter) do
 	{
 		[
 		//["A3L_Zombie","Zombie",35000],
+		["FBI_uni","FBI Kleidung",250],
 		["A3L_Bikini_Girl","Bikini Girl",25000],
 		["A3L_Priest_Uniform","Priest Uniform",10000],
 		["A3L_Suit_Uniform","Suit",17500],
@@ -146,6 +147,7 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["H_HelmetB_black","FBI Helm",50],
 			["A3L_Legoman","Lego Helmet",10000],
 			["A3L_Halloween_Pumpkinhead","Pumpkin",10000],
 			["A3L_Halloween_PredatorMask","Predator",7500],
@@ -235,7 +237,13 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["A3L_policevest1","FBI",150]
+			["A3L_policevest1","FBI",150],
+			["k_cut_1","Sinister Sons",550],
+			["k_cut_2","Gold Gunners",550],
+			["k_cut_3","Sons of Anarchy Member",550],
+			["k_cut_4","Sons of Anarchy President",550],
+			["k_cut_5","Sons of Outlaws",550],
+			["Jamie_Sheriff1","Große FBI Weste",550]
 		];
 	};
 	
