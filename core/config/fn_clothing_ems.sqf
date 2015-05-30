@@ -69,7 +69,23 @@ switch (_filter) do
 			["G_Lady_Blue",nil,150],
 			["G_Lowprofile",nil,30],
 			["G_Bandanna_aviator",nil,20],
-			["G_Diving",nil,500]
+			["G_Diving",nil,500],
+			["SFG_Tac_BeardD","Tactical Beard (Dark)",275],
+			["SFG_Tac_BeardB","Tactical Beard (Blonde)",275],
+			["SFG_Tac_BeardG","Tactical Beard (Ginger)",275],
+			["SFG_Tac_BeardO","Tactical Beard (Old)",275],
+			["SFG_Tac_ChopsD","Tactical Mutton Chops (Dark)",275],
+			["SFG_Tac_ChopsG","Tactical Mutton Chops (Ginger)",275],
+			["SFG_Tac_ChopsB","Tactical Mutton Chops (Blonde)",275],
+			["SFG_Tac_ChopsO","Tactical Mutton Chops (Old)",275],
+			["SFG_Tac_moustacheD","Tactical Moustache (Dark)",275],
+			["SFG_Tac_moustacheG","Tactical Moustache (Ginger)",275],
+			["SFG_Tac_moustacheB","Tactical Moustache (Blonde)",275],
+			["SFG_Tac_moustacheO","Tactical Moustache (Old)",275],
+			["SFG_Tac_chinlessbD","Tactical Chinless Beard (Dark)",275],
+			["SFG_Tac_chinlessbG","Tactical Chinless Beard (Ginger)",275],
+			["SFG_Tac_chinlessbB","Tactical Chinless Beard (Blonde)",275],
+			["SFG_Tac_chinlessbO","Tactical Chinless Beard (Old)",275]
 		];
 	};
 	

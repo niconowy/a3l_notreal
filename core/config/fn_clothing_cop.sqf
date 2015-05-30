@@ -71,7 +71,23 @@ switch (_filter) do
 			["G_Balaclava_blk",nil,55],
 			["G_Balaclava_combat",nil,55],
 			["G_Balaclava_lowprofile",nil,55],
-			["A3L_Balaclava",nil,60]
+			["A3L_Balaclava",nil,60],
+			["SFG_Tac_BeardD","Tactical Beard (Dark)",275],
+			["SFG_Tac_BeardB","Tactical Beard (Blonde)",275],
+			["SFG_Tac_BeardG","Tactical Beard (Ginger)",275],
+			["SFG_Tac_BeardO","Tactical Beard (Old)",275],
+			["SFG_Tac_ChopsD","Tactical Mutton Chops (Dark)",275],
+			["SFG_Tac_ChopsG","Tactical Mutton Chops (Ginger)",275],
+			["SFG_Tac_ChopsB","Tactical Mutton Chops (Blonde)",275],
+			["SFG_Tac_ChopsO","Tactical Mutton Chops (Old)",275],
+			["SFG_Tac_moustacheD","Tactical Moustache (Dark)",275],
+			["SFG_Tac_moustacheG","Tactical Moustache (Ginger)",275],
+			["SFG_Tac_moustacheB","Tactical Moustache (Blonde)",275],
+			["SFG_Tac_moustacheO","Tactical Moustache (Old)",275],
+			["SFG_Tac_chinlessbD","Tactical Chinless Beard (Dark)",275],
+			["SFG_Tac_chinlessbG","Tactical Chinless Beard (Ginger)",275],
+			["SFG_Tac_chinlessbB","Tactical Chinless Beard (Blonde)",275],
+			["SFG_Tac_chinlessbO","Tactical Chinless Beard (Old)",275]
 			
 		];
 	};

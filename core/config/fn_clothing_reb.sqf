@@ -72,7 +72,23 @@ switch (_filter) do
 			["G_Balaclava_blk",nil,1337],
 			["G_Balaclava_combat",nil,1337],
 			["G_Balaclava_lowprofile",nil,1337],
-			["A3L_Balaclava",nil,1337]
+			["A3L_Balaclava",nil,1337],
+			["SFG_Tac_BeardD","Tactical Beard (Dark)",275],
+			["SFG_Tac_BeardB","Tactical Beard (Blonde)",275],
+			["SFG_Tac_BeardG","Tactical Beard (Ginger)",275],
+			["SFG_Tac_BeardO","Tactical Beard (Old)",275],
+			["SFG_Tac_ChopsD","Tactical Mutton Chops (Dark)",275],
+			["SFG_Tac_ChopsG","Tactical Mutton Chops (Ginger)",275],
+			["SFG_Tac_ChopsB","Tactical Mutton Chops (Blonde)",275],
+			["SFG_Tac_ChopsO","Tactical Mutton Chops (Old)",275],
+			["SFG_Tac_moustacheD","Tactical Moustache (Dark)",275],
+			["SFG_Tac_moustacheG","Tactical Moustache (Ginger)",275],
+			["SFG_Tac_moustacheB","Tactical Moustache (Blonde)",275],
+			["SFG_Tac_moustacheO","Tactical Moustache (Old)",275],
+			["SFG_Tac_chinlessbD","Tactical Chinless Beard (Dark)",275],
+			["SFG_Tac_chinlessbG","Tactical Chinless Beard (Ginger)",275],
+			["SFG_Tac_chinlessbB","Tactical Chinless Beard (Blonde)",275],
+			["SFG_Tac_chinlessbO","Tactical Chinless Beard (Old)",275]
 		];
 	};
 	
@@ -83,7 +99,12 @@ switch (_filter) do
 			["V_HarnessO_brn",nil,7500],
 			["V_BandollierB_cbr",nil,4500],
 			["V_TacVest_khk",nil,12500],
-			["V_TacVest_camo",nil,12500]
+			["V_TacVest_camo",nil,12500],
+			["k_cut_1","Sinister Sons",2500],
+			["k_cut_2","Gold Gunners",2500],
+			["k_cut_3","Sons of Anarchy Member",2500],
+			["k_cut_4","Sons of Anarchy President",2500],
+			["k_cut_5","Sons of Outlaws",2500]
 		];
 	};
 	
