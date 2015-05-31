@@ -36,8 +36,7 @@ switch (_filter) do
 		[
 			["RPIMA_helm","SWAT Helm",550],
 			["gign_Balaclava","Taktische Maske",50],
-			["Campaign_Hat_Dark","StatePolice Hut",350],
-			
+			["Campaign_Hat_Dark","StatePolice Hut",350]	
 		];
 	};
 	
