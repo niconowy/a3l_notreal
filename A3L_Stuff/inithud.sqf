@@ -105,7 +105,7 @@ if (_prcentammo == 0) then {
 if (_zeroing == 0) then {
                 _zeroingtext = parseText format[""];
         } else {
-                _zeroingtext = parseText format["Zeroing: %1M", _zeroing];
+                _zeroingtext = parseText format["Nullpunkt: %1M", _zeroing];
 };
  
  
