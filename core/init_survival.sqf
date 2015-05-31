@@ -90,8 +90,8 @@ private["_obj"];
 			if(life_intox <= 0.02) then {life_intox = 0.00;} else {life_intox = life_intox - 0.02;};
 			[] call life_fnc_hudUpdate;
 			switch(true) do {
-				case (life_intox == 0.00): {hint "Du bist nun nüchtern";};
-				case (life_intox == 0.08): {hint "You can now legally drive.";};
+				case (life_intox == 0.00): {hint "Du bist nun nüchtern!";};
+				case (life_intox == 0.08): {hint "Du darfst nun legal ein Fahrzeug bedienen.";};
 			};
 		};
 	};
@@ -103,7 +103,7 @@ private["_obj"];
 	{
 		waitUntil {life_intox > 0.08};
 		player setVariable["intoxicated",true,true];
-		[[0,format["%1 seems intoxicated.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 25],false] spawn life_fnc_MP;
+		[[0,format["%1 ist überdosiert.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 25],false] spawn life_fnc_MP;
 		while{life_intox > 0.08} do 
 		{
 			"dynamicBlur" ppEffectEnable true;
@@ -128,7 +128,7 @@ private["_obj"];
 		[[0,format["%1 has passed out.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 50],false] spawn life_fnc_MP;
 		while{life_intox > 0.30} do 
 		{
-			hint "Your intoxication level is above 0.30 and you are overdosing. Seek immediate treatment or find some stimulants! If you go above 0.40, you may die.";
+			hint "Dein Suchtfakto ist über 0.30 und du bist überdosiert. Wenn du über 0.40 kommst, stirbst du - eventuell.";
 			sleep 60;
 		};
 		detach player;

@@ -61,13 +61,13 @@ waitUntil {(!isNil {A3L_fnc_dreDeta8})};
 _TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
 
 if (isNil "TFAR_fnc_isTeamSpeakPluginEnabled") exitwith {
-	999999 cutText ["Task Force Radio is not running on your computer. Please re-sync and retry","BLACK FADED"];
+	999999 cutText ["Task-Force-Radio ist nicht auf deinem Computer installiert.","BLACK FADED"];
 	999999 cutFadeOut 99999999;
 };
 
 if (!(_TFenabled)) then {
 	while {!([] call TFAR_fnc_isTeamSpeakPluginEnabled)} do {
-		titleText ["Please enable Task Force Radio in your TS3 Plugins! || TS3 -> Settings -> Plugins", "BLACK"];
+		titleText ["Bitte aktiviere das TeamSpeak3 Plugin 'Task Force Arma3 Radio'  |  Einstellungen > Plugins - dort das Plugin aktivieren.", "BLACK"];
 		sleep 2;
 	};
 };
@@ -75,7 +75,7 @@ if (!(_TFenabled)) then {
 A3L_TFEnabled = true;
 A3L_onTsServer = "[GER] Lakeside Reallife - Lebe deinen Traum" == (call TFAR_fnc_getTeamSpeakServerName);
 A3L_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
-titleText ["Task Force Radio erfolgreich geladen!","BLACK IN"];
+titleText ["= TFAR Erfolgreich Geladen ==","BLACK IN"];
 
 [] spawn {
 
@@ -93,28 +93,28 @@ titleText ["Task Force Radio erfolgreich geladen!","BLACK IN"];
 				if (!(_isadmin)) then {
 					_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
 					if ((!(_TFenabled)) && (A3L_TFEnabled)) then {
-						titleText ["Bitte Aktiviere das Teamspeak 3 TFAR Plugin! || TS3 -> Settings -> Plugins", "BLACK"];
+						titleText ["Bitte aktiviere das TeamSpeak3 Plugin 'Task Force Arma3 Radio'  ||  Einstellungen > Plugins - dort das Plugin aktivieren.", "BLACK"];
 						A3L_TFEnabled = false;
 					};
 					
 					_onTsServer = "[GER] Lakeside Reallife - Lebe deinen Traum" == (call TFAR_fnc_getTeamSpeakServerName);
 					if (!(_onTsServer)) then {
-						titleText ["Bitte tritt unserem Teamspeak 3 Server bei!", "BLACK"];
+						titleText ["Bitte verbinde dich auf unseren TeamSpeak3 Server: 144.76.105.204:9987", "BLACK"];
 						A3L_onTsServer = false;
 					} else {
 						if (!(A3L_onTsServer)) then {
-							titleText ["TS server check completed. Welcome!","BLACK IN"];
+							titleText ["Ts3 Server Checked. Willkommen!","BLACK IN"];
 							A3L_onTsServer = true;
 						};
 					};
 					
 					_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
 					if (!(_onChannel)) then {
-						titleText ["Bitte lade das TFAR Plugin neu! || Settings -> Plugins -> Reload All", "BLACK"];
+						titleText ["Bitte lade das TeamSpeak3 Plugin 'Task Force Arma3 Radio' neu!  ||  Einstellungen -> Plugins -> Reload All", "BLACK"];
 						A3L_onChannel = false;
 					} else {
 						if (!(A3L_onChannel)) then {
-							titleText ["TS channel check completed. Welcome!","BLACK IN"];
+							titleText ["Ts3 Channel Checked. Willkommen!","BLACK IN"];
 							A3L_onChannel = true;
 						};
 					};
@@ -160,19 +160,19 @@ if (!isServer) then {
 diag_log "::Life Client:: Received server functions.";
 
 diag_log "::Life Client:: Executed custom client functions";
-0 cutText ["Waiting for the server to be ready...","BLACK FADED"];
+0 cutText ["Warte auf den Server, bis dieser bereit ist...","BLACK FADED"];
 0 cutFadeOut 99999999;
 diag_log "::Life Client:: Waiting for the server to be ready..";
 waitUntil{!isNil "life_server_isReady"};
 waitUntil{(life_server_isReady OR !isNil "life_server_extDB_notLoaded")};
 if(!isNil "life_server_extDB_notLoaded") exitWith {
 	diag_log "::Life Client:: Server did not load extDB";
-	999999 cutText ["The server-side extension extDB was not loaded into the engine, report this to the server admin.","BLACK FADED"];
+	999999 cutText ["Die serverseitige Version von extDB wurde falsch geladen! Bitte einem Administrator mitteilen!!","BLACK FADED"];
 	999999 cutFadeOut 99999999;
 };
 [] call SOCK_fnc_dataQuery;
 waitUntil {life_session_completed};
-0 cutText["Finishing client setup procedure","BLACK FADED"];
+0 cutText["Vollende Client-Setup Prozedur...","BLACK FADED"];
 0 cutFadeOut 9999999;
 
 //diag_log "::Life Client:: Group Base Execution";
