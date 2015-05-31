@@ -1,5 +1,5 @@
 author = "A3L Dev-Team by arma-3-life.de";
-onLoadName = "Lakeside Reallife v2.0.0.0";
+onLoadName = "Lakeside Reallife v2.0.0.1";
 onLoadMission = "http://arma-3-life.de";
 loadScreen = "textures\E76_AppleGate_Lake.paa";
 joinUnassigned = 1;
