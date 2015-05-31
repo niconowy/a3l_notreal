@@ -185,6 +185,9 @@ switch (_filter) do
 			["kio_no1_hat",nil,5000],
 			["kio_pirate_hat",nil,5000],
 			["kio_santa_hat",nil,5000],
+			["kio_skl_msk","Skull Mask",1500],
+			["kio_skl_msk_red","Skull Mask Red",1500],
+			["kio_skl_msk_grn","Skull Mask Green",1500],
 			
 			//1.7.1
 			["glt_booniehat_orange",nil,1000],
@@ -243,7 +246,8 @@ switch (_filter) do
 			["k_cut_3","Sons of Anarchy Member",550],
 			["k_cut_4","Sons of Anarchy President",550],
 			["k_cut_5","Sons of Outlaws",550],
-			["Jamie_Sheriff1","Große FBI Weste",550]
+			["Jamie_Sheriff1","Große FBI Weste",550],
+			["Jamie_Rebell",nil,550]
 		];
 	};
 	
