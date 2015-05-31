@@ -702,6 +702,8 @@ switch(_shop) do
 					["RH_7Rnd_50_AE",nil,635],
 					//["RH_tec9",nil,29750], Zu Op
 					//["RH_tecsd",nil,1275], Zu Op
+					["R3F_HK417M","HK4 17M",225000],
+					["R3F_20Rnd_762x51_HK417","HK4 17 Munition",3000],
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -761,6 +763,8 @@ switch(_shop) do
 					["RH_7Rnd_50_AE",nil,635],
 					//["RH_tec9",nil,29750], Zu Op
 					//["RH_tecsd",nil,1275], Zu Op
+					["R3F_HK417M","HK4 17M",225000],
+					["R3F_20Rnd_762x51_HK417","HK4 17 Munition",3000],
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -820,6 +824,8 @@ switch(_shop) do
 					["RH_7Rnd_50_AE",nil,635],
 					//["RH_tec9",nil,29750], Zu Op
 					//["RH_tecsd",nil,1275], Zu Op
+					["R3F_HK417M","HK4 17M",225000],
+					["R3F_20Rnd_762x51_HK417","HK4 17 Munition",3000],
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
