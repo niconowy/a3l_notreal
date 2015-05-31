@@ -90,7 +90,7 @@ private["_obj"];
 			if(life_intox <= 0.02) then {life_intox = 0.00;} else {life_intox = life_intox - 0.02;};
 			[] call life_fnc_hudUpdate;
 			switch(true) do {
-				case (life_intox == 0.00): {hint "Du bist wieder nüchtern.";};
+				case (life_intox == 0.00): {hint "Du bist nun nüchtern";};
 				case (life_intox == 0.08): {hint "You can now legally drive.";};
 			};
 		};
