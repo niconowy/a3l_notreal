@@ -698,6 +698,8 @@ switch(_shop) do
 					["optic_Yorris",nil,4250],
 					
 					["RH_7Rnd_50_AE",nil,635],
+					["RH_tec9",nil,29750],
+					["RH_tecsd",nil,1275],
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -755,6 +757,8 @@ switch(_shop) do
 					["optic_Yorris",nil,4250],
 					
 					["RH_7Rnd_50_AE",nil,635],
+					["RH_tec9",nil,29750],
+					["RH_tecsd",nil,1275],
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -800,8 +804,8 @@ switch(_shop) do
 					["tf_fadak","Kurzstreckenfunk",80],
 					["tf_mr3000","Langstreckenfunk",4250],
 					["cse_bandage_basic",nil,1500]
-					]
-				];
+				]
+			 ];
 			};
 			
 			case (__GETC__(life_donator) == 5):
@@ -812,6 +816,8 @@ switch(_shop) do
 					["optic_Yorris",nil,4250],
 					
 					["RH_7Rnd_50_AE",nil,635],
+					["RH_tec9",nil,29750],
+					["RH_tecsd",nil,1275],
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -857,8 +863,8 @@ switch(_shop) do
 					["tf_fadak","Kurzstreckenfunk",80],
 					["tf_mr3000","Langstreckenfunk",4250],
 					["cse_bandage_basic",nil,1500]
-					]
-				];
+				]
+			 ];
 			};
 			default {"Du bist kein Donator!"}; //Opfer lol
 		};

@@ -527,7 +527,7 @@ switch (_shop) do
 		if(__GETC__(life_donator) == 0) exitWith { hint "Du bist kein Donator" };
 		if(__GETC__(life_donator) == 2) exitWith { hint "Du bist kein Donator" };
 		if(__GETC__(life_donator) == 4) exitWith { hint "Du bist kein Donator" };
-		if(__GETC__(life_donator) == 0) then
+		if(__GETC__(life_donator) == 1) then
 		{			
 			_return pushBack ["cl3_reventon_2tone2",612000];
 			_return pushBack ["cl3_reventon_2tone3",612000];
