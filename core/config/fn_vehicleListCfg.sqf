@@ -1245,7 +1245,8 @@ switch (_shop) do
 			_return pushBack ["A3L_EvoXFPBLBPD",70000],
 			_return pushBack ["A3L_EvoXFPBLBSO",70000],
 			_return pushBack ["A3L_EvoXFPBLBSP",70000],
-			_return pushBack ["DAR_TahoePoliceDet",50000]
+			_return pushBack ["DAR_TahoePoliceDet",50000],
+			_return pushBack ["DAR_SWATPolice",85000]
 		};
 			
 		if(__GETC__(life_coplevel) > 9) then
