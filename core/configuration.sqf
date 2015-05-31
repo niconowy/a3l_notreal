@@ -214,7 +214,7 @@ life_inv_items =
 	"life_inv_ziptie",
 	"life_inv_cigarette",
 	"life_inv_raxsrum",
-	"life_inv_weddingring",
+	"life_inv_weddingring"
 ];
 
 //Setup variable inv vars.
