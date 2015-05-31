@@ -536,6 +536,25 @@ switch (_shop) do
 			_return pushBack ["cl3_reventon_flame1",612000];
 			_return pushBack ["cl3_reventon_camo",612000];
 			
+			_return pushBack ["cl3_enduro_yellow",176800];
+			_return pushBack ["cl3_enduro_black",176800];
+			_return pushBack ["cl3_enduro_blue",176800];
+			_return pushBack ["cl3_enduro_aqua",176800];
+			_return pushBack ["cl3_enduro_babypink",176800];
+			_return pushBack ["cl3_enduro_red",176800];
+			_return pushBack ["cl3_enduro_dark_green",176800];
+			
+			_return pushBack ["cl3_chopper_blue",212500];
+			_return pushBack ["cl3_chopper_green",212500];
+			_return pushBack ["cl3_chopper_red",212500];
+			
+			_return pushBack ["cl3_xr_1000_yellow",202300];
+			_return pushBack ["cl3_xr_1000_black",202300];
+			_return pushBack ["cl3_xr_1000_babypink",202300];
+			_return pushBack ["cl3_xr_1000_red",202300];
+			_return pushBack ["cl3_xr_1000_lime",202300];
+			_return pushBack ["cl3_xr_1000_flame",202300];
+			
 			_return pushBack ["cl3_murcielago_2tone2",540000];
 			_return pushBack ["cl3_murcielago_2tone3",540000];
 			_return pushBack ["cl3_murcielago_2tone4",540000];
@@ -716,6 +735,9 @@ switch (_shop) do
 			
 			_return pushBack ["A3L_Bus",63000];
 			_return pushBack ["A3L_SchoolBus",76500];
+			
+			_return pushBack ["wirk_h3_limo",2975000];
+			_return pushBack ["Nhz_audia8limo",2550000];
 		}; 
 		
 		if(__GETC__(life_donator) == 3) then
@@ -727,6 +749,25 @@ switch (_shop) do
 			_return pushBack ["cl3_reventon_flame1",612000];
 			_return pushBack ["cl3_reventon_camo",612000];
 			
+			_return pushBack ["cl3_enduro_yellow",176800];
+			_return pushBack ["cl3_enduro_black",176800];
+			_return pushBack ["cl3_enduro_blue",176800];
+			_return pushBack ["cl3_enduro_aqua",176800];
+			_return pushBack ["cl3_enduro_babypink",176800];
+			_return pushBack ["cl3_enduro_red",176800];
+			_return pushBack ["cl3_enduro_dark_green",176800];
+			
+			_return pushBack ["cl3_chopper_blue",212500];
+			_return pushBack ["cl3_chopper_green",212500];
+			_return pushBack ["cl3_chopper_red",212500];
+			
+			_return pushBack ["cl3_xr_1000_yellow",202300];
+			_return pushBack ["cl3_xr_1000_black",202300];
+			_return pushBack ["cl3_xr_1000_babypink",202300];
+			_return pushBack ["cl3_xr_1000_red",202300];
+			_return pushBack ["cl3_xr_1000_lime",202300];
+			_return pushBack ["cl3_xr_1000_flame",202300];
+			
 			_return pushBack ["cl3_murcielago_2tone2",540000];
 			_return pushBack ["cl3_murcielago_2tone3",540000];
 			_return pushBack ["cl3_murcielago_2tone4",540000];
@@ -907,6 +948,9 @@ switch (_shop) do
 			
 			_return pushBack ["A3L_Bus",63000];
 			_return pushBack ["A3L_SchoolBus",76500];
+			
+			_return pushBack ["wirk_h3_limo",2975000];
+			_return pushBack ["Nhz_audia8limo",2550000];
 		}; 
 		
 		if(__GETC__(life_donator) == 5) then
@@ -918,6 +962,25 @@ switch (_shop) do
 			_return pushBack ["cl3_reventon_flame1",612000];
 			_return pushBack ["cl3_reventon_camo",612000];
 			
+			_return pushBack ["cl3_enduro_yellow",176800];
+			_return pushBack ["cl3_enduro_black",176800];
+			_return pushBack ["cl3_enduro_blue",176800];
+			_return pushBack ["cl3_enduro_aqua",176800];
+			_return pushBack ["cl3_enduro_babypink",176800];
+			_return pushBack ["cl3_enduro_red",176800];
+			_return pushBack ["cl3_enduro_dark_green",176800];
+			
+			_return pushBack ["cl3_chopper_blue",212500];
+			_return pushBack ["cl3_chopper_green",212500];
+			_return pushBack ["cl3_chopper_red",212500];
+			
+			_return pushBack ["cl3_xr_1000_yellow",202300];
+			_return pushBack ["cl3_xr_1000_black",202300];
+			_return pushBack ["cl3_xr_1000_babypink",202300];
+			_return pushBack ["cl3_xr_1000_red",202300];
+			_return pushBack ["cl3_xr_1000_lime",202300];
+			_return pushBack ["cl3_xr_1000_flame",202300];
+			
 			_return pushBack ["cl3_murcielago_2tone2",540000];
 			_return pushBack ["cl3_murcielago_2tone3",540000];
 			_return pushBack ["cl3_murcielago_2tone4",540000];
@@ -1098,6 +1161,9 @@ switch (_shop) do
 			
 			_return pushBack ["A3L_Bus",63000];
 			_return pushBack ["A3L_SchoolBus",76500];
+			
+			_return pushBack ["wirk_h3_limo",2975000];
+			_return pushBack ["Nhz_audia8limo",2550000];
 		}; 
 	};
 	
@@ -1210,6 +1276,25 @@ switch (_shop) do
 			["cl3_lada_white",3850],
 			["cl3_volha_black",4200],
 			["cl3_volha_grey",4200],
+			
+			["cl3_enduro_yellow",80000],
+			["cl3_enduro_black",80000],
+			["cl3_enduro_blue",80000],
+			["cl3_enduro_aqua",80000],
+			["cl3_enduro_babypink",80000],
+			["cl3_enduro_red",80000],
+			["cl3_enduro_dark_green",80000],
+			
+			["cl3_chopper_blue",85000],
+			["cl3_chopper_green",85000],
+			["cl3_chopper_red",85000],
+			
+			["cl3_xr_1000_yellow",82000],
+			["cl3_xr_1000_black",82000],
+			["cl3_xr_1000_babypink",82000],
+			["cl3_xr_1000_red",82000],
+			["cl3_xr_1000_lime",82000],
+			["cl3_xr_1000_flame",82000],
 			
 			//["IVORY_PRIUS",15750],
 			
