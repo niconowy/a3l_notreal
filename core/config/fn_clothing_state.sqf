@@ -34,8 +34,9 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["RPIMA_helm","SWAT Helm",150],
-			["gign_Balaclava","Taktische Maske",50]
+			["RPIMA_helm","SWAT Helm",550],
+			["gign_Balaclava","Taktische Maske",50],
+			["Campaign_Hat_Dark","StatePolice Hut",350],
 			
 		];
 	};

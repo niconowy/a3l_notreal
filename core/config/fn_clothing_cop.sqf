@@ -50,6 +50,7 @@ switch (_filter) do
 		//_ret pushBack ["H_HelmetB_black","FBI Helm",50];
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
 		_ret pushBack ["H_RacingHelmet_1_black_F",nil,250];
+		_ret pushBack ["Campaign_Hat_Light","Ausbilder Hut",350];
 	};
 	
 	//Glasses
