@@ -127,7 +127,7 @@ switch (_code) do
 	//Q Key
     case 16:
     {    
-        if(playerSide != civilian && (!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
+        if((!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
         {
             {
                 _str = [_x] call life_fnc_varToStr;

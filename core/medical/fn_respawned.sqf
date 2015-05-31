@@ -43,6 +43,9 @@ switch(playerSide) do
 	waitUntil {scriptDone _handle};
 };
 
+814945 cutText [" ","BLACK FADED"];
+814945 cutFadeOut 2;
+
 //Cleanup of weapon containers near the body & hide it.
 if(!isNull life_corpse) then {
 	private["_containers"];
@@ -74,9 +77,6 @@ if(!isNil "life_copRecieve") then {
 if(life_removeWanted) then {
 	[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 };
-
-814945 cutText [" ","BLACK FADED"];
-814945 cutFadeOut 2;
 
 [] call SOCK_fnc_updateRequest;
 [] call life_fnc_hudUpdate; //Request update of hud.
