@@ -104,7 +104,8 @@ switch (_filter) do
 			["k_cut_2","Gold Gunners",2500],
 			["k_cut_3","Sons of Anarchy Member",2500],
 			["k_cut_4","Sons of Anarchy President",2500],
-			["k_cut_5","Sons of Outlaws",2500]
+			["k_cut_5","Sons of Outlaws",2500],
+			["Jamie_Rebell",nil,5000]
 		];
 	};
 	

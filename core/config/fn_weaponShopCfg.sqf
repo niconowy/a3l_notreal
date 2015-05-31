@@ -549,9 +549,9 @@ switch(_shop) do
 			{
 				["Captain bis Chief of Department",
 					[
-						["prpl_benelli_14_pgs",nil,15000],
-						["prpl_benelli_muzzle_break",nil,15000],
-						["prpl_6Rnd_12Gauge_Pellets",nil,250],
+						//["prpl_benelli_14_pgs",nil,15000], Zu Op
+						//["prpl_benelli_muzzle_break",nil,15000], Zu Op
+						//["prpl_6Rnd_12Gauge_Pellets",nil,250], Zu Op
 						
 						["RH_Mk12mod1",nil,10000],
 						["RH_30Rnd_556x45_Mk262",nil,750],
@@ -627,9 +627,11 @@ switch(_shop) do
 						["RH_demz",nil,7500],
 						["optic_Yorris",nil,5000],
 						
-						["RH_tec9",nil,35000],
-						["RH_tecsd",nil,1500],
-						["RH_32Rnd_9x19_tec",nil,500],
+						//["RH_tec9",nil,35000], Zu Op
+						//["RH_tecsd",nil,1500], Zu Op
+						//["RH_32Rnd_9x19_tec",nil,500], Zu Op
+						["R3F_HK417M","HK4 17M",225000],
+						["R3F_20Rnd_762x51_HK417","HK4 17 Munition",3000],
 						["RH_7Rnd_50_AE",nil,750],
 						["A3L_SA61",nil,45000],
 						["A3L_SA61mag",nil,900],
@@ -698,8 +700,8 @@ switch(_shop) do
 					["optic_Yorris",nil,4250],
 					
 					["RH_7Rnd_50_AE",nil,635],
-					["RH_tec9",nil,29750],
-					["RH_tecsd",nil,1275],
+					//["RH_tec9",nil,29750], Zu Op
+					//["RH_tecsd",nil,1275], Zu Op
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -757,8 +759,8 @@ switch(_shop) do
 					["optic_Yorris",nil,4250],
 					
 					["RH_7Rnd_50_AE",nil,635],
-					["RH_tec9",nil,29750],
-					["RH_tecsd",nil,1275],
+					//["RH_tec9",nil,29750], Zu Op
+					//["RH_tecsd",nil,1275], Zu Op
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -816,8 +818,8 @@ switch(_shop) do
 					["optic_Yorris",nil,4250],
 					
 					["RH_7Rnd_50_AE",nil,635],
-					["RH_tec9",nil,29750],
-					["RH_tecsd",nil,1275],
+					//["RH_tec9",nil,29750], Zu Op
+					//["RH_tecsd",nil,1275], Zu Op
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
