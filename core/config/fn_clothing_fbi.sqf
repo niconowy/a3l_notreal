@@ -25,6 +25,12 @@ switch (_filter) do
 		[
 		//["A3L_Zombie","Zombie",35000],
 		["FBI_uni","FBI Kleidung",250],
+		["TRYK_U_B_C02_Tsirt","TRYK CasualUniform (Jeans Black)",450],
+		["KAEL_SUITS_BR_F13","Kael Suit (White)",17500],
+		["KAEL_SUITS_BR_F4","Kael Suit (Purple)",17500],
+		["KAEL_SUITS_BR_F5","Kael Suit (Pink)",17500],
+		["KAEL_SUITS_BR_F","Kael Suit (Red)",17500],
+		["KAEL_SUITS_BR_F3","Kael Suit (Blue)",17500],
 		["A3L_Bikini_Girl","Bikini Girl",25000],
 		["A3L_Priest_Uniform","Priest Uniform",10000],
 		["A3L_Suit_Uniform","Suit",17500],
