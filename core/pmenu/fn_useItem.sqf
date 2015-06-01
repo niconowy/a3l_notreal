@@ -8,6 +8,7 @@
 private["_item"];
 disableSerialization;
 if((lbCurSel 2005) == -1) exitWith {hint localize "STR_ISTR_SelectItemFirst";};
+if(player getVariable["restrained",true]) exitWith {hint "Du kannst keine Gegenstände verwenden während du gefesselt bist!"};
 _item = lbData[2005,(lbCurSel 2005)];
 
 switch (true) do

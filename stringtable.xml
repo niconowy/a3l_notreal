@@ -31,6 +31,9 @@
 		<Key ID="STR_Global_NoSelection">
 			<Original>Du hast nichts ausgewählt.</Original>
 		</Key>
+		<Key ID="STR_Global_NoSelectionPerson">
+			<Original>Du hast keine Person ausgewählt.</Original>
+		</Key>
 		<Key ID="STR_Global_Yes">
 			<Original>Ja</Original>
 		</Key>
@@ -1162,6 +1165,9 @@
 		</Key>
 		<Key ID="STR_MISC_NotEnough">
 			<Original>Das Fahrzeug hat nicht so viele dieser Gegenstände.</Original>
+		</Key>
+		<Key ID="STR_MISC_NotTooMuchDabei">
+			<Original>Soviel hast du gar nicht dabei.</Original>
 		</Key>
 	</Package>
 	<Package name="Housing_Strings">

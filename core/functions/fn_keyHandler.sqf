@@ -28,6 +28,12 @@ _mapKey = actionKeys "ShowMap" select 0;
 //hint str _code;
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
 
+//Dachtaste ' ^° ' und Tactical View und Commander Modus deaktivieren!
+if((_code in (actionKeys "SelectAll") || _code in (actionKeys "ForceCommandingMode") || _code in (actionKeys "TacticalView"))) then {
+	_handled = true;
+};
+
+
 //Vault handling...
 if((_code in (actionKeys "GetOver") || _code in (actionKeys "salute")) && {(player getVariable ["restrained",false])}) exitWith {
 	true;
