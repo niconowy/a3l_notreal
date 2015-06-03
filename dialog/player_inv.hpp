@@ -230,7 +230,7 @@ class playerSettings {
 		};
 		
 		class ButtonSettings : life_RscButtonMenu {
-			idc = -1;
+			idc = 2031;
 			text = "$STR_Global_Settings";
 			onButtonClick = "[] call life_fnc_settingsMenu;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));

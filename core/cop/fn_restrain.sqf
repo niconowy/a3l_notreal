@@ -30,7 +30,8 @@ if(isNull _cop) exitWith {};
 	};
 };*/
 
-titleText[format[localize "STR_Cop_Retrained",_cop getVariable["realname",name _cop]],"PLAIN"];
+//titleText[format[localize "STR_Cop_Retrained",_cop getVariable["realname",name _cop]],"PLAIN"];
+titleText["Du wurdest festgenommen.","PLAIN"];
 [[player,"Cuffed"],"A3L_Fnc_NearestSound",false,false,false] call BIS_fnc_MP;
 				
 while {player getVariable "restrained"} do
@@ -61,7 +62,11 @@ while {player getVariable "restrained"} do
 	if(vehicle player != player) then
 	{
 		//disableUserInput true;
-		if(driver (vehicle player) == player) then {player action["eject",vehicle player];};
+		if(driver (vehicle player) == player) then {
+			player action["eject",vehicle player];
+			player action["getout",vehicle player];	//Einsteigen als Pilot? > Rauswurf!
+			hint parseText format ["Du bist gefesselt und kannst daher kein Fahrzeug führen!<br/><br/>You cannot drive a vehicle while you're restrained!"];
+		};
 	};
 };
 
