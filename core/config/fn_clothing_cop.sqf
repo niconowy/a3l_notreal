@@ -11,7 +11,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"LPD Clothing Shop"];
+ctrlSetText[3103,"LVPD Einsatzkleidung"];
 
 _ret = [];
 switch (_filter) do
@@ -37,9 +37,9 @@ switch (_filter) do
 		//_ret pushBack ["swat_uni1","SWAT",150];
 		
 		//_ret pushBack ["U_B_HeliPilotCoveralls","Pilot",125];
-		_ret pushBack ["A3L_PolicePilot",nil,125];
+		_ret pushBack ["A3L_PolicePilot","Pilotenkleidung",125];
 		_ret pushBack ["A3L_Prisoner_Outfit","Gefängnisuniform",125];
-		_ret pushBack ["A3L_MotorUniP",nil,125];
+		_ret pushBack ["A3L_MotorUniP","Motorradkleidung",125];
 	};
 	
 	//Huete
@@ -59,7 +59,7 @@ switch (_filter) do
 		_ret = 
 		[
 			["G_Shades_Black",nil,25],
-			["Mask_M40",nil,2500],
+			["Mask_M40","Gasmaske",2500],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],
 			["G_Sport_Checkered",nil,20],
@@ -73,22 +73,22 @@ switch (_filter) do
 			["G_Balaclava_combat",nil,55],
 			["G_Balaclava_lowprofile",nil,55],
 			["A3L_Balaclava",nil,60],
-			["SFG_Tac_BeardD","Tactical Beard (Dark)",275],
-			["SFG_Tac_BeardB","Tactical Beard (Blonde)",275],
-			["SFG_Tac_BeardG","Tactical Beard (Ginger)",275],
-			["SFG_Tac_BeardO","Tactical Beard (Old)",275],
-			["SFG_Tac_ChopsD","Tactical Mutton Chops (Dark)",275],
-			["SFG_Tac_ChopsG","Tactical Mutton Chops (Ginger)",275],
-			["SFG_Tac_ChopsB","Tactical Mutton Chops (Blonde)",275],
-			["SFG_Tac_ChopsO","Tactical Mutton Chops (Old)",275],
-			["SFG_Tac_moustacheD","Tactical Moustache (Dark)",275],
-			["SFG_Tac_moustacheG","Tactical Moustache (Ginger)",275],
-			["SFG_Tac_moustacheB","Tactical Moustache (Blonde)",275],
-			["SFG_Tac_moustacheO","Tactical Moustache (Old)",275],
-			["SFG_Tac_chinlessbD","Tactical Chinless Beard (Dark)",275],
-			["SFG_Tac_chinlessbG","Tactical Chinless Beard (Ginger)",275],
-			["SFG_Tac_chinlessbB","Tactical Chinless Beard (Blonde)",275],
-			["SFG_Tac_chinlessbO","Tactical Chinless Beard (Old)",275]
+			["SFG_Tac_BeardD","Bart (Dunkel)",275],
+			["SFG_Tac_BeardB","Bart (Blond)",275],
+			["SFG_Tac_BeardG","Bart (Ginger)",275],
+			["SFG_Tac_BeardO","Bart (Alt)",275],
+			["SFG_Tac_ChopsD","Mutton Chops (Dunkel)",275],
+			["SFG_Tac_ChopsG","Mutton Chops (Ginger)",275],
+			["SFG_Tac_ChopsB","Mutton Chops (Blond)",275],
+			["SFG_Tac_ChopsO","Mutton Chops (Alt)",275],
+			["SFG_Tac_moustacheD","Moustache (Dunkel)",275],
+			["SFG_Tac_moustacheG","Moustache (Ginger)",275],
+			["SFG_Tac_moustacheB","Moustache (Blond)",275],
+			["SFG_Tac_moustacheO","Moustache (Alt)",275],
+			["SFG_Tac_chinlessbD","Chinless Beard (Dunkel)",275],
+			["SFG_Tac_chinlessbG","Chinless Beard (Ginger)",275],
+			["SFG_Tac_chinlessbB","Chinless Beard (Blond)",275],
+			["SFG_Tac_chinlessbO","Chinless Beard (Alt)",275]
 			
 		];
 	};

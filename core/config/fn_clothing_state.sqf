@@ -25,7 +25,7 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["swat_uni1","SWAT",150],
+			["swat_uni1","SWAT Einsatzuniform",150],
 			["doj_uni","State Police",750]
 		];
 	};
@@ -66,7 +66,7 @@ switch (_filter) do
 	{
 		[
 			["SWATvest1","SWAT Weste",1250],
-			["A3L_deptjvest1","State Police",500]
+			["A3L_deptjvest1","State Police Weste",500]
 		];
 	};
 	
@@ -74,7 +74,7 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr",nil,250],
+			["B_AssaultPack_cbr","Schultasche",250],
 			["B_Kitbag_mcamo",nil,450],
 			["B_TacticalPack_oli",nil,350],
 			["B_FieldPack_ocamo",nil,300],
