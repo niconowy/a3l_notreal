@@ -247,7 +247,7 @@ class Life_smartphone_schreiben
 		{
 			idc = 888897;
 			text = "$STR_CELL_AdminMsg";
-			colorBackground[] = {0.18,0.604,0.996,1};
+			colorBackground[] = {0.585, 0.086, 0.086, 1};
 			onButtonClick = "[5,-1,(ctrlText 88884)] call life_fnc_newMsg;";
 			
 			x = 0.6 - (6.25 / 40) - 0.121;
@@ -361,7 +361,7 @@ class Life_smartphone_notruf {
 		{
 			idc = 888898;
 			text = "$STR_CELL_AdminMSGAll";
-			colorBackground[] = {0.18,0.604,0.996,1};
+			colorBackground[] = {0.585, 0.086, 0.086, 1};
 			onButtonClick = "[7,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
 			x = 0.53;
@@ -387,7 +387,7 @@ class Life_smartphone_notruf {
 		{
 			idc = 888828;
 			text = "RUNDFUNK";
-			colorBackground[] = {0.09,0.55,0,1};
+			colorBackground[] = {0.18,0.604,0.996,1};
 			onButtonClick = "[9,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
 			x = 0.745;

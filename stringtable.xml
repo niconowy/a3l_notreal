@@ -46,16 +46,16 @@
 	</Package>
 	<Package name="Admin_Notifications">
 		<Key ID="STR_ANOTF_Query">
-			<Original>Abfrage läuft...</Original>
+			<Original>Abfrage Läuft...</Original>
 		</Key>
 		<Key ID="STR_ANOTF_QueryGarage">
 			<Original>Durchsuche nach Fahrzeugen...</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Query_2">
-			<Original>Du fragst bereits einen Spieler ab.</Original>
+			<Original>Du fragst bereits einen Spieler ab!</Original>
 		</Key>
 		<Key ID="STR_ANOTF_QueryFail">
-			<Original>Spieler existiert nicht mehr?</Original>
+			<Original>Spieler existiert nicht mehr???</Original>
 		</Key>
 	</Package>
 	<Package name="ATM_Strings">
@@ -201,7 +201,7 @@
 	
 	<Package name="Admin_Menu">
 		<Key ID="STR_Admin_Title">
-			<Original>Admin-Menü</Original>
+			<Original>ADMIN MENÜ | Lakeside Reallife - Lebe deinen Traum!</Original>
 		</Key>
 		<Key ID="STR_Admin_GetID">
 			<Original>ID Abfragen</Original>
@@ -231,13 +231,13 @@
 			<Original>Marker</Original>
 		</Key>
 		<Key ID="STR_ANOTF_CompWarn">
-			<Original>To Be Changed</Original>
+			<Original>Bist du dir sicher?</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Success">
 			<Original>Du hast %1€ auf deinen Account hinzugefügt.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Fail">
-			<Original>Nicht mehr als 999,999€.</Original>
+			<Original>Werte über $999.999 sind ungültig!</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Amount">
 			<Original>Bitte geben Sie einen Wert ein!</Original>
@@ -249,16 +249,16 @@
 			<Original>Du hast %1's Steuerung freigegeben.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Error">
-			<Original>Du kannst das nicht tuen. LOL!</Original>
+			<Original>Das kannst du nicht tun...</Original>
 		</Key>
 		<Key ID="STR_ANOTF_ErrorLevel">
-			<Original>Dein Adminlevel ist zu niedrig.</Original>
+			<Original>Dein Adminlevel ist zu niedrig um diese Funktion auszuführen.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_MDisabled">
-			<Original>Spieler Marker deaktiviert.</Original>
+			<Original>Spieler Marker AUS.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_MEnabled">
-			<Original>Spieler Marker aktiviert.</Original>
+			<Original>Spieler Marker AN.</Original>
 		</Key>		
 	</Package>
 	
