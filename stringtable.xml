@@ -468,13 +468,13 @@
 			<Original>Meine Gang</Original>
 		</Key>
 		<Key ID="STR_PM_WantedList">
-			<Original>Fahndungsliste</Original>
+			<Original>Fahndung</Original>
 		</Key>
 		<Key ID="STR_PM_CellPhone">
 			<Original>Telefon</Original>
 		</Key>
 		<Key ID="STR_PM_KeyChain">
-			<Original>Schlüsselbund</Original>
+			<Original>Schlüssel</Original>
 		</Key>
 		<Key ID="STR_PM_AdminMenu">
 			<Original>Admin Menü</Original>

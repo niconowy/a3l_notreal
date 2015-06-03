@@ -619,7 +619,7 @@ switch(_shop) do
 			case (!license_civ_rebel): {"Du hast keine Rebellenausbildung!"};
 			case ((license_civ_rebel)):
 			{
-				["Mohammed's Jihadi Shop",
+				["Muhli's Outlaw Shop",
 					[
 						["cse_epinephrine",nil,50000],
 						["cse_morphine",nil,50000],
@@ -693,7 +693,7 @@ switch(_shop) do
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
 			case (__GETC__(life_donator) == 0): {"Du bist kein Donator!"};
 			case (__GETC__(life_donator) == 1):
-			{["Spezielle Rebellenwaffen",
+			{["Muhli's Special Weapons",
 				[
 					["RH_Deaglem",nil,23375],
 					["RH_demz",nil,6375],
@@ -754,7 +754,7 @@ switch(_shop) do
 			};
 			
 			case (__GETC__(life_donator) == 3):
-			{["Spezielle Rebellenwaffen",
+			{["Muhli's Special Weapons",
 				[
 					["RH_Deaglem",nil,23375],
 					["RH_demz",nil,6375],
@@ -815,7 +815,7 @@ switch(_shop) do
 			};
 			
 			case (__GETC__(life_donator) == 5):
-			{["Spezielle Rebellenwaffen",
+			{["Muhli's Special Weapons",
 				[
 					["RH_Deaglem",nil,23375],
 					["RH_demz",nil,6375],
