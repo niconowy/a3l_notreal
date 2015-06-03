@@ -105,7 +105,7 @@ switch (_filter) do
 			["k_cut_3","Sons of Anarchy Mitglied",2500],
 			["k_cut_4","Sons of Anarchy Chef",2500],
 			["k_cut_5","Sons of Outlaws",2500],
-			["Jamie_Rebell",nil,5000]
+			["Jamie_Rebell","Fuck U Police",50000]
 		];
 	};
 	
