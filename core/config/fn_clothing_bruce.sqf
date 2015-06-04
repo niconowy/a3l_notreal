@@ -81,7 +81,7 @@ switch (_filter) do
 		["RastaCiv",nil,350],
 		["skullshirt_uni",nil,350],
 		["TMBass_uni",nil,350],
-		["vacationshirt_uni","Hawaii Shirt",350]
+		["vacationshirt_uni","Reiseshirt",350]
 		
 /* ** Funktionieren nicht mit Update >2.0.0.0 **
 		//["glt_clothes_citizen",nil,700],

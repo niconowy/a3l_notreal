@@ -12,7 +12,7 @@ objects[] = { };
         {
             idc = -1;
 
-            text = "Lizensen"; //--- ToDo: Localize;
+            text = "Lizenzen"; //--- ToDo: Localize;
             x = 4 * GUI_GRID_W + GUI_GRID_X;
             y = 5 * GUI_GRID_H + GUI_GRID_Y;
             w = 31 * GUI_GRID_W;

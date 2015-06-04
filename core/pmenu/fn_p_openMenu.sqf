@@ -44,7 +44,5 @@ if(__GETC__(life_adminlevel) < 1) then
 	ctrlShow[2021,false];
 };
 
-ctrlShow[2031,false];	//Einstellungsbutton verstecken
-
 
 [] call life_fnc_p_updateMenu;
