@@ -74,7 +74,7 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr",nil,250],
+			["B_AssaultPack_cbr","Schulrucksack",250],
 			["B_Kitbag_mcamo",nil,450],
 			["B_TacticalPack_oli",nil,350],
 			["B_FieldPack_ocamo",nil,300],
