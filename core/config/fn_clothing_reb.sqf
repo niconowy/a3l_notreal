@@ -10,7 +10,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Muhli's Outlaw Shop"];
+ctrlSetText[3103,"Mohammed's Jihadi Shop"];
 
 switch (_filter) do
 {
@@ -18,10 +18,10 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["TRYK_U_B_BLK","Kampf-Uniform (Schwarz)",5000],
-			["TRYK_U_B_BLK_Tshirt","Kampf-Shirt (Schwarz)",5000],
-			["TRYK_U_B_BLKBLK_CombatUniform","Kampf-Uniform (farb. Gemischt)",5000],
-			["TRYK_U_B_BLKBLK_R_CombatUniform","Kampf-Uniform (farb. Gemischt,Gerollt)",5000],
+			["TRYK_U_B_BLK","TRYK CombatUniform (Black)",5000],
+			["TRYK_U_B_BLK_Tshirt","TRYK ShirtUniform (Black)",5000],
+			["TRYK_U_B_BLKBLK_CombatUniform","TRYK BLK+BLK Combat Uniform",5000],
+			["TRYK_U_B_BLKBLK_R_CombatUniform","TRYK BLK+BLK Combat Uniform Roll",5000],
 			["U_IG_Guerilla1_1",nil,5000],
 			["U_I_G_Story_Protagonist_F",nil,7500],
 			["U_I_G_resistanceLeader_F",nil,11500],
@@ -38,9 +38,9 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["kio_skl_msk","Skull Maske",2500],
-			["kio_skl_msk_red","Skull Maske Red",2500],
-			["kio_skl_msk_grn","Skull Maske Green",2500],
+			["kio_skl_msk","Skull Mask",2500],
+			["kio_skl_msk_red","Skull Mask Red",2500],
+			["kio_skl_msk_grn","Skull Mask Green",2500],
 			["TRYK_Kio_Balaclava",nil,2000],
 			["H_ShemagOpen_tan",nil,850],
 			["H_Shemag_olive",nil,850],
@@ -73,22 +73,22 @@ switch (_filter) do
 			["G_Balaclava_combat",nil,1337],
 			["G_Balaclava_lowprofile",nil,1337],
 			["A3L_Balaclava",nil,1337],
-			["SFG_Tac_BeardD","Bart (Dunkel)",275],
-			["SFG_Tac_BeardB","Bart (Blond)",275],
-			["SFG_Tac_BeardG","Bart (Ginger)",275],
-			["SFG_Tac_BeardO","Bart (Alt)",275],
-			["SFG_Tac_ChopsD","Mutton Chops (Dunkel)",275],
-			["SFG_Tac_ChopsG","Mutton Chops (Ginger)",275],
-			["SFG_Tac_ChopsB","Mutton Chops (Blond)",275],
-			["SFG_Tac_ChopsO","Mutton Chops (Alt)",275],
-			["SFG_Tac_moustacheD","Moustache (Dunkel)",275],
-			["SFG_Tac_moustacheG","Moustache (Ginger)",275],
-			["SFG_Tac_moustacheB","Moustache (Blond)",275],
-			["SFG_Tac_moustacheO","Moustache (Alt)",275],
-			["SFG_Tac_chinlessbD","Chinless Beard (Dunkel)",275],
-			["SFG_Tac_chinlessbG","Chinless Beard (Ginger)",275],
-			["SFG_Tac_chinlessbB","Chinless Beard (Blond)",275],
-			["SFG_Tac_chinlessbO","Chinless Beard (Alt)",275]
+			["SFG_Tac_BeardD","Tactical Beard (Dark)",275],
+			["SFG_Tac_BeardB","Tactical Beard (Blonde)",275],
+			["SFG_Tac_BeardG","Tactical Beard (Ginger)",275],
+			["SFG_Tac_BeardO","Tactical Beard (Old)",275],
+			["SFG_Tac_ChopsD","Tactical Mutton Chops (Dark)",275],
+			["SFG_Tac_ChopsG","Tactical Mutton Chops (Ginger)",275],
+			["SFG_Tac_ChopsB","Tactical Mutton Chops (Blonde)",275],
+			["SFG_Tac_ChopsO","Tactical Mutton Chops (Old)",275],
+			["SFG_Tac_moustacheD","Tactical Moustache (Dark)",275],
+			["SFG_Tac_moustacheG","Tactical Moustache (Ginger)",275],
+			["SFG_Tac_moustacheB","Tactical Moustache (Blonde)",275],
+			["SFG_Tac_moustacheO","Tactical Moustache (Old)",275],
+			["SFG_Tac_chinlessbD","Tactical Chinless Beard (Dark)",275],
+			["SFG_Tac_chinlessbG","Tactical Chinless Beard (Ginger)",275],
+			["SFG_Tac_chinlessbB","Tactical Chinless Beard (Blonde)",275],
+			["SFG_Tac_chinlessbO","Tactical Chinless Beard (Old)",275]
 		];
 	};
 	
@@ -102,8 +102,8 @@ switch (_filter) do
 			["V_TacVest_camo",nil,12500],
 			["k_cut_1","Sinister Sons",2500],
 			["k_cut_2","Gold Gunners",2500],
-			["k_cut_3","Sons of Anarchy Mitglied",2500],
-			["k_cut_4","Sons of Anarchy Chef",2500],
+			["k_cut_3","Sons of Anarchy Member",2500],
+			["k_cut_4","Sons of Anarchy President",2500],
 			["k_cut_5","Sons of Outlaws",2500],
 			["Jamie_Rebell","Fuck U Police",50000]
 		];
@@ -113,7 +113,7 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr","Schulrucksack",250],
+			["B_AssaultPack_cbr",nil,250],
 			["B_Kitbag_mcamo",nil,450],
 			["B_TacticalPack_oli",nil,350],
 			["B_FieldPack_ocamo",nil,300],
