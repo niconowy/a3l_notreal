@@ -9,7 +9,6 @@ private["_display","_units","_type","_data","_rowData","_msg"];
 _type = [_this,0,0] call BIS_fnc_param;
 _data = [_this,1,0,["",[],0]] call BIS_fnc_param;
 
-if(player getVariable["restrained",true]) exitWith {closeDialog 0; hint "Da du gefesselt bist, kannst du nicht auf dein Handy zugreifen!"};
 
 disableSerialization;
 waitUntil {!isNull findDisplay 88888};
@@ -29,10 +28,10 @@ switch(_type) do
 			{
 				switch(side _x) do
 				{
-					case west: {_type = "LVPD"};
-					case civilian: {_type = "ZIV"};
-					case independent: {_type = "EMS"};
-					case east: {_type = "IPD"};
+					case west: {_type = "Cop"};
+					case civilian: {_type = "Civ"};
+					case independent: {_type = "Med"};
+					case east: {_type = "Adac"};
 				};
 				_cPlayerList lbAdd format["%1 (%2)",_x getVariable["realname", name _x],_type];
 				_cPlayerList lbSetData [(lbSize _cPlayerList)-1,str(_x)];

@@ -11,7 +11,6 @@ _shop = _this select 0;
 switch (_shop) do
 {
 	case "market": {["Market",["cigarette","zoobeer","Rax's Rum","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagebig","weddingring"]]};
-	case "murderk": {["Murder King",["water","rabbit","redgull","zoobeer"]]};
 	case "rebel": {["Rebel Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","RoadBlockRebel","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Market", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};

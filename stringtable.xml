@@ -480,7 +480,7 @@
 			<Original>Admin Menü</Original>
 		</Key>
 		<Key ID="STR_PM_SyncData">
-			<Original>Speichern</Original>
+			<Original>Daten speichern</Original>
 		</Key>
 	</Package>
 	<Package name="Settings_Menu">
@@ -1072,7 +1072,7 @@
 			<Original>Niemand hat hier kürzlich etwas verkauft.</Original>
 		</Key>
 		<Key ID="STR_Cop_DealerMSG">
-			<Original>Die folgenden Leute haben kürzlich an diesen Dealer verkauft:</Original>
+			<Original>Die folgenden Leute haben kürzlich an diesen Dealer verkauft.</Original>
 		</Key>
 		<Key ID="STR_Cop_Radar">
 			<Original>Radar</Original>

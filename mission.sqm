@@ -3072,7 +3072,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=187;
+		items=186;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -4899,7 +4899,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Murder King"",life_fnc_virt_menu,""murderk""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Murder King"",life_fnc_virt_menu,""market""];";
 		};
 		class Item176
 		{
@@ -5009,16 +5009,6 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
-		};
-		class Item186
-		{
-			position[]={5277.1289,8.5021858,2930.4961};
-			azimut=672.14655;
-			id=313;
-			side="EMPTY";
-			vehicle="Land_Atm_02_F";
-			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
 	};
 	class Markers
@@ -6741,28 +6731,28 @@ class Mission
 		{
 			position[]={-1596.3323,212.94568,10913.358};
 			name="funk_1";
-			text="Gruppe 1:   NOT: 51.6   LSPD: 38.4   Sheriff: 59.2   Short: 42.1";
+			text="Gruppe 1:   NOT: 34.2   LSPD: 52.5   Sheriff: 62.5   Short: 39.4";
 			type="A3L_PD_Icon";
 		};
 		class Item214
 		{
 			position[]={-1600.3652,208.60657,10754.161};
 			name="funk_2";
-			text="Gruppe 2:   NOT: 67.9   LSDP: 54.5   Sheriff: 78.1   Short: 52.2";
+			text="Gruppe 2:   NOT: 42.7   LSDP: 33.7   Sheriff: 48.9   Short: 49.9";
 			type="A3L_PD_Icon";
 		};
 		class Item215
 		{
 			position[]={-1600.3649,198.27711,10606.225};
 			name="funk_3";
-			text="Gruppe 3:   NOT: 28.6   LSPD: 71.6   Sheriff: 66.8   Short: 49.3";
+			text="Gruppe 3:   NOT: 35.8   LSPD: 67.5   Sheriff: 34.3   Short: 53.1";
 			type="A3L_PD_Icon";
 		};
 		class Item216
 		{
 			position[]={-1600.365,193.50264,10452.656};
 			name="funk_4";
-			text="Gruppe 4:   NOT: 48.2   LSPD: 38.6   Sheriff: 49.5   Short: 70.7";
+			text="Gruppe 4:   NOT: 62.3   LSPD: 34.5   Sheriff: 34.9   Short: 61.3";
 			type="A3L_PD_Icon";
 		};
 		class Item217
@@ -6851,14 +6841,14 @@ class Mission
 		{
 			position[]={-1595.3118,231.91669,11116.378};
 			name="funk_21";
-			text="Medic 45.6";
+			text="Medic 37.8";
 			type="A3L_FD_Icon";
 		};
 		class Item229
 		{
 			position[]={-1599.2776,177.80838,10302.686};
 			name="funk_22";
-			text="Gruppe 5:   NOT: 69.3   LSPD: 75.1   Sheriff: 38.6   Short: 50.9";
+			text="Gruppe 5:   NOT: 36.5   LSPD: 59.8   Sheriff: 49.7   Short: 31.7";
 			type="A3L_PD_Icon";
 		};
 		class Item230
