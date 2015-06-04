@@ -3,8 +3,10 @@
 	File: fn_adminMarkers.sqf
 	Sourced from Lystics Player Markers Loop
 */
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [[4,format["<br/><br/><br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'>%1</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Restriction:</t><br/><t size='1.5'>SpawnPlayerMarkers<br/><br/><br/>",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP; [] call AC_fnc_checkThatShit;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};
+
 if(__GETC__(life_adminlevel) < 3) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
+
 life_markers = !life_markers;
 if(life_markers) then {
 	PlayerMarkers = [];
@@ -21,7 +23,7 @@ if(life_markers) then {
 			if(alive _x && isplayer _x) then {
 				deleteMarkerLocal str _x;
 				_pSee = createMarkerLocal [str _x,getPos _x];
-				_pSee setMarkerTypeLocal "mil_triangle";
+				_pSee setMarkerTypeLocal "waypoint";
 				_pSee setMarkerPosLocal getPos _x;
 				_pSee setMarkerSizeLocal [1,1];
 				_pSee setMarkerTextLocal format['%1',_x getVariable["realname",name _x]];
@@ -29,7 +31,7 @@ if(life_markers) then {
 				PlayerMarkers = PlayerMarkers + [_x];
 		};
 	} forEach allUnits;
-	sleep 0.2;
+	sleep 1.75;
 };
 FinishedLoop = true;
 } else {
@@ -41,4 +43,4 @@ FinishedLoop = true;
 	} forEach PlayerMarkers;	
 };
 
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [[4,format["<br/><br/><br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'>%1</t><br/><br/><br/><t size='1.6' font='PuristaBold'>Restriction:</t><br/><t size='1.5'>SpawnPlayerMarkers<br/><br/><br/>",name player]],"life_fnc_broadcast",true,false] spawn life_fnc_MP; [] call AC_fnc_checkThatShit;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};
