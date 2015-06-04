@@ -445,10 +445,10 @@
 			<Original>Schlüsselbund - Aktuelle Liste</Original>
 		</Key>
 		<Key ID="STR_Keys_DropKey">
-			<Original>Schlüssel wegwerfen</Original>
+			<Original>Wegwerfen</Original>
 		</Key>
 		<Key ID="STR_Keys_GiveKey">
-			<Original>Schlüssel geben</Original>
+			<Original>Geben</Original>
 		</Key>
 	</Package>
 	<Package name="Player_Menu">
@@ -456,7 +456,7 @@
 			<Original>Spieler Menü</Original>
 		</Key>
 		<Key ID="STR_PM_cItems">
-			<Original>aktuelle Items</Original>
+			<Original>Aktuelle Items</Original>
 		</Key>
 		<Key ID="STR_PM_Licenses">
 			<Original>Lizenzen</Original>
@@ -468,19 +468,19 @@
 			<Original>Meine Gang</Original>
 		</Key>
 		<Key ID="STR_PM_WantedList">
-			<Original>Fahndungsliste</Original>
+			<Original>Fahndung</Original>
 		</Key>
 		<Key ID="STR_PM_CellPhone">
 			<Original>Telefon</Original>
 		</Key>
 		<Key ID="STR_PM_KeyChain">
-			<Original>Schlüsselbund</Original>
+			<Original>Schlüssel</Original>
 		</Key>
 		<Key ID="STR_PM_AdminMenu">
-			<Original>Admin Menü</Original>
+			<Original>Admin-Menü</Original>
 		</Key>
 		<Key ID="STR_PM_SyncData">
-			<Original>Daten speichern</Original>
+			<Original>Speichern</Original>
 		</Key>
 	</Package>
 	<Package name="Settings_Menu">

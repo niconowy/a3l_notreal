@@ -115,7 +115,7 @@ class Life_cell_phone {
 		{
 			idc = 3020;
 			text = "$STR_CELL_AdminMsg";
-			colorBackground[] = {0.18,0.604,0.996,1};
+			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[] call TON_fnc_cell_adminmsg";
 			
 			x = 0.328644 * safezoneW + safezoneX;
@@ -128,7 +128,7 @@ class Life_cell_phone {
 		{
 			idc = 3021;
 			text = "$STR_CELL_AdminMSGAll";
-			colorBackground[] = {0.18,0.604,0.996,1};
+			colorBackground[] = {0.584, 0.086, 0.086,1.0};
 			onButtonClick = "[] call TON_fnc_cell_adminmsgall";
 			
 			x = 0.328646 * safezoneW + safezoneX;

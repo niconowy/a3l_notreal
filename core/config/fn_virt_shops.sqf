@@ -13,6 +13,7 @@ switch (_shop) do
 	case "market": {["Market",["cigarette","zoobeer","Rax's Rum","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","storagesmall","storagebig","weddingring"]]};
 	case "rebel": {["Rebel Market",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","RoadBlockRebel","boltcutter","blastingcharge"]]};
 	case "gang": {["Gang Market", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","fuelF","peach","blastingcharge","boltcutter"]]};
+	case "murdermarket": {["Murder King - Schnellrestaurant", ["water","rabbit","redgull"]]};
 	case "wongs": {["Wong's Food Cart",["turtlesoup","turtle"]]};
 	case "coffee": {["Stratis Coffee Club",["coffee","donuts"]]};
 	case "heroin": {["Drug Dealer",["cocainep","marijuana","heroinp"]]};
