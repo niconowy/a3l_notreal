@@ -58,14 +58,13 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 				"
 <font size='25' color='#FF0000'>Dienstregeln für die EMS</font><br/><font color='#639C18'>Diese Dienstregeln zählen für jeden Rettungssanitäter. Eine Zuwiderhandlung wird bestraft. Die EMS (Emergency Medical Service) umfasst alle staatlich ausgebildeten, registrierten und erfassten Sanitäter/ Rettungsdienstmitarbeiter.</font><br/><br/>
 <font size='19' color='#FF9473'>1. Dienstvorschriften</font><br/><br/>
-1.1 Sanitäter sind neutral, verhalten sich auch so und ergreifen keine Partei!<br/>
-1.2 Innerhalb eines Schusswechsels darf niemand behandelt werden. Warten Sie ab, bis dieser beendet ist.<br/>
+1.1 Sanitäter sind neutral und verhalten sich so und ergreifen sie keine Partei!<br/>
+1.2 Innerhalb eines Schusswechsels darf niemand behandelt werden - warten Sie ab bis dieses beendet ist.<br/>
 1.3 Fahren Sie vorausschauend - auch auf dem Weg zu einem Einsatz.<br/>
-1.4 Sollten Sie sich im Urlaub befinden, dann darf Ihr Name auf Zivilisten-Seite bei kriminellen Aktivitäten nicht auftauchen (Namechange).<br/>
+1.4 Sollten Sie sich im Urlaub befinden so hat ihr Name nicht auf Zivilisten Seite bei kriminellen Aktivitäten aufzutauchen (Namechange)<br/>
 1.5 Funkdisziplin einhalten.<br/>
 1.6 Um einen Helikopter fliegen zu dürfen, schließen sie vorher die benötige Ausbildung ab!<br/>
 1.7 Versuchen Sie jedem bestmöglichst zu helfen, es könnten schließlich Sie sein, der hilflos am Boden liegt!<br/>
-1.8 Medics dürfen keine Dienstwaffe tragen.<br/>
 				"
 		]
 	];
@@ -76,7 +75,7 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 		[
 			"Checkpoints",
 				"
-<font size='19' color='#3152A5'>7. Checkpoints</font><br/><br/>
+<font size='19' color='#3152A5'>7. Lufteinheiten</font><br/><br/>
 7.1 Polizisten ist es gestattet auf Straßen Checkpoints zu errichten. Diese dienen dazu um Drogen, Waffen oder andere illegalen Gegenstände zu finden und zu beschlagnahmen. Jeder angehaltene Verkehrsteilnehmer muss der Grund der Kontrolle mitgeteilt werden. Anschließend sind diese dazu verpflichtet der Kontrolle statt zu geben. Ein Checkpoint muss aus mindesten zwei Fahrzeugen sowie drei Beamten bestehen!<br/>
 7.2 Das Umfahren eines Checkpoints ist ein Straftatbestand.<br/>
 				"
@@ -113,19 +112,13 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 <font size='19' color='#3152A5'>4. Interne Regeln</font><br/><br/>
 4.1 Officers müssen jeder Zeit eine nicht tödliche Waffe mit sich führen!<br/>
 4.2 Sollte kein Einsatz vorliegen, so haben auch Polizisten sich an die StVO/ LuftVO zu halten!<br/>
-4.3 Fahrzeuge, die verkehrswidrig abgestellt wurden, werden per Halterabfrage überprüft. Der Halter wird informiert und sollte er anschließend nicht reagieren, so wird das Fahrzeug beschlagnahmt.<br/>
-4.4 Fahrzeuge, welche in kriminellen Aktivitäten verstrickt sind, werden beschlagnahmt!<br/>
+4.3 Fahrzeuge welche verkehrswidrig abstellt wurden, werden per Halterabfrage überprüft - dieser wird informiert sollte er anschließend nicht reagieren, so wird das Fahrzeug beschlagnahmt.<br/>
+4.4 Fahrzeuge welche in kriminellen Aktivitäten verstrickt sind, werden beschlagnahmt!<br/>
 4.5 Zivilisten dürfen bis zu einer Stunde von der Polizei zwecks Beweissammlung festgehalten werden (Untersuchungshaft).<br/>
-4.6 Sheriffs sollen außerhalb der Städte Patrouille fahren. Nur im Notfall bzw. bei Personalmangel wird dieser Trupp innerhalb einer Stadt hinzugezogen.<br/>
+4.6 Sheriffs sollen außerhalb der Städte Patrouille fahren - nur im Notfall bzw. bei Personalmangel wird dieser Trupp innerhalb einer Stadt hinzugezogen.<br/>
 4.7 Die Befehlskette ist zu wahren!<br/>
 4.8 Jedem Verdächtigen sind seine Rechte vor einer Befragung zu verlesen.<br/>
-4.8.1 Die Rechte müssen direkt nach der Festnahme vorgelesen werden, wenn dies nicht durch gewisse Umstände wie zum Bespiel eine Kampfsituation verhindert wird.<br/>
-4.8.2 Sollten diese nicht zeitnah vorgelesen worden sein, so müssen die Anklagen gegenüber dem Beschuldigten fallengelassen und dieser freigelassen werden.<br/>
-4.8.3 Wenn die festgenommene Person keiner Straftat beschuldigt wird und zum Beispiel nur zu der eigenen Sicherheit festgenommen wurde, so müssen Ihr die Rechte nicht vorgelesen werden.<br/>
 4.9 Jeder Beschuldigte hat das Recht auf einem Anwalt.<br/>
-4.9.1 Sollte kein Anwalt online sein, so muss sich der Angeklagte selber verteidigen.<br/>
-4.10 Der Drogendealer darf nur mit mindestens 2 Polizisten abgefragt werden.<br/>
-4.11 Für eine Razzia auf einem Drogenfeld werden mindestens 4 Beamte benötigt.<br/>
 				"
 		]
 	];
@@ -197,51 +190,11 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 12.1 Das Schweben (sogenanntes Auto-Hovern) über Städte/ Ortschaften ist komplett verboten.<br/>
 13. Das Landen in Städten/ Ortschaften oder auf Straßen, ohne die ausdrückliche Genehmigung eines Polizeibeamten, ist verboten.<br/>
 14. Wer gegen die Regeln StVO und LuftVO Absatz 12. - 13. verstößt, muss damit rechnen, unter Beschuss genommen zu werden.<br/>
-15. Das permanente Rückwärtsfahren bzw. das direkte Wenden auf einer Straße (U-Turn) ist verboten und wird mit einem Bußgeld bestraft.<br/>
 				"
 		]
 	];
 																	// InGame Regelungen ---------------------------
 																	
-	player createDiaryRecord["rules",
-		[
-			"ADAC/IPD",
-				"
-<font size='19' color='#089494'>§12 ADAC/IPD</font><br/><br/>
-12.1 ADAC Mitarbeiter dürfen unter keinen Umständen überfallen, getötet oder in der Ausübung in ihrer Tätigkeit behindert werden.<br/>
-12.2 Das Klauen von Fahrzeugen, die den ADAClern gehören, ist verboten.<br/>
-12.3 ADACler dürfen während eines Schussgefechtes keine Fahrzeuge reparieren.<br/>
-12.4 ADACler sind stets neutral.<br/>
-12.5 Sollte man die Regelung §11 missachten, muss man mit einer permanenten/ temporären Sperre rechnen - in leichtwidrigen Fällen kann ein Eintrag auf die ADAC-Interne BlackList erfolgen.<br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord["rules",
-		[
-			"Unternehmen",
-				"
-<font size='19' color='#089494'>§11 Unternehmen</font><br/><br/>
-11.1 Sämtliche Unternehmen müssen im Subforum Gewerbeamt angemeldet und angenommen werden.<br/>
-11.2 Ein Unternehmen definiert sich dadurch, das dieses mindestens zwei Angestellten besitzt.<br/>
-11.3 Illegale Aktivitäten des Unternehmens müssen der Support Leitung privat mitgeteilt werden (Stichwort: Briefkastenfirma).<br/>
-11.4 Der Staat unterstützt keine Rebellengruppierungen. Diese müssen nicht angemeldet werden und gelten unter §10 Gruppierungen.<br/>
-				"
-		]
-	];
-	
-	player createDiaryRecord["rules",
-		[
-			"Gruppierungen",
-				"
-<font size='19' color='#089494'>§10 Gruppierungen</font><br/><br/>
-10.1 Gruppierungen dürfen maximal aus 10 Personen bestehen.<br/>
-10.2 Von diesen 10 Personen dürfen maximal 8 Personen an einem RP Teilnehmen.<br/>
-10.2.1 Die anderen Personen müssen mindestens 2km (2000m) entfernt sein.<br/>
-				"
-		]
-	];
-	
 	player createDiaryRecord["rules",
 		[
 			"Schusswaffen",
@@ -277,12 +230,10 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 				"
 <font size='19' color='#089494'>§7 EMS Regelung</font><br/><br/>
 7.1 Sanitäter dürfen unter keinen Umständen überfallen, getötet oder in der Ausübung in ihrer Tätigkeit behindert werden.<br/>
-7.2 Das Nutzen von Fahrzeugen mit einer Sanitäterlackierung, ist verboten.<br/>
+7.2 Das Klauen von Fahrzeugen die den Sanitätern gehören, ist verboten.<br/>
 7.3 Sanitäter dürfen während eines Schussgefechtes niemanden wiederbeleben.<br/>
 7.4 Sanitäter sind stets neutral.<br/>
 7.5 Sollte man die Regelung §7 missachten, muss man mit einer permanenten/ temporären Sperre rechnen - in leichtwidrigen Fällen kann ein Eintrag auf die Medic-Interne BlackList erfolgen.<br/>
-7.6 Zivilisten, die irgendeine Medic-Kleidung tragen, werden mit einerm Ban bestraft.<br/>
-7.6.1 Praktikanten, die die Medic-Kleidung nach dem Praktikum nicht abgeben und diese anschließend als Zivilist verwenden, werden mit einem 7d Ban und einem Lebenslangem Blacklist eintrag bestraft.<br/>
 				"
 		]
 	];
@@ -296,13 +247,11 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 6.1 Bei einem Überfall ist stets Kontakt zu der Person die angegriffen wird (Opfer) zu halten.<br/>
 6.2 Der Gebrauch von Schusswaffen muss immer angekündigt werden (sei es per Handy-Nachricht, Notruf an die Cops, oder lautem Schreien).<br/>
 6.3 Das Opfer muss, sofern ein Überfall gemacht wird, Zeit zum reagieren haben.<br/>
-6.3.1 So ist zB. das Ankündigen eines Überfalls per -Halt stehen bleiben! Überfall - oder wir schießen- und eine Sekunde später wird das Opfer erschossen RDM und führt zum Bann.<br/>
-6.4 Wenn du einen Überfall machst, hat das Opfer die Berechtigung dich bei gegebenem Anlass zu überfahren oder zu erschießen - dies ist Notwehr und kein VRDM/VDM. Das Opfer sollte dies zur Flucht nutzten und nicht um sämtliche Personen zu töten!<br/>
+6.3.1 So ist z. B. das Ankündigen eines Überfalls per Halt stehen bleiben! Überfall - oder wir schießen und eine Sekunde später wird das Opfer erschossen RDM und führt zum Bann.<br/>
+6.4 Wenn du einen Überfall machst, hat das Opfer die Berechtigung dich bei gegebenem Anlass zu überfahren oder zu erschießen - dies ist Notwehr und kein VRDM/VDM.<br/>
 6.5 Unbewaffnete Personen dürfen nicht erschossen werden.<br/>
-6.5.1 Ausnahmeregelung wäre das nicht Befolgen einer Anweisung, Geiselnahme oder Ähnlichem.<br/>
+6.5.1 Außnahmeregelung wäre das nicht Befolgen einer Anweisung, Geiselnahme oder Ähnlichem.<br/>
 6.6 Banküberfälle und Geiselnahmen sind nur gestattet, wenn sich mindestens 4 Polizeibeamten im Dienst befinden.<br/>
-6.7 Drogendealer dürfen nicht erschossen werden, da dies eine Globale RP Handlung wäre und nicht jeder das mitbekommen würde.<br/>
-6.8 Gefesselt dürfen keinerlei Gegenstände im Z-Inventar oder I-Inventar umgelagert, entfernt oder benutzt werden.<br/>
 				"
 		]
 	];
@@ -330,10 +279,8 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 			"Kommunikation",
 				"
 <font size='19' color='#089494'>§4 Kommunikation</font><br/><br/>
-4.1 Gesprochen wird über TeamSpeak3 mit dem Addon Task Force Arma3 Radio.<br/>
-4.1.1 Skypen oder andere Kommunikation während dem Spielen ist verboten und wird mit einem Ban bestraft.<br/>
+4.1 Gesprochen wird über TeamSpeak3 mit dem Addon Task Force Radio.<br/>
 4.2 Task Force Radio bildet somit die Grundlage der Kommunikation auf unserem Server.<br/>
-4.2.1 Stimmverzerrer und ähnliches sind VERBOTEN.<br/>
 4.3 Das Stören von Roleplaysituationen durch Hineinrufen, Trollen, etc. ist verboten.<br/>
 4.4 Störgeräusche sind zu unterlassen.<br/>
 4.5 Das Abspielen von Musik, Tönen oder Ähnlichem ist auf dem gesamten Server (InGame, TeamSpeak3) zu unterlassen.<br/>
@@ -341,7 +288,6 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 4.6.1 Die Frage sollte immer im Roleplay-Sinn gestellt sein, z. B. Google Suche: Wie gehe ich auf Toilette?.<br/>
 4.6.2 Der SideChat darf nicht für das Roleplay verwendet werden, z. B. Ankündigungen, Kann-Mich-Jemand-Aus-Dem-Knast-Holen Nachrichten.<br/>
 4.7 Das Schreiben im GlobalenKanal ist verboten. Wer dagegen verstößt wird mit einer Sperre zu rechnen haben!<br/>
-4.8 Gefesselt kann man kein Funkgerät bedienen (Funken, Frequenzen ändern, Kopfhörer-Lautsprecher Modus ändern etc.) außer man hat eine Funkmütze (Kappe mit Funkgerät an der Seite) oder ähnliches. Außerdem dürfen gefesselt keine SMS-Nachrichten oder Notrufe verfasst werden.<br/>
 				"
 		]
 	];
@@ -371,7 +317,7 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 2.1.1 Bugs sind im Forum zu melden; sollte es ein Bug sein, den jeder Spieler zu seinem Vorteil verwenden kann (wie z.B. Geld-Bugs, Duplication-Bugs) melde diese bitte direkt im TeamSpeak3.<br/>
 2.2 Rassismus, Beleidigungen, RDM, VDM und VRDM hat nichts mit Roleplay zu tun. Dies ist zu unterlassen!<br/>
 2.3 Solltet ihr einen Hacker, Cheater, Bug-User/ Exploit-User entdecken, seid ihr dazu verpflichtet dies umgehend einem Supporter bzw. Administrator mitzuteilen.<br/>
-2.3.1 Meldet ihr dies nicht, werdet ihr automatisch der Beihilfe verantwortlich gemacht und könnt dementsprechend auch gesperrt werden.<br/>
+2.3.1 Meldet ihr dies nicht, werdet ihr automatisch zur Beihilfe verantwortlich gemacht und könnt dementsprechend auch gesperrt werden.<br/>
 				"
 		]
 	];
@@ -393,9 +339,6 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 1.7.2 Wenn der Ausfall deiner seits länger war, sodass die Roleplay-Handlung bereits vorbei ist, melde dich bitte bei den Beteiligten und entschuldige dich für deinen Ausfall.<br/>
 1.7.3 Sollten diese Ausfälle vermehrt in Roleplay-Handlungen auftreffen, kannst du temporär vom Server gesperrt werden.<br/>
 1.8 Stream-Snipen ist verboten. Wer erwischt wird, bekommt eine permanente Sperre!<br/>
-1.9 Lobby Hopping (Umspawnen) ist verboten und wird mit einem Ban bestraft.<br/>
-1.10 Das Tragen einer PRESSE Weste ohne einen gültigen PRESSE-Ausweis ist verboten und kann zu einer temporären Sperre führen!<br/>
-1.11 Das Looten (Stehlen von Gegenständen/Kleidung aus dem Inventar) von Leichen ist verboten und wird mit einer Sperre bestraft.<br/>
 				"
 		]
 	];
@@ -427,7 +370,6 @@ Unseren ChangeLog und weitere Informationen zu UpDates findest du in unserem For
 <font color='#D60000'>WINDOWSTASTE + T</font><br/>Sammeln<br/><br/>
 <font color='#D60000'>Q</font><br/>Abbauen (Spitzhacke)<br/><br/>
 <font color='#D60000'>SHIFT + C</font><br/>Ergeben (Hände nach oben nehmen)<br/>
-<font color='#D60000'>TASTE 2 - 4</font><br/>Handzeichen Geben<br/>
 				"
 		]
 	];

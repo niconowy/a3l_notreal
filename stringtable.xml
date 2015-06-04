@@ -46,16 +46,16 @@
 	</Package>
 	<Package name="Admin_Notifications">
 		<Key ID="STR_ANOTF_Query">
-			<Original>Abfrage Läuft...</Original>
+			<Original>Abfrage läuft...</Original>
 		</Key>
 		<Key ID="STR_ANOTF_QueryGarage">
 			<Original>Durchsuche nach Fahrzeugen...</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Query_2">
-			<Original>Du fragst bereits einen Spieler ab!</Original>
+			<Original>Du fragst bereits einen Spieler ab.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_QueryFail">
-			<Original>Spieler existiert nicht mehr???</Original>
+			<Original>Spieler existiert nicht mehr?</Original>
 		</Key>
 	</Package>
 	<Package name="ATM_Strings">
@@ -201,7 +201,7 @@
 	
 	<Package name="Admin_Menu">
 		<Key ID="STR_Admin_Title">
-			<Original>ADMIN MENÜ | Lakeside Reallife - Lebe deinen Traum!</Original>
+			<Original>Admin-Menü</Original>
 		</Key>
 		<Key ID="STR_Admin_GetID">
 			<Original>ID Abfragen</Original>
@@ -231,13 +231,13 @@
 			<Original>Marker</Original>
 		</Key>
 		<Key ID="STR_ANOTF_CompWarn">
-			<Original>Bist du dir sicher?</Original>
+			<Original>To Be Changed</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Success">
 			<Original>Du hast %1€ auf deinen Account hinzugefügt.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Fail">
-			<Original>Werte über $999.999 sind ungültig!</Original>
+			<Original>Nicht mehr als 999,999€.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Amount">
 			<Original>Bitte geben Sie einen Wert ein!</Original>
@@ -249,16 +249,16 @@
 			<Original>Du hast %1's Steuerung freigegeben.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Error">
-			<Original>Das kannst du nicht tun...</Original>
+			<Original>Du kannst das nicht tuen. LOL!</Original>
 		</Key>
 		<Key ID="STR_ANOTF_ErrorLevel">
-			<Original>Dein Adminlevel ist zu niedrig um diese Funktion auszuführen.</Original>
+			<Original>Dein Adminlevel ist zu niedrig.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_MDisabled">
-			<Original>Spieler Marker AUS.</Original>
+			<Original>Spieler Marker deaktiviert.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_MEnabled">
-			<Original>Spieler Marker AN.</Original>
+			<Original>Spieler Marker aktiviert.</Original>
 		</Key>		
 	</Package>
 	
@@ -468,13 +468,13 @@
 			<Original>Meine Gang</Original>
 		</Key>
 		<Key ID="STR_PM_WantedList">
-			<Original>Fahndung</Original>
+			<Original>Fahndungsliste</Original>
 		</Key>
 		<Key ID="STR_PM_CellPhone">
 			<Original>Telefon</Original>
 		</Key>
 		<Key ID="STR_PM_KeyChain">
-			<Original>Schlüssel</Original>
+			<Original>Schlüsselbund</Original>
 		</Key>
 		<Key ID="STR_PM_AdminMenu">
 			<Original>Admin Menü</Original>

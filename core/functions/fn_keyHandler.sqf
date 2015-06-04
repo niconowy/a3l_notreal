@@ -473,7 +473,7 @@ switch (_code) do
 			diag_log format ["SERVER INFO: %1 verwendet ALT+F4 (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]];
 			[[1,format["SERVER INFO: %1 verwendet ALT+F4 (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			if(!alive player) then {
-				[[1,format["SERVER INFO: !GEAR_SAFE! %1 verwendet ALT+F4 während er tot ist - (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+				[[1,format["SERVER INFO: %1 verwendet ALT+F4 während er tot ist - !GEAR.SAFE!(Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			};
 			[] call SOCK_fnc_updateRequest;
 		};
