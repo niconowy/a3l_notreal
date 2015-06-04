@@ -24,7 +24,7 @@ switch(_shop) do
 	{
 		switch (true) do
 		{
-			case (playerSide != independent): {"Du bist kein Medic"};
+			case (playerSide != independent): {"Du bist kein EMS/FDP!"};
 			case (__GETC__(life_mediclevel) == 1):
 			{
 				["Praktikant",
@@ -189,9 +189,9 @@ switch(_shop) do
 	{
 		switch (true) do
 		{
-			case (playerSide != independent): {"Du bist kein Medic"};
+			case (playerSide != independent): {"Du bist kein EMS/FDP!"};
 			default {
-				["EMS Basic Shop",
+				["EMS Grundware",
 					[
 						["A3L_Extinguisher",nil,350],
 						
@@ -259,9 +259,9 @@ switch(_shop) do
 	{
 		switch (true) do
 		{
-			case (playerSide != east): {"Du bist kein Adac"};
+			case (playerSide != east): {"Du bist kein IPD!"};
 			default {
-				["IPD Shop",
+				["IPD Laden",
 					[
 						["ItemMap",nil,30],
 						["ItemWatch",nil,20],
@@ -284,8 +284,8 @@ switch(_shop) do
 	{
 		switch(true) do
 		{
-			case (playerSide != west): {"Du bist kein Polizist"};
-			case (__GETC__(life_coplevel) == 0): {"Du bist nicht berechtigt den Polizeishop zu nutzen!"};
+			case (playerSide != west): {"Du bist kein LV-Police Officer!"};
+			case (__GETC__(life_coplevel) == 0): {"Dir fehlt die Berechtigung den Polizeishop zu nutzen!"};
 			case (__GETC__(life_coplevel) == 1):
 			{
 				["Rekrut",
@@ -619,7 +619,7 @@ switch(_shop) do
 			case (!license_civ_rebel): {"Du hast keine Rebellenausbildung!"};
 			case ((license_civ_rebel)):
 			{
-				["Mohammed's Jihadi Shop",
+				["Muhli's Outlaw Laden",
 					[
 						["cse_epinephrine",nil,50000],
 						["cse_morphine",nil,50000],
@@ -693,7 +693,7 @@ switch(_shop) do
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
 			case (__GETC__(life_donator) == 0): {"Du bist kein Donator!"};
 			case (__GETC__(life_donator) == 1):
-			{["Spezielle Rebellenwaffen",
+			{["Muhli's Militärwaffen",
 				[
 					["RH_Deaglem",nil,23375],
 					["RH_demz",nil,6375],
@@ -702,8 +702,8 @@ switch(_shop) do
 					["RH_7Rnd_50_AE",nil,635],
 					//["RH_tec9",nil,29750], Zu Op
 					//["RH_tecsd",nil,1275], Zu Op
-					["R3F_HK417M","HK4 17M",225000],
-					["R3F_20Rnd_762x51_HK417","HK4 17 Munition",3000],
+					["R3F_HK417M","HK4 17M",191250],
+					["R3F_20Rnd_762x51_HK417","HK4 17 Munition",2550],
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -754,7 +754,7 @@ switch(_shop) do
 			};
 			
 			case (__GETC__(life_donator) == 3):
-			{["Spezielle Rebellenwaffen",
+			{["Muhli's Militärwaffen",
 				[
 					["RH_Deaglem",nil,23375],
 					["RH_demz",nil,6375],
@@ -763,8 +763,8 @@ switch(_shop) do
 					["RH_7Rnd_50_AE",nil,635],
 					//["RH_tec9",nil,29750], Zu Op
 					//["RH_tecsd",nil,1275], Zu Op
-					["R3F_HK417M","HK4 17M",225000],
-					["R3F_20Rnd_762x51_HK417","HK4 17 Munition",3000],
+					["R3F_HK417M","HK4 17M",191250],
+					["R3F_20Rnd_762x51_HK417","HK4 17 Munition",2550],
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -815,7 +815,7 @@ switch(_shop) do
 			};
 			
 			case (__GETC__(life_donator) == 5):
-			{["Spezielle Rebellenwaffen",
+			{["Muhli's Militärwaffen",
 				[
 					["RH_Deaglem",nil,23375],
 					["RH_demz",nil,6375],
@@ -824,8 +824,8 @@ switch(_shop) do
 					["RH_7Rnd_50_AE",nil,635],
 					//["RH_tec9",nil,29750], Zu Op
 					//["RH_tecsd",nil,1275], Zu Op
-					["R3F_HK417M","HK4 17M",225000],
-					["R3F_20Rnd_762x51_HK417","HK4 17 Munition",3000],
+					["R3F_HK417M","HK4 17M",191250],
+					["R3F_20Rnd_762x51_HK417","HK4 17 Munition",2550],
 					["A3L_SA61",nil,38250],
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
@@ -886,7 +886,7 @@ switch(_shop) do
 			case (!license_civ_gun): {"Du besitzt keinen gültigen Waffenschein!"};
 			case ((license_civ_gun)):
 			{
-				["Billy Joe's Firearms",
+				["Billy Joe's Feuerwaffen",
 					[
 						["A3L_Glock17",nil,15600],
 						["A3L_Glock17mag",nil,500],
@@ -924,7 +924,7 @@ switch(_shop) do
 			case (!license_civ_gun): {"Du besitzt keinen gültigen Waffenschein!"};
 			case ((license_civ_gun)):
 			{
-				["Billy Joe's Illegale Schusswaffen",
+				["Billy Joe's Hinterzimmer",
 					[
 						["A3L_1911",nil,28000],
 						["A3L_1911mag",nil,750],
