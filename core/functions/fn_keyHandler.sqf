@@ -196,7 +196,7 @@ switch (_code) do
 			}
 				else
 			{
-				if((_cursorT isKindOf "Car" OR _cursorT isKindOf "Air" OR _cursorT isKindOf "Ship" OR _cursorT isKindOf "House_F") && player distance _cursorT < 7 && vehicle player == player && alive _cursorT) then
+				if((_cursorT isKindOf "Car" OR _cursorT isKindOf "Air" OR _cursorT isKindOf "Ship" OR _cursorT isKindOf "House_F") && player distance _cursorT < 5 && vehicle player == player && alive _cursorT) then
 				{
 					if(_cursorT in life_vehicles OR {!(_cursorT getVariable ["locked",true])}) then
 					{
