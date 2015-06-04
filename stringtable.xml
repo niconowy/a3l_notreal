@@ -2189,7 +2189,10 @@
 			<Original>Nachricht an:</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_Notruftitle">
-			<Original>NOTRUFE | Ausnutzen führt zum BANN!</Original>
+			<Original>NOTRUFE | Missbrauch führt zur Abschiebung!</Original>
+		</Key>
+		<Key ID="STR_SMARTPHONE_MissingMessage">
+			<Original>Du musst eine Nachricht zum Versenden eingeben!</Original>
 		</Key>
 	</Package>
 </Project>

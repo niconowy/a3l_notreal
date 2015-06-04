@@ -31,9 +31,9 @@ switch(_type) do
 	//normal message
 	case 1:
 	{
-		if(isNUll life_smartphoneTarget) exitWith {hint format["Keine Person ausgw‰hlt!"];};
+		if(isNUll life_smartphoneTarget) exitWith {hint format["Keine Person ausgw√§hlt!"];};
 		ctrlShow[88885, false];
-		if(_msg == "") exitWith {hint "Du musst eine Nachricht eingeben.";ctrlShow[88885, true];};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";ctrlShow[88885, true];};
 		[[life_smartphoneTarget,_msg,player,0],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Du hast eine Nachricht an %1 gesendet: %2",name life_smartphoneTarget,_msg];	
 		ctrlShow[88885, true];
@@ -42,9 +42,9 @@ switch(_type) do
 	//copmessage
 	case 2:
 	{
-		if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Die Polizei ist derzeit nicht zu erreichen. Bitte versuchen Sie es sp‰ter nochmal."];};
+		if(({side _x == west} count playableUnits) == 0) exitWith {hint format["Die Polizei ist derzeit nicht zu erreichen. Bitte versuchen Sie es sp√§ter nochmal."];};
 		ctrlShow[888895,false];
-		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888895,true];};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";ctrlShow[888895,true];};
 		[[ObjNull,_msg,player,1],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		_to = "Polizei";
 		hint format["Du hast der %1 folgenden Notruf gesendet: %2",_to,_msg];
@@ -55,19 +55,19 @@ switch(_type) do
 	case 3:
 	{
 		ctrlShow[888896,false];
-		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888896,true];};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";ctrlShow[888896,true];};
 		[[ObjNull,_msg,player,2],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		_to = "Admins";
-		hint format["Du hast %1 folgende Nachricht gesendet: %2",_to,_msg];
+		hint format["Du hast den %1 folgende Nachricht gesendet: %2",_to,_msg];
 		ctrlShow[888896,true];
 		closeDialog 887890;
 	};
 	//emsrequest
 	case 4:
 	{
-		if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es sp‰ter nochmal."];};
+		if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es sp√§ter nochmal."];};
 		ctrlShow[888899,false];
-		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888899,true];};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";ctrlShow[888899,true];};
 		[[ObjNull,_msg,player,3],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Der EM-Service wurde benachrichtigt mit: %1",_msg];
 		ctrlShow[888899,true];
@@ -76,9 +76,9 @@ switch(_type) do
 	//adminToPerson
 	case 5:
 	{
-		if((call life_adminlevel) < 1) exitWith {hint "You are not an admin!";};
-		if(isNULL life_smartphoneTarget) exitWith {hint format["Keine Person ausgw‰hlt!"];};
-		if(_msg == "") exitWith {hint "You must enter a message to send!";};
+		if((call life_adminlevel) < 1) exitWith {[] call AC_fnc_checkThatShit;};
+		if(isNULL life_smartphoneTarget) exitWith {hint format["Keine Person ausgw√§hlt!"];};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
 		[[life_smartphoneTarget,_msg,player,4],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Admin-Nachricht gesendet zu: %1 - Message: %2",name life_smartphoneTarget,_msg];
 		closeDialog 88883;
@@ -94,22 +94,29 @@ switch(_type) do
 			ctrlShow[888898,true];
 			ctrlShow[888896,false];
 		};
+		
+	//Cop-Rundfunk Button
+		if(playerSide != west) then {
+			ctrlShow[888828,false];
+		} else {
+			ctrlShow[888828,true];
+		};
 	};
 	//adminMsgAll
 	case 7:
 	{
-		if((call life_adminlevel) < 1) exitWith {hint "You are not an admin!";};
-		if(_msg == "") exitWith {hint "You must enter a message to send!";};
+		if((call life_adminlevel) < 1) exitWith {[] call AC_fnc_checkThatShit;};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
 		[[ObjNull,_msg,player,5],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
-		hint format["Admin Message Sent To All: %1",_msg];
+		hint format["Admin-Rundruf An Alle: %1",_msg];
 		closeDialog 887890;
 	};
 	//ADAC
 	case 8:
 	{
-		if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein ADAC im Dienst. Bitte probiere es sp‰ter nochmal."];};
+		if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein ADAC im Dienst. Bitte probiere es sp√§ter nochmal."];};
 		ctrlShow[888899,false];
-		if(_msg == "") exitWith {hint "You must enter a message to send!";ctrlShow[888899,true];};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";ctrlShow[888899,true];};
 		[[ObjNull,_msg,player,6],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Der IPD wurde benachrichtigt mit: %1",_msg];
 		ctrlShow[888899,true];
@@ -118,9 +125,9 @@ switch(_type) do
 	
 	//cop rundfunk
 	case 9: {
-		if(playerSide in [independent, east, civilian]) exitWith {hint "Keine Berechtigung."};
-		if(__GETC__(life_coplevel) < 4) exitWith {hint "Keine Berechtigung."};
-		if(_msg == "") exitWith {hint "Keine Berechtigung."};
+		if(playerSide in [independent, east, civilian]) exitWith {hint "Du bist kein Polizist!"};
+		if(__GETC__(life_coplevel) < 4) exitWith {hint "Du musst mindestens den Rang Sergeant erreicht haben!"};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
 		[[ObjNull,_msg,player,7],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Rundmail: %1",_msg];
 		closeDialog 888828;
