@@ -89,7 +89,9 @@ class Mission
 		"cse_sys_gestures",
 		"A3_Structures_F_Mil_Shelters",
 		"A3_Modules_F_Curator_Lightning",
-		"A3_Structures_F_Bootcamp_System"
+		"A3_Structures_F_Bootcamp_System",
+		"A3_Structures_F_Mil_BagFence",
+		"A3_Structures_F_EPC_Items_Electronics"
 	};
 	addOnsAuto[]=
 	{
@@ -125,6 +127,8 @@ class Mission
 		"A3_Structures_F_Ind_FuelStation_Small",
 		"A3_Structures_F_Walls",
 		"A3_Structures_F_Bootcamp_System",
+		"A3_Structures_F_Mil_BagFence",
+		"A3_Structures_F_EPC_Items_Electronics",
 		"lakesidevalley"
 	};
 	randomSeed=2004553;
@@ -3138,7 +3142,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=187;
+		items=190;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -5086,10 +5090,42 @@ class Mission
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
 		};
+		class Item187
+		{
+			position[]={8316.7061,10.495262,6500.1758};
+			azimut=1562.6899;
+			offsetY=0.2;
+			id=317;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Kühlschrank"",life_fnc_virt_menu,""murdermarket""]; this addAction[""Justiz Fahrzeuge"",life_fnc_vehicleShopMenu,[""justiz_kfz"",east,[""justiz_veh_1""],""adac"",""Justiz Fahrzeuge - Sicher Unterwegs!""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""justiz_g_1""; }]; this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+		};
+		class Item188
+		{
+			position[]={8316.7236,10.495298,6501.0889};
+			azimut=1650.5601;
+			id=318;
+			side="EMPTY";
+			vehicle="Land_BagFence_Short_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false;";
+		};
+		class Item189
+		{
+			position[]={8677.1445,10.46,6716.853};
+			azimut=15;
+			offsetY=2.9000001;
+			id=319;
+			side="EMPTY";
+			vehicle="Land_Laptop_device_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false; this addAction[""Hammer (kurz)"",life_fnc_hammer,""hammer1""]; this addAction[""Hammer (mittel)"",life_fnc_hammer,""hammer2""]; this addAction[""Hammer (lang)"",life_fnc_hammer,""hammer3""];";
+		};
 	};
 	class Markers
 	{
-		items=241;
+		items=245;
 		class Item0
 		{
 			position[]={9292.7969,19.698908,10492.917};
@@ -7015,6 +7051,36 @@ class Mission
 			type="loc_Tourism";
 			colorName="ColorPink";
 			angle=10.236719;
+		};
+		class Item241
+		{
+			position[]={8316.7373,10.495347,6502.2236};
+			name="justiz_spawn_1";
+			type="Empty";
+			angle=-64.360481;
+		};
+		class Item242
+		{
+			position[]={8311.041,10.497195,6501.3135};
+			name="justiz_veh_1";
+			type="Empty";
+			angle=343.23337;
+		};
+		class Item243
+		{
+			position[]={8312.3887,10.49675,6501.3691};
+			name="justiz_g_1";
+			type="Empty";
+			angle=346.409;
+		};
+		class Item244
+		{
+			position[]={8681.6973,10.46,6711.4805};
+			name="gerichtsbuildung_marker";
+			text="LakesideValley Gerichtsgebäude";
+			type="A3L_House_Red_Icon";
+			colorName="ColorRed";
+			angle=8.7273397;
 		};
 	};
 };
