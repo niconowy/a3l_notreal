@@ -1,5 +1,5 @@
 /*
-	File: fn_clothing_ems.sqf
+	File: fn_clothing_justiz.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
@@ -10,9 +10,9 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"Justiz Kleidungsladen"];
+//ctrlSetText[3103,"Justiz Kleidungsladen"];
 
-if(__GETC__(life_adaclevel) < 10) exitWith {hint "Du bist keine Justiz!"};
+if((call life_adaclevel) < 10) exitWith {closeDialog 0; hint "Du bist keine Justiz!"};
 
 switch (_filter) do
 {

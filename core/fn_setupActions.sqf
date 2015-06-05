@@ -168,18 +168,6 @@ switch (playerSide) do
 	
 	case east:
 	{
-		if((call life_adaclevel) > 9) then {
-		//Ausweis
-			life_actions = life_actions + [player addAction["<t color='#FFFFFF'>Ausweis Zeigen</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == east && !isNull cursorTarget && player distance cursorTarget < 3.5 && cursorTarget isKindOf "Man" ']];
-		//earplugs
-			life_actions = [player addAction["<t color='#ADFF2F'>Ohrstöpsel Rein/Raus</t>",{if (soundVolume != 1) then {1 fadeSound 1;} else {1 fadeSound 0.2;};},"",-6,false,false,"",'vehicle player != player || soundVolume != 1']];	
-		//Richterhammer -kurz
-			life_actions = life_actions + [player addAction["<t color='#FFFFFF'>Hammer (kurz)</t>",life_fnc_hammer,"hammer1",1,false,true,"",' playerSide == east && player distance (getMarkerPos gerichtsbuildung_marker) < 15']];
-		//Richterhammer -mittel
-			life_actions = life_actions + [player addAction["<t color='#FFFFFF'>Hammer (mittel)</t>",life_fnc_hammer,"hammer2",1,false,true,"",' playerSide == east && player distance (getMarkerPos gerichtsbuildung_marker) < 15']];
-		//Richterhammer -lang
-			life_actions = life_actions + [player addAction["<t color='#FFFFFF'>Hammer (lang)</t>",life_fnc_hammer,"hammer3",1,false,true,"",' playerSide == east && player distance (getMarkerPos gerichtsbuildung_marker) < 15']];
-		} else {
 		//place bargate
 			life_actions = life_actions + [player addAction["Place BarGate",{if(!isNull life_bargate) then {{detach _x} foreach (life_bargate getvariable "bargate"); _handle = [life_bargate,"bargate"] spawn life_fnc_enablecollisionwith; waitUntil {scriptDone _handle}; [[life_bargate,"bargate"],"life_fnc_enablecollisionwith",true,false] call BIS_fnc_MP; life_bargate = ObjNull;};},"",999,false,false,"",'!isNull life_bargate']];
 
@@ -246,6 +234,5 @@ switch (playerSide) do
 			life_actions = life_actions + [player addAction["<t color='#FFFFFF'>Ausweis zeigen</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == east && !isNull cursorTarget && player distance cursorTarget < 3.5 && cursorTarget isKindOf "Man" ']];
 		//earplugs
 			life_actions = [player addAction["<t color='#ADFF2F'>Ohrstöpsel Rein/Raus</t>",{if (soundVolume != 1) then {1 fadeSound 1;} else {1 fadeSound 0.2;};},"",-6,false,false,"",'vehicle player != player || soundVolume != 1']];	
-		};
 	};
 };

@@ -15,13 +15,13 @@ disableSerialization;
 if((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian) exitWith {hint localize "STR_Shop_NotaCiv"; closeDialog 0;};
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
 //if((_this select 3) in ["fbi"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
-if((_this select 3) in ["fbi"] && playerSide != west) exitWith {hint localize "Du gehoerst nicht zum FBI!"; closeDialog 0;};
-if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "Du gehoerst nicht zum LSPD!"; closeDialog 0;};
-if((_this select 3) in ["state"] && playerSide != west) exitWith {hint localize "Du gehoerst nicht zum SWAT!"; closeDialog 0;};
+if((_this select 3) in ["fbi"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zur LakesideValley FBI-Abteilung!"; closeDialog 0;};
+if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zum LakesideValley Police Department!"; closeDialog 0;};
+if((_this select 3) in ["state"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zur LakesideValley SWAT-Einheit!"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
-if((_this select 3) == "ems" && playerSide != independent) exitWith {hint "You are not a EMS!"; closeDialog 0;};
-if((_this select 3) in ["adac"] && playerSide != east) exitWith {hint "Du kannst diesen Shop nur als IPD Beamter benutzen"; closeDialog 0;};
-if((_this select 3) in ["justiz"] && playerSide != east) exitWith {hint "Nur Justiz-Personen können diesen Laden nutzen!"; closeDialog 0;};
+if((_this select 3) == "ems" && playerSide != independent) exitWith {hint "Du gehörst nicht zum LakesideValley EMS/FDP!"; closeDialog 0;};
+if((_this select 3) in ["adac"] && playerSide != east) exitWith {hint "Du gehörst nicht zum LakesideValley IPD!"; closeDialog 0;};
+if((_this select 3) == "justiz" && playerSide != east) exitWith {hint "Du gehörst nicht zur LakesideValley Justiz-Abteilung!"; closeDialog 0;};
 
 life_clothing_store = _this select 3;
 

@@ -1,5 +1,5 @@
 /*
-	File: fn_clothing_bruce.sqf
+	File: fn_clothing_ems.sqf
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:

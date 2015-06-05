@@ -1,5 +1,5 @@
 /*
-	File: fn_clothing_ems.sqf
+	File: fn_clothing_adac.sqf
 	Author: Hungry?
 	
 	Description:

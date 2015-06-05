@@ -3142,7 +3142,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=191;
+		items=190;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -4570,7 +4570,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Kleidung"",life_fnc_clothingMenu,""bruce""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Brian's Kleidung"",life_fnc_clothingMenu,""bruce""];";
 		};
 		class Item138
 		{
@@ -5099,7 +5099,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Kühlschrank"",life_fnc_virt_menu,""murdermarket""]; this addAction[""Justiz Fahrzeuge"",life_fnc_vehicleShopMenu,[""justiz_kfz"",east,[""justiz_veh_1""],""adac"",""Justiz Fahrzeuge - Sicher Unterwegs!""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""justiz_g_1""; }]; this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+			init="this enableSimulation false; this allowDamage false; this allowDamage false; this enableSimulation false; this addAction[""Justiz Kleidung"",life_fnc_clothingMenu,""justiz""]; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Kühlschrank"",life_fnc_virt_menu,""murdermarket""]; this addAction[""Justiz Fahrzeuge"",life_fnc_vehicleShopMenu,[""justiz_kfz"",east,[""justiz_veh_1""],""adac"",""Justiz Fahrzeuge - Sicher Unterwegs!""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""justiz_g_1""; }]; this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 		};
 		class Item188
 		{
@@ -5120,18 +5120,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Laptop_device_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Hammer (kurz)"",life_fnc_hammer,""hammer1""]; this addAction[""Hammer (mittel)"",life_fnc_hammer,""hammer2""]; this addAction[""Hammer (lang)"",life_fnc_hammer,""hammer3""];";
-		};
-		class Item190
-		{
-			position[]={8665.5967,10.46,6693.2378};
-			azimut=15;
-			offsetY=1.8;
-			id=320;
-			side="EMPTY";
-			vehicle="Land_Laptop_device_F";
-			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Hammer (kurz)"",life_fnc_hammer,""hammer1""]; this addAction[""Hammer (mittel)"",life_fnc_hammer,""hammer2""]; this addAction[""Hammer (lang)"",life_fnc_hammer,""hammer3""];";
+			init="this allowDamage false; this enableSimulation false;";
 		};
 	};
 	class Markers
@@ -7065,7 +7054,7 @@ class Mission
 		};
 		class Item241
 		{
-			position[]={8316.7373,10.495347,6502.2236};
+			position[]={8317.0215,10.495254,6502.2456};
 			name="justiz_spawn_1";
 			type="Empty";
 			angle=-64.360497;
