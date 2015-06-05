@@ -521,6 +521,21 @@ switch (_shop) do
 		];
 	};
 	
+	case "justiz_kfz":
+	{
+		if(playerSide != east) exitWith {hint "Du bist keine Justiz!"};
+		if(__GETC__(life_adaclevel) < 10) exitWith { hint "Du bist nicht in der Justiz tätig." };
+		if(__GETC__(life_adaclevel) == 10) then //Staatsanwalt Auto
+		{			
+			_return pushBack [" ",612000];
+		};
+		
+		if(__GETC__(life_adaclevel) == 11) then //Richter Auto
+		{			
+			_return pushBack [" ",612000];
+		}; 
+	};
+	
 	case "donator":
 	{
 		if(playerSide != civilian) exitWith {hint "Du bist kein Zivilist."};

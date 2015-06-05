@@ -73,53 +73,35 @@ class CfgSounds
 		sound[] = {"\sounds\ipdSiren_Wail.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
-	class medicalintro
-	{
-		name = "medicalintro";
-		sound[] = {"\sounds\medicalintro.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class copintro
-	{
-		name = "copintro";
-		sound[] = {"\sounds\copintro.ogg", 1.0, 1};
-		titles[] = {};
-	};
+
 	class tazersound
 	{
 		name = "Tazersound";
 		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
 		titles[] = {};
 	};
-	
-	class flashbang
-	{
-		name = "flashbang";
-		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
+
 	class alert
 	{
 		name = "alert";
 		sound[] = {"\sounds\alert.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	
+
 	class punch
 	{
 		name="punch";
 		sound[] = {"\sounds\punch.ogg", 1.0, 1};
 		titles[] = {};
 	};
+
 	class punch_break
 	{
 		name="punch_break";
 		sound[] = {"\sounds\punch_break.ogg", 1.0, 1};
 		titles[] = {};
 	};
+
 	class punch_balls
 	{
 		name="punch_balls";
@@ -133,53 +115,70 @@ class CfgSounds
 		sound[] = {"\sounds\knockout.ogg", 1.0, 1};
 		titles[] = {};
 	};
-	 
 	
+	class hammer_kurz
+	{
+		name = "hammer_kurz";
+		sound[] = {"\sounds\hammer_1.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class hammer_mittel
+	{
+		name = "hammer_mittel";
+		sound[] = {"\sounds\hammer_2.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class hammer_lang
+	{
+		name = "hammer_lang";
+		sound[] = {"\sounds\hammer_3.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
 	class dog_whine
-{
-name = "dog_whine";
-sound[] = {"sounds\dog_whine.ogg", 1, 1};
-titles[] = {};
+	{
+		name = "dog_whine";
+		sound[] = {"sounds\dog_whine.ogg", 1, 1};
+		titles[] = {};
 
-};
-class dog_growl
-{
-name = "dog_growl";
-sound[] = {"sounds\dog_growl.ogg", 1, 1};
-titles[] = {};
+	};
 
-};
-class dog_ruff
-{
-name = "dog_ruff";
-sound[] = {"sounds\dog_ruff.ogg", 1, 1};
-titles[] = {};
+	class dog_growl
+	{
+		name = "dog_growl";
+		sound[] = {"sounds\dog_growl.ogg", 1, 1};
+		titles[] = {};
 
-};
+	};
+	class dog_ruff
+	{
+		name = "dog_ruff";
+		sound[] = {"sounds\dog_ruff.ogg", 1, 1};
+		titles[] = {};
+	};
 
-class whistle
-{
-name = "whistle";
-sound[] = {"sounds\whistle.ogg", 1, 1};
-titles[] = {};
+	class whistle
+	{
+		name = "whistle";
+		sound[] = {"sounds\whistle.ogg", 1, 1};
+		titles[] = {};
+	};
 
-};
+	class dog_close
+	{
+		name = "dog_close";
+		sound[] = {"sounds\dog_close.ogg", 1, 1};
+		titles[] = {};
+	};
 
-class dog_close
-{
-name = "dog_close";
-sound[] = {"sounds\dog_close.ogg", 1, 1};
-titles[] = {};
-
-};
-
-class dog_one
-{
-name = "dog_one";
-sound[] = {"sounds\dog_one.ogg", 1, 1};
-titles[] = {};
-
-}; 
+	class dog_one
+	{
+		name = "dog_one";
+		sound[] = {"sounds\dog_one.ogg", 1, 1};
+		titles[] = {};
+	}; 
 	
 };
 

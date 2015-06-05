@@ -65,11 +65,9 @@ switch (_side) do
 	};
 
 	case east: {
-		if(__GETC__(life_adminlevel) > 0) then {
+		if(__GETC__(life_adaclevel) > 9) then {
 			_return = [
 				["justiz_spawn_1","Lakeside City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["adac_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["adac_spawn_2","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		} else {
 			_return = [
