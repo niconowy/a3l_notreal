@@ -143,6 +143,7 @@ class Life_Client_Core
 		class augenbindeAn {};
 		class augenbindeAus {};
 		class augenbindeAction {};
+		class hammer {};
 	};
 	
 	class Housing
