@@ -1,4 +1,4 @@
-author = "A3L Dev-Team by arma-3-life.de";
+author = "Tonic, Itsyuka | Edit by arma-3-life.de";
 onLoadName = "Lakeside Reallife v2.0.0.1";
 onLoadMission = "http://arma-3-life.de";
 loadScreen = "textures\E76_AppleGate_Lake.paa";
@@ -210,6 +210,27 @@ class CfgDebriefing
 		title = "IPD - Whitelist";
 		subtitle = "Du bist nicht als IPD freigeschalten";
 		description = "Du bist nicht für diesen IPD-Slot freigeschalten worden!";
+		pictureBackground = "flag_CSAT";
+		picture = "flag_CSAT";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class StaatsanwaltWhitelist
+	{
+		title = "Staatsanwalt - Whitelist";
+		subtitle = "Du bist nicht als Staatsanwalt freigeschalten";
+		description = "Du bist nicht für diesen Staatsanwalt freigeschalten worden!";
+		pictureBackground = "flag_CSAT";
+		picture = "flag_CSAT";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	
+	class RichterWhitelist
+	{
+		title = "Richter - Whitelist";
+		subtitle = "Du bist nicht als Richter freigeschalten";
+		description = "Du bist nicht für diesen Richter-Slot freigeschalten worden!";
 		pictureBackground = "flag_CSAT";
 		picture = "flag_CSAT";
 		pictureColor[] = {0,0.3,0.6,1};

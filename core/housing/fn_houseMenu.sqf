@@ -13,6 +13,9 @@
 #define Btn7 37456
 #define Btn8 37457
 #define Btn9 37458
+#define Btn10 37459
+#define Btn11 37460
+#define Btn12 37461
 #define Title 37401
 
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8","_Btn9"];
@@ -33,6 +36,9 @@ _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
 _Btn8 = _display displayCtrl Btn8;
 _Btn9 = _display displayCtrl Btn9;
+_Btn10 = _display displayCtrl Btn10;
+_Btn11 = _display displayCtrl Btn11;
+_Btn12 = _display displayCtrl Btn12;
 _Btn1 ctrlShow false;
 _Btn2 ctrlShow false;
 _Btn3 ctrlShow false;
@@ -42,6 +48,9 @@ _Btn6 ctrlShow false;
 _Btn7 ctrlShow false;
 _Btn8 ctrlShow false;
 _Btn9 ctrlShow false;
+_Btn10 ctrlShow false;
+_Btn11 ctrlShow false;
+_Btn12 ctrlShow false;
 
 life_pInact_curTarget = _curTarget;
 if(_curTarget isKindOf "House_F" && playerSide == west) exitWith {

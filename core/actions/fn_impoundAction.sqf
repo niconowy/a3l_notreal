@@ -13,7 +13,11 @@ if(damage _vehicle == 1) exitWith {hint "Dieses Fahrzeug ist zerstört und kann 
 if((_vehicle isKindOf "Car") || (_vehicle isKindof "landVehicle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base")) then
 {
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
-	if(count _vehicleData == 0) exitWith {deleteVehicle _vehicle}; //Bad vehicle.
+	if(count _vehicleData == 0) exitWith {	//Fahrzeug Bug (keine Besitzer) - sprich: Falsches/Fehlendes MP Paket
+		hint "Fahrzeug wurde vermutlich durch eine höhere Macht erstellt... Das Fahrzeug wird nun von Aliens entführt."; sleep 4;	//RP muss sein. Auch im Script :P
+		deleteVehicle _vehicle; sleep 0.7;
+		hint "** Man In Black Stift **\nAlles was Sie die letzten 5 Minuten gesehen haben, vergessen Sie.\nHier stand nie ein Fahrzeug, das war eine Farta Morgana - ein Trugbild.\nSie sind hier, da Sie Ihren Hund und etwas zu Trinken suchen.";
+	};
 	_uid = getPlayerUID player;
 	_owner = (_vehicleData select 0) select 0;
 	if(_uid == _owner) exitWith {hint localize "STR_NOTF_CannotImpoundOwn";};
@@ -55,15 +59,17 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindof "landVehicle") || (_vehicle i
 	//if((time - _time)  < 120) exitWith {hint "This is a freshly spawned vehicle, you have no right impounding it."};
 	if((count crew _vehicle) == 0) then
 	{
-		if(!((_vehicle isKindOf "Car") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship"))) exitWith {life_action_inUse = false;};
+		if(!((_vehicle isKindOf "Car") || (_vehicle isKindof "landVehicle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base"))) exitWith {life_action_inUse = false;};
 		_type = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
 		switch (true) do
 		{
 			case (_vehicle isKindOf "Car"): {_price = (call life_impound_car);};
 			case (_vehicle isKindOf "Ship"): {_price = (call life_impound_boat);};
 			case (_vehicle isKindOf "Air"): {_price = (call life_impound_air);};
+			case (_vehicle isKindOf "Motorcycle"): {_price = (call life_impound_car);};			//A3L Vehicle
+			case (_vehicle isKindOf "A3L_Tahoe_Base"): {_price = (call life_impound_car);};		//A3L Vehicle
 		};
-		
+		if(playerSide == west && playersNumber east > 2) then {_vehicle setFuel 0}; //Wenn mehr als 2 IPDler da sind, und ein Cop das KFZ beschlagnahmt -> KFZ Fuel = 0
 		life_impound_inuse = true;
 		[[_vehicle,true,player],"TON_fnc_vehicleStore",false,false] spawn life_fnc_MP;
 		waitUntil {!life_impound_inuse};

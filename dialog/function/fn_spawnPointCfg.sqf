@@ -65,10 +65,18 @@ switch (_side) do
 	};
 
 	case east: {
-		_return = [
-			["adac_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-			["adac_spawn_2","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
-		];
+		if(__GETC__(life_adminlevel) > 0) then {
+			_return = [
+				["justiz_spawn_1","Lakeside City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["adac_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["adac_spawn_2","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			];
+		} else {
+			_return = [
+				["adac_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["adac_spawn_2","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+			];
+		};
 	};
 };
 

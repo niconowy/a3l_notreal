@@ -9,7 +9,8 @@ private["_veh","_upp","_ui","_progress","_pgText","_cP","_displayName"];
 _veh = cursorTarget;
 life_interrupted = false;
 if(isNull _veh) exitwith {};
-if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (_veh isKindOf "A3L_Tahoe_Base")) then
+if(getDammage _veh == 1) exitwith {hint "Dieses Fahrzeug ist komplett zerstört. Daher kannst du es nicht reparieren."};
+if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (_veh isKindOf "A3L_Tahoe_Base") OR (_veh isKindOf "Motorcycle")) then
 {
 	if("ToolKit" in (items player)) then
 	{
