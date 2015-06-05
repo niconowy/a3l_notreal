@@ -20,7 +20,12 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			[" "," ",850]
+			["A3L_Suit_Uniform","Anzug (Schwarz, trad.)",12750],
+			["KAEL_SUITS_BR_F13","Anzug (Weiss)",12750],
+			["KAEL_SUITS_BR_F4","Anzug (Lila)",12750],
+			["KAEL_SUITS_BR_F5","Anzug (Pink)",12750],
+			["KAEL_SUITS_BR_F","Anzug (Rot)",12750],
+			["KAEL_SUITS_BR_F3","Anzug (Blau)",12750]
 		];
 	};
 	
@@ -59,7 +64,7 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			[" ",nil,5000]
+		//	[" ",nil,5000]
 		];
 	};
 	
@@ -67,8 +72,8 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr","Schulrucksack",150],
-			["B_Kitbag_mcamo",nil,350],
+			//["B_AssaultPack_cbr","Schulrucksack",150],
+			//["B_Kitbag_mcamo",nil,350],
 /*			// 1.7.1
 			["glt_backpack_cars",nil,1000],
 			["glt_backpack_dora",nil,1000],
@@ -80,7 +85,7 @@ switch (_filter) do
 			["glt_bergen_violet",nil,1000],
 			["glt_bergen_yellow",nil,1000],
 */			
-			["B_Carryall_khk",nil,400]
+			//["B_Carryall_khk",nil,400]
 		];
 	};
 };

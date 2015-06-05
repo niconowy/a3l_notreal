@@ -218,7 +218,7 @@ class CfgDebriefing
 	{
 		title = "Staatsanwalt - Whitelist";
 		subtitle = "Du bist nicht als Staatsanwalt freigeschalten";
-		description = "Du bist nicht für diesen Staatsanwalt freigeschalten worden!";
+		description = "Du bist nicht für diesen Staatsanwalt-Slot freigeschalten worden!";
 		pictureBackground = "flag_CSAT";
 		picture = "flag_CSAT";
 		pictureColor[] = {0,0.3,0.6,1};

@@ -1289,7 +1289,7 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={9217.4268,19.274132,10484.148};
+					position[]={9166.0088,32.917645,10542.781};
 					azimut=-201.88901;
 					special="NONE";
 					id=51;
@@ -3142,7 +3142,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=190;
+		items=191;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -5122,6 +5122,17 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false; this addAction[""Hammer (kurz)"",life_fnc_hammer,""hammer1""]; this addAction[""Hammer (mittel)"",life_fnc_hammer,""hammer2""]; this addAction[""Hammer (lang)"",life_fnc_hammer,""hammer3""];";
 		};
+		class Item190
+		{
+			position[]={8665.5967,10.46,6693.2378};
+			azimut=15;
+			offsetY=1.8;
+			id=320;
+			side="EMPTY";
+			vehicle="Land_Laptop_device_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false; this addAction[""Hammer (kurz)"",life_fnc_hammer,""hammer1""]; this addAction[""Hammer (mittel)"",life_fnc_hammer,""hammer2""]; this addAction[""Hammer (lang)"",life_fnc_hammer,""hammer3""];";
+		};
 	};
 	class Markers
 	{
@@ -7057,7 +7068,7 @@ class Mission
 			position[]={8316.7373,10.495347,6502.2236};
 			name="justiz_spawn_1";
 			type="Empty";
-			angle=-64.360481;
+			angle=-64.360497;
 		};
 		class Item242
 		{

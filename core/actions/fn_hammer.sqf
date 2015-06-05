@@ -11,8 +11,9 @@ private["_hammer"];
 _hammer = _this select 3;
 
 if(isNil {_hammer}) exitWith {};
+if(playerSide != east) exitWith {};
 
-if((__GETC__(life_adaclevel) == 11) && playerSide == east) then {
+if((call life_adaclevel) == 11) then {
 	if(_hammer == "hammer1") then {
 		[player, "hammer_kurz"] call life_fnc_globalSound;
 	};

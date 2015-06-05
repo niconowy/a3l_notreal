@@ -526,16 +526,25 @@ switch (_shop) do
 		if(playerSide != east) exitWith {hint "Du bist keine Justiz!"};
 		if(__GETC__(life_adaclevel) < 10) exitWith { hint "Du bist nicht in der Justiz tätig." };
 		if(__GETC__(life_adaclevel) == 10) then //Staatsanwalt Auto
-		{			
-			_return pushBack [" ",612000];
+		{
+			_return pushBack ["A3L_CVBlack",30000];
+			_return pushBack ["A3L_CVBlue",30000];
+			_return pushBack ["A3L_TaurusBlack",35000];
+			_return pushBack ["A3L_TaurusBlue",35000];
+			_return pushBack ["cl3_z4_2008_black",24500];
 		};
-		
+
 		if(__GETC__(life_adaclevel) == 11) then //Richter Auto
-		{			
-			_return pushBack [" ",612000];
-		}; 
+		{
+			_return pushBack ["cl3_z4_2008_black",24500];		
+			_return pushBack ["wirk_h3_limo",50000];		
+			_return pushBack ["A3L_CVBlack",17500];
+			_return pushBack ["A3L_CVBlue",17500];
+			_return pushBack ["A3L_TaurusBlack",20000];
+			_return pushBack ["A3L_TaurusBlue",20000];
+		};
 	};
-	
+
 	case "donator":
 	{
 		if(playerSide != civilian) exitWith {hint "Du bist kein Zivilist."};

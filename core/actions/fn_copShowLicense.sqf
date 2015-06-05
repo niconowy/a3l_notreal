@@ -63,14 +63,20 @@ if(playerSide == east) then
 	
 	switch ( _mediclevel ) do
 	{
-		case 1: { _rank = "Schrauber"; };
-		case 2: { _rank = "Schweißer"; };
-		case 3: { _rank = "Wagenheber"; };	
-		case 4: { _rank = "KfZ-Meister"; };
-		case 5: { _rank = "ADAC-Leiter"; };
+		case 1: { _rank = "Auszubildender"; };
+		case 2: { _rank = "KFZ-Mechaniker"; };
+		case 3: { _rank = "KFZ-Mechatroniker"; };	
+		case 4: { _rank = "KFZ-Meister"; };
+		case 5: { _rank = "KFZ-Ausbilder"; };
+		case 6: { _rank = "Personalleiter"; };
+		case 7: { _rank = "Stellv. IPD Leiter"; };
+		case 8: { _rank = "IPD Leiter"; };
+		case 9: { _rank = " "; };
+		case 10: { _rank = "Staatsanwalt"; };
+		case 11: { _rank = "Richter"; };
 	};
 
-	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5'>ADAC</t>", name player, _rank];
+	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/>", name player, _rank];
 	
 	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
 };
