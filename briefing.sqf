@@ -194,18 +194,83 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 		]
 	];
 																	// InGame Regelungen ---------------------------
-																	
+
+	player createDiaryRecord["rules",
+		[
+			"Justiz Regelung",
+				"
+<font size='19' color='#089494'>§13 Justiz Regelungen</font><br/><br/>
+13.1 Die erstellten Läden für Justiz darf ausschliesslich nur von der Justiz selber verwendet werden.<br/>
+13.2 Zur Justiz zählen folgende Parteien:<br/>
+13.2.1 der Richter<br/>
+13.2.2 der Staatsanwalt:<br/>
+13.4 Die Justiz muss stets neutral sein.<br/>
+13.5 Es ist erlaubt, Staatsanwälte und den Richter als Geisel zu nehmen, ein Attentat zu Verüben oder Ähnliches. Dies muss aber 15 Minuten vor dem eigentlichen Angriff kenntlich gemacht werden!<br/>
+13.6 Sollte es zu einem Gerichtsverfahren kommen, muss der Staatsanwalt die Klage vorlesen und Beweise präsentieren.<br/>
+13.7 Eine Gerichtsverhandlung kann nur der Richter alleine eröffnen.<br/>
+13.8 Damit der Richter eine Gerichtsverhandlung eröffnen kann, muss mindestens ein Staatsanwalt, evtl. der Kläger, der Richter selbst, der Angeklagte und dessen Anwalt sowie mindestens drei Polizisten im Raum sein.<br/>
+13.9 Der Richter verkündet Urteile nicht nach Lust und Laune, auch nicht nach Gewissen. Er verkündet diese durch die gesammelten Beweise und Zeugenaussagen.<br/>
+13.10 Indizien sind keine Beweise. Niemand kann auf Grund von Indizien verurteilt werden!<br/>
+13.11 In dubio pro reo - Im Zweifel für den Angeklagten.<br/>
+13.12 Der Richter hat die Möglichkeit, den Gerichtssaal räumen zu lassen.<br/>
+13.13 Auch die Justiz muss sich, immer, an das Grundgesetz (einschl. der StVO/LuftVO) halten!<br/>
+13.13.1 Sollte die Justiz gegen geltendes Recht verstossen, haben die Bürgermeister von LakesideValley die Möglichkeit, einzelne Personen aus dem Beamtenstatus fristlos zu entfernen!<br/>
+				"
+		]
+	];
+
+
+	player createDiaryRecord["rules",
+		[
+			"IPD Regelung",
+				"
+<font size='19' color='#089494'>§12 IPD Regelungen</font><br/><br/>
+12.1 ADAC Mitarbeiter dürfen unter keinen Umständen überfallen, getötet oder in der Ausübung in ihrer Tätigkeit behindert werden.<br/>
+12.2 Das Klauen von Fahrzeugen, die den ADAClern gehören, ist verboten.<br/>
+12.3 ADACler dürfen während eines Schussgefechtes keine Fahrzeuge reparieren.<br/>
+12.4 ADACler sind stets neutral.<br/>
+12.5 Sollte man die Regelung §11 missachten, muss man mit einer permanenten/ temporären Sperre rechnen - in leichtwidrigen Fällen kann ein Eintrag auf die ADAC-Interne BlackList erfolgen.<br/>
+				"
+		]
+	];
+	
+	player createDiaryRecord["rules",
+		[
+			"Unternehmen",
+				"
+<font size='19' color='#089494'>§11 Unternehmen</font><br/><br/>
+11.1 Sämtliche Unternehmen müssen im Subforum 'Gewerbeamt' angemeldet und angenommen werden.<br/>
+11.2 Ein Unternehmen definiert sich dadurch, das dieses mindestens zwei Angestellten besitzt.<br/>
+11.3 Illegale Aktivitäten des Unternehmens müssen der Support Leitung privat mitgeteilt werden (Stichwort: Briefkastenfirma).<br/>
+11.4 Der Staat unterstützt keine Rebellengruppierungen. Diese müssen nicht angemeldet werden und gelten unter '§10 Gruppierungen'.<br/>
+				"
+		]
+	];
+
+	player createDiaryRecord["rules",
+		[
+			"Gruppierungen",
+				"
+<font size='19' color='#089494'>§10 Gruppierungen</font><br/><br/>
+10.1 Gruppierungen dürfen maximal aus 10 Personen bestehen.<br/>
+10.2 Von diesen 10 Personen dürfen maximal 8 Personen an einem RP Teilnehmen.<br/>
+10.2.1 Die anderen Personen müssen mindestens 2km (2000m) entfernt sein.<br/>
+				"
+		]
+	];
+	
 	player createDiaryRecord["rules",
 		[
 			"Schusswaffen",
 				"
 <font size='19' color='#089494'>§9 Schusswaffen</font><br/><br/>
-9.1 Das Mitführen von Waffen über 9mm ist verboten, selbst mit einem Waffenschein!<br/>
+9.1 Das Mitführen von Waffen über 9mm ist illegal, selbst mit einem Waffenschein!<br/>
 9.2 Waffen sind innerhalb der Stadt gesichert in der Tasche zu tragen!<br/>
 9.3 Man darf Waffen nur besitzen, wenn man einen gültigen Waffenschein besitzt.<br/>
-9.4 Verkaufen von Waffen an Zivilisten welche keine Lizenz für diese besitzen ist illegal!<br/>
+9.4 Verkaufen von Waffen an Zivilisten, welche keine Lizenz für diese besitzen ist illegal!<br/>
 9.5 Sollten sie eine Tatwaffe bei sich tragen, so wird diese von der Polizei beschlagnahmt!<br/>
-9.6 Waffen welche einen Burstmode (3-Schussmodus) bzw. vollautomatisch sind - sind ebenfalls verboten!<br/>
+9.6 Waffen, welche einen Burstmode (3-Schussmodus) bzw. vollautomatisch sind - sind ebenfalls illegal!<br/>
+9.7 Der Besitz von Magazinen für illegale Waffen ist verboten und wird mit einem Busgeld bestraft.<br/>
 				"
 		]
 	];
@@ -230,10 +295,12 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 				"
 <font size='19' color='#089494'>§7 EMS Regelung</font><br/><br/>
 7.1 Sanitäter dürfen unter keinen Umständen überfallen, getötet oder in der Ausübung in ihrer Tätigkeit behindert werden.<br/>
-7.2 Das Klauen von Fahrzeugen die den Sanitätern gehören, ist verboten.<br/>
+7.2 Das Nutzen von Fahrzeugen mit einer Sanitäterlackierung, ist verboten.<br/>
 7.3 Sanitäter dürfen während eines Schussgefechtes niemanden wiederbeleben.<br/>
 7.4 Sanitäter sind stets neutral.<br/>
 7.5 Sollte man die Regelung §7 missachten, muss man mit einer permanenten/ temporären Sperre rechnen - in leichtwidrigen Fällen kann ein Eintrag auf die Medic-Interne BlackList erfolgen.<br/>
+7.6 Zivilisten, die irgendeine Medic-Kleidung tragen, werden mit einerm Ban bestraft.<br/>
+7.6.1 Praktikanten, die die Medic-Kleidung nach dem Praktikum nicht abgeben und diese anschließend als Zivilist verwenden, werden mit einem 7d Ban und einem Lebenslangem Blacklist eintrag bestraft.<br/>
 				"
 		]
 	];
@@ -247,11 +314,13 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 6.1 Bei einem Überfall ist stets Kontakt zu der Person die angegriffen wird (Opfer) zu halten.<br/>
 6.2 Der Gebrauch von Schusswaffen muss immer angekündigt werden (sei es per Handy-Nachricht, Notruf an die Cops, oder lautem Schreien).<br/>
 6.3 Das Opfer muss, sofern ein Überfall gemacht wird, Zeit zum reagieren haben.<br/>
-6.3.1 So ist z. B. das Ankündigen eines Überfalls per Halt stehen bleiben! Überfall - oder wir schießen und eine Sekunde später wird das Opfer erschossen RDM und führt zum Bann.<br/>
-6.4 Wenn du einen Überfall machst, hat das Opfer die Berechtigung dich bei gegebenem Anlass zu überfahren oder zu erschießen - dies ist Notwehr und kein VRDM/VDM.<br/>
+6.3.1 So ist zB. das Ankündigen eines Überfalls per 'Halt stehen bleiben! Überfall - oder wir schießen' und eine Sekunde später wird das Opfer erschossen RDM und führt zum Bann.<br/>
+6.4 Wenn du einen Überfall machst, hat das Opfer die Berechtigung dich bei gegebenem Anlass zu überfahren oder zu erschießen - dies ist Notwehr und kein VRDM/VDM. Das Opfer sollte dies zur Flucht nutzten und nicht um sämtliche Personen zu töten!<br/>
 6.5 Unbewaffnete Personen dürfen nicht erschossen werden.<br/>
-6.5.1 Außnahmeregelung wäre das nicht Befolgen einer Anweisung, Geiselnahme oder Ähnlichem.<br/>
+6.5.1 Ausnahmeregelung wäre das nicht Befolgen einer Anweisung, Geiselnahme oder Ähnlichem.<br/>
 6.6 Banküberfälle und Geiselnahmen sind nur gestattet, wenn sich mindestens 4 Polizeibeamten im Dienst befinden.<br/>
+6.7 Drogendealer dürfen nicht erschossen werden, da dies eine Globale RP Handlung wäre und nicht jeder das mitbekommen würde.<br/>
+6.8 Gefesselt dürfen keinerlei Gegenstände im Z-Inventar oder I-Inventar umgelagert, entfernt oder benutzt werden. <br/>
 				"
 		]
 	];
@@ -279,15 +348,18 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 			"Kommunikation",
 				"
 <font size='19' color='#089494'>§4 Kommunikation</font><br/><br/>
-4.1 Gesprochen wird über TeamSpeak3 mit dem Addon Task Force Radio.<br/>
+4.1 Gesprochen wird über TeamSpeak3 mit dem Addon 'Task Force Radio'.<br/>
+4.1.1 Skypen oder andere Kommunikation während dem Spielen ist verboten und wird mit einem Ban bestraft.<br/>
 4.2 Task Force Radio bildet somit die Grundlage der Kommunikation auf unserem Server.<br/>
+4.2.1 Stimmverzerrer und ähnliches sind VERBOTEN.<br/>
 4.3 Das Stören von Roleplaysituationen durch Hineinrufen, Trollen, etc. ist verboten.<br/>
 4.4 Störgeräusche sind zu unterlassen.<br/>
 4.5 Das Abspielen von Musik, Tönen oder Ähnlichem ist auf dem gesamten Server (InGame, TeamSpeak3) zu unterlassen.<br/>
 4.6 Der SideChat (Seitenkanal) darf nur für Fragen oder Werbung (Roleplaytech.) verwendet werden!<br/>
-4.6.1 Die Frage sollte immer im Roleplay-Sinn gestellt sein, z. B. Google Suche: Wie gehe ich auf Toilette?.<br/>
+4.6.1 Die Frage sollte immer im Roleplay-Sinn gestellt sein, z. B. 'Google Suche: Wie gehe ich auf Toilette?'.<br/>
 4.6.2 Der SideChat darf nicht für das Roleplay verwendet werden, z. B. Ankündigungen, Kann-Mich-Jemand-Aus-Dem-Knast-Holen Nachrichten.<br/>
 4.7 Das Schreiben im GlobalenKanal ist verboten. Wer dagegen verstößt wird mit einer Sperre zu rechnen haben!<br/>
+4.8 Gefesselt kann man kein Funkgerät bedienen (Funken, Frequenzen ändern, Kopfhörer-Lautsprecher Modus ändern etc.) außer man hat eine Funkmütze (Kappe mit Funkgerät an der Seite) oder ähnliches. Außerdem dürfen gefesselt keine SMS-Nachrichten oder Notrufe verfasst werden.<br/>
 				"
 		]
 	];
@@ -298,6 +370,7 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 				"
 <font size='19' color='#089494'>§3 Safezones</font><br/><br/>
 3.1 Als Safezone zählen folgende Orte in einem Umkreis von 50 Metern: Geldautomaten (sog. ATM), Spawn von Fahrzeugen (Fahrzeughändler, Garage, Truckshop, Civ-Spawns).<br/>
+3.1.2 Sollte sich ein Händler innerhalb einer ATM-Safezone befinden dann entfällt die Safezone.<br/>
 3.2 Waffenhändler und Rebellen-Außenposten zählen ebenfalls zur Safezone dazu.<br/>
 3.2.1 Polizisten haben die Erlaubnis Rebellen-Außenposten zu stürmen. Sollte dies passieren, dürfen die Polizisten beschossen werden.<br/>
 3.3 Hauptquartiere sind ebenfalls Safezone.<br/>
@@ -331,14 +404,17 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 1.1 Die Worte eines Administrators sind Gesetz.<br/>
 1.2 Auf dem Server hast du den gleichen Namen wie im Forum zu tragen.<br/>
 1.3 Störgeräusche sind zu vermeiden.<br/>
-1.4 Auf dem Server herrscht absolute Roleplay-Pflicht! Es gibt kein Out-Of-RP oder Out-Of-Character.<br/>
+1.4 Auf dem Server herrscht absolute Roleplay-Pflicht! Es gibt kein 'Out-Of-RP' oder 'Out-Of-Character'.<br/>
 1.5 Trolling ist auf dem gesamten Server verboten.<br/>
-1.6 Du bist Alleinverantwortlich für deinen Account (Forum, TeamSpeak3 und Arma3), so ist z. B. meine kleine Schwester war am Computer keine Entschuldigung und keinen Grund für eine Entsperrung.<br/>
+1.6 Du bist Alleinverantwortlich für deinen Account (Forum, TeamSpeak3 und Arma3), so ist z. B. 'meine kleine Schwester war am Computer' keine Entschuldigung und keinen Grund für eine Entsperrung.<br/>
 1.7 Combat-Logging, also Ausloggen während einer Roleplay-Handlung/ Schussgefechtes, ist verboten und wird mit einer permanenten Sperre bestraft.<br/>
 1.7.1 Solltest du die Verbindung verloren haben oder dein Arma3 ist abgestürzt, hast du dich unwiderruflich in die Roleplay-Handlung einzufinden.<br/>
 1.7.2 Wenn der Ausfall deiner seits länger war, sodass die Roleplay-Handlung bereits vorbei ist, melde dich bitte bei den Beteiligten und entschuldige dich für deinen Ausfall.<br/>
-1.7.3 Sollten diese Ausfälle vermehrt in Roleplay-Handlungen auftreffen, kannst du temporär vom Server gesperrt werden.<br/>
+1.7.3 Sollten diese 'Ausfälle' vermehrt in Roleplay-Handlungen auftreten, kannst du temporär vom Server gesperrt werden.<br/>
 1.8 Stream-Snipen ist verboten. Wer erwischt wird, bekommt eine permanente Sperre!<br/>
+1.9 Lobby Hopping (Umspawnen) ist verboten und wird mit einem Ban bestraft.<br/>
+1.10 Das Tragen einer PRESSE Weste ohne einen gültigen PRESSE-Ausweis ist verboten und kann zu einer temporären Sperre führen!<br/>
+1.11 Das Looten (Stehlen von Gegenständen/Kleidung aus dem Inventar) von Leichen ist verboten und wird mit einer Sperre bestraft.<br/>
 				"
 		]
 	];
