@@ -531,13 +531,12 @@ switch (_shop) do
 			_return pushBack ["A3L_CVBlue",30000];
 			_return pushBack ["A3L_TaurusBlack",35000];
 			_return pushBack ["A3L_TaurusBlue",35000];
-			_return pushBack ["cl3_z4_2008_black",24500];
 		};
 
 		if(__GETC__(life_adaclevel) == 11) then //Richter Auto
 		{
-			_return pushBack ["cl3_z4_2008_black",24500];		
-			_return pushBack ["wirk_h3_limo",50000];		
+			_return pushBack ["cl3_z4_2008_black",300000];		
+			_return pushBack ["wirk_h3_limo",350000];	
 			_return pushBack ["A3L_CVBlack",17500];
 			_return pushBack ["A3L_CVBlue",17500];
 			_return pushBack ["A3L_TaurusBlack",20000];
