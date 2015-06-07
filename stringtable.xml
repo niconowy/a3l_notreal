@@ -757,7 +757,7 @@
 			<Original>%1 wurde von %2 freigelassen</Original>
 		</Key>		
 		<Key ID="STR_NOTF_Robbed">
-			<Original>%1 hat $%3 von %2 geraubt</Original>
+			<Original>%2 wurde gerade um $%3 beraubt</Original>
 		</Key>
 		<Key ID="STR_NOTF_RobFail">
 			<Original>%1 hat kein Geld.</Original>
