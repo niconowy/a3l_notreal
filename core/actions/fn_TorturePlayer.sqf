@@ -7,7 +7,7 @@ if(isNull _unit) exitWith {};
 if(playerSide == west) exitWith {};
 if(life_action_inUse) exitWith {};
 
-if(player distance _unit > 5 || !alive player || !alive _unit) exitWith {hint "Du kannst die Person nicht foltern."};
+if(player distance _unit > 3 || !alive player || !alive _unit) exitWith {hint "Du kannst die Person nicht foltern."};
 
 life_action_inUse = true;
 
@@ -17,7 +17,7 @@ switch(_rand) do
 {
 	case 0:
 	{
-		hintSilent "Du hast dem Spieler in den Magen geschlagen.";
+		hintSilent "Du hast der Person in den Magen geschlagen.";
 		//Play sound on _unit
 		
 		//Damage _unit
@@ -28,7 +28,7 @@ switch(_rand) do
 		
 		//Fatigure unit
 		_fatigue = getFatigue _unit;
-		_fatigue = _fatigue + 0.2;
+		_fatigue = _fatigue + 0.5;
 		
 		if(_fatigue >= 1) then { _fatigue = 1; };
 		
@@ -38,7 +38,7 @@ switch(_rand) do
 	};
 	case 1:
 	{
-		hintSilent "Du hast dem Spieler ins Gesicht geschlagen.";
+		hintSilent "Du hast der Person eine Ohrfeige gegeben.";
 		//Play sound on _unit
 		
 		//Damage _unit
@@ -49,7 +49,7 @@ switch(_rand) do
 		
 		//Fatigure unit
 		_fatigue = getFatigue _unit;
-		_fatigue = _fatigue + 0.25;
+		_fatigue = _fatigue + 0.1;
 		
 		if(_fatigue >= 1) then { _fatigue = 1; };
 		
@@ -57,18 +57,18 @@ switch(_rand) do
 	};
 	case 2:
 	{
-		hintSilent "Du hast dem Spieler getreten.";
+		hintSilent "Du hast der Person gegen das Schienbein getreten.";
 		//Play sound on _unit
 		
 		//Damage _unit
 		_damage = damage _unit;
-		_damage = _damage + 0.15;
+		_damage = _damage + 0.10;
 		
 		_unit setDamage _damage;
 		
 		//Fatigure unit
 		_fatigue = getFatigue _unit;
-		_fatigue = _fatigue + 0.1;
+		_fatigue = _fatigue + 0.25;
 		
 		if(_fatigue >= 1) then { _fatigue = 1; };
 		
@@ -76,7 +76,7 @@ switch(_rand) do
 	};
 	case 3:
 	{
-		hintSilent "Du hast dem Spieler in die Eier getreten.";
+		hintSilent "Du hast der Person in die 'Weichteile' getreten.";
 		//Play sound on _unit
 		
 		//Damage _unit
@@ -90,7 +90,7 @@ switch(_rand) do
 	};
 	default
 	{
-		hintSilent "Du hast dem Spieler einige Zaehne ausgeschlagen.";
+		hintSilent "Du hast der Person einige Zähne ausgeschlagen.";
 		//Play sound on _unit
 		
 		//Damage _unit
@@ -101,7 +101,7 @@ switch(_rand) do
 		
 		//Fatigure unit
 		_fatigue = getFatigue _unit;
-		_fatigue = _fatigue + 0.1;
+		_fatigue = _fatigue + 0.3;
 		
 		if(_fatigue >= 1) then { _fatigue = 1; };
 		
