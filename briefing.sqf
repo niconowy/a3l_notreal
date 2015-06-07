@@ -203,12 +203,13 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 13.1 Die erstellten Läden für Justiz darf ausschliesslich nur von der Justiz selber verwendet werden.<br/>
 13.2 Zur Justiz zählen folgende Parteien:<br/>
 13.2.1 der Richter<br/>
-13.2.2 der Staatsanwalt:<br/>
+13.2.2 der Staatsanwalt<br/>
 13.4 Die Justiz muss stets neutral sein.<br/>
 13.5 Es ist erlaubt, Staatsanwälte und den Richter als Geisel zu nehmen, ein Attentat zu Verüben oder Ähnliches. Dies muss aber 15 Minuten vor dem eigentlichen Angriff kenntlich gemacht werden!<br/>
+13.5.1 Die Bekanntmachung solch eines Angriffes, muss per Nachricht an die Polizei erfolgen!<br/>
 13.6 Sollte es zu einem Gerichtsverfahren kommen, muss der Staatsanwalt die Klage vorlesen und Beweise präsentieren.<br/>
-13.7 Eine Gerichtsverhandlung kann nur der Richter alleine eröffnen.<br/>
-13.8 Damit der Richter eine Gerichtsverhandlung eröffnen kann, muss mindestens ein Staatsanwalt, evtl. der Kläger, der Richter selbst, der Angeklagte und dessen Anwalt sowie mindestens drei Polizisten im Raum sein.<br/>
+13.7 Eine Gerichtsverhandlung kann nur durch den Richter alleine eröffnet werden.<br/>
+13.8 Damit der Richter eine Gerichtsverhandlung eröffnen kann, muss mindestens ein Staatsanwalt, evtl. der Kläger, der Richter selbst, der Angeklagte und dessen Anwalt sowie mindestens einen Polizisten im Raum sein.<br/>
 13.9 Der Richter verkündet Urteile nicht nach Lust und Laune, auch nicht nach Gewissen. Er verkündet diese durch die gesammelten Beweise und Zeugenaussagen.<br/>
 13.10 Indizien sind keine Beweise. Niemand kann auf Grund von Indizien verurteilt werden!<br/>
 13.11 In dubio pro reo - Im Zweifel für den Angeklagten.<br/>
