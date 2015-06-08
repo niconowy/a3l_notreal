@@ -304,7 +304,7 @@ switch (_vehicle) do
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_wave_co.paa","civ"],
 			["\a3\air_f\Heli_Light_01\Data\Skins\heli_light_01_ext_digital_co.paa","reb"],
 			["#(argb,8,8,3)color(0.9,0.1,0.1,0.8)","med"],
-			["#(argb,8,8,3)color(0.8,0.8,0,1)","adac"]
+			["textures\hummingbird_adac.paa","adac"]
 		];
 	};
 
