@@ -135,7 +135,7 @@ class Mission
 	class Intel
 	{
 		briefingName="Lakeside Reallife";
-		overviewText="A3L 2.0.0.3";
+		overviewText="A3L 2.0.0.1";
 		startWeather=0.099999994;
 		startWind=0.29999998;
 		startWindDir=20;
@@ -3944,7 +3944,7 @@ class Mission
 		};
 		class Item78
 		{
-			position[]={3756.9023,26.745356,2598.1714};
+			position[]={3850.9087,21.493608,2745.7017};
 			azimut=1459.42;
 			id=208;
 			side="EMPTY";
@@ -5099,7 +5099,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this allowDamage false; this enableSimulation false; this addAction[""Justiz Kleidung"",life_fnc_clothingMenu,""justiz""]; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Kühlschrank"",life_fnc_virt_menu,""murdermarket""]; this addAction[""Justiz Fahrzeuge"",life_fnc_vehicleShopMenu,[""justiz_kfz"",east,[""justiz_veh_1""],""adac"",""Justiz Fahrzeuge - Sicher Unterwegs!""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""justiz_g_1""; }]; this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+			init="this enableSimulation false; this allowDamage false; this allowDamage false; this enableSimulation false; this addAction[""Justiz Kleidung"",life_fnc_clothingMenu,""justiz""];this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Kühlschrank"",life_fnc_virt_menu,""murdermarket""]; this addAction[""Justiz Fahrzeuge"",life_fnc_vehicleShopMenu,[""justiz_kfz"",east,[""justiz_veh_1""],""adac"",""Justiz Fahrzeuge - Sicher Unterwegs!""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""justiz_g_1""; }]; this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 		};
 		class Item188
 		{
@@ -5128,7 +5128,7 @@ class Mission
 		items=245;
 		class Item0
 		{
-			position[]={9292.7969,19.698908,10492.917};
+			position[]={9289.958,20.111645,10496.466};
 			name="respawn_civilian";
 			type="Empty";
 		};
@@ -5607,7 +5607,7 @@ class Mission
 		};
 		class Item58
 		{
-			position[]={3757.0725,26.715679,2598.686};
+			position[]={3851.0789,21.509291,2746.2163};
 			name="dp_1_20";
 			text="DP 9";
 			type="mil_box";
@@ -6845,6 +6845,7 @@ class Mission
 			name="funk_1";
 			text="Gruppe 1:   NOT: 51.6   LSPD: 38.4   Sheriff: 59.2   Short: 42.1";
 			type="A3L_PD_Icon";
+			colorName="ColorBlue";
 		};
 		class Item214
 		{
@@ -6852,13 +6853,15 @@ class Mission
 			name="funk_2";
 			text="Gruppe 2:   NOT: 67.9   LSDP: 54.5   Sheriff: 78.1   Short: 52.2";
 			type="A3L_PD_Icon";
+			colorName="ColorBlue";
 		};
 		class Item215
 		{
 			position[]={-1600.3649,198.27711,10606.225};
 			name="funk_3";
-			text="Gruppe 3:   NOT: 28.6   LSPD: 71.6   Sheriff: 66.8   Short: 49.3";
+			text="Gruppe 3:   NOT: 31.9   LSPD: 71.6   Sheriff: 66.8   Short: 49.3";
 			type="A3L_PD_Icon";
+			colorName="ColorBlue";
 		};
 		class Item216
 		{
@@ -6866,6 +6869,7 @@ class Mission
 			name="funk_4";
 			text="Gruppe 4:   NOT: 48.2   LSPD: 38.6   Sheriff: 49.5   Short: 70.7";
 			type="A3L_PD_Icon";
+			colorName="ColorBlue";
 		};
 		class Item217
 		{
@@ -6951,10 +6955,11 @@ class Mission
 		};
 		class Item228
 		{
-			position[]={-1595.3118,231.91669,11116.378};
+			position[]={-1595.3118,245.47995,11268.999};
 			name="funk_21";
-			text="Medic 45.6";
+			text="Medic 37.8";
 			type="A3L_FD_Icon";
+			colorName="ColorEAST";
 		};
 		class Item229
 		{
@@ -6962,6 +6967,7 @@ class Mission
 			name="funk_22";
 			text="Gruppe 5:   NOT: 69.3   LSPD: 75.1   Sheriff: 38.6   Short: 50.9";
 			type="A3L_PD_Icon";
+			colorName="ColorBlue";
 		};
 		class Item230
 		{
