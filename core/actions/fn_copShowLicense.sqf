@@ -20,7 +20,7 @@ if(playerSide == west) then
 	
 	switch ( _coplevel ) do
 	{
-		case 1: { _rank = "Recruit"; };
+		case 1: { _rank = "Rekrut"; };
 		case 2: { _rank = "Officer"; };	
 		case 3: { _rank = "Detective"; };	
 		case 4: { _rank = "Sergeant"; };
@@ -28,7 +28,7 @@ if(playerSide == west) then
 		case 6: { _rank = "Captain"; };
 		case 7: { _rank = "Deputy Inspector"; };
 		case 8: { _rank = "Inspector"; };
-		case 9: { _rank = "Chief Major"; };
+		case 9: { _rank = "Major"; };
 		case 10: { _rank = "Assistant Chief"; };
 		case 11: { _rank = "Chief of Department"; };
 	};
@@ -69,7 +69,7 @@ if(playerSide == east) then
 		case 4: { _rank = "KFZ-Meister"; };
 		case 5: { _rank = "KFZ-Ausbilder"; };
 		case 6: { _rank = "Personalleiter"; };
-		case 7: { _rank = "Stellv. IPD Leiter"; };
+		case 7: { _rank = "Co-IPD Leiter"; };
 		case 8: { _rank = "IPD Leiter"; };
 		case 9: { _rank = " "; };
 		case 10: { _rank = "Staatsanwalt"; };
