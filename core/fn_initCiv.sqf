@@ -32,6 +32,15 @@ if ((getPlayerUID player) in [
 	life_paycheck = life_paycheck + 2000;
 };*/
 
+switch (__GETC__(life_donator)) {
+	case 0: {life_paycheck};
+	case 1: {life_paycheck = life_paycheck + 1500};
+	case 2: {life_paycheck};
+	case 3: {life_paycheck = life_paycheck + 1500};
+	case 4: {life_paycheck};
+	case 5: {life_paycheck = life_paycheck + 1500};
+};
+
 if(life_is_arrested) then
 {
 	[false,false,life_arrestMinutes,life_arrestReason] call fnc_jailsetup;
