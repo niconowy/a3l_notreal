@@ -45,12 +45,13 @@ switch (_filter) do
 	//Huete
 	case 1:
 	{
-		_ret pushBack ["A3L_sargehat","Polizei Sargehat",50];
-		_ret pushBack ["A3L_policehelmet","Polizeimütze",50];
+		_ret pushBack ["A3L_sargehat","Polizei Sargehat",150];
+		_ret pushBack ["A3L_policehelmet","Polizeimütze",75];
 		//_ret pushBack ["H_HelmetB_black","FBI Helm",50];
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
 		_ret pushBack ["H_RacingHelmet_1_black_F","Motorradhelm",250];
-		_ret pushBack ["Campaign_Hat_Light","Ausbilder Hut",350];
+		_ret pushBack ["Campaign_Hat_Light","Sheriff Hut",350];
+		_ret pushBack ["AM_PatrolHat","LSPD Hut (weiss)",350];
 	};
 	
 	//Glasses
