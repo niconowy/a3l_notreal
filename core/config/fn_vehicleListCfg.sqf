@@ -210,8 +210,7 @@ switch (_shop) do
 			["cl3_458_grey",520000],
 			["cl3_458_gold",520000],
 			["cl3_458_burgundy",520000],
-			["cl3_458_black",520000],
-			["wirk_ferrari_california",555000]
+			["cl3_458_black",520000]
 		];
 	};
 
