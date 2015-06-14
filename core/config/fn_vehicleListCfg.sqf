@@ -49,7 +49,10 @@ switch (_shop) do
 			["cl3_z4_2008_light_blue",160000],
 			["cl3_z4_2008_grey",160000],
 			["cl3_z4_2008_burgundy",160000],
-			["cl3_z4_2008_black",160000]
+			["cl3_z4_2008_black",160000],
+			["DAR_M3CivBlack",135000],
+			["DAR_M3CivWhite",135000],
+			["DAR_M3CivGrey",135000]
 		];
 	};
 	
@@ -207,7 +210,8 @@ switch (_shop) do
 			["cl3_458_grey",520000],
 			["cl3_458_gold",520000],
 			["cl3_458_burgundy",520000],
-			["cl3_458_black",520000]
+			["cl3_458_black",520000],
+			["wirk_ferrari_california",555000]
 		];
 	};
 

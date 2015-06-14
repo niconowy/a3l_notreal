@@ -305,7 +305,10 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr","Schulrucksack",250],
+			//["B_AssaultPack_cbr","Schulrucksack",250],
+			["domepokemon",nil,1000],
+			["domepony",nil,1000],
+			["domegraffiti",nil,1000],
 			["B_Kitbag_mcamo",nil,450],
 			["B_TacticalPack_oli",nil,350],
 			["B_FieldPack_ocamo",nil,300],
