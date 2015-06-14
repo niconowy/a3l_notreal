@@ -26,7 +26,16 @@ switch (_filter) do
 	{
 		[
 			["swat_uni1","SWAT",150],
-			["doj_uni","State Police",750]
+			["sp_rang3",nil,350],
+			["sp_rang4",nil,350],
+			["sp_rang5",nil,350],
+			["sp_rang6",nil,350],
+			["sp_rang7",nil,350],
+			["sp_rang8",nil,350],
+			["sp_rang9",nil,350],
+			["sp_rang10",nil,350],
+			["sp_rang11",nil,350]
+			//["doj_uni","State Police",750]
 		];
 	};
 	
