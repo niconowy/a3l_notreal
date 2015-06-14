@@ -290,7 +290,7 @@ sell_array =
 	["copper_r",800],
 	["salt_r",1650],
 	["glass",1133],
-	["fuelF",500],
+	["fuelF",1750],
 	["blaulicht",1000],
 		
 	["wheat",326],
@@ -356,7 +356,7 @@ buy_array =
 	["lockpick",500],
 	["pickaxe",1200],
 	["redgull",1500],
-	["fuelF",850],
+	["fuelF",5250],
 
 	["wheat seed",25],
 	["sunflower seed",25],

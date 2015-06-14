@@ -4969,7 +4969,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Murder King"",life_fnc_virt_menu,""murderk""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Murder King"",life_fnc_virt_menu,""murdermarket""];";
 		};
 		class Item176
 		{

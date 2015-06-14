@@ -32,12 +32,12 @@ if ((getPlayerUID player) in [
 	life_paycheck = life_paycheck + 2000;
 };*/
 
-switch (__GETC__(life_donator)) do {
-	case 0: {life_paycheck};
+switch (call(life_donator)) do {
+	case 0: {life_paycheck = life_paycheck};
 	case 1: {life_paycheck = life_paycheck + 1500};
-	case 2: {life_paycheck};
+	case 2: {life_paycheck = life_paycheck};
 	case 3: {life_paycheck = life_paycheck + 1500};
-	case 4: {life_paycheck};
+	case 4: {life_paycheck = life_paycheck};
 	case 5: {life_paycheck = life_paycheck + 1500};
 };
 

@@ -22,13 +22,23 @@ switch (_filter) do
 	case 0:
 	{
 		_ret pushBack ["fto_uni","Gefängniswärter",150];
-	
-		_ret pushBack ["A3L_Police_Uniform","LSPD",450];
+		_ret pushBack ["Sheriff_Recruit","Sheriff (Rekrut)",300];
+		_ret pushBack ["Sheriff_Officer","Sheriff (Officer)",300];
+		_ret pushBack ["Sheriff_Detective","Sheriff (Detective)",300];
+		_ret pushBack ["Sheriff_Serganant","Sheriff (Sergeant)",300];
+		_ret pushBack ["Sheriff_Lieutenant","Sheriff (Lieutenant)",300];
+		_ret pushBack ["Sheriff_Captain","Sheriff (Captain)",300];
+		_ret pushBack ["Sheriff_Deputy_Inspector","Sheriff (Dep. Inspector)",300];
+		_ret pushBack ["Sheriff_Inspector","Sheriff (Inspector)",300];
+		_ret pushBack ["Sheriff_Major","Sheriff (Major)",300];
+		_ret pushBack ["Sheriff_Assi_Chief","Sheriff (Co-Chief)",300];
+		_ret pushBack ["Sheriff_Chief","Sheriff (Chief of Dep.)",300];
+		//_ret pushBack ["A3L_Police_Uniform","LSPD",450];
 		//_ret pushBack ["police_uni3","Recruit",500];
-		_ret pushBack ["cadet_uni","Rekrut",450];
+		//_ret pushBack ["cadet_uni","Rekrut",450];
 		
 		//_ret pushBack ["sheriff_uni1","Rec.Sheriff Uniform",500];
-		_ret pushBack ["A3L_Sheriff_Uniform","Sheriff",450];
+		//_ret pushBack ["A3L_Sheriff_Uniform","Sheriff",450];
 		
 		//_ret pushBack ["doj_uni","State Police",750];
 		//_ret pushBack ["police_uni1","ST Uniform",750];
@@ -37,15 +47,15 @@ switch (_filter) do
 		//_ret pushBack ["swat_uni1","SWAT",150];
 		
 		//_ret pushBack ["U_B_HeliPilotCoveralls","Pilot",125];
-		_ret pushBack ["A3L_PolicePilot","Pilotenkleidung",125];
+		_ret pushBack ["A3L_PolicePilot","Pilotenkleidung (Allg.)",125];
 		_ret pushBack ["A3L_Prisoner_Outfit","Gefängnisuniform",125];
-		_ret pushBack ["A3L_MotorUniP","Motorradfahrer",125];
+		_ret pushBack ["A3L_MotorUniP","Motorradfahrer (Allg.)",125];
 	};
 	
 	//Huete
 	case 1:
 	{
-		_ret pushBack ["A3L_sargehat","Polizei Sargehat",150];
+		//_ret pushBack ["A3L_sargehat","Polizei Sargehat",150];
 		_ret pushBack ["A3L_policehelmet","Polizeimütze",75];
 		//_ret pushBack ["H_HelmetB_black","FBI Helm",50];
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
