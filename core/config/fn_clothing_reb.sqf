@@ -47,7 +47,16 @@ switch (_filter) do
 			["H_ShemagOpen_khk",nil,800],
 			["H_HelmetO_ocamo",nil,2500],
 			["H_MilCap_oucamo",nil,1200],
-			["H_Bandanna_camo",nil,650]
+			["H_Bandanna_camo",nil,650],
+			["H_Hat_Kufiya_B",nil,7500],
+			["H_Hat_Kufiya_F",nil,7500],
+			["H_Hat_Kufiya_D",nil,7500],
+			["H_Hat_Kufiya_C",nil,7500],
+			["H_Hat_Taqiyah_A",nil,7500],
+			["H_Hat_Taqiyah_B",nil,7500],
+			["H_Hat_Taqiyah_C",nil,7500],
+			["H_Hat_Taqiyah_D",nil,7500],
+			["H_Hat_Taqiyah_E",nil,7500]
 		];
 	};
 	
