@@ -31,25 +31,6 @@ switch (_filter) do
 			["U_B_GhillieSuit","Wookie-Anzug (Hell)",50000],
 			["U_I_GhillieSuit","Wookie-Anzug (Grün)",50000],
 			["U_O_GhillieSuit","Wookie-Anzug (Braun)",50000]
-/*                  TODO -- NEUEN SHOP EINFÜGEN
-U_CivilianSport_A
-U_CivilianSport_B
-U_CivilianSport_C
-U_CivilianSport_D
-U_TKLocalUniLong_A
-U_TKLocalUniLong_B
-U_TKLocalUniLong_C
-U_TKLocalUniLong_D
-U_TKLocalUniLong_E
-U_DressTKLocalUni_E_A
-U_DressTKLocalUni_E_B
-U_DressTKLocalUni_E_C
-U_DressTKLocalUni_E_D
-U_DressTKLocalUni_E_E
-U_TerrorCombat_A
-U_TerrorCombat_B
-*/
-
 		];
 	};
 	
@@ -66,51 +47,7 @@ U_TerrorCombat_B
 			["H_ShemagOpen_khk",nil,800],
 			["H_HelmetO_ocamo",nil,2500],
 			["H_MilCap_oucamo",nil,1200],
-			["H_Bandanna_camo",nil,650],
-			["H_Hat_Kufiya_B",nil,7500],
-			["H_Hat_Kufiya_F",nil,7500],
-			["H_Hat_Kufiya_D",nil,7500],
-			["H_Hat_Kufiya_C",nil,7500],
-			["H_Hat_Taqiyah_A",nil,7500],
-			["H_Hat_Taqiyah_B",nil,7500],
-			["H_Hat_Taqiyah_C",nil,7500],
-			["H_Hat_Taqiyah_D",nil,7500],
-			["H_Hat_Taqiyah_E",nil,7500]
-
-/*                  TODO -- NEUEN SHOP EINFÜGEN
-H_Hat_Ushanka
-H_Hat_Ushanka_Rnd_A
-H_Hat_Ushanka_Rnd_B
-H_Hat_Ushanka_Rnd_C
-H_Hat_Ushanka_Rnd_D
-H_Hat_Ushanka
-H_Hat_Ushanka_Rnd_A
-H_Hat_Ushanka_Rnd_B
-H_Hat_Ushanka_Rnd_C
-H_Hat_Ushanka_Rnd_D
-H_Hat_Face_Wrap
-H_Hat_Face_Wrap_Desert
-H_Hat_Face_Wrap_Olive
-H_Hat_Face_Wrap_Red
-H_Hat_Face_Cover
-H_Hat_Face_Cover_Black
-H_Hat_Face_Cover_Gold
-H_Hat_Face_Cover_Green
-H_Hat_Turban_A
-H_Hat_Turban_B
-H_Hat_Turban_C
-H_Hat_Turban_D
-H_Hat_Turban_E
-H_Hat_Kufiya_B
-H_Hat_Kufiya_F
-H_Hat_Kufiya_D
-H_Hat_Kufiya_C
-H_Hat_Taqiyah_A
-H_Hat_Taqiyah_B
-H_Hat_Taqiyah_C
-H_Hat_Taqiyah_D
-H_Hat_Taqiyah_E
-*/
+			["H_Bandanna_camo",nil,650]
 		];
 	};
 	

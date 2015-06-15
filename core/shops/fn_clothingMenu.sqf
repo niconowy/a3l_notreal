@@ -14,6 +14,7 @@ disableSerialization;
 //Cop / Civ Pre Check
 if((_this select 3) in ["bruce","dive","reb","kart"] && playerSide != civilian) exitWith {hint localize "STR_Shop_NotaCiv"; closeDialog 0;};
 if((_this select 3) == "reb" && !license_civ_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
+if((_this select 3) == "lakeistani" && !license_civ_rebel) exitWith {hint localize "STR_Shop_NotaReb"; closeDialog 0;};
 //if((_this select 3) in ["fbi"] && playerSide != west) exitWith {hint localize "STR_Shop_NotaCop"; closeDialog 0;};
 if((_this select 3) in ["fbi"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zur LakesideValley FBI-Abteilung!"; closeDialog 0;};
 if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zum LakesideValley Police Department!"; closeDialog 0;};
