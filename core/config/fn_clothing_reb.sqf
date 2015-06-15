@@ -18,19 +18,19 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["TRYK_U_B_BLK","Biker-Jacke (Schwarz)",5000],
-			["TRYK_U_B_BLK_Tshirt","Biker-Jacke (Schwarz,kurz)",5000],
-			["TRYK_U_B_BLKBLK_CombatUniform","Biker-Kleidung (Schwarz)",5000],
-			["TRYK_U_B_BLKBLK_R_CombatUniform","Biker-Kleidung (Schwarz,kurz)",5000],
+			["TRYK_U_B_BLK","Biker-Jacke (Schwarz)",6000],
+			["TRYK_U_B_BLK_Tshirt","Biker-Jacke (Schwarz,kurz)",6000],
+			["TRYK_U_B_BLKBLK_CombatUniform","Biker-Kleidung (Schwarz)",6000],
+			["TRYK_U_B_BLKBLK_R_CombatUniform","Biker-Kleidung (Schwarz,kurz)",6000],
 			["U_IG_Guerilla1_1",nil,5000],
 			["U_I_G_Story_Protagonist_F",nil,7500],
-			["U_I_G_resistanceLeader_F",nil,11500],
+			["U_I_G_resistanceLeader_F",nil,11000],
 			["U_O_SpecopsUniform_ocamo",nil,17500],
-			["U_O_PilotCoveralls",nil,15610],
-			["U_IG_leader","Guerilla Leader",15340],
-			["U_B_GhillieSuit","Wookie-Anzug (Hell)",50000],
-			["U_I_GhillieSuit","Wookie-Anzug (Grün)",50000],
-			["U_O_GhillieSuit","Wookie-Anzug (Braun)",50000]
+			["U_O_PilotCoveralls",nil,15000],
+			["U_IG_leader","Guerilla Leader",15000],
+			["U_B_GhillieSuit","Wookie-Anzug (Hell)",65000],
+			["U_I_GhillieSuit","Wookie-Anzug (Grün)",65000],
+			["U_O_GhillieSuit","Wookie-Anzug (Braun)",65000]
 		];
 	};
 	
@@ -38,16 +38,16 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["kio_skl_msk","Skull Maske",2500],
-			["kio_skl_msk_red","Skull Maske Rot",2500],
-			["kio_skl_msk_grn","Skull Maske Grün",2500],
+			["kio_skl_msk","Skull Maske",3500],
+			["kio_skl_msk_red","Skull Maske Rot",3500],
+			["kio_skl_msk_grn","Skull Maske Grün",3500],
 			["TRYK_Kio_Balaclava",nil,2000],
-			["H_ShemagOpen_tan",nil,850],
-			["H_Shemag_olive",nil,850],
-			["H_ShemagOpen_khk",nil,800],
-			["H_HelmetO_ocamo",nil,2500],
-			["H_MilCap_oucamo",nil,1200],
-			["H_Bandanna_camo",nil,650]
+			["H_ShemagOpen_tan",nil,1050],
+			["H_Shemag_olive",nil,1050],
+			["H_ShemagOpen_khk",nil,1050],
+			["H_HelmetO_ocamo",nil,3500],
+			["H_MilCap_oucamo",nil,2200],
+			["H_Bandanna_camo",nil,950]
 		];
 	};
 	

@@ -25,6 +25,12 @@ switch (_filter) do
 			["KAEL_SUITS_BR_F5","Anzug (Pink)",17500],
 			["KAEL_SUITS_BR_F","Anzug (Rot)",17500],
 			["KAEL_SUITS_BR_F3","Anzug (Blau)",17500],
+
+			["U_CivilianSport_A",nil,750],
+			["U_CivilianSport_B",nil,750],
+			["U_CivilianSport_C",nil,750],
+			["U_CivilianSport_D",nil,750],
+
 			["A3L_Suit_Uniform","Anzug (Schwarz)",17500],
 			["A3L_Bikini_Girl","Bikini Girl",25000],
 			["A3L_Priest_Uniform","Priest Uniform",10000],
@@ -42,6 +48,7 @@ switch (_filter) do
 			["RedPlaid_uni","Plaid (Rot)",350],
 			["YellowPlaid_uni","Plaid (Gelb)",350],
 			["checkered_uni","Polo (Checkered)",350],
+
 			["GbGyBr_uni","Polo (GB-GY-BR)",350],
 			["GnBlBr_uni","Polo (GN-BL-BR)",350],
 			["GnGyBr_uni","Polo (GN-GN-GY)",350],
@@ -62,6 +69,7 @@ switch (_filter) do
 			["YlBlBr_uni","Polo (YL-BL-BR)",350],
 			["YlGnGy_unI","Polo (YL-GN-GY)",350],
 			["YlGyBr_uni","Polo (YL-GY-BR)",350],
+
 			["racer_uni","Racer Uniform",350],
 			["taxi_uni","Taxi Uniform",350],
 			["arma3","ArmA 3 Polo",350],
@@ -178,8 +186,7 @@ switch (_filter) do
 			["A3L_mexicanhat","Mexican Hut",120],
 			["santahat","Weihnachtszipfel",120],
 			["A3L_Sombrero","Sombrero",120],
-			["turban","Turban",120],
-			["A3L_russianhat","Schapka Uschanka",120],
+			["turban","Indischer Turban",120],
 			["H_Cap_tan",nil,120],
 			["H_Cap_blk",nil,120],
 			["H_Cap_blk_CMMG",nil,120],
