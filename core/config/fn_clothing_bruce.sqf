@@ -146,6 +146,17 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["ALE_H_Calot",nil,1250],
+			["ALE_H_GrosPD",nil,1250],
+			["ALE_H_NewEra_Black",nil,1250],
+			["ALE_H_NewEra_Cyan",nil,1250],
+			["ALE_H_NewEra_Superman",nil,1250],
+			["ALE_H_NewEra_Monster",nil,1250],
+			["ALE_H_Cowboy_Brown",nil,1250],
+			["ALE_H_Cowboy_Black",nil,1250],
+			["ALE_H_Cowboy_White",nil,1250],
+			["ALE_H_NewEra_Lakers",nil,1250],
+			["ALE_H_NewEra_Redsox",nil,1250],
 			["kio_vfv_mask","Vendetta",2500],
 			["A3L_Legoman","Legokopf",10000],
 			["A3L_Halloween_Pumpkinhead","Pumpkin",10000],
