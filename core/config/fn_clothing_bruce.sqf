@@ -273,6 +273,7 @@ switch (_filter) do
 			["domepokemon",nil,1000],
 			["domepony",nil,1000],
 			["domegraffiti",nil,1000],
+			["domebuhse",nil,1000],
 			["B_Kitbag_mcamo",nil,450],
 			["B_TacticalPack_oli",nil,350],
 			["B_FieldPack_ocamo",nil,300],
