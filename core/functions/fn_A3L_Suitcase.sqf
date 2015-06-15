@@ -5,7 +5,7 @@
 		_veh attachto [player, [0.035,-.055,-0.22], "RightHandMiddle1"];
 		_veh setdir (getdir player + 180);
 		_veh setpos (getpos _veh);
-		_id = player addAction ["Drop suitcase", {detach (_this select 3)},_veh];
+		_id = player addAction ["Koffer Ablegen", {detach (_this select 3)},_veh];
 		
 		[_veh,_id] spawn {
 			_veh = _this select 0;
@@ -25,7 +25,7 @@
 					_veh attachto [player, [0.035,-.055,-0.22], "RightHandMiddle1"];
 					_veh setdir (getdir player + 180);
 					_veh setpos (getpos _veh);
-					_id = player addAction ["Drop suitcase", {detach (_this select 3)},_veh];
+					_id = player addAction ["Koffer Ablegen", {detach (_this select 3)},_veh];
 					_suitcaseDeleted = false;
 				};
 				
@@ -35,7 +35,7 @@
 				sleep 0.1;
 			};
 			
-			hint "deleted";
+			hint "Koffer Entfernt!";
 			detach _veh;
 			_veh setVariable ["pickup",true,true];
 			player removeAction _id;

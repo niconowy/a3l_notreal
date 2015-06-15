@@ -1,11 +1,11 @@
 // Give money, check variable 5 minutes or w/e
 private ["_timer"];
-if (bank animationPhase "vault_door" < 0.3) exitwith {["The vault is not even open you glitcher.",30,"red"] call A3L_Fnc_Msg;}; 
-if (animationState player == "AinvPknlMstpSnonWnonDnon_medic_1") exitwith {["You're already grabbing a stash of cash!",30,"red"] call A3L_Fnc_Msg;};
-if (count (attachedobjects player) > 0) exitwith {["You are already carrying a suitcase.",30,"red"] call A3L_Fnc_Msg;}; 
-if ((_this select 3) getVariable "robbed") exitwith {["This stash of cash was recently robbed.",30,"red"] call A3L_Fnc_Msg;};
+if (bank animationPhase "vault_door" < 0.3) exitwith {["Der Tresor ist nicht einmal offen du Bug-User. Wurde einem Admin mitgeteilt.",30,"red"] call A3L_Fnc_Msg;}; 
+if (animationState player == "AinvPknlMstpSnonWnonDnon_medic_1") exitwith {["Du packst bereits Geld ein",30,"red"] call A3L_Fnc_Msg;};
+if (count (attachedobjects player) > 0) exitwith {["Du trägst bereits einen Koffer",30,"red"] call A3L_Fnc_Msg;}; 
+if ((_this select 3) getVariable "robbed") exitwith {["Dieser Haufen wurde kürzlich ausgeraubt.",30,"red"] call A3L_Fnc_Msg;};
 _timer = 60 + (floor(random 60));
-["Grabbing the money.. this may take a few minutes!",30,"blue"] call A3L_Fnc_Msg;
+["Packe Geld ein... das dauert einige Zeit!",30,"blue"] call A3L_Fnc_Msg;
 (_this select 3) setVariable ["robbed",true,true];
 
 [_timer,(_this select 3)] spawn {
@@ -24,7 +24,7 @@ while {_timer > 0} do {
 	_timer = _timer - 0.1;
 	if (_timer < 1) exitwith {
 		private ["_veh","_id"];
-		["You stashed all the money inside a suitcase, bring it to the trader!",30,"green"] call A3L_Fnc_Msg;
+		["Du hast das Geld zusammengepackt. Schnell damit zum Geldwäscher!",30,"green"] call A3L_Fnc_Msg;
 		
 		_veh = "Land_Suitcase_F" createvehicle (getpos player);
 		{_veh disableCollisionWith _x} foreach playableUnits;
@@ -32,7 +32,7 @@ while {_timer > 0} do {
 		_veh attachto [player, [0.035,-.055,-0.22], "RightHandMiddle1"];
 		_veh setdir (getdir player + 180);
 		_veh setpos (getpos _veh);
-		_id = player addAction ["Drop suitcase", {detach (_this select 3)},_veh];
+		_id = player addAction ["Koffer Ablegen", {detach (_this select 3)},_veh];
 		
 		[_veh,_id] spawn {
 			_veh = _this select 0;
