@@ -45,6 +45,23 @@ switch (_className) do
 	case "S_Vantage_Purple": {25};
 	case "S_Vantage_White": {25};	
 
+	case "DAR_M3CivBlack": {25};
+	case "DAR_M3CivWhite": {25};
+	case "DAR_M3CivGrey": {25};
+	
+	case "ALFR_GeK_Panamera": {25};
+	case "wirk_cayenne": {25};
+	
+	case "ALFR_GeK_MF1": {25};
+	
+	case "ALFR_GeK_Scania_420" {250};
+	case "ALFR_GeK_Scania_420_blanc" {250};
+	case "ALFR_GeK_Scania_420_bleu" {250};
+	case "ALFR_GeK_Scania_420_noir" {250};
+	case "ALFR_GeK_Scania_420_orange" {250};
+	
+	case "ALFR_GeK_Volvo_FH16_2012" {250};
+			
 	case "A3L_ChargerUC": {25};
 	case "A3L_ChargerUCWhite": {25};
 
