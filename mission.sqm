@@ -3142,7 +3142,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=190;
+		items=192;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -5122,10 +5122,30 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
+		class Item190
+		{
+			position[]={9749.6406,162.67014,7946.3149};
+			azimut=931.81519;
+			id=320;
+			side="EMPTY";
+			vehicle="Land_Atm_02_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 '];";
+		};
+		class Item191
+		{
+			position[]={9743.748,162.67105,7966.0439};
+			azimut=1750.4301;
+			id=321;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Lakeistani Kleidung"",life_fnc_clothingMenu,""lakeistani"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];";
+		};
 	};
 	class Markers
 	{
-		items=245;
+		items=247;
 		class Item0
 		{
 			position[]={9289.958,20.111645,10496.466};
@@ -5323,7 +5343,7 @@ class Mission
 		{
 			position[]={8497.2012,10.256724,6558.4214};
 			name="Gen_3";
-			text="Kleidungsladen";
+			text="Brian's Kleidungsladen";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
 			angle=1.01086;
@@ -5407,7 +5427,7 @@ class Mission
 			name="boat_2";
 			text="Boot Händler";
 			type="A3L_Store_Green_Icon";
-			colorName="ColorWhite";
+			colorName="ColorKhaki";
 			angle=0.22146501;
 		};
 		class Item36
@@ -5908,7 +5928,7 @@ class Mission
 			name="pumpkin_1";
 			text="Kürbis";
 			type="A3L_Field_Green_Icon";
-			colorName="ColorGreen";
+			colorName="ColorOrange";
 		};
 		class Item95
 		{
@@ -6761,36 +6781,36 @@ class Mission
 		{
 			position[]={8528.5449,10.432077,6561.1411};
 			name="kasse";
-			text="Kasse";
+			text="Tankstelle - LakesideCity";
 			type="A3L_Fuel_Icon";
 		};
 		class Item203
 		{
 			position[]={5923.6548,499.23056,8207.4102};
 			name="kasse_1";
-			text="Kasse";
+			text="Tankstelle - New Haven";
 			type="A3L_Fuel_Icon";
 		};
 		class Item204
 		{
 			position[]={5151.9736,9.0951099,2753.0049};
 			name="kasse_1_1";
-			text="Kasse";
+			text="Tankstelle - Morrison Town";
 			type="A3L_Fuel_Icon";
 		};
 		class Item205
 		{
 			position[]={4115.9092,83.980003,6517.7275};
 			name="kasse_1_1_1";
-			text="Kasse";
+			text="Tankstelle - Knoxville";
 			type="A3L_Fuel_Icon";
-			angle=-2.8007073;
+			angle=-2.80071;
 		};
 		class Item206
 		{
 			position[]={3451.76,89.220001,7681.7354};
 			name="kasse_1_1_1_1";
-			text="Kasse";
+			text="Tankstelle - Los Diablos";
 			type="A3L_Fuel_Icon";
 		};
 		class Item207
@@ -7087,6 +7107,23 @@ class Mission
 			type="A3L_House_Red_Icon";
 			colorName="ColorRed";
 			angle=8.7273397;
+		};
+		class Item245
+		{
+			position[]={9749.7334,162.67007,7945.9746};
+			name="atm_marker_2";
+			type="A3L_ATM_Icon";
+			colorName="ColorGreen";
+			angle=372.97522;
+		};
+		class Item246
+		{
+			position[]={9744.8418,162.67114,7967.9858};
+			name="marker_lakeistani_kleidungen";
+			text="Lakeistani Kleidung";
+			type="A3L_Store_Red_Icon";
+			colorName="ColorRed";
+			angle=3.2126312;
 		};
 	};
 };
