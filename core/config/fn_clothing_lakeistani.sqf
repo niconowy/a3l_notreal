@@ -43,7 +43,7 @@ switch (_filter) do
 			["H_Hat_Taqiyah_B",nil,375],
 			["H_Hat_Taqiyah_C",nil,375],
 			["H_Hat_Taqiyah_D",nil,375],
-			["H_Hat_Taqiyah_E",nil,375]
+			["H_Hat_Taqiyah_E",nil,375],
 			
 			["H_Hat_Turban_A",nil,275],
 			["H_Hat_Turban_B",nil,275],
