@@ -154,8 +154,6 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["ALE_H_Calot",nil,1250],
-			["ALE_H_GrosPD",nil,1250],
 			["ALE_H_NewEra_Black",nil,1250],
 			["ALE_H_NewEra_Cyan",nil,1250],
 			["ALE_H_NewEra_Superman",nil,1250],
