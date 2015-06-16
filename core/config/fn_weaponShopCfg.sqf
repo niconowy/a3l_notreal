@@ -898,9 +898,7 @@ switch(_shop) do
 						["hlc_rifle_aek971",nil,180000],
 						["hlc_30Rnd_545x39_B_AK",nil,2725],
 
-						["hlc_optic_kobra",nil,5000],
-						["hlc_optic_goshawk",nil,5000]
-						
+						["hlc_optic_kobra",nil,5000]						
 					]
 				];
 			};
