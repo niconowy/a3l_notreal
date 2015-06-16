@@ -5140,7 +5140,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Lakeistani Kleidung"",life_fnc_clothingMenu,""lakeistani"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];";
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Lakeistani Kleidung"",life_fnc_clothingMenu,""lakeistani"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Lakeistani 'Outback' Waffen"",life_fnc_weaponShopMenu,""lakeistani_reb""];";
 		};
 	};
 	class Markers

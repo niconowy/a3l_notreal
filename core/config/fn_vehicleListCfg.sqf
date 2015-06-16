@@ -196,7 +196,8 @@ switch (_shop) do
 			["cl3_r8_spyder_grey",520000],
 			["cl3_r8_spyder_gold",520000],
 			["cl3_r8_spyder_burgundy",520000],
-			["cl3_r8_spyder_black",520000]
+			["cl3_r8_spyder_black",520000],
+			["SAL_AudiCivSilver",520000]
 		];
 	};
 	
@@ -238,7 +239,8 @@ switch (_shop) do
 			["cl3_veyron_brn_blk",1000000],
 			["wirk_h3_limo",3500000],
 			["Nhz_audia8limo",3000000],
-			["ALFR_GeK_MF1",955000]
+			["ALFR_GeK_MF1",955000],
+			["ALFR_GeK_Pagani_Zonda",1075000]
 		];
 	};
 	
@@ -486,7 +488,10 @@ switch (_shop) do
 			["cl3_range_rover_grey",20000],
 			["cl3_range_rover_gold",20000],
 			["cl3_range_rover_burgundy",20000],
-			["cl3_range_rover_black",20000]
+			["cl3_range_rover_black",20000],
+			["RDS_S1203_Base",25000],
+			["RDS_Lada_Base",25000],
+			["RDS_Golf4_Base",25000]
 		];
 	};
 	
@@ -773,6 +778,9 @@ switch (_shop) do
 			
 			_return pushBack ["wirk_h3_limo",2975000];
 			_return pushBack ["Nhz_audia8limo",2550000];
+			_return pushBack ["SAL_AudiCivRed",468000];
+			_return pushBack ["SAL_AudiCivBlack",468000];
+			_return pushBack ["ALFR_GeK_Pagani_Zonda",];
 		}; 
 		
 		if(__GETC__(life_donator) == 3) then
@@ -986,6 +994,8 @@ switch (_shop) do
 			
 			_return pushBack ["wirk_h3_limo",2975000];
 			_return pushBack ["Nhz_audia8limo",2550000];
+			_return pushBack ["SAL_AudiCivRed",468000];
+			_return pushBack ["SAL_AudiCivBlack",468000];
 		}; 
 		
 		if(__GETC__(life_donator) == 5) then
@@ -1199,6 +1209,8 @@ switch (_shop) do
 			
 			_return pushBack ["wirk_h3_limo",2975000];
 			_return pushBack ["Nhz_audia8limo",2550000];
+			_return pushBack ["SAL_AudiCivRed",468000];
+			_return pushBack ["SAL_AudiCivBlack",468000];
 		}; 
 	};
 	

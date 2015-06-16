@@ -273,7 +273,7 @@ switch(_shop) do
 						//["FirstAidKit",nil,1500],
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
-						["cse_bandage_basic",nil,1500]
+						["cse_bandage_basic",nil,1425]
 					]
 				];
 			};
@@ -310,7 +310,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1500]
+						["cse_bandage_basic",nil,1425]
 					]
 				];
 			};
@@ -348,7 +348,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1500]
+						["cse_bandage_basic",nil,1425]
 					]
 				];
 			};
@@ -411,7 +411,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1500]
+						["cse_bandage_basic",nil,1425]
 					
 					]
 				];
@@ -475,7 +475,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1500]
+						["cse_bandage_basic",nil,1425]
 					
 					]
 				];
@@ -539,7 +539,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1500]
+						["cse_bandage_basic",nil,1425]
 					
 					]
 				];
@@ -604,7 +604,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1500]
+						["cse_bandage_basic",nil,1425]
 					]
 				];
 			};
@@ -639,8 +639,8 @@ switch(_shop) do
 						["A3L_UZImag",nil,950],
 						["RH_muzi",nil,35000],
 						["RH_30Rnd_9x19_UZI",nil,800],
-						
-						["A3L_AK47",nil,120000],
+
+/*						["A3L_AK47",nil,120000],
 						["A3L_AK47mag",nil,2500],
 						
 						["A3L_AK47s",nil,135000],											
@@ -648,26 +648,26 @@ switch(_shop) do
 
 						["A3L_AKS74",nil,190000],
 						["A3L_AK47sMag",nil,2750],
-						
+*/						
 						["RH_M4sbr_b",nil,200000],
 						["30Rnd_556x45_Stanag",nil,2800],
 						["optic_Hamr",nil,500],
-						
+
 						["RH_ar10",nil,225000],
 						["RH_20Rnd_762x51_AR10",nil,3000],
-						
+
 						["A3L_RedDot",nil,8500],
 						["RH_Delft",nil,8500],
 						["RH_qdss_nt4",nil,12500],
 						["A3L_CCO",nil,12500],
-						
+
 						["A3L_CZ550",nil,150000],
 						["A3L_CZ550mag",nil,50],
 						["A3L_CZ550Scope",nil,30000],
-						
+
 						["arifle_SDAR_F","Turtle Harpoon",50000],
 						["20Rnd_556x45_UW_mag","Underwater magazine",1500],
-						
+
 						//["FirstAidKit",nil,2250],
 						["ItemMap",nil,30],
 						["ItemWatch",nil,40],
@@ -676,10 +676,10 @@ switch(_shop) do
 						["Binocular",nil,250],
 						["ItemGPS",nil,250],
 						["NVGoggles_OPFOR",nil,10000],
-						
+
 						["tf_fadak","Kurzstreckenfunk",100],
 						["tf_mr3000","Langstreckenfunk",5000],
-						["cse_bandage_basic",nil,1500]
+						["cse_bandage_basic",nil,1425]
 					]
 				];
 			};
@@ -710,7 +710,7 @@ switch(_shop) do
 					["A3L_UZImag",nil,805],
 					["RH_muzi",nil,29750],
 					["RH_30Rnd_9x19_UZI",nil,680],
-					
+/*					
 					["A3L_AK47",nil,102000],
 					["A3L_AK47mag",nil,2125],
 					
@@ -720,7 +720,7 @@ switch(_shop) do
 
 					["A3L_AKS74",nil,161500],
 					["A3L_AK47sMag",nil,2335],
-					
+*/					
 					["RH_M4sbr_b",nil,170000],
 					["30Rnd_556x45_Stanag",nil,2380],
 					["optic_Hamr",nil,425],
@@ -748,7 +748,7 @@ switch(_shop) do
 					
 					["tf_fadak","Kurzstreckenfunk",80],
 					["tf_mr3000","Langstreckenfunk",4250],
-					["cse_bandage_basic",nil,1500]
+					["cse_bandage_basic",nil,1425]
 					]
 				];
 			};
@@ -772,7 +772,7 @@ switch(_shop) do
 					["RH_muzi",nil,29750],
 					["RH_30Rnd_9x19_UZI",nil,680],
 					
-					["A3L_AK47",nil,102000],
+/*					["A3L_AK47",nil,102000],
 					["A3L_AK47mag",nil,2125],
 					
 					["A3L_AK47s",nil,114750],
@@ -781,7 +781,7 @@ switch(_shop) do
 
 					["A3L_AKS74",nil,161500],
 					["A3L_AK47sMag",nil,2335],
-					
+*/					
 					["RH_M4sbr_b",nil,170000],
 					["30Rnd_556x45_Stanag",nil,2380],
 					["optic_Hamr",nil,425],
@@ -809,7 +809,7 @@ switch(_shop) do
 					
 					["tf_fadak","Kurzstreckenfunk",80],
 					["tf_mr3000","Langstreckenfunk",4250],
-					["cse_bandage_basic",nil,1500]
+					["cse_bandage_basic",nil,1425]
 				]
 			 ];
 			};
@@ -833,7 +833,7 @@ switch(_shop) do
 					["RH_muzi",nil,29750],
 					["RH_30Rnd_9x19_UZI",nil,680],
 					
-					["A3L_AK47",nil,102000],
+/*					["A3L_AK47",nil,102000],
 					["A3L_AK47mag",nil,2125],
 					
 					["A3L_AK47s",nil,114750],
@@ -842,7 +842,7 @@ switch(_shop) do
 
 					["A3L_AKS74",nil,161500],
 					["A3L_AK47sMag",nil,2335],
-					
+*/					
 					["RH_M4sbr_b",nil,170000],
 					["30Rnd_556x45_Stanag",nil,2380],
 					["optic_Hamr",nil,425],
@@ -870,14 +870,41 @@ switch(_shop) do
 					
 					["tf_fadak","Kurzstreckenfunk",80],
 					["tf_mr3000","Langstreckenfunk",4250],
-					["cse_bandage_basic",nil,1500]
+					["cse_bandage_basic",nil,1425]
 				]
 			 ];
 			};
 			default {"Du bist kein Donator!"}; //Opfer lol
 		};
 	};
-   
+
+	case "lakeistani_reb":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"Du bist kein Zivilist!"};
+			case (!license_civ_rebel): {"Du besitzt keine Rebellenausbildung."};
+			case ((license_civ_rebel)):
+			{
+				["Lakeistani's Outback Weapons",
+					[
+						["hlc_rifle_ak47",nil,185000],	
+						["hlc_rifle_aks74u",nil,175000],
+						["hlc_rifle_ak12",nil,155000],
+						["hlc_rifle_akm",nil,195000],
+						["hlc_rifle_aek971",nil,180000],
+						["hlc_30Rnd_762x39_t_ak",nil,2725],
+						["hlc_30Rnd_762x39_b_ak",nil,2725],
+
+						["hlc_optic_kobra",nil,5000],
+						["hlc_optic_goshawk",nil,5000]
+						
+					]
+				];
+			};
+		};
+	};  
+
 	case "gun":
 	{
 		switch(true) do
@@ -1073,7 +1100,7 @@ switch(_shop) do
 				["A3L_sign",nil,5000],
 				["A3L_sign2",nil,5000],
 				["Tv_Camera",nil,2000],
-				["cse_bandage_basic",nil,1500]
+				["cse_bandage_basic",nil,1425]
 			]
 		];
 	};
