@@ -780,7 +780,7 @@ switch (_shop) do
 			_return pushBack ["Nhz_audia8limo",2550000];
 			_return pushBack ["SAL_AudiCivRed",468000];
 			_return pushBack ["SAL_AudiCivBlack",468000];
-			_return pushBack ["ALFR_GeK_Pagani_Zonda",468000];
+			_return pushBack ["ALFR_GeK_Pagani_Zonda",752500];
 		}; 
 		
 		if(__GETC__(life_donator) == 3) then
@@ -996,7 +996,7 @@ switch (_shop) do
 			_return pushBack ["Nhz_audia8limo",2550000];
 			_return pushBack ["SAL_AudiCivRed",468000];
 			_return pushBack ["SAL_AudiCivBlack",468000];
-			_return pushBack ["ALFR_GeK_Pagani_Zonda",468000];
+			_return pushBack ["ALFR_GeK_Pagani_Zonda",752500];
 		}; 
 		
 		if(__GETC__(life_donator) == 5) then
@@ -1212,7 +1212,7 @@ switch (_shop) do
 			_return pushBack ["Nhz_audia8limo",2550000];
 			_return pushBack ["SAL_AudiCivRed",468000];
 			_return pushBack ["SAL_AudiCivBlack",468000];
-			_return pushBack ["ALFR_GeK_Pagani_Zonda",468000];
+			_return pushBack ["ALFR_GeK_Pagani_Zonda",752500];
 		}; 
 	};
 	
