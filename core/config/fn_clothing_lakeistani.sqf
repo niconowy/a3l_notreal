@@ -69,14 +69,8 @@ switch (_filter) do
 			["H_Hat_Ushanka_Rnd_A",nil,120],
 			["H_Hat_Ushanka_Rnd_B",nil,120],
 			["H_Hat_Ushanka_Rnd_C",nil,120],
-			["H_Hat_Ushanka_Rnd_D",nil,120]
-		];
-	};
-	
-	//Glasses
-	case 2:
-	{
-		[
+			["H_Hat_Ushanka_Rnd_D",nil,120],
+			
 			["H_ALFR_Heist_Mask_1",nil,1000],
 			["H_ALFR_Heist_Mask_2",nil,1000],
 			["H_ALFR_Heist_Mask_3",nil,1000],

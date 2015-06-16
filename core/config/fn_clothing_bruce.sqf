@@ -154,6 +154,12 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["H_ALFR_Dallas_Mask",nil,500],
+			["H_ALFR_Samurai_Mask",nil,500],
+			["H_ALFR_Sheep_Mask",nil,275],
+			["H_ALFR_HorseMask",nil,275],
+			["H_ALFR_DinoMask",nil,275],
+			["H_ALFR_Headset",nil,250],
 			["ALE_H_NewEra_Black",nil,1250],
 			["ALE_H_NewEra_Cyan",nil,1250],
 			["ALE_H_NewEra_Superman",nil,1250],
@@ -244,12 +250,6 @@ switch (_filter) do
 			["G_Lady_Blue",nil,150],
 			["G_Lowprofile",nil,30],
 			["G_Combat",nil,55],
-			["H_ALFR_Dallas_Mask",nil,500],
-			["H_ALFR_Samurai_Mask",nil,500],
-			["H_ALFR_Sheep_Mask",nil,275],
-			["H_ALFR_HorseMask",nil,275],
-			["H_ALFR_DinoMask",nil,275],
-			["H_ALFR_Headset",nil,250],
 			["SFG_Tac_BeardD","Bart (Dunkel)",275],
 			["SFG_Tac_BeardB","Bart (Blond)",275],
 			["SFG_Tac_BeardG","Bart (Ginger)",275],

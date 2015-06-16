@@ -161,6 +161,18 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["H_ALFR_Heist_Mask_1",nil,1000],
+			["H_ALFR_Heist_Mask_3",nil,1000],
+			["H_ALFR_Heist_Mask_7",nil,1000],
+			["H_ALFR_Gasmask",nil,3500],
+			["H_ALFR_Metal_Gasmask_RU_blk",nil,3500],
+			["H_ALFR_Metal_Gasmask_RU_khk",nil,3500],
+			["H_ALFR_Metal_Gasmask_RU_fuckyou",nil,3500],
+			["H_ALFR_Metal_Facemask_blk",nil,1750],
+			["H_ALFR_Metal_Facemask_gry",nil,1750],
+			["H_ALFR_OVERKILL_I",nil,4250],
+			["H_ALFR_OVERKILL_III",nil,4750],
+			["H_ALFR_OVERKILL_IV",nil,5000]
 			["H_HelmetB_black","FBI Helm",50],
 			["kio_vfv_mask","Vendetta",2500],
 			["A3L_Legoman","Legokopf",10000],
@@ -265,18 +277,6 @@ switch (_filter) do
 			["G_Lady_Blue",nil,150],
 			["G_Lowprofile",nil,30],
 			["G_Combat",nil,55],
-			["H_ALFR_Heist_Mask_1",nil,1000],
-			["H_ALFR_Heist_Mask_3",nil,1000],
-			["H_ALFR_Heist_Mask_7",nil,1000],
-			["H_ALFR_Gasmask",nil,3500],
-			["H_ALFR_Metal_Gasmask_RU_blk",nil,3500],
-			["H_ALFR_Metal_Gasmask_RU_khk",nil,3500],
-			["H_ALFR_Metal_Gasmask_RU_fuckyou",nil,3500],
-			["H_ALFR_Metal_Facemask_blk",nil,1750],
-			["H_ALFR_Metal_Facemask_gry",nil,1750],
-			["H_ALFR_OVERKILL_I",nil,4250],
-			["H_ALFR_OVERKILL_III",nil,4750]
-			["H_ALFR_OVERKILL_IV",nil,5000]
 		];
 	};
 	
