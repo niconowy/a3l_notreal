@@ -197,7 +197,7 @@ switch (_shop) do
 			["cl3_r8_spyder_gold",520000],
 			["cl3_r8_spyder_burgundy",520000],
 			["cl3_r8_spyder_black",520000],
-			["SAL_AudiCivSilver",520000]
+			["SAL_AudiCivSilver",175000]
 		];
 	};
 	
@@ -489,9 +489,12 @@ switch (_shop) do
 			["cl3_range_rover_gold",20000],
 			["cl3_range_rover_burgundy",20000],
 			["cl3_range_rover_black",20000],
-			["RDS_S1203_Base",25000],
-			["RDS_Lada_Base",25000],
-			["RDS_Golf4_Base",25000]
+			["RDS_S1203_Civ_01",25000],
+			["RDS_Lada_Civ_01",25000],
+			["RDS_Lada_Civ_02",25000],
+			["RDS_Lada_Civ_03",25000],
+			["RDS_Lada_Civ_04",25000],
+			["RDS_Golf4_Civ_01",25000]
 		];
 	};
 	
@@ -778,8 +781,8 @@ switch (_shop) do
 			
 			_return pushBack ["wirk_h3_limo",2975000];
 			_return pushBack ["Nhz_audia8limo",2550000];
-			_return pushBack ["SAL_AudiCivRed",468000];
-			_return pushBack ["SAL_AudiCivBlack",468000];
+			_return pushBack ["SAL_AudiCivRed",128000];
+			_return pushBack ["SAL_AudiCivBlack",128000];
 			_return pushBack ["ALFR_GeK_Pagani_Zonda",752500];
 		}; 
 		
@@ -994,8 +997,8 @@ switch (_shop) do
 			
 			_return pushBack ["wirk_h3_limo",2975000];
 			_return pushBack ["Nhz_audia8limo",2550000];
-			_return pushBack ["SAL_AudiCivRed",468000];
-			_return pushBack ["SAL_AudiCivBlack",468000];
+			_return pushBack ["SAL_AudiCivRed",128000];
+			_return pushBack ["SAL_AudiCivBlack",128000];
 			_return pushBack ["ALFR_GeK_Pagani_Zonda",752500];
 		}; 
 		
@@ -1210,8 +1213,8 @@ switch (_shop) do
 			
 			_return pushBack ["wirk_h3_limo",2975000];
 			_return pushBack ["Nhz_audia8limo",2550000];
-			_return pushBack ["SAL_AudiCivRed",468000];
-			_return pushBack ["SAL_AudiCivBlack",468000];
+			_return pushBack ["SAL_AudiCivRed",128000];
+			_return pushBack ["SAL_AudiCivBlack",128000];
 			_return pushBack ["ALFR_GeK_Pagani_Zonda",752500];
 		}; 
 	};
