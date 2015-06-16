@@ -32,6 +32,7 @@ if(!_preset) then
 		{
 			_vehicle animate ["lightbar",1];
 			_vehicle animate ["police",1];
+			_vehicle animate ["ani_siren",0.2];
 			_vehicle addWeapon "A3L_horn_airhorn";
 			_vehicle addWeapon "A3L_horn_priority";
 			_vehicle addWeapon "A3L_horn_takedown1";
