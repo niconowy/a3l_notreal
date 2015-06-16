@@ -65,14 +65,17 @@ switch (_className) do
 	case "A3L_ChargerUC": {25};
 	case "A3L_ChargerUCWhite": {25};
 	
-	case "SAL_AudiCiv": {25};
-	case "SAL_AudiCivRed": {25};
-	case "SAL_AudiCivSilver": {25};
-	case "SAL_AudiCivBlack": {25};
-	case "RDS_S1203_Base": {5};
-	case "RDS_Lada_Base": {5};
-	case "RDS_Golf4_Base": {5};
-	case "ALFR_GeK_Pagani_Zonda": {25};
+	case "SAL_AudiCiv": {30};
+	case "SAL_AudiCivRed": {30};
+	case "SAL_AudiCivSilver": {30};
+	case "SAL_AudiCivBlack": {30};
+	case "RDS_S1203_Civ_01": {5};
+	case "RDS_Lada_Civ_01": {5};
+	case "RDS_Lada_Civ_02": {5};
+	case "RDS_Lada_Civ_03": {5};
+	case "RDS_Lada_Civ_04": {5};
+	case "RDS_Golf4_Civ_01": {5};
+	case "ALFR_GeK_Pagani_Zonda": {30};
 
 	case "A3L_CVWhite": {25};
 	case "A3L_CVBlack": {25};
