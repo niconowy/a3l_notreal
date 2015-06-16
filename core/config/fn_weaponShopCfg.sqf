@@ -888,16 +888,15 @@ switch(_shop) do
 			{
 				["Lakeistani's Outback Weapons",
 					[
-						["hlc_rifle_ak47",nil,185000],	
+						["hlc_rifle_ak47",nil,185000],
+						["hlc_30Rnd_762x39_b_ak",nil,2725],
 						["hlc_rifle_aks74u",nil,175000],
 						["hlc_rifle_ak12",nil,155000],
-						["hlc_rifle_akm",nil,195000],
-						["hlc_rifle_aek971",nil,180000],
-						["hlc_30Rnd_762x39_t_ak",nil,2725],
-						["hlc_30Rnd_762x39_b_ak",nil,2725],
 						["hlc_30Rnd_545x39_B_AK",nil,2725],
-						["hlc_30Rnd_545x39_t_ak",nil,2725],
-						["hlc_30Rnd_545x39_EP_ak",nil,2725],
+						["hlc_rifle_akm",nil,195000],
+						["hlc_30Rnd_762x39_b_ak",nil,2725],
+						["hlc_rifle_aek971",nil,180000],
+						["hlc_30Rnd_545x39_B_AK",nil,2725],
 
 						["hlc_optic_kobra",nil,5000],
 						["hlc_optic_goshawk",nil,5000]
