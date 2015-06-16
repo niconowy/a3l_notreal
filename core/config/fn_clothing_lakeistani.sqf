@@ -69,7 +69,7 @@ switch (_filter) do
 			["H_Hat_Ushanka_Rnd_A",nil,120],
 			["H_Hat_Ushanka_Rnd_B",nil,120],
 			["H_Hat_Ushanka_Rnd_C",nil,120],
-			["H_Hat_Ushanka_Rnd_D",nil,120],
+			["H_Hat_Ushanka_Rnd_D",nil,120]
 		];
 	};
 	
