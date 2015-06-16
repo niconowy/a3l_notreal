@@ -54,13 +54,13 @@ switch (_className) do
 	
 	case "ALFR_GeK_MF1": {25};
 	
-	case "ALFR_GeK_Scania_420" {250};
-	case "ALFR_GeK_Scania_420_blanc" {250};
-	case "ALFR_GeK_Scania_420_bleu" {250};
-	case "ALFR_GeK_Scania_420_noir" {250};
-	case "ALFR_GeK_Scania_420_orange" {250};
+	case "ALFR_GeK_Scania_420": {250};
+	case "ALFR_GeK_Scania_420_blanc": {250};
+	case "ALFR_GeK_Scania_420_bleu": {250};
+	case "ALFR_GeK_Scania_420_noir": {250};
+	case "ALFR_GeK_Scania_420_orange": {250};
 	
-	case "ALFR_GeK_Volvo_FH16_2012" {250};
+	case "ALFR_GeK_Volvo_FH16_2012": {250};
 			
 	case "A3L_ChargerUC": {25};
 	case "A3L_ChargerUCWhite": {25};
