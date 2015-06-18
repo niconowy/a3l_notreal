@@ -101,8 +101,6 @@ switch (_filter) do
 		[
 			["V_HarnessO_brn",nil,7500],
 			["V_BandollierB_cbr",nil,4500],
-			["V_TacVest_khk",nil,12500],
-			["V_TacVest_camo",nil,12500],
 			["do_murder",nil,15500],
 			["do_kitty",nil,15500],
 			["do_anonym",nil,15500],
@@ -114,7 +112,6 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr","Schulrucksack",450],
 			["B_Kitbag_mcamo",nil,450],
 			["B_TacticalPack_oli",nil,350],
 			["B_FieldPack_ocamo",nil,300],
