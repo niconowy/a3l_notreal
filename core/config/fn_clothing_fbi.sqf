@@ -172,7 +172,7 @@ switch (_filter) do
 			["H_ALFR_Metal_Facemask_gry",nil,1750],
 			["H_ALFR_OVERKILL_I",nil,4250],
 			["H_ALFR_OVERKILL_III",nil,4750],
-			["H_ALFR_OVERKILL_IV",nil,5000]
+			["H_ALFR_OVERKILL_IV",nil,5000],
 			["H_HelmetB_black","FBI Helm",50],
 			["kio_vfv_mask","Vendetta",2500],
 			["A3L_Legoman","Legokopf",10000],
