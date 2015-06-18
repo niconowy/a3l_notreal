@@ -285,7 +285,6 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			//["B_AssaultPack_cbr","Schulrucksack",250],
 			["domepokemon",nil,1000],
 			["domepony",nil,1000],
 			["domegraffiti",nil,1000],
