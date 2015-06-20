@@ -18,6 +18,7 @@ life_hit_explosive = false;
 life_siren_active = false;
 life_medSiren_active = false;
 life_ipdSiren_active = false;
+life_umbrellus_active = false;
 life_clothing_filter = 0;
 life_clothing_uniform = -1;
 life_redgull_effect = time;
