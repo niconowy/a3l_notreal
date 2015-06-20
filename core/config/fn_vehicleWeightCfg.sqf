@@ -281,6 +281,8 @@ switch (_className) do
 	case "A3L_Atom": {25};
 
 	case "Jonzie_Mini_Cooper_R_spec": {25};
+	
+	case A3L_CVLac: {70};
 
 	// default
 	case "C_Offroad_01_F": {50};
