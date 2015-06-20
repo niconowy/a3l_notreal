@@ -10,7 +10,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Classname, Custom Display name (use nil for Cfg->DisplayName, price
 
 //Shop Title Name
-ctrlSetText[3103,"IPD Kleidungsladen"];
+ctrlSetText[3103,"LAC Kleidungsladen"];
 
 switch (_filter) do
 {
@@ -18,7 +18,15 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["A3L_Worker_Outfit","IPD Arbeitskleidung",850]
+			["A3L_Worker_Outfit","Allg Arbeitskleidung",850],
+			["A3L_lacpraktikant","Azubi Arbeitskleidung",850],
+			["A3L_lacmechaniker","Mechaniker Arbeitskleidung",850],
+			["A3L_lacmechatroniker","Mechatroniker Arbeitskleidung",850],
+			["A3L_lacmeister","Meister Arbeitskleidung",850],
+			["A3L_lacausbilder","Ausbilder Arbeitskleidung",850],
+			["A3L_lacpersonal","Personal Arbeitskleidung",850],
+			["A3L_lacstell","Stellv.Leitung Arbeitskleidung",850],
+			["A3L_lacchef","Leitung Arbeitskleidung",850]
 		];
 	};
 	

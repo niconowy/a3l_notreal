@@ -64,13 +64,13 @@ if(playerSide == east) then
 	switch (_adaclevel) do
 	{
 		case 1: { _rank = "Auszubildender";};
-		case 2: { _rank = "KFZ-Mechaniker";};
-		case 3: { _rank = "KFZ-Mechatroniker";};	
-		case 4: { _rank = "KFZ-Meister";};
-		case 5: { _rank = "KFZ-Ausbilder";};
+		case 2: { _rank = "LAC-Mechaniker";};
+		case 3: { _rank = "LAC-Mechatroniker";};	
+		case 4: { _rank = "LAC-Meister";};
+		case 5: { _rank = "LAC-Ausbilder";};
 		case 6: { _rank = "Personalleiter";};
-		case 7: { _rank = "Co-IPD Leiter";};
-		case 8: { _rank = "IPD Leiter";};
+		case 7: { _rank = "Co-LAC Leiter";};
+		case 8: { _rank = "LAC Leiter";};
 		case 9: { _rank = "!!REPORT ADMIN!!";};
 		case 10: { _rank = "Staatsanwalt";};
 		case 11: { _rank = "Richter";};
