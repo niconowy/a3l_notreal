@@ -249,6 +249,31 @@ switch (_code) do
 		if(!_alt && !_ctrlKey && _veh == player) exitWith {true; [] call life_fnc_radar; };		
 	};
 	
+	case 207: {
+			if((call(life_adminlevel) == 3) && (playerSide in [civilian,west]) && (_ctrlKey)) then {				// ***** UMBRELLUS :O *******
+				if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
+						[] spawn {
+							life_umbrellus_active = true;
+							sleep 20;
+							life_umbrellus_active = false;
+						};
+						_veh = vehicle player;
+						if(isNil {_veh getVariable "umbrellus"}) then {_veh setVariable["umbrellus",false,true];};
+						
+						if((_veh getVariable "umbrellus")) then {
+							titleText ["= Umbrella AUS =","PLAIN"];
+							_veh setVariable["umbrellus",false,true];
+						} else {
+							titleText ["= Umbrella AN =","PLAIN"];
+							_veh setVariable["umbrellus",true,true];
+							[[_veh],"life_fnc_umbrellus",nil,true] spawn life_fnc_MP;
+						};
+				};
+			};
+		};
+	
+	};
+	
 	    //F Key
 	case 33: {
 		if(_copPlayer && _coplevel &&_ctrlKey) then {				// ***** Polizei Sirene (FBI UND STATEPOLICE) *******
@@ -272,26 +297,6 @@ switch (_code) do
 			};
 		};
 		
-		if((call(life_adminlevel) == 3) && (playerSide in [civilian,west])) then {				// ***** UMBRELLUS :O *******
-			if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
-					[] spawn {
-						life_umbrellus_active = true;
-						sleep 20;
-						life_umbrellus_active = false;
-					};
-					_veh = vehicle player;
-					if(isNil {_veh getVariable "umbrellus"}) then {_veh setVariable["umbrellus",false,true];};
-					
-					if((_veh getVariable "umbrellus")) then {
-						titleText ["= Umbrella AUS =","PLAIN"];
-						_veh setVariable["umbrellus",false,true];
-					} else {
-						titleText ["= Umbrella AN =","PLAIN"];
-						_veh setVariable["umbrellus",true,true];
-						[[_veh],"life_fnc_umbrellus",nil,true] spawn life_fnc_MP;
-					};
-			};
-		};
 /*		
 		if(_medPlayer && _ctrlKey) then {				// ***** Medic Sirene *******
 			if(vehicle player != player && !life_medSiren_active &&((driver vehicle player) == player)) then {
