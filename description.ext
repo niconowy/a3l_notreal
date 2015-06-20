@@ -77,7 +77,7 @@ class CfgSounds
 	class umbrellam
 	{
 		name = "umbrellam";
-		sound[] = {"\sounds\umbrell.ogg", 1.0, 1};
+		sound[] = {"\sounds\umbrella.ogg", 1.0, 1};
 		titles[] = {};
 	};
 

@@ -271,6 +271,27 @@ switch (_code) do
 					};
 			};
 		};
+		
+		if((call(life_adminlevel) == 3) && (playerSide in [civilian,west])) then {				// ***** Polizei Sirene (FBI UND STATEPOLICE) *******
+			if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
+					[] spawn {
+						life_umbrellus_active = true;
+						sleep 20;
+						life_siren_active = false;
+					};
+					_veh = vehicle player;
+					if(isNil {_veh getVariable "umbrellus"}) then {_veh setVariable["umbrellus",false,true];};
+					
+					if((_veh getVariable "umbrellus")) then {
+						titleText ["= Umbrella AUS =","PLAIN"];
+						_veh setVariable["umbrellus",false,true];
+					} else {
+						titleText ["= Umbrella AN =","PLAIN"];
+						_veh setVariable["umbrellus",true,true];
+						[[_veh],"life_fnc_umbrellus",nil,true] spawn life_fnc_MP;
+					};
+			};
+		};
 /*		
 		if(_medPlayer && _ctrlKey) then {				// ***** Medic Sirene *******
 			if(vehicle player != player && !life_medSiren_active &&((driver vehicle player) == player)) then {
