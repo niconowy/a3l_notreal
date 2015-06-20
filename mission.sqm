@@ -4807,7 +4807,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""ADAC-Markt"",life_fnc_virt_menu,""adac""]; this addAction[""Adac-Laden"",life_fnc_weaponShopMenu,""adac_basic""]; this addAction[""Adac-Fahrzeuge"",life_fnc_vehicleShopMenu,[""adac_veh"",east,[""adac_veh_1""],""adac"",""Bruce's New & Used Trucks""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""adac_g_1""; }]; this addAction[""Heli Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""adac_g_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""LAC Kleidung"",life_fnc_clothingMenu,""adac""];this addAction[""LAC Items"",life_fnc_virt_menu,""adac""]; this addAction[""LAC Shop"",life_fnc_weaponShopMenu,""adac_basic""]; this addAction[""LAC Fahrzeugladen"",life_fnc_vehicleShopMenu,[""adac_veh"",east,[""adac_veh_1""],""adac"",""Bruce's New & Used Trucks""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""adac_g_1""; }]; this addAction[""Heli Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""adac_g_1""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 		};
 		class Item160
 		{
@@ -4928,7 +4928,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""ADAC-Markt"",life_fnc_virt_menu,""adac""]; this addAction[""Adac-Laden"",life_fnc_weaponShopMenu,""adac_basic""]; this addAction[""Adac-Fahrzeuge"",life_fnc_vehicleShopMenu,[""adac_veh"",east,[""adac_veh_2""],""adac"",""Bruce's New & Used Trucks""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""adac_g_2""; }]; this addAction[""Heli Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""adac_g_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""LAC Kleidung"",life_fnc_clothingMenu,""adac""]; this addAction[""LAC Items"",life_fnc_virt_menu,""adac""]; this addAction[""LAC Laden"",life_fnc_weaponShopMenu,""adac_basic""]; this addAction[""LAC Fahrzeugladen"",life_fnc_vehicleShopMenu,[""adac_veh"",east,[""adac_veh_2""],""adac"",""Bruce's New & Used Trucks""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""adac_g_2""; }]; this addAction[""Heli Garage"",  {   [[getPlayerUID player,playerSide,""Air"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP;   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""adac_g_2""; life_garage_type = ""Air"";  },"""",0,false,false,"""",'playerSide == east']; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 		};
 		class Item172
 		{
@@ -6955,14 +6955,14 @@ class Mission
 		{
 			position[]={8023.3447,0.016624203,5749.7397};
 			name="wassertanke";
-			text="Tankstelle";
+			text="Boot-Tankstelle";
 			type="A3L_Fuel_Icon";
 		};
 		class Item226
 		{
 			position[]={5589.208,-0.061090615,3366.7124};
 			name="wassertanke_1";
-			text="Tankstelle";
+			text="Boot-Tankstelle";
 			type="A3L_Fuel_Icon";
 		};
 		class Item227
@@ -7120,10 +7120,10 @@ class Mission
 		{
 			position[]={9744.8418,162.67114,7967.9858};
 			name="marker_lakeistani_kleidungen";
-			text="Lakeistani Kleidung";
+			text="Lakeistani";
 			type="A3L_Store_Red_Icon";
 			colorName="ColorRed";
-			angle=3.2126312;
+			angle=3.21263;
 		};
 	};
 };

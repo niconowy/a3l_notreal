@@ -73,6 +73,13 @@ class CfgSounds
 		sound[] = {"\sounds\ipdSiren_Wail.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	
+	class umbrellam
+	{
+		name = "umbrellam";
+		sound[] = {"\sounds\umbrell.ogg", 1.0, 1};
+		titles[] = {};
+	};
 
 	class tazersound
 	{
@@ -113,27 +120,6 @@ class CfgSounds
 	{
 		name = "knockout";
 		sound[] = {"\sounds\knockout.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class hammer_kurz
-	{
-		name = "hammer_kurz";
-		sound[] = {"\sounds\hammer_1.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class hammer_mittel
-	{
-		name = "hammer_mittel";
-		sound[] = {"\sounds\hammer_2.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class hammer_lang
-	{
-		name = "hammer_lang";
-		sound[] = {"\sounds\hammer_3.ogg", 1.0, 1};
 		titles[] = {};
 	};
 
