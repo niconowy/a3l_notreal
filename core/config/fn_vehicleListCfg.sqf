@@ -534,6 +534,7 @@ switch (_shop) do
 		[
 			["C_Offroad_01_F",10000],
 			["A3L_Towtruck",35000],
+			["A3L_CVLac",45000],
 			["B_Heli_Light_01_F",100000],
 			["A3L_TaurusWhite",35000],
 			["A3l_evoxADAC",70000]
