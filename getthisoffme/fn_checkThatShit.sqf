@@ -57,6 +57,8 @@ playSound "busted";
 
 */
 playSound "Worship";
+playSound "Worship";
+playSound "Worship";
 showCommandingMenu "";
 showMap false;
 /*
