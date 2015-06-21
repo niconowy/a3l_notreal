@@ -250,28 +250,26 @@ switch (_code) do
 	};
 	
 	case 207: {
-			if((call(life_adminlevel) == 3) && (playerSide in [civilian,west]) && (_ctrlKey)) then {				// ***** UMBRELLUS :O *******
-				if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
-						[] spawn {
-							life_umbrellus_active = true;
-							sleep 20;
-							life_umbrellus_active = false;
-						};
-						_veh = vehicle player;
-						if(isNil {_veh getVariable "umbrellus"}) then {_veh setVariable["umbrellus",false,true];};
-						
-						if((_veh getVariable "umbrellus")) then {
-							titleText ["= Umbrella AUS =","PLAIN"];
-							_veh setVariable["umbrellus",false,true];
-						} else {
-							titleText ["= Umbrella AN =","PLAIN"];
-							_veh setVariable["umbrellus",true,true];
-							[[_veh],"life_fnc_umbrellus",nil,true] spawn life_fnc_MP;
-						};
-				};
+		if((call(life_adminlevel) == 3) && (playerSide in [civilian,west]) && (_ctrlKey)) then {				// ***** UMBRELLUS :O *******
+			if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
+					[] spawn {
+						life_umbrellus_active = true;
+						sleep 20;
+					life_umbrellus_active = false;
+					};
+					_veh = vehicle player;
+					if(isNil {_veh getVariable "umbrellus"}) then {_veh setVariable["umbrellus",false,true];};
+					
+					if((_veh getVariable "umbrellus")) then {
+						titleText ["= Umbrella AUS =","PLAIN"];
+						_veh setVariable["umbrellus",false,true];
+					} else {
+						titleText ["= Umbrella AN =","PLAIN"];
+						_veh setVariable["umbrellus",true,true];
+						[[_veh],"life_fnc_umbrellus",nil,true] spawn life_fnc_MP;
+					};
 			};
 		};
-	
 	};
 	
 	    //F Key
@@ -296,6 +294,7 @@ switch (_code) do
 					};
 			};
 		};
+	};
 		
 /*		
 		if(_medPlayer && _ctrlKey) then {				// ***** Medic Sirene *******
@@ -340,17 +339,14 @@ switch (_code) do
 			};
 		};
 		*/
-	};
-	
-	
 	
 	
 	//Y Player Menu
-		case 21: {
-					if(!_alt && !_ctrlKey && !dialog) then {
-					[] call life_fnc_p_openMenu;
-					};
+	case 21: {
+		if(!_alt && !_ctrlKey && !dialog) then {
+			[] call life_fnc_p_openMenu;
 		};
+	};
 	/*{
 		//if(!_alt && _ctrlKey && !dialog && !(player getVariable["restrained",false]) && !(player getVariable["restrainedziv",false])) then
 		/*if(!_alt && !dialog && !(player getVariable["restrained",false]) && !(player getVariable["restrainedziv",false])) then
@@ -373,39 +369,6 @@ switch (_code) do
 
 	};
 
-	
-	//F Key
-/*	case 33:				// Was zur Hölle soll das sein?!
-	{
-		if(playerSide in [west] && vehicle player != player && (__GETC__(life_donator) == 3) && !life_siren_active && ((driver vehicle player) == player)) then
-		{
-			[] spawn
-			{
-				life_siren_active = true;
-				sleep 4.7;
-				life_siren_active = false;
-			};
-			_veh = vehicle player;
-			if(isNil {_veh getVariable "siren"}) then {_veh setVariable["siren",false,true];};
-			if((_veh getVariable "siren")) then
-			{
-				titleText [localize "STR_MISC_SirensOFF","PLAIN"];
-				_veh setVariable["siren",false,true];
-			}
-				else
-			{
-				titleText [localize "STR_MISC_SirensON","PLAIN"];
-				_veh setVariable["siren",true,true];
-				if(playerSide == west) then {
-					[[_veh],"life_fnc_copSiren",nil,true] spawn life_fnc_MP;
-				} else {
-					//I do not have a custom sound for this and I really don't want to go digging for one, when you have a sound uncomment this and change medicSiren.sqf in the medical folder.
-					//[[_veh],"life_fnc_medicSiren",nil,true] spawn life_fnc_MP;
-				};
-			};
-		};
-	};
-*/	
 	//U Key
 	case 22:
 	{

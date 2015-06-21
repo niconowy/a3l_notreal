@@ -73,7 +73,7 @@ switch (_shop) do
 			["cl3_carrera_gt_gold",600000],
 			["cl3_carrera_gt_burgundy",600000],
 			["cl3_carrera_gt_black",600000],
-			["wirk_cayenne",550000],
+			["wirk_cayenne",1750000],
 			["ALFR_GeK_Panamera",825000]
 		];
 	};

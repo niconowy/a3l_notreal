@@ -42,20 +42,13 @@ switch (_filter) do
 	case 2:
 	{
 		[
+			["G_Combat",nil,175],
 			["G_Shades_Black",nil,250],
 			["G_Shades_Blue",nil,200],
 			["G_Sport_Blackred",nil,200],
 			["G_Sport_Checkered",nil,200],
 			["G_Sport_Blackyellow",nil,200],
 			["G_Sport_BlackWhite",nil,200],
-			["G_Aviator",nil,750],
-			["G_Squares",nil,100],
-			["G_Lowprofile",nil,300],
-			["G_Combat",nil,550],
-			["G_Balaclava_blk",nil,550],
-			["G_Balaclava_combat",nil,550],
-			["G_Balaclava_lowprofile",nil,500],
-			["A3L_Balaclava",nil,600],
 			["SFG_Tac_BeardD","Bart (Dunkel)",275],
 			["SFG_Tac_BeardB","Bart (Blond)",275],
 			["SFG_Tac_BeardG","Bart (Ginger)",275],

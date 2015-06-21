@@ -161,6 +161,7 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["H_HelmetB_black","FBI Helm",50],
 			["H_ALFR_Heist_Mask_1",nil,1000],
 			["H_ALFR_Heist_Mask_3",nil,1000],
 			["H_ALFR_Heist_Mask_7",nil,1000],
@@ -173,7 +174,6 @@ switch (_filter) do
 			["H_ALFR_OVERKILL_I",nil,4250],
 			["H_ALFR_OVERKILL_III",nil,4750],
 			["H_ALFR_OVERKILL_IV",nil,5000],
-			["H_HelmetB_black","FBI Helm",50],
 			["kio_vfv_mask","Vendetta",2500],
 			["A3L_Legoman","Legokopf",10000],
 			["A3L_Halloween_Pumpkinhead","Pumpkin",10000],
