@@ -15,4 +15,4 @@ while { player getVariable ["surrender", false] }  do {
 	};
 };
 
-player playMoveNow "CL3_anim_surrenderfinish"; //Animation out
+[[player,"CL3_anim_surrenderfinish"],"life_fnc_animSync",nil,false] spawn life_fnc_MP; //Animation out
