@@ -14,4 +14,4 @@ if(isNull _cop OR {_cop != player}) exitWith {}; //Double NO
 ja_pare = ja_pare + (_value / 2);
 [[player,"A3L_Thumbsup"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 sleep 1.0;
-player playActionNow "stop";
+[[player,""],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
