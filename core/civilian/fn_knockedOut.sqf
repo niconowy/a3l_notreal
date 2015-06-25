@@ -13,12 +13,14 @@ if(_target != player) exitWith {};
 if(_who == "") exitWith {};
 
 titleText[format[localize "STR_Civ_KnockedOut",_who],"PLAIN"];
-player playMoveNow "CL3_anim_Knockout1In";
+[[player,"Cl3_anim_Knockout1In"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+sleep 3.703;
+[[player,"static_dead"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 _obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
 _obj setPosATL (getPosATL player);
 player attachTo [_obj,[0,0,0]];
 sleep 15;
-player playMoveNow "CL3_anim_Knockout1End";
+[[player,"CL3_anim_Knockout1End"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 detach player;
 deleteVehicle _obj;
 player setVariable["robbed",FALSE,TRUE];

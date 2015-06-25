@@ -427,6 +427,15 @@ switch (_code) do
 			player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
 		};
 	};
+	
+	case 26:
+	{
+		if(_shift) then {_handled = true;};
+		if (_shift && !(player getVariable "restrained")) then
+		{
+			[[player,"cl3_anim_lunatic"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+		};
+	};
 
 	case 80:
 	{

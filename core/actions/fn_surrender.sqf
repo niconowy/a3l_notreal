@@ -7,7 +7,7 @@
 player setVariable ["surrender", true, true]; //Set surrender to true
 
 while { player getVariable ["surrender", false] }  do { 
-	player playMove "amovpercmstpsnonwnondnon_amovpercmstpssurwnondnon"; //Animation in
+	[[player,"CL3_anim_surrenderLoop"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 	
 	// Check if player is alive.
 	if (!alive player) then {
@@ -15,4 +15,4 @@ while { player getVariable ["surrender", false] }  do {
 	};
 };
 
-player playMoveNow "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon"; //Animation out
+player playMoveNow "CL3_anim_surrenderfinish"; //Animation out
