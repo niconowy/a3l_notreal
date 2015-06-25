@@ -20,6 +20,7 @@ if(_target getVariable "isblinded") exitWith {hint "Person wurde bereits eine Au
 if!(_target getVariable "restrained") exitWith {hint "Die Person ist nicht festgenommen. Daher kannst du auch keine Augenbinde anlegen."};
 if(!isPlayer _target) exitWith {}; //Selbstverständlich.
 
+[[player,"CL3_anim_drill_short"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 _target setVariable["isblinded",true,true];
 [[player],"life_fnc_augenbindeAn",_target,false] spawn life_fnc_MP;
 hint localize "STR_MISC_AugenBinde_Attach";
