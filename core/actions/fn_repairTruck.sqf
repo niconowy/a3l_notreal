@@ -38,7 +38,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 				[[player,"CL3_anim_RepairCrouch"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 			};
 			
-			sleep 0.215;
+			sleep 0.225;
 			
 			_cP = _cP + 0.01;
 			_progress progressSetPosition _cP;
