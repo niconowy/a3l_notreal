@@ -428,6 +428,7 @@ switch (_code) do
 		};
 	};
 	
+	//Ü Key
 	case 26:
 	{
 		if(_shift) then {_handled = true;};
@@ -436,7 +437,27 @@ switch (_code) do
 			[[player,"cl3_anim_lunatic"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 		};
 	};
-
+	
+	//Numpad 5
+	case 76:
+	{
+		if(_shift) then {_handled = true;};
+		if (_shift && !(player getVariable "restrained")) then
+		{
+			[[player,"cl3_dubstepdance"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+		};
+	};
+	
+	//Numpad 6
+	case 77:
+	{
+		if(_shift) then {_handled = true;};
+		if (_shift && !(player getVariable "restrained")) then
+		{
+			[[player,"cl3_dubsteppop"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+		};
+	};
+	
 	case 80:
 	{
 		if(_shift) then {_handled = true;};
