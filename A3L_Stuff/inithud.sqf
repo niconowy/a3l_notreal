@@ -1,7 +1,7 @@
 // command to open HUD:  "cutRsc ["a3lhud", "PLAIN"];"
  
 while {true} do {
-sleep 0.2;
+sleep 0.95;
 //_playerhealth = getdammage player;
 _playerstamina = getfatigue player;
 _playerhunger = life_hunger;
