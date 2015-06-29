@@ -288,6 +288,7 @@ class Life_Client_Core
 		class randomRound {};
 		class globalSound {};
 		class globalSoundClient {};
+		class openHandyMenu {};
 	};
 	
 	class Network
