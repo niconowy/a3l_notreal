@@ -18,6 +18,8 @@ if(isNull _caller) exitWith {};
 
 while {player getVariable "isblinded"} do {
 
+	sleep 2;
+
 	814945 cutText [" ","BLACK FADED"];
 	814945 cutFadeOut 9999999999;
 
@@ -45,5 +47,12 @@ while {player getVariable "isblinded"} do {
 		814945 cutText [" ","BLACK FADED"];
 		814945 cutFadeOut 10;
 		hint "Jemand entfernt gerade deine Augenbinde...";
+	};
+	
+	if(!(player getVariable "restrained")) exitWith {
+		player setVariable ["isblinded",false,true];
+		814945 cutText [" ","PLAIN",5];
+		814945 cutFadeOut 1;
+		hint "Ich... ich kann die Augenbinde abnehmen...";
 	};
 };

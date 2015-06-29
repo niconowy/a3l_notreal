@@ -28,7 +28,7 @@ StartProgress = false;
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
-life_versionInfo = "Lakeside Reallife v2.2.0.0";
+life_versionInfo = "Lakeside Reallife v2.2.0.1";
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
 [] execVM "extra\weather.sqf";
@@ -45,10 +45,12 @@ if(isDedicated && isNil("life_market_prices")) then
 };
 //#2 Ende
 
+WEST setFriend [INDEPENDENT,1];
 WEST setFriend [EAST,1];
 EAST setFriend [WEST,1];
 EAST setFriend [INDEPENDENT,1];
 INDEPENDENT setFriend [EAST,1];
+INDEPENDENT setFriend [WEST,1];
 
 StartProgress = true;
 

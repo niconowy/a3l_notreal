@@ -154,7 +154,7 @@ switch (_code) do
 	{
 		if(_shift && playerSide != independent && !isNull _cursorT && _cursorT isKindOf "Man" && isPlayer _cursorT && alive _cursorT && _cursorT distance player <= 1.9 && _speed < 15) then
 		{
-			if((animationState _cursorT) != "Incapacitated" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
+			if((animationState _cursorT) != "static_dead" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
 			{
 				[_cursorT] spawn life_fnc_knockoutAction;
 				//player say3D "knockout";
@@ -168,7 +168,7 @@ switch (_code) do
 	{
 		if(!_alt && !_ctrlKey && _shift) then
 		{
-			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed) then
+			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "static_dead" && !life_istazed) then
 			{
 				if (player getVariable ["surrender", false]) then
 				{

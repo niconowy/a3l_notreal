@@ -1,7 +1,7 @@
 author = "Tonic, Itsyuka | Edit by arma-3-life.de";
-onLoadName = "Lakeside Reallife v2.2.0.0";
+onLoadName = "Lakeside Reallife v2.2.0.1";
 onLoadMission = "Webseite: http://arma-3-life.de/";
-loadScreen = "textures\E76_AppleGate_Lake.paa";
+loadScreen = "textures\logo.paa";
 joinUnassigned = 1;
 respawn = BASE;
 disabledAI = true;
@@ -164,8 +164,7 @@ class CfgSounds
 		name = "dog_one";
 		sound[] = {"sounds\dog_one.ogg", 1, 1};
 		titles[] = {};
-	}; 
-	
+	};	
 };
 
 class CfgDebriefing

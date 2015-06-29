@@ -16,7 +16,7 @@ if(isNull _target) exitWith {};
 if(player == _target) exitWith {}; //Wtf
 if(player distance _target > 3) exitWith {}; //Maximalabstand zum Ziel
 if!(alive _target) exitWith {}; //Ziel ist tot
-if(_target getVariable "isblinded") exitWith {hint "Person wurde bereits eine Augenbinde angelegt."}; //Wir wollen dem Ziel nicht 2x die Augenbinde anlegen, oder?
+if(_target getVariable "isblinded") exitWith {hint "Der Person wurde bereits eine Augenbinde angelegt."}; //Wir wollen dem Ziel nicht 2x die Augenbinde anlegen, oder?
 if!(_target getVariable "restrained") exitWith {hint "Die Person ist nicht festgenommen. Daher kannst du auch keine Augenbinde anlegen."};
 if(!isPlayer _target) exitWith {}; //Selbstverständlich.
 
