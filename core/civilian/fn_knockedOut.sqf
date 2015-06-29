@@ -19,7 +19,7 @@ sleep 3.703;
 _obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL player);
 _obj setPosATL (getPosATL player);
 player attachTo [_obj,[0,0,0]];
-sleep 8;
+sleep 10;
 [[player,"CL3_anim_Knockout1End"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 detach player;
 deleteVehicle _obj;
