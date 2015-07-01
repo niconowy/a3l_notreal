@@ -41,10 +41,10 @@ if(_rip) then
     while{true} do
     {
         _shop switchMove "AmovPercMstpSsurWnonDnon";
-		sleep  0.95;
+		sleep  2.95;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
-        _pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 300),"%"];
+        _pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
         if(_cP >= 1) exitWith {};
         if(_robber distance _shop > 5) exitWith { };
         if!(alive _robber) exitWith {};
