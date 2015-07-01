@@ -40,7 +40,7 @@ if(_rip) then
 {
     while{true} do
     {
-        _shop switchMove "CL3_anim_ArrestedSit";
+        _shop switchMove "AmovPercMstpSsurWnonDnon";
 		sleep  0.95;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
