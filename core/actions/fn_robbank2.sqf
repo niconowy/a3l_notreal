@@ -59,11 +59,10 @@ if(_rip) then
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
 	deleteMarker "Marker200";
     if!(alive _robber) exitWith { _rip = false; };
-    if(_robber distance _shop > 5) exitWith { hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht."; 5 cutText ["","PLAIN"]; _rip = false; _shop switchMove ""; };
-	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; _shopSwitchMove ""; };
+    if(_robber distance _shop > 5) exitWith { hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht."; 5 cutText ["","PLAIN"]; _rip = false; };
+	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
     5 cutText ["","PLAIN"];
     titleText[format["Du hast %1 geklaut, schüttel die Cops ab!",[_kassa] call life_fnc_numberText],"PLAIN"];
-	_shop switchMove ""; // Animation entfernt
     ja_dzep = ja_dzep + _kassa; 
     _rip = false;
     life_use_atm = false;
