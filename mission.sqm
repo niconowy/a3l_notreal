@@ -3158,7 +3158,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="bankmanager_ls";
-					init="this allowDamage false; this enableSimulation false; this addAction[""Bankmanager ausrauben"",life_fnc_robbank]; removeHeadgear this; removeGoggles this; this forceaddUniform ""KAEL_SUITS_BR_F13"";";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Bankmanager ausrauben"",life_fnc_robBank]; removeHeadgear this; removeGoggles this; this forceaddUniform ""KAEL_SUITS_BR_F13"";";
 				};
 			};
 		};

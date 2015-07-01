@@ -144,8 +144,8 @@ class Life_Client_Core
 		class augenbindeAus {};
 		class augenbindeAction {};
 		class hammer {};
-		class robbank {};
-		class robbank2 {};
+		class robBank {};
+		class robBank2 {};
 	};
 	
 	class Housing
