@@ -19,7 +19,7 @@ _kassa = 225000 + round(random 100000); //setting the money in the registry, any
 [[_shop,_robber,_action,-1],"TON_fnc_shopState",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
 _chance = random(100); //calling a random number between 0-100. 
-if(_chance = 100) then 
+if(_chance >= 100) then 
 {
 	hint "Die Polizei ist Informiert!";
 	[[1,format["ALARM! - Bank: %1 wird ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; 
@@ -66,7 +66,7 @@ if(_rip) then
     ja_dzep = ja_dzep + _kassa; 
     _rip = false;
     life_use_atm = false;
-    /*sleep (30 + random(60)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery.*/
+    sleep (30 + random(60)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery.
     life_use_atm = true; // Robber can not use the ATM at this point.
     if!(alive _robber) exitWith {};
     [[1,format["112 - Los Diablos: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
