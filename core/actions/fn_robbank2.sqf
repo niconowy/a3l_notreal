@@ -15,14 +15,14 @@ if !(alive _robber) exitWith {};
 
 _alarm = false;
 _rip = true;
-_kassa = 15000 + round(random 10000); //setting the money in the registry, anywhere from 3000 to 15000. 
+_kassa = 225000 + round(random 100000); //setting the money in the registry, anywhere from 3000 to 15000. 
 [[_shop,_robber,_action,-1],"TON_fnc_shopState",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
 _chance = random(100); //calling a random number between 0-100. 
-if(_chance >= 25) then 
+if(_chance = 100) then 
 {
-	hint "Der Kassierer hat heimlich die Polizei informiert!";
-	[[1,format["ALARM! - Tankstelle: %1 wird ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; 
+	hint "Die Polizei ist Informiert!";
+	[[1,format["ALARM! - Bank: %1 wird ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; 
 	_alarm = true;
 };
 
@@ -40,11 +40,11 @@ if(_rip) then
 {
     while{true} do
     {
-        _shop switchMove "AmovPercMstpSsurWnonDnon";
+        _shop switchMove "CL3_anim_ArrestedSit";
 		sleep  0.95;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
-        _pgText ctrlSetText format["Es wird ausgeraubt , bleib in der nahe (5m) (%1%2)...",round(_cP * 100),"%"];
+        _pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 300),"%"];
         if(_cP >= 1) exitWith {};
         if(_robber distance _shop > 5) exitWith { };
         if!(alive _robber) exitWith {};
@@ -53,24 +53,25 @@ if(_rip) then
 			_Pos = position player; // by ehno: get player pos
 			_marker = createMarker ["Marker200", _Pos]; //by ehno: Place a Maker on the map
 			"Marker200" setMarkerColor "ColorRed";
-			"Marker200" setMarkerText "!ACHTUNG! Tankstellenraub !ACHTUNG!";
+			"Marker200" setMarkerText "!ACHTUNG! Bankraub Zivile Personen entfernen !ACHTUNG!";
 			"Marker200" setMarkerType "mil_warning";
 		};
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
 	deleteMarker "Marker200";
     if!(alive _robber) exitWith { _rip = false; };
-    if(_robber distance _shop > 5) exitWith { hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht."; 5 cutText ["","PLAIN"]; _rip = false; };
-	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
+    if(_robber distance _shop > 5) exitWith { hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht."; 5 cutText ["","PLAIN"]; _rip = false; _shop switchMove ""; };
+	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; _shopSwitchMove ""; };
     5 cutText ["","PLAIN"];
-    titleText[format["Du hast %1 geklaut, nichts wie weg hier, die Cops sind auf dem Weg!",[_kassa] call life_fnc_numberText],"PLAIN"];
+    titleText[format["Du hast %1 geklaut, schüttel die Cops ab!",[_kassa] call life_fnc_numberText],"PLAIN"];
+	_shop switchMove ""; // Animation entfernt
     ja_dzep = ja_dzep + _kassa; 
     _rip = false;
     life_use_atm = false;
-    sleep (30 + random(60)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery. 
+    /*sleep (30 + random(60)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery.*/
     life_use_atm = true; // Robber can not use the ATM at this point.
     if!(alive _robber) exitWith {};
-    [[1,format["112 - Tankstelle: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-    [[1,format["NEWS: Tankstelle: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
+    [[1,format["112 - Los Diablos: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+    [[1,format["NEWS: Los Diablos: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
     //[[getPlayerUID _robber,name _robber,"100"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP; 
 };
 [[_shop,_robber,_action,0],"TON_fnc_shopState",false,false] spawn life_fnc_MP;
