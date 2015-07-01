@@ -11,4 +11,4 @@ if(isNull _shop OR isNull _robber) exitWith {};
 if(side _robber != civilian) exitWith { hint "Du bist ein Cop!" };// We do not want anyone but civilianz to rob the stations.
 if (currentWeapon _robber == "") exitWith { hint "Ohne Waffe habe ich keine Angst vor dir, Verschwinde!" };//is he trying to rob without a weapon? Lets taunt him a bit!
 if(_robber distance _shop > 5) exitWith { hint "Du bist zu weit weg!" };
-[[_shop,_robber,_action],"TON_fnc_robbank",false,false] spawn life_fnc_MP;//now we send the info to the server to be processed further there.
+[[_shop,_robber,_action],"TON_fnc_robShops2",false,false] spawn life_fnc_MP;//now we send the info to the server to be processed further there.

@@ -4982,7 +4982,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_Billboard_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""textures\images\taxi.jpg""];";
+			init="this enableSimulation false; this allowDamage false; this setObjectTexture [0, ""images\taxi.jpg""];";
 		};
 		class Item175
 		{
@@ -5013,7 +5013,7 @@ class Mission
 			vehicle="UserTexture_1x2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""textures\images\taxi.jpg""]; this allowDamage false;";
+			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
 		};
 		class Item178
 		{
@@ -5024,7 +5024,7 @@ class Mission
 			vehicle="UserTexture_1x2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""textures\images\taxi.jpg""]; this allowDamage false;";
+			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
 		};
 		class Item179
 		{
@@ -5035,7 +5035,7 @@ class Mission
 			vehicle="UserTexture_1x2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""textures\images\taxi.jpg""]; this allowDamage false;";
+			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
 		};
 		class Item180
 		{
@@ -5046,7 +5046,7 @@ class Mission
 			vehicle="UserTexture_1x2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""textures\images\taxi.jpg""]; this allowDamage false;";
+			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
 		};
 		class Item181
 		{
@@ -5057,7 +5057,7 @@ class Mission
 			vehicle="UserTexture_1x2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""textures\images\taxi.jpg""]; this allowDamage false;";
+			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
 		};
 		class Item182
 		{
@@ -5068,7 +5068,7 @@ class Mission
 			vehicle="UserTexture_1x2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""textures\images\taxi.jpg""]; this allowDamage false;";
+			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
 		};
 		class Item183
 		{
@@ -5079,7 +5079,7 @@ class Mission
 			vehicle="UserTexture_1x2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""textures\images\taxi.jpg""]; this allowDamage false;";
+			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
 		};
 		class Item184
 		{
@@ -5090,7 +5090,7 @@ class Mission
 			vehicle="UserTexture_1x2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""textures\images\taxi.jpg""]; this allowDamage false;";
+			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
 		};
 		class Item185
 		{
@@ -5101,7 +5101,7 @@ class Mission
 			vehicle="UserTexture_1x2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this setObjectTexture [0, ""textures\images\taxi.jpg""]; this allowDamage false;";
+			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
 		};
 		class Item186
 		{
