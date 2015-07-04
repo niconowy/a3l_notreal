@@ -7192,11 +7192,11 @@ class Mission
 		class Item247
 		{
 			position[]={3427.1001,89.220001,7790.0313};
-			name="losdiablos_bank";
+			name="Los Diablos Bank";
 			text="Los Diablos Bank";
 			type="A3L_Business_Icon";
 			colorName="ColorGUER";
-			angle=0.44797969;
+			angle=0.44797999;
 		};
 	};
 };
