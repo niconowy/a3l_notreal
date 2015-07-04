@@ -41,7 +41,7 @@ if(_rip) then
     while{true} do
     {
         _shop switchMove "AmovPercMstpSsurWnonDnon";
-		sleep  2.95;
+		sleep  3.95;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
@@ -66,6 +66,7 @@ if(_rip) then
     ja_dzep = ja_dzep + _kassa; 
     _rip = false;
     life_use_atm = false;
+	_shop switchMove ""; // Animation entfernen nach Raub
     sleep (30 + random(60)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery.
     life_use_atm = true; // Robber can not use the ATM at this point.
     if!(alive _robber) exitWith {};
