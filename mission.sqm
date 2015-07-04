@@ -3157,7 +3157,7 @@ class Mission
 					vehicle="C_man_shorts_1_F_afro";
 					leader=1;
 					skill=0.60000002;
-					text="bankmanager_ls";
+					text="BankmanagerLosDiablos";
 					init="this allowDamage false; this enableSimulation false; this addAction[""Bankmanager ausrauben"",life_fnc_robBank]; removeHeadgear this; removeGoggles this; this forceaddUniform ""KAEL_SUITS_BR_F13"";";
 				};
 			};
@@ -5205,6 +5205,7 @@ class Mission
 			vehicle="cg_banktower_sky7_roof1_middle1";
 			leader=1;
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
 		};
 	};
 	class Markers

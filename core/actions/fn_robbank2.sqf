@@ -19,7 +19,7 @@ _kassa = 225000 + round(random 100000); //setting the money in the registry, any
 [[_shop,_robber,_action,-1],"TON_fnc_shopState",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
 _chance = random(100); //calling a random number between 0-100. 
-if(_chance >= 100) then 
+if(_chance = 100) then 
 {
 	hint "Die Polizei ist Informiert!";
 	[[1,format["ALARM! - Bank: %1 wird ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; 
