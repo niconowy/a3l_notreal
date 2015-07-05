@@ -41,7 +41,7 @@ if(_rip) then
     while{true} do
     {
         _shop switchMove "cl3_anim_surrenderloop";
-		sleep  900;
+		sleep  2.85;
         _cP = _cP + 0.01;
         _progress progressSetPosition _cP;
         _pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
