@@ -54,7 +54,6 @@ if(_rip) then
 			"Marker200" setMarkerType "mil_warning";
 		};
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
-	deleteMarker "Marker200";
     if!(alive _robber) exitWith { 
 		_rip = false;
 		deleteMarker "Marker200";
