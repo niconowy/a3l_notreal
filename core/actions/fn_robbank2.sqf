@@ -16,7 +16,7 @@ if !(alive _robber) exitWith {};
 _alarm = false;
 _rip = true;
 _kassa = 225000 + round(random 100000); //setting the money in the registry, anywhere from 3000 to 15000. 
-[[_shop,_robber,_action,-1],"TON_fnc_shopState",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
+[[_shop,_robber,_action,-1],"TON_fnc_shopStateBank",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
 _chance = random(100); //calling a random number between 0-100. 
 if(_chance >= 100) then 
@@ -74,4 +74,4 @@ if(_rip) then
     [[1,format["NEWS: Los Diablos: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
     //[[getPlayerUID _robber,name _robber,"100"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP; 
 };
-[[_shop,_robber,_action,0],"TON_fnc_shopState",false,false] spawn life_fnc_MP;
+[[_shop,_robber,_action,0],"TON_fnc_shopStateBank",false,false] spawn life_fnc_MP;
