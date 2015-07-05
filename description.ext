@@ -60,6 +60,13 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	class bankalarm
+	{
+		name = "bankalarm";
+		sound[] = {"\sounds\bankalarm.ogg", 0.8, 1};
+		titles[] = {};
+	};
+	
 	class MedicSiren
 	{
 		name = "MedicSiren";

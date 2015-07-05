@@ -21,6 +21,8 @@ _kassa = 225000 + round(random 100000); //setting the money in the registry, any
 hint "Die Polizei ist Informiert!";
 [[2,"Los Diablos Bank wird gerade ausgeraubt!!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 _alarm = true;
+player say3D "bankalarm";
+[player,"sound"] call life_fnc_globalSound;
 
 
 //Setup our progress bar.
