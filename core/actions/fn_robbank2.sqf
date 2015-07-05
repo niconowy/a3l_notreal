@@ -35,6 +35,7 @@ _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format["Es wird ausgeraubt , bleib in der nähe (5m) (1%1)...","%"];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
+[[2,"Los Diablos Bank wird gerade ausgeraubt!!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 
 if(_rip) then
 {
@@ -58,8 +59,23 @@ if(_rip) then
 		};
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
 	deleteMarker "Marker200";
-    if!(alive _robber) exitWith { _rip = false; };
-    if(_robber distance _shop > 5) exitWith { hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht."; 5 cutText ["","PLAIN"]; _rip = false; };
+    if!(alive _robber) exitWith { 
+		_rip = false;
+		deleteMarker "Marker200";
+		_shop switchMove ""
+	};
+	if(life_istazed) exitwith {
+		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
+		deleteMarker "Marker200"; // by ehno delete maker
+		_shop switchMove "";
+	};
+    if(_robber distance _shop > 5) exitWith { 
+		hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht.";
+		5 cutText ["","PLAIN"];
+		_rip = false;
+		deleteMarker "Marker200";
+		_shop switchMove ""; 
+	};
 	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
     5 cutText ["","PLAIN"];
     titleText[format["Du hast %1 geklaut, schüttel die Cops ab!",[_kassa] call life_fnc_numberText],"PLAIN"];
