@@ -21,8 +21,7 @@ _kassa = 225000 + round(random 100000); //setting the money in the registry, any
 hint "Die Polizei ist Informiert!";
 [[2,"Los Diablos Bank wird gerade ausgeraubt!!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 _alarm = true;
-player say3D "bankalarm";
-[player,"sound"] call life_fnc_globalSound;
+playsound "bankalarm";
 
 
 //Setup our progress bar.
@@ -80,7 +79,6 @@ if(_rip) then
     _rip = false;
     life_use_atm = false;
 	_shop switchMove ""; // Animation entfernen nach Raub
-    sleep (30 + random(60)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery.
     life_use_atm = true; // Robber can not use the ATM at this point.
     if!(alive _robber) exitWith {};
     [[1,format["112 - Los Diablos: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
