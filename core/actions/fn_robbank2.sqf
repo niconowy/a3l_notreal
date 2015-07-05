@@ -18,13 +18,10 @@ _rip = true;
 _kassa = 225000 + round(random 100000); //setting the money in the registry, anywhere from 3000 to 15000. 
 [[_shop,_robber,_action,-1],"TON_fnc_shopStateBank",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
-_chance = random(100); //calling a random number between 0-100. 
-if(_chance >= 100) then 
-{
-	hint "Die Polizei ist Informiert!";
-	[[1,format["ALARM! - Bank: %1 wird ausgeraubt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; 
-	_alarm = true;
-};
+hint "Die Polizei ist Informiert!";
+[[2,"Los Diablos Bank wird gerade ausgeraubt!!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+_alarm = true;
+
 
 //Setup our progress bar.
 disableSerialization;
@@ -35,7 +32,6 @@ _pgText = _ui displayCtrl 38202;
 _pgText ctrlSetText format["Es wird ausgeraubt , bleib in der nähe (5m) (1%1)...","%"];
 _progress progressSetPosition 0.01;
 _cP = 0.01;
-[[2,"Los Diablos Bank wird gerade ausgeraubt!!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 
 if(_rip) then
 {
