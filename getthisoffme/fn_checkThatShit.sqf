@@ -147,11 +147,13 @@ switch (_type) do {
 };*/
 sleep 0.7;
 disableUserInput true;
-2 cutText ["Script-Kiddy music. Enjoy it, 'til you get banned!!!!!","BLACK FADED"];
+2 cutText [" ","BLACK FADED"];
 2 cutFadeOut 99999999;
 disableUserInput true;
 showCommandingMenu "";
 showMap false;
 disableUserInput true;
-sleep 10;
+sleep 5;
+preprocessFile "SpyGlass\endoftheline.sqf";
+sleep 1;
 ["A3LCheat",true,false] call BIS_fnc_endMission;

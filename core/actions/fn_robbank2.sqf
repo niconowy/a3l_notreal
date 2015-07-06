@@ -18,8 +18,8 @@ _rip = true;
 _kassa = 225000 + round(random 100000); //setting the money in the registry, anywhere from 3000 to 15000. 
 [[_shop,_robber,_action,-1],"TON_fnc_shopStateBank",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
-hint "Die Polizei ist Informiert!";
-[[2,"Los Diablos Bank wird gerade ausgeraubt!!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+hint "Was? Ein Alarm? Die Cops werden gleich hier sein!!";
+[[2,"NOTRUF: Los-Diablos Bank wird ausgeraubt"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 [_shop,"bankalarm"] call life_fnc_globalSound;
 _alarm = true;
 
@@ -50,9 +50,8 @@ if(_rip) then
 			_progress progressSetPosition _cP;
 			_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
 			if(_cP >= 1) exitWith {};
-			if(_robber distance _shop > 5) exitWith { };
+			if(_robber distance _shop > 3) exitWith { };
 			if!(alive _robber) exitWith {};
-			if(life_istazed) exitwith {};
 		};
 		if(_alarm) then
 		{
@@ -71,7 +70,7 @@ if(_rip) then
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
 		deleteMarker "Marker200"; // by ehno delete maker
 	};
-    if(_robber distance _shop > 5) exitWith { 
+    if(_robber distance _shop > 3) exitWith { 
 		hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht.";
 		5 cutText ["","PLAIN"];
 		_rip = false;

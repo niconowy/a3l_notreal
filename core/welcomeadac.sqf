@@ -27,7 +27,7 @@ _role3names = ["http://arma-3-life.de"];
 _role4 = "TeamSpeak3:";
 _role4names = ["144.76.105.204:9987"];
 _role5 = "Besonderen Dank An:";
-_role5names = ["Dome Pwny, Dieter Fischer (Mod-Arbeit)","Tonic, Itsyuka (Altis Life RPG)","Schultze, BIS (Arma3Life)"];
+_role5names = ["Dome Pwny, Dieter Fischer (Mod-Arbeit)","Tonic, Itsyuka (Altis Life RPG)","Schultze, BIS (Arma3Life)","Faith Yokas (Intro-Voice)"];
  
 {
 sleep 2;
