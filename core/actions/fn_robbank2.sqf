@@ -50,7 +50,6 @@ if(_rip) then
 			if!(alive _robber) exitWith {};
 			if!(life_istazed) exitWith {};
 		};
-	};
 		if(_alarm) then
 		{
 			_Pos = position player; // by ehno: get player pos
