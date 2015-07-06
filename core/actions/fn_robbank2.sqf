@@ -36,11 +36,11 @@ _cP = 0.01;
 
 if(_rip) then
 {
+	player switchMove "CL3_anim_Gathering1";
     while{true} do
     {
-		sleep  5.25;
-		player switchMove "CL3_anim_Gathering1";
-		_cP = _cP + 0.01269;
+		sleep  8.55;
+		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
 		if(_cP >= 1) exitWith {};
