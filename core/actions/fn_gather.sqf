@@ -10,6 +10,7 @@ private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zo
 _resourceZones = ["wheat_1","wheat_2","sunflower_1","sunflower_2","corn_1","bean_1","cotton_1","olive_1","opium_1","cannabis_1","pumpkin_1","coke_1"];
 _zone = "";
 
+if(life_action_inUse) exitWith {};
 
 {
 	if(player distance (getMarkerPos _x) < 30) exitWith {_zone = _x;};

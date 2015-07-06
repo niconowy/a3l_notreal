@@ -1,4 +1,4 @@
-/*
+ /*
 	File: fn_setupActions.sqf
 	
 	Description:
@@ -6,7 +6,7 @@
 */
 switch (playerSide) do
 {
-	case civilian:
+	case civilian:			/*	Z I V I L I S T E N  */
 	{
 		//Drop fishing net
 		life_actions = [player addAction[localize "STR_pAct_DropFishingNet",life_fnc_dropFishingNet,"",0,false,false,"",'
@@ -15,41 +15,44 @@ switch (playerSide) do
 		life_actions = life_actions + [player addAction[localize "STR_pAct_RobPerson",life_fnc_robAction,"",0,false,false,"",'
 		!isNull cursorTarget && player distance cursorTarget < 3.5 && isPlayer cursorTarget && animationState cursorTarget == "static_dead" && !(cursorTarget getVariable["robbed",FALSE]) ']];
 		//Ausweis
-		life_actions = life_actions + [player addAction["<t color='#FFFFFF'>Ausweis zeigen</t>",life_fnc_copShowLicense,"",1,false,true,"",' playerSide == civilian && !isNull cursorTarget && player distance cursorTarget < 3.5 && cursorTarget isKindOf "Man" ']];
+		life_actions = life_actions + [player addAction["<t color='#FFFFFF'>ID-Card Zeigen</t>",life_fnc_copShowLicense,"",1,false,true,"",'
+		playerSide == civilian && !isNull cursorTarget && player distance cursorTarget < 3.5 && cursorTarget isKindOf "Man" && alive cursortarget ']];
 		//earplugs
-		life_actions = [player addAction["<t color='#ADFF2F'>Ohrstöpsel Rein/Raus</t>",{if (soundVolume != 1) then {1 fadeSound 1;} else {1 fadeSound 0.2;};},"",-6,false,false,"",'vehicle player != player || soundVolume != 1']];	
+		life_actions = [player addAction["<t color='#ADFF2F'>Ohrstöpsel Rein/Raus</t>",{if (soundVolume != 1) then {1 fadeSound 1;} else {1 fadeSound 0.2;};},"",-6,false,false,"",'
+		vehicle player != player || soundVolume != 1']];	
 	};
 	
 	case west:
 	{
 	// Heli Fast Rope
-		life_actions = life_actions + [player addAction["Fast Rope",life_fnc_fastRope,"",99,false,false,"", ' (vehicle player) != player && !isNull (vehicle player) && (vehicle player) isKindOf "Air" && driver (vehicle player) != player && (getPos player) select 2 <= 100 && (getPos player) select 2 >= 15 && speed vehicle player < 30 && !(player getVariable["transporting",false]) ']];
+		life_actions = life_actions + [player addAction["Abseilen",life_fnc_fastRope,"",99,false,false,"", '
+		(vehicle player) != player && !isNull (vehicle player) && (vehicle player) isKindOf "Air" && driver (vehicle player) != player && (getPos player) select 2 <= 100 && (getPos player) select 2 >= 15 && speed vehicle player < 20 && !(player getVariable["transporting",false]) ']];
 		
 	//place bargate
-		life_actions = life_actions + [player addAction["Place BarGate",{if(!isNull life_bargate) then {{detach _x} foreach (life_bargate getvariable "bargate"); _handle = [life_bargate,"bargate"] spawn life_fnc_enablecollisionwith; waitUntil {scriptDone _handle}; [[life_bargate,"bargate"],"life_fnc_enablecollisionwith",true,false] call BIS_fnc_MP; life_bargate = ObjNull;};},"",999,false,false,"",'!isNull life_bargate']];
+		life_actions = life_actions + [player addAction["Platziere BarGate",{if(!isNull life_bargate) then {{detach _x} foreach (life_bargate getvariable "bargate"); _handle = [life_bargate,"bargate"] spawn life_fnc_enablecollisionwith; waitUntil {scriptDone _handle}; [[life_bargate,"bargate"],"life_fnc_enablecollisionwith",true,false] call BIS_fnc_MP; life_bargate = ObjNull;};},"",999,false,false,"",'!isNull life_bargate']];
 
 	//Packup BarGate
-		life_actions = life_actions + [player addAction["Pack up BarGate",life_fnc_packupbargate,"",0,false,false,"",'
+		life_actions = life_actions + [player addAction["BarGate Aufheben",life_fnc_packupbargate,"",0,false,false,"",'
 		_bargate = nearestObjects[getPos player,["RoadCone_F"],3.5] select 0; !isNil "_bargate" && !isNil {(_bargate getVariable "bargate")}']];
 
 	//Pickup BarGate Briefcases
-		life_actions = life_actions + [player addAction["Pickup BarGate",life_fnc_pickupItem,"",0,false,false,"",
+		life_actions = life_actions + [player addAction["BarGate Aufheben",life_fnc_pickupItem,"",0,false,false,"",
 		' !isNull cursorTarget && (typeOf cursorTarget) == "Land_Suitcase_F" && ((cursorTarget getVariable "item") select 0) == "BarGate" && (player distance cursorTarget) < 3 ']];	
 	
 	//place roadcones
-		life_actions = life_actions + [player addAction["Place Roadcone",{if(!isNull life_roadcone) then {{detach _x} foreach (life_roadcone getvariable "roadcone"); _handle = [life_roadcone,"roadcone"] spawn life_fnc_enablecollisionwith; waitUntil {scriptDone _handle}; [[life_roadcone,"roadcone"],"life_fnc_enablecollisionwith",true,false] call BIS_fnc_MP; life_roadcone = ObjNull;};},"",999,false,false,"",'!isNull life_roadcone']];
+		life_actions = life_actions + [player addAction["Roadcone Platzieren",{if(!isNull life_roadcone) then {{detach _x} foreach (life_roadcone getvariable "roadcone"); _handle = [life_roadcone,"roadcone"] spawn life_fnc_enablecollisionwith; waitUntil {scriptDone _handle}; [[life_roadcone,"roadcone"],"life_fnc_enablecollisionwith",true,false] call BIS_fnc_MP; life_roadcone = ObjNull;};},"",999,false,false,"",'!isNull life_roadcone']];
 		
 	//Packup Roadcones
-		life_actions = life_actions + [player addAction["Pack up Roadcone Strip",life_fnc_packupRoadcones,"",0,false,false,"",'
+		life_actions = life_actions + [player addAction["Pylonen-Streifen(L) Aufheben",life_fnc_packupRoadcones,"",0,false,false,"",'
 		_cones = nearestObjects[getPos player,["RoadCone_L_F"],3.5] select 0; !isNil "_cones" && !isNil {(_cones getVariable "roadcone")} && (count (_cones getVariable "roadcone") > 1)
 		']];
-		life_actions = life_actions + [player addAction["Pack up Roadcone",life_fnc_packupRoadcones,"",0,false,false,"",'
+		life_actions = life_actions + [player addAction["Pylone Aufheben",life_fnc_packupRoadcones,"",0,false,false,"",'
 		_cones = nearestObjects[getPos player,["RoadCone_F"],3.5] select 0; !isNil "_cones" && !isNil {(_cones getVariable "roadcone")} && {count (_cones getVariable "roadcone") == 1}
 		']];
-		life_actions = life_actions + [player addAction["Pack up Roadcone Strip",life_fnc_packupRoadcones,"",0,false,false,"",'
+		life_actions = life_actions + [player addAction["Roadcone-Strip Aufheben",life_fnc_packupRoadcones,"",0,false,false,"",'
 		_cones = nearestObjects[getPos player,["RoadCone_F"],3.5] select 0; !isNil "_cones" && !isNil {(_cones getVariable "roadcone")} && {count (_cones getVariable "roadcone") > 1}
 		']];
-		life_actions = life_actions + [player addAction["Pack up Roadcone",life_fnc_packupRoadcones,"",0,false,false,"",'
+		life_actions = life_actions + [player addAction["Roadcone Aufheben",life_fnc_packupRoadcones,"",0,false,false,"",'
 		_cones = nearestObjects[getPos player,["RoadCone_L_F"],3.5] select 0; !isNil "_cones" && !isNil {(_cones getVariable "roadcone")} && {count (_cones getVariable "roadcone") == 1}
 		']];
 
