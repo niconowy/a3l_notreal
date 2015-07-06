@@ -20,7 +20,7 @@ _kassa = 225000 + round(random 100000); //setting the money in the registry, any
 
 hint "Die Polizei ist Informiert!";
 [[2,"Los Diablos Bank wird gerade ausgeraubt!!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
-[OBJEKT,"bankalarm"] call life_fnc_globalSound;
+[_shop,"bankalarm"] call life_fnc_globalSound;
 _alarm = true;
 
 
@@ -52,6 +52,7 @@ if(_rip) then
 			if(_cP >= 1) exitWith {};
 			if(_robber distance _shop > 5) exitWith { };
 			if!(alive _robber) exitWith {};
+			if(life_istazed) exitwith {};
 		};
 		if(_alarm) then
 		{
