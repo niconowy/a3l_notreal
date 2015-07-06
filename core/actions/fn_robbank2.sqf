@@ -15,7 +15,7 @@ if !(alive _robber) exitWith {};
 
 _alarm = false;
 _rip = true;
-_kassa = 225000 + round(random 100000); //setting the money in the registry, anywhere from 3000 to 15000. 
+_kassa = 225000 + round(random 100000); //setting the money in the registry, anywhere from 225000 to 100000. 
 [[_shop,_robber,_action,-1],"TON_fnc_shopStateBank",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
 hint "Was? Ein Alarm? Die Cops werden gleich hier sein!!";
@@ -57,12 +57,18 @@ if(_rip) then
 		};
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
 
-    if!(alive _robber) exitWith { 
+    if!(alive _robber) exitWith {
+		hint "Du bist gestorben!";
+		[[1,format["Der Täter ist gestorben!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		5 cutText ["","PLAIN"];
+		deleteMarker "Marker200";
 		_rip = false;
+		player switchMove"";
 	};
-
+	
 	if(life_istazed) exitwith {
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
+		[[1,format["Der Bankraub wurde erfolgreich verhindert!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		5 cutText ["","PLAIN"];
 		deleteMarker "Marker200"; // by ehno delete maker
 		_rip = false;
@@ -71,6 +77,7 @@ if(_rip) then
 
     if(_robber distance _shop > 3) exitWith { 
 		hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht.";
+		[[1,format["Der Täter hat die Flucht ergriffen!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		5 cutText ["","PLAIN"];
 		_rip = false;
 		deleteMarker "Marker200"; 
