@@ -43,7 +43,6 @@ if(_rip) then
 			if(animationState player != "CL3_anim_Gathering1" ) then {
 				player action ["SwitchWeapon", player, player, 100];
 				[[player,"CL3_anim_Gathering1"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
-			};
 			
 			sleep  8.55;
 			_cP = _cP + 0.01;
@@ -52,6 +51,7 @@ if(_rip) then
 			if(_cP >= 1) exitWith {};
 			if(_robber distance _shop > 3) exitWith { };
 			if!(alive _robber) exitWith {};
+			};
 		};
 		if(_alarm) then
 		{
