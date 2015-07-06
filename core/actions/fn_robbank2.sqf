@@ -42,6 +42,7 @@ if(_rip) then
 		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
+		player switchMove "CL3_anim_Gathering1";
 		if(_cP >= 1) exitWith {};
 		if(_robber distance _shop > 3) exitWith {};
 		if!(alive _robber) exitWith {};
@@ -55,11 +56,9 @@ if(_rip) then
 			"Marker200" setMarkerType "mil_warning";
 		};
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
-
     if!(alive _robber) exitWith { 
 		_rip = false;
 	};
-
 	if(life_istazed) exitwith {
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
 		[[1,format["Der Zugriff war erfolgreich, Täter wurde getazert!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
@@ -67,7 +66,6 @@ if(_rip) then
 		deleteMarker "Marker200"; // by ehno delete maker
 		_rip = false;;
 	};
-
     if(_robber distance _shop > 3) exitWith { 
 		hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht.";
 		[[1,format["Der Täter hat die Flucht ergriffen!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
@@ -75,7 +73,6 @@ if(_rip) then
 		_rip = false;
 		deleteMarker "Marker200"; ;
 	};
-
 	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
     5 cutText ["","PLAIN"];
     titleText[format["Du hast %1 geklaut, schüttel die Cops ab!",[_kassa] call life_fnc_numberText],"PLAIN"];
