@@ -38,18 +38,15 @@ if(_rip) then
 {
     while{true} do
     {
-		if(animationState player != "CL3_anim_Gathering1" ) then {
-			player action ["SwitchWeapon", player, player, 100];
-			[[player,"CL3_anim_Gathering1"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
-			sleep  8.55;
-			_cP = _cP + 0.01;
-			_progress progressSetPosition _cP;
-			_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
-			if(_cP >= 1) exitWith {};
-			if(_robber distance _shop > 3) exitWith {};
-			if!(alive _robber) exitWith {};
-			if!(life_istazed) exitWith {};
-		};
+		sleep  8.55;
+		_cP = _cP + 0.01;
+		_progress progressSetPosition _cP;
+		_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
+		player switchMove "CL3_anim_Gathering1";
+		if(_cP >= 1) exitWith {};
+		if(_robber distance _shop > 3) exitWith {};
+		if!(alive _robber) exitWith {};
+		if(life_istazed) exitWith {};
 		if(_alarm) then
 		{
 			_Pos = position player; // by ehno: get player pos
@@ -61,22 +58,20 @@ if(_rip) then
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
     if!(alive _robber) exitWith { 
 		_rip = false;
-		deleteMarker "Marker200";
-		player playActionNow "stop";
 	};
 	if(life_istazed) exitwith {
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
 		5 cutText ["","PLAIN"];
 		deleteMarker "Marker200"; // by ehno delete maker
 		_rip = false;
-		player playActionNow "stop";
+		player switchMove "";
 	};
     if(_robber distance _shop > 3) exitWith { 
 		hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht.";
 		5 cutText ["","PLAIN"];
 		_rip = false;
 		deleteMarker "Marker200"; 
-		player playActionNow "stop";
+		player switchMove "";
 	};
 	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
     5 cutText ["","PLAIN"];
