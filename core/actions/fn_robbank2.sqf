@@ -20,8 +20,8 @@ _kassa = 225000 + round(random 100000); //setting the money in the registry, any
 
 hint "Die Polizei ist Informiert!";
 [[2,"Los Diablos Bank wird gerade ausgeraubt!!!"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+[OBJEKT,"bankalarm"] call life_fnc_globalSound;
 _alarm = true;
-playsound "bankalarm";
 
 
 //Setup our progress bar.
@@ -38,14 +38,21 @@ if(_rip) then
 {
     while{true} do
     {
-        _shop switchMove "cl3_anim_surrenderloop";
-		sleep  8.55;
-        _cP = _cP + 0.01;
-        _progress progressSetPosition _cP;
-        _pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
-        if(_cP >= 1) exitWith {};
-        if(_robber distance _shop > 5) exitWith { };
-        if!(alive _robber) exitWith {};
+		while{true} do
+		{
+			if(animationState player != "CL3_anim_Gathering1" ) then {
+				player action ["SwitchWeapon", player, player, 100];
+				[[player,"CL3_anim_Gathering1"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+			};
+			
+			sleep  8.55;
+			_cP = _cP + 0.01;
+			_progress progressSetPosition _cP;
+			_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
+			if(_cP >= 1) exitWith {};
+			if(_robber distance _shop > 5) exitWith { };
+			if!(alive _robber) exitWith {};
+		};
 		if(_alarm) then
 		{
 			_Pos = position player; // by ehno: get player pos
@@ -58,19 +65,16 @@ if(_rip) then
     if!(alive _robber) exitWith { 
 		_rip = false;
 		deleteMarker "Marker200";
-		_shop switchMove ""
 	};
 	if(life_istazed) exitwith {
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
 		deleteMarker "Marker200"; // by ehno delete maker
-		_shop switchMove "";
 	};
     if(_robber distance _shop > 5) exitWith { 
 		hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht.";
 		5 cutText ["","PLAIN"];
 		_rip = false;
-		deleteMarker "Marker200";
-		_shop switchMove ""; 
+		deleteMarker "Marker200"; 
 	};
 	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
     5 cutText ["","PLAIN"];
@@ -78,7 +82,6 @@ if(_rip) then
     ja_dzep = ja_dzep + _kassa; 
     _rip = false;
     life_use_atm = false;
-	_shop switchMove ""; // Animation entfernen nach Raub
     life_use_atm = true; // Robber can not use the ATM at this point.
     if!(alive _robber) exitWith {};
     [[1,format["112 - Los Diablos: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
