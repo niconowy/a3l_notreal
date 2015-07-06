@@ -38,20 +38,19 @@ if(_rip) then
 {
     while{true} do
     {
-		while{true} do
-		{
-			if(animationState player != "CL3_anim_Gathering1" ) then {
 				player action ["SwitchWeapon", player, player, 100];
-				[[player,"CL3_anim_Gathering1"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
-				sleep  8.55;
-				_cP = _cP + 0.01;
-				_progress progressSetPosition _cP;
-				_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
-				if(_cP >= 1) exitWith {player playActionNow "stop";};
-				if(_robber distance _shop > 3) exitWith {player playActionNow "stop";};
-				if!(alive _robber) exitWith {player playActionNow "stop";};
-			};
+		if(animationState player != "CL3_anim_Gathering1" ) then {
+			player action ["SwitchWeapon", player, player, 100];
+			[[player,"CL3_anim_Gathering1"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+			sleep  8.55;
+			_cP = _cP + 0.01;
+			_progress progressSetPosition _cP;
+			_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
+			if(_cP >= 1) exitWith {player playActionNow "stop";};
+			if(_robber distance _shop > 3) exitWith {player playActionNow "stop";};
+			if!(alive _robber) exitWith {player playActionNow "stop";};
 		};
+	};
 		if(_alarm) then
 		{
 			_Pos = position player; // by ehno: get player pos
