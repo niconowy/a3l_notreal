@@ -36,11 +36,11 @@ _cP = 0.01;
 
 if(_rip) then
 {
-	player switchMove "CL3_anim_Gathering1";
     while{true} do
     {
-		sleep  8.55;
-		_cP = _cP + 0.01;
+		sleep  5.25;
+		player switchMove "CL3_anim_Gathering1";
+		_cP = _cP + 0.01269;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
 		if(_cP >= 1) exitWith {};
@@ -63,6 +63,7 @@ if(_rip) then
 
 	if(life_istazed) exitwith {
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
+		[[1,format["Der Zugriff war erfolgreich, Täter wurde getazert!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		5 cutText ["","PLAIN"];
 		deleteMarker "Marker200"; // by ehno delete maker
 		_rip = false;
@@ -71,6 +72,7 @@ if(_rip) then
 
     if(_robber distance _shop > 3) exitWith { 
 		hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht.";
+		[[1,format["Der Täter hat die Flucht ergriffen!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		5 cutText ["","PLAIN"];
 		_rip = false;
 		deleteMarker "Marker200"; 
