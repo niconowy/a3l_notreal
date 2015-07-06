@@ -38,9 +38,8 @@ if(_rip) then
 {
     while{true} do
     {
-		sleep  5.25;
-		player switchMove "CL3_anim_Gathering1";
-		_cP = _cP + 0.01269;
+		sleep  8.55;
+		_cP = _cP + 0.01;
 		_progress progressSetPosition _cP;
 		_pgText ctrlSetText format["Es wird ausgeraubt , bleib 15 Minuten in Reichweite (5m) (%1%2)...",round(_cP * 100),"%"];
 		if(_cP >= 1) exitWith {};
@@ -66,8 +65,7 @@ if(_rip) then
 		[[1,format["Der Zugriff war erfolgreich, Täter wurde getazert!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		5 cutText ["","PLAIN"];
 		deleteMarker "Marker200"; // by ehno delete maker
-		_rip = false;
-		player switchMove "";
+		_rip = false;;
 	};
 
     if(_robber distance _shop > 3) exitWith { 
@@ -75,8 +73,7 @@ if(_rip) then
 		[[1,format["Der Täter hat die Flucht ergriffen!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		5 cutText ["","PLAIN"];
 		_rip = false;
-		deleteMarker "Marker200"; 
-		player switchMove "";
+		deleteMarker "Marker200"; ;
 	};
 
 	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
