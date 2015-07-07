@@ -20,6 +20,7 @@ _kassa = 225000 + round(random 100000); //setting the money in the registry, any
 
 hint "Was? Ein Alarm? Die Cops werden gleich hier sein!!";
 [[2,"NOTRUF: Los-Diablos Bank wird ausgeraubt"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+[[1,"NOTRUF: Einheiten sofort nach Los Diablos, die Bank wird ausgeraubt!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 [_shop,"bankalarm"] call life_fnc_globalSound;
 _alarm = true;
 
@@ -56,19 +57,23 @@ if(_rip) then
 		};
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
     if!(alive _robber) exitWith { 
+		deleteMarker "Marker200";
+		[[1,"Los Diablos Bank: Der Täter ist verstorben!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		_rip = false;
 	};
 	if(life_istazed) exitwith {
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
 		5 cutText ["","PLAIN"];
+		[[1,"Los Diablos Bank: Der Täter wurde erfolgreich gestellt!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		deleteMarker "Marker200"; // by ehno delete maker
-		_rip = false;;
+		_rip = false;
 	};
     if(_robber distance _shop > 3) exitWith { 
 		hint "Du bist weggerannt, flüchte nun komplett bevor die Cops da sind!";
 		5 cutText ["","PLAIN"];
+		[[1,"Los Diablos Bank: Der Täter ist ohne Geld geflüchtet!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		_rip = false;
-		deleteMarker "Marker200"; ;
+		deleteMarker "Marker200";
 	};
 	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
     5 cutText ["","PLAIN"];
@@ -77,9 +82,12 @@ if(_rip) then
     _rip = false;
     life_use_atm = false;
     life_use_atm = true; // Robber can not use the ATM at this point.
-    if!(alive _robber) exitWith {};
-    [[1,format["112 - Los Diablos: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
-    [[1,format["NEWS: Los Diablos: %1 wurde gerade ausgeraubt. Kasseninhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
+	
+    if!(alive _robber) exitWith {
+		_rip = false;
+	};
+    [[1,format["112 - Los Diablos: %1 wurde gerade ausgeraubt. Bankinhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+    [[1,format["NEWS: Los Diablos: %1 wurde gerade ausgeraubt. Bankinhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
     //[[getPlayerUID _robber,name _robber,"100"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP; 
 };
 [[_shop,_robber,_action,0],"TON_fnc_shopStateBank",false,false] spawn life_fnc_MP;
