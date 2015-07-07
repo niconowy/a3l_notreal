@@ -48,6 +48,7 @@ if(_rip) then
         if(_cP >= 1) exitWith {};
         if(_robber distance _shop > 5) exitWith { };
         if!(alive _robber) exitWith {};
+		if(life_istazed) exitwith {};
 		if(_alarm) then
 		{
 			_Pos = position player; // by ehno: get player pos
@@ -57,10 +58,29 @@ if(_rip) then
 			"Marker200" setMarkerType "mil_warning";
 		};
     }; // the loop continues til the progressbar is full, distance is exceeded or robber dies. 
-	deleteMarker "Marker200";
-    if!(alive _robber) exitWith { _rip = false;     5 cutText ["","PLAIN"];};
-    if(_robber distance _shop > 5) exitWith { hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht."; 5 cutText ["","PLAIN"]; _rip = false; };
-	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!";     5 cutText ["","PLAIN"];};
+	
+    if(life_istazed) exitwith {
+		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
+		5 cutText ["","PLAIN"];
+		[[1,"Tankstelle %1: Der Täter wurde erfolgreich gestellt!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		deleteMarker "Marker200"; // by ehno delete maker
+		_rip = false;
+	};
+	if!(alive _robber) exitWith { 
+		_rip = false;
+		5 cutText ["","PLAIN"];
+		[[1,"Tankstelle %1: Der Täter ist gestorben!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		deleteMarker "Marker200";
+	};
+    
+	if(_robber distance _shop > 5) exitWith {
+		hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht.";
+		[[1,"Tankstelle %1: Der Täter ist geflohen!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		5 cutText ["","PLAIN"];
+		_rip = false;
+	};
+	
+	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"};
     5 cutText ["","PLAIN"];
     titleText[format["Du hast %1 geklaut, nichts wie weg hier, die Cops sind auf dem Weg!",[_kassa] call life_fnc_numberText],"PLAIN"];
     ja_dzep = ja_dzep + _kassa; 
