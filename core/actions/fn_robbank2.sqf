@@ -60,6 +60,7 @@ if(_rip) then
 		deleteMarker "Marker200";
 		[[1,"Los Diablos Bank: Der Täter ist verstorben!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		_rip = false;
+		5 cutText ["","PLAIN"];
 	};
 	if(life_istazed) exitwith {
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
