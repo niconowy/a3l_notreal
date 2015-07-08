@@ -78,15 +78,14 @@ if(_rip) then
 	};
 	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"; };
     5 cutText ["","PLAIN"];
+	deleteMarker "Marker200";
     titleText[format["Du hast %1 geklaut, schüttel die Cops ab!",[_kassa] call life_fnc_numberText],"PLAIN"];
     ja_dzep = ja_dzep + _kassa; 
     _rip = false;
     life_use_atm = false;
     life_use_atm = true; // Robber can not use the ATM at this point.
 	
-    if!(alive _robber) exitWith {
-		_rip = false;
-	};
+    if!(alive _robber) exitWith {};
     [[1,format["112 - Los Diablos: %1 wurde gerade ausgeraubt. Bankinhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
     [[1,format["NEWS: Los Diablos: %1 wurde gerade ausgeraubt. Bankinhalt: $%2", _shop, [_kassa] call life_fnc_numberText]],"life_fnc_broadcast",civilian,false] spawn life_fnc_MP;
     //[[getPlayerUID _robber,name _robber,"100"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP; 
