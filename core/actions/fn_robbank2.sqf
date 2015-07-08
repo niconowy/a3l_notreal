@@ -18,9 +18,9 @@ _rip = true;
 _kassa = 225000 + round(random 100000); //setting the money in the registry, anywhere from 3000 to 15000. 
 [[_shop,_robber,_action,-1],"TON_fnc_shopStateBank",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
-hint "Was? Ein Alarm? Die Cops werden gleich hier sein!!";
-[[2,"NOTRUF: Los-Diablos Bank wird ausgeraubt"],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
-[[1,"NOTRUF: Einheiten sofort nach Los Diablos, die Bank wird ausgeraubt!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+hint "Was? Ein Alarm? Die Cops werden sicherlich gleich hier sein!!";
+[[2,format["<t size='2' color='#ff0000'>Neuigkeiten</t><br/><br/><t size='1.2'> Los-Diablos Bank wird von Rebellen ausgeraubt!!</t>"]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+[[1,format["<t size='2' color='#ff0000'>LD_BANK_NOTRUF</t><br/><br/><t size='1.2'> Los-Diablos Bank wird von Rebellen ausgeraubt!!"]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 [_shop,"bankalarm"] call life_fnc_globalSound;
 _alarm = true;
 
