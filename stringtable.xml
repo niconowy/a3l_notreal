@@ -482,6 +482,9 @@
 		<Key ID="STR_PM_SyncData">
 			<Original>Speichern</Original>
 		</Key>
+		<Key ID="STR_PM_Craft">
+			<Original>Craft</Original>
+		</Key>
 	</Package>
 	<Package name="Settings_Menu">
 		<Key ID="STR_SM_Title">
@@ -2195,4 +2198,42 @@
 			<Original>Du musst eine Nachricht zum Versenden eingeben!</Original>
 		</Key>
 	</Package>
+	<Package name="Craft">
+		<Key ID="STR_CRAFT_Title">
+			<Original>Herstellungsmenü</Original>
+		</Key>
+		<Key ID="STR_PM_CraftStats">
+			<Original>Sachen zum Bauen</Original>
+		</Key>
+		<Key ID="STR_PM_CraftMaterials">
+			<Original>Benötigte Stoffe</Original>
+		</Key>
+		<Key ID="STR_CRAFT_Button">
+			<Original>Bauen !</Original>
+		</Key>
+		<Key ID="STR_PM_NoMaterial">
+			<Original>Du hast nicht genug von diesem Rohstoff!</Original>
+		</Key>
+		<Key ID="STR_CRAFT_Process">
+			<Original>Du hast hergestellt : %1</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Weapon">
+			<Original>Waffen</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Uniform">
+			<Original>Kleidung</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Backpack">
+			<Original>Rucksäcke</Original>
+		</Key>
+		<Key ID="STR_CRAFT_FILTER_Item">
+			<Original>Items</Original>
+		</Key>
+		<Key ID="STR_CRAFT_AR_Backpack">
+			<Original>Du hast breits einen Rucksack an! Mach den erstmal weg!.</Original>
+		</Key>
+		<Key ID="STR_CRAFT_AR_Uniform">
+			<Original>Du hast bereits Kleidung an! Mach dich erstmal nackt!</Original>
+		</Key>
+	</Package>  
 </Project>

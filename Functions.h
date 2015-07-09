@@ -146,6 +146,7 @@ class Life_Client_Core
 		class hammer {};
 		class robBank {};
 		class robBank2 {};
+		class craftAction {};
 	};
 	
 	class Housing
@@ -193,6 +194,7 @@ class Life_Client_Core
 		class weaponShopCfg {};
 		class vehicleWeightCfg {};
 		class houseConfig {};
+		class craftCfg {};
 		
 		//Clothing Store Configs
 		class clothing_cop {};
@@ -237,6 +239,9 @@ class Life_Client_Core
 		class newMsg {};
 		class showMsg {};
 		class revokeLicense {};
+		class craft {};
+		class craft_update {};
+		class craft_updateFilter {};
 	};
 	
 	class Functions

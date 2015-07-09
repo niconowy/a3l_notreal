@@ -42,3 +42,4 @@
 #include "LicensesDialog.hpp"
 #include "slot_machine.hpp"
 #include "blackjack.hpp"
+#include "craft.hpp"
