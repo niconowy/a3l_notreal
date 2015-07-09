@@ -142,7 +142,7 @@ if(_itemFilter == "weapon") then{
 			life_is_processing = false;
 		};
 	};
-
+	
 };
 
 

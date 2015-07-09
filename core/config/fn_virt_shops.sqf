@@ -21,7 +21,7 @@ switch (_shop) do
 	case "fishmarket": {["Fish Market",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "farmingmarket": {["Seed Market",["wheat seed","sunflower seed","bean seed","cotton seed","pumpkin seed","opium seed","coke seed","cannabis seed","wheat","sunflower","corn","bean","cotton","olive","pumpkin"]]};	
 	case "glass": {["Glass Dealer",["glass"]]};
-	case "iron": {["Industrial Trader",["iron_r","copper_r"]]};
+	case "iron": {["Industrial Trader",["iron_r","copper_r","elektroteile"]]};
 	case "diamond": {["Diamond Dealer",["diamondc"]]};
 	case "salt": {["Salt Dealer",["salt_r"]]};
 	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","lockpick","boltcutter","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};

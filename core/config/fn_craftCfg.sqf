@@ -29,19 +29,23 @@ if(_craft == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
 switch(_craft) do
 {
-	case "weapon":
+		case "weapon":
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
-				["hlc_rifle_ak47", ["life_inv_copperr",25,"life_inv_ironr",15]]
-
+				["hlc_rifle_akm", ["life_inv_copperr",15,"life_inv_ironr",6]],
+				["hlc_30Rnd_762x39_b_ak", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
+				["hlc_rifle_aks74u", ["life_inv_copperr",15,"life_inv_ironr",6]],
+				["hlc_rifle_ak12", ["life_inv_copperr",15,"life_inv_ironr",6]],
+				["hlc_rifle_aek971", ["life_inv_copperr",15,"life_inv_ironr",6]],
+				["hlc_30Rnd_545x39_B_AK", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
+				["RH_ar10", ["life_inv_copperr",15,"life_inv_ironr",6]],
+				["RH_20Rnd_762x51_AR10", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
+				["RH_M4sbr_b", ["life_inv_copperr",15,"life_inv_ironr",6]],
+				["30Rnd_556x45_Stanag", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]]
 			];
-		if(__GETC__(life_adminlevel) > 0) then
-		{
-			_return pushBack
-			["SMG_01_F", ["life_inv_goldbar",6,"life_inv_copperr",3,"life_inv_ironr",3,"life_inv_diamondr",1]];
-		};
 	};
+
 /*
 	case "uniform":
 	{
@@ -63,10 +67,9 @@ switch(_craft) do
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
-				["life_inv_pickaxe", ["life_inv_goldbar",1]],
-				["life_inv_goldbar", ["life_inv_goldbar",1,"life_inv_copperr",1]]
+				["life_inv_pickaxe", ["life_inv_goldbar",1]]
 		];
 	};
 };
 
-_return; 
+_return;

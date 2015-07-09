@@ -3146,7 +3146,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=197;
+		items=199;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -4053,7 +4053,7 @@ class Mission
 		};
 		class Item88
 		{
-			position[]={5107.8208,4.98,1126.3311};
+			position[]={5107.8081,4.98,1126.3445};
 			azimut=1507.35;
 			id=218;
 			side="EMPTY";
@@ -5200,10 +5200,32 @@ class Mission
 			text="LosDiablosBank";
 			init="this allowDamage false; this enableSimulation false; this addAction[""Bank ausrauben"",life_fnc_robBank];";
 		};
+		class Item197
+		{
+			position[]={5068.1455,4.98,1121.3282};
+			azimut=1863.78;
+			offsetY=3.02;
+			id=327;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""Schwarzpulver erzeugen"",life_fnc_processAction,""schwarzpulver"",0,false,false,"""",' life_inv_kohle > 0 && !life_is_processing']; this addAction[""Lizenzen"",life_fnc_licenses,[""schwarzpulver""],0,true,true,"""",' playerSide == civilian '];";
+		};
+		class Item198
+		{
+			position[]={4648.9316,318.2438,9524.1895};
+			azimut=1654.51;
+			offsetY=3.4000001;
+			id=328;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			init="this enableSimulation false; this allowDamage false; this addAction[""Elektroteile löten"",life_fnc_processAction,""elektriker"",0,false,false,"""",' life_inv_copperr > 0 && !life_is_processing']; this addAction[""Lizenzen"",life_fnc_licenses,[""elektriker""],0,true,true,"""",' playerSide == civilian '];";
+		};
 	};
 	class Markers
 	{
-		items=248;
+		items=251;
 		class Item0
 		{
 			position[]={9289.958,20.111645,10496.466};
@@ -6025,7 +6047,7 @@ class Mission
 		{
 			position[]={4181.875,83.980003,6607.0674};
 			name="oil_trader_4";
-			text="Eisen/Kupfer Händler";
+			text="Eisen/Kupfer Händler/Elektroschrott";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorOrange";
 			angle=0.29785201;
@@ -7191,6 +7213,31 @@ class Mission
 			type="A3L_Business_Icon";
 			colorName="ColorGUER";
 			angle=0.44797999;
+		};
+		class Item248
+		{
+			position[]={244.09348,429.30328,3538.9094};
+			name="kohle_1";
+			text="Kohlemine";
+			type="A3L_Pickaxe_Icon";
+			colorName="ColorBrown";
+		};
+		class Item249
+		{
+			position[]={5068.1563,4.98,1121.3295};
+			name="schwarzpulver";
+			text="Schwarzpulververarbeiter";
+			type="A3L_Factory_Red_Icon";
+			colorName="ColorRed";
+			angle=359.586;
+		};
+		class Item250
+		{
+			position[]={4648.8511,318.24118,9524.1172};
+			name="elektriker";
+			text="Elektro Werkstatt";
+			type="A3L_Factory_Red_Icon";
+			colorName="ColorRed";
 		};
 	};
 };

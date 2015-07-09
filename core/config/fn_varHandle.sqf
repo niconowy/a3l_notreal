@@ -102,6 +102,9 @@ switch (_mode) do
 			case "weddingring": {"life_inv_weddingring"};
 			case "blaulicht":{"life_inv_blaulicht"};
 //			case "augenbinde":{"life_inv_augenbinde"};
+			case "schwarzpulver": {"life_inv_schwarzpulver"};
+			case "kohle": {"life_inv_kohle"};
+			case "elektroteile": {"life_inv_elektroteile"};
 		};
 	};
 	
@@ -195,6 +198,9 @@ switch (_mode) do
 			case "life_inv_weddingring": {"weddingring"};
 			case "life_inv_blaulicht": {"blaulicht"};
 //			case "life_inv_augenbinde":{"augenbinde"};
+			case "life_inv_schwarzpulver": {"schwarzpulver"};
+			case "life_inv_kohle": {"kohle"};
+			case "life_inv_elektroteile": {"elektroteile"};
 		};
 	};
 };

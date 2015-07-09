@@ -1502,6 +1502,15 @@
 		<Key ID="STR_Item_SpikeStrip">
 			<Original>Nagelband</Original>
 		</Key>
+		<Key ID="STR_Item_Kohle">
+			<Original>Kohle</Original>
+		</Key>
+		<Key ID="STR_Item_Schwarzpulver">
+			<Original>Schwarzpulver</Original>
+		</Key>
+		<Key ID="STR_Item_Elektroteile">
+			<Original>Elektroteile</Original>
+		</Key>
 		<Key ID="STR_Item_WeddingRing">
 			<Original>Ehering</Original>
 		</Key>
@@ -1566,6 +1575,12 @@
 		</Key>
 		<Key ID="STR_License_Home">
 			<Original>Eigentumsurkunde</Original>
+		</Key>
+		<Key ID="STR_License_Schwarzpulver">
+			<Original>Schwarzpulververarbeitung</Original>
+		</Key>
+		<Key ID="STR_License_Elektriker">
+			<Original>Elektriker</Original>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
@@ -1708,6 +1723,12 @@
 		</Key>
 		<Key ID="STR_Process_Cement">
 			<Original>Zement wird gemischt</Original>
+		</Key>
+		<Key ID="STR_Process_Schwarzpulver">
+			<Original>Schwarzpulver wird hergestellt</Original>
+		</Key>
+		<Key ID="STR_Process_Elektroteile">
+			<Original>Elektroteile werden hergestellt</Original>
 		</Key>
 		<Key ID="STR_Process_Stay">
 			<Original>Du musst innerhalb von 10m bleiben, um verarbeiten zu können.</Original>
