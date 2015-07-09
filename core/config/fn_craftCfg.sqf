@@ -33,7 +33,7 @@ switch(_craft) do
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
-				["hgun_P07_F", ["life_inv_goldbar",2,"life_inv_copperr",1]]
+				["hlc_rifle_ak47", ["life_inv_copperr",25,"life_inv_ironr",15]]
 
 			];
 		if(__GETC__(life_adminlevel) > 0) then
@@ -42,7 +42,7 @@ switch(_craft) do
 			["SMG_01_F", ["life_inv_goldbar",6,"life_inv_copperr",3,"life_inv_ironr",3,"life_inv_diamondr",1]];
 		};
 	};
-
+/*
 	case "uniform":
 	{
 		_return = [
@@ -58,7 +58,7 @@ switch(_craft) do
 				["B_Carryall_oli", ["life_inv_goldbar",1]]
 			];
 	};
-
+*/
 	case "item":
 	{
 		_return = [
