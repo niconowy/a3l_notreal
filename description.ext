@@ -172,6 +172,13 @@ class CfgSounds
 		sound[] = {"sounds\dog_one.ogg", 1, 1};
 		titles[] = {};
 	};	
+	
+	class axefick
+	{
+		name = "axefick";
+		sound[] = {"sounds\axe.ogg", 1, 1};
+		titles[] = {};
+	};	
 };
 
 class CfgDebriefing
