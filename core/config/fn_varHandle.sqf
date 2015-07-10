@@ -40,6 +40,7 @@ switch (_mode) do
 			case "fuelF": {"life_inv_fuelF"};
 			case "money": {"ja_dzep"};
 			case "pickaxe": {"life_inv_pickaxe"};
+			case "axt": {"life_inv_axt"};
 			case "copperore": {"life_inv_copperore"};
 			case "ironore": {"life_inv_ironore"};
 			case "iron_r": {"life_inv_ironr"};
@@ -139,6 +140,7 @@ switch (_mode) do
 			case "life_inv_fuelF": {"fuelF"};
 			case "ja_dzep": {"money"};
 			case "life_inv_pickaxe": {"pickaxe"};
+			case "life_inv_axt": {"axt"};
 			case "life_inv_copperore": {"copperore"};
 			case "life_inv_ironore": {"ironore"};
 			case "life_inv_ironr": {"iron_r"};

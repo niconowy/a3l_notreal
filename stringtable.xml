@@ -1427,6 +1427,9 @@
 		<Key ID="STR_Item_Pickaxe">
 			<Original>Spitzhacke</Original>
 		</Key>
+		<Key ID="STR_Item_Axt">
+			<Original>Axt</Original>
+		</Key>
 		<Key ID="STR_Item_CopperOre">
 			<Original>Kupfererz</Original>
 		</Key>

@@ -153,6 +153,7 @@ life_inv_items =
 	"life_inv_fuelF",
 	"life_inv_fuelE",
 	"life_inv_pickaxe",
+	"life_inv_axt",
 	"life_inv_copperore",
 	"life_inv_ironore",
 	"life_inv_ironr",
@@ -292,6 +293,7 @@ sell_array =
 	["tbacon",25],
 	["lockpick",250],
 	["pickaxe",750],
+	["axt",750],
 	["redgull",200],
 	["peach",55],
 	["cocaine",1000],
@@ -370,6 +372,7 @@ buy_array =
 	["tbacon",75],
 	["lockpick",500],
 	["pickaxe",1200],
+	["axt",1200],
 	["redgull",1500],
 	["fuelF",5250],
 
