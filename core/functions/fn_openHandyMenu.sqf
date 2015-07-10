@@ -8,12 +8,12 @@
 */
 
 if(player getVariable "restrained") exitWith {
-	hint "Du kannst Handy nicht verwenden, während du gefesselt bist!"; 
+	hint "Du kannst das Handy nicht verwenden, während du gefesselt bist!"; 
 	closeDialog 0;
 };
 
 if(player getVariable "isblinded") exitWith {
-	hint "Du kannst Handy nicht verwenden, während du eine Augenbinde trägst!"; 
+	hint "Du kannst das Handy nicht verwenden, während du eine Augenbinde trägst!"; 
 	closeDialog 0;
 };
 
