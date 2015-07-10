@@ -96,7 +96,7 @@ switch (_item) do
 	case "elektroteile":{1};
 	case "laminat":{2};
 	case "holz":{4};
-	case "grillkohle":{3};
+	case "grillkohle":{1};
 
 	default {1};
 };
