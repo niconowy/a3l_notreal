@@ -67,7 +67,7 @@ switch(_craft) do
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
-				["life_inv_blastingcharge", ["life_inv_elektroteile",20,"life_inv_schwarzpulver",20,"life_inv_ironr",8]]
+				["life_inv_blastingcharge", ["life_inv_elektroteile",15,"life_inv_schwarzpulver",15,"life_inv_ironr",8]]
 		];
 	};
 };

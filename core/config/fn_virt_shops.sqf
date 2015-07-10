@@ -29,7 +29,7 @@ switch (_shop) do
 	case "cement": {["Cement Dealer",["cement"]]};
 	case "gold": {["Gold Buyer",["goldbar"]]};
 	case "eletkro": {["Elektroschrott",["elektroteile"]]};
-	case "baumarkt": {["Baumarkt",["Laminat","Grillkohle"]]};
+	case "baumarkt": {["Baumarkt",["laminat","grillkohle"]]};
 	case "ems": {["EMS Item Shop",["water","coffee","rabbit","apple","redgull","tbacon","peach","lockpick","RoadCone","RoadConeB","RoadConeStrip","RoadConeStripB","RoadBlockWood","fuelF"]]};
 	case "butcher": {["Bob's Flesh'n Besh",["raw goat meat","raw chicken","raw sheep meat","raw rabbit"]]};
 	case "adac": {["Car Stuff",["water","rabbit","apple","redgull","tbacon","lockpick","fuelF","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
