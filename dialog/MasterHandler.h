@@ -38,8 +38,9 @@
 #include "smartphone.hpp"
 //#2 2Zeilen
 #include "common_EditorWrapper.hpp"
-#include "market.hpp"
 #include "LicensesDialog.hpp"
 #include "slot_machine.hpp"
 #include "blackjack.hpp"
 #include "craft.hpp"
+#include "dynmarket_changeprice.hpp"
+#include "dynmarket_prices.hpp"

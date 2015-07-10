@@ -352,7 +352,6 @@ sell_array =
 	["Rax's Rum",25],
 	["weddingring",1000]
 ];
-__CONST__(sell_array,sell_array);
 
 buy_array =
 [

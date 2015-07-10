@@ -489,24 +489,7 @@ class Life_Client_Core
 		//class tankchanger {};
 		class useStation {};
 	};
-	
-	//#2
-	class Market
-	{
-		file = "core\market";
-		class openMarketView;
-		class refreshMarketView;
-		class marketShortView;
-		class marketBuy;
-		class marketSell;
-		class marketGetBuyPrice;
-		class marketGetSellPrice;
-		class marketconfiguration;
-		class marketReset;
-		class marketGetRow;
-		class marketGetPriceRow;
-		class marketSetPriceRow;
-    };
+
 	class Adac
 	{
 		file = "core\adac";
@@ -526,5 +509,17 @@ class Life_Client_Core
 		class adacSirenLights {};
 		class adacSiren {};
 		//class adacMarker {};
+	};
+	
+	class DynMarket
+	{
+		file = "core\DynMarket";
+		class bought {};
+		class update {};
+		class DisplayPrices {};
+		class LoadIntoListbox {};
+		class ForcePrice {};
+		class DYNMARKET_getPrice {};
+		class DYNMARKET_getIcon {};
 	};
 };

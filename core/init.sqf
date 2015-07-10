@@ -258,5 +258,8 @@ waitUntil {scriptDone _handle};
 _handle = [] spawn compile PreprocessFileLineNumbers "extra\functions.sqf";
 waitUntil {scriptDone _handle};
 
+DYNAMICMARKET_boughtItems = [];
+[[getPlayerUID player],"TON_fnc_playerLogged",false,false] spawn life_fnc_MP;
+
 __CONST__(life_paycheck,life_paycheck); //Make the paycheck static.
 player enableFatigue (__GETC__(life_enableFatigue));

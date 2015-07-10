@@ -33,18 +33,6 @@ life_versionInfo = "Lakeside Reallife v2.2.0.1";
 [] execVM "KRON_Strings.sqf";
 [] execVM "extra\weather.sqf";
 
-//#2 Anfang
-if(isDedicated && isNil("life_market_prices")) then
-{
-	[] call life_fnc_marketconfiguration;
-	diag_log "Market prices generated!";
-	"life_market_prices" addPublicVariableEventHandler
-	{
-		diag_log format["Market prices updated! %1", _this select 1];
-	};
-};
-//#2 Ende
-
 WEST setFriend [INDEPENDENT,1];
 WEST setFriend [EAST,1];
 EAST setFriend [WEST,1];
