@@ -39,7 +39,7 @@ switch(_craft) do
 				["hlc_rifle_ak12", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
 				["hlc_rifle_aek971", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
 				["hlc_30Rnd_545x39_B_AK", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
-				["RH_ar10", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],,
+				["RH_ar10", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
 				["RH_20Rnd_762x51_AR10", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
 				["RH_M4sbr_b", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
 				["30Rnd_556x45_Stanag", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]]

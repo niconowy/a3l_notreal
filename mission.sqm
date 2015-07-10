@@ -7331,7 +7331,7 @@ class Mission
 		};
 		class Item252
 		{
-			position[]={5041.7949,348.52756,5231.5142};
+			position[]={5144.0073,364.72275,5318.3579};
 			name="holz_1";
 			text="Wald zum abholzen";
 			type="A3L_Tree_Icon";

@@ -37,4 +37,6 @@ switch (_type) do
 	case "home": {75000};
 	case "schwarzpulver": {45000};
 	case "elektriker": {15000};
+	case "schreiner": {17250};
+	case "grillmeister": {14225};
 };

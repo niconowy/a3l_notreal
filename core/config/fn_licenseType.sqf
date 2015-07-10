@@ -42,6 +42,8 @@ switch (_mode) do
 			case "home": {_var = "license_civ_home"};
 			case "schwarzpulver": {_var = "license_civ_schwarzpulver"};
 			case "elektriker": {_var = "license_civ_elektriker"};
+			case "grillmeister": {_var = "license_civ_grillmeister"};
+			case "schreiner": {_var = "license_civ_schreiner"};
 			default {_var = ""};
 		};
 	};
@@ -76,6 +78,8 @@ switch (_mode) do
 			case "license_civ_home": {_var = "home"};
 			case "license_civ_schwarzpulver": {_var = "schwarzpulver"};
 			case "license_civ_elektriker": {_var = "elektriker"};
+			case "license_civ_grillmeister": {_var = "grillmeister"};
+			case "license_civ_schreiner": {_var = "schreiner"};
 			default {_var = ""};
 		};
 	};
