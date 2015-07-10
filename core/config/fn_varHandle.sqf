@@ -105,6 +105,9 @@ switch (_mode) do
 			case "schwarzpulver": {"life_inv_schwarzpulver"};
 			case "kohle": {"life_inv_kohle"};
 			case "elektroteile": {"life_inv_elektroteile"};
+			case "grillkohle": {"life_inv_grillkohle"};
+			case "laminat": {"life_inv_laminat"};
+			case "holz": {"life_inv_holz"};
 		};
 	};
 	
@@ -201,6 +204,9 @@ switch (_mode) do
 			case "life_inv_schwarzpulver": {"schwarzpulver"};
 			case "life_inv_kohle": {"kohle"};
 			case "life_inv_elektroteile": {"elektroteile"};
+			case "life_inv_grillkohle": {"grillkohle"};
+			case "life_inv_laminat": {"laminat"};
+			case "life_inv_holz": {"holz"};
 		};
 	};
 };

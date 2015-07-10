@@ -94,6 +94,9 @@ switch (_item) do
 	case "schwarzpulver":{1};
 	case "kohle":{2};
 	case "elektroteile":{1};
+	case "laminat":{2};
+	case "holz":{4};
+	case "grillkohle":{3};
 
 	default {1};
 };

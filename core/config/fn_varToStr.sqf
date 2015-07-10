@@ -88,6 +88,9 @@ switch (_var) do
 	case "life_inv_schwarzpulver": {(localize "STR_Item_Schwarzpulver")};
 	case "life_inv_kohle": {(localize "STR_Item_Kohle")};
 	case "life_inv_elektroteile": {(localize "STR_Item_Elektroteile")};
+	case "life_inv_grillkohle": {(localize "STR_Item_Grillkohle")};
+	case "life_inv_laminat": {(localize "STR_Item_Laminat")};
+	case "life_inv_holz": {(localize "STR_Item_Holz")};
 	//Additions
 	case "life_inv_zoobeer": {"Zoo Beer"}; 
 	case "life_inv_RoadConeStripB": {"Leitkegel (Reihe/Licht)"};
@@ -128,4 +131,6 @@ switch (_var) do
 	case "license_civ_home": {(localize "STR_License_Home")};
 	case "license_civ_schwarzpulver": {(localize "STR_License_Schwarzpulver")};
 	case "license_civ_elektriker": {(localize "STR_License_Elektriker")};
+	case "license_civ_grillmeister": {(localize "STR_License_Grillmeister")};
+	case "license_civ_schreiner": {(localize "STR_License_Schreiner")};
 };

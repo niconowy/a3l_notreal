@@ -21,13 +21,15 @@ switch (_shop) do
 	case "fishmarket": {["Fish Market",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "farmingmarket": {["Seed Market",["wheat seed","sunflower seed","bean seed","cotton seed","pumpkin seed","opium seed","coke seed","cannabis seed","wheat","sunflower","corn","bean","cotton","olive","pumpkin"]]};	
 	case "glass": {["Glass Dealer",["glass"]]};
-	case "iron": {["Industrial Trader",["iron_r","copper_r","elektroteile"]]};
+	case "iron": {["Industrial Trader",["iron_r","copper_r"]]};
 	case "diamond": {["Diamond Dealer",["diamondc"]]};
 	case "salt": {["Salt Dealer",["salt_r"]]};
 	case "cop": {["Cop Item Shop",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","lockpick","boltcutter","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "itemfbi": {["FBI Item Shop",["blaulicht","donuts","coffee","spikeStrip","redgull","fuelF","defusekit","lockpick","BarGate","RoadBlockWood","RoadConeStripB"]]};
 	case "cement": {["Cement Dealer",["cement"]]};
 	case "gold": {["Gold Buyer",["goldbar"]]};
+	case "eletkro": {["Elektroschrott",["elektroteile"]]};
+	case "baumarkt": {["Baumarkt",["Laminat","Grillkohle"]]};
 	case "ems": {["EMS Item Shop",["water","coffee","rabbit","apple","redgull","tbacon","peach","lockpick","RoadCone","RoadConeB","RoadConeStrip","RoadConeStripB","RoadBlockWood","fuelF"]]};
 	case "butcher": {["Bob's Flesh'n Besh",["raw goat meat","raw chicken","raw sheep meat","raw rabbit"]]};
 	case "adac": {["Car Stuff",["water","rabbit","apple","redgull","tbacon","lockpick","fuelF","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};

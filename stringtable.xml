@@ -1511,6 +1511,15 @@
 		<Key ID="STR_Item_Elektroteile">
 			<Original>Elektroteile</Original>
 		</Key>
+		<Key ID="STR_Item_Holz">
+			<Original>Gehacktes Holz</Original>
+		</Key>
+		<Key ID="STR_Item_Grillkohle">
+			<Original>Grillkohle</Original>
+		</Key>
+		<Key ID="STR_Item_Laminat">
+			<Original>Gepresstes Laminat</Original>
+		</Key>
 		<Key ID="STR_Item_WeddingRing">
 			<Original>Ehering</Original>
 		</Key>
@@ -1581,6 +1590,12 @@
 		</Key>
 		<Key ID="STR_License_Elektriker">
 			<Original>Elektriker</Original>
+		</Key>
+		<Key ID="STR_License_Schreiner">
+			<Original>Schreiner/in</Original>
+		</Key>
+		<Key ID="STR_License_Grillmeister">
+			<Original>Grillmeister/in</Original>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
@@ -1730,6 +1745,12 @@
 		<Key ID="STR_Process_Elektroteile">
 			<Original>Elektroteile werden hergestellt</Original>
 		</Key>
+		<Key ID="STR_Process_Laminat">
+			<Original>Laminat wird gepresst</Original>
+		</Key>
+		<Key ID="STR_Process_Grillkohle">
+			<Original>Grillkohle wird zubereitet</Original>
+		</Key>
 		<Key ID="STR_Process_Stay">
 			<Original>Du musst innerhalb von 10m bleiben, um verarbeiten zu können.</Original>
 		</Key>
@@ -1737,7 +1758,7 @@
 			<Original>Du brauchst $%1, um ohne eine Lizenz verarbeiten zu können!</Original>
 		</Key>
 		<Key ID="STR_Process_Processed">
-			<Original>Du hast %1 in %2 verarbeitet</Original>
+			<Original>Du hast %1 %2 verarbeitet</Original>
 		</Key>
 		<Key ID="STR_Process_Processed2">
 			<Original>Du hast %1 für $%3 in %2 verarbeitet</Original>

@@ -218,7 +218,10 @@ life_inv_items =
 	"life_inv_weddingring",
 	"life_inv_schwarzpulver",
 	"life_inv_kohle",
-	"life_inv_elektroteile"
+	"life_inv_elektroteile",
+	"life_inv_grillkohle",
+	"life_inv_laminat",
+	"life_inv_holz"
 ];
 
 //Setup variable inv vars.
@@ -250,7 +253,10 @@ life_licenses =
 	["license_med_air","med"],
 	["license_civ_home","civ"],
 	["license_civ_schwarzpulver","civ"],
-	["license_civ_elektriker","civ"]
+	["license_civ_elektriker","civ"],
+	["license_civ_grillmeister","civ"],
+	["license_civ_schreiner","civ"]
+	
 ];
 
 //Setup License Variables
@@ -324,7 +330,9 @@ sell_array =
 	["raw chicken",700],
 	["raw sheep meat",500],
 	["raw rabbit",700],
-	["elektroteile",2250],
+	["elektroteile",3754],
+	["laminat",2655],
+	["grillkohle",1540],
 	
 	["spikeStrip",1200],
 	["cement",1655],

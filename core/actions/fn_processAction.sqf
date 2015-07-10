@@ -25,7 +25,9 @@ _itemInfo = switch (_type) do
 	case "marijuana": {["cannabis","marijuana",500,(localize "STR_Process_Marijuana")];};
 	case "cement": {["rock","cement",350,(localize "STR_Process_Cement")];};
 	case "schwarzpulver": {["kohle","schwarzpulver",5500,(localize "STR_Process_Schwarzpulver")];};
-	case "elektriker":  {["copperr","elektroteile",2250,(localize "STR_Process_Elektroteile")];};
+	case "elektriker":  {["copper_r","elektroteile",2250,(localize "STR_Process_Elektroteile")];};
+	case "schreiner": {["holz","laminat",1850, (localize "STR_Process_Laminat")];};
+	case "grillmeister": {["kohle","grillkohle",1250, (localize "STR_Process_Grillkohle")];};
 	default {[];};
 };
 
