@@ -304,6 +304,9 @@ sell_array =
 	["glass",1133],
 	["fuelF",1750],
 	["blaulicht",1000],
+	["elektroteile",3754],
+	["laminat",2655],
+	["grillkohle",1540],
 		
 	["wheat",326],
 	["sunflower",305],
@@ -330,9 +333,6 @@ sell_array =
 	["raw chicken",700],
 	["raw sheep meat",500],
 	["raw rabbit",700],
-	["elektroteile",3754],
-	["laminat",2655],
-	["grillkohle",1540],
 	
 	["spikeStrip",1200],
 	["cement",1655],
