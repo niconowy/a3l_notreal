@@ -16,6 +16,7 @@ switch(playerSide) do
 	case west: 
 	{
 		ctrlShow[2011,false];
+		ctrlShow[2025,false];
 	};
 	
 	case civilian:
@@ -28,11 +29,13 @@ switch(playerSide) do
 	{
 		ctrlShow[2012,false];
 		ctrlShow[2011,false];
+		ctrlShow[2025,false];
 	};
 	case east:
 	{
 		ctrlShow[2012,false];
 		ctrlShow[2011,false];
+		ctrlShow[2025,false];
 	};
 };
 
