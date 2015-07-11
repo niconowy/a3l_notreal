@@ -43,7 +43,8 @@ switch(_craft) do
 				["RH_20Rnd_762x51_AR10", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
 				["RH_M4sbr_b", ["life_inv_ironr",8,"life_inv_copperr",8,"life_inv_schwarzpulver",6]],
 				["30Rnd_556x45_Stanag", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
-				["A3L_CZ550", ["life_inv_holz",4,"life_inv_ironr",12,"life_inv_schwarzpulver",4]]
+				["A3L_CZ550", ["life_inv_holz",4,"life_inv_ironr",12,"life_inv_schwarzpulver",4]],
+				["A3L_CZ550mag", ["life_inv_ironr",2,"life_inv_schwarzpulver",4]]
 			];
 	};
 
@@ -68,7 +69,7 @@ switch(_craft) do
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
-				["life_inv_blastingcharge", ["life_inv_elektroteile",15,"life_inv_schwarzpulver",15,"life_inv_ironr",8]]
+				["life_inv_blastingcharge", ["life_inv_elektroteile",9,"life_inv_schwarzpulver",8,"life_inv_ironr",8]]
 		];
 	};
 };
