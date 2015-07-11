@@ -54,13 +54,8 @@ switch (_className) do
 	
 	case "ALFR_GeK_MF1": {25};
 	
-	case "ALFR_GeK_Scania_420": {250};
-	case "ALFR_GeK_Scania_420_blanc": {250};
-	case "ALFR_GeK_Scania_420_bleu": {250};
-	case "ALFR_GeK_Scania_420_noir": {250};
-	case "ALFR_GeK_Scania_420_orange": {250};
 	
-	case "ALFR_GeK_Volvo_FH16_2012": {250};
+	case "ALFR_GeK_Volvo_FH16_2012": {350};
 			
 	case "A3L_ChargerUC": {25};
 	case "A3L_ChargerUCWhite": {25};
@@ -265,7 +260,7 @@ switch (_className) do
 	case "A3L_F350Blue": {60};
 	case "A3L_F350Red": {60};
 	case "A3L_F350White": {60};
-	case "A3L_Dumptruck": {225};
+	case "A3L_Dumptruck": {275};
 
 	case "BMW_M5Black": {25};
 	case "BMW_M5White": {25};
