@@ -511,11 +511,6 @@ switch (_shop) do
 			["C_Van_01_transport_F",40000],
 			["A3L_Bus",70000],
 			["A3L_SchoolBus",85000],
-			["ALFR_GeK_Scania_420",350000],
-			["ALFR_GeK_Scania_420_blanc",350000],
-			["ALFR_GeK_Scania_420_bleu",350000],
-			["ALFR_GeK_Scania_420_noir",350000],
-			["ALFR_GeK_Scania_420_orange",350000],
 			["ALFR_GeK_Volvo_FH16_2012",350000]
 		];
 	};

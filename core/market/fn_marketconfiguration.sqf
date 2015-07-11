@@ -26,7 +26,7 @@ life_market_resources = [
 			]
 	],
    
-	["grillkohle", 1900, 1350, 2450, 4, 2,
+	["grillkohle", 1900, 1350, 2450, 2, 1,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -40,7 +40,7 @@ life_market_resources = [
 			]
 	],
    
-	["elektroteile", 4000, 3450, 4550, 4, 2,
+	["elektroteile", 4000, 3450, 4550, 2, 1,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -54,7 +54,7 @@ life_market_resources = [
 			]
 	],
    
-	["laminat", 2895, 2345, 3445, 4, 2,
+	["laminat", 2895, 2345, 3445, 5, 2,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -68,7 +68,7 @@ life_market_resources = [
 			]
 	],
    
-	["oilp", 4490, 3955, 5025, 4, 2,
+	["oilp", 4490, 3955, 5025, 5, 1,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -82,7 +82,7 @@ life_market_resources = [
 			]
 	],
    
-	["salt_r", 1325, 775, 1875, 4, 2,
+	["salt_r", 1325, 775, 1875, 2, 1,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -96,7 +96,7 @@ life_market_resources = [
 			]
 	],
    
-	["cement", 3600, 3050, 4150, 4, 2,
+	["cement", 3600, 3050, 4150, 3, 1,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -110,7 +110,7 @@ life_market_resources = [
 			]
 	],
    
-	["glass", 1605, 1055, 2155, 4, 2,
+	["glass", 1605, 1055, 2155, 2,1,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -124,7 +124,7 @@ life_market_resources = [
 			]
 	],
    
-	["iron_r", 4150, 3550, 4750, 4, 2,
+	["iron_r", 4150, 3550, 4750, 5, 2,
 			[
 					["diamondc",1],
 					["copper_r",1],
@@ -138,7 +138,7 @@ life_market_resources = [
 			]
 	],
    
-	["copper_r", 3075, 2575, 3775, 4, 2,
+	["copper_r", 3075, 2575, 3775, 5, 2,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -218,7 +218,7 @@ life_market_resources = [
 			]
 	],
 
-	["cocainep", 4675, 4135, 5215, 8, 4,
+	["cocainep", 4675, 4135, 5215, 4, 2,
 			[
 					["marijuana",1],
 					["turtle",1],
@@ -227,7 +227,7 @@ life_market_resources = [
 			]
 	],
    
-	["marijuana", 4350, 3800, 4900, 8, 4,
+	["marijuana", 4350, 3800, 4900, 4, 2,
 			[
 					["turtle",1],
 					["cocainep",1],
@@ -236,7 +236,7 @@ life_market_resources = [
 			]
 	],
    
-	["heroinp", 4505, 3955, 5055, 8, 4,
+	["heroinp", 4505, 3955, 5055, 4, 2,
 			[
 					["marijuana",1],
 					["turtle",1],
@@ -245,7 +245,7 @@ life_market_resources = [
 			]
 	],
    
-	["schwarzpulver", 4600, 4150, 5050, 8, 4,
+	["schwarzpulver", 4600, 4150, 5050, 4, 2,
 			[
 					["marijuana",1],
 					["turtle",1],
