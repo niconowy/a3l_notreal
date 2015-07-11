@@ -129,7 +129,7 @@ life_market_resources = [
 					["diamondc",1],
 					["copper_r",1],
 					["cement",1],
-					["glass",1],,
+					["glass",1],
 					["oilp",1],
 					["salt_r",1],
 					["elektroteile",1],
