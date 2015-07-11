@@ -25,10 +25,10 @@ lbClear _inv; //clear the listbox
 _filter = _dialog displayCtrl 673;
 _filter lbAdd localize "STR_CRAFT_FILTER_Weapon";
 _filter lbSetData[(lbSize _filter)-1,"weapon"];
-_filter lbAdd localize "STR_CRAFT_FILTER_Uniform";
-_filter lbSetData[(lbSize _filter)-1,"uniform"];
-/*_filter lbAdd localize "STR_CRAFT_FILTER_Visiere";
-_filter lbSetData[(lbSize _filter)-1,"visiere"];*/
+_filter lbAdd localize "STR_CRAFT_FILTER_Visiere";
+_filter lbSetData[(lbSize _filter)-1,"visiere"];
+/*_filter lbAdd localize "STR_CRAFT_FILTER_Uniform";
+_filter lbSetData[(lbSize _filter)-1,"uniform"];*/
 _filter lbAdd localize "STR_CRAFT_FILTER_Item";
 _filter lbSetData[(lbSize _filter)-1,"item"];
 
