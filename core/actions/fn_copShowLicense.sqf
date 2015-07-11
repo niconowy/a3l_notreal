@@ -83,8 +83,12 @@ if(playerSide == east) then
 
 if(playerSide == civilian) then
 {
-	_message = format["<color='#FFFFFF'/><t size='2'>%1</t>", name player];
-	
-	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
+	if(license_civ_presse) then {
+		_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>Presse</t><br/>", name player];
+		[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
+	} else {
+		_message = format["<color='#FFFFFF'/><t size='2'>%1</t>", name player];
+		[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
+	};
 };
 
