@@ -53,6 +53,20 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	class trinken
+	{
+		name = "trinken";
+		sound[] = {"\sounds\trinken.ogg", 0.8, 1};
+		titles[] = {};
+	};
+	
+	class essen
+	{
+		name = "essen";
+		sound[] = {"\sounds\essen.ogg", 0.8, 1};
+		titles[] = {};
+	};
+	
 	class 1ntr0
 	{
 		name = "1ntr0";

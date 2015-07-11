@@ -27,8 +27,11 @@ if([false,_food,1] call life_fnc_handleInv) then {
 		case "tbacon": {_val = 40};
 		case "peach": {_val = 10};
 	};
-
+	player playMove "cl3_anim_eat";
+	playsound "essen";
+	sleep 8.5;
 	_sum = life_hunger + _val;
 	if(_sum > 100) then {_sum = 100; player setFatigue 1; hint "Du hast dich überfressen und bist jetzt erschöpft.";};
+	//TODO -- Herzinfarkt Risiko
 	life_hunger = _sum;
 };

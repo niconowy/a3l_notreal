@@ -154,10 +154,6 @@ if(_itemFilter == "visiere") then{
 	if(player canAdd _newItem) then{
 		player addItem _newItem;
 		5 cutText ["","PLAIN"];
-		for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
-			_handledItem = [_oldItem select _i,1] call life_fnc_varHandle;
-			[true,_handledItem,_oldItem select _i+1] call life_fnc_handleInv;
-		};
 		life_is_processing = false;
 	} else {
 		hint localize "STR_NOTF_NoRoom";

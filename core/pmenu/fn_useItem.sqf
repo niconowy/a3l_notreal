@@ -17,6 +17,9 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
+			player playMove "cl3_anim_eat";
+			playsound "trinken";
+			sleep 4.5;
 			life_thirst = 100;
 			player setFatigue 0;
 		};
@@ -26,6 +29,9 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
+			player playMove "cl3_anim_eat";
+			playsound "trinken";
+			sleep 4.5;
 			life_thirst = 100;
 			player setFatigue 0;
 			if(life_intox <= 0.02) then
@@ -215,6 +221,9 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
+			player playMove "cl3_anim_eat";
+			playsound "trinken";
+			sleep 4.5;
 			life_thirst = 100;
 			player setFatigue 0;
 			hint "Ich fühle mich top fit!";
