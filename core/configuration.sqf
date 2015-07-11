@@ -363,6 +363,7 @@ sell_array =
 	["weddingring",1000],
 	["presseformular",1250]
 ];
+__CONST__(sell_array,sell_array);
 
 buy_array =
 [
