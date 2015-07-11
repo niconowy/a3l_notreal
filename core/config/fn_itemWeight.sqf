@@ -11,10 +11,10 @@ if(_item == "") exitWith {};
 
 switch (_item) do
 {
-	case "oilu": {7};
-	case "oilp": {5};
+	case "oilu": {5};
+	case "oilp": {3};
 	case "heroinu": {6};
-	case "heroinp": {3};
+	case "heroinp": {2};
 	case "marijuana": {2};
 	case "apple": {1};
 	case "water": {1};
@@ -45,8 +45,8 @@ switch (_item) do
 	case "glass": {2};
 	case "diamond": {4};
 	case "diamondc": {2};
-	case "cocaine": {6};
-	case "cocainep": {4};
+	case "cocaine": {3};
+	case "cocainep": {2};
 	case "spikeStrip": {8};
 	case "rock": {6};
 	case "cement": {4};
@@ -62,7 +62,7 @@ switch (_item) do
 	case "bean": {1};
 	case "cotton": {1};
 	case "olive": {1};
-	case "opium": {5};
+	case "opium": {3};
 	case "cannabis": {3};
 	case "pumpkin": {2};
 	case "wheat seed": {0.5};
@@ -92,8 +92,8 @@ switch (_item) do
 	case "zoobeer": {1}; // Duff Beer
 	case "blaulicht":{5};
 	case "augenbinde":{2};
-	case "schwarzpulver":{1};
-	case "kohle":{2};
+	case "schwarzpulver":{2};
+	case "kohle":{3};
 	case "elektroteile":{1};
 	case "laminat":{2};
 	case "holz":{4};

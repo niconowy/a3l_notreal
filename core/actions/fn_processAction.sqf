@@ -16,18 +16,18 @@ _itemInfo = switch (_type) do
 {
 	case "oil": {["oilu","oilp",1200,(localize "STR_Process_Oil")];};
 	case "diamond": {["diamond","diamondc",1350,(localize "STR_Process_Diamond")];};
-	case "heroin": {["opium","heroinp",1750,(localize "STR_Process_Heroin")];};
+	case "heroin": {["opium","heroinp",5850,(localize "STR_Process_Heroin")];};
 	case "copper": {["copperore","copper_r",750,(localize "STR_Process_Copper")];};
 	case "iron": {["ironore","iron_r",1120,(localize "STR_Process_Iron")];};
 	case "sand": {["sand","glass",650,(localize "STR_Process_Sand")];};
 	case "salt": {["salt","salt_r",450,(localize "STR_Process_Salt")];};
-	case "cocaine": {["cocaine","cocainep",1500,(localize "STR_Process_Cocaine")];};
-	case "marijuana": {["cannabis","marijuana",500,(localize "STR_Process_Marijuana")];};
+	case "cocaine": {["cocaine","cocainep",6200,(localize "STR_Process_Cocaine")];};
+	case "marijuana": {["cannabis","marijuana",5620,(localize "STR_Process_Marijuana")];};
 	case "cement": {["rock","cement",350,(localize "STR_Process_Cement")];};
 	case "schwarzpulver": {["kohle","schwarzpulver",5500,(localize "STR_Process_Schwarzpulver")];};
-	case "elektriker":  {["copper_r","elektroteile",2250,(localize "STR_Process_Elektroteile")];};
+	case "elektriker":  {["copper_r","elektroteile",1200,(localize "STR_Process_Elektroteile")];};
 	case "schreiner": {["holz","laminat",1850, (localize "STR_Process_Laminat")];};
-	case "grillmeister": {["kohle","grillkohle",1250, (localize "STR_Process_Grillkohle")];};
+	case "grillmeister": {["kohle","grillkohle",750, (localize "STR_Process_Grillkohle")];};
 	default {[];};
 };
 
