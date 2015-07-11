@@ -12,37 +12,73 @@ life_market_resources = [
 	//Schema: SHORTNAME, Default, Min, Max, changes in action, [Sales multiplied by 1, Purchase multiplied by -1]
 	//["gold", 1500, 450, 2300, 8, 5],
 	
-	["diamondc", 3260, 3160, 3260, 4, 2,
+	["diamondc", 4845, 4255, 5435, 4, 2,
 		[
 			["iron_r",1],
 			["copper_r",1],
 			["cement",1],
 			["glass",1],
-			["wheat",1],
-			["sunflower",1],
-			["corn",1],
-			["bean",1],
-			["cotton",1],
 			["oilp",1],
-			["pumpkin",1],
-			["salt_r",1]
+			["salt_r",1],
+			["elektroteile",1],
+			["laminat",1],
+			["grillkohle",1]
 		] 
 	],
 	
-	["oilp", 4041, 3841, 3641, 6, 3,
+	["grillkohle", 1900, 1350, 2450, 4, 2,
+		[
+			["iron_r",1],
+			["copper_r",1],
+			["cement",1],
+			["glass",1],
+			["oilp",1],
+			["salt_r",1],
+			["elektroteile",1],
+			["laminat",1],
+			["diamondc",1]
+		]
+	],
+	
+	["elektroteile", 4000, 3450, 4550, 4, 2,
+		[
+			["iron_r",1],
+			["copper_r",1],
+			["cement",1],
+			["glass",1],
+			["oilp",1],
+			["salt_r",1],
+			["diamondc",1],
+			["laminat",1],
+			["grillkohle",1]
+		]
+	],
+	
+	["laminat", 2895, 2345, 3445, 4, 2,
+		[
+			["iron_r",1],
+			["copper_r",1],
+			["cement",1],
+			["glass",1],
+			["oilp",1],
+			["salt_r",1],
+			["elektroteile",1],
+			["grillkohle",1],
+			["diamondc",1]
+		]
+	],
+	
+	["oilp", 4490, 3955, 5025, 4, 2,
 		[
 			["diamondc",1],
 			["iron_r",1],
 			["copper_r",1],
 			["cement",1],
 			["glass",1],
-			["wheat",1],
-			["sunflower",1],
-			["corn",1],
-			["bean",1],
-			["cotton",1],
-			["pumpkin",1],
-			["salt_r",1]
+			["salt_r",1],
+			["elektroteile",1],
+			["laminat",1],
+			["grillkohle",1]
 		]
 	],
 	
@@ -53,167 +89,121 @@ life_market_resources = [
 			["copper_r",1],
 			["cement",1],
 			["glass",1],
-			["wheat",1],
-			["sunflower",1],
-			["corn",1],
 			["oilp",1],
-			["bean",1],
-			["cotton",1],
-			["pumpkin",1]
+			["elektroteile",1],
+			["laminat",1],
+			["grillkohle",1]
 		]
 	],
 	
-	["cement", 3117, 2917, 2717, 6, 3,
+	["cement", 3600, 3050, 4150, 4, 2,
 		[ 
 			["diamondc",1],
 			["iron_r",1],
 			["copper_r",1],
 			["glass",1],
-			["wheat",1],
-			["sunflower",1],
-			["corn",1],
-			["bean",1],
-			["cotton",1],
 			["oilp",1],
-			["pumpkin",1],
-			["salt_r",1]
+			["salt_r",1],
+			["elektroteile",1],
+			["laminat",1],
+			["grillkohle",1]
 		] 
 	],
 	
-	["glass", 1437, 1337, 1237, 4, 2,
+	["glass", 1605, 1055, 2155, 4, 2,
 		[ 
 			["diamondc",1],
 			["iron_r",1],
 			["copper_r",1],
 			["cement",1],
-			["wheat",1],
-			["sunflower",1],
-			["corn",1],
-			["bean",1],
-			["cotton",1],
 			["oilp",1],
-			["pumpkin",1],
-			["salt_r",1]
+			["salt_r",1],
+			["elektroteile",1],
+			["laminat",1],
+			["grillkohle",1]
 		] 
 	],
 	
-	["iron_r", 2513, 2313, 2113, 4, 2,
+	["iron_r", 4150, 3550, 4750, 4, 2,
 		[ 
 			["diamondc",1],
 			["copper_r",1],
 			["cement",1],
-			["glass",1],
-			["wheat",1],
-			["sunflower",1],
-			["corn",1],
-			["bean",1],
-			["cotton",1],
+			["glass",1],,
 			["oilp",1],
-			["pumpkin",1],
-			["salt_r",1]
+			["salt_r",1],
+			["elektroteile",1],
+			["laminat",1],
+			["grillkohle",1]
 		] 
 	],
 	
-	["copper_r", 1882, 1782, 1682, 4, 2,
+	["copper_r", 3075, 2575, 3775, 4, 2,
 		[ 
 			["diamondc",1],
 			["iron_r",1],
 			["cement",1],
 			["glass",1],
-			["wheat",1],
-			["sunflower",1],
-			["corn",1],
-			["bean",1],
-			["cotton",1],
 			["oilp",1],
-			["pumpkin",1],
-			["salt_r",1]
+			["salt_r",1],
+			["elektroteile",1],
+			["laminat",1],
+			["grillkohle",1]
 		] 
 	],
 	
-	["sunflower", 299, 274, 249, 2, 1,
+	["sunflower", 249, 274, 299, 2, 1,
 		[
-			["diamondc",1],
-			["iron_r",1],
-			["copper_r",1],
-			["cement",1],
-			["glass",1],
 			["wheat",1],
 			["corn",1],
 			["bean",1],
 			["cotton",1],
-			["oilp",1],
 			["pumpkin",1],
-			["salt_r",1]
+			["olive",1]
 		]
 	],
 	
-	["corn", 970, 920, 870, 2, 1,
+	["corn", 870, 850, 970, 2, 1,
 		[
-			["diamondc",1],
-			["iron_r",1],
-			["copper_r",1],
-			["cement",1],
-			["glass",1],
 			["wheat",1],
 			["sunflower",1],
 			["bean",1],
 			["cotton",1],
-			["oilp",1],
 			["pumpkin",1],
-			["salt_r",1]
+			["olive",1]
 		]
 	],
 	
-	["pumpkin", 797, 747, 647, 2, 1,
+	["pumpkin", 747, 717, 797, 2, 1,
 		[
-			["diamondc",1],
-			["iron_r",1],
-			["copper_r",1],
-			["cement",1],
-			["glass",1],
 			["wheat",1],
 			["sunflower",1],
 			["corn",1],
 			["bean",1],
 			["cotton",1],
-			["olive",1],
-			["oilp",1],
-			["salt_r",1]
+			["olive",1]
 		]
 	],
 	
-	["wheat", 285, 260, 245, 2, 1,
+	["wheat", 245, 210, 285, 2, 1,
 		[
-			["diamondc",1],
-			["iron_r",1],
-			["copper_r",1],
-			["cement",1],
-			["glass",1],
 			["sunflower",1],
 			["corn",1],
 			["bean",1],
 			["cotton",1],
-			["oilp",1],
 			["pumpkin",1],
-			["salt_r",1]
+			["olive",1]
 		]
 	],
 	
-	["cotton", 285, 260, 245, 2, 1,
+	["cotton", 245, 210, 285, 2, 1,
 		[
-			["diamondc",1],
-			["iron_r",1],
-			["copper_r",1],
-			["cement",1],
-			["glass",1],
 			["wheat",1],
 			["sunflower",1],
 			["corn",1],
 			["bean",1],
-			["oilp",1],
 			["pumpkin",1],
-			["salt_r",1]
+			["olive",1]
 		]
 	],
 
@@ -223,31 +213,44 @@ life_market_resources = [
 		[
 			["marijuana",1],
 			["cocainep",1],
-			["heroinp",1]
+			["heroinp",1],
+			["schwarzpulver",1]
 		]
 	],
 
-	["cocainep", 6763, 6563, 6363, 8, 4,
+	["cocainep", 4675, 4135, 5215, 8, 4,
 		[
 			["marijuana",1],
 			["turtle",1],
-			["heroinp",1]
+			["heroinp",1],
+			["schwarzpulver",1]
 		]
 	],
 	
-	["marijuana", 4163, 4063, 3963, 6, 3,
+	["marijuana", 4350, 3800, 4900, 8, 4,
 		[
 			["turtle",1],
 			["cocainep",1],
-			["heroinp",1]
+			["heroinp",1],
+			["schwarzpulver",1]
 		] 
 	],
 	
-	["heroinp", 4726, 4526, 4326, 8, 4, 
+	["heroinp", 4505, 3955, 5055, 8, 4, 
 		[
 			["marijuana",1],
 			["turtle",1],
-			["cocainep",1]
+			["cocainep",1],
+			["schwarzpulver",1]
+		]
+	],
+	
+	["schwarzpulver", 4600, 4150, 5050, 8, 4,
+		[
+			["marijuana",1],
+			["turtle",1],
+			["cocainep",1],
+			["heroinp",1]
 		]
 	]
 ];
