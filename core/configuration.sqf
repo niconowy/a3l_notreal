@@ -318,6 +318,7 @@ sell_array =
 	["elektroteile",3754],
 	["laminat",3715],
 	["grillkohle",1780],
+	["schwarzpulver",2250],
 		
 	["wheat",255],
 	["sunflower",316],
