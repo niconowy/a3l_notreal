@@ -96,6 +96,7 @@ life_is_processing = true;
 
 while{true} do
 {
+	player playMove "cl3_anim_mugpis";
 	sleep  0.3;
 	_cP = _cP + 0.01;
 	_progress progressSetPosition _cP;
