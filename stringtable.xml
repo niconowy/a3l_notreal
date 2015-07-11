@@ -455,9 +455,6 @@
 		<Key ID="STR_PM_Title">
 			<Original>Spieler Menü</Original>
 		</Key>
-		<Key ID="STR_PM_DynMarket">
-			<Original>Börse</Original>
-		</Key>
 		<Key ID="STR_PM_cItems">
 			<Original>Aktuelle Items</Original>
 		</Key>
