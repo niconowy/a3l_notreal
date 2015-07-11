@@ -54,7 +54,7 @@ playsound "1ntr0";
 	[
 		[
 			["Supporter: ","align = 'center' shadow = '1' size = '0.52' font='PuristaBold'","#fff600"],
-			["Fürling, Intradex, Jake Sully, Ronon Dex, Daniel Phoenix,","align = 'center' shadow = '1' size = '0.5'","#FFFFFF"],
+			["FÃ¼rling, Intradex, Jake Sully, Ronon Dex, Daniel Phoenix,","align = 'center' shadow = '1' size = '0.5'","#FFFFFF"],
 			["","<br/>"],
 			[" Sebastian Portal, Darlson"," align = 'center' shadow = '1' size = '0.5'","#ffffff"]
 		]
