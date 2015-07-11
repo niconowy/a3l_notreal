@@ -52,13 +52,13 @@ switch(_craft) do
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
-				["optic_Hamr", ["life_inv_ironr",2,"life_inv_glas",4,]],
-				["A3L_RedDot", ["life_inv_ironr",2,"life_inv_glas",4,]],
-				["RH_Delft", ["life_inv_ironr",2,"life_inv_glas",4,]],
-				["RH_qdss_nt4", ["life_inv_ironr",2,"life_inv_glas",4,]],
-				["A3L_CCO", ["life_inv_ironr",2,"life_inv_glas",4,]],
-				["A3L_CZ550Scope", ["life_inv_ironr",2,"life_inv_glas",4,]],
-				["hlc_optic_kobra", ["life_inv_ironr",2,"life_inv_glas",4,]]
+				["optic_Hamr", ["life_inv_ironr",2,"life_inv_glas",4]],
+				["A3L_RedDot", ["life_inv_ironr",2,"life_inv_glas",4]],
+				["RH_Delft", ["life_inv_ironr",2,"life_inv_glas",4]],
+				["RH_qdss_nt4", ["life_inv_ironr",2,"life_inv_glas",4]],
+				["A3L_CCO", ["life_inv_ironr",2,"life_inv_glas",4]],
+				["A3L_CZ550Scope", ["life_inv_ironr",2,"life_inv_glas",4]],
+				["hlc_optic_kobra", ["life_inv_ironr",2,"life_inv_glas",4]]
 			];
 	};
 
