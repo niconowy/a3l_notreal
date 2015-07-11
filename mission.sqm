@@ -3153,7 +3153,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=261;
+		items=262;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -3943,7 +3943,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Rebellenmarkt"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebellen Kleidung"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Waffenladen"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Donaterwaffen"",life_fnc_weaponShopMenu,""don_reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Lizenzen"",life_fnc_licenses,[""rebel""],0,true,true,"""",' playerSide == civilian '];";
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Rebellenmarkt"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebellen Kleidung"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Waffenladen"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Donaterwaffen"",life_fnc_weaponShopMenu,""don_reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Lizenzen"",life_fnc_licenses,[""rebel""],0,true,true,"""",' playerSide == civilian '];";
 		};
 		class Item77
 		{
@@ -4766,7 +4766,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			text="reb_1_1";
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebel Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Donaterwaffen"",life_fnc_weaponShopMenu,""don_reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Lizenzen"",life_fnc_licenses,[""rebel""],0,true,true,"""",' playerSide == civilian '];";
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebel Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Donaterwaffen"",life_fnc_weaponShopMenu,""don_reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Lizenzen"",life_fnc_licenses,[""rebel""],0,true,true,"""",' playerSide == civilian '];";
 		};
 		class Item155
 		{
@@ -5153,7 +5153,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebel Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Donaterwaffen"",life_fnc_weaponShopMenu,""don_reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Lizenzen"",life_fnc_licenses,[""rebel""],0,true,true,"""",' playerSide == civilian '];";
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebel Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Donaterwaffen"",life_fnc_weaponShopMenu,""don_reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Lizenzen"",life_fnc_licenses,[""rebel""],0,true,true,"""",' playerSide == civilian '];";
 		};
 		class Item192
 		{
@@ -5816,10 +5816,20 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 		};
+		class Item261
+		{
+			position[]={9744.3828,162.67108,7966.832};
+			azimut=1746.37;
+			id=391;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			init="this enableSimulation false;  this allowDamage false;  this addAction[""Fahrzeug Händler"",life_fnc_vehicleShopMenu,[""reb_car"",civilian,""reb_spawn_car_3"",""reb"",""Rebel Motorpool - Western Side""],0,false,false,"""",'license_civ_rebel']; this addAction[""Fahrzeug Garage"", { [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization; ctrlSetText[2802,""Fetching Vehicles....""]; life_garage_sp = ""reb_spawn_car_3"";}]; this addAction[""Fahrzeug einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+		};
 	};
 	class Markers
 	{
-		items=261;
+		items=263;
 		class Item0
 		{
 			position[]={9289.958,20.111645,10496.466};
@@ -7920,6 +7930,20 @@ class Mission
 			a=180;
 			b=180;
 			drawBorder=1;
+		};
+		class Item261
+		{
+			position[]={9745.4209,162.67102,7964.5713};
+			name="reb_spawn_3";
+			type="Empty";
+			angle=124.53248;
+		};
+		class Item262
+		{
+			position[]={9758.5313,162.67433,7965.5244};
+			name="reb_spawn_car_3";
+			type="Empty";
+			angle=118.535;
 		};
 	};
 };

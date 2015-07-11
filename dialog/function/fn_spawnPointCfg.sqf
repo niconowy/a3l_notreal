@@ -33,8 +33,9 @@ switch (_side) do
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_1","Rebellenp. 1","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_2","Rebellenp. 2","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["reb_spawn_1","Rebellen Flughafen","\A3L_Map_Markers\store_icon_red.paa"],
+				["reb_spawn_2","Rebellen Posten","\A3L_Map_Markers\store_icon_red.paa"],
+				["reb_spawn_3","Rebellen Bauernhof","\A3L_Map_Markers\store_icon_red.paa"]
 			];
 		} else {
 			_return = [
@@ -51,7 +52,7 @@ switch (_side) do
 				_house = nearestBuilding _pos;
 				_houseName = getText(configFile >> "CfgVehicles" >> (typeOf _house) >> "displayName");
 				
-				_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\a3\ui_f\data\map\MapControl\lighthouse_ca.paa"];
+				_return pushBack [format["house_%1",_house getVariable "uid"],_houseName,"\A3L_Map_Markers\house_icon_green.paa"];
 			} foreach life_houses;
 		};	
 	};
