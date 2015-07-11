@@ -135,7 +135,7 @@ class life_wanted_menu {
 			//shortcuts[] = {0x00050000 + 2};
 			text = "Neu Laden";
 			onButtonClick = "[] call life_fnc_wantedMenu; closeDialog 0;";
-			x = 0.2 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.5 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
