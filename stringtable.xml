@@ -888,7 +888,7 @@
 			<Original>Du wurdest festgenommen, sitze deine Zeit ab. Wenn du versuchst, zu respawnen oder die Verbindung zu trennen, erhöht sich deine Zeit!</Original>
 		</Key>
 		<Key ID="STR_Jail_LicenseNOTF">
-			<Original>Bei der Verhaftung hast du folgende Lizenzen verloren\n\nWaffen Lizenz</Original>
+			<Original>Folgende Lizenzen wurden annulliert:\n\nWaffenschein\nPresseausweis</Original>
 		</Key>
 		<Key ID="STR_Jail_EscapeNOTF">
 			<Original>%1 ist aus dem Gefängnis ausgebrochen!</Original>
