@@ -133,7 +133,7 @@ switch (_code) do
 	//Q Key
     case 16:
     {    
-        if((!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
+        if((playerSide == civilian) && (!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
         {
             {
                 _str = [_x] call life_fnc_varToStr;
@@ -152,7 +152,7 @@ switch (_code) do
 	//E Key
     case 18:
     {    
-        if((!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
+        if((playerSide == civilian) && (!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
         {
             {
                 _str = [_x] call life_fnc_varToStr;
