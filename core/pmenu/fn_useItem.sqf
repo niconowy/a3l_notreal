@@ -21,7 +21,7 @@ switch (true) do
 			playsound "trinken";
 			sleep 4.5;
 			life_thirst = 100;
-			player setFatigue 0;
+//			player setFatigue 0; Unlogisch, oder?
 		};
 	};
 	

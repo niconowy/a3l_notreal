@@ -272,8 +272,8 @@ switch (_code) do
 		if((call(life_adminlevel) == 3) && (playerSide in [civilian,west]) && (_ctrlKey)) then {				// ***** UMBRELLUS :O *******
 			if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
 					[] spawn {
-						life_umbrellus_active = true;
-						sleep 20;
+					life_umbrellus_active = true;
+						sleep 2;
 					life_umbrellus_active = false;
 					};
 					_veh = vehicle player;
