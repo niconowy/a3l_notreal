@@ -314,8 +314,8 @@ class playerSettings {
 		
 		class ButtonMarketMenu : Life_RscButtonMenu {
 			idc = 2026;
-			text = "BÖRSE";
-			onButtonClick = "createDialog ""life_fnc_openMarketView"";";
+			text = "Börse";
+			onButtonClick = "[] call life_fnc_openMarketView;";
 			x = 0.1 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
 			w = (6.25 / 40);
