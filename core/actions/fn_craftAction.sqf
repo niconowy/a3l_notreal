@@ -59,6 +59,10 @@ if(_itemFilter == "weapon" && !(player canAdd _newItem) || currentWeapon player 
 	hint localize "STR_NOTF_NoRoom";
 };
 
+if(_itemFilter == "visiere" && !(player canAdd _newItem)) exitWith {
+	hint localize "STR_NOTF_NoRoom";
+};
+
 
 _oldItem = _matsNeed;
 _newItem = _item;
@@ -104,14 +108,14 @@ while{true} do
 	if(_cP >= 1) exitWith {};
 };
 
-if(_itemFilter == "backpack") then{
+/*if(_itemFilter == "backpack") then{
 	if(backpack player == "") then{
 		player addBackpack _newItem;
 	}else{
 		hint localize "STR_CRAFT_AR_Backpack";
 		life_is_processing = false;
 	};
-};
+};*/
 
 if(_itemFilter == "item") then{
 	_handledItem = [_newItem,1] call life_fnc_varHandle;
@@ -144,6 +148,20 @@ if(_itemFilter == "weapon") then{
 		};
 	};
 	
+};
+
+if(_itemFilter == "visiere") then{
+	if(player canAdd _newItem) then{
+		player addItem _newItem;
+		5 cutText ["","PLAIN"];
+		for [{_i=0},{_i<_invSize-1},{_i=_i+2}] do {
+			_handledItem = [_oldItem select _i,1] call life_fnc_varHandle;
+			[true,_handledItem,_oldItem select _i+1] call life_fnc_handleInv;
+		};
+		life_is_processing = false;
+	} else {
+		hint localize "STR_NOTF_NoRoom";
+	};
 };
 
 

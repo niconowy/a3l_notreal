@@ -485,6 +485,9 @@
 		<Key ID="STR_PM_Craft">
 			<Original>Craft</Original>
 		</Key>
+		<Key ID="STR_PM_Market">
+			<Original>LV Börse</Original>
+		</Key>
 	</Package>
 	<Package name="Settings_Menu">
 		<Key ID="STR_SM_Title">
@@ -2277,8 +2280,8 @@
 		<Key ID="STR_CRAFT_FILTER_Uniform">
 			<Original>Kleidung</Original>
 		</Key>
-		<Key ID="STR_CRAFT_FILTER_Backpack">
-			<Original>Rucksäcke</Original>
+		<Key ID="STR_CRAFT_FILTER_Visiere">
+			<Original>Visiere</Original>
 		</Key>
 		<Key ID="STR_CRAFT_FILTER_Item">
 			<Original>Items</Original>

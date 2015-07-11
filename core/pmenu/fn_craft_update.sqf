@@ -35,7 +35,7 @@ _config = [_itemFilter] call life_fnc_craftCfg;
 
 if(_struct == "") then
 {
-	_struct = "No material needed";
+	_struct = "Kein Rohstoff benötigt";
 };
 
 _mats ctrlSetStructuredText parseText format["

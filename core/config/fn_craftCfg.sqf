@@ -47,6 +47,15 @@ switch(_craft) do
 				["A3L_CZ550mag", ["life_inv_ironr",2,"life_inv_schwarzpulver",4]]
 			];
 	};
+	
+		case "visiere":
+	{
+		_return = [
+				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
+				["", ["life_inv_ironr",8,"life_inv_holz",6,"life_inv_schwarzpulver",6]],
+				["hlc_30Rnd_762x39_b_ak", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]]
+			];
+	};
 
 /*
 	case "uniform":
