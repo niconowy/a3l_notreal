@@ -17,7 +17,7 @@ class marketView
 		class RscStructuredText_1100: RscStructuredText
 		{
 			idc = 1100;
-			text = "<t size='1.2' align='center'>Lakeside Börse</t>"; //--- ToDo: Localize;
+			text = "<t size='1.2' align='center'>LakesideValley - Börse</t>"; //--- ToDo: Localize;
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 1 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
