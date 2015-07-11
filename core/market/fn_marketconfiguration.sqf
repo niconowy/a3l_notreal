@@ -82,7 +82,7 @@ life_market_resources = [
 			]
 	],
    
-	["salt_r", 1194, 1094, 994, 4, 2,
+	["salt_r", 1325, 775, 1875, 4, 2,
 			[
 					["diamondc",1],
 					["iron_r",1],
