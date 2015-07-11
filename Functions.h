@@ -493,6 +493,7 @@ class Life_Client_Core
 	class Market
 	{
 		file = "core\market";
+
 		class openMarketView;
 		class refreshMarketView;
 		class marketShortView;
@@ -502,6 +503,7 @@ class Life_Client_Core
 		class marketGetSellPrice;
 		class marketconfiguration;
 		class marketReset;
+		class marketChange;
 		class marketGetRow;
 		class marketGetPriceRow;
 		class marketSetPriceRow;

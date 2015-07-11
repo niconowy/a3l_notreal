@@ -13,4 +13,4 @@ waitUntil {!isnull (findDisplay 39500)};
 
 
 //Refresh
-[] spawn life_fnc_refreshMarketView;
+[] call life_fnc_refreshMarketView;

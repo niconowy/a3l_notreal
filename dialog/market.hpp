@@ -1,4 +1,4 @@
-﻿//Grid macros
+//Grid macros
 #define GUI_GRID_X	(0)
 #define GUI_GRID_Y	(0)
 #define GUI_GRID_W	(0.025)
@@ -17,7 +17,7 @@ class marketView
 		class RscStructuredText_1100: RscStructuredText
 		{
 			idc = 1100;
-			text = "<t size='1.2' align='center'>LakesideValley - Börse</t>"; //--- ToDo: Localize;
+			text = "<t size='1.2' align='center'>Altis Markt</t>"; //--- ToDo: Localize;
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 1 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
@@ -35,7 +35,7 @@ class marketView
 		class lblResourceName: RscText
 		{
 			idc = 1000;
-			text = "Ware"; //--- ToDo: Localize;
+			text = "Resource"; //--- ToDo: Localize;
 			x = 16.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 2.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 18 * GUI_GRID_W;
@@ -72,7 +72,7 @@ class marketView
 		class RscStructuredText_1101: RscStructuredText
 		{
 			idc = 1101;
-			text = "<t align='center'>Preisentwicklung</t>"; //--- ToDo: Localize;
+			text = "<t align='center'>Entwicklung</t>"; //--- ToDo: Localize;
 			x = 17 * GUI_GRID_W + GUI_GRID_X;
 			y = 9 * GUI_GRID_H + GUI_GRID_Y;
 			w = 17 * GUI_GRID_W;
@@ -100,22 +100,22 @@ class marketView
 		class RscText_1002: RscText
 		{
 			idc = 1002;
-			text = "Preisentwicklung gesamt"; //--- ToDo: Localize;
+			text = "Seit Serverstart"; //--- ToDo: Localize;
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 13 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			sizeEx = 1 * GUI_GRID_H;
+			sizeEx = 1.2 * GUI_GRID_H;
 		};
 		class RscText_1003: RscText
 		{
 			idc = 1003;
-			text = "Preisentwicklung kürzlich"; //--- ToDo: Localize;
+			text = "Vor kurzem"; //--- ToDo: Localize;
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 13.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 13 * GUI_GRID_W;
 			h = 1 * GUI_GRID_H;
-			sizeEx = 1 * GUI_GRID_H;
+			sizeEx = 1.2 * GUI_GRID_H;
 		};
 		class lblTrendGlobal: RscText
 		{
