@@ -3153,7 +3153,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=239;
+		items=238;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -3892,7 +3892,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Eisen/Kupfer Händler"",life_fnc_virt_menu,""iron""];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Industriefachhandel"",life_fnc_virt_menu,""iron""];";
 		};
 		class Item72
 		{
@@ -5233,49 +5233,46 @@ class Mission
 		};
 		class Item199
 		{
-			position[]={3240.802,89.220001,7900.4521};
-			azimut=1339.2;
-			offsetY=0.1;
-			id=329;
-			side="EMPTY";
-			vehicle="Land_InfoStand_V2_F";
-			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Elektroschrott verkaufen"",life_fnc_virt_menu,""elektro""];";
-		};
-		class Item200
-		{
 			position[]={5998.7144,519.78552,7996.1899};
 			azimut=517.12799;
 			offsetY=0.89999998;
-			id=330;
+			id=329;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false; this addAction[""Baumarkt"",life_fnc_virt_menu,""baumarkt""];";
 		};
-		class Item201
+		class Item200
 		{
 			position[]={5242.1797,7.9835773,2860.1582};
 			azimut=1307.6285;
-			id=331;
+			id=330;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this addAction[""Holz pressen"",life_fnc_processAction,""schreiner"",0,false,false,"""",' life_inv_holz > 0 && !life_is_processing']; this addAction[""Lizenzen"",life_fnc_licenses,[""schreiner""],0,true,true,"""",' playerSide == civilian '];";
 		};
-		class Item202
+		class Item201
 		{
 			position[]={3769.6384,123.31042,2049.3433};
 			azimut=1722.72;
-			id=332;
+			id=331;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			init="this enableSimulation false; this allowDamage false; this addAction[""Grillkohle herstellen"",life_fnc_processAction,""grillmeister"",0,false,false,"""",' life_inv_kohle > 0 && !life_is_processing']; this addAction[""Lizenzen"",life_fnc_licenses,[""grillmeister""],0,true,true,"""",' playerSide == civilian '];";
 		};
-		class Item203
+		class Item202
 		{
 			position[]={3400.8022,89.220001,7796.8652};
+			id=332;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			skill=0.60000002;
+		};
+		class Item203
+		{
+			position[]={3403.801,89.220001,7794.8394};
 			id=333;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5283,7 +5280,7 @@ class Mission
 		};
 		class Item204
 		{
-			position[]={3403.801,89.220001,7794.8394};
+			position[]={3406.9502,89.220001,7792.5879};
 			id=334;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5291,7 +5288,7 @@ class Mission
 		};
 		class Item205
 		{
-			position[]={3406.9502,89.220001,7792.5879};
+			position[]={3410.3994,89.220001,7790.4121};
 			id=335;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5299,7 +5296,7 @@ class Mission
 		};
 		class Item206
 		{
-			position[]={3410.3994,89.220001,7790.4121};
+			position[]={3413.6982,89.220001,7787.7856};
 			id=336;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5307,7 +5304,7 @@ class Mission
 		};
 		class Item207
 		{
-			position[]={3413.6982,89.220001,7787.7856};
+			position[]={3416.0969,89.220001,7785.8345};
 			id=337;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5315,7 +5312,7 @@ class Mission
 		};
 		class Item208
 		{
-			position[]={3416.0969,89.220001,7785.8345};
+			position[]={3403.3513,89.220001,7802.5684};
 			id=338;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5323,7 +5320,7 @@ class Mission
 		};
 		class Item209
 		{
-			position[]={3403.3513,89.220001,7802.5684};
+			position[]={3410.6238,89.220001,7798.5161};
 			id=339;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5331,7 +5328,7 @@ class Mission
 		};
 		class Item210
 		{
-			position[]={3410.6238,89.220001,7798.5161};
+			position[]={3409.4993,89.220001,7798.291};
 			id=340;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5339,7 +5336,7 @@ class Mission
 		};
 		class Item211
 		{
-			position[]={3409.4993,89.220001,7798.291};
+			position[]={3412.9485,89.220001,7796.1152};
 			id=341;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5347,7 +5344,7 @@ class Mission
 		};
 		class Item212
 		{
-			position[]={3412.9485,89.220001,7796.1152};
+			position[]={3416.2473,89.220001,7793.4888};
 			id=342;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5355,7 +5352,7 @@ class Mission
 		};
 		class Item213
 		{
-			position[]={3416.2473,89.220001,7793.4888};
+			position[]={3418.646,89.220001,7791.5376};
 			id=343;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5363,7 +5360,7 @@ class Mission
 		};
 		class Item214
 		{
-			position[]={3418.646,89.220001,7791.5376};
+			position[]={3404.9255,89.220001,7804.8945};
 			id=344;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5371,7 +5368,7 @@ class Mission
 		};
 		class Item215
 		{
-			position[]={3404.9255,89.220001,7804.8945};
+			position[]={3407.9243,89.220001,7802.8687};
 			id=345;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5379,7 +5376,7 @@ class Mission
 		};
 		class Item216
 		{
-			position[]={3407.9243,89.220001,7802.8687};
+			position[]={3411.0735,89.220001,7800.6172};
 			id=346;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5387,7 +5384,7 @@ class Mission
 		};
 		class Item217
 		{
-			position[]={3411.0735,89.220001,7800.6172};
+			position[]={3417.3718,89.220001,7797.0156};
 			id=347;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5395,7 +5392,7 @@ class Mission
 		};
 		class Item218
 		{
-			position[]={3417.3718,89.220001,7797.0156};
+			position[]={3420.6707,89.220001,7794.3892};
 			id=348;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5403,7 +5400,7 @@ class Mission
 		};
 		class Item219
 		{
-			position[]={3420.6707,89.220001,7794.3892};
+			position[]={3423.0693,89.220001,7792.438};
 			id=349;
 			side="EMPTY";
 			vehicle="Land_ClutterCutter_large_F";
@@ -5411,16 +5408,18 @@ class Mission
 		};
 		class Item220
 		{
-			position[]={3423.0693,89.220001,7792.438};
+			position[]={5144.4258,364.9104,5326.2417};
+			azimut=1505.02;
 			id=350;
 			side="EMPTY";
-			vehicle="Land_ClutterCutter_large_F";
+			vehicle="Land_Timbers_F";
 			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
 		};
 		class Item221
 		{
-			position[]={5144.4258,364.9104,5326.2417};
-			azimut=1505.02;
+			position[]={5155.2397,364.00128,5309.8384};
+			azimut=1521.53;
 			id=351;
 			side="EMPTY";
 			vehicle="Land_Timbers_F";
@@ -5429,8 +5428,8 @@ class Mission
 		};
 		class Item222
 		{
-			position[]={5155.2397,364.00128,5309.8384};
-			azimut=1521.53;
+			position[]={8335.9336,82.411346,4712.0679};
+			azimut=1470.35;
 			id=352;
 			side="EMPTY";
 			vehicle="Land_Timbers_F";
@@ -5439,8 +5438,8 @@ class Mission
 		};
 		class Item223
 		{
-			position[]={8335.9336,82.411346,4712.0679};
-			azimut=1470.35;
+			position[]={8334.3818,81.856339,4712.9185};
+			azimut=1473.17;
 			id=353;
 			side="EMPTY";
 			vehicle="Land_Timbers_F";
@@ -5449,88 +5448,88 @@ class Mission
 		};
 		class Item224
 		{
-			position[]={8334.3818,81.856339,4712.9185};
-			azimut=1473.17;
+			position[]={8345.9629,81.693367,4730.9922};
+			azimut=1511.67;
 			id=354;
 			side="EMPTY";
-			vehicle="Land_Timbers_F";
+			vehicle="Land_WoodPile_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
 		class Item225
 		{
-			position[]={8345.9629,81.693367,4730.9922};
+			position[]={8345.8672,83.033684,4722.4287};
 			azimut=1511.67;
 			id=355;
 			side="EMPTY";
-			vehicle="Land_WoodPile_F";
+			vehicle="Land_WoodenLog_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
 		class Item226
 		{
-			position[]={8345.8672,83.033684,4722.4287};
-			azimut=1511.67;
+			position[]={8358.0469,83.750916,4732.7817};
+			azimut=1561.13;
 			id=356;
 			side="EMPTY";
-			vehicle="Land_WoodenLog_F";
+			vehicle="Land_WoodPile_large_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
 		class Item227
 		{
-			position[]={8358.0469,83.750916,4732.7817};
-			azimut=1561.13;
-			id=357;
-			side="EMPTY";
-			vehicle="Land_WoodPile_large_F";
-			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
-		};
-		class Item228
-		{
 			position[]={5155.1069,364.19205,5311.3423};
 			azimut=1701.6;
-			id=358;
+			id=357;
 			side="EMPTY";
 			vehicle="Land_Timbers_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
-		class Item229
+		class Item228
 		{
 			position[]={5153.292,364.61417,5323.25};
 			azimut=1511.67;
-			id=359;
+			id=358;
 			side="EMPTY";
 			vehicle="Land_WoodPile_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
-		class Item230
+		class Item229
 		{
 			position[]={5151.1362,364.7941,5323.8276};
 			azimut=1511.67;
-			id=360;
+			id=359;
 			side="EMPTY";
 			vehicle="Land_WoodenLog_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
-		class Item231
+		class Item230
 		{
 			position[]={5151.5356,364.4783,5326.1987};
 			azimut=1561.13;
-			id=361;
+			id=360;
 			side="EMPTY";
 			vehicle="Land_WoodPile_large_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
-		class Item232
+		class Item231
 		{
 			position[]={2572.988,312.62613,5178.4673};
 			azimut=1689.0699;
+			id=361;
+			side="EMPTY";
+			vehicle="Land_Timbers_F";
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
+		};
+		class Item232
+		{
+			position[]={2573.7021,312.40933,5176.7061};
+			azimut=1865.58;
 			id=362;
 			side="EMPTY";
 			vehicle="Land_Timbers_F";
@@ -5539,59 +5538,49 @@ class Mission
 		};
 		class Item233
 		{
-			position[]={2573.7021,312.40933,5176.7061};
-			azimut=1865.58;
+			position[]={2584.083,313.47882,5174.9248};
+			azimut=1646.9;
 			id=363;
 			side="EMPTY";
-			vehicle="Land_Timbers_F";
+			vehicle="Land_WoodPile_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
 		class Item234
 		{
-			position[]={2584.083,313.47882,5174.9248};
-			azimut=1646.9;
-			id=364;
-			side="EMPTY";
-			vehicle="Land_WoodPile_F";
-			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false;";
-		};
-		class Item235
-		{
 			position[]={2580.0171,312.91043,5174.7915};
 			azimut=1646.9;
-			id=365;
+			id=364;
 			side="EMPTY";
 			vehicle="Land_WoodenLog_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
-		class Item236
+		class Item235
 		{
 			position[]={2589.6995,313.15524,5168.9512};
 			azimut=1696.36;
-			id=366;
+			id=365;
 			side="EMPTY";
 			vehicle="Land_WoodPile_large_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
-		class Item237
+		class Item236
 		{
 			position[]={2584.5024,313.50113,5174.7329};
 			azimut=1646.9;
-			id=367;
+			id=366;
 			side="EMPTY";
 			vehicle="Land_WoodPile_F";
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
-		class Item238
+		class Item237
 		{
 			position[]={8356.5957,83.534767,4732.3462};
 			azimut=1561.13;
-			id=368;
+			id=367;
 			side="EMPTY";
 			vehicle="Land_WoodPile_large_F";
 			skill=0.60000002;
@@ -5600,7 +5589,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=259;
+		items=258;
 		class Item0
 		{
 			position[]={9289.958,20.111645,10496.466};
@@ -6421,7 +6410,7 @@ class Mission
 		{
 			position[]={4182.3618,83.980003,6605.458};
 			name="oil_trader_4";
-			text="Eisen/Kupfer Ankauf";
+			text="Industriefachhandel";
 			type="A3L_Store_Green_Icon";
 			colorName="ColorOrange";
 			angle=0.29785201;
@@ -6483,7 +6472,7 @@ class Mission
 			text="Waffenladen";
 			type="A3L_Store_Red_Icon";
 			colorName="ColorRed";
-			angle=-12.62;
+			angle=1.1233419;
 		};
 		class Item107
 		{
@@ -7589,7 +7578,7 @@ class Mission
 		{
 			position[]={244.09348,429.30328,3538.9094};
 			name="kohle_1";
-			text="Steinkohlemine";
+			text="Kohlemine";
 			type="A3L_Pickaxe_Icon";
 			colorName="ColorBrown";
 		};
@@ -7612,21 +7601,13 @@ class Mission
 		};
 		class Item251
 		{
-			position[]={3240.7922,89.220001,7900.4575};
-			name="elektroschrott";
-			text="Elektroschrott Händler";
-			type="A3L_Store_Green_Icon";
-			colorName="ColorGreen";
-		};
-		class Item252
-		{
 			position[]={5148.2671,365.24231,5321.3315};
 			name="holz_1";
 			text="Waldfläche";
 			type="A3L_Tree_Icon";
 			colorName="ColorGreen";
 		};
-		class Item253
+		class Item252
 		{
 			position[]={5998.7744,519.77869,7996.23};
 			name="baumarkt";
@@ -7634,7 +7615,7 @@ class Mission
 			type="A3L_Store_Green_Icon";
 			colorName="ColorGreen";
 		};
-		class Item254
+		class Item253
 		{
 			position[]={5242.1538,7.9853158,2860.156};
 			name="laminat";
@@ -7642,7 +7623,7 @@ class Mission
 			type="A3L_Factory_Green_Icon";
 			colorName="ColorGreen";
 		};
-		class Item255
+		class Item254
 		{
 			position[]={3769.554,123.31104,2049.3398};
 			name="grillkohle";
@@ -7650,7 +7631,7 @@ class Mission
 			type="A3L_Factory_Green_Icon";
 			colorName="ColorGreen";
 		};
-		class Item256
+		class Item255
 		{
 			position[]={8344.5742,82.852104,4720.9995};
 			name="holz_2";
@@ -7658,7 +7639,7 @@ class Mission
 			type="A3L_Tree_Icon";
 			colorName="ColorGreen";
 		};
-		class Item257
+		class Item256
 		{
 			position[]={2575.6055,310.82642,5166.5142};
 			name="holz_3";
@@ -7666,7 +7647,7 @@ class Mission
 			type="A3L_Tree_Icon";
 			colorName="ColorGreen";
 		};
-		class Item258
+		class Item257
 		{
 			position[]={9109.2627,20.762283,7712.1123};
 			name="rennstrecke_von_lv";

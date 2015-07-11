@@ -21,14 +21,13 @@ switch (_shop) do
 	case "fishmarket": {["Fisch Markt",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "farmingmarket": {["Samenbank",["wheat seed","sunflower seed","bean seed","cotton seed","pumpkin seed","opium seed","coke seed","cannabis seed","wheat","sunflower","corn","bean","cotton","olive","pumpkin"]]};	
 	case "glass": {["Glasshändler",["glass"]]};
-	case "iron": {["Förderindustrie",["iron_r","copper_r"]]};
+	case "iron": {["Förderindustrie",["iron_r","copper_r","schwarzpulver","elektroteile"]]};
 	case "diamond": {["Juwelier",["diamondc"]]};
 	case "salt": {["Salzhändler",["salt_r"]]};
 	case "cop": {["Polizei Austattung",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","lockpick","boltcutter","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "itemfbi": {["FBI Austattung",["blaulicht","donuts","coffee","spikeStrip","redgull","fuelF","defusekit","lockpick","BarGate","RoadBlockWood","RoadConeStripB"]]};
 	case "cement": {["Zementhändler",["cement"]]};
 	case "gold": {["Gold Ankauf",["goldbar"]]};
-	case "elektro": {["Elektroschrott",["elektroteile","pickaxe"]]};
 	case "baumarkt": {["Baumarkt",["laminat","grillkohle","axt"]]};
 	case "ems": {["EMS Notfallaustattung",["water","coffee","rabbit","apple","redgull","tbacon","peach","lockpick","RoadCone","RoadConeB","RoadConeStrip","RoadConeStripB","RoadBlockWood","fuelF"]]};
 	case "butcher": {["Bob's Metzgerei",["raw goat meat","raw chicken","raw sheep meat","raw rabbit"]]};
