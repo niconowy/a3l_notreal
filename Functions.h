@@ -207,7 +207,6 @@ class Life_Client_Core
 		class clothing_kart {};
 		class clothing_adac {};
 		class clothing_justiz {};
-		class clothing_lakeistani {};
 		
 		//#1
 		//class itemIcon {};

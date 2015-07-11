@@ -3153,7 +3153,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=238;
+		items=262;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -4000,9 +4000,8 @@ class Mission
 		};
 		class Item82
 		{
-			position[]={3812.4475,123.56366,2050.6235};
-			azimut=1529.98;
-			offsetY=21.5;
+			position[]={4984.0269,4.98,1083.5996};
+			azimut=1694.1301;
 			id=212;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -4727,8 +4726,9 @@ class Mission
 		};
 		class Item151
 		{
-			position[]={7966.1465,100.67,6576.4512};
-			azimut=2160.1201;
+			position[]={3807.8718,123.4561,2052.7041};
+			azimut=2428.73;
+			offsetY=21.549999;
 			id=281;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -4792,8 +4792,8 @@ class Mission
 		};
 		class Item157
 		{
-			position[]={6106.9053,154.48257,5075.6758};
-			azimut=2306.8999;
+			position[]={6112.1704,356.33148,9382.1816};
+			azimut=2217.3784;
 			id=287;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -4945,8 +4945,8 @@ class Mission
 		};
 		class Item172
 		{
-			position[]={6107.4741,156.02701,5082.4141};
-			azimut=1851.99;
+			position[]={6111.4614,356.33142,9383.4053};
+			azimut=2217.3799;
 			id=302;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -4956,8 +4956,8 @@ class Mission
 		};
 		class Item173
 		{
-			position[]={6116.7803,153.21434,5070.7295};
-			azimut=461.258;
+			position[]={6118.6064,356.33157,9378.5068};
+			azimut=328.69434;
 			id=303;
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
@@ -5153,7 +5153,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Lakeistani Kleidung"",life_fnc_clothingMenu,""lakeistani"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Lakeistani 'Outback' Waffen"",life_fnc_weaponShopMenu,""lakeistani_reb""];";
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebel Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Donaterwaffen"",life_fnc_weaponShopMenu,""don_reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Lizenzen"",life_fnc_licenses,[""rebel""],0,true,true,"""",' playerSide == civilian '];";
 		};
 		class Item192
 		{
@@ -5586,10 +5586,250 @@ class Mission
 			skill=0.60000002;
 			init="this allowDamage false; this enableSimulation false;";
 		};
+		class Item238
+		{
+			position[]={9745.1084,162.67116,7967.7725};
+			azimut=1750.4301;
+			id=368;
+			side="EMPTY";
+			vehicle="Land_InfoStand_V2_F";
+			skill=0.60000002;
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Rebel Market"",life_fnc_virt_menu,""rebel""]; this addAction[""Rebel Clothing Shop"",life_fnc_clothingMenu,""reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian'];  this addAction[""Rebel Weapon Shop"",life_fnc_weaponShopMenu,""rebel"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""Donaterwaffen"",life_fnc_weaponShopMenu,""don_reb"",0,false,false,"""",' license_civ_rebel && playerSide == civilian']; this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 4 ']; this addAction[""Lizenzen"",life_fnc_licenses,[""rebel""],0,true,true,"""",' playerSide == civilian '];";
+		};
+		class Item239
+		{
+			position[]={6133.979,152.82182,5067.2852};
+			azimut=1750.4301;
+			id=369;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item240
+		{
+			position[]={6136.333,152.90721,5053.9868};
+			azimut=1750.4301;
+			id=370;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item241
+		{
+			position[]={6134.9199,152.87907,5062.4683};
+			azimut=1750.4301;
+			id=371;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item242
+		{
+			position[]={6139.9429,152.8008,5060.0605};
+			azimut=1750.4301;
+			id=372;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item243
+		{
+			position[]={6140.6753,152.48428,5065.8193};
+			azimut=1750.4301;
+			id=373;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item244
+		{
+			position[]={6138.8438,152.42047,5071.1074};
+			azimut=1750.4301;
+			id=374;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item245
+		{
+			position[]={6133.4561,152.63869,5072.6777};
+			azimut=1750.4301;
+			id=375;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item246
+		{
+			position[]={6129.1665,152.94324,5068.2803};
+			azimut=1750.4301;
+			id=376;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item247
+		{
+			position[]={6126.9697,153.00638,5062.2598};
+			azimut=1750.4301;
+			id=377;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item248
+		{
+			position[]={6129.7944,152.98685,5057.0239};
+			azimut=1750.4301;
+			id=378;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item249
+		{
+			position[]={6130.2129,152.97836,5050.7935};
+			azimut=1750.4301;
+			id=379;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item250
+		{
+			position[]={6137.1182,152.89674,5050.1128};
+			azimut=1750.4301;
+			id=380;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item251
+		{
+			position[]={6142.0869,152.64555,5054.7207};
+			azimut=1750.4301;
+			id=381;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item252
+		{
+			position[]={6144.3369,152.1617,5062.3638};
+			azimut=1750.4301;
+			id=382;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item253
+		{
+			position[]={6146.6382,152.09563,5056.9189};
+			azimut=1750.4301;
+			id=383;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item254
+		{
+			position[]={6143.6563,152.50682,5048.228};
+			azimut=1750.4301;
+			id=384;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item255
+		{
+			position[]={6137.7456,152.84811,5044.563};
+			azimut=1750.4301;
+			id=385;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item256
+		{
+			position[]={6131.5732,152.94521,5043.2544};
+			azimut=1750.4301;
+			id=386;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item257
+		{
+			position[]={6149.2012,152.02808,5050.8462};
+			azimut=1750.4301;
+			id=387;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item258
+		{
+			position[]={6150.4043,151.287,5061.4214};
+			azimut=1750.4301;
+			id=388;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item259
+		{
+			position[]={6147.1611,151.29784,5068.437};
+			azimut=1750.4301;
+			id=389;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item260
+		{
+			position[]={6143.8662,151.37352,5073.8818};
+			azimut=1750.4301;
+			id=390;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
+		class Item261
+		{
+			position[]={6138.373,151.88239,5077.4946};
+			azimut=1750.4301;
+			id=391;
+			side="EMPTY";
+			vehicle="Land_ClutterCutter_large_F";
+			leader=1;
+			skill=0.60000002;
+		};
 	};
 	class Markers
 	{
-		items=258;
+		items=261;
 		class Item0
 		{
 			position[]={9289.958,20.111645,10496.466};
@@ -5728,7 +5968,7 @@ class Mission
 		};
 		class Item18
 		{
-			position[]={7966.1372,100.67,6576.3569};
+			position[]={3807.8677,123.45488,2052.7788};
 			name="cocaine_p";
 			text="Kokainverarbeiter";
 			type="A3L_Factory_Red_Icon";
@@ -6175,7 +6415,7 @@ class Mission
 		};
 		class Item70
 		{
-			position[]={3812.4465,123.56339,2050.6389};
+			position[]={4983.731,4.98,1083.5558};
 			name="Weed_p_1";
 			text="Cannabis Trockner";
 			type="A3L_Factory_Red_Icon";
@@ -6451,18 +6691,18 @@ class Mission
 		{
 			position[]={496.05261,477.04843,1216.8888};
 			name="Rebelop_1";
-			text="Rebellen Außenposten I";
+			text="Rebellen Flughafen";
 			type="A3L_Business_Icon";
-			colorName="ColorEAST";
+			colorName="ColorWhite";
 			angle=-1.02147;
 		};
 		class Item105
 		{
-			position[]={2817.511,164.36485,2717.4275};
+			position[]={2784.8345,164.5854,2697.3186};
 			name="Rebelop_2";
-			text="Rebellen Außenposten II";
+			text="Rebellen Posten";
 			type="A3L_Business_Icon";
-			colorName="ColorEAST";
+			colorName="ColorWhite";
 			angle=-0.68222499;
 		};
 		class Item106
@@ -7253,26 +7493,26 @@ class Mission
 		};
 		class Item207
 		{
-			position[]={6106.2285,155.17787,5079.5864};
+			position[]={6108.5742,356.33157,9375.1348};
 			name="car1_1_2_2_1_1_1";
 			text="Donator Läden";
 			type="A3L_House_Green_Icon";
 			colorName="ColorYellow";
-			angle=10.552434;
+			angle=-0.39424562;
 		};
 		class Item208
 		{
-			position[]={6102.8506,155.78708,5080.2251};
+			position[]={6105.5605,356.33157,9374.6777};
 			name="donator_2";
 			type="Empty";
-			angle=245.36301;
+			angle=287.56567;
 		};
 		class Item209
 		{
-			position[]={6104.9082,154.96094,5077.0264};
+			position[]={6111.3052,356.33157,9372.8662};
 			name="donator_1";
 			type="Empty";
-			angle=245.36301;
+			angle=287.82178;
 		};
 		class Item210
 		{
@@ -7292,7 +7532,7 @@ class Mission
 		};
 		class Item212
 		{
-			position[]={6091.7334,356.33173,9348.918};
+			position[]={6143.7324,152.30446,5060.6816};
 			name="coke_1";
 			text="Kokainfeld";
 			type="A3L_Field_Red_Icon";
@@ -7477,11 +7717,11 @@ class Mission
 		};
 		class Item236
 		{
-			position[]={6116.7891,153.23615,5070.8716};
+			position[]={6118.4746,356.33157,9378.333};
 			name="atm_marker_1";
 			type="A3L_ATM_Icon";
 			colorName="ColorGreen";
-			angle=-0.0020814131;
+			angle=4.4665856;
 		};
 		class Item237
 		{
@@ -7559,11 +7799,11 @@ class Mission
 		class Item246
 		{
 			position[]={9744.8418,162.67114,7967.9858};
-			name="marker_lakeistani_kleidungen";
-			text="Lakeistani Kleidung";
+			name="reb_4";
+			text="Rebellen Bauernhof";
 			type="A3L_Store_Red_Icon";
-			colorName="ColorRed";
-			angle=3.2126312;
+			colorName="ColorWhite";
+			angle=3.21263;
 		};
 		class Item247
 		{
@@ -7654,6 +7894,42 @@ class Mission
 			text="Rennstrecke LakesideValley";
 			type="mil_flag";
 			colorName="ColorOrange";
+		};
+		class Item258
+		{
+			position[]={9746.7031,162.67082,7952.9277};
+			name="reb_loop";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="SolidBorder";
+			a=120;
+			b=120;
+			drawBorder=1;
+		};
+		class Item259
+		{
+			position[]={2776.3967,164.9789,2703.1692};
+			name="reb_loop_1";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="SolidBorder";
+			a=120;
+			b=120;
+			drawBorder=1;
+		};
+		class Item260
+		{
+			position[]={504.52002,477.36749,1226.6597};
+			name="reb_loop_2";
+			markerType="ELLIPSE";
+			type="Empty";
+			colorName="ColorRed";
+			fillName="SolidBorder";
+			a=180;
+			b=180;
+			drawBorder=1;
 		};
 	};
 };

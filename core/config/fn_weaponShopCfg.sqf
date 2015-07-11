@@ -630,16 +630,12 @@ switch(_shop) do
 						//["RH_tec9",nil,35000], Zu Op
 						//["RH_tecsd",nil,1500], Zu Op
 						//["RH_32Rnd_9x19_tec",nil,500], Zu Op
-						//["R3F_HK417M","HK4 17M",225000],
-						//["R3F_20Rnd_762x51_HK417","HK4 17 Munition",3000],
 						["RH_7Rnd_50_AE",nil,750],
 						["A3L_SA61",nil,45000],
 						["A3L_SA61mag",nil,900],
 						["A3L_UZI",nil,37250],
 						["A3L_UZImag",nil,950],
-						["RH_muzi",nil,35000],
-						["RH_30Rnd_9x19_UZI",nil,800],
-
+						
 /*						["A3L_AK47",nil,120000],
 						["A3L_AK47mag",nil,2500],
 						
@@ -649,22 +645,24 @@ switch(_shop) do
 						["A3L_AKS74",nil,190000],
 						["A3L_AK47sMag",nil,2750],
 */						
-						["RH_M4sbr_b",nil,200000],
+/*						["RH_M4sbr_b",nil,200000],
 						["30Rnd_556x45_Stanag",nil,2800],
+*/
 						["optic_Hamr",nil,500],
 
-						["RH_ar10",nil,225000],
+/*						["RH_ar10",nil,225000],
 						["RH_20Rnd_762x51_AR10",nil,3000],
-
+*/
 						["A3L_RedDot",nil,8500],
 						["RH_Delft",nil,8500],
 						["RH_qdss_nt4",nil,12500],
 						["A3L_CCO",nil,12500],
 
-						["A3L_CZ550",nil,150000],
+/*						["A3L_CZ550",nil,150000],
 						["A3L_CZ550mag",nil,50],
+*/
 						["A3L_CZ550Scope",nil,30000],
-
+						["hlc_optic_kobra",nil,5000],
 						["arifle_SDAR_F","Turtle Harpoon",50000],
 						["20Rnd_556x45_UW_mag","Underwater magazine",1500],
 
@@ -708,8 +706,6 @@ switch(_shop) do
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
 					["A3L_UZImag",nil,805],
-					["RH_muzi",nil,29750],
-					["RH_30Rnd_9x19_UZI",nil,680],
 /*					
 					["A3L_AK47",nil,102000],
 					["A3L_AK47mag",nil,2125],
@@ -721,22 +717,24 @@ switch(_shop) do
 					["A3L_AKS74",nil,161500],
 					["A3L_AK47sMag",nil,2335],
 */					
-					["RH_M4sbr_b",nil,170000],
+/*					["RH_M4sbr_b",nil,170000],
 					["30Rnd_556x45_Stanag",nil,2380],
+*/
 					["optic_Hamr",nil,425],
 					
-					["RH_ar10",nil,191250],
+/*					["RH_ar10",nil,191250],
 					["RH_20Rnd_762x51_AR10",nil,2550],
-					
+*/					
 					["A3L_RedDot",nil,7225],
 					["RH_Delft",nil,7225],
 					["RH_qdss_nt4",nil,10625],
 					["A3L_CCO",nil,10625],
 					
-					["A3L_CZ550",nil,127500],
+/*					["A3L_CZ550",nil,127500],
 					["A3L_CZ550mag",nil,40],
+*/
 					["A3L_CZ550Scope",nil,25500],
-					
+					["hlc_optic_kobra",nil,5000],
 					["arifle_SDAR_F","Turtle Harpoon",42500],
 					["20Rnd_556x45_UW_mag","Underwater magazine",1275],
 					
@@ -769,8 +767,6 @@ switch(_shop) do
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
 					["A3L_UZImag",nil,805],
-					["RH_muzi",nil,29750],
-					["RH_30Rnd_9x19_UZI",nil,680],
 					
 /*					["A3L_AK47",nil,102000],
 					["A3L_AK47mag",nil,2125],
@@ -782,22 +778,24 @@ switch(_shop) do
 					["A3L_AKS74",nil,161500],
 					["A3L_AK47sMag",nil,2335],
 */					
-					["RH_M4sbr_b",nil,170000],
+/*					["RH_M4sbr_b",nil,170000],
 					["30Rnd_556x45_Stanag",nil,2380],
+*/
 					["optic_Hamr",nil,425],
 					
-					["RH_ar10",nil,191250],
+/*					["RH_ar10",nil,191250],
 					["RH_20Rnd_762x51_AR10",nil,2550],
-					
+*/					
 					["A3L_RedDot",nil,7225],
 					["RH_Delft",nil,7225],
 					["RH_qdss_nt4",nil,10625],
 					["A3L_CCO",nil,10625],
 					
-					["A3L_CZ550",nil,127500],
+/*					["A3L_CZ550",nil,127500],
 					["A3L_CZ550mag",nil,40],
+*/
 					["A3L_CZ550Scope",nil,25500],
-					
+					["hlc_optic_kobra",nil,5000],
 					["arifle_SDAR_F","Turtle Harpoon",42500],
 					["20Rnd_556x45_UW_mag","Underwater magazine",1275],
 					
@@ -830,8 +828,6 @@ switch(_shop) do
 					["A3L_SA61mag",nil,765],
 					["A3L_UZI",nil,31660],
 					["A3L_UZImag",nil,805],
-					["RH_muzi",nil,29750],
-					["RH_30Rnd_9x19_UZI",nil,680],
 					
 /*					["A3L_AK47",nil,102000],
 					["A3L_AK47mag",nil,2125],
@@ -843,22 +839,24 @@ switch(_shop) do
 					["A3L_AKS74",nil,161500],
 					["A3L_AK47sMag",nil,2335],
 */					
-					["RH_M4sbr_b",nil,170000],
+/*					["RH_M4sbr_b",nil,170000],
 					["30Rnd_556x45_Stanag",nil,2380],
+*/
 					["optic_Hamr",nil,425],
 					
-					["RH_ar10",nil,191250],
+/*					["RH_ar10",nil,191250],
 					["RH_20Rnd_762x51_AR10",nil,2550],
-					
+*/					
 					["A3L_RedDot",nil,7225],
 					["RH_Delft",nil,7225],
 					["RH_qdss_nt4",nil,10625],
 					["A3L_CCO",nil,10625],
 					
-					["A3L_CZ550",nil,127500],
+/*					["A3L_CZ550",nil,127500],
 					["A3L_CZ550mag",nil,40],
+*/
 					["A3L_CZ550Scope",nil,25500],
-					
+					["hlc_optic_kobra",nil,5000],
 					["arifle_SDAR_F","Turtle Harpoon",42500],
 					["20Rnd_556x45_UW_mag","Underwater magazine",1275],
 					
@@ -877,33 +875,7 @@ switch(_shop) do
 			default {"Du bist kein Donator!"}; //Opfer lol
 		};
 	};
-
-	case "lakeistani_reb":
-	{
-		switch(true) do
-		{
-			case (playerSide != civilian): {"Du bist kein Zivilist!"};
-			case (!license_civ_rebel): {"Du besitzt keine Rebellenausbildung."};
-			case ((license_civ_rebel)):
-			{
-				["Lakeistani's Outback Weapons",
-					[
-						["hlc_rifle_ak47",nil,185000],
-						["hlc_30Rnd_762x39_b_ak",nil,2725],
-						["hlc_rifle_aks74u",nil,175000],
-						["hlc_rifle_ak12",nil,155000],
-						["hlc_30Rnd_545x39_B_AK",nil,2725],
-						["hlc_rifle_akm",nil,195000],
-						["hlc_30Rnd_762x39_b_ak",nil,2725],
-						["hlc_rifle_aek971",nil,180000],
-						["hlc_30Rnd_545x39_B_AK",nil,2725],
-
-						["hlc_optic_kobra",nil,5000]						
-					]
-				];
-			};
-		};
-	};  
+ 
 
 	case "gun":
 	{

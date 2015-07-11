@@ -22,6 +22,20 @@ switch (_filter) do
 			["TRYK_U_B_BLK_Tshirt","Biker-Jacke (Schwarz,kurz)",6000],
 			["TRYK_U_B_BLKBLK_CombatUniform","Biker-Kleidung (Schwarz)",6000],
 			["TRYK_U_B_BLKBLK_R_CombatUniform","Biker-Kleidung (Schwarz,kurz)",6000],
+			["U_DressTKLocalUni_E_A",nil,500],
+			["U_DressTKLocalUni_E_B",nil,500],
+			["U_DressTKLocalUni_E_C",nil,500],
+			["U_DressTKLocalUni_E_D",nil,500],
+			["U_DressTKLocalUni_E_E",nil,500],
+
+			["U_TKLocalUniLong_A",nil,4750],
+			["U_TKLocalUniLong_B",nil,4750],
+			["U_TKLocalUniLong_C",nil,4750],
+			["U_TKLocalUniLong_D",nil,4750],
+			["U_TKLocalUniLong_E",nil,4750],
+
+			["U_TerrorCombat_A",nil,1755],
+			["U_TerrorCombat_B",nil,1755],
 			["U_IG_Guerilla1_1",nil,5000],
 			["U_I_G_Story_Protagonist_F",nil,7500],
 			["U_I_G_resistanceLeader_F",nil,11000],
@@ -38,6 +52,38 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["H_Hat_Taqiyah_A",nil,375],
+			["H_Hat_Taqiyah_B",nil,375],
+			["H_Hat_Taqiyah_C",nil,375],
+			["H_Hat_Taqiyah_D",nil,375],
+			["H_Hat_Taqiyah_E",nil,375],
+			
+			["H_Hat_Turban_A",nil,275],
+			["H_Hat_Turban_B",nil,275],
+			["H_Hat_Turban_C",nil,275],
+			["H_Hat_Turban_D",nil,275],
+			["H_Hat_Turban_E",nil,275],
+
+			["H_Hat_Face_Cover_Black",nil,850],
+			["H_Hat_Face_Cover_Gold",nil,850],
+			["H_Hat_Face_Cover_Green",nil,850],
+
+			["H_Hat_Face_Wrap",nil,1050],
+			["H_Hat_Face_Wrap_Desert",nil,1050],
+			["H_Hat_Face_Wrap_Olive",nil,1050],
+			["H_Hat_Face_Wrap_Red",nil,1050],
+			
+			["H_Hat_Kufiya_B",nil,1550],
+			["H_Hat_Kufiya_F",nil,1550],
+			["H_Hat_Kufiya_D",nil,1550],
+			["H_Hat_Kufiya_C",nil,1550],
+			
+			["H_Hat_Ushanka",nil,120],
+			["H_Hat_Ushanka_Rnd_A",nil,120],
+			["H_Hat_Ushanka_Rnd_B",nil,120],
+			["H_Hat_Ushanka_Rnd_C",nil,120],
+			["H_Hat_Ushanka_Rnd_D",nil,120],
+			
 			["H_ALFR_Heist_Mask_1",nil,1000],
 			["H_ALFR_Heist_Mask_2",nil,1000],
 			["H_ALFR_Heist_Mask_3",nil,1000],

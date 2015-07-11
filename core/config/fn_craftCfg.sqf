@@ -33,16 +33,17 @@ switch(_craft) do
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
-				["hlc_rifle_akm", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
+				["hlc_rifle_akm", ["life_inv_ironr",8,"life_inv_holz",6,"life_inv_schwarzpulver",6]],
 				["hlc_30Rnd_762x39_b_ak", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
-				["hlc_rifle_aks74u", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
-				["hlc_rifle_ak12", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
-				["hlc_rifle_aek971", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
+				["hlc_rifle_aks74u", ["life_inv_ironr",8,"life_inv_holz",6,"life_inv_schwarzpulver",6]],
+				["hlc_rifle_ak12", ["life_inv_ironr",8,"life_inv_holz",6,"life_inv_schwarzpulver",6]],
+				["hlc_rifle_aek971", ["life_inv_ironr",8,"life_inv_holz",6,"life_inv_schwarzpulver",6]],
 				["hlc_30Rnd_545x39_B_AK", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
-				["RH_ar10", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
+				["RH_ar10", ["life_inv_ironr",8,"life_inv_holz",6,"life_inv_schwarzpulver",6]],
 				["RH_20Rnd_762x51_AR10", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
-				["RH_M4sbr_b", ["life_inv_ironr",16,"life_inv_schwarzpulver",15]],
-				["30Rnd_556x45_Stanag", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]]
+				["RH_M4sbr_b", ["life_inv_ironr",8,"life_inv_copperr",8,"life_inv_schwarzpulver",6]],
+				["30Rnd_556x45_Stanag", ["life_inv_ironr",1,"life_inv_schwarzpulver",4]],
+				["A3L_CZ550", ["life_inv_holz",4,"life_inv_ironr",12,"life_inv_schwarzpulver",4]]
 			];
 	};
 
