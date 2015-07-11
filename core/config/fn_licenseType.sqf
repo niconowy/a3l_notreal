@@ -44,6 +44,7 @@ switch (_mode) do
 			case "elektriker": {_var = "license_civ_elektriker"};
 			case "grillmeister": {_var = "license_civ_grillmeister"};
 			case "schreiner": {_var = "license_civ_schreiner"};
+			case "presse": {_var = "license_civ_presse"};
 			default {_var = ""};
 		};
 	};
@@ -80,6 +81,7 @@ switch (_mode) do
 			case "license_civ_elektriker": {_var = "elektriker"};
 			case "license_civ_grillmeister": {_var = "grillmeister"};
 			case "license_civ_schreiner": {_var = "schreiner"};
+			case "license_civ_presse": {_var = "presse"};
 			default {_var = ""};
 		};
 	};

@@ -17,6 +17,7 @@ if(_shop == "rebel" && !license_civ_rebel) exitWith {hint localize "STR_NOTF_Not
 if(_shop == "ems" && playerSide != independent) exitWith {hint localize "STR_NOTF_NotAMedic"};
 if(_shop == "adac" && playerSide != east) exitWith {hint localize "STR_NOTF_NotAADAC"};
 if(_shop == "itemfbi" && (__GETC__(life_donator) <= 3)) exitWith {hint localize "Du gehoerst nicht zum FBI!"};
+if(_shop == "coppresse" && (__GETC__(life_coplevel) < 6) && playerSide != west) exitWith {hint localize "Du musst mindestens Dienstgrad Lieutenant (Rang 6) erreicht haben!"};
 createDialog "shops_menu";
 
 [] call life_fnc_virt_update;

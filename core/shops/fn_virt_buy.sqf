@@ -6,18 +6,12 @@
 	Description:
 	Buy a virtual item from the store.
 */
-private["_type","_price","_amount","_diff","_name","_hideout","_marketprice"];
+private["_type","_price","_amount","_diff","_name","_hideout"];
 if((lbCurSel 2401) == -1) exitWith {hint localize "STR_Shop_Virt_Nothing"};
 _type = lbData[2401,(lbCurSel 2401)];
 _price = lbValue[2401,(lbCurSel 2401)];
 _amount = ctrlText 2404;
-//#2 Anfang
-_marketprice = [_type] call life_fnc_marketGetBuyPrice;
-if(_marketprice != -1) then
-{
-	_price = _marketprice;
-};
-//#2 Ende
+
 if(!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_Shop_Virt_NoNum";};
 _diff = [_type,parseNumber(_amount),life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 _amount = parseNumber(_amount);
@@ -56,16 +50,7 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 		hint format[localize "STR_Shop_Virt_BoughtItem",_amount,_name,[(_price * _amount)] call life_fnc_numberText];
 		__SUB__(ja_dzep,(_price * _amount));
 	};
-	//#2 Anfang
-	if(_marketprice != -1) then
-    {
-		[_type, _amount] spawn
-		{
-			sleep 45;
-			[_this select 0,_this select 1] call life_fnc_marketBuy;
-		};	
-    };
-	//#2 Ende
+
 	[] call life_fnc_virt_update;
 };
 

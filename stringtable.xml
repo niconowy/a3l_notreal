@@ -1529,10 +1529,13 @@
 		<Key ID="STR_Item_WeddingRing">
 			<Original>Ehering</Original>
 		</Key>
+		<Key ID="STR_Item_PresseForm">
+			<Original>Presseformular</Original>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
-			<Original>Führerschein</Original>
+			<Original>Führerschein B</Original>
 		</Key>
 		<Key ID="STR_License_Pilot">
 			<Original>Pilotenschein</Original>
@@ -1562,46 +1565,49 @@
 			<Original>Rebellenausbildung</Original>
 		</Key>
 		<Key ID="STR_License_Truck">
-			<Original>LKW-Führerschein</Original>
+			<Original>Führerschein C</Original>
 		</Key>
 		<Key ID="STR_License_Diamond">
-			<Original>Diamantenverarbeitung</Original>
+			<Original>Diamantenschleifer</Original>
 		</Key>
 		<Key ID="STR_License_Copper">
-			<Original>Kupferverarbeitung</Original>
+			<Original>Kupferverarbeiter</Original>
 		</Key>
 		<Key ID="STR_License_Iron">
-			<Original>Eisenverarbeitung</Original>
+			<Original>Eisenschmelzer</Original>
 		</Key>
 		<Key ID="STR_License_Sand">
-			<Original>Sandverarbeitung</Original>
+			<Original>Glasbläser</Original>
 		</Key>
 		<Key ID="STR_License_Salt">
-			<Original>Salzverarbeitung</Original>
+			<Original>Salzverfeinerer</Original>
 		</Key>
 		<Key ID="STR_License_Cocaine">
-			<Original>Kokainausbildung</Original>
+			<Original>Kokainchemikant</Original>
 		</Key>
 		<Key ID="STR_License_Marijuana">
-			<Original>Marihuanaausbildung</Original>
+			<Original>Marihuanatrockner</Original>
 		</Key>
 		<Key ID="STR_License_Cement">
-			<Original>Zementmisch-Lizenz</Original>
+			<Original>Bauarbeiter</Original>
 		</Key>
 		<Key ID="STR_License_Home">
 			<Original>Eigentumsurkunde</Original>
 		</Key>
 		<Key ID="STR_License_Schwarzpulver">
-			<Original>Schwarzpulververarbeitung</Original>
+			<Original>Pyrotechniker</Original>
 		</Key>
 		<Key ID="STR_License_Elektriker">
 			<Original>Elektriker</Original>
 		</Key>
 		<Key ID="STR_License_Schreiner">
-			<Original>Schreiner/in</Original>
+			<Original>Schreiner</Original>
 		</Key>
 		<Key ID="STR_License_Grillmeister">
-			<Original>Grillmeister/in</Original>
+			<Original>Grillmeister</Original>
+		</Key>
+		<Key ID="STR_License_Presse">
+			<Original>Presseausweis</Original>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
@@ -1609,6 +1615,7 @@
 			<Original>Dies kann nur an einem Tresor benutzt werden.</Original>
 		</Key>
 		<Key ID="STR_ISTR_Blast_AlreadyPlaced">
+			<Original>Bombe wurde bereits angebracht.</Original>
 		</Key>
 		<Key ID="STR_ISTR_Blast_AlreadyOpen">
 			<Original>Der Tresor ist bereits offen.</Original>
@@ -1716,7 +1723,7 @@
 	</Package>
 		<Package name="Process_Action">
 		<Key ID="STR_Process_Oil">
-			<Original>Öl wird verarbeite</Original>
+			<Original>Öl wird verarbeitet</Original>
 		</Key>
 		<Key ID="STR_Process_Diamond">
 			<Original>Diamanten werden geschliffen</Original>
@@ -1725,22 +1732,22 @@
 			<Original>Heroin wird verarbeitet</Original>
 		</Key>
 		<Key ID="STR_Process_Copper">
-			<Original>Kupfer wird verarbeitet</Original>
+			<Original>Kupfer wird einegschmolzen</Original>
 		</Key>
 		<Key ID="STR_Process_Iron">
-			<Original>Eisen wird verarbeitet</Original>
+			<Original>Eisen wird eingeschmolzen</Original>
 		</Key>
 		<Key ID="STR_Process_Sand">
-			<Original>Sand wird verarbeitet</Original>
+			<Original>Sand wird geschmolzen</Original>
 		</Key>
 		<Key ID="STR_Process_Salt">
-			<Original>Salz wird verarbeitet</Original>
+			<Original>Salz wird verfeinert</Original>
 		</Key>
 		<Key ID="STR_Process_Cocaine">
-			<Original>Kokain wird verarbeitet</Original>
+			<Original>Kokain wird chemisch behandelt</Original>
 		</Key>
 		<Key ID="STR_Process_Marijuana">
-			<Original>Marihuana wird verarbeitet</Original>
+			<Original>Marihuana wird getrocknet</Original>
 		</Key>
 		<Key ID="STR_Process_Cement">
 			<Original>Zement wird gemischt</Original>
@@ -1758,10 +1765,10 @@
 			<Original>Grillkohle wird zubereitet</Original>
 		</Key>
 		<Key ID="STR_Process_Stay">
-			<Original>Du musst innerhalb von 10m bleiben, um verarbeiten zu können.</Original>
+			<Original>Nicht weiter als 5 Meter vom Verarbeiter entfernen!</Original>
 		</Key>
 		<Key ID="STR_Process_License">
-			<Original>Du brauchst $%1, um ohne eine Lizenz verarbeiten zu können!</Original>
+			<Original>Du brauchst $%1, um ohne ein spezielles Training (Verarbeitungslizenz) verarbeiten zu können!</Original>
 		</Key>
 		<Key ID="STR_Process_Processed">
 			<Original>Du hast %1 %2 verarbeitet</Original>
@@ -1773,30 +1780,30 @@
 		</Package>
 	<Package name="Gather_Items">
 		<Key ID="STR_Gather_Apples">
-			<Original>Pflanze Weizen/Sonnenblumen/Wolle an.</Original>
+			<Original>  Säe an...  </Original>
 		</Key>
 		<Key ID="STR_Gather_Peaches">
-			<Original>Pflanze Korn/Bohnen/Oliven an.</Original>
+			<Original>  Säe an...  </Original>
 		</Key>
 		<Key ID="STR_Gather_Heroin">
-			<Original>Pflanze Mohn an.</Original>
+			<Original>Säe Mohnsamen an.</Original>
 		</Key>
 		<Key ID="STR_Gather_Cannabis">
-			<Original>Pflanze Cannabis an.</Original> 
+			<Original>Säe Cannabissamen an.</Original> 
 		</Key>
 		<Key ID="STR_Gather_Cocaine">
-			<Original>Pflanze Kokain an.</Original>
+			<Original>Säe Kokasamen an.</Original>
 		</Key>
 		<Key ID="STR_Gather_Pumpkin">
-			<Original>Pflanze Kürbisse an.</Original>
+			<Original>Säe Kürbissamen an.</Original>
 		</Key>
 	</Package>
 	<Package name="Medical_Strings">
 		<Key ID="STR_Medic_Online">
-			<Original>Sanitäter online: %1</Original>
+			<Original>Sanitäter im Dienst: %1</Original>
 		</Key>
 		<Key ID="STR_Medic_Near">
-			<Original>Sanitäter in der Nähe: %1</Original>
+			<Original>Sanitäter Nahe: %1</Original>
 		</Key>
 		<Key ID="STR_Medic_Request">
 			<Original>%1 benötigt medizinische Hilfe</Original>
@@ -1851,7 +1858,7 @@
 			<Original>Eigentümer</Original>
 		</Key>
 		<Key ID="STR_GUI_PlayerReveal">
-			<Original>Zeigt automatisch nächstgelegene Objekte innerhalb von 15m an, deaktiviere es, wenn du Leistungprobleme hast.</Original>
+			<Original>Zeigt automatisch nächstgelegene Objekte innerhalb von 15m an, deaktiviere dies, wenn du Leistungprobleme hast.</Original>
 		</Key>
 		<Key ID="STR_GUI_PlayTags">
 			<Original>Regelt, ob Spieler Namensschilder über dem Kopf haben.</Original>
@@ -1938,27 +1945,29 @@
 		</Key>
 		
 		<Key ID="STR_pInAct_RevokeLicense">
-			<Orignal>Entziehen Lizensen</Orignal>
+			<Orignal>Entziehen Lizenzen</Orignal>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Driver">
-			<Original>Dein Führerschein wurde von der Polizei entzogen</Original>
+			<Original>Dein Führerschein wurde von der Polizei entzogen!</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Truck">
-			<Original>Dein LKW-Führerschein wurde von der Polizei entzogen</Original>
+			<Original>Dein LKW-Führerschein wurde von der Polizei entzogen!</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Pilot">
-			<Original>Dein Pilotenschein wurde von der Polizei entzogen</Original>
+			<Original>Dein Pilotenschein wurde von der Polizei entzogen!</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Boating">
-			<Original>Dein Bootsschein wurde von der Polizei entzogen</Original>
+			<Original>Dein Bootsschein wurde von der Polizei entzogen!</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Diving">
-			<Original>Dein Tauscherschein wurde von der Polizei entzogen</Original>
+			<Original>Dein Tauscherschein wurde von der Polizei entzogen!</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Firearm">
-			<Original>Dein Waffenschein wurde von der Polizei entzogen</Original>
+			<Original>Dein Waffenschein wurde von der Polizei entzogen!</Original>
 		</Key>
-		
+		<Key ID="STR_Civ_RevokeLicense_Presse">
+			<Original>Dein Presseausweis wurde von der Polizei entzogen!</Original>
+		</Key>
 	</Package>
 		<Package name="Vehicle_Interaction">
 		<Key ID="STR_vInAct_Title">

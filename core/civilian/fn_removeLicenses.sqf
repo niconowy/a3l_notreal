@@ -21,6 +21,7 @@ switch (_state) do
 	case 1:
 	{
 		license_civ_gun = false;
+		license_civ_presse = false;
 		hint localize "STR_Jail_LicenseNOTF";
 	};
 	
@@ -78,5 +79,11 @@ switch (_state) do
 	{
 		license_civ_gun = false;
 		hint localize "STR_Civ_RevokeLicense_Firearm";
+	};
+	//Presseausweis --TODO: Cop Interaktionsmenü
+	case 19:
+	{
+		license_civ_presse = false;
+		hint localize "STR_Civ_RevokeLicense_Presse";
 	};
 };

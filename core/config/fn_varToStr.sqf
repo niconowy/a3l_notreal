@@ -105,6 +105,7 @@ switch (_var) do
 	case "life_inv_cigarette": {"Zigarette"};
 	case "life_inv_raxsrum": {"Rax's Rum"};
 	case "life_inv_weddingring": {(localize "STR_Item_WeddingRing")};
+	case "life_inv_presseformular": {(localize "STR_Item_PresseForm")};
 
 	//License Block
 	
@@ -134,4 +135,5 @@ switch (_var) do
 	case "license_civ_elektriker": {(localize "STR_License_Elektriker")};
 	case "license_civ_grillmeister": {(localize "STR_License_Grillmeister")};
 	case "license_civ_schreiner": {(localize "STR_License_Schreiner")};
+	case "license_civ_presse": {(localize "STR_License_Presse")};
 };

@@ -109,6 +109,7 @@ switch (_mode) do
 			case "grillkohle": {"life_inv_grillkohle"};
 			case "laminat": {"life_inv_laminat"};
 			case "holz": {"life_inv_holz"};
+			case "presseformular": {"life_inv_presseformular"};
 		};
 	};
 	
@@ -209,6 +210,7 @@ switch (_mode) do
 			case "life_inv_grillkohle": {"grillkohle"};
 			case "life_inv_laminat": {"laminat"};
 			case "life_inv_holz": {"holz"};
+			case "life_inv_presseformular": {"presseformular"};
 		};
 	};
 };

@@ -3,7 +3,7 @@ class life_dynmarket_prices {
 	name= "life_dynmarket_prices";
 	movingEnable = false;
 	enableSimulation = true;
-	onLoad = "[] spawn {sleep 1;[] call life_fnc_LoadIntoListbox;};";
+	onLoad = "[] spawn {sleep 2;[] call life_fnc_LoadIntoListbox;};";
 	
 	class controlsBackground {
 	};
@@ -34,7 +34,7 @@ class RscText_1000: Life_RscText
 {
 	idc = -1;
 
-	text = "Current Sell Price"; //--- ToDo: Localize;
+	text = "Verkaufspreis"; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.401039 * safezoneH + safezoneY;
 	w = 0.217708 * safezoneW;
@@ -44,7 +44,7 @@ class RscText_1001: Life_RscText
 {
 	idc = 7056;
 
-	text = "Please select an Item"; //--- ToDo: Localize;
+	text = "Gegenstand Auswählen"; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.420831 * safezoneH + safezoneY;
 	w = 0.20625 * safezoneW;
@@ -55,7 +55,7 @@ class RscText_1002: Life_RscText
 {
 	idc = -1;
 
-	text = "Amout of Items sold by You"; //--- ToDo: Localize;
+	text = "Verkauft hiervon"; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.5 * safezoneH + safezoneY;
 	w = 0.217708 * safezoneW;
@@ -77,7 +77,7 @@ class RscButtonMenu_2400: Life_RscButtonMenu
 	onButtonClick = "closeDialog 0;";
 
 	idc = 1006;
-	text = "OKAY"; //--- ToDo: Localize;
+	text = "ZURÜCK"; //--- ToDo: Localize;
 	x = 0.5 * safezoneW + safezoneX;
 	y = 0.57697 * safezoneH + safezoneY;
 	w = 0.217708 * safezoneW;

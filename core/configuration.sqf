@@ -222,7 +222,8 @@ life_inv_items =
 	"life_inv_elektroteile",
 	"life_inv_grillkohle",
 	"life_inv_laminat",
-	"life_inv_holz"
+	"life_inv_holz",
+	"life_inv_presseformular"
 ];
 
 //Setup variable inv vars.
@@ -230,20 +231,29 @@ life_inv_items =
 //Licenses [license var, civ/cop]
 life_licenses =
 [
+//Cop Licenses
 	["license_cop_air","cop"],
 	["license_cop_swat","cop"],
 	["license_cop_cg","cop"],
+
+//Medic Licenses
+	["license_med_air","med"],
+	
+//Civilian Vehicular & Diving
 	["license_civ_driver","civ"],
 	["license_civ_air","civ"],
-	["license_civ_heroin","civ"],
-	["license_civ_marijuana","civ"],
-	["license_civ_gang","civ"],
 	["license_civ_boat","civ"],
-	["license_civ_oil","civ"],
-	["license_civ_dive","civ"],
 	["license_civ_truck","civ"],
+	["license_civ_dive","civ"],
+
+//Civilian Weapons
 	["license_civ_gun","civ"],
 	["license_civ_rebel","civ"],
+
+//Civilian Processing
+	["license_civ_heroin","civ"],
+	["license_civ_marijuana","civ"],
+	["license_civ_oil","civ"],
 	["license_civ_coke","civ"],
 	["license_civ_diamond","civ"],
 	["license_civ_copper","civ"],
@@ -251,12 +261,14 @@ life_licenses =
 	["license_civ_sand","civ"],
 	["license_civ_salt","civ"],
 	["license_civ_cement","civ"],
-	["license_med_air","med"],
-	["license_civ_home","civ"],
 	["license_civ_schwarzpulver","civ"],
 	["license_civ_elektriker","civ"],
 	["license_civ_grillmeister","civ"],
-	["license_civ_schreiner","civ"]
+	["license_civ_schreiner","civ"],
+	
+//Civilian Other
+	["license_civ_home","civ"],
+	["license_civ_presse","civ"]
 	
 ];
 
@@ -265,7 +277,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["opium seed",25],["schwarzpulver",8500],["coke seed",50],["cannabis seed",15],["opium",100],["heroinu",1200],["heroinp",1500],["cocaine",1000],["cocainep",1500],["cannabis",75],["opium",1500],["marijuana",1000],["turtle",2000],["blastingcharge",10000],["boltcutter",500]];
+life_illegal_items = [["opium seed",25],["schwarzpulver",4250],["coke seed",50],["cannabis seed",15],["opium",100],["heroinu",1200],["heroinp",1500],["cocaine",1000],["cocainep",1500],["cannabis",75],["opium",1500],["marijuana",1000],["turtle",2000],["blastingcharge",10000],["boltcutter",1205]];
 
 
 /*
@@ -274,8 +286,7 @@ life_illegal_items = [["opium seed",25],["schwarzpulver",8500],["coke seed",50],
 sell_array = 
 [
 	["apple",50],
-	["heroinu",1000],
-	["heroinp",1584],
+	["heroinp",4360],
 	["salema",45],
 	["ornate",40],
 	["mackerel",175],
@@ -283,42 +294,40 @@ sell_array =
 	["mullet",250],
 	["catshark",300],
 	["rabbit",65],
-	["oilp",4587],
-	["turtle",3000],
+	["oilp",2650],
+	["turtle",9000],
 	["water",5],
 	["coffee",5],
 	["turtlesoup",1000],
 	["donuts",60],
-	["marijuana",4400],
+	["marijuana",4055],
 	["tbacon",25],
 	["lockpick",250],
 	["pickaxe",750],
 	["axt",750],
 	["redgull",200],
 	["peach",55],
-	["cocaine",1000],
-	["cocainep",1000],
-	["diamond",750],
-	["diamondc",2100],
-	["iron_r",1655],
-	["copper_r",800],
-	["salt_r",1650],
-	["glass",1133],
+	["cocainep",6250],
+	["diamondc",2650],
+	["iron_r",1972],
+	["copper_r",1440],
+	["salt_r",1225],
+	["glass",1180],
 	["fuelF",1750],
 	["blaulicht",1000],
 	["elektroteile",3754],
 	["laminat",3715],
 	["grillkohle",1780],
 		
-	["wheat",326],
-	["sunflower",305],
-	["corn",735],
+	["wheat",255],
+	["sunflower",316],
+	["corn",860],
 	["bean",336],
-	["cotton",306],
+	["cotton",255],
 	["olive",491],
 	["opium",1000],
 	["cannabis",1000],
-	["pumpkin",970],
+	["pumpkin",825],
 	
 	["wheat seed",10],
 	["sunflower seed",10],
@@ -337,7 +346,7 @@ sell_array =
 	["raw rabbit",700],
 	
 	["spikeStrip",1200],
-	["cement",1655],
+	["cement",2327],
 	["goldbar",95000], 
 	//Deo Additions
 	["zoobeer",25], 
@@ -350,7 +359,8 @@ sell_array =
 	["RoadConeStripB",500],
 	["cigarette",5],
 	["Rax's Rum",25],
-	["weddingring",1000]
+	["weddingring",1000],
+	["presseformular",1250]
 ];
 
 buy_array =
@@ -364,6 +374,7 @@ buy_array =
 	["mullet",300],
 	["catshark",350],
 	["water",10],
+
 	["turtle",4000],
 	["turtlesoup",2500],
 	["donuts",120],
@@ -386,12 +397,12 @@ buy_array =
 	["cannabis seed",400],
 	["pumpkin seed",150],
 	["coke seed",350],
-	
+
 	["raw goat meat",600],
 	["raw chicken",800],
 	["raw sheep meat",600],
 	["raw rabbit",800],
-	
+
 	["peach",68],
 	["spikeStrip",2500],
 	["blastingcharge",35000],
@@ -400,7 +411,6 @@ buy_array =
 	["storagesmall",75000],
 	["storagebig",150000],
 
-	// Deo's Adds
 	["zoobeer",25],
 	["BarGate",500],
 	["RoadBlockConc",1000],
@@ -411,7 +421,8 @@ buy_array =
 	["RoadConeStripB",500],
 	["cigarette",25],
 	["Rax's Rum",50],
-	["weddingring",25000]
+	["weddingring",25000],
+	["presseformular",10000]
 ];
 __CONST__(buy_array,buy_array);
 

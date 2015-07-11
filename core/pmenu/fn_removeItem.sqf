@@ -20,6 +20,6 @@ if(player != vehicle player) exitWith {titleText["Du kannst nichts wegwerfen, we
 if(!([false,_data,(parseNumber _value)] call life_fnc_handleInv)) exitWith {hint localize "STR_MISC_NotTooMuchDabei"};
 _type = [_data,0] call life_fnc_varHandle;
 _type = [_type] call life_fnc_varToStr;
-hint format["Du hast %1(%2x) entfernt.",(parseNumber _value), _type];
+hint format["Du hast %2(%1x) entfernt.",(parseNumber _value), _type];
 	
 [] call life_fnc_p_updateMenu;

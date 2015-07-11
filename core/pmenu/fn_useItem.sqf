@@ -43,7 +43,7 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			titleText["You have consumed a Cigarette","PLAIN"];
+			titleText["Du rauchst eine Zigarette","PLAIN"];
 			player setFatigue 1;
 			[] spawn life_fnc_useCigarette;	
 		};
@@ -53,7 +53,7 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			titleText["You have consumed a Zoo Beer","PLAIN"];
+			titleText["Du hast Bier getrunken.","PLAIN"];
 			life_intox = life_intox + 0.02;
 		};
 	};
@@ -62,7 +62,7 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			titleText["You have consumed a Rax's Rum","PLAIN"];
+			titleText["Du hast Jack Daniel's Rum getrunken.","PLAIN"];
 			life_intox = life_intox + 0.06;
 		};
 	};
@@ -81,7 +81,7 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[[0,format["%1 sparks up a joint.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 50],false] spawn life_fnc_MP;
+			titleText["Du rauchst einen Joint...","PLAIN"];
 			life_intox = life_intox + 0.10;
 			[] spawn life_fnc_useMarijuana;
 			player setFatigue 1;
@@ -95,7 +95,7 @@ switch (true) do
 			[] spawn
 			{
 				life_cocaine_effect = time;
-				titleText["You're so jacked up on Cocaine you can now sprint for 2 minutes","PLAIN"];
+				titleText["Du sniffst Kokain... du fühlst dich seltsam... als wenn du durchgehend Rennen könntest!","PLAIN"];
 				player enableFatigue false;
 				life_intox = life_intox + 0.10;
 				[] spawn life_fnc_useCocaine;
@@ -109,7 +109,7 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			[[0,format["%1 injects some Heroin.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 50],false] spawn life_fnc_MP;
+			titleText["Du injiziert dir Heroin.","PLAIN"];
 			life_intox = life_intox + 0.10;
 			[] spawn life_fnc_useHeroin;
 		};
@@ -121,7 +121,7 @@ switch (true) do
 
 	case (_item == "BarGate"):
 	{
-		if(!isNull life_bargate) exitWith {hint "You already have a BarGate active in deployment"};
+		if(!isNull life_bargate) exitWith {hint "Du hast bereits ein BarGate in der Hand"};
 		if(playerSide != civilian) then
 		{
 			if(([false,_item,1] call life_fnc_handleInv)) then 
@@ -133,7 +133,7 @@ switch (true) do
 
 	case (_item == "RoadCone"):
 	{
-		if(!isNull life_roadcone) exitWith {hint "You already have a Roadcone active in deployment"};
+		if(!isNull life_roadcone) exitWith {hint "Du hast bereits ein RoadCone in der Hand"};
 		//if cop override and allow use of item
 		if(playerSide != civilian) then 
 		{
@@ -146,7 +146,7 @@ switch (true) do
 
 	case (_item == "RoadConeB"):
 	{
-		if(!isNull life_roadcone) exitWith {hint "You already have a Blinking Roadcone active in deployment"};
+		if(!isNull life_roadcone) exitWith {hint "Du hast bereits eine blinkende RoadCone in der Hand"};
 		//if cop override and allow use of item
 		if(playerSide != civilian) then 
 		{
@@ -158,7 +158,7 @@ switch (true) do
 	};
 	case (_item == "RoadConeStrip"):
 	{
-		if(!isNull life_roadcone) exitWith {hint "You already have a Roadcone Strip active in deployment"};
+		if(!isNull life_roadcone) exitWith {hint "Du hast bereits ein RoadCone-Strip in der Hand"};
 		//if cop override and allow use of item
 		if(playerSide != civilian) then 
 		{
@@ -170,7 +170,7 @@ switch (true) do
 	};
 	case (_item == "RoadConeStripB"):
 	{
-		if(!isNull life_roadcone) exitWith {hint "You already have a Blinking Roadcone Strip active in deployment"};
+		if(!isNull life_roadcone) exitWith {hint "Du hast bereits eine blinkende RoadCone-Strip in der Hand"};
 		//if cop override and allow use of item
 		if(playerSide != civilian) then 
 		{
@@ -183,7 +183,7 @@ switch (true) do
 
 	case (_item == "RoadBlockConc"):
 	{
-		if(!isNull life_roadblock) exitWith {hint "You already have a Road Block active in deployment"};
+		if(!isNull life_roadblock) exitWith {hint "Du hast bereits ein Strassenblock in der Hand"};
 		//if cop override and allow use of item
 		if(playerSide == west) then 
 		{
@@ -196,7 +196,7 @@ switch (true) do
 
 	case (_item == "RoadBlockWood"):
 	{
-		if(!isNull life_roadblock) exitWith {hint "You already have a Road Block active in deployment"};
+		if(!isNull life_roadblock) exitWith {hint "Du hast bereits eine Sperre aus Holz in der Hand"};
 		//if cop override and allow use of item
 		if(playerSide != civilian) then 
 		{
@@ -217,6 +217,7 @@ switch (true) do
 		{
 			life_thirst = 100;
 			player setFatigue 0;
+			hint "Ich fühle mich top fit!";
 			[] spawn
 			{
 				life_redgull_effect = time;
@@ -224,6 +225,7 @@ switch (true) do
 				player enableFatigue false;
 				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
 				player enableFatigue true;
+				hint "Puhh... mir geht langsam aber sicher wieder die Puste aus... glaube der EnergyDrink hat nachgelassen";
 			};
 		};
 	};
@@ -276,7 +278,18 @@ switch (true) do
 		}
 		else
 		{
-			hint "Du kannst nur einmal heiraten!";
+			hint "Du kannst nur einmal heiraten... DU FREMDGEHER DU!!!!";
+			[[0,format["== TRATSCH-UND-KLATSCH =="]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			[[0,format["%1 ist bereits verheiratet und möchte Fremdgehen...",profileName]],nil,false] spawn life_fnc_MP;
+		};
+	};
+	
+	case (_item == "presseformular"):
+	{
+		if(playerSide != civilian) exitWith {hint "Nur Zivilisten können das Presseformular ausfüllen!"};
+		if([false,_item,1] call life_fnc_handleInv) then {
+			license_civ_presse = true;
+			hint parseText format["Du bist nun offiziell als Presse eingetragen.<br/><br/>Solltest du ins Gefängnis einwandern oder Personen überfallen, wird dir dieser Ausweis entzogen!"];
 		};
 	};
 	

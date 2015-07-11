@@ -32,6 +32,6 @@ switch(__GETC__(life_mediclevel)) do
 };
 
 [] call life_fnc_spawnMenu;
-[] execVM "core\welcomemedic.sqf";
+[] execVM "core\willkommen_.sqf";
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
 waitUntil{isNull (findDisplay 38500)}; //Wait for the spawn selection to be done.
