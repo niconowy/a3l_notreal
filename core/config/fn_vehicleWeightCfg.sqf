@@ -116,7 +116,7 @@ switch (_className) do
 	case "cl3_458_grey": {15};
 	case "cl3_458_gold": {15};
 	case "cl3_458_burgundy": {15};
-	case "cl3_458_black",520000]
+	case "cl3_458_black": {15};
 	
 	
 	case "ALFR_GeK_Volvo_FH16_2012": {350};
