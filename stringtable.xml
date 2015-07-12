@@ -1577,34 +1577,34 @@
 			<Original>Eisenschmelzer</Original>
 		</Key>
 		<Key ID="STR_License_Sand">
-			<Original>Glasbläser</Original>
+			<Original>Glasbläser/In</Original>
 		</Key>
 		<Key ID="STR_License_Salt">
-			<Original>Salzverfeinerer</Original>
+			<Original>Salzverfeinerer/In</Original>
 		</Key>
 		<Key ID="STR_License_Cocaine">
-			<Original>Kokainchemikant</Original>
+			<Original>Kokainchemiker/In</Original>
 		</Key>
 		<Key ID="STR_License_Marijuana">
-			<Original>Marihuanatrockner</Original>
+			<Original>Marihuanatrockner/In</Original>
 		</Key>
 		<Key ID="STR_License_Cement">
-			<Original>Bauarbeiter</Original>
+			<Original>Bauarbeiter/In</Original>
 		</Key>
 		<Key ID="STR_License_Home">
 			<Original>Eigentumsurkunde</Original>
 		</Key>
 		<Key ID="STR_License_Schwarzpulver">
-			<Original>Pyrotechniker</Original>
+			<Original>Pyrotechniker/In</Original>
 		</Key>
 		<Key ID="STR_License_Elektriker">
-			<Original>Elektriker</Original>
+			<Original>Elektriker/In</Original>
 		</Key>
 		<Key ID="STR_License_Schreiner">
-			<Original>Schreiner</Original>
+			<Original>Schreiner/In</Original>
 		</Key>
 		<Key ID="STR_License_Grillmeister">
-			<Original>Grillmeister</Original>
+			<Original>Grillmeister/In</Original>
 		</Key>
 		<Key ID="STR_License_Presse">
 			<Original>Presseausweis</Original>
