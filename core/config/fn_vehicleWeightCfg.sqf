@@ -17,20 +17,20 @@ switch (_className) do
 	case "A3L_Jetski": {5};
 	
 	// cars
-	case "A3L_Veyron": {25};
-	case "A3L_Veyron_red": {25};
-	case "A3L_Veyron_black": {25};
-	case "A3L_Veyron_white": {25};
-	case "A3L_Veyron_orange": {25};
+	case "A3L_Veyron": {15};
+	case "A3L_Veyron_red": {15};
+	case "A3L_Veyron_black": {15};
+	case "A3L_Veyron_white": {15};
+	case "A3L_Veyron_orange": {15};
 
-	case "S_Rangerover_Black": {25};
-	case "S_Rangerover_Red": {25};
-	case "S_Rangerover_Blue": {25};
-	case "S_Rangerover_Green": {25};
-	case "S_Rangerover_Purple": {25};
-	case "S_Rangerover_Grey": {25};
-	case "S_Rangerover_Orange": {25};
-	case "S_Rangerover_White": {25};
+	case "S_Rangerover_Black": {45};
+	case "S_Rangerover_Red": {45};
+	case "S_Rangerover_Blue": {45};
+	case "S_Rangerover_Green": {45};
+	case "S_Rangerover_Purple": {45};
+	case "S_Rangerover_Grey": {45};
+	case "S_Rangerover_Orange": {45};
+	case "S_Rangerover_White": {45};
 	
 	case "A3L_RX7_Blue": {25};
 	case "A3L_RX7_Red": {25};
@@ -49,10 +49,74 @@ switch (_className) do
 	case "DAR_M3CivWhite": {25};
 	case "DAR_M3CivGrey": {25};
 	
-	case "ALFR_GeK_Panamera": {25};
-	case "wirk_cayenne": {25};
+	case "ALFR_GeK_Panamera": {15};
+	case "wirk_cayenne": {45};
 	
-	case "ALFR_GeK_MF1": {25};
+	case "ALFR_GeK_MF1": {15};
+	//Lamborghini
+	case "cl3_reventon_white": {15};
+	case "cl3_reventon_purple": {15};
+	case "cl3_reventon_navy_blue": {15};
+	case "cl3_reventon_lime": {15};
+	case "cl3_reventon_light_yellow": {15};
+	case "cl3_reventon_light_blue": {15};
+	case "cl3_reventon_grey": {15};
+	case "cl3_reventon_gold": {15};
+	case "cl3_reventon_burgundy": {15};
+	case "cl3_reventon_black": {15};
+	case "cl3_murcielago_white": {15};
+	case "cl3_murcielago_purple": {15};
+	case "cl3_murcielago_navy_blue": {15};
+	case "cl3_murcielago_lime": {15};
+	case "cl3_murcielago_light_yellow": {15};
+	case "cl3_murcielago_light_blue": {15};
+	case "cl3_murcielago_grey": {15};
+	case "cl3_murcielago_gold": {15};
+	case "cl3_murcielago_burgundy": {15};
+	case "cl3_murcielago_black": {15};
+	case "cl3_lamborghini_gt1_white": {15};
+	case "cl3_lamborghini_gt1_purple": {15};
+	case "cl3_lamborghini_gt1_navy_blue": {15};
+	case "cl3_lamborghini_gt1_lime": {15};
+	case "cl3_lamborghini_gt1_light_yellow": {15};
+	case "cl3_lamborghini_gt1_light_blue": {15};
+	case "cl3_lamborghini_gt1_grey": {15};
+	case "cl3_lamborghini_gt1_gold": {15};
+	case "cl3_lamborghini_gt1_burgundy": {15};
+	case "cl3_lamborghini_gt1_black": {15};
+	//Aston Martin
+	case "cl3_dbs_volante_white": {15};
+	case "cl3_dbs_volante_purple": {15};
+	case "cl3_dbs_volante_navy_blue": {15};
+	case "cl3_dbs_volante_lime": {15};
+	case "cl3_dbs_volante_light_yellow": {15};
+	case "cl3_dbs_volante_light_blue": {15};
+	case "cl3_dbs_volante_grey": {15};
+	case "cl3_dbs_volante_gold": {15};
+	case "cl3_dbs_volante_burgundy": {15};
+	case "cl3_dbs_volante_black": {15};
+	//Audi R8
+	case "cl3_r8_spyder_white": {15};
+	case "cl3_r8_spyder_purple": {15};
+	case "cl3_r8_spyder_navy_blue": {15};
+	case "cl3_r8_spyder_lime": {15};
+	case "cl3_r8_spyder_light_yellow": {15};
+	case "cl3_r8_spyder_light_blue": {15};
+	case "cl3_r8_spyder_grey": {15};
+	case "cl3_r8_spyder_gold": {15};
+	case "cl3_r8_spyder_burgundy": {15};
+	case "cl3_r8_spyder_black": {15};
+	//Ferrari
+	case "cl3_458_white": {15};
+	case "cl3_458_purple": {15};
+	case "cl3_458_navy_blue": {15};
+	case "cl3_458_lime": {15};
+	case "cl3_458_light_yellow": {15};
+	case "cl3_458_light_blue": {15};
+	case "cl3_458_grey": {15};
+	case "cl3_458_gold": {15};
+	case "cl3_458_burgundy": {15};
+	case "cl3_458_black",520000]
 	
 	
 	case "ALFR_GeK_Volvo_FH16_2012": {350};
@@ -81,34 +145,33 @@ switch (_className) do
 	
 	case "A3L_CVPILBFD": {25};
 	
-	case "A3L_CVPIUC": {25};
-	case "A3L_CVPIUCBlack": {25};
-	case "A3L_CVPIUCWhite": {25};
-	case "A3L_CVPIUCGrey": {25};
-	case "A3L_CVPIUCRed": {25};
-	case "A3L_CVPIUCPink": {25};
-	case "A3L_CVPIUCBlue": {25};
+	case "A3L_CVPIUC": {45};
+	case "A3L_CVPIUCBlack": {45};
+	case "A3L_CVPIUCWhite": {45};
+	case "A3L_CVPIUCGrey": {45};
+	case "A3L_CVPIUCRed": {45};
+	case "A3L_CVPIUCPink": {45};
+	case "A3L_CVPIUCBlue": {45};
 	
-	case "Jonzie_Mini_Cooper": {25};
+	case "Jonzie_Mini_Cooper": {15};
 
-	case "S_McLarenP1_Black": {25};
-	case "S_McLarenP1_Blue": {25};
-	case "S_McLarenP1_Orange": {25};
-	case "S_McLarenP1_White": {25};
-	case "S_McLarenP1_Yellow": {25};
-	case "S_McLarenP1_Silver": {25};
+	case "S_McLarenP1_Black": {15};
+	case "S_McLarenP1_Blue": {15};
+	case "S_McLarenP1_Orange": {15};
+	case "S_McLarenP1_White": {15};
+	case "S_McLarenP1_Yellow": {15};
+	case "S_McLarenP1_Silver": {15};
 	
-	case "S_PorscheRS_Black": {25};
-	case "S_PorscheRS_Yellow": {25};
-	case "S_PorscheRS_White": {25};
+	case "S_PorscheRS_Black": {15};
+	case "S_PorscheRS_Yellow": {15};
+	case "S_PorscheRS_White": {15};
 	
-	case "IVORY_REV": {25};
-	case "IVORY_R8SPYDER": {25};
-	case "IVORY_R8": {25};
-	case "IVORY_PRIUS": {25};
-	case "A3L_M3": {25};
-	case "A3L_EvoXFPBLBSO": {25};
-	case "A3L_EvoXFPBLBPD": {25};
+	case "IVORY_REV": {15};
+	case "IVORY_R8SPYDER": {15};
+	case "IVORY_R8": {15};
+	case "IVORY_PRIUS": {15};
+	case "A3L_EvoXFPBLBSO": {45};
+	case "A3L_EvoXFPBLBPD": {45};
 
 
 	case "A3L_GrandCaravanUC": {25};
@@ -116,32 +179,32 @@ switch (_className) do
 	
 	case "A3L_Bus": {30};
 	
-	case "A3L_TaurusFPBLBPD": {25};
-	case "A3L_TaurusFPBLBCSO": {25};
-	case "A3L_TaurusFPBPD": {25};
-	case "A3L_TaurusFPBPDGM": {25};
-	case "A3L_TaurusFPBCSO": {25};
-	case "A3L_TaurusUCBlack": {25};
-	case "A3L_TaurusUCGrey": {25};
-	case "A3L_TaurusUCWhite": {25};
-	case "A3L_TaurusUCBlue": {25};
-	case "A3L_TaurusUCRed": {25};
+	case "A3L_TaurusFPBLBPD": {45};
+	case "A3L_TaurusFPBLBCSO": {45};
+	case "A3L_TaurusFPBPD": {45};
+	case "A3L_TaurusFPBPDGM": {45};
+	case "A3L_TaurusFPBCSO": {45};
+	case "A3L_TaurusUCBlack": {45};
+	case "A3L_TaurusUCGrey": {45};
+	case "A3L_TaurusUCWhite": {45};
+	case "A3L_TaurusUCBlue": {45};
+	case "A3L_TaurusUCRed": {45};
 	
-	case "A3L_CVPIFPBPD": {25};
-	case "A3L_CVPIFPBCSO": {25};
-	case "A3L_CVPIFPBFG": {25};
-	case "A3L_CVPIFPBLBPD": {25};
-	case "A3L_CVPIFPBLBFG": {25};
-	case "A3L_CVPIFPBLBCSO": {25};
-	case "A3L_CVPIFPBLBSP": {25};
-	case "A3L_CVPIFPBLBSP2": {25};
+	case "A3L_CVPIFPBPD": {45};
+	case "A3L_CVPIFPBCSO": {45};
+	case "A3L_CVPIFPBFG": {45};
+	case "A3L_CVPIFPBLBPD": {45};
+	case "A3L_CVPIFPBLBFG": {45};
+	case "A3L_CVPIFPBLBCSO": {45};
+	case "A3L_CVPIFPBLBSP": {45};
+	case "A3L_CVPIFPBLBSP2": {45};
 
 	case "A3L_TahoeUCPB": {25};
 	case "A3L_TahoeUC": {25};
 	case "A3L_TahoeUCGMPB": {25};
 	case "A3L_TahoeCSOLBPB": {25};
 	
-	case "A3L_jailBus": {25};
+	case "A3L_jailBus": {125};
 	case "A3L_SchoolBus": {25};
 	
 	
@@ -153,19 +216,14 @@ switch (_className) do
 	case "A3L_Laddertruck": {25};
 	
 	case "A3L_Karts": {5};	
-	case "A3L_Towtruck": {50};
+	case "A3L_Towtruck": {75};
 	case "M1030": {25};
 
-	case "A3L_Escort": {25};
-	case "A3L_EscortTaxi": {25};
-	case "A3L_EscortBlue": {25};
-	case "A3L_EscortWhite": {25};
-	case "A3L_EscortPink": {25};
 	
-	case "A3L_PuntoRed": {35};
-	case "A3L_PuntoBlack": {35};
-	case "A3L_PuntoWhite": {35};
-	case "A3L_PuntoGrey": {35};
+	case "A3L_PuntoRed": {25};
+	case "A3L_PuntoBlack": {25};
+	case "A3L_PuntoWhite": {25};
+	case "A3L_PuntoGrey": {25};
 	
 	case "A3L_FordKaBlue": {35};
 	case "A3L_FordKaRed": {35};
@@ -173,17 +231,12 @@ switch (_className) do
 	case "A3L_FordKaWhite": {35};
 	case "A3L_FordKaGrey": {35};
 	
-	case "A3L_RegalBlack": {35};
-	case "A3L_RegalBlue": {35};
-	case "A3L_RegalOrange": {35};
-	case "A3L_RegalRed": {35};
-	case "A3L_RegalWhite": {35};
 	
-	case "A3L_JeepWhiteBlack": {35};
-	case "A3L_JeepGreenBlack": {35};
-	case "A3L_JeepRedTan": {35};
-	case "A3L_JeepRedBlack": {35};
-	case "A3L_JeepGrayBlack": {35};
+	case "A3L_JeepWhiteBlack": {45};
+	case "A3L_JeepGreenBlack": {45};
+	case "A3L_JeepRedTan": {45};
+	case "A3L_JeepRedBlack": {45};
+	case "A3L_JeepGrayBlack": {45};
 	
 	case "A3L_SuburbanWhite": {45};
 	case "A3L_SuburbanBlue": {45};
@@ -192,35 +245,35 @@ switch (_className) do
 	case "A3L_SuburbanGrey": {45};
 	case "A3L_SuburbanOrange": {45};
 	
-	case "A3L_TahoeWhite": {45};
-	case "A3L_TahoeRed": {45};
-	case "A3L_TahoeBlue": {45};
-	case "dar_tahoeems": {45};
+	case "A3L_TahoeWhite": {35};
+	case "A3L_TahoeRed": {35};
+	case "A3L_TahoeBlue": {35};
+	case "dar_tahoeems": {35};
 	
-	case "A3L_Camaro": {55};
+	case "A3L_Camaro": {15};
 	
-	case "A3L_Taurus": {45};
-	case "A3L_TaurusBlack": {45};
-	case "A3L_TaurusBlue": {45};
-	case "A3L_TaurusRed": {45};
-	case "A3L_TaurusBlue": {45};
-	case "A3L_TaurusWhite": {45};
+	case "A3L_Taurus": {35};
+	case "A3L_TaurusBlack": {35};
+	case "A3L_TaurusBlue": {35};
+	case "A3L_TaurusRed": {35};
+	case "A3L_TaurusBlue": {35};
+	case "A3L_TaurusWhite": {35};
 	
-	case "A3L_Challenger": {45};
-	case "A3L_ChallengerGreen": {45};
-	case "A3L_ChallengerRed": {45};
-	case "A3L_ChallengerWhite": {45};
-	case "A3L_ChallengerBlack": {45};
-	case "A3L_ChallengerBlue": {45};
+	case "A3L_Challenger": {25};
+	case "A3L_ChallengerGreen": {25};
+	case "A3L_ChallengerRed": {25};
+	case "A3L_ChallengerWhite": {25};
+	case "A3L_ChallengerBlack": {25};
+	case "A3L_ChallengerBlue": {25};
 	
-	case "A3L_ChargerBlack": {45};
-	case "A3L_ChargerWhit": {45};
-	case "A3L_ChargerCstm": {45};
+	case "A3L_ChargerBlack": {25};
+	case "A3L_ChargerWhit": {25};
+	case "A3L_ChargerCstm": {25};
 	
-	case "A3L_VolksWagenGolfGTired": {35};
-	case "A3L_VolksWagenGolfGTiblack": {35};
-	case "A3L_VolksWagenGolfGTiblue": {35};
-    case "A3L_VolksWagenGolfGTiwhite": {35};
+	case "A3L_VolksWagenGolfGTired": {15};
+	case "A3L_VolksWagenGolfGTiblack": {15};
+	case "A3L_VolksWagenGolfGTiblue": {15};
+    case "A3L_VolksWagenGolfGTiwhite": {15};
 	
 	case "A3L_AMC": {35};
 	case "A3L_AMXRed": {35};
@@ -244,9 +297,9 @@ switch (_className) do
 	case "A3L_Cooper_concept_red": {25};
 	case "A3L_Cooper_concept_white": {25};
 	
-	case "A3L_Ferrari458black": {25};
-	case "A3L_Ferrari458white": {25};
-	case "A3L_Ferrari458blue": {25};
+	case "A3L_Ferrari458black": {15};
+	case "A3L_Ferrari458white": {15};
+	case "A3L_Ferrari458blue": {15};
 	
 	case "A3L_GrandCaravan": {25};
 	case "A3L_GrandCaravanBlk": {25};
@@ -267,15 +320,15 @@ switch (_className) do
 	case "BMW_M5Red": {25};
 	case "BMW_M5Blue": {25};
 
-	case "A3L_Veyron": {25};
-	case "A3L_Veyron_red": {25};
-	case "A3L_Veyron_black": {25};
-	case "A3L_Veyron_white": {25};
-	case "A3L_Veyron_orange": {25};
+	case "A3L_Veyron": {15};
+	case "A3L_Veyron_red": {15};
+	case "A3L_Veyron_black": {15};
+	case "A3L_Veyron_white": {15};
+	case "A3L_Veyron_orange": {15};
 	
-	case "A3L_Atom": {25};
+	case "A3L_Atom": {15};
 
-	case "Jonzie_Mini_Cooper_R_spec": {25};
+	case "Jonzie_Mini_Cooper_R_spec": {15};
 	
 	case A3L_CVLac: {70};
 

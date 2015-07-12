@@ -467,11 +467,6 @@ switch (_shop) do
 			["A3L_PuntoWhite",12000],
 			["A3L_PuntoGrey",12000],
 			
-			["A3L_RegalBlack",13000],
-			["A3L_RegalBlue",13000],
-			["A3L_RegalOrange",13000],
-			["A3L_RegalRed",13000],
-			["A3L_RegalWhite",13000],
 			
 			//["A3L_JeepWhiteBlack",13000], Rücklichter kaputt
 			//["A3L_JeepGreenBlack",13000], Rücklichter kaputt
