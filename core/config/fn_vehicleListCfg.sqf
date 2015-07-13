@@ -1409,7 +1409,6 @@ switch (_shop) do
 		_return =
 		[
 			["C_Heli_Light_01_civil_F",800000],
-			["EC635_SAR",1500000],
 			["GNT_C185F",1000000],
 			["GNT_C185",1000000],
 			["ivory_b206",1280000],
@@ -1428,6 +1427,7 @@ switch (_shop) do
 			["ivory_b206_police",100000],
 			["B_Heli_Light_01_F",100000],
 			["EC635_Unarmed_BW",85000],
+			["EC635_SAR",85000],
 			//["C_Heli_Light_01_civil_F",100000], M900
 			//["O_Heli_Light_02_unarmed_F",175000], Orca
 			["IVORY_BELL512_POLICE",185000],
