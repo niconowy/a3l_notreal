@@ -261,7 +261,6 @@ life_licenses =
 	["license_civ_sand","civ"],
 	["license_civ_salt","civ"],
 	["license_civ_cement","civ"],
-	["license_civ_schwarzpulver","civ"],
 	["license_civ_elektriker","civ"],
 	["license_civ_grillmeister","civ"],
 	["license_civ_schreiner","civ"],

@@ -40,7 +40,6 @@ switch (_mode) do
 			case "cement": {_var = "license_civ_cement"};
 			case "mair": {_var = "license_med_air"};
 			case "home": {_var = "license_civ_home"};
-			case "schwarzpulver": {_var = "license_civ_schwarzpulver"};
 			case "elektriker": {_var = "license_civ_elektriker"};
 			case "grillmeister": {_var = "license_civ_grillmeister"};
 			case "schreiner": {_var = "license_civ_schreiner"};
@@ -77,7 +76,6 @@ switch (_mode) do
 			case "license_civ_cement": {_var = "cement"};
 			case "license_med_air": {_var = "mair"};
 			case "license_civ_home": {_var = "home"};
-			case "license_civ_schwarzpulver": {_var = "schwarzpulver"};
 			case "license_civ_elektriker": {_var = "elektriker"};
 			case "license_civ_grillmeister": {_var = "grillmeister"};
 			case "license_civ_schreiner": {_var = "schreiner"};

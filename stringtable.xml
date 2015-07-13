@@ -1594,9 +1594,6 @@
 		<Key ID="STR_License_Home">
 			<Original>Eigentumsurkunde</Original>
 		</Key>
-		<Key ID="STR_License_Schwarzpulver">
-			<Original>Pyrotechniker/In</Original>
-		</Key>
 		<Key ID="STR_License_Elektriker">
 			<Original>Elektriker/In</Original>
 		</Key>
