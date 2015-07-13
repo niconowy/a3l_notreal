@@ -31,7 +31,7 @@ switch (_filter) do
 			["fire_uni1",nil,1000],
 			//["emsoff_uni",nil,1000],
 			//["emt_Uni1",nil, 1000],
-			//["emt_Uni3",nil, 1000],
+			["emt_Uni3",nil, 1000],
 			["U_O_Wetsuit",nil,1000],
 			["A3L_MotorUniM",nil,1000]
 		
