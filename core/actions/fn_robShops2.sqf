@@ -78,6 +78,7 @@ if(_rip) then
 		[[1,"Tankstelle %1: Der Täter ist geflohen!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		5 cutText ["","PLAIN"];
 		_rip = false;
+		deleteMarker "Marker200";
 	};
 	
 	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"};
