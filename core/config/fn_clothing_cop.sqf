@@ -74,7 +74,7 @@ switch (_filter) do
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
 		_ret pushBack ["H_RacingHelmet_1_black_F","Motorradhelm",250];
 		_ret pushBack ["Campaign_Hat_Light","Sheriff Hut",350];
-		_ret pushBack ["AM_PatrolHat","lvpd Hut (weiss)",350];
+		_ret pushBack ["AM_PatrolHat","LVPD Hut (weiss)",350];
 	};
 	
 	//Glasses
@@ -122,7 +122,7 @@ switch (_filter) do
 		_ret pushBack ["A3L_policevest2","DOJ",325];
 		//_ret pushBack ["A3L_policevest1","FBI",150];
 		
-		_ret pushBack ["A3L_sheriffvest2","lvpd",500];
+		_ret pushBack ["A3L_sheriffvest2","LVPD",500];
 		_ret pushBack ["A3L_sheriffvest1","Sheriff",500];
 		//_ret pushBack ["SERTvest1","Sheriff Weste",500];
 		
