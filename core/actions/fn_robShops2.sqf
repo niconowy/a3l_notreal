@@ -62,20 +62,20 @@ if(_rip) then
     if(life_istazed) exitwith {
 		hint "Der Raub ist fehlgeschlagen du wurdest getazert!";
 		5 cutText ["","PLAIN"];
-		[[1,"Tankstelle %1: Der Täter wurde erfolgreich gestellt!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		[[1,"Tankstelle %1: Der Täter wurde erfolgreich gestellt!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		deleteMarker "Marker200"; // by ehno delete maker
 		_rip = false;
 	};
 	if!(alive _robber) exitWith { 
 		_rip = false;
 		5 cutText ["","PLAIN"];
-		[[1,"Tankstelle %1: Der Täter ist gestorben!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		[[1,"Tankstelle %1: Der Täter ist gestorben!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		deleteMarker "Marker200";
 	};
     
 	if(_robber distance _shop > 5) exitWith {
 		hint "Du warst zu weit weg! - Der Kassierer hat sein Geld in Sicherheit gebracht.";
-		[[1,"Tankstelle %1: Der Täter ist geflohen!"],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+		[[1,"Tankstelle %1: Der Täter ist geflohen!", _shop]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 		5 cutText ["","PLAIN"];
 		_rip = false;
 	};
