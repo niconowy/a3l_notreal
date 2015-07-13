@@ -24,13 +24,14 @@ if(playerSide == west) then
 		case 2: { _rank = "Officer";};	
 		case 3: { _rank = "Detective";};	
 		case 4: { _rank = "Sergeant";};
-		case 5: { _rank = "Lieutenant";};
-		case 6: { _rank = "Captain";};
-		case 7: { _rank = "Deputy Inspector";};
-		case 8: { _rank = "Inspector";};
-		case 9: { _rank = "Major";};
-		case 10: { _rank = "Assistant Chief";};
-		case 11: { _rank = "Chief of Department";};
+		case 5: { _rank = "First Sergeant";};
+		case 6: { _rank = "Lieutenant";};
+		case 7: { _rank = "First Lieutenant";};
+		case 8: { _rank = "Captain";};
+		case 9: { _rank = "Police Commander";};
+		case 10: { _rank = "Deputy Chief";};
+		case 11: { _rank = "Assistant Chief";};
+		case 12: { _rank = "Chief of Police";};
 	};
 	
 	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5'>Polizei</t>", name player, _rank];
