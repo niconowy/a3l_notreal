@@ -1427,6 +1427,7 @@ switch (_shop) do
 		[
 			["ivory_b206_police",100000],
 			["B_Heli_Light_01_F",100000],
+			["EC635_Unarmed_BW",85000],
 			//["C_Heli_Light_01_civil_F",100000], M900
 			//["O_Heli_Light_02_unarmed_F",175000], Orca
 			["IVORY_BELL512_POLICE",185000],

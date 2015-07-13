@@ -34,19 +34,19 @@ switch (_filter) do
 		_ret pushBack ["Sheriff_rang10",nil,300];
 		_ret pushBack ["Sheriff_rang11",nil,300];
 		_ret pushBack ["Sheriff_rang12",nil,300];
-		_ret pushBack ["lspd_rang1",nil,300];
-		_ret pushBack ["lspd_rang2",nil,300];
-		_ret pushBack ["lspd_rang3",nil,300];
-		_ret pushBack ["lspd_rang4",nil,300];
-		_ret pushBack ["lspd_rang5",nil,300];
-		_ret pushBack ["lspd_rang6",nil,300];
-		_ret pushBack ["lspd_rang7",nil,300];
-		_ret pushBack ["lspd_rang8",nil,300];
-		_ret pushBack ["lspd_rang9",nil,300];
-		_ret pushBack ["lspd_rang10",nil,300];
-		_ret pushBack ["lspd_rang11",nil,300];
-		_ret pushBack ["lspd_rang12",nil,300];
-		//_ret pushBack ["A3L_Police_Uniform","LSPD",450];
+		_ret pushBack ["lvpd_rang1",nil,300];
+		_ret pushBack ["lvpd_rang2",nil,300];
+		_ret pushBack ["lvpd_rang3",nil,300];
+		_ret pushBack ["lvpd_rang4",nil,300];
+		_ret pushBack ["lvpd_rang5",nil,300];
+		_ret pushBack ["lvpd_rang6",nil,300];
+		_ret pushBack ["lvpd_rang7",nil,300];
+		_ret pushBack ["lvpd_rang8",nil,300];
+		_ret pushBack ["lvpd_rang9",nil,300];
+		_ret pushBack ["lvpd_rang10",nil,300];
+		_ret pushBack ["lvpd_rang11",nil,300];
+		_ret pushBack ["lvpd_rang12",nil,300];
+		//_ret pushBack ["A3L_Police_Uniform","lvpd",450];
 		//_ret pushBack ["police_uni3","Recruit",500];
 		//_ret pushBack ["cadet_uni","Rekrut",450];
 		
@@ -74,7 +74,7 @@ switch (_filter) do
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
 		_ret pushBack ["H_RacingHelmet_1_black_F","Motorradhelm",250];
 		_ret pushBack ["Campaign_Hat_Light","Sheriff Hut",350];
-		_ret pushBack ["AM_PatrolHat","LSPD Hut (weiss)",350];
+		_ret pushBack ["AM_PatrolHat","lvpd Hut (weiss)",350];
 	};
 	
 	//Glasses
@@ -122,7 +122,7 @@ switch (_filter) do
 		_ret pushBack ["A3L_policevest2","DOJ",325];
 		//_ret pushBack ["A3L_policevest1","FBI",150];
 		
-		_ret pushBack ["A3L_sheriffvest2","LSPD",500];
+		_ret pushBack ["A3L_sheriffvest2","lvpd",500];
 		_ret pushBack ["A3L_sheriffvest1","Sheriff",500];
 		//_ret pushBack ["SERTvest1","Sheriff Weste",500];
 		
