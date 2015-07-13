@@ -290,6 +290,7 @@ switch (_shop) do
 	case "med_air_hs": {
 		_return = [
 			["ivory_b206_rescue",100000],
+			["EC635_Unarmed_CSAT",125000],
 			["IVORY_BELL512_RESCUE",185000],
 			//["C_Heli_Light_01_civil_F",100000], M900
 			["B_Heli_Light_01_F",100000]
@@ -526,6 +527,7 @@ switch (_shop) do
 			["A3L_Towtruck",35000],
 			["A3L_CVLac",45000],
 			["B_Heli_Light_01_F",100000],
+			["EC635_ADAC",125000],
 			["A3L_TaurusWhite",35000],
 			["A3l_evoxADAC",70000]
 			//["I_Heli_Transport_02_F",100000] Unnötig kein Liftsystem
@@ -1291,6 +1293,12 @@ switch (_shop) do
 			_return pushBack ["DAR_TahoePoliceDet",50000],
 			_return pushBack ["DAR_SWATPolice",85000]
 		};
+		
+		if(__GETC__(life_coplevel) > 4) then
+		{
+			_return pushBack ["DAR_ExplorerPolice",75000],
+			_return pushBack ["DAR_ExplorerPoliceStealth",75000]
+		};
 			
 		if(__GETC__(life_coplevel) > 9) then
 		{	
@@ -1401,6 +1409,7 @@ switch (_shop) do
 		_return =
 		[
 			["C_Heli_Light_01_civil_F",800000],
+			["EC635_SAR",1500000],
 			["GNT_C185F",1000000],
 			["GNT_C185",1000000],
 			["ivory_b206",1280000],
@@ -1437,6 +1446,7 @@ switch (_shop) do
 		[
 			["ivory_b206_police",100000],
 			["B_Heli_Light_01_F",100000],
+			["EC635_Unarmed_BW",85000],
 			//["C_Heli_Light_01_civil_F",100000], M900
 			//["O_Heli_Light_02_unarmed_F",175000], Orca
 			["IVORY_BELL512_POLICE",185000],

@@ -22,6 +22,9 @@ switch (_className) do
 	case "A3L_Veyron_black": {15};
 	case "A3L_Veyron_white": {15};
 	case "A3L_Veyron_orange": {15};
+	
+	case "DAR_ExplorerPoliceStealth": {45};
+	case "DAR_ExplorerPolice": {45};
 
 	case "S_Rangerover_Black": {45};
 	case "S_Rangerover_Red": {45};

@@ -33,6 +33,7 @@ switch (_filter) do
 		_ret pushBack ["Sheriff_rang9",nil,300];
 		_ret pushBack ["Sheriff_rang10",nil,300];
 		_ret pushBack ["Sheriff_rang11",nil,300];
+		_ret pushBack ["Sheriff_rang12",nil,300];
 		_ret pushBack ["lspd_rang1",nil,300];
 		_ret pushBack ["lspd_rang2",nil,300];
 		_ret pushBack ["lspd_rang3",nil,300];
@@ -44,6 +45,7 @@ switch (_filter) do
 		_ret pushBack ["lspd_rang9",nil,300];
 		_ret pushBack ["lspd_rang10",nil,300];
 		_ret pushBack ["lspd_rang11",nil,300];
+		_ret pushBack ["lspd_rang12",nil,300];
 		//_ret pushBack ["A3L_Police_Uniform","LSPD",450];
 		//_ret pushBack ["police_uni3","Recruit",500];
 		//_ret pushBack ["cadet_uni","Rekrut",450];

@@ -34,6 +34,7 @@ switch (_filter) do
 			["FBI_rang7",nil,250],
 			["FBI_rang8",nil,250],
 			["FBI_rang9",nil,250],
+			["FBI_rang10",nil,250],
 			["TRYK_U_B_C02_Tsirt","Schwarze Jeans",450],
 			["KAEL_SUITS_BR_F13","Anzug (Weiss)",17500],
 			["KAEL_SUITS_BR_F4","Anzug (Lila)",17500],

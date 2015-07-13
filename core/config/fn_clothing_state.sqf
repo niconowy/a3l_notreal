@@ -34,7 +34,8 @@ switch (_filter) do
 			["sp_rang8",nil,350],
 			["sp_rang9",nil,350],
 			["sp_rang10",nil,350],
-			["sp_rang11",nil,350]
+			["sp_rang11",nil,350],
+			["sp_rang12",nil,350]
 			//["doj_uni","State Police",750]
 		];
 	};
