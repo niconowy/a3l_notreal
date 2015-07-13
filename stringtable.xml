@@ -882,6 +882,9 @@
 		<Key ID="STR_NOTF_CannotImpoundOwn">
 			<Original>Du kannst dein eigenes Fahrzeug nicht beschlagnahmen!</Original>
 		</Key>
+		<Key ID="STR_NOTF_Interact2Fast">
+			<Original>Nicht so schnell...</Original>
+		</Key>
 	</Package>
 	<Package name="Jail_Strings">
 		<Key ID="STR_Jail_Warn">
