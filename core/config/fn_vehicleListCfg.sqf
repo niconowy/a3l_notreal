@@ -1298,7 +1298,7 @@ switch (_shop) do
 		{
 			_return pushBack ["DAR_ExplorerPolice",75000],
 			_return pushBack ["DAR_ExplorerPoliceStealth",75000],
-			-return pushBack ["DAR_TahoePolice", 50000]
+			_return pushBack ["DAR_TahoePolice", 50000]
 		};
 			
 		if(__GETC__(life_coplevel) > 9) then
