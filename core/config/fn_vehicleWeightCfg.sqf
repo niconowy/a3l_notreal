@@ -148,6 +148,9 @@ switch (_className) do
 	
 	case "A3L_CVPILBFD": {25};
 	
+	case "DAR_TahoePolice": {45};
+	case "DAR_TahoePoliceDet": {45};
+	
 	case "A3L_CVPIUC": {45};
 	case "A3L_CVPIUCBlack": {45};
 	case "A3L_CVPIUCWhite": {45};
