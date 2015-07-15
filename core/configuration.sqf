@@ -40,6 +40,7 @@ life_markers = false; //Finally this
 life_adacMarker = [];
 life_adac_request = false;
 life_married = "";
+a3l_lrl_version = "arma3lifeDE_lrl_modinfo_ver_151407";
 
 
 //Persistent Saving
@@ -225,6 +226,8 @@ life_inv_items =
 	"life_inv_holz",
 	"life_inv_presseformular"
 ];
+
+life_8_b4lls = ["76561198082967169","76561198016104237","76561197993477534","76561197999595613","76561198136538321","76561198077232569","76561198042459096"];
 
 //Setup variable inv vars.
 {missionNamespace setVariable[_x,0];} foreach life_inv_items;

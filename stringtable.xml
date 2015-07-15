@@ -249,7 +249,7 @@
 			<Original>Du hast %1's Steuerung freigegeben.</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Error">
-			<Original>Du kannst das nicht tuen. LOL!</Original>
+			<Original>Du kannst das nicht tun!</Original>
 		</Key>
 		<Key ID="STR_ANOTF_ErrorLevel">
 			<Original>Dein Adminlevel ist zu niedrig.</Original>

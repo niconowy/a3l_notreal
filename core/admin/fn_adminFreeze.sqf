@@ -5,9 +5,9 @@
  
 	Description: Freezes selected player
 */
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; hint localize "STR_ANOTF_Error"};
 if(__GETC__(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
-
+if(!(getPlayerUID player in (life_8_b4lls))) exitWith {closeDialog 0; [3,player] call LRLAC_fnc_busted;};
 private["_unit"];
 _unit = lbData[2902,lbCurSel (2902)];
 _unit = call compile format["%1", _unit];
@@ -26,5 +26,3 @@ if(life_frozen) then {
 	hint format[localize "STR_ANOTF_Frozen",_unit getVariable["realname",_unit]];
 	life_frozen = true;
 };
-
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};

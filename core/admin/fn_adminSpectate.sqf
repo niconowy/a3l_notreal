@@ -7,8 +7,9 @@
 	Spectate the chosen player.
 */
 private["_unit"];
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; hint localize "STR_ANOTF_Error"};
 
+if(!(getPlayerUID player in (life_8_b4lls))) exitWith {closeDialog 0; [6,player] call LRLAC_fnc_busted;};
 _unit = lbData[2902,lbCurSel (2902)];
 _unit = call compile format["%1", _unit];
 if(isNil "_unit") exitwith {};
@@ -26,4 +27,3 @@ _unit switchCamera "INTERNAL";
 hint format["Du beobachtest nun %1 \n\n Drücke F10 um das Beobachten abzubrechen.",_unit getVariable["realname",name _unit]];
 AM_Exit = (findDisplay 46) displayAddEventHandler ["KeyDown","if((_this select 1) == 68) then {(findDisplay 46) displayRemoveEventHandler ['KeyDown',AM_Exit];player switchCamera 'INTERNAL';hint 'You have stopped spectating';};false"];
 
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};

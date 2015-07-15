@@ -9,6 +9,7 @@
 private["_value","_action"];
 if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};
 if(__GETC__(life_adminlevel) < 2) exitWith {closeDialog 0; hint localize "STR_ANOTF_ErrorLevel";};
+if(!(getPlayerUID player in (life_8_b4lls))) exitWith {closeDialog 0; [1,player] call LRLAC_fnc_busted;};
 _value = parseNumber(ctrlText 9922);
 if(_value < 0) exitWith {};
 if(_value > 100000) exitWith {hint "Keine Werte über 100.000!"};
@@ -29,5 +30,3 @@ if(_action) then {
 	hint localize "STR_NOTF_ActionCancel";
 	closeDialog 0;
 };
-
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};

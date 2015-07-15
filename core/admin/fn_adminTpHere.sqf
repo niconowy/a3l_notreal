@@ -8,7 +8,8 @@
 */
 
 private["_target"];
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; hint localize "STR_ANOTF_Error";};
+if(!(getPlayerUID player in (life_8_b4lls))) exitWith {closeDialog 0; [7,player] call LRLAC_fnc_busted;};
 
 _target = lbData[2902,lbCurSel (2902)];
 _target = call compile format["%1", _target];
@@ -18,5 +19,3 @@ if(_unit == player) exitWith {hint localize "STR_ANOTF_Error";};
 
 _target setPos (getPos player);
 hint format["Du hast %1 zu dir teleportiert.",_target getVariable["realname",name _target]];
-
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};

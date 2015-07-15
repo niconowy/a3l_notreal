@@ -6,8 +6,8 @@
 	Description:
 	Teleport to chosen position.
 */
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};
-
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; hint localize "STR_ANOTF_Error";};
+if(!(getPlayerUID player in (life_8_b4lls))) exitWith {closeDialog 0; [7,player] call LRLAC_fnc_busted;};
 [] spawn {
   while {dialog} do {
    closeDialog 0;
@@ -20,9 +20,7 @@ tele={
 	(vehicle player) setpos [_pos select 0, _pos select 1, 0];
 	onMapSingleClick "";
 	openMap [false, false];
-	hint "You have teleported to your selected position";
+	hint "Du hast dich zur ausgewählten Position teleportiert.";
 };
 openMap [true, false];
 onMapSingleClick "[_pos select 0, _pos select 1, _pos select 2] call tele";
-
-if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; [] call AC_fnc_checkThatShit;};

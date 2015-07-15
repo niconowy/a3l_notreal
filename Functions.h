@@ -30,11 +30,11 @@ class Socket_Reciever
 	};
 };*/
 
-class GetThisOffMe {
-	tag = "AC";
-	class OffMe {
-		file = "getthisoffme";
-		class checkThatShit{};
+class LRL_AC {
+	tag = "LRLAC";
+	class a3ldelrlac {
+		file = "lrl_ac";
+		class busted {};
 	}
 
 };

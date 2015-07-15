@@ -287,6 +287,16 @@ class CfgDebriefing
 		picture = "KIA";
 		pictureColor[] = {0,0.3,0.6,1};
 	};
+	
+	class LRLWrongModVersion
+	{
+		title = "Arma-3-Life.de AntiCheat";
+		subTitle = "Falsche Mod-Version installiert!";
+		description = "Du hast eine veraltete Version der Mods installiert! Bitte erkunde dich in unserem Forum [www.arma-3-life.de] auf Up-Dates und starte ggf. A3Sync um die Mods zu aktualisieren.";
+		pictureBackground = "KIA";
+		picture = "KIA";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
 };
 
 class CfgNotifications
