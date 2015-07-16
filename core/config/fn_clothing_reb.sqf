@@ -22,6 +22,13 @@ switch (_filter) do
 			["TRYK_U_B_BLK_Tshirt","Biker-Jacke (Schwarz,kurz)",6000],
 			["TRYK_U_B_BLKBLK_CombatUniform","Biker-Kleidung (Schwarz)",6000],
 			["TRYK_U_B_BLKBLK_R_CombatUniform","Biker-Kleidung (Schwarz,kurz)",6000],
+			["TRYK_U_B_PCUHsW3",nil,8500],
+			["TRYK_U_B_PCUGs_BLK_R",nil,8500],
+			["TRYK_U_B_PCUGs_OD_R",nil,8500],
+			["TRYK_U_B_PCUGs_gry_R",nil,8500],
+			["TRYK_U_denim_hood_blk",nil,8500],
+			["TRYK_U_B_PCUHsW2",nil,8500],
+			["TRYK_U_B_PCUHsW5",nil,8500],
 			["U_DressTKLocalUni_E_A",nil,500],
 			["U_DressTKLocalUni_E_B",nil,500],
 			["U_DressTKLocalUni_E_C",nil,500],
@@ -163,6 +170,11 @@ switch (_filter) do
 	case 3:
 	{
 		[
+			["TRYK_V_tacv1_BK",nil,12500],
+			["TRYK_V_tacv1_CY",nil,12500],
+			["TRYK_V_tacv1",nil,12500],
+			["TRYK_V_tacSVD_BK",nil,15000],
+			["TRYK_V_tacSVD_OD",nil,15000],
 			["V_HarnessO_brn",nil,7500],
 			["V_BandollierB_cbr",nil,4500],
 			["V_TacVest_khk",nil,12500],

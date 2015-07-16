@@ -19,6 +19,17 @@ switch (_filter) do
 	{
 		[
 			//["A3L_Zombie","Zombie",35000],
+			["TRYK_shirts_DENIM_R",nil,2500],
+			["TRYK_shirts_DENIM_BL",nil,2500],
+			["TRYK_shirts_DENIM_BK",nil,2500],
+			["TRYK_shirts_DENIM_WH",nil,2500],
+			["TRYK_shirts_DENIM_BWH",nil,2500],
+			["TRYK_shirts_DENIM_RED2",nil,2500],
+			["TRYK_shirts_DENIM_WHB",nil,2500],
+			["TRYK_shirts_DENIM_ylb",nil,2500],
+			["TRYK_shirts_DENIM_od",nil,2500],
+			["TRYK_U_B_Denim_T_BG_BK",nil,2500],
+			["TRYK_U_B_BLK_T_BG_WH",nil,2500],
 			["TRYK_U_B_C02_Tsirt","Schwarze Jeans",450],
 			["KAEL_SUITS_BR_F13","Anzug (Weiss)",17500],
 			["KAEL_SUITS_BR_F4","Anzug (Lila)",17500],
@@ -274,6 +285,9 @@ switch (_filter) do
 	case 3:
 	{
 		[
+			["TRYK_V_Bulletproof_BL",nil,10500],
+			["TRYK_V_Bulletproof_BLK",nil,10500],
+			["TRYK_V_Bulletproof",nil,10500],
 			["k_cut_1","Sinister Sons",2500],
 			["k_cut_2","Gold Gunners",2500],
 			["k_cut_3","Sons of Anarchy Mitglied",2500],
