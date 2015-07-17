@@ -5,7 +5,7 @@ class Life_cell_phone {
 	enableSimulation = true;
 	onLoad = "[] spawn life_fnc_cellphone";
 	
-	class controlsBackground {
+	/*class controlsBackground {
 		class dembackground: life_RscPicture
 		{
 			idc = 1200;
@@ -25,7 +25,7 @@ class Life_cell_phone {
 			h = 0.561 * safezoneH;
 		};
 
-};
+	};*/
 	
 	class controls {
 

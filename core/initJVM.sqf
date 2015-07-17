@@ -8,7 +8,7 @@ playsound "1ntr0";
 			["Lebe deinen Traum!"," align = 'center' shadow = '1' size = '0.75'","#FFFFFf"]
 		]
 	] spawn BIS_fnc_typeText2;
-
+/*
 	sleep 8;
 
 	[
@@ -69,6 +69,6 @@ playsound "1ntr0";
 			[" "," align = 'center' shadow = '1' size = '0.5'","#ff0000"]
 		]
 	] spawn BIS_fnc_typeText2;
-
+*/
 	sleep 16;
 };

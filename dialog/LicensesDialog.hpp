@@ -61,7 +61,7 @@ objects[] = { };
         {
             idc = 55129;
 
-            text = "Lizensen"; //--- ToDo: Localize;
+            text = "Lizenzen"; //--- ToDo: Localize;
             x = 26 * GUI_GRID_W + GUI_GRID_X;
             y = 6 * GUI_GRID_H + GUI_GRID_Y;
             w = 5.5 * GUI_GRID_W;

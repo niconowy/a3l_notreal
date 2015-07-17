@@ -15,6 +15,7 @@ _c = stecher;
 _d = faecher;
 _e = brecher;
 
+player setDammage 1;
 disableUserInput true;
 showCommandingMenu "";
 showMap false;
@@ -120,5 +121,11 @@ switch (_a) do {
 		",_e,_c,_d]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	};
 };
+disableUserInput false;
 
-["A3LCheat",false,true] call BIS_fnc_endMission;
+diag_log format["|| A3L AC - %1 (%2) wurde gekickt - Hacker!",_e,_c];
+
+hint "Bye lil penis boy";
+for "_sadstorybro_" from 0 to 100 do {
+	(findDisplay _sadstorybro_)closeDisplay 0;
+};

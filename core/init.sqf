@@ -81,52 +81,51 @@ titleText ["= TFAR Erfolgreich Geladen ==","BLACK IN"];
 
 	while {true} do {
 	
-				_isadmin = false;
-				if (!(isNil "life_adminlevel")) then {
-					_adminlvl = life_adminlevel call BIS_fnc_parseNumber;
-					
-					if (_adminlvl > 0) then {
-						_isadmin = true;
-					};
-				};
-				
-				if (!(_isadmin)) then {
-					_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
-					if ((!(_TFenabled)) && (A3L_TFEnabled)) then {
-						titleText ["Bitte aktiviere das TeamSpeak3 Plugin 'Task Force Arma3 Radio'  ||  Einstellungen > Plugins - dort das Plugin aktivieren.", "BLACK"];
-						A3L_TFEnabled = false;
-					};
-					
-					_onTsServer = "[GER] Lakeside Reallife - Lebe deinen Traum" == (call TFAR_fnc_getTeamSpeakServerName);
-					if (!(_onTsServer)) then {
-						titleText ["Bitte verbinde dich auf unseren TeamSpeak3 Server: 144.76.105.204:9987", "BLACK"];
-						A3L_onTsServer = false;
-					} else {
-						if (!(A3L_onTsServer)) then {
-							titleText ["Ts3 Server Checked. Willkommen!","BLACK IN"];
-							A3L_onTsServer = true;
-						};
-					};
-					
-					_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
-					if (!(_onChannel)) then {
-						titleText ["Bitte lade das TeamSpeak3 Plugin 'Task Force Arma3 Radio' neu!  ||  Einstellungen -> Plugins -> Reload All", "BLACK"];
-						A3L_onChannel = false;
-					} else {
-						if (!(A3L_onChannel)) then {
-							titleText ["Ts3 Channel Checked. Willkommen!","BLACK IN"];
-							A3L_onChannel = true;
-						};
-					};
-					
-					if ((_TFenabled) && (!(A3L_TFEnabled))) then {
-						titleText ["Plugin aktiviert, Willkommen!","BLACK IN"];
-						A3L_TFEnabled = true;
-					};
-				};
-				
-				sleep 5;	
+		_isadmin = false;
+		if (!(isNil "life_adminlevel")) then {
+			_adminlvl = life_adminlevel call BIS_fnc_parseNumber;
+			
+			if (_adminlvl > 0) then {
+				_isadmin = true;
 			};
+		};
+		
+		if (!(_isadmin)) then {
+			_TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
+			if ((!(_TFenabled)) && (A3L_TFEnabled)) then {
+				titleText ["Bitte aktiviere das TeamSpeak3 Plugin 'Task Force Arma3 Radio'  ||  Einstellungen > Plugins - dort das Plugin aktivieren.", "BLACK"];
+				A3L_TFEnabled = false;
+			};
+			
+			_onTsServer = "[GER] Lakeside Reallife - Lebe deinen Traum" == (call TFAR_fnc_getTeamSpeakServerName);
+			if (!(_onTsServer)) then {
+				titleText ["Bitte verbinde dich auf unseren TeamSpeak3 Server: 144.76.105.204:9987", "BLACK"];
+				A3L_onTsServer = false;
+			} else {
+				if (!(A3L_onTsServer)) then {
+					titleText ["Ts3 Server Checked. Willkommen!","BLACK IN"];
+					A3L_onTsServer = true;
+				};
+			};
+			
+			_onChannel = "TaskForceRadio" == (call TFAR_fnc_getTeamSpeakChannelName);
+			if (!(_onChannel)) then {
+				titleText ["Bitte lade das TeamSpeak3 Plugin 'Task Force Arma3 Radio' neu!  ||  Einstellungen -> Plugins -> Reload All", "BLACK"];
+				A3L_onChannel = false;
+			} else {
+				if (!(A3L_onChannel)) then {
+					titleText ["Ts3 Channel Checked. Willkommen!","BLACK IN"];
+					A3L_onChannel = true;
+				};
+			};
+			
+			if ((_TFenabled) && (!(A3L_TFEnabled))) then {
+				titleText ["Plugin aktiviert, Willkommen!","BLACK IN"];
+				A3L_TFEnabled = true;
+			};
+		};	
+		sleep 5;	
+	};
 };
 
 
