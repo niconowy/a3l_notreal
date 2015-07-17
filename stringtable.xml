@@ -917,7 +917,7 @@
 	</Package>
 	<Package name="Civ_Strings">
 		<Key ID="STR_Civ_KnockedOut">
-			<Original>%1 hat dich niedergeschlagen.</Original>
+			<Original>Du wurdest niedergeschlagen.</Original>
 		</Key>
 		<Key ID="STR_Civ_LicenseRemove_1">
 			<Original>Du hast alle deine Fahrzeug-Lizenzen durch fahrlässige Tötung mit einem Fahrzeug verloren.</Original>
