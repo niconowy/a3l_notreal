@@ -160,18 +160,6 @@ switch (_className) do
 	case "A3L_CVPIUCBlue": {45};
 	
 	case "Jonzie_Mini_Cooper": {15};
-	
-	case "critgamin_smart_vert": {15};
-	case "critgamin_smart_orange": {15};
-	case "critgamin_smart_violet": {15};
-	case "critgamin_smart_grise": {15};
-	case "critgamin_smart_rose": {15};
-	case "critgamin_smart_jaune": {15};
-	case "critgamin_smart_rouge": {15};
-	case "critgamin_smart_bleufonce": {15};
-	case "critgamin_smart_bleu": {15};
-	case "critgamin_smart_civ": {15};
-	case "critgamin_smart_noir": {15};
 
 	case "S_McLarenP1_Black": {15};
 	case "S_McLarenP1_Blue": {15};
