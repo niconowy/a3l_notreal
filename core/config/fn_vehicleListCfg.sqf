@@ -441,6 +441,17 @@ switch (_shop) do
 			
 			
 			["Jonzie_Mini_Cooper",2000],
+			["critgamin_smart_vert",5500],
+			["critgamin_smart_orange",5500],
+			["critgamin_smart_violet",5500],
+			["critgamin_smart_grise",5500],
+			["critgamin_smart_rose",5500],
+			["critgamin_smart_jaune",5500],
+			["critgamin_smart_rouge",5500],
+			["critgamin_smart_bleufonce",5500],
+			["critgamin_smart_bleu",5500],
+			["critgamin_smart_civ",5500],
+			["critgamin_smart_noir",5500],
 			
 			//["A3L_Escort",2500], Buggy
 			//["A3L_EscortTaxi",2500], Buggy
