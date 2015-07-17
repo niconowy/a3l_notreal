@@ -40,7 +40,7 @@ life_markers = false; //Finally this
 life_adacMarker = [];
 life_adac_request = false;
 life_married = "";
-a3l_lrl_version = "arma3lifeDE_lrl_modinfo_ver_151407";
+a3l_lrl_version = "arma3lifeDE_lrl_modinfo_ver_151707";
 
 
 //Persistent Saving
