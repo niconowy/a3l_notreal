@@ -153,46 +153,50 @@ if (_zeroing == 0) then {
 };};};};};};};};};};
 */
  
-if (_playerhunger > 90) then {
-                _hungercolor = "#00FF4C";
-                _hungertext = parseText format["Keinen Hunger"];
+ if (_playerhunger == 100) then {
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger100.paa'/>"];
+        } else {
+		if (_playerhunger > 90) then {
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger90.paa'/>"];
         } else {
         if (_playerhunger > 80) then {
-                _hungercolor = "#1AFF00";
-                _hungertext = parseText format["Überhaupt keinen Hunger"];
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger80.paa'/>"];
         } else {
         if (_playerhunger > 70) then {
-                _hungercolor = "#7BFF00";
-                _hungertext = parseText format["Ein Keks wäre gut"];
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger70.paa'/>"];
         } else {
         if (_playerhunger > 60) then {
-                _hungercolor = "#BFFF00";
-                _hungertext = parseText format["Ein paar Kekse wären gut"];
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger60.paa'/>"];
         } else {
         if (_playerhunger > 50) then {
-                _hungercolor = "#EAFF00";
-                _hungertext = parseText format["Habe Hunger"];
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger50.paa'/>"];
         } else {
         if (_playerhunger > 40) then {
-                _hungercolor = "#FFBF00";
-                _hungertext = parseText format["Mein Magen knurrt"];
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger40.paa'/>"];
         } else {
         if (_playerhunger > 30) then {
-                _hungercolor = "#FF8400";
-                _hungertext = parseText format["Muss dringend etwas Essen"];
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger30.paa'/>"];
         } else {
         if (_playerhunger > 20) then {
-                _hungercolor = "#FF4000";
-                _hungertext = parseText format["Habe starkes Sodbrennen"];
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger20.paa'/>"];
         } else {
         if (_playerhunger > 10) then {
-                _hungercolor = "#FF0000";
-                _hungertext = parseText format["Der Hunger tötet mich noch"];
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger10.paa'/>"];
         } else {
         if (_playerhunger == 0) then {
-                _hungercolor = "#590000";
-                _hungertext = parseText format["TOT</t>"];
-};};};};};};};};};};
+                /*_hungercolor = "#00FF4C";*/
+                _hungertext = parseText format["<img image='A3l_client\hungerpics\hunger0.paa'/>"];
+};};};};};};};};};};};
  
 if (_playerthirst > 80) then {
                 _thirstcolor = "#1AFF00";
