@@ -45,10 +45,12 @@ switch (_filter) do
 			["firehat",nil,20],
 			["A3L_medic_helmet",nil,20],
 			["H_MilCap_blue",nil,20],
-			["H_CrewHelmetHeli_B",nil,20],
+			["H_PilotHelmetHeli_B",nil,20],
 			["H_Cap_blu",nil,20],
 			["H_Cap_red",nil,20],
-			["H_RacingHelmet_1_red_F",nil,250]
+			["H_RacingHelmet_1_red_F",nil,250],
+			["H_ALFR_Headset",nil,250],
+			["H_ALFR_Gasmask",nil,500]
 		];
 	};
 	

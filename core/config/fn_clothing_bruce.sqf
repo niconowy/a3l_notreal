@@ -165,7 +165,7 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["Kio_Afro_Hat",Afro,1500],
+			["Kio_Afro_Hat","Afro",1500],
 			["H_ALFR_Dallas_Mask",nil,500],
 			["H_ALFR_Samurai_Mask",nil,500],
 			["H_ALFR_Sheep_Mask",nil,275],
