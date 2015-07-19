@@ -7744,7 +7744,7 @@ class Mission
 		class Item239
 		{
 			position[]={2970.104,109.34869,8451.583};
-			name="oil_1_1";
+			name="oil_2";
 			text="Ölquelle";
 			type="A3L_Field_Green_Icon";
 			colorName="ColorBrown";

@@ -441,7 +441,7 @@ switch (_code) do
 	case 79:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained")) then
+		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
 		};
@@ -451,7 +451,7 @@ switch (_code) do
 	case 76:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained")) then
+		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
 		{
 			[[player,"cl3_dubstepdance"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 		};
@@ -461,7 +461,7 @@ switch (_code) do
 	case 77:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained")) then
+		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
 		{
 			[[player,"cl3_dubsteppop"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 		};
@@ -470,7 +470,7 @@ switch (_code) do
 	case 80:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained")) then
+		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
 		};
@@ -479,7 +479,7 @@ switch (_code) do
 	case 81:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained")) then
+		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
 		};
@@ -488,7 +488,7 @@ switch (_code) do
 	case 75:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained")) then
+		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
 		};
