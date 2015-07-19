@@ -444,6 +444,7 @@ switch(_shop) do
 						["RH_19Rnd_9x19_g18",nil,300],
 						
 						["Radar_Gun","Radarpistole",1000],
+						["SUPER_flash",nil,7500],
 						
 						["Taser_26","Taser",1000],
 						["26_cartridge",nil,50],
