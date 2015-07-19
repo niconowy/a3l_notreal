@@ -299,10 +299,17 @@ switch (_className) do
 	
 	case "charger_st": {25};
 	case "charger_sh": {25};
+	case "charger_lvpd": {25};
+	case "charger_umb": {25};
+	case "charger_umw": {25};
+	case "charger_ems": {25};
 	case "AM_2015C_White": {25};
 	case "AM_2015C_Black": {25};
 	case "AM_2015C_blue": {25};
 	case "AM_2015C_Green": {25};
+	case "AM_2015C_Grey": {25};
+	case "AM_2015C_Red": {25};
+	case "AM_2015C_Orange": {25};
 	
 	
 	case "A3L_Cooper_concept_blue": {25};

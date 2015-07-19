@@ -277,6 +277,7 @@ switch (_shop) do
 		if(__GETC__(life_mediclevel) > 3) then
 		{
 			_return pushBack ["A3L_CVPILBFD", 35000],
+			_return pushBack ["charger_ems", 80000],
 			_return pushBack ["cl3_dodge_charger_emt",100000]
 		};
 		
@@ -426,6 +427,9 @@ switch (_shop) do
 			["AM_2015C_Black",225000],
 			["AM_2015C_blue",225000],
 			["AM_2015C_Green",225000],
+			["AM_2015C_Red",225000],
+			["AM_2015C_Grey",225000],
+			["AM_2015C_Orange",225000],
 			//["A3L_ChargerBlack",115000], spawn nicht
 			//["A3L_ChargerWhit",115000], nicht im shop
 			//["A3L_ChargerCstm",115000], unsichtbar
@@ -1304,7 +1308,10 @@ switch (_shop) do
 			_return pushBack ["DAR_ExplorerPoliceStealth",75000],
 			_return pushBack ["DAR_TahoePolice", 50000],
 			_return pushBack ["charger_st",80000],
-			_return pushBack ["charger_sh",80000]
+			_return pushBack ["charger_sh",80000],
+			_return pushBack ["charger_lvpd",80000],
+			_return pushBack ["charger_umb",80000],
+			_return pushBack ["charger_umw",80000]
 		};
 			
 		if(__GETC__(life_coplevel) > 9) then
