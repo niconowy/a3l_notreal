@@ -297,6 +297,13 @@ switch (_className) do
 	case "S_Skyline_Purple": {35};
 	case "S_Skyline_White": {35};
 	
+	case "charger_st": {25};
+	case "charger_sh": {25};
+	case "AM_2015C_White": {25};
+	case "AM_2015C_Black": {25};
+	case "AM_2015C_blue": {25};
+	case "AM_2015C_Green": {25};
+	
 	
 	case "A3L_Cooper_concept_blue": {25};
 	case "A3L_Cooper_concept_black": {25};
