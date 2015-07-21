@@ -80,14 +80,14 @@ switch (_item) do
 	case "raw sheep meat": {2};
 	case "raw rabbit": {2};
 	case "cigarette": {1};
-	case "RoadConeStripB": {5};
+	case "RoadConeStripB": {2};
 	case "RoadConeB": {2};
-	case "RoadConeStrip": {5};
+	case "RoadConeStrip": {2};
 	case "RoadCone": {2};
-	case "RoadBlockWood": {8};
-	case "RoadBlockConc": {10};
+	case "RoadBlockWood": {2};
+	case "RoadBlockConc": {4};
 	case "RoadBlockRebel": {10};
-	case "BarGate": {15};
+	case "BarGate": {6};
 	case "Rax's Rum" : {1};
 	case "zoobeer": {1}; // Duff Beer
 	case "blaulicht":{5};

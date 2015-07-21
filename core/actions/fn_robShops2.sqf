@@ -83,6 +83,7 @@ if(_rip) then
 	
 	if(vehicle player != _robber) exitWith {hint "Raus aus dem Fahrzeug, du Pussy!!"};
     5 cutText ["","PLAIN"];
+	deleteMarker "Marker200";
     titleText[format["Du hast %1 geklaut, nichts wie weg hier, die Cops sind auf dem Weg!",[_kassa] call life_fnc_numberText],"PLAIN"];
     ja_dzep = ja_dzep + _kassa; 
     _rip = false;
