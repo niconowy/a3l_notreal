@@ -25,6 +25,10 @@ player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
 player setVariable["isblinded",false,true];
 
+//Earplugs deaktivieren
+life_earplugs = false;
+1 fadeSound 1;
+
 //Load gear for a 'new life'
 switch(playerSide) do
 {

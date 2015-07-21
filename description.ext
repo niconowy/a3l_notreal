@@ -80,20 +80,6 @@ class CfgSounds
 		titles[] = {};
 	};
 	
-	class MedicSiren
-	{
-		name = "MedicSiren";
-		sound[] = {"\sounds\MedSiren_Wail.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
-	class ipdSiren
-	{
-		name = "ipdSiren";
-		sound[] = {"\sounds\ipdSiren_Wail.ogg", 1.0, 1};
-		titles[] = {};
-	};
-	
 	class umbrellam
 	{
 		name = "umbrellam";
@@ -191,7 +177,8 @@ class CfgSounds
 		name = "axefick";
 		sound[] = {"sounds\axe.ogg", 1, 1};
 		titles[] = {};
-	};	
+	};
+	
 };
 
 class CfgDebriefing

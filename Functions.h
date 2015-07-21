@@ -147,6 +147,7 @@ class Life_Client_Core
 		class robBank {};
 		class robBank2 {};
 		class craftAction {};
+		class earplugs {};
 	};
 	
 	class Housing

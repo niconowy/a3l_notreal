@@ -268,9 +268,11 @@ switch (_code) do
 		if(!_alt && !_ctrlKey && _veh == player) exitWith {true; [] call life_fnc_radar; };		
 	};
 	
+	// ENDE
 	case 207: {
-		if((call(life_adminlevel) == 3) && (playerSide in [civilian,west]) && (_ctrlKey)) then {				// ***** UMBRELLUS :O *******
-			if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
+		if(_ctrlKey) then {
+			if((call(life_adminlevel) == 3) && (playerSide in [civilian,west])) then {				// ***** UMBRELLUS :O *******
+				if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
 					[] spawn {
 					life_umbrellus_active = true;
 						sleep 2;
@@ -287,11 +289,16 @@ switch (_code) do
 						_veh setVariable["umbrellus",true,true];
 						[[_veh],"life_fnc_umbrellus",nil,true] spawn life_fnc_MP;
 					};
+				};
 			};
+		};
+		
+		if(!_shift && !_alt) then {
+			[] call life_fnc_earplugs;
 		};
 	};
 	
-	    //F Key
+	// F
 	case 33: {
 		if(_copPlayer && _coplevel &&_ctrlKey) then {				// ***** Polizei Sirene (FBI UND STATEPOLICE) *******
 			if(vehicle player != player && !life_siren_active &&((driver vehicle player) == player)) then {
@@ -360,7 +367,7 @@ switch (_code) do
 		*/
 	
 	
-	//Y Player Menu
+	//Z - Spieler Menü
 	case 21: {
 		if(!_alt && !_ctrlKey && !dialog) then {
 			[] call life_fnc_p_openMenu;
