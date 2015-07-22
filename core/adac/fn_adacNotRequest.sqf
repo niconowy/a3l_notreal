@@ -19,5 +19,6 @@ if(playerside == east) then {
 	}foreach life_adacMarker;
 	if(_alreadyInList) exitWith {};
 	life_adacMarker set [count life_adacMarker,[_caller,_callerName]];
-	["AdacMessage",[format["%1 widerruft den ADAC.",_callerName]]] call BIS_fnc_showNotification;
+	["AdacMessage",[format["%1 braucht keine LAC Hilfe, bitte schaut per GPS nach",_callerName]]] call BIS_fnc_showNotification;
+	deleteMarker "%1_marker";
 };

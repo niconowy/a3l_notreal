@@ -58,9 +58,9 @@ if(playerSide == civilian) then {
 			//_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC;"; orginal
 		} else {
 			_Btn2 ctrlSetText "ADAC Widerrufen";
-			//_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestNotADAC;"; // von deleteADAC in requestNotADAC geändert
+			_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestNotADAC; closeDialog 0;"; // von deleteADAC in requestNotADAC geändert
 			//_Btn5 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
-			_Btn2 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
+			//_Btn2 buttonSetAction "[[cursorTarget],""life_fnc_requestNotADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
 			
 		};/*
 		_Btn5 ctrlSetText "ADAC Rufen";
