@@ -17,9 +17,6 @@ _plist = _display displayCtrl 2702;
 lbClear _plist;
 _near_units = [];
 
-if(player getVariable "restrained") exitWith {closeDialog 0; hint "Du bist gefesselt und kannst daher deinen Schlüsselbund nicht verwenden."};
-if(player getVariable "isblinded") exitWith {closeDialog 0; hint "Du trägst eine Augenbinde und kannst daher deinen Schlüsselbund nicht verwenden."};
-
 { if(player distance _x < 20) then {_near_units pushBack _x;};} foreach playableUnits;
 
 for "_i" from 0 to (count life_vehicles)-1 do
