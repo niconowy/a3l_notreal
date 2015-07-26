@@ -29,6 +29,10 @@ player setVariable["isblinded",false,true];
 life_earplugs = false;
 1 fadeSound 1;
 
+//CSE bedingter Fatigue + Damage Bug
+player setDammage 0;
+player setFatigue 0;
+
 //Load gear for a 'new life'
 switch(playerSide) do
 {

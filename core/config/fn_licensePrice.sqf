@@ -39,4 +39,5 @@ switch (_type) do
 	case "schreiner": {17250};
 	case "grillmeister": {14225};
 	case "presse": {10000};
+	case "taxischein": {17500};
 };

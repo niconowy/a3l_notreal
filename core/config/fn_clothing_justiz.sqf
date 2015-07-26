@@ -12,7 +12,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Shop Title Name
 //ctrlSetText[3103,"Justiz Kleidungsladen"];
 
-if((call life_adaclevel) < 10) exitWith {closeDialog 0; hint "Du bist keine Justiz!"};
+if((call life_adaclevel) < 9) exitWith {closeDialog 0; hint "Du bist keine Justiz!"};
 
 switch (_filter) do
 {
