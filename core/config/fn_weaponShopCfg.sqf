@@ -648,14 +648,14 @@ switch(_shop) do
 						["hlc_rifle_akm",nil,575000],
 						["hlc_30Rnd_762x39_b_ak",nil,5600],
 						["hlc_rifle_aks74u",nil,525000],
-						["hlc_rifle_ak12",nil,5300],
+						["hlc_rifle_ak12",nil,575000],
 						["hlc_rifle_aek971",nil,575000],
 						["hlc_30Rnd_545x39_B_AK",nil,5600],
 						["RH_ar10",nil,615000],
 						["RH_20Rnd_762x51_AR10",nil,5855],
 						["RH_M4sbr_b",nil,555000],
 						["30Rnd_556x45_Stanag",nil,5485],
-						["RH_qdss_nt4",nil,12500],
+						["RH_qdss_nt4",nil,29880],
 
 						["A3L_CZ550",nil,150000],
 						["A3L_CZ550mag",nil,50],
@@ -865,13 +865,7 @@ switch(_shop) do
 						["RH_m9c",nil,48030],
 						["RH_15Rnd_9x19_M9",nil,1090],
 						["RH_p226s",nil,48525],
-						["RH_15Rnd_9x19_SIG",nil,1105],
-						["RH_vp70",nil,43600],
-						["RH_18Rnd_9x19_VP",nil,848],
-						["A3L_1911",nil,49015],
-						["A3L_1911mag",nil,1245],
-						["A3L_Taurus",nil,49790],
-						["A3L_Taurusmag",nil,1305]
+						["RH_15Rnd_9x19_SIG",nil,1105]
 					]
 				];
 			};
