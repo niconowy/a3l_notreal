@@ -14,7 +14,7 @@ switch (_type) do
 	case "driver": {10000}; //Drivers License cost
 	case "boat": {15000}; //Boating license cost
 	case "pilot": {150000}; //Pilot/air license cost
-	case "gun": {50000}; //Firearm/gun license cost
+	case "gun": {175000}; //Firearm/gun license cost
 	case "dive": {4000}; //Diving license cost
 	case "oil": {25000}; //Oil processing license cost
 	case "cair": {15000}; //Cop Pilot License cost

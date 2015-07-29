@@ -29,7 +29,7 @@ if(_craft == "") exitWith {closeDialog 0}; //Bad shop type passed.
 
 switch(_craft) do
 {
-		case "weapon":
+		/*case "weapon":
 	{
 		_return = [
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
@@ -60,7 +60,7 @@ switch(_craft) do
 				["A3L_CZ550Scope", ["life_inv_ironr",2,"life_inv_glass",4]],
 				["hlc_optic_kobra", ["life_inv_ironr",2,"life_inv_glass",4]]
 			];
-	};
+	};*/
 
 /*
 	case "uniform":

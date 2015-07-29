@@ -13,23 +13,23 @@ _healthcolor = "#00FF4C";
 _hungercolor = "#00FF4C";
 _thirstcolor = "#00FF4C";
 _staminacolor = "#00FF4C";
-_magcolor = "#FFFFFF";
-_ammocolor = "#FFFFFF";
+//_magcolor = "#FFFFFF";
+//_ammocolor = "#FFFFFF";
 _hungertext = parseText format[""];
 _thirsttext = parseText format[""];
 _healthtext = parseText format[""];
-_zeroingtext = parseText format[""];
+//_zeroingtext = parseText format[""];
 _staminatext = parseText format[""];
-_ammotext = parseText format[""];
-_amountmagtext = parseText format[""];
-_weaponname = parseText format[""];
+//_ammotext = parseText format[""];
+//_amountmagtext = parseText format[""];
+//_weaponname = parseText format[""];
 _hudinfo = weaponState player; // ["arifle_MX_ACO_pointer_F","arifle_MX_ACO_pointer_F","Single","30Rnd_65x39_caseless_mag",30]
-_curweapon = _hudinfo select 0;
-_curmagazine = _hudinfo select 4;
+//_curweapon = _hudinfo select 0;
+//_curmagazine = _hudinfo select 4;
 _className = _hudinfo select 3;
-_gunmodeold = _hudinfo select 2;
-_gunmode = "";
-if ((_gunmodeold == "single") or (_gunmodeold == "FullAuto")) then {
+//_gunmodeold = _hudinfo select 2;
+//_gunmode = "";
+/*if ((_gunmodeold == "single") or (_gunmodeold == "FullAuto")) then {
 _gunmode = _gunmodeold;
 if (_gunmodeold == "single") then {_gunmode = "Single"};
 if (_gunmodeold == "FullAuto") then {_gunmode = "Automatic"};
@@ -111,7 +111,7 @@ if (_zeroing == 0) then {
  
 };  
  
-/*if (_playerhealth < 0.10) then {
+if (_playerhealth < 0.10) then {
                 _healthcolor = "#00FF4C";
                 _healthtext = parseText format["Vollständig gesund"];
         } else {
@@ -263,19 +263,19 @@ if (_playerstamina < 0.10) then {
  
 _playerstatustext = parseText format ["<t font='EtelkaNarrowMediumPro' size='1' align='right'><t color='%1'>%2</t> | <t color='%3'>%4</t> | <t color='%5'>%6</t> | <t color='%7'>%8</t></t>", _healthcolor, _healthtext, _staminacolor, _staminatext, _hungercolor, _hungertext, _thirstcolor, _thirsttext];
 _playernametext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFFFF' size='1.3' align='right'>%1</t>", _nameofplayer];
-// _zeroinghudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#949494' size='1' align='left'>%1</t>", _zeroingtext];
+/* _zeroinghudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#949494' size='1' align='left'>%1</t>", _zeroingtext];
 _ammohudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='%1' size='0.9' align='left'>%2</t>",_ammocolor, _ammotext];
 _maghudtext = parseText format ["<t font='EtelkaNarrowMediumPro' color='%1' size='1' align='left'>%2</t>", _magcolor, _amountmagtext];
-_gunmodetext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFFFF' size='1' align='center'>%1</t>", _gunmode];
+_gunmodetext = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFFFF' size='1' align='center'>%1</t>", _gunmode];*/
  
-_weapontexthud = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFFFF' size='1' align='left'>%1</t>", _weaponname];
+/*_weapontexthud = parseText format ["<t font='EtelkaNarrowMediumPro' color='#FFFFFF' size='1' align='left'>%1</t>", _weaponname];*/
 ((uiNamespace getVariable "a3lhud") displayCtrl 41652) ctrlSetStructuredText _playerstatustext;
 ((uiNamespace getVariable "a3lhud") displayCtrl 16418) ctrlSetText _picture;
 ((uiNamespace getVariable "a3lhud") displayCtrl 62362) ctrlSetStructuredText _playernametext;
 // ((uiNamespace getVariable "a3lhud") displayCtrl 16423) ctrlSetStructuredText _zeroinghudtext;
-((uiNamespace getVariable "a3lhud") displayCtrl 16422) ctrlSetStructuredText _ammohudtext;
+/*((uiNamespace getVariable "a3lhud") displayCtrl 16422) ctrlSetStructuredText _ammohudtext;
 ((uiNamespace getVariable "a3lhud") displayCtrl 16419) ctrlSetStructuredText _gunmodetext;
 ((uiNamespace getVariable "a3lhud") displayCtrl 16421) ctrlSetStructuredText _maghudtext;
-((uiNamespace getVariable "a3lhud") displayCtrl 16420) ctrlSetStructuredText _weapontexthud;
+((uiNamespace getVariable "a3lhud") displayCtrl 16420) ctrlSetStructuredText _weapontexthud;*/
  
 };

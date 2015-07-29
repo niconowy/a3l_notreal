@@ -55,9 +55,9 @@ if(_itemFilter == "item" && (life_carryWeight + _weight) > life_maxWeight) exitW
 	hint localize "STR_NOTF_NoRoom";
 };
 
-if(_itemFilter == "weapon" && !(player canAdd _newItem) || currentWeapon player != "") exitWith {
+/*if(_itemFilter == "weapon" && !(player canAdd _newItem) || currentWeapon player != "") exitWith {
 	hint localize "STR_NOTF_NoRoom";
-};
+};*/
 
 if(_itemFilter == "visiere" && !(player canAdd _newItem)) exitWith {
 	hint localize "STR_NOTF_NoRoom";
@@ -131,7 +131,7 @@ if(_itemFilter == "uniform") then{
 	};
 };
 
-if(_itemFilter == "weapon") then{
+/*if(_itemFilter == "weapon") then{
 
 	if(player canAdd _newItem) then{
 		player addItem _newItem;
@@ -158,7 +158,7 @@ if(_itemFilter == "visiere") then{
 	} else {
 		hint localize "STR_NOTF_NoRoom";
 	};
-};
+};*/
 
 
 
