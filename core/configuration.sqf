@@ -271,7 +271,7 @@ life_licenses =
 	
 //Civilian Other
 	["license_civ_home","civ"],
-	["license_civ_presse","civ"]
+	["license_civ_presse","civ"],
 	["license_civ_taxischein","civ"]
 	
 ];
