@@ -445,6 +445,7 @@ class Life_Client_Core
 		class jerryRefuel {};
 		class flashbang {};
 		class boltcutter {};
+		class bohrmaschine {};
 		class blastingCharge {};
 		class defuseKit {};
 		class storageBox {};

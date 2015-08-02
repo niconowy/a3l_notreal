@@ -110,6 +110,7 @@ switch (_mode) do
 			case "laminat": {"life_inv_laminat"};
 			case "holz": {"life_inv_holz"};
 			case "presseformular": {"life_inv_presseformular"};
+			case "bohrmaschine": {"life_inv_bohrmaschine"};
 		};
 	};
 	
@@ -211,6 +212,7 @@ switch (_mode) do
 			case "life_inv_laminat": {"laminat"};
 			case "life_inv_holz": {"holz"};
 			case "life_inv_presseformular": {"presseformular"};
+			case "life_inv_bohrmaschine": {"bohrmaschine"};
 		};
 	};
 };

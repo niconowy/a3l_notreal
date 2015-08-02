@@ -66,8 +66,14 @@ switch (true) do
 			life_intox = life_intox + 0.06;
 		};
 	};
+	
 	case (_item == "boltcutter"): {
 		[cursorTarget] spawn life_fnc_boltcutter;
+		closeDialog 0;
+	};
+	
+	case (_item == "bohrmaschine"): {
+		[cursorTarget] spawn life_fnc_bohrmaschine;
 		closeDialog 0;
 	};
 	

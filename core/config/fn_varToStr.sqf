@@ -106,6 +106,7 @@ switch (_var) do
 	case "life_inv_raxsrum": {"Rax's Rum"};
 	case "life_inv_weddingring": {(localize "STR_Item_WeddingRing")};
 	case "life_inv_presseformular": {(localize "STR_Item_PresseForm")};
+	case "life_inv_bohrmaschine": {(localize "STR_Item_Bohrmaschine")};
 
 	//License Block
 	

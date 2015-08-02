@@ -1217,7 +1217,7 @@
 			<Original>Dieses Haus gehört niemandem.</Original>
 		</Key>
 		<Key ID="STR_House_Raid_OwnerOff">
-			<Original>Der Hausbesitzer ist nicht online, daher kannst du sein Haus nicht stürmen!</Original>
+			<Original>Der Hausbesitzer ist nicht online, daher kannst du sein Haus nicht öffnen!</Original>
 		</Key>
 		<Key ID="STR_House_Raid_DoorUnlocked">
 			<Original>Die Tür ist bereits offen!</Original>
@@ -1534,6 +1534,9 @@
 		</Key>
 		<Key ID="STR_Item_PresseForm">
 			<Original>Presseformular</Original>
+		</Key>
+		<Key ID="STR_Item_Bohrmaschine">
+			<Original>Bohrmaschine</Original>
 		</Key>
 	</Package>
 	<Package name="Life_License">

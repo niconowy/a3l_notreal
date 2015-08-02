@@ -51,9 +51,8 @@ while {true} do
 {
 	if(animationState player != "cl3_anim_drill_short") then {
 		[[player,"cl3_anim_drill_short"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
-		player playMoveNow "cl3_anim_drill_short";
 	};
-	sleep 0.26;
+	sleep 0.06;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = uiNamespace getVariable "life_progress";
@@ -74,11 +73,11 @@ player playActionNow "stop";
 if(!alive player OR life_istazed) exitWith {life_action_inUse = false;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
-if(!([false,"boltcutter",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
+if(!([false,"bohrmaschine",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
 life_action_inUse = false;
 
 _dice = random(100);
-if(_dice < 41) then {
+if(_dice < 20) then {
 	_building setVariable[format["bis_disabled_Door_%1",_door],0,true]; //Unlock the door.
 	if((_building getVariable["locked",false])) then {
 		_building setVariable["locked",false,true];

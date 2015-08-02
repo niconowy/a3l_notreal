@@ -657,8 +657,8 @@ switch(_shop) do
 						["30Rnd_556x45_Stanag",nil,5485],
 						["RH_qdss_nt4",nil,29880],
 
-						["A3L_CZ550",nil,150000],
-						["A3L_CZ550mag",nil,50],
+						["A3L_CZ550",nil,320000],
+						["A3L_CZ550mag",nil,3050],
 
 						["arifle_SDAR_F","Turtle Harpoon",50000],
 						["20Rnd_556x45_UW_mag","Underwater magazine",1500],

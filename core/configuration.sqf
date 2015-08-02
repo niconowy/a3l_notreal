@@ -178,6 +178,7 @@ life_inv_items =
 	"life_inv_goldbar",
 	"life_inv_blastingcharge",
 	"life_inv_boltcutter",
+	"life_inv_bohrmaschine",
 	"life_inv_defusekit",
 	"life_inv_storagesmall",
 	"life_inv_storagebig",
@@ -281,7 +282,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["opium seed",25],["schwarzpulver",4250],["coke seed",50],["cannabis seed",15],["opium",100],["heroinu",1200],["heroinp",1500],["cocaine",1000],["cocainep",1500],["cannabis",75],["opium",1500],["marijuana",1000],["turtle",2000],["blastingcharge",10000],["boltcutter",1205]];
+life_illegal_items = [["schwarzpulver",4250],["Blaulicht",16500],["spikeStrip",36500],["opium",2050],["heroinp",4780],["cocaine",2250],["cocainep",5560],["cannabis",975],["marijuana",4320],["turtle",2000],["blastingcharge",125000],["boltcutter",12000]];
 
 
 /*

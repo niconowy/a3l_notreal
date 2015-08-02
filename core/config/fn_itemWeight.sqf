@@ -99,6 +99,7 @@ switch (_item) do
 	case "holz":{4};
 	case "grillkohle":{1};
 	case "presseformular":{1};
+	case "bohrmaschine":{5};
 
 	default {1};
 };
