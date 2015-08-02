@@ -772,7 +772,7 @@
 			<Original>%1 wurde von %2 getazert</Original>
 		</Key>
 		<Key ID="STR_NOTF_VehContraband">
-			<Original>Ein Fahrzeug wurde durchsucht und es wurden Drogen / Schmuggelware im Wert von $%1 gefunden.</Original>
+			<Original>Ein Fahrzeug wurde durchsucht und es wurde Illegale Ware im Wert von $%1 gefunden.</Original>
 		</Key>
 		<Key ID="STR_NOTF_PulledOut">
 			<Original>Du wurdest aus dem Fahrzeug gezogen</Original>
