@@ -1244,7 +1244,7 @@
 			<Original>Du hast dich zu weit vom Haus entfernt!</Original>
 		</Key>
 		<Key ID="STR_House_Raid_Successful">
-			<Original>Ein Haus wurde durchsucht und es wurden Drogen / Schmuggelware im Wert von $%1 gefunden.</Original>
+			<Original>Ein Haus wurde durchsucht und es wurde Illegale Ware im Wert von $%1 gefunden.</Original>
 		</Key>
 		<Key ID="STR_House_Raid_NoIllegal">
 			<Original>Nichts Illegales in diesem Haus.</Original>
