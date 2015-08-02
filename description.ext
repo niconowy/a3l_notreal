@@ -1,6 +1,6 @@
-author = "Tonic, Itsyuka | Edit by arma-3-life.de";
+author = "Tonic, Itsyuka | Edit by lakeside-reallife.de";
 onLoadName = "Lakeside Reallife v2.3.0.3";
-onLoadMission = "Webseite: http://arma-3-life.de/";
+onLoadMission = "Webseite: http://lakeside-reallife.de/";
 loadScreen = "textures\logo.paa";
 joinUnassigned = 1;
 respawn = BASE;
@@ -266,7 +266,7 @@ class CfgDebriefing
 	
 	class A3LCheat
 	{
-		title = "Arma-3-Life.de AntiCheat";
+		title = "Lakeside-Reallife.de AntiCheat";
 		subTitle = "A3L AntiCheat - Bye bye Cheater";
 		description = "Unser AntiCheat hat dich dabei erwischt, wie du versucht hast Funktionen auszuführen, zu denen du gar keinen Zugriff hast.";
 		pictureBackground = "KIA";
@@ -276,9 +276,9 @@ class CfgDebriefing
 	
 	class LRLWrongModVersion
 	{
-		title = "Arma-3-Life.de AntiCheat";
+		title = "Lakeside-Reallife.de AntiCheat";
 		subTitle = "Falsche Mod-Version installiert!";
-		description = "Du hast eine veraltete Version der Mods installiert! Bitte erkunde dich in unserem Forum [www.arma-3-life.de] auf Up-Dates und starte ggf. A3Sync um die Mods zu aktualisieren.";
+		description = "Du hast eine veraltete Version der Mods installiert! Bitte erkunde dich in unserem Forum [www.lakeside-reallife.de] auf Up-Dates und starte ggf. A3Sync um die Mods zu aktualisieren.";
 		pictureBackground = "KIA";
 		picture = "KIA";
 		pictureColor[] = {0,0.3,0.6,1};

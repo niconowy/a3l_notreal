@@ -32,7 +32,7 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 		[
 			" ",
 				"
-<font size='25'>arma-3-life.de</font>
+<font size='25'>lakeside-reallife.de</font>
 				"
 		]
 	];
@@ -45,7 +45,7 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 			" ",
 				"
 <font size='25' color='#FF0000'>! Coming Soon !</font>
-<br/><br/><br/>Momentaner Bußgeldkatalog: www.bit.ly/A3L_Bußgeld<br/>    Oder im Forum schauen: arma-3-life.de<br/>
+<br/><br/><br/>Momentaner Bußgeldkatalog: www.bit.ly/A3L_Bußgeld<br/>    Oder im Forum schauen: lakeside-reallife.de<br/>
 				"
 		]
 	];
@@ -428,7 +428,7 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 			" ",
 				"
 <font size='25' color='#ff0000'>ChangeLog</font><br/><br/>
-Unseren ChangeLog und weitere Informationen zu UpDates findest du in unserem Forum:<br/> <font color='#31ada5'>arma-3-life.de</font>
+Unseren ChangeLog und weitere Informationen zu UpDates findest du in unserem Forum:<br/> <font color='#31ada5'>lakeside-reallife.de</font>
 				"
 		]
 	];
