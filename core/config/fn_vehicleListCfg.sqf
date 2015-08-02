@@ -565,7 +565,7 @@ switch (_shop) do
 		};
 	};
 
-	case "donator":
+	/*case "donator":
 	{
 		if(playerSide != civilian) exitWith {hint "Du bist kein Zivilist."};
 		if(__GETC__(life_donator) == 0) exitWith { hint "Du bist kein Donator" };
@@ -1270,7 +1270,7 @@ switch (_shop) do
 			_return pushBack ["IVORY_YAK42D_1",3800000];
 			
 		}; 
-	};
+	};*/
 	
 	case "cop_car":
 	{
