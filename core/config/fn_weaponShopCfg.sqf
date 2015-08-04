@@ -437,7 +437,7 @@ switch(_shop) do
 						["A3L_MP5",nil,25335],
 						["A3L_MP5mag",nil,500],	
 						
-						["R3F_HK416M ",nil,27345],
+						["R3F_HK416M",nil,27345],
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
 						["A3L_Glock17",nil,12000],
@@ -508,7 +508,7 @@ switch(_shop) do
 						["A3L_MP5",nil,25335],
 						["A3L_MP5mag",nil,500],	
 						
-						["R3F_HK416M ",nil,27345],
+						["R3F_HK416M",nil,27345],
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
 						["A3L_Glock17",nil,12000],
@@ -583,7 +583,7 @@ switch(_shop) do
 						["A3L_MP5",nil,25335],
 						["A3L_MP5mag",nil,500],	
 						
-						["R3F_HK416M ",nil,27345],
+						["R3F_HK416M",nil,27345],
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
 						["A3L_Glock17",nil,12000],
