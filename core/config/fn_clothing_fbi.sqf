@@ -162,7 +162,7 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["fbi_cap","FBI Mütze",25],
+			["do_fbicap","FBI Mütze",25],
 			["H_HelmetB_black","FBI Helm",50],
 			["H_ALFR_Heist_Mask_1",nil,1000],
 			["H_ALFR_Heist_Mask_3",nil,1000],

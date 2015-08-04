@@ -140,7 +140,6 @@ class Life_Client_Core
 		class robShops2 {};
 		class sellLicense {};
 		class rechnungAction {};
-		class adacRepair {};
 		class augenbindeAn {};
 		class augenbindeAus {};
 		class augenbindeAction {};

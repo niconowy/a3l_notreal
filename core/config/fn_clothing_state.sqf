@@ -52,7 +52,7 @@ switch (_filter) do
 			["RPIMA_helm","Schwerer Schutzhelm",550],
 			["gign_helm4","Leichter Schutzhelm",250],
 			["gign_Balaclava","Taktische Maske",50],
-			["Campaign_Hat_Dark","StatePolice Hut",350]	
+			["Campaign_Hat_Dark","LVPD Swat Hut",350]	
 		];
 	};
 	

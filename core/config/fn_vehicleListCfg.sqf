@@ -1280,14 +1280,14 @@ switch (_shop) do
 			_return pushBack ["A3l_TaurusFPBLBCSO",25000],
 			//_return pushBack ["A3L_TaurusFPBPD",25000],
 			_return pushBack ["A3l_TaurusFPBLBPD",25000],
-			_return pushBack ["A3l_TaurusFPBLBSP",25000],
+			/*_return pushBack ["A3l_TaurusFPBLBSP",25000],*/
 			_return pushBack ["A3L_JailBus",32500]
 		};
 		
 		if(__GETC__(life_coplevel) > 1) then
 		{
 			_return pushBack ["A3L_CVPIFPBLBPD",45000],		
-			_return pushBack ["A3L_CVPIFPBLBFG",45000],
+			/*_return pushBack ["A3L_CVPIFPBLBFG",45000],*/
 			_return pushBack ["A3L_CVPIFPBLBCSO",45000],
 			_return pushBack ["A3L_CVPIFPBLBSM",45000],
 			_return pushBack ["A3L_CVPIFPBLBHP",45000]
@@ -1297,7 +1297,7 @@ switch (_shop) do
 		{
 			_return pushBack ["A3L_EvoXFPBLBPD",70000],
 			_return pushBack ["A3L_EvoXFPBLBSO",70000],
-			_return pushBack ["A3L_EvoXFPBLBSP",70000],
+			/*_return pushBack ["A3L_EvoXFPBLBSP",70000],*/
 			_return pushBack ["DAR_TahoePoliceDet",50000],
 			_return pushBack ["DAR_SWATPolice",85000]
 		};
@@ -1307,7 +1307,7 @@ switch (_shop) do
 			_return pushBack ["DAR_ExplorerPolice",75000],
 			_return pushBack ["DAR_ExplorerPoliceStealth",75000],
 			_return pushBack ["DAR_TahoePolice", 50000],
-			_return pushBack ["charger_st",80000],
+			/*_return pushBack ["charger_st",80000],*/
 			_return pushBack ["charger_sh",80000],
 			_return pushBack ["charger_lvpd",80000],
 			_return pushBack ["charger_umb",80000],

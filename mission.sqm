@@ -4247,7 +4247,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Item Shop"",life_fnc_virt_menu,""cop""];this addAction[""FBI Itemshop"",life_fnc_virt_menu,""itemfbi""]; this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""cop""]; this addAction[""FBI Kleidungsshop"",life_fnc_clothingMenu,""fbi""]; this addAction[""StatePolice Kleidungsshop"",life_fnc_clothingMenu,""state""]; this addAction[""Waffenshop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Verhandlungskoffer"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; this addAction[""Lizenzen"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west '];";
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Item Shop"",life_fnc_virt_menu,""cop""];this addAction[""FBI Itemshop"",life_fnc_virt_menu,""itemfbi""]; this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""cop""]; this addAction[""FBI Kleidungsshop"",life_fnc_clothingMenu,""fbi""]; this addAction[""SWAT Kleidungsshop"",life_fnc_clothingMenu,""state""]; this addAction[""Waffenshop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Verhandlungskoffer"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; this addAction[""Lizenzen"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west '];";
 		};
 		class Item64
 		{
@@ -4633,7 +4633,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			text="h1_1";
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Item Shop"",life_fnc_virt_menu,""cop""];this addAction[""FBI Itemshop"",life_fnc_virt_menu,""itemfbi""]; this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""cop""]; this addAction[""FBI Kleidungsshop"",life_fnc_clothingMenu,""fbi""]; this addAction[""StatePolice Kleidungsshop"",life_fnc_clothingMenu,""state""]; this addAction[""Waffenshop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Verhandlungskoffer"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; this addAction[""Lizenzen"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west '];";
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Item Shop"",life_fnc_virt_menu,""cop""];this addAction[""FBI Itemshop"",life_fnc_virt_menu,""itemfbi""]; this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""cop""]; this addAction[""FBI Kleidungsshop"",life_fnc_clothingMenu,""fbi""]; this addAction[""SWAT Kleidungsshop"",life_fnc_clothingMenu,""state""]; this addAction[""Waffenshop"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Verhandlungskoffer"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; this addAction[""Lizenzen"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west '];";
 		};
 		class Item101
 		{
@@ -4965,13 +4965,13 @@ class Mission
 		class Item132
 		{
 			position[]={8727.6396,10.986271,7231.4229};
-			azimut=1823.1179;
+			azimut=1823.12;
 			id=282;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			text="h1_3";
-			init="this enableSimulation false;  this allowDamage false; this addAction[""Polizeiaustattung"",life_fnc_virt_menu,""cop""];this addAction[""FBI Itemshop"",life_fnc_virt_menu,""itemfbi""]; this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""cop""]; this addAction[""FBI Kleidungsshop"",life_fnc_clothingMenu,""fbi""]; this addAction[""StatePolice Kleidungsshop"",life_fnc_clothingMenu,""state""]; this addAction[""Polizeiwaffen"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Presseausweis (>Lieutenant)"",life_fnc_virt_menu,""coppresse""]; this addAction[""Geldkoffer Abgeben"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; this addAction[""Lizenzen"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west '];";
+			init="this enableSimulation false;  this allowDamage false; this addAction[""Polizeiaustattung"",life_fnc_virt_menu,""cop""];this addAction[""FBI Itemshop"",life_fnc_virt_menu,""itemfbi""]; this addAction[""Dienstkleidung"",life_fnc_clothingMenu,""cop""]; this addAction[""FBI Kleidungsshop"",life_fnc_clothingMenu,""fbi""]; this addAction[""SWAT Kleidungsshop"",life_fnc_clothingMenu,""state""]; this addAction[""Polizeiwaffen"",life_fnc_weaponShopMenu,""cop_basic""]; this addAction[""Presseausweis (>Lieutenant)"",life_fnc_virt_menu,""coppresse""]; this addAction[""Geldkoffer Abgeben"",{ if (side player == west) then { {if (typeOf _x == ""Land_Suitcase_F"") then {[] call A3L_Fnc_SellSuitcase; };  } foreach (attachedObjects player); }; }]; this addAction[""Lizenzen"",life_fnc_licenses,[""cg"",""cair""],0,true,true,"""",' playerSide == west '];";
 		};
 		class Item133
 		{
