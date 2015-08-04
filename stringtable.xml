@@ -1991,6 +1991,9 @@
 		<Key ID="STR_vInAct_Repair">
 			<Original>Reparieren</Original>
 		</Key>
+		<Key ID="STR_vInAct_RepairAdac">
+			<Original>Reparieren</Original>
+		</Key>
 		<Key ID="STR_vInAct_Registration">
 			<Original>Eigentümer</Original>
 		</Key>

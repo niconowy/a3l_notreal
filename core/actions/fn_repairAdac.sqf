@@ -12,7 +12,7 @@ if(isNull _veh) exitwith {};
 if(getDammage _veh == 1) exitwith {hint "Dieses Fahrzeug ist komplett zerstört. Daher kannst du es nicht reparieren."};
 if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (_veh isKindOf "A3L_Tahoe_Base") OR (_veh isKindOf "Motorcycle")) then
 {
-	if("ToolKit" in (items player)) then
+	if("A3lSpanner" in (items player)) then
 	{
 		life_action_inUse = true;
 		_displayName = getText(configFile >> "CfgVehicles" >> (typeOf _veh) >> "displayName");
@@ -33,9 +33,11 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 				player action ["SwitchWeapon", player, player, 100];
 				[[player,"CL3_anim_RepairCrouch"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 				player playActionNow "stop";
+				[[player,"CL3_anim_RepairCrouch"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+				player playActionNow "stop";
 			};
 			
-			sleep 0.125;
+			sleep 0.082;
 			
 			_cP = _cP + 0.01;
 			_progress progressSetPosition _cP;

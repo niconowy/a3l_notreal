@@ -103,6 +103,7 @@ class Life_Client_Core
 		class healHospital {};
 		class pushVehicle {};
 		class repairTruck {};
+		class repairAdac {};
 		class serviceChopper {};
 		class catchFish {};
 		class catchTurtle {};

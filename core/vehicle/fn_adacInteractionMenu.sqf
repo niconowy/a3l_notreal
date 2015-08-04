@@ -32,8 +32,10 @@ _Btn6 = _display displayCtrl Btn6;
 life_vInact_curTarget = _curTarget;
 
 //Set Repair Action
-_Btn1 ctrlSetText localize "STR_vInAct_Repair";
-_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_adacRepair; closeDialog 0;";
+_Btn1 ctrlSetText localize "STR_vInAct_RepairAdac";
+_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairAdac; closeDialog 0;";
+
+if("A3lSpanner" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
 _Btn2 ctrlSetText localize "STR_vInAct_Impound";
 _Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
