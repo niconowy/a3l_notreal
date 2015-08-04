@@ -22,6 +22,7 @@ switch (_filter) do
 	case 0:
 	{
 		_ret pushBack ["fto_uni","Gefängniswärter",150];
+		_ret pushBack ["U_CombatUniShirtMercB_A","Ausbilder",300];
 		_ret pushBack ["Sheriff_rang1",nil,300];
 		_ret pushBack ["Sheriff_rang2",nil,300];
 		_ret pushBack ["Sheriff_rang3",nil,300];
@@ -69,11 +70,12 @@ switch (_filter) do
 	case 1:
 	{
 		//_ret pushBack ["A3L_sargehat","Polizei Sargehat",150];
+		_ret pushBack ["H_Beret_Colonel","Ausbilderbarett",125];
 		_ret pushBack ["A3L_policehelmet","Polizeimütze",75];
 		//_ret pushBack ["H_HelmetB_black","FBI Helm",50];
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
 		_ret pushBack ["H_RacingHelmet_1_black_F","Motorradhelm",250];
-		_ret pushBack ["Campaign_Hat_Light","Sheriff Hut",350];
+		_ret pushBack ["max_sheriff_Hat","Sheriff Hut",350];
 		_ret pushBack ["AM_PatrolHat","LVPD Hut (weiss)",350];
 	};
 	
@@ -119,6 +121,8 @@ switch (_filter) do
 	//Westen
 	case 3:
 	{
+		_ret pushBack ["police_belt_pistol_patrolman","Gürtel",325];
+		_ret pushBack ["police_belt_pistol","Gürtel mit Schlagstock",545];
 		_ret pushBack ["A3L_policevest2","DOJ",325];
 		//_ret pushBack ["A3L_policevest1","FBI",150];
 		

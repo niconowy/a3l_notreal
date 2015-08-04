@@ -25,7 +25,9 @@ switch (_filter) do
 	case 0:
 	{
 		[
+			["U_bombsuit","Bombenschutzanzug",5450],
 			["swat_uni1","SWAT",150],
+			["gign_uniform","SWAT Blau",150],
 			["sp_rang3",nil,350],
 			["sp_rang4",nil,350],
 			["sp_rang5",nil,350],
@@ -44,7 +46,11 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["RPIMA_helm","SWAT Helm",550],
+			["H_Cap_pmc","SWAT Mütze",25],
+			["H_Capbw_pmc","SWAT Mütze",25],
+			["H_Bombsuit_Helmet","Bombensicherheitshelm",1500],
+			["RPIMA_helm","Schwerer Schutzhelm",550],
+			["gign_helm4","Leichter Schutzhelm",250],
 			["gign_Balaclava","Taktische Maske",50],
 			["Campaign_Hat_Dark","StatePolice Hut",350]	
 		];
@@ -54,6 +60,7 @@ switch (_filter) do
 	case 2:
 	{
 		[
+			["TRYK_Spset_PHC2_Glasses","Kabelbinder",40],
 			["Mask_M40","Gasmaske",275],
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
@@ -76,6 +83,7 @@ switch (_filter) do
 	{
 		[
 			["SWATvest1","SWAT Weste",1250],
+			["gign_BlackVest","Leichte Weste",1005],
 			["A3L_deptjvest1","State Police",500]
 		];
 	};
@@ -84,7 +92,6 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr","Schulrucksack",250],
 			["B_Kitbag_mcamo",nil,450],
 			["B_TacticalPack_oli",nil,350],
 			["B_FieldPack_ocamo",nil,300],
@@ -92,16 +99,6 @@ switch (_filter) do
 			["B_Kitbag_cbr",nil,450],
 			["B_Carryall_oli",nil,500],
 			// 1.7.1
-			["glt_backpack_cars",nil,1000],
-			["glt_backpack_dora",nil,1000],
-			["glt_bergen_blue",nil,1000],
-			["glt_bergen_green",nil,1000],
-			["glt_bergen_orange",nil,1000],
-			["glt_bergen_pink",nil,1000],
-			["glt_bergen_red",nil,1000],
-			["glt_bergen_violet",nil,1000],
-			["glt_bergen_yellow",nil,1000],
-			
 			["B_Carryall_khk",nil,500]
 		];
 	};

@@ -42,6 +42,7 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["max_paramedic_cap","Medic Mütze",15],
 			["firehat",nil,20],
 			["A3L_medic_helmet",nil,20],
 			["H_MilCap_blue",nil,20],
@@ -58,6 +59,7 @@ switch (_filter) do
 	case 2:
 	{
 		[
+			["Masque_Chirurgical","OP Maske",15],
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],

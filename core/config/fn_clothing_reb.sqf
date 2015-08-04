@@ -18,6 +18,8 @@ switch (_filter) do
 	case 0:
 	{
 		[
+			["TRYK_ZARATAKI3","Takistan Soldier",6000],
+			["TRYK_ZARATAKI","Takistan Soldier Tarn",6000],
 			["TRYK_U_B_BLK","Biker-Jacke (Schwarz)",6000],
 			["TRYK_U_B_BLK_Tshirt","Biker-Jacke (Schwarz,kurz)",6000],
 			["TRYK_U_B_BLKBLK_CombatUniform","Biker-Kleidung (Schwarz)",6000],
@@ -59,6 +61,9 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["H_Hat_Face_Wrap_Dark","Shemag G. Schwarz",1450],
+			["H_Hat_Face_Wrap_DPM","Shemag G. Tarn",1450],
+			["TRYK_H_Booniehat_JSDF","Army Hut",1325],
 			["H_Hat_Taqiyah_A",nil,375],
 			["H_Hat_Taqiyah_B",nil,375],
 			["H_Hat_Taqiyah_C",nil,375],

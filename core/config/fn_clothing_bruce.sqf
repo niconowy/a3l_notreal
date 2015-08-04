@@ -19,6 +19,11 @@ switch (_filter) do
 	{
 		[
 			//["A3L_Zombie","Zombie",35000],
+			["U_PMC_CombatUniformLS_ChckLB_GPBB","Blaues Combathemd",2500],
+			["U_PMC_CombatUniformLS_ChckP_BPBB","Rotes Combathemd",2500],
+			["U_CivilianMetro_D","Metro Braun",2500],
+			["U_CivilianMetro_A","Metro Grau",2500],
+			["TRYK_shirts_DENIM_RED2","Holzfäller",2500],
 			["TRYK_shirts_DENIM_R",nil,2500],
 			["TRYK_shirts_DENIM_BL",nil,2500],
 			["TRYK_shirts_DENIM_BK",nil,2500],
@@ -165,6 +170,16 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["H_Hat_HelmetT","Kriegshelm",3450],
+			["H_Hat_HelmetA","Kriegshelm Grün",3450],
+			["H_Hat_HelmetConical","Asia Hut",1350],
+			["H_Hat_Boonie_Cowboy","Cowboy Hut",1350],
+			["H_Hat_Golf_Blue","Golf Hut",1350],
+			["H_Hat_CapSov_B","Sovjet Schwarz",1350],
+			["H_Hat_CapSov_C","Sovjet Grün",1350],
+			["TRYK_H_Bandana_wig","Perücken Bandana",1350],
+			["TRYK_R_CAP_BLK ","Backcappy Schwarz",1350],
+			["TRYK_H_wig","Perücke",1350],
 			["Kio_Afro_Hat","Afro",1500],
 			["H_ALFR_Dallas_Mask",nil,500],
 			["H_ALFR_Samurai_Mask",nil,500],
@@ -249,6 +264,7 @@ switch (_filter) do
 	case 2:
 	{
 		[
+			["A3L_FatHead","Zigarette",25],
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],
@@ -262,6 +278,13 @@ switch (_filter) do
 			["G_Lady_Blue",nil,150],
 			["G_Lowprofile",nil,30],
 			["G_Combat",nil,55],
+			["TRYK_Beard","Vollbart",275],
+			["TRYK_Beard_BW","Vollbart",275],
+			["TRYK_Beard_BK2","Vollbart",275],
+			["TRYK_Beard_BK3","Vollbart",275],
+			["TRYK_Beard3","Vollbart",275],
+			["TRYK_Beard_Gr3","Vollbart",275],
+			["TRYK_Beard_BK4","Vollbart",275],
 			["SFG_Tac_BeardD","Bart (Dunkel)",275],
 			["SFG_Tac_BeardB","Bart (Blond)",275],
 			["SFG_Tac_BeardG","Bart (Ginger)",275],
@@ -300,6 +323,8 @@ switch (_filter) do
 	case 4:
 	{
 		[
+			["TRYK_B_Coyotebackpack","Wanderrucksack Braun",1000],
+			["TRYK_B_Coyotebackpack_BLK","Wanderrucksack Schwarz",1000],
 			["domepokemon",nil,1000],
 			["domepony",nil,1000],
 			["domegraffiti",nil,1000],
