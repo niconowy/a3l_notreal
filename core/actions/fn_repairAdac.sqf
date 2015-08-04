@@ -29,11 +29,11 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 		
 		while{true} do
 		{
-			if(animationState player != "CL3_anim_RepairCrouch" ) then {
+			if(animationState player != "HubFixingVehicleProne_idle1" ) then {
 				player action ["SwitchWeapon", player, player, 100];
-				[[player,"CL3_anim_RepairCrouch"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+				[[player,"HubFixingVehicleProne_idle1"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 				player playActionNow "stop";
-				[[player,"CL3_anim_RepairCrouch"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+				[[player,"HubFixingVehicleProne_idle1"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 				player playActionNow "stop";
 			};
 			
@@ -50,7 +50,7 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 		
 		life_action_inUse = false;
 		5 cutText ["","PLAIN"];
-		player playActionNow "stop";
+		[[player,""],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
 		_veh setDamage 0;
