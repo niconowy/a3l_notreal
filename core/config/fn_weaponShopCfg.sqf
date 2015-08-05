@@ -200,7 +200,8 @@ switch(_shop) do
 						["ItemCompass",nil,30],
 						["ItemGPS",nil,250],
 						["Binocular",nil,1250],
-						["NVGoggles",nil,5000],
+						["TRYK_headset2","Headset Groß (Nightvision)",5000],
+						["TRYK_Headset_NV","Headset Klein (Nightvision)",5000],
 						["ToolKit",nil,3500],
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000]
@@ -268,7 +269,8 @@ switch(_shop) do
 						["ItemCompass",nil,10],
 						["ItemGPS",nil,250],
 						["Binocular",nil,1250],
-						["NVGoggles",nil,5000],
+						["TRYK_G_Shades_Black_NV","Brille Schwarz (Nightvision)",5000],
+						["TRYK_G_Shades_Blue_NV","Brille Blau (Nightvision)",5000],
 						["A3lspanner","Reparaturschlüssel",5500],
 						["A3l_spanner",nil,1200],
 						//["FirstAidKit",nil,1500],
@@ -1040,7 +1042,7 @@ switch(_shop) do
    
 	case "genstore":
 	{
-		["Altis General Store",
+		["Lakeside General Store",
 			[
 				["ItemMap",nil,30],
 				["ItemWatch",nil,40],
