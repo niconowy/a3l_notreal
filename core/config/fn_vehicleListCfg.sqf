@@ -1327,6 +1327,12 @@ switch (_shop) do
 		if(__GETC__(life_donator) < 4) exitWith {hint "Du bist kein FBI-Agent!"};
 		_return =
 		[
+			["A3L_CVPIUC",16500],
+			["A3L_CVPIUCBlack",16500],
+			["A3L_CVPIUCWhite",16500],
+			["A3L_CVPIUCGrey",16500],
+			["A3L_CVPIUCRed",16500],
+			["A3L_CVPIUCPink",16500],
 			["cl3_e63_amg_white",35000],
 			["cl3_e63_amg_lime",35000],
 			["cl3_e63_amg_light_yellow",35000],
