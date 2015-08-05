@@ -25,7 +25,7 @@ switch (_shop) do
 	case "diamond": {["Juwelier",["diamondc"]]};
 	case "salt": {["Salzhändler",["salt_r"]]};
 	case "cop": {["Polizei Austattung",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","lockpick","boltcutter","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
-	case "itemfbi": {["FBI Austattung",["blaulicht","donuts","coffee","spikeStrip","redgull","fuelF","defusekit","lockpick","BarGate","RoadBlockWood","RoadConeStripB"]]};
+	case "itemfbi": {["FBI Austattung",["donuts","coffee","spikeStrip","redgull","fuelF","defusekit","lockpick","BarGate","RoadBlockWood","RoadConeStripB"]]};
 	case "cement": {["Zementhändler",["cement"]]};
 	case "gold": {["Gold Ankauf",["goldbar"]]};
 	case "baumarkt": {["Baumarkt",["laminat","grillkohle","axt"]]};
