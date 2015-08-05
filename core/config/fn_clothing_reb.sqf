@@ -61,6 +61,11 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["Masque_Santa","Scarry Santa",3250],
+			["Masque_archNemesis","Monster Maske",3250],
+			["Masque_Smiley","Scarry Clown",3250],
+			["Masque_Religieuse","Nonnen Maske",3250],
+			["Masque_Macrilleuse","Scarry Clown (Klein)",3250],
 			["H_Hat_Face_Wrap_Dark","Shemag G. Schwarz",1450],
 			["H_Hat_Face_Wrap_DPM","Shemag G. Tarn",1450],
 			["TRYK_H_Booniehat_JSDF","Army Hut",1325],
