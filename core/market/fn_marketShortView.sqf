@@ -6,7 +6,7 @@
 
 */
 
-private["_items", "_shortname", "_price",/* "_globalchange",*/ "_lastchange", "_row", "_text", "_resname", "_didanything"];
+private["_items", "_shortname", "_price", "_globalchange", "_lastchange", "_row", "_text", "_resname", "_didanything"];
 
 _items = _this select 0;
 
@@ -24,7 +24,7 @@ _didanything = false;
 	_row = [_x] call life_fnc_marketGetPriceRow;
 	
 	_price = _row select 1;
-	/*_globalchange = _row select 2;*/
+	_globalchange = _row select 2;*/
 	_lastchange = _row select 2;
 	
 	_resname = [_x, 0] call life_fnc_varHandle;
@@ -32,14 +32,14 @@ _didanything = false;
 	
 	_text = format["%1<br/><t size='1.2'>%2</t><br/><t size='1.3' color='#FFFF00'>$%3</t><br/>", _text,_resname, [_price] call life_fnc_numberText];
 	
-	/*if(_globalchange >= 0) then
+	if(_globalchange >= 0) then
 	{
 		_text = format["%1<img size='2' image='icons\trendup.paa'/> $%2 <br/>", _text, _globalchange];
 	}
 	else
 	{
 		_text = format["%1<img size='2' image='icons\trenddown.paa'/> $%2 <br/>", _text, _globalchange];
-	};*/
+	};
 	
 	if(_lastchange >= 0) then
 	{
