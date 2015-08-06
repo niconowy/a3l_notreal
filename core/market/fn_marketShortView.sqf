@@ -24,7 +24,7 @@ _didanything = false;
 	_row = [_x] call life_fnc_marketGetPriceRow;
 	
 	_price = _row select 1;
-	_globalchange = _row select 2;*/
+	_globalchange = _row select 2;
 	_lastchange = _row select 2;
 	
 	_resname = [_x, 0] call life_fnc_varHandle;

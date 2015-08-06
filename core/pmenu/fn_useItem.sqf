@@ -280,7 +280,7 @@ switch (true) do
 				if(life_married == "-1") then {
 					life_married = "jemand";
 				};
-				[player,"umbrellam"] call life_fnc_globalSound;
+				[player,"umbrellam"] call life_fnc_globalSound;		//:TODO: --> Neuer Sound Finden!
 				[[0,format["%1 und %2 haben geheiratet! Wir wünschen dem glücklichen Paar alles Gute!",profileName, life_married]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 				life_married = "-2";
 			};

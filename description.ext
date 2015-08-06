@@ -1,4 +1,4 @@
-author = "Tonic, Itsyuka | Edit by lakeside-reallife.de";
+author = "Tonic, Itsyuka | Edit by LRL.DE";
 onLoadName = "Lakeside Reallife v2.3.0.3";
 onLoadMission = "Webseite: http://lakeside-reallife.de/";
 loadScreen = "textures\logo.paa";
@@ -84,6 +84,13 @@ class CfgSounds
 	{
 		name = "umbrellam";
 		sound[] = {"\sounds\umbrella.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class umbrellam2
+	{
+		name = "umbrellam2";
+		sound[] = {"\sounds\umbrella2.ogg", 1.0, 1};
 		titles[] = {};
 	};
 

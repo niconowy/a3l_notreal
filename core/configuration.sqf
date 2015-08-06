@@ -19,6 +19,7 @@ life_siren_active = false;
 life_medSiren_active = false;
 life_ipdSiren_active = false;
 life_umbrellus_active = false;
+life_umbrellus2_active = false;
 life_clothing_filter = 0;
 life_clothing_uniform = -1;
 life_redgull_effect = time;
@@ -229,7 +230,18 @@ life_inv_items =
 	"life_inv_presseformular"
 ];
 
-life_8_b4lls = ["76561197962238371","76561198082967169","76561198016104237","76561197993477534","76561197999595613","76561198136538321","76561198077232569","76561198042459096"];
+life_8_b4lls = 
+[
+	"76561197962238371",
+	"76561198082967169",
+	"76561198016104237",
+	"76561197993477534",
+	"76561197999595613",
+	"76561198136538321",
+	"76561198077232569",
+	"76561198042459096",
+	"76561198118503333"
+];
 
 //Setup variable inv vars.
 {missionNamespace setVariable[_x,0];} foreach life_inv_items;

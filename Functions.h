@@ -330,6 +330,7 @@ class Life_Client_Core
 		class civLoadout {};
 		class pInteraction_reb {};
 		class umbrellus {};
+		class umbrellus2 {};
 	};
 	
 	class Vehicle

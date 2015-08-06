@@ -25,9 +25,6 @@ A3L_RunCode = compileFinal "
 //candy = 0;
 //scarylevel = 0;
 
-// A3L CURRENT VERSION
-A3L_ClientVersion = getNumber (configFile >> "CfgPatches" >> "A3L_Client2" >> "requiredVersion");
-
 life_firstSpawn = true;
 life_session_completed = false;
 private["_handle","_timeStamp"];
@@ -42,12 +39,15 @@ waitUntil {!isNull player && player == player}; //Wait till the player is ready
 diag_log "::Life Client:: Initialization Variables";
 [] call compile PreprocessFileLineNumbers "core\configuration.sqf";
 diag_log "::Life Client:: Variables initialized";
+
 diag_log "::Life Client:: Setting up Eventhandlers";
 [] call life_fnc_setupEVH;
 diag_log "::Life Client:: Eventhandlers completed";
+
 diag_log "::Life Client:: Setting up user actions";
 [] call life_fnc_setupActions;
 diag_log "::Life Client:: User actions completed";
+
 diag_log "::Life Client:: Waiting for server functions to transfer..";
 waitUntil {(!isNil {TON_fnc_clientGangLeader})};
 
@@ -124,7 +124,7 @@ titleText ["= TFAR Erfolgreich Geladen ==","BLACK IN"];
 				A3L_TFEnabled = true;
 			};
 		};	
-		sleep 5;	
+		sleep 7;	
 	};
 };
 
@@ -133,14 +133,11 @@ titleText ["= TFAR Erfolgreich Geladen ==","BLACK IN"];
 if (!isServer) then {
 
 	_admin = false;
-	while {true} do 
-		{
+	while {true} do {
 		_admin = false;
-		if (!(isNil "life_adminlevel")) then 
-		{
-			_admin = life_adminlevel call BIS_fnc_parseNumber;
-			if (_admin > 0) then 
-			{
+		if (!(isNil "life_adminlevel")) then {
+				_admin = life_adminlevel call BIS_fnc_parseNumber;
+			if (_admin > 0) then {
 				_admin = true;
 			};
 		};
@@ -171,8 +168,6 @@ if(_a3l_mods_version != a3l_lrl_version) then {
 	sleep 10;
 };
 
-
-
 diag_log "::Life Client:: Received server functions.";
 
 diag_log "::Life Client:: Executed custom client functions";
@@ -186,7 +181,9 @@ if(!isNil "life_server_extDB_notLoaded") exitWith {
 	999999 cutText ["Die serverseitige Version von extDB wurde falsch geladen! Bitte einem Administrator mitteilen!!","BLACK FADED"];
 	999999 cutFadeOut 99999999;
 };
+
 [] call SOCK_fnc_dataQuery;
+
 waitUntil {life_session_completed};
 0 cutText["Vollende Client-Setup Prozedur...","BLACK FADED"];
 0 cutFadeOut 9999999;
@@ -204,21 +201,18 @@ switch (playerSide) do
 	
 	case civilian:
 	{
-		//Initialize Civilian Settings
 		_handle = [] spawn life_fnc_initCiv;
 		waitUntil {scriptDone _handle};
 	};
 	
 	case independent:
 	{
-		//Initialize Medics and blah
 		_handle = [] spawn life_fnc_initMedic;
 		waitUntil {scriptDone _handle};
 	};
 	
 	case east:
 	{
-		//Initialize ADAC and blah
 		_handle = [] spawn life_fnc_initAdac;
 		waitUntil {scriptDone _handle};
 	};
@@ -249,9 +243,14 @@ life_sidechat = true;
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;
 0 cutText ["","BLACK IN"];
 [] call life_fnc_hudSetup;
+
+/*
 LIFE_ID_PlayerTags = ["LIFE_PlayerTags","onEachFrame","life_fnc_playerTags"] call BIS_fnc_addStackedEventHandler;
 LIFE_ID_RevealObjects = ["LIFE_RevealObjects","onEachFrame","life_fnc_revealObjects"] call BIS_fnc_addStackedEventHandler;
+
 [] call life_fnc_settingsInit;
+*/
+
 player setVariable["steam64ID",getPlayerUID player];
 player setVariable["realname",profileName,true];
 life_fnc_moveIn = compileFinal

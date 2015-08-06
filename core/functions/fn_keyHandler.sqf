@@ -270,24 +270,49 @@ switch (_code) do
 	
 	// ENDE
 	case 207: {
-		if(_ctrlKey) then {
-			if((call(life_adminlevel) == 3) && (playerSide in [civilian,west])) then {				// ***** UMBRELLUS :O *******
+		if(_ctrlKey && !_shift) then {
+			if((call(life_adminlevel) == 3) && (playerSide in [civilian,west])) then {
 				if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
 					[] spawn {
 					life_umbrellus_active = true;
-						sleep 2;
+						sleep 18;
+						systemChat "Sirene kann deaktiviert werden.";
 					life_umbrellus_active = false;
 					};
 					_veh = vehicle player;
 					if(isNil {_veh getVariable "umbrellus"}) then {_veh setVariable["umbrellus",false,true];};
 					
 					if((_veh getVariable "umbrellus")) then {
-						titleText ["= Umbrella AUS =","PLAIN"];
+						titleText ["= Admin-Sirene 1 AUS =","PLAIN"];
 						_veh setVariable["umbrellus",false,true];
 					} else {
-						titleText ["= Umbrella AN =","PLAIN"];
+						titleText ["= Admin-Sirene 1 AN =","PLAIN"];
 						_veh setVariable["umbrellus",true,true];
 						[[_veh],"life_fnc_umbrellus",nil,true] spawn life_fnc_MP;
+					};
+				};
+			};
+		};
+		
+		if(_ctrlKey && _shift) then {
+			if((call(life_adminlevel) == 3) && (playerSide in [civilian,west])) then {
+				if(vehicle player != player && !life_umbrellus2_active && ((driver vehicle player) == player)) then {
+					[] spawn {
+					life_umbrellus2_active = true;
+						sleep 30;
+						systemChat "Sirene kann deaktiviert werden.";
+					life_umbrellus2_active = false;
+					};
+					_veh = vehicle player;
+					if(isNil {_veh getVariable "umbrellus2"}) then {_veh setVariable["umbrellus2",false,true];};
+					
+					if((_veh getVariable "umbrellus2")) then {
+						titleText ["= Admin-Sirene 2 AUS =","PLAIN"];
+						_veh setVariable["umbrellus2",false,true];
+					} else {
+						titleText ["= Admin-Sirene 2 AN =","PLAIN"];
+						_veh setVariable["umbrellus2",true,true];
+						[[_veh],"life_fnc_umbrellus2",nil,true] spawn life_fnc_MP;
 					};
 				};
 			};
