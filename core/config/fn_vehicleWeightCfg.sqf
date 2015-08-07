@@ -35,6 +35,15 @@ switch (_className) do
 	case "S_Rangerover_Orange": {45};
 	case "S_Rangerover_White": {45};
 	
+	case "Mrshounka_bmwm6_noir": {15};
+	case "Mrshounka_bmwm6_bleufonce": {15};
+	case "Mrshounka_bmwm6_rouge": {15};
+	case "Mrshounka_bmwm6_jaune": {15};
+	case "Mrshounka_bmwm6_rose": {15};
+	case "Mrshounka_bmwm6_grise": {15};
+	case "Mrshounka_bmwm6_violet": {15};
+	case "Mrshounka_bmwm6_orange": {15};
+	
 	case "A3L_RX7_Blue": {25};
 	case "A3L_RX7_Red": {25};
 	case "A3L_RX7_White": {25};
