@@ -31,14 +31,14 @@ switch (_shop) do
 	case "bmw":
 	{
 		_return = [
-			["Mrshounka_bmwm6_noir",2325000],
-			["Mrshounka_bmwm6_bleufonce",2325000],
-			["Mrshounka_bmwm6_rouge",2325000],
-			["Mrshounka_bmwm6_jaune",2325000],
-			["Mrshounka_bmwm6_rose",2325000],
-			["Mrshounka_bmwm6_grise",2325000],
-			["Mrshounka_bmwm6_violet",2325000],
-			["Mrshounka_bmwm6_orange",2325000],
+			["Mrshounka_bmwm6_noir",1525000],
+			["Mrshounka_bmwm6_bleufonce",1525000],
+			["Mrshounka_bmwm6_rouge",1525000],
+			["Mrshounka_bmwm6_jaune",1525000],
+			["Mrshounka_bmwm6_rose",1525000],
+			["Mrshounka_bmwm6_grise",1525000],
+			["Mrshounka_bmwm6_violet",1525000],
+			["Mrshounka_bmwm6_orange",1525000],
 			["cl3_e60_m5_white",150000],
 			["cl3_e60_m5_purple",150000],
 			["cl3_e60_m5_navy_blue",150000],

@@ -42,7 +42,7 @@ life_adacMarker = [];
 life_adac_request = false;
 life_married = "";
 life_earplugs = false;
-a3l_lrl_version = "arma3lifeDE_lrl_modinfo_ver_150408";
+a3l_lrl_version = "arma3lifeDE_lrl_modinfo_ver_150708";
 
 
 //Persistent Saving
@@ -697,7 +697,7 @@ life_garage_sell =
 	["cl3_arielatom_race_white",550000],["cl3_arielatom_race_purple",550000],["cl3_arielatom_race_navy_blue",550000],["cl3_arielatom_race_lime",550000],["cl3_arielatom_race_light_yellow",550000],
 	["cl3_arielatom_race_light_blue",550000],["cl3_arielatom_race_grey",550000],["cl3_arielatom_race_gold",550000],["cl3_arielatom_race_burgundy",550000],["cl3_arielatom_race_black",550000],["cl3_arielatom_race_camo",550000],
 	["cl3_veyron_blk_wht",500000],["cl3_veyron_lblue_dblue",500000],["cl3_veyron_lblue_lblue",500000],["cl3_veyron_brn_blk",500000],
-	["Mrshounka_bmwm6_noir",1162500],["Mrshounka_bmwm6_bleufonce",1162500],["Mrshounka_bmwm6_rouge",1162500],["Mrshounka_bmwm6_jaune",1162500],["Mrshounka_bmwm6_rose",1162500],["Mrshounka_bmwm6_grise",1162500],["Mrshounka_bmwm6_violet",1162500],["Mrshounka_bmwm6_orange",1162500],
+	["Mrshounka_bmwm6_noir",1143750],["Mrshounka_bmwm6_bleufonce",1143750],["Mrshounka_bmwm6_rouge",1143750],["Mrshounka_bmwm6_jaune",1143750],["Mrshounka_bmwm6_rose",1143750],["Mrshounka_bmwm6_grise",1143750],["Mrshounka_bmwm6_violet",1143750],["Mrshounka_bmwm6_orange",1143750],
 	["A3L_CVPILBFD",5000],
 	["Jonzie_Ambulance",12500],
 	["cl3_dodge_charger_emt",50000],
