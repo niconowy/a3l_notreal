@@ -92,7 +92,7 @@ switch (_className) do
 	case "Mrshounka_veneno_c_violet": {15};
 	
 	case "Mrshounka_bmwm1_civ_noir": {15};
-	case "Mrshounka_bmwm1_civ_bleufonce" {15};
+	case "Mrshounka_bmwm1_civ_bleufonce": {15};
 	case "Mrshounka_bmwm1_civ_rouge": {15};
 	case "Mrshounka_bmwm1_civ_jaune": {15};
 	case "Mrshounka_bmwm1_civ_rose": {15};
@@ -429,7 +429,7 @@ switch (_className) do
 
 	case "Jonzie_Mini_Cooper_R_spec": {15};
 	
-	case A3L_CVLac: {70};
+	case "A3L_CVLac": {70};
 
 	// default
 	case "C_Offroad_01_F": {50};
