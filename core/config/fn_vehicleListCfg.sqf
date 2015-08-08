@@ -31,14 +31,14 @@ switch (_shop) do
 	case "bmw":
 	{
 		_return = [
-			["Mrshounka_bmwm6_noir",1525000],
-			["Mrshounka_bmwm6_bleufonce",1525000],
-			["Mrshounka_bmwm6_rouge",1525000],
-			["Mrshounka_bmwm6_jaune",1525000],
-			["Mrshounka_bmwm6_rose",1525000],
-			["Mrshounka_bmwm6_grise",1525000],
-			["Mrshounka_bmwm6_violet",1525000],
-			["Mrshounka_bmwm6_orange",1525000],
+			["Mrshounka_bmwm1_civ_noir",367340],
+			["Mrshounka_bmwm1_civ_bleufonce",367340],
+			["Mrshounka_bmwm1_civ_rouge",367340],
+			["Mrshounka_bmwm1_civ_jaune",367340],
+			["Mrshounka_bmwm1_civ_rose",367340],
+			["Mrshounka_bmwm1_civ_grise",367340],
+			["Mrshounka_bmwm1_civ_violet",367340],
+			["Mrshounka_bmwm1_civ_orange",367340],
 			["cl3_e60_m5_white",150000],
 			["cl3_e60_m5_purple",150000],
 			["cl3_e60_m5_navy_blue",150000],
@@ -60,7 +60,15 @@ switch (_shop) do
 			["cl3_z4_2008_black",160000],
 			["DAR_M3CivBlack",135000],
 			["DAR_M3CivWhite",135000],
-			["DAR_M3CivGrey",135000]
+			["DAR_M3CivGrey",135000],
+			["Mrshounka_bmwm6_noir",1525000],
+			["Mrshounka_bmwm6_bleufonce",1525000],
+			["Mrshounka_bmwm6_rouge",1525000],
+			["Mrshounka_bmwm6_jaune",1525000],
+			["Mrshounka_bmwm6_rose",1525000],
+			["Mrshounka_bmwm6_grise",1525000],
+			["Mrshounka_bmwm6_violet",1525000],
+			["Mrshounka_bmwm6_orange",1525000]
 		];
 	};
 	
@@ -164,7 +172,24 @@ switch (_shop) do
 			["cl3_lamborghini_gt1_grey",800000],
 			["cl3_lamborghini_gt1_gold",800000],
 			["cl3_lamborghini_gt1_burgundy",800000],
-			["cl3_lamborghini_gt1_black",800000]
+			["cl3_lamborghini_gt1_black",800000],
+			["mrshounka_huracan_c_noir",654920],
+			["mrshounka_huracan_c_bleufonce",654920],
+			["mrshounka_huracan_c_rouge",654920],
+			["mrshounka_huracan_c_jaune",654920],
+			["mrshounka_huracan_c_rose",654920],
+			["mrshounka_huracan_c_grise",654920],
+			["mrshounka_huracan_c_violet",654920],
+			["mrshounka_huracan_c_orange",654920],
+			["mrshounka_huracan_c_carbon",654920],
+			["Mrshounka_veneno_c_noir",1884230],
+			["Mrshounka_veneno_c_bleu",1884230],
+			["Mrshounka_veneno_c_jaune",1884230],
+			["Mrshounka_veneno_c_grau",1884230],
+			["Mrshounka_veneno_c_carbon",1884230],
+			["Mrshounka_veneno_c_rot",1884230],
+			["Mrshounka_veneno_c_gruen",1884230],
+			["Mrshounka_veneno_c_violet",1884230]
 		];
 	};
 	
@@ -194,7 +219,16 @@ switch (_shop) do
 	case "audi":
 	{
 		_return = [
-			["IVORY_R8",480000],
+			["SAL_AudiCivSilver",175000],
+			["shounka_a3_rs5_civ_noir",468000],
+			["shounka_a3_rs5_civ_bleufonce",468000],
+			["shounka_a3_rs5_civ_rouge",468000],
+			["shounka_a3_rs5_civ_jaune",468000],
+			["shounka_a3_rs5_civ_rose",468000],
+			["shounka_a3_rs5_civ_grise",468000],
+			["shounka_a3_rs5_civ_violet",468000],
+			["shounka_a3_rs5_civ_orange",468000],
+			["IVORY_R8",520000],
 			["cl3_r8_spyder_white",520000],
 			["cl3_r8_spyder_purple",520000],
 			["cl3_r8_spyder_navy_blue",520000],
@@ -204,8 +238,7 @@ switch (_shop) do
 			["cl3_r8_spyder_grey",520000],
 			["cl3_r8_spyder_gold",520000],
 			["cl3_r8_spyder_burgundy",520000],
-			["cl3_r8_spyder_black",520000],
-			["SAL_AudiCivSilver",175000]
+			["cl3_r8_spyder_black",520000]
 		];
 	};
 	
@@ -240,6 +273,18 @@ switch (_shop) do
 			["cl3_arielatom_race_gold",1100000],
 			["cl3_arielatom_race_burgundy",1100000],
 			["cl3_arielatom_race_black",1100000],
+			
+			["ivory_c",1325000],
+			["ivory_c_livery1",1325000],
+			["ivory_c_livery2",1325000],
+			["ivory_c_livery3",1325000],
+			["ivory_c_livery4",1325000],
+			["ivory_lfa",682000],
+			["ivory_lfa_sport1",682000],
+			["ivory_lfa_sport2",682000],
+			["ivory_lfa_sport3",682000],
+			["ivory_lfa_sport4",682000],
+			["ivory_lfa_sport5",682000],
 			
 			["cl3_veyron_blk_wht",1000000],
 			["cl3_veyron_lblue_dblue",1000000],
@@ -357,6 +402,14 @@ switch (_shop) do
 			["S_Skyline_Purple",144000],
 			["S_Skyline_White",144000],
 			
+			["Mrshounka_a3_gtr_civ_noir",310000],
+			["Mrshounka_a3_gtr_civ_bleu",310000],
+			["Mrshounka_a3_gtr_civ_orange",310000],
+			["Mrshounka_a3_gtr_civ_grau",310000],
+			["Mrshounka_a3_gtr_civ_carbon",310000],
+			["Mrshounka_a3_gtr_civ_gruen",310000],
+			["Mrshounka_a3_gtr_civ_violet",310000],
+			
 			["S_McLarenP1_Black",800000],
 			["S_McLarenP1_Blue",800000],
 			["S_McLarenP1_Orange",800000],
@@ -390,6 +443,17 @@ switch (_shop) do
 			//["A3L_FordKaBlack",13000],
 			//["A3L_FordKaWhite",13000],
 			//["A3L_FordKaGrey",13000],
+			["Mrshounka_mustang_mat",352620],
+			["Mrshounka_mustang_noir",352620],
+			["Mrshounka_mustang_mat_n",352620],
+			["Mrshounka_mustang_bleufonce",352620],
+			["Mrshounka_mustang_mat_b",352620],
+			["Mrshounka_mustang_rouge",352620],
+			["Mrshounka_mustang_jaune",352620],
+			["Mrshounka_mustang_rose",352620],
+			["Mrshounka_mustang_grise",352620],
+			["Mrshounka_mustang_violet",352620],
+			["Mrshounka_mustang_orange",352620],
 			["A3L_CVWhite",30000],
 			["A3L_CVBlack",30000],
 			["A3L_CVGrey",30000],
@@ -523,7 +587,8 @@ switch (_shop) do
 			["C_Van_01_transport_F",40000],
 			["A3L_Bus",70000],
 			["A3L_SchoolBus",85000],
-			["ALFR_GeK_Volvo_FH16_2012",350000]
+			["ALFR_GeK_Volvo_FH16_2012",350000],
+			["shounka_a3_renaultmagnum_f",350000]
 		];
 	};
 	
