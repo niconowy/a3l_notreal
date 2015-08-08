@@ -181,12 +181,10 @@ switch (_shop) do
 			["mrshounka_huracan_c_grise",654920],
 			["mrshounka_huracan_c_violet",654920],
 			["mrshounka_huracan_c_orange",654920],
-			["mrshounka_huracan_c_carbon",654920],
 			["Mrshounka_veneno_c_noir",1884230],
 			["Mrshounka_veneno_c_bleu",1884230],
 			["Mrshounka_veneno_c_jaune",1884230],
 			["Mrshounka_veneno_c_grau",1884230],
-			["Mrshounka_veneno_c_carbon",1884230],
 			["Mrshounka_veneno_c_rot",1884230],
 			["Mrshounka_veneno_c_gruen",1884230],
 			["Mrshounka_veneno_c_violet",1884230]
@@ -406,7 +404,6 @@ switch (_shop) do
 			["Mrshounka_a3_gtr_civ_bleu",310000],
 			["Mrshounka_a3_gtr_civ_orange",310000],
 			["Mrshounka_a3_gtr_civ_grau",310000],
-			["Mrshounka_a3_gtr_civ_carbon",310000],
 			["Mrshounka_a3_gtr_civ_gruen",310000],
 			["Mrshounka_a3_gtr_civ_violet",310000],
 			

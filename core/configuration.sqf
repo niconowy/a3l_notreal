@@ -42,7 +42,7 @@ life_adacMarker = [];
 life_adac_request = false;
 life_married = "";
 life_earplugs = false;
-a3l_lrl_version = "arma3lifeDE_lrl_modinfo_ver_150708";
+a3l_lrl_version = "arma3lifeDE_lrl_modinfo_ver_150808";
 
 
 //Persistent Saving
@@ -560,10 +560,10 @@ life_garage_prices =
 	["IVORY_R8",20000],
 	["ivory_c",20000],["ivory_c_livery1",20000],["ivory_c_livery2",20000],["ivory_c_livery3",20000],["ivory_c_livery4",20000],
 	["ivory_lfa",18000],["ivory_lfa_sport1",18000],["ivory_lfa_sport2",18000],["ivory_lfa_sport3",18000],["ivory_lfa_sport4",18000],["ivory_lfa_sport5",18000],
-	["Mrshounka_a3_gtr_civ_noir",18000],["Mrshounka_a3_gtr_civ_bleu",18000],["Mrshounka_a3_gtr_civ_orange",18000],["Mrshounka_a3_gtr_civ_grau",18000],["Mrshounka_a3_gtr_civ_carbon",18000],["Mrshounka_a3_gtr_civ_gruen",18000],["Mrshounka_a3_gtr_civ_violet",18000],
+	["Mrshounka_a3_gtr_civ_noir",18000],["Mrshounka_a3_gtr_civ_bleu",18000],["Mrshounka_a3_gtr_civ_orange",18000],["Mrshounka_a3_gtr_civ_grau",18000],["Mrshounka_a3_gtr_civ_gruen",18000],["Mrshounka_a3_gtr_civ_violet",18000],
 	["shounka_a3_rs5_civ_noir",18000],["shounka_a3_rs5_civ_bleufonce",18000],["shounka_a3_rs5_civ_rouge",18000],["shounka_a3_rs5_civ_jaune",18000],["shounka_a3_rs5_civ_rose",18000],["shounka_a3_rs5_civ_grise",18000],["shounka_a3_rs5_civ_violet",18000],["shounka_a3_rs5_civ_orange",18000],
-	["mrshounka_huracan_c_noir",20000],["mrshounka_huracan_c_bleufonce",20000],["mrshounka_huracan_c_rouge",20000],["mrshounka_huracan_c_jaune",20000],["mrshounka_huracan_c_rose",20000],["mrshounka_huracan_c_grise",20000],["mrshounka_huracan_c_violet",20000],["mrshounka_huracan_c_orange",20000],["mrshounka_huracan_c_carbon",20000],
-	["Mrshounka_veneno_c_noir",20000],["Mrshounka_veneno_c_bleu",20000],["Mrshounka_veneno_c_jaune",20000],["Mrshounka_veneno_c_grau",20000],["Mrshounka_veneno_c_carbon",20000],["Mrshounka_veneno_c_rot",20000],["Mrshounka_veneno_c_gruen",20000],["Mrshounka_veneno_c_violet",20000],
+	["mrshounka_huracan_c_noir",20000],["mrshounka_huracan_c_bleufonce",20000],["mrshounka_huracan_c_rouge",20000],["mrshounka_huracan_c_jaune",20000],["mrshounka_huracan_c_rose",20000],["mrshounka_huracan_c_grise",20000],["mrshounka_huracan_c_violet",20000],["mrshounka_huracan_c_orange",20000],
+	["Mrshounka_veneno_c_noir",20000],["Mrshounka_veneno_c_bleu",20000],["Mrshounka_veneno_c_jaune",20000],["Mrshounka_veneno_c_grau",20000],["Mrshounka_veneno_c_rot",20000],["Mrshounka_veneno_c_gruen",20000],["Mrshounka_veneno_c_violet",20000],
 	["Mrshounka_bmwm1_civ_noir",18000],["Mrshounka_bmwm1_civ_bleufonce",18000],["Mrshounka_bmwm1_civ_rouge",18000],["Mrshounka_bmwm1_civ_jaune",18000],["Mrshounka_bmwm1_civ_rose",18000],["Mrshounka_bmwm1_civ_grise",18000],["Mrshounka_bmwm1_civ_violet",18000],["Mrshounka_bmwm1_civ_orange",18000],
 	["Mrshounka_mustang_mat",18000],["Mrshounka_mustang_noir",18000],["Mrshounka_mustang_mat_n",18000],["Mrshounka_mustang_bleufonce",18000],["Mrshounka_mustang_mat_b",18000],["Mrshounka_mustang_rouge",18000],["Mrshounka_mustang_jaune",18000],["Mrshounka_mustang_rose",18000],["Mrshounka_mustang_grise",18000],["Mrshounka_mustang_violet",18000],["Mrshounka_mustang_orange",18000],
 	["shounka_a3_renaultmagnum_f",12500],
@@ -696,15 +696,15 @@ life_garage_sell =
 	["cl3_dbs_volante_flame1",100000],["cl3_dbs_volante_camo",100000],
 	["S_Vantage_Red",90000],["S_Vantage_Blue",90000],["S_Vantage_Black",90000],["S_Vantage_Yellow",90000],["S_Vantage_LightBlue",90000],["S_Vantage_Purple",90000],["S_Vantage_White",90000],
 	["IVORY_R8",240000],
-	["ivory_c",20000],["ivory_c_livery1",20000],["ivory_c_livery2",20000],["ivory_c_livery3",20000],["ivory_c_livery4",20000],
-	["ivory_lfa",18000],["ivory_lfa_sport1",18000],["ivory_lfa_sport2",18000],["ivory_lfa_sport3",18000],["ivory_lfa_sport4",18000],["ivory_lfa_sport5",18000],
-	["Mrshounka_a3_gtr_civ_noir",18000],["Mrshounka_a3_gtr_civ_bleu",18000],["Mrshounka_a3_gtr_civ_orange",18000],["Mrshounka_a3_gtr_civ_grau",18000],["Mrshounka_a3_gtr_civ_carbon",18000],["Mrshounka_a3_gtr_civ_gruen",18000],["Mrshounka_a3_gtr_civ_violet",18000],
-	["shounka_a3_rs5_civ_noir",18000],["shounka_a3_rs5_civ_bleufonce",18000],["shounka_a3_rs5_civ_rouge",18000],["shounka_a3_rs5_civ_jaune",18000],["shounka_a3_rs5_civ_rose",18000],["shounka_a3_rs5_civ_grise",18000],["shounka_a3_rs5_civ_violet",18000],["shounka_a3_rs5_civ_orange",18000],
-	["mrshounka_huracan_c_noir",20000],["mrshounka_huracan_c_bleufonce",20000],["mrshounka_huracan_c_rouge",20000],["mrshounka_huracan_c_jaune",20000],["mrshounka_huracan_c_rose",20000],["mrshounka_huracan_c_grise",20000],["mrshounka_huracan_c_violet",20000],["mrshounka_huracan_c_orange",20000],["mrshounka_huracan_c_carbon",20000],
-	["Mrshounka_veneno_c_noir",20000],["Mrshounka_veneno_c_bleu",20000],["Mrshounka_veneno_c_jaune",20000],["Mrshounka_veneno_c_grau",20000],["Mrshounka_veneno_c_carbon",20000],["Mrshounka_veneno_c_rot",20000],["Mrshounka_veneno_c_gruen",20000],["Mrshounka_veneno_c_violet",20000],
-	["Mrshounka_bmwm1_civ_noir",18000],["Mrshounka_bmwm1_civ_bleufonce",18000],["Mrshounka_bmwm1_civ_rouge",18000],["Mrshounka_bmwm1_civ_jaune",18000],["Mrshounka_bmwm1_civ_rose",18000],["Mrshounka_bmwm1_civ_grise",18000],["Mrshounka_bmwm1_civ_violet",18000],["Mrshounka_bmwm1_civ_orange",18000],
-	["Mrshounka_mustang_mat",18000],["Mrshounka_mustang_noir",18000],["Mrshounka_mustang_mat_n",18000],["Mrshounka_mustang_bleufonce",18000],["Mrshounka_mustang_mat_b",18000],["Mrshounka_mustang_rouge",18000],["Mrshounka_mustang_jaune",18000],["Mrshounka_mustang_rose",18000],["Mrshounka_mustang_grise",18000],["Mrshounka_mustang_violet",18000],["Mrshounka_mustang_orange",18000],
-	["shounka_a3_renaultmagnum_f",12500],
+	["ivory_c",993750],["ivory_c_livery1",993750],["ivory_c_livery2",993750],["ivory_c_livery3",993750],["ivory_c_livery4",993750],
+	["ivory_lfa",511500],["ivory_lfa_sport1",511500],["ivory_lfa_sport2",511500],["ivory_lfa_sport3",511500],["ivory_lfa_sport4",511500],["ivory_lfa_sport5",511500],
+	["Mrshounka_a3_gtr_civ_noir",232500],["Mrshounka_a3_gtr_civ_bleu",232500],["Mrshounka_a3_gtr_civ_orange",232500],["Mrshounka_a3_gtr_civ_grau",232500],["Mrshounka_a3_gtr_civ_gruen",232500],["Mrshounka_a3_gtr_civ_violet",232500],
+	["shounka_a3_rs5_civ_noir",351000],["shounka_a3_rs5_civ_bleufonce",351000],["shounka_a3_rs5_civ_rouge",351000],["shounka_a3_rs5_civ_jaune",351000],["shounka_a3_rs5_civ_rose",351000],["shounka_a3_rs5_civ_grise",351000],["shounka_a3_rs5_civ_violet",351000],["shounka_a3_rs5_civ_orange",351000],
+	["mrshounka_huracan_c_noir",491190],["mrshounka_huracan_c_bleufonce",491190],["mrshounka_huracan_c_rouge",491190],["mrshounka_huracan_c_jaune",491190],["mrshounka_huracan_c_rose",491190],["mrshounka_huracan_c_grise",491190],["mrshounka_huracan_c_violet",491190],["mrshounka_huracan_c_orange",491190],
+	["Mrshounka_veneno_c_noir",1413172],["Mrshounka_veneno_c_bleu",1413172],["Mrshounka_veneno_c_jaune",1413172],["Mrshounka_veneno_c_grau",1413172],["Mrshounka_veneno_c_rot",1413172],["Mrshounka_veneno_c_gruen",1413172],["Mrshounka_veneno_c_violet",1413172],
+	["Mrshounka_bmwm1_civ_noir",275505],["Mrshounka_bmwm1_civ_bleufonce",275505],["Mrshounka_bmwm1_civ_rouge",275505],["Mrshounka_bmwm1_civ_jaune",275505],["Mrshounka_bmwm1_civ_rose",275505],["Mrshounka_bmwm1_civ_grise",275505],["Mrshounka_bmwm1_civ_violet",275505],["Mrshounka_bmwm1_civ_orange",275505],
+	["Mrshounka_mustang_mat",264465],["Mrshounka_mustang_noir",264465],["Mrshounka_mustang_mat_n",264465],["Mrshounka_mustang_bleufonce",264465],["Mrshounka_mustang_mat_b",264465],["Mrshounka_mustang_rouge",264465],["Mrshounka_mustang_jaune",264465],["Mrshounka_mustang_rose",264465],["Mrshounka_mustang_grise",264465],["Mrshounka_mustang_violet",264465],["Mrshounka_mustang_orange",264465],
+	["shounka_a3_renaultmagnum_f",262500],
 	["cl3_r8_spyder_white",260000],["cl3_r8_spyder_purple",260000],["cl3_r8_spyder_navy_blue",260000],["cl3_r8_spyder_lime",260000],["cl3_r8_spyder_light_yellow",260000],
 	["cl3_r8_spyder_light_blue",260000],["cl3_r8_spyder_grey",260000],["cl3_r8_spyder_gold",260000],["cl3_r8_spyder_burgundy",260000],["cl3_r8_spyder_black",260000],
 	["cl3_r8_spyder_2tone2",260000],["cl3_r8_spyder_2tone3",260000],["cl3_r8_spyder_2tone4",260000],["cl3_r8_spyder_2tone5",260000],["cl3_r8_spyder_flame1",260000],["cl3_r8_spyder_camo",260000],

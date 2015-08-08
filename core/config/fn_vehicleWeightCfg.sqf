@@ -49,19 +49,21 @@ switch (_className) do
 	case "ivory_c_livery2": {15};
 	case "ivory_c_livery3": {15};
 	case "ivory_c_livery4": {15};
+	
 	case "ivory_lfa": {15};
 	case "ivory_lfa_sport1": {15};
 	case "ivory_lfa_sport2": {15};
 	case "ivory_lfa_sport3": {15};
 	case "ivory_lfa_sport4": {15};
 	case "ivory_lfa_sport5": {15};
+	
 	case "Mrshounka_a3_gtr_civ_noir": {15};
 	case "Mrshounka_a3_gtr_civ_bleu": {15};
 	case "Mrshounka_a3_gtr_civ_orange": {15};
 	case "Mrshounka_a3_gtr_civ_grau": {15};
-	case "Mrshounka_a3_gtr_civ_carbon": {15};
 	case "Mrshounka_a3_gtr_civ_gruen": {15};
 	case "Mrshounka_a3_gtr_civ_violet": {15};
+	
 	case "shounka_a3_rs5_civ_noir": {15};
 	case "shounka_a3_rs5_civ_bleufonce": {15};
 	case "shounka_a3_rs5_civ_rouge": {15};
@@ -70,6 +72,7 @@ switch (_className) do
 	case "shounka_a3_rs5_civ_grise": {15};
 	case "shounka_a3_rs5_civ_violet": {15};
 	case "shounka_a3_rs5_civ_orange": {15};
+	
 	case "mrshounka_huracan_c_noir": {15};
 	case "mrshounka_huracan_c_bleufonce": {15};
 	case "mrshounka_huracan_c_rouge": {15};
@@ -79,33 +82,36 @@ switch (_className) do
 	case "mrshounka_huracan_c_violet": {15};
 	case "mrshounka_huracan_c_orange": {15};
 	case "mrshounka_huracan_c_carbon": {15};
+	
 	case "Mrshounka_veneno_c_noir": {15};
 	case "Mrshounka_veneno_c_bleu": {15};
 	case "Mrshounka_veneno_c_jaune": {15};
 	case "Mrshounka_veneno_c_grau": {15};
-	case "Mrshounka_veneno_c_carbon": {15};
 	case "Mrshounka_veneno_c_rot": {15};
 	case "Mrshounka_veneno_c_gruen": {15};
 	case "Mrshounka_veneno_c_violet": {15};
+	
 	case "Mrshounka_bmwm1_civ_noir": {15};
-	case "Mrshounka_bmwm1_civ_bleufonce"{15};
+	case "Mrshounka_bmwm1_civ_bleufonce" {15};
 	case "Mrshounka_bmwm1_civ_rouge": {15};
 	case "Mrshounka_bmwm1_civ_jaune": {15};
 	case "Mrshounka_bmwm1_civ_rose": {15};
 	case "Mrshounka_bmwm1_civ_grise": {15};
 	case "Mrshounka_bmwm1_civ_violet": {15};
 	case "Mrshounka_bmwm1_civ_orange": {15};
+	
 	case "Mrshounka_mustang_mat": {15};
-	case "Mrshounka_mustang_noir"{15};
-	case "Mrshounka_mustang_mat_n"{15};
-	case "Mrshounka_mustang_bleufonce"{15};
-	case "Mrshounka_mustang_mat_b"{15};
-	case "Mrshounka_mustang_rouge"{15};
-	case "Mrshounka_mustang_jaune"{15};
-	case "Mrshounka_mustang_rose" {15};
-	case "Mrshounka_mustang_grise"{15};
-	case "Mrshounka_mustang_violet"{15};
-	case "Mrshounka_mustang_orange"{15};
+	case "Mrshounka_mustang_noir": {15};
+	case "Mrshounka_mustang_mat_n": {15};
+	case "Mrshounka_mustang_bleufonce": {15};
+	case "Mrshounka_mustang_mat_b": {15};
+	case "Mrshounka_mustang_rouge": {15};
+	case "Mrshounka_mustang_jaune": {15};
+	case "Mrshounka_mustang_rose": {15};
+	case "Mrshounka_mustang_grise": {15};
+	case "Mrshounka_mustang_violet": {15};
+	case "Mrshounka_mustang_orange": {15};
+	
 	case "shounka_a3_renaultmagnum_f": {350};
 	
 	case "A3L_RX7_Blue": {25};
