@@ -146,7 +146,9 @@ private["_obj"];
 		_cfg = getNumber(configFile >> "CfgVehicles" >> (backpack player) >> "maximumload");
 		_load = round(_cfg / 8);
 		life_maxWeight = life_maxWeightT + _load;
-		(unitBackpack player) setObjectTextureGlobal [0,""];
+		if(backpack player in ["tf_mr3000","tf_anprc155"]) then {
+			(unitBackpack player) setObjectTextureGlobal [0,""];
+		};
 		waitUntil {backpack player != _bp};
 		if(backpack player == "") then 
 		{
