@@ -1,7 +1,7 @@
 
 	_vehicle = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 	_index = -1;
-	if(!life_adacMarker) then {
+	if((count life_adacMarker) > 2) then {
 		//diag_log format["Zu viele Fahrzeuge"];
 		hint "Fahrzeugmarker wurde entfernt!";
 		["AdacMessage",[format["%1 braucht keine LAC Hilfe, bitte schaut per GPS nach"]] call BIS_fnc_showNotification;

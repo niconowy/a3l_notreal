@@ -80,20 +80,26 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr","Schulrucksack",150],
-			["B_Kitbag_mcamo",nil,350],
-/*			// 1.7.1
-			["glt_backpack_cars",nil,1000],
-			["glt_backpack_dora",nil,1000],
-			["glt_bergen_blue",nil,1000],
-			["glt_bergen_green",nil,1000],
-			["glt_bergen_orange",nil,1000],
-			["glt_bergen_pink",nil,1000],
-			["glt_bergen_red",nil,1000],
-			["glt_bergen_violet",nil,1000],
-			["glt_bergen_yellow",nil,1000],
-*/			
-			["B_Carryall_khk",nil,400]
+			["domekappa_s",nil,500],
+			["domekappa_blau",nil,500],
+			["domekappa_p",nil,500],
+			["domekappa_t",nil,500],
+			["domekappa_w",nil,500],
+			["domeadi_s",nil,500],
+			["domeadi_blau",nil,500],
+			["domeadi_p",nil,500],
+			["domeadi_t",nil,500],
+			["domeadi_w",nil,500],
+			["domenik_s",nil,500],
+			["domenik_blau",nil,500],
+			["domenik_p",nil,500],
+			["domenik_t",nil,500],
+			["domenik_w",nil,500],
+			["domepu_s",nil,500],
+			["domepu_blau",nil,500],
+			["domepu_p",nil,500],
+			["domepu_t",nil,500],
+			["domepu_w",nil,500]
 		];
 	};
 };
