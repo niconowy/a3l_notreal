@@ -313,26 +313,26 @@ switch (_shop) do
 			_return pushBack ["IVORY_PRIUS",4500]
 		};
 		
-		if(__GETC__(life_mediclevel) > 1) then
+		if(__GETC__(life_mediclevel) >= 1) then
 		{
 			_return pushBack ["Jonzie_Ambulance",25000]
 			//_return pushBack ["A3L_AmberLamps",25000] Medics benutzen nur den einen RTW, somit unnötig
 		};
 		
-		if(__GETC__(life_mediclevel) > 2) then
+		if(__GETC__(life_mediclevel) >= 2) then
 		{
 			_return pushBack ["A3L_Laddertruck",40000],
 			_return pushBack ["dar_tahoeems",10000]
 		};
 		
-		if(__GETC__(life_mediclevel) > 3) then
+		if(__GETC__(life_mediclevel) >= 3) then
 		{
 			_return pushBack ["A3L_CVPILBFD", 35000],
 			_return pushBack ["charger_ems", 80000],
 			_return pushBack ["cl3_dodge_charger_emt",100000]
 		};
 		
-		if(__GETC__(life_mediclevel) > 4) then
+		if(__GETC__(life_mediclevel) >= 4) then
 		{
 			_return pushBack ["cl3_xr_1000_emt",75000],
 			_return pushBack ["A3L_EvoXFPBLBMED",70000]
@@ -1354,7 +1354,7 @@ switch (_shop) do
 			_return pushBack ["A3L_JailBus",32500]
 		};
 		
-		if(__GETC__(life_coplevel) > 1) then
+		if(__GETC__(life_coplevel) >= 1) then
 		{
 			_return pushBack ["A3L_CVPIFPBLBPD",45000],		
 			/*_return pushBack ["A3L_CVPIFPBLBFG",45000],*/
@@ -1363,7 +1363,7 @@ switch (_shop) do
 			_return pushBack ["A3L_CVPIFPBLBHP",45000]
 		};
 			
-		if(__GETC__(life_coplevel) > 2) then
+		if(__GETC__(life_coplevel) >= 2) then
 		{
 			_return pushBack ["A3L_EvoXFPBLBPD",70000],
 			_return pushBack ["A3L_EvoXFPBLBSO",70000],
@@ -1384,7 +1384,7 @@ switch (_shop) do
 			_return pushBack ["charger_umw",80000]
 		};
 			
-		if(__GETC__(life_coplevel) > 9) then
+		if(__GETC__(life_coplevel) >= 9) then
 		{	
 			_return pushBack ["cl3_xr_1000_police",75000],
 			_return pushBack ["IVORY_REV",100000]
