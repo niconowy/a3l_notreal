@@ -107,9 +107,27 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_FieldPack_ocamo",nil,300],
-			["B_Carryall_oucamo",nil,300],
-			["B_TacticalPack_blk",nil,300]
+			["B_TacticalPack_blk",nil,300],
+			["domekappa_s",nil,500],
+			["domekappa_blau",nil,500],
+			["domekappa_b",nil,500],
+			["domekappa_t",nil,500],
+			["domekappa_w",nil,500],
+			["domeadi_s",nil,500],
+			["domeadi_blau",nil,500],
+			["domeadi_b",nil,500],
+			["domeadi_t",nil,500],
+			["domeadi_w",nil,500],
+			["domenik_s",nil,500],
+			["domenik_blau",nil,500],
+			["domenik_b",nil,500],
+			["domenik_t",nil,500],
+			["domenik_w",nil,500],
+			["domepu_s",nil,500],
+			["domepu_blau",nil,500],
+			["domepu_b",nil,500],
+			["domepu_t",nil,500],
+			["domepu_w",nil,500]
 		];
 	};
 };

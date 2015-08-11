@@ -205,21 +205,27 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["B_AssaultPack_cbr","Schulrucksack",450],
-			["B_Kitbag_mcamo",nil,450],
-			["B_TacticalPack_oli",nil,350],
-			["B_FieldPack_ocamo",nil,300],
-			["B_Bergen_sgg",nil,450],
-			["B_Kitbag_cbr",nil,450],
+			["domekappa_s",nil,500],
+			["domekappa_blau",nil,500],
+			["domekappa_b",nil,500],
+			["domekappa_t",nil,500],
+			["domekappa_w",nil,500],
+			["domeadi_s",nil,500],
+			["domeadi_blau",nil,500],
+			["domeadi_b",nil,500],
+			["domeadi_t",nil,500],
+			["domeadi_w",nil,500],
+			["domenik_s",nil,500],
+			["domenik_blau",nil,500],
+			["domenik_b",nil,500],
+			["domenik_t",nil,500],
+			["domenik_w",nil,500],
+			["domepu_s",nil,500],
+			["domepu_blau",nil,500],
+			["domepu_b",nil,500],
+			["domepu_t",nil,500],
+			["domepu_w",nil,500],
 			["B_Carryall_oli",nil,500],
-/*
-			//1.7.1
-			["glt_assaultpack_ndk",nil,1500],
-			["glt_bergen_ndk",nil,1500],
-			["glt_carryall_ndk",nil,1500],
-			["glt_fieldpack_ndk",nil,1500],
-			["glt_kitbag_ndk",nil,1500],
-*/			
 			["B_Carryall_khk",nil,500]
 		];
 	};

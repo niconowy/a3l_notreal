@@ -143,11 +143,26 @@ switch (_filter) do
 	{
 		_ret =
 		[
-			["B_Kitbag_cbr",nil,800],
-			["B_FieldPack_cbr",nil,500],
-			["B_AssaultPack_cbr",nil,700],
-			["B_Bergen_sgg",nil,2500],
-			["B_Carryall_cbr",nil,3500]
+			["domekappa_s",nil,500],
+			["domekappa_blau",nil,500],
+			["domekappa_b",nil,500],
+			["domekappa_t",nil,500],
+			["domekappa_w",nil,500],
+			["domeadi_s",nil,500],
+			["domeadi_blau",nil,500],
+			["domeadi_b",nil,500],
+			["domeadi_t",nil,500],
+			["domeadi_w",nil,500],
+			["domenik_s",nil,500],
+			["domenik_blau",nil,500],
+			["domenik_b",nil,500],
+			["domenik_t",nil,500],
+			["domenik_w",nil,500],
+			["domepu_s",nil,500],
+			["domepu_blau",nil,500],
+			["domepu_b",nil,500],
+			["domepu_t",nil,500],
+			["domepu_w",nil,500]
 		];
 	};
 };
