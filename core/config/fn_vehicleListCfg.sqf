@@ -329,7 +329,8 @@ switch (_shop) do
 		{
 			_return pushBack ["A3L_CVPILBFD", 35000],
 			_return pushBack ["charger_ems", 80000],
-			_return pushBack ["cl3_dodge_charger_emt",100000]
+			_return pushBack ["cl3_dodge_charger_emt",100000],
+			_return pushBack ["mercedes_atego_pompier_ingame",40000]
 		};
 		
 		if(__GETC__(life_mediclevel) >= 4) then
