@@ -153,15 +153,14 @@ if (!isServer) then {
 	};
 };
 
-ARMA3LIFEDE_MODS_VERSION = getText (configFile >> "CfgPatches" >> "Domes_back_pack" >> "kanibale");
-_a3l_mods_version = ARMA3LIFEDE_MODS_VERSION;
+LAKESIDEREALLIFEDE_MODS_VERSION = getText (configFile >> "CfgPatches" >> "Domes_back_pack" >> "kanibale");
+_lrl_mods_version = LAKESIDEREALLIFEDE_MODS_VERSION;
 
-if(_a3l_mods_version != a3l_lrl_version) then {
+if(_lrl_mods_version != lrl_version) then {
 	disableUserInput true;
-	titleText ["==== ACHTUNG ==== Du verwendest eine veraletete Version der Mod-Dateien! Bitte A3Sync starten und die Mods aktualisieren.","BLACK_IN"];
-	hint "Du verwendest eine veraletete Version der Mod-Dateien! Bitte A3Sync starten und die Mods aktualisieren."; 
-	systemChat "Du verwendest eine veraletete Version der Mod-Dateien! Bitte A3Sync starten und die Mods aktualisieren.";
-	diag_log format["| Falsche Mod-Files : %1 (%2) verwendet alte Mod-Dateien - Version: [%3]",profileName,getPlayerUID player,_a3l_mods_version];
+	titleText ["==== ACHTUNG ==== Du verwendest eine veraltete Version der Mod-Dateien! Bitte A3Sync starten und die Mods aktualisieren.","BLACK_IN"];
+	hint "Du verwendest eine veraltete Version der Mod-Dateien! Bitte A3Sync starten und die Mods aktualisieren."; 
+	systemChat "Du verwendest eine veraltete Version der Mod-Dateien! Bitte A3Sync starten und die Mods aktualisieren.";
 	sleep 5;
 	disableUserInput false;sleep 0.5;
 	["LRLWrongModVersion",false,false] call BIS_fnc_endMission;
