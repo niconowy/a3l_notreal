@@ -150,7 +150,7 @@ if(playerSide == west) then {
 		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC; closeDialog 0;";
 	} else {
 		_Btn3 ctrlSetText "ADAC Widerrufen";
-		_Btn3 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",east,FALSE] spawn life_fnc_MP; closeDialog 0;";
+		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deleteADAC; closeDialog 0;";
 	};
 	
 	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
