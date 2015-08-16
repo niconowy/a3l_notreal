@@ -186,6 +186,13 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	class wedding
+	{
+		name = "wedding";
+		sound[] = {"sounds\wedding.ogg", 0.7, 1};
+		titles[] = {};
+	};
+	
 };
 
 class CfgDebriefing

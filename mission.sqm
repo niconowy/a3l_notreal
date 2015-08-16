@@ -2118,7 +2118,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="Lakeside";
-					init="this allowDamage false; this enableSimulation false; this addAction[""Kasse ausrauben"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Kasse Ausrauben"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -2138,7 +2138,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="MorrisonTown";
-					init="this allowDamage false; this enableSimulation false; this addAction[""Kasse ausrauben"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Kasse Ausrauben"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -2178,7 +2178,7 @@ class Mission
 					leader=1;
 					skill=0.60000002;
 					text="LosDiablos";
-					init="this allowDamage false; this enableSimulation false; this addAction[""Kasse ausrauben"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Kasse Ausrauben"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -2191,14 +2191,14 @@ class Mission
 				class Item0
 				{
 					position[]={5923.6216,499.23026,8207.415};
-					azimut=239.51276;
+					azimut=239.513;
 					id=91;
 					side="CIV";
 					vehicle="C_man_shorts_1_F_afro";
 					leader=1;
 					skill=0.60000002;
 					text="Landmarkt";
-					init="this allowDamage false; this enableSimulation false; this addAction[""Kasse ausrauben"",life_fnc_robShops];";
+					init="this allowDamage false; this enableSimulation false; this addAction[""Kasse Ausrauben"",life_fnc_robShops];";
 				};
 			};
 		};
@@ -3636,8 +3636,8 @@ class Mission
 		};
 		class Item4
 		{
-			position[]={4180.9077,83.980003,6547.1509};
-			azimut=170.2394;
+			position[]={4223.0957,83.980003,6453.4702};
+			azimut=799.91144;
 			id=154;
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
@@ -4501,7 +4501,7 @@ class Mission
 		};
 		class Item88
 		{
-			position[]={5107.8081,4.98,1126.3445};
+			position[]={5106.0151,4.98,1132.9503};
 			azimut=1507.35;
 			id=238;
 			side="EMPTY";
@@ -4512,8 +4512,8 @@ class Mission
 		};
 		class Item89
 		{
-			position[]={5111.0176,4.9820356,1118.3696};
-			azimut=1507.35;
+			position[]={5085.1675,4.98,1089.6368};
+			azimut=1854.5852;
 			id=239;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -4710,9 +4710,9 @@ class Mission
 		};
 		class Item108
 		{
-			position[]={5439.5254,-0.00015712046,3127.1226};
-			azimut=1621.14;
-			offsetY=1.5;
+			position[]={5445.8052,-0.0012322064,3127.3081};
+			azimut=1532.5038;
+			offsetY=1.0599999;
 			id=258;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
@@ -5232,7 +5232,7 @@ class Mission
 		};
 		class Item157
 		{
-			position[]={18366.635,366.73767,-4430.7578};
+			position[]={19155.627,303.20447,-4339.998};
 			azimut=2217.3784;
 			id=307;
 			side="EMPTY";
@@ -5385,7 +5385,7 @@ class Mission
 		};
 		class Item172
 		{
-			position[]={18365.928,366.90549,-4429.5342};
+			position[]={19154.92,303.10352,-4338.7744};
 			azimut=2217.3799;
 			id=322;
 			side="EMPTY";
@@ -5396,7 +5396,7 @@ class Mission
 		};
 		class Item173
 		{
-			position[]={18373.072,365.63037,-4434.4326};
+			position[]={19162.064,303.27826,-4343.6729};
 			azimut=328.69434;
 			id=323;
 			side="EMPTY";
@@ -6456,7 +6456,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=261;
+		items=268;
 		class Item0
 		{
 			position[]={9309.4014,24.692854,10547.989};
@@ -6974,12 +6974,12 @@ class Mission
 		};
 		class Item62
 		{
-			position[]={5111.0313,4.9820623,1118.3762};
+			position[]={5085.1685,4.98,1089.6542};
 			name="dp_1_18_2";
 			text="DP 2";
 			type="mil_box";
 			colorName="ColorYellow";
-			angle=0.013687338;
+			angle=347.24954;
 		};
 		class Item63
 		{
@@ -7093,7 +7093,7 @@ class Mission
 		};
 		class Item77
 		{
-			position[]={5107.7949,4.98,1126.3344};
+			position[]={5106.002,4.98,1132.9402};
 			name="license_shop_1";
 			text="Lizenzen";
 			type="A3L_DMV_Icon";
@@ -7360,7 +7360,7 @@ class Mission
 		};
 		class Item109
 		{
-			position[]={8556.1289,10.46,6663.9644};
+			position[]={8555.7334,10.46,6661.9888};
 			name="car_g_1";
 			type="Empty";
 			angle=191.66713;
@@ -7438,16 +7438,16 @@ class Mission
 		};
 		class Item119
 		{
-			position[]={5439.5366,-0.00012756819,3126.7415};
+			position[]={5445.811,-0.0011027586,3127.2683};
 			name="boat_2_1_1";
 			text="Boot Händler";
 			type="c_ship";
 			colorName="ColorWhite";
-			angle=-1.0339601;
+			angle=1.3967739;
 		};
 		class Item120
 		{
-			position[]={5447.7734,-0.10651527,3118.4072};
+			position[]={5449.022,-0.0022599977,3117.5745};
 			name="civ_ship_3";
 			type="Empty";
 		};
@@ -7557,11 +7557,11 @@ class Mission
 		};
 		class Item134
 		{
-			position[]={4180.8618,83.980003,6546.9058};
+			position[]={4222.8643,83.980003,6453.52};
 			name="atm_marker_3";
 			type="A3L_ATM_Icon";
 			colorName="ColorGreen";
-			angle=-2.9997466;
+			angle=361.18509;
 		};
 		class Item135
 		{
@@ -7951,14 +7951,14 @@ class Mission
 		};
 		class Item185
 		{
-			position[]={8558.7539,10.46,6678.3706};
+			position[]={8559.2139,10.46,6680.1489};
 			name="car_g_1_1";
 			type="Empty";
 			angle=191.66713;
 		};
 		class Item186
 		{
-			position[]={8552.4277,10.46,6646.5269};
+			position[]={8551.3086,10.46,6640.3374};
 			name="car_g_1_2";
 			type="Empty";
 			angle=191.66713;
@@ -8120,17 +8120,17 @@ class Mission
 		};
 		class Item207
 		{
-			position[]={18360.025,367.15195,-4438.2617};
+			position[]={8687.9131,10.46,6663.1899};
 			name="donator_2";
 			type="Empty";
-			angle=287.56567;
+			angle=391.91687;
 		};
 		class Item208
 		{
-			position[]={18365.771,366.2608,-4440.0732};
+			position[]={8688.625,10.46,6663.3984};
 			name="donator_1";
 			type="Empty";
-			angle=287.82178;
+			angle=365.2901;
 		};
 		class Item209
 		{
@@ -8335,12 +8335,12 @@ class Mission
 		};
 		class Item235
 		{
-			position[]={8679.2646,10.46,6694.2031};
-			name="taxi_mark";
-			text="Taxi Stand";
+			position[]={8518.8564,10.46,6703.4404};
+			name="taxi_city_zentrum";
+			text="Taxistand - Lakeside Zentrum";
 			type="loc_BusStop";
 			colorName="ColorYellow";
-			angle=9.3095465;
+			angle=9.3095503;
 		};
 		class Item236
 		{
@@ -8554,6 +8554,69 @@ class Mission
 			name="reb_spawn_car_3";
 			type="Empty";
 			angle=118.535;
+		};
+		class Item261
+		{
+			position[]={8296.1455,10.506076,6356.2158};
+			name="taxi_city_titty";
+			text="Taxistand - Titty Twister";
+			type="loc_BusStop";
+			colorName="ColorYellow";
+			angle=-50.9883;
+		};
+		class Item262
+		{
+			position[]={3391.887,89.220001,7698.6411};
+			name="taxi_diablos_zentrum";
+			text="Taxistand - Los Diablos";
+			type="loc_BusStop";
+			colorName="ColorYellow";
+			angle=38.761414;
+		};
+		class Item263
+		{
+			position[]={5910.7949,500.34625,8158.2461};
+			name="taxi_newhaven";
+			text="Taxistand - New Haven";
+			type="loc_BusStop";
+			colorName="ColorYellow";
+			angle=340.37903;
+		};
+		class Item264
+		{
+			position[]={8889.8555,10.52,8290.0947};
+			name="taxi_smallville";
+			text="Taxistand - Los Diablos";
+			type="loc_BusStop";
+			colorName="ColorYellow";
+			angle=363.14011;
+		};
+		class Item265
+		{
+			position[]={5101.8169,4.98,1122.2587};
+			name="taxi_sancristobal";
+			text="Taxistand - Nueva San Cristobal";
+			type="loc_BusStop";
+			colorName="ColorYellow";
+			angle=429.05585;
+		};
+		class Item266
+		{
+			position[]={5369.583,8.0560913,3060.5313};
+			name="taxi_morrison_town";
+			text="Taxistand - Morrison Town";
+			type="loc_BusStop";
+			colorName="ColorYellow";
+			angle=360.01199;
+		};
+		class Item267
+		{
+			position[]={8699.7783,10.46,6936.8828};
+			name="taxi_city_lakwood";
+			text="Taxistand - Lakewood";
+			type="loc_BusStop";
+			colorName="ColorYellow";
+			angle=9.3095503;
 		};
 	};
 };

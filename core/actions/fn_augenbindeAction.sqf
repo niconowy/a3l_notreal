@@ -1,7 +1,7 @@
 /*
 	File: fn_augenbindeAction.sqf
-	Author: James Sunderland
-	Server: arma-3-life.de
+	Author: VariatoX
+	Server: lakeside-reallife.de
 	
 	Description:
 	Setzt die Variable, damit die Augenbinde angelegt werden kann.

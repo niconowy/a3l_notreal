@@ -631,7 +631,7 @@ switch (_shop) do
 			["A3L_Towtruck",35000],
 			["A3L_CVLac",45000],
 			["B_Heli_Light_01_F",100000],
-			["EC635_ADAC",125000],
+			["EC635_ADAC",150000],
 			["A3L_TaurusWhite",35000],
 			["A3l_evoxADAC",70000]
 			//["I_Heli_Transport_02_F",100000] Unnötig kein Liftsystem

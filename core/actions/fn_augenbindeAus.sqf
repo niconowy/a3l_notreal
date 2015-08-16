@@ -1,7 +1,7 @@
 /*
 	File: fn_augenbindeAus.sqf
-	Author: James Sunderland
-	Server: arma-3-life.de
+	Author: VariatoX
+	Server: lakeside-reallife.de
 	
 	Description:
 	Dem Ziel die Augenbinde entfernen.

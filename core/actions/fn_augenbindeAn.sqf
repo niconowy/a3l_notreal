@@ -1,7 +1,7 @@
 /*
 	File: fn_augenbindeAn.sqf
-	Author: James Sunderland
-	Server: arma-3-life.de
+	Author: VariatoX
+	Server: lakeside-reallife.de
 	
 	Description:
 	Dem Spieler wird die Augenbinde angelegt.

@@ -17,7 +17,6 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			player playMove "cl3_anim_eat";
 			playsound "trinken";
 			life_thirst = 100;
 //			player setFatigue 0; Unlogisch, oder?
@@ -28,7 +27,6 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			player playMove "cl3_anim_eat";
 			playsound "trinken";
 			life_thirst = 100;
 			player setFatigue 0;			
@@ -49,7 +47,6 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			player playMove "cl3_anim_eat";
 			playsound "trinken";
 			titleText["Du hast Bier getrunken.","PLAIN"];
 			life_intox = life_intox + 0.02;
@@ -60,7 +57,6 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			player playMove "cl3_anim_eat";
 			playsound "trinken";
 			titleText["Du hast Jack Daniel's Rum getrunken.","PLAIN"];
 			life_intox = life_intox + 0.06;
@@ -221,7 +217,6 @@ switch (true) do
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
-			player playMove "cl3_anim_eat";
 			playsound "trinken";
 			life_thirst = 100;
 			player setFatigue 0;
@@ -280,7 +275,7 @@ switch (true) do
 				if(life_married == "-1") then {
 					life_married = "jemand";
 				};
-				[player,"umbrellam"] call life_fnc_globalSound;		//:TODO: --> Neuer Sound Finden!
+				[player,"wedding"] call life_fnc_globalSound;
 				[[0,format["%1 und %2 haben geheiratet! Wir wünschen dem glücklichen Paar alles Gute!",profileName, life_married]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 				life_married = "-2";
 			};
@@ -292,7 +287,7 @@ switch (true) do
 			[[0,format["%1 ist bereits verheiratet und möchte Fremdgehen...",profileName]],nil,false] spawn life_fnc_MP;
 		};
 	};
-	
+
 	case (_item == "presseformular"):
 	{
 		if(playerSide != civilian) exitWith {hint "Nur Zivilisten können das Presseformular ausfüllen!"};
