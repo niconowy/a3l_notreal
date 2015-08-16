@@ -73,6 +73,8 @@ switch (_className) do
 	case "shounka_a3_rs5_civ_violet": {15};
 	case "shounka_a3_rs5_civ_orange": {15};
 	
+	case "mercedes_atego_pompier_ingame": {45};
+	
 	case "mrshounka_huracan_c_noir": {15};
 	case "mrshounka_huracan_c_bleufonce": {15};
 	case "mrshounka_huracan_c_rouge": {15};
@@ -82,6 +84,44 @@ switch (_className) do
 	case "mrshounka_huracan_c_violet": {15};
 	case "mrshounka_huracan_c_orange": {15};
 	case "mrshounka_huracan_c_carbon": {15};
+	
+	case "Mrshounka_rs_2015_g": {35};
+	case "Mrshounka_megane_rs_2015_noir": {35};
+	case "Mrshounka_megane_rs_2015_bleufonce": {35};
+	case "Mrshounka_megane_rs_2015_rouge": {35};
+	case "Mrshounka_megane_rs_2015_jaune": {35};
+	case "Mrshounka_megane_rs_2015_rose": {35};
+	case "Mrshounka_megane_rs_2015_grise": {35};
+	case "Mrshounka_megane_rs_2015_violet": {35};
+	case "Mrshounka_megane_rs_2015_orange": {35};
+	
+	case "Mrshounka_hummer_civ_noir": {70};
+	case "Mrshounka_hummer_civ_bleufonce": {70};
+	case "Mrshounka_hummer_civ_rouge": {70};
+	case "Mrshounka_hummer_civ_jaune": {70};
+	case "Mrshounka_hummer_civ_rose": {70};
+	case "Mrshounka_hummer_civ_grise": {70};
+	case "Mrshounka_hummer_civ_violet": {70};
+	case "Mrshounka_hummer_civ_orange": {70};
+	
+	case "Mrshounka_Volkswagen_Touareg_noir": {55};
+	case "Mrshounka_Volkswagen_Touareg_bleufonce": {55};
+	case "Mrshounka_Volkswagen_Touareg_rouge": {55};
+	case "Mrshounka_Volkswagen_Touareg_jaune": {55};
+	case "Mrshounka_Volkswagen_Touareg_rose": {55};
+	case "Mrshounka_Volkswagen_Touareg_grise": {55};
+	case "Mrshounka_Volkswagen_Touareg_violet": {55};
+	case "Mrshounka_Volkswagen_Touareg_orange": {55};
+	
+	case "ivory_rev_fbi": {35};
+	case "ivory_rev_fbi2": {35};
+	case "ivory_rev_fbi3": {35};
+	case "ivory_rev_fbi4": {35};
+	case "ivory_rev_fbi5": {35};
+	case "ivory_rev_fbi6": {35};
+	
+	case "Mrshounka_Volkswagen_Touareg_police_police": {65};
+	case "shounka_a3_audiq7_v2_gendarmerie": {65};
 	
 	case "Mrshounka_veneno_c_noir": {15};
 	case "Mrshounka_veneno_c_bleu": {15};

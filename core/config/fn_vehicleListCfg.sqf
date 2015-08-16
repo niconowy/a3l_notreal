@@ -136,7 +136,15 @@ switch (_shop) do
 			["cl3_polo_gti_grey",35000],
 			["cl3_polo_gti_gold",35000],
 			["cl3_polo_gti_burgundy",35000],
-			["cl3_polo_gti_black",35000]
+			["cl3_polo_gti_black",35000],
+			["Mrshounka_Volkswagen_Touareg_noir",125000],
+			["Mrshounka_Volkswagen_Touareg_bleufonce",125000],
+			["Mrshounka_Volkswagen_Touareg_rouge",125000],
+			["Mrshounka_Volkswagen_Touareg_jaune",125000],
+			["Mrshounka_Volkswagen_Touareg_rose",125000],
+			["Mrshounka_Volkswagen_Touareg_grise",125000],
+			["Mrshounka_Volkswagen_Touareg_violet",125000],
+			["Mrshounka_Volkswagen_Touareg_orange",125000]
 		];
 	};
 	
@@ -568,7 +576,16 @@ switch (_shop) do
 			["RDS_Lada_Civ_02",25000],
 			["RDS_Lada_Civ_03",25000],
 			["RDS_Lada_Civ_04",25000],
-			["RDS_Golf4_Civ_01",25000]
+			["RDS_Golf4_Civ_01",25000],
+			
+			["Mrshounka_megane_rs_2015_noir",185000],
+			["Mrshounka_megane_rs_2015_bleufonce",185000],
+			["Mrshounka_megane_rs_2015_rouge",185000],
+			["Mrshounka_megane_rs_2015_jaune",185000],
+			["Mrshounka_megane_rs_2015_rose",185000],
+			["Mrshounka_megane_rs_2015_grise",185000],
+			["Mrshounka_megane_rs_2015_violet",185000],
+			["Mrshounka_megane_rs_2015_orange",185000]
 		];
 	};
 	
@@ -594,7 +611,15 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["B_Heli_Light_01_F",810000]
+			["B_Heli_Light_01_F",810000],
+			["Mrshounka_hummer_civ_noir",525000],
+			["Mrshounka_hummer_civ_bleufonce",525000],
+			["Mrshounka_hummer_civ_rouge",525000],
+			["Mrshounka_hummer_civ_jaune",525000],
+			["Mrshounka_hummer_civ_rose",525000],
+			["Mrshounka_hummer_civ_grise",525000],
+			["Mrshounka_hummer_civ_violet",525000],
+			["Mrshounka_hummer_civ_orange",525000]
 		];
 	};
 	
@@ -1352,7 +1377,8 @@ switch (_shop) do
 			//_return pushBack ["A3L_TaurusFPBPD",25000],
 			_return pushBack ["A3l_TaurusFPBLBPD",25000],
 			/*_return pushBack ["A3l_TaurusFPBLBSP",25000],*/
-			_return pushBack ["A3L_JailBus",32500]
+			_return pushBack ["A3L_JailBus",32500],
+			_return pushBack ["Mrshounka_rs_2015_g",27000]
 		};
 		
 		if(__GETC__(life_coplevel) >= 1) then
@@ -1370,6 +1396,8 @@ switch (_shop) do
 			_return pushBack ["A3L_EvoXFPBLBSO",70000],
 			/*_return pushBack ["A3L_EvoXFPBLBSP",70000],*/
 			_return pushBack ["DAR_TahoePoliceDet",50000],
+			_return pushBack ["shounka_a3_audiq7_v2_gendarmerie",55000],
+			_return pushBack ["Mrshounka_Volkswagen_Touareg_police_police",55000],
 			_return pushBack ["DAR_SWATPolice",85000]
 		};
 		
@@ -1385,7 +1413,7 @@ switch (_shop) do
 			_return pushBack ["charger_umw",80000]
 		};
 			
-		if(__GETC__(life_coplevel) >= 9) then
+		if(__GETC__(life_coplevel) >= 8) then
 		{	
 			_return pushBack ["cl3_xr_1000_police",75000],
 			_return pushBack ["IVORY_REV",100000]
@@ -1404,6 +1432,12 @@ switch (_shop) do
 			["A3L_CVPIUCGrey",16500],
 			["A3L_CVPIUCRed",16500],
 			["A3L_CVPIUCPink",16500],
+			["ivory_rev_fbi",150000],
+			["ivory_rev_fbi2",150000],
+			["ivory_rev_fbi3",150000],
+			["ivory_rev_fbi4",150000],
+			["ivory_rev_fbi5",150000],
+			["ivory_rev_fbi6",150000],
 			["cl3_e63_amg_white",35000],
 			["cl3_e63_amg_lime",35000],
 			["cl3_e63_amg_light_yellow",35000],
