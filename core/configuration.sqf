@@ -42,7 +42,7 @@ life_adacMarker = [];
 life_adac_request = false;
 life_married = "";
 life_earplugs = false;
-lrl_version = "lakeside-reallifeDE_modinfo_ver_151508";
+lrl_version = "lakeside-reallifeDE_modinfo_ver_151608";
 
 
 //Persistent Saving
