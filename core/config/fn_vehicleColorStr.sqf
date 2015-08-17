@@ -92,6 +92,14 @@ switch (_vehicle) do
 			case 10: {_color = "Sports 4";};
 		};
 	};
+	case "IVORY_REV" :
+	{
+		switch (_index) do
+		{
+			case 0: {_color = "Sheriff";};
+			case 1: {_color = "LVPD";};
+		};
+	};
 	case "A3L_M3" :
 	{
 		switch (_index) do

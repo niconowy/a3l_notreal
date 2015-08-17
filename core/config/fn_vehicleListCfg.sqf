@@ -1427,8 +1427,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 8) then
 		{	
 			_return pushBack ["cl3_xr_1000_police",75000],
-			_return pushBack ["ivory_rev_lvpd",100000],
-			_return pushBack ["ivory_rev_sheriff",100000]
+			_return pushBack ["ivory_rev",100000]
 		};
 	};
 	

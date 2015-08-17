@@ -112,7 +112,15 @@ switch (_vehicle) do
 		];
 	};*/
 	
-
+	case "IVORY_REV": {
+		_pathpolice = "\IVORY_REV\data\";
+		_ret =
+		[
+			[_pathpolice + "sheriff.paa","cop"],
+			[_pathpolice + "lvpd.paa","cop"]
+		];
+	};
+	
 	case "A3L_M3": {
 		_path = "\A3L_M3\data\";
 		_ret =

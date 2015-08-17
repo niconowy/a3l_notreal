@@ -135,8 +135,7 @@ switch (_className) do
 	case "ivory_rev_fbi9": {35};
 	case "ivory_rev_fbi10": {35};
 	case "ivory_rev_fbi11": {35};
-	case "ivory_rev_lvpd": {35};
-	case "ivory_rev_sheriff": {35};
+	case "ivory_rev": {35};
 	
 	case "Mrshounka_Volkswagen_Touareg_police_police": {65};
 	case "shounka_a3_audiq7_v2_gendarmerie": {65};
