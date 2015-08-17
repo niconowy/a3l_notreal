@@ -112,29 +112,6 @@ switch (_vehicle) do
 		];
 	};*/
 	
-	case "IVORY_REV": {
-		_path = "\IVORY_REV\data\";
-		_pathpolice = "\IVORY_REV_POLICE\";
-		_ret =
-		[
-			["#(argb,8,8,3)color(1,1,1,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.501961,1,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0.501961,1,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0,0.25098,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(0.541176,0,0,1.0,CO)","civ"],
-			["#(argb,8,8,3)color(1,0,1,1.0,CO)","civ"],
-			[_path + "lamborghini_reventon_livery01_hr.paa","civ"],
-			[_path + "lamborghini_reventon_livery02_hr.paa","civ"],
-			[_path + "lamborghini_reventon_livery03_hr.paa","civ"],
-			[_path + "lamborghini_reventon_livery04_hr.paa","civ"],
-			[_pathpolice + "interceptor.paa","cop"],
-			[_pathpolice + "sheriff.paa","cop"],
-			[_pathpolice + "0-1.paa","cop"],
-			[_pathpolice + "patrol.paa","cop"],
-			[_pathpolice + "ohara.paa","cop"]
-		];
-	};
 
 	case "A3L_M3": {
 		_path = "\A3L_M3\data\";

@@ -618,7 +618,9 @@ life_garage_prices =
 	["A3L_ChargerUC",3000],["A3L_ChargerUCWhite",3000],["A3L_ChargerLB",3000],
 	["DAR_TahoePoliceDet",2750],
 	["A3L_CVPIFPBLBHP",2250],["A3L_CVPIFPBLBSM",2250],["A3L_CVPIFPBLBSP2",2250],
-	["IVORY_REV",5000],
+	["ivory_rev_fbi",6000],["ivory_rev_fbi2",6000],["ivory_rev_fbi3",6000],["ivory_rev_fbi4",6000],["ivory_rev_fbi5",6000],["ivory_rev_fbi6",6000],["ivory_rev_fbi7",6000],["ivory_rev_fbi8",6000],["ivory_rev_fbi9",6000],["ivory_rev_fbi10",6000],["ivory_rev_fbi11",6000],
+	["ivory_rev_lvpd",6000],["ivory_rev_sheriff",6000],
+	["ivory_rev_black",15000],["ivory_rev_blue",15000],["ivory_rev_lime",15000],["ivory_rev_pink",15000],["ivory_rev_rot",15000],["ivory_rev_turkis",15000],["ivory_rev_orange",15000],["ivory_rev_sport1",15000],["ivory_rev_sport2",15000],["ivory_rev_sport3",15000],["ivory_rev_sport4",15000],
 	["I_Heli_light_03_unarmed_F",5000],
 	["B_Heli_Transport_01_F",10000],
 	["B_Heli_Transport_03_unarmed_F",15000],
@@ -761,7 +763,9 @@ life_garage_sell =
 	["A3L_ChargerUC",30000],["A3L_ChargerUCWhite",30000],["A3L_ChargerLB",30000],
 	["DAR_TahoePoliceDet",27500],
 	["A3L_CVPIFPBLBHP",22500],["A3L_CVPIFPBLBSM",22500],["A3L_CVPIFPBLBSP2",22500],["A3L_CVLac",22500],
-	["IVORY_REV",50000],
+	["ivory_rev_fbi",50000],["ivory_rev_fbi2",50000],["ivory_rev_fbi3",50000],["ivory_rev_fbi4",50000],["ivory_rev_fbi5",50000],["ivory_rev_fbi6",50000],["ivory_rev_fbi7",50000],["ivory_rev_fbi8",50000],["ivory_rev_fbi9",50000],["ivory_rev_fbi10",50000],["ivory_rev_fbi11",50000],
+	["ivory_rev_lvpd",50000],["ivory_rev_sheriff",50000],
+	["ivory_rev_black",355000],["ivory_rev_blue",355000],["ivory_rev_lime",355000],["ivory_rev_pink",355000],["ivory_rev_rot",355000],["ivory_rev_turkis",355000],["ivory_rev_orange",355000],["ivory_rev_sport1",355000],["ivory_rev_sport2",355000],["ivory_rev_sport3",355000],["ivory_rev_sport4",355000],
 	["I_Heli_light_03_unarmed_F",50000],
 	["B_Heli_Transport_01_F",100000],
 	["B_Heli_Transport_03_unarmed_F",150000],
@@ -771,7 +775,7 @@ life_garage_sell =
 	["A3L_Ship",350000],["A3L_Jetski",75000],["A3L_Jetski_yellow",75000],
 	["A3L_delorean",5000],
 	
-	["IVORY_PRIUS",5000],["C_Heli_Light_01_civil_F",150000],["B_Heli_Light_01_F",100000],["O_Heli_Light_02_unarmed_F",175000],["ivory_b206_rescue",100000],["ivory_b206",100000],
+	["IVORY_PRIUS",1200],["C_Heli_Light_01_civil_F",150000],["B_Heli_Light_01_F",100000],["O_Heli_Light_02_unarmed_F",175000],["ivory_b206_rescue",100000],["ivory_b206",100000],
 	["ivory_b206_news",100000],["ivory_b206_police",100000],["EC635_Unarmed_BW",35000],["EC635_ADAC",55000],["EC635_SAR",55000],["EC635_Unarmed_CSAT",50000],["IVORY_BELL512_POLICE",185000],["IVORY_BELL512",185000],["IVORY_BELL512_RESCUE",185000],["dar_tahoeems",10000]
 ];
 __CONST__(life_garage_sell,life_garage_sell);

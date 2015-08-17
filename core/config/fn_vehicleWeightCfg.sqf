@@ -113,12 +113,30 @@ switch (_className) do
 	case "Mrshounka_Volkswagen_Touareg_violet": {55};
 	case "Mrshounka_Volkswagen_Touareg_orange": {55};
 	
+	case "ivory_rev_black": {15};
+	case "ivory_rev_blue": {15};
+	case "ivory_rev_lime": {15};
+	case "ivory_rev_pink": {15};
+	case "ivory_rev_rot": {15};
+	case "ivory_rev_turkis": {15};
+	case "ivory_rev_orange": {15};
+	case "ivory_rev_sport1": {15};
+	case "ivory_rev_sport2": {15};
+	case "ivory_rev_sport3": {15};
+	case "ivory_rev_sport4": {15};
 	case "ivory_rev_fbi": {35};
 	case "ivory_rev_fbi2": {35};
 	case "ivory_rev_fbi3": {35};
 	case "ivory_rev_fbi4": {35};
 	case "ivory_rev_fbi5": {35};
 	case "ivory_rev_fbi6": {35};
+	case "ivory_rev_fbi7": {35};
+	case "ivory_rev_fbi8": {35};
+	case "ivory_rev_fbi9": {35};
+	case "ivory_rev_fbi10": {35};
+	case "ivory_rev_fbi11": {35};
+	case "ivory_rev_lvpd": {35};
+	case "ivory_rev_sheriff": {35};
 	
 	case "Mrshounka_Volkswagen_Touareg_police_police": {65};
 	case "shounka_a3_audiq7_v2_gendarmerie": {65};
@@ -291,7 +309,6 @@ switch (_className) do
 	case "S_PorscheRS_Yellow": {15};
 	case "S_PorscheRS_White": {15};
 	
-	case "IVORY_REV": {15};
 	case "IVORY_R8SPYDER": {15};
 	case "IVORY_R8": {15};
 	case "IVORY_PRIUS": {15};

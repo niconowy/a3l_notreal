@@ -92,28 +92,6 @@ switch (_vehicle) do
 			case 10: {_color = "Sports 4";};
 		};
 	};
-	case "IVORY_REV" :
-	{
-		switch (_index) do
-		{
-			case 0: {_color = "Matte White";};
-			case 1: {_color = "Matte Black";};
-			case 2: {_color = "Matte Blue";};
-			case 3: {_color = "Matte Pink";};
-			case 4: {_color = "Matte Green";};
-			case 5: {_color = "Matte Red";};
-			case 6: {_color = "Matte Purple";};
-			case 7: {_color = "Sports 1";};
-			case 8: {_color = "Sports 2";};
-			case 9: {_color = "Sports 3";};
-			case 10: {_color = "Sports 4";};
-			case 11: {_color = "Interceptor";};
-			case 12: {_color = "Sheriff";};
-			case 13: {_color = "Stoner 0-1";};
-			case 14: {_color = "Patrol";};
-			case 15: {_color = "Ohara";};
-		};
-	};
 	case "A3L_M3" :
 	{
 		switch (_index) do

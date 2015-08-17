@@ -189,6 +189,17 @@ switch (_shop) do
 			["mrshounka_huracan_c_grise",654920],
 			["mrshounka_huracan_c_violet",654920],
 			["mrshounka_huracan_c_orange",654920],
+			["ivory_rev_black",710000],
+			["ivory_rev_blue",710000],
+			["ivory_rev_lime",710000],
+			["ivory_rev_pink",710000],
+			["ivory_rev_rot",710000],
+			["ivory_rev_turkis",710000],
+			["ivory_rev_orange",710000],
+			["ivory_rev_sport1",710000],
+			["ivory_rev_sport2",710000],
+			["ivory_rev_sport3",710000],
+			["ivory_rev_sport4",710000],
 			["Mrshounka_veneno_c_noir",1884230],
 			["Mrshounka_veneno_c_bleu",1884230],
 			["Mrshounka_veneno_c_jaune",1884230],
@@ -1416,7 +1427,8 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 8) then
 		{	
 			_return pushBack ["cl3_xr_1000_police",75000],
-			_return pushBack ["IVORY_REV",100000]
+			_return pushBack ["ivory_rev_lvpd",100000],
+			_return pushBack ["ivory_rev_sheriff",100000]
 		};
 	};
 	
@@ -1432,12 +1444,18 @@ switch (_shop) do
 			["A3L_CVPIUCGrey",16500],
 			["A3L_CVPIUCRed",16500],
 			["A3L_CVPIUCPink",16500],
-			["ivory_rev_fbi",150000],
-			["ivory_rev_fbi2",150000],
-			["ivory_rev_fbi3",150000],
-			["ivory_rev_fbi4",150000],
-			["ivory_rev_fbi5",150000],
-			["ivory_rev_fbi6",150000],
+			["ivory_rev_fbi",100000],
+			["ivory_rev_fbi2",100000],
+			["ivory_rev_fbi3",100000],
+			["ivory_rev_fbi4",100000],
+			["ivory_rev_fbi5",100000],
+			["ivory_rev_fbi6",100000],
+			["ivory_rev_fbi7",100000],
+			["ivory_rev_fbi8",100000],
+			["ivory_rev_fbi9",100000],
+			["ivory_rev_fbi10",100000],
+			["ivory_rev_fbi11",100000],
+
 			["cl3_e63_amg_white",35000],
 			["cl3_e63_amg_lime",35000],
 			["cl3_e63_amg_light_yellow",35000],
