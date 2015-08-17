@@ -8586,7 +8586,7 @@ class Mission
 		{
 			position[]={8889.8555,10.52,8290.0947};
 			name="taxi_smallville";
-			text="Taxistand - Los Diablos";
+			text="Taxistand - Smallville";
 			type="loc_BusStop";
 			colorName="ColorYellow";
 			angle=363.14011;
