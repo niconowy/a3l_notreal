@@ -23,7 +23,7 @@ player createDiarySubject ["oesiistschuld2","*******************"];
 		[
 			" ",
 				"
-<font size='25'>144.76.105.204</font>
+<font size='25'>37.187.174.105</font>
 				"
 		]
 	];
