@@ -52,8 +52,8 @@ class playerSettings {
 			idc = 2030;
 			sizeEx = 0.020;
 			text = "";
-			x = 0.125 //* safezoneW + safezoneX;
-			y = 0.35 //* safezoneH + safezoneY;
+			x = 0.125; //* safezoneW + safezoneX;
+			y = 0.35; //* safezoneH + safezoneY;
 			w = 0.071302 * safezoneW;
 			h = 0.0339259 * safezoneH;
 		};
