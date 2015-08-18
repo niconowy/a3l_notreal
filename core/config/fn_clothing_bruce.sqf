@@ -170,6 +170,13 @@ switch (_filter) do
 	case 1:
 	{
 		[
+			["Masque_Alien1",nil,3450],
+			["Masque_Chuck",nil,3450],
+			["Masque_Clinton",nil,3450],
+			["Masque_Hoxton",nil,3450],
+			["Masque_Gombo",nil,3450],
+			["Masque_Bonnie",nil,3450],
+			["Masque_Chains",nil,3450],
 			["H_Hat_HelmetT","Kriegshelm",3450],
 			["H_Hat_HelmetA","Kriegshelm Grün",3450],
 			["H_Hat_HelmetConical","Asia Hut",1350],
