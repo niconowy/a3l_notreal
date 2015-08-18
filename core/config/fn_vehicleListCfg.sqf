@@ -317,7 +317,6 @@ switch (_shop) do
 	case "kart_shop":
 	{
 		_return = [
-			["A3L_Karts",25000],
 			["C_Kart_01_Blu_F",25000],
 			["C_Kart_01_Fuel_F",25000],
 			["C_Kart_01_Red_F",25000],
@@ -374,11 +373,6 @@ switch (_shop) do
 	case "exo_car":
 	{
 		_return = [
-			["A3L_Cooper_concept_blue",80000],
-			["A3L_Cooper_concept_black",80000],
-			["A3L_Cooper_concept_red",80000],
-			["A3L_Cooper_concept_white",80000],
-			
 			["cl3_enduro_yellow",208000],
 			["cl3_enduro_black",208000],
 			["cl3_enduro_blue",208000],
@@ -445,9 +439,6 @@ switch (_shop) do
 			//["A3L_SuburbanBlack",50000],
 			//["A3L_SuburbanGrey",50000],
 			//["A3L_SuburbanOrange",50000],
-			//["A3L_TahoeWhite",70000], 
-			//["A3L_TahoeRed",70000], Arma kackt ab
-			//["A3L_TahoeBlue",70000],
 			["A3L_Camaro",250000]
 		];
 	};
@@ -1427,7 +1418,7 @@ switch (_shop) do
 		if(__GETC__(life_coplevel) >= 8) then
 		{	
 			_return pushBack ["cl3_xr_1000_police",75000],
-			_return pushBack ["ivory_rev",100000]
+			_return pushBack ["IVORY_REV",100000]
 		};
 	};
 	

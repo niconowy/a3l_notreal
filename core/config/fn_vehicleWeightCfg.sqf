@@ -135,7 +135,7 @@ switch (_className) do
 	case "ivory_rev_fbi9": {35};
 	case "ivory_rev_fbi10": {35};
 	case "ivory_rev_fbi11": {35};
-	case "ivory_rev": {35};
+	case "IVORY_REV": {35};
 	
 	case "Mrshounka_Volkswagen_Touareg_police_police": {65};
 	case "shounka_a3_audiq7_v2_gendarmerie": {65};
@@ -339,11 +339,6 @@ switch (_className) do
 	case "A3L_CVPIFPBLBCSO": {45};
 	case "A3L_CVPIFPBLBSP": {45};
 	case "A3L_CVPIFPBLBSP2": {45};
-
-	case "A3L_TahoeUCPB": {25};
-	case "A3L_TahoeUC": {25};
-	case "A3L_TahoeUCGMPB": {25};
-	case "A3L_TahoeCSOLBPB": {25};
 	
 	case "A3L_jailBus": {125};
 	case "A3L_SchoolBus": {25};
@@ -356,7 +351,6 @@ switch (_className) do
 	case "A3L_AmberLamps": {25};
 	case "A3L_Laddertruck": {25};
 	
-	case "A3L_Karts": {5};	
 	case "A3L_Towtruck": {75};
 	case "M1030": {25};
 
@@ -386,9 +380,6 @@ switch (_className) do
 	case "A3L_SuburbanGrey": {45};
 	case "A3L_SuburbanOrange": {45};
 	
-	case "A3L_TahoeWhite": {35};
-	case "A3L_TahoeRed": {35};
-	case "A3L_TahoeBlue": {35};
 	case "dar_tahoeems": {35};
 	
 	case "A3L_Camaro": {15};
@@ -445,16 +436,6 @@ switch (_className) do
 	case "AM_2015C_Grey": {25};
 	case "AM_2015C_Red": {25};
 	case "AM_2015C_Orange": {25};
-	
-	
-	case "A3L_Cooper_concept_blue": {25};
-	case "A3L_Cooper_concept_black": {25};
-	case "A3L_Cooper_concept_red": {25};
-	case "A3L_Cooper_concept_white": {25};
-	
-	case "A3L_Ferrari458black": {15};
-	case "A3L_Ferrari458white": {15};
-	case "A3L_Ferrari458blue": {15};
 	
 	case "A3L_GrandCaravan": {25};
 	case "A3L_GrandCaravanBlk": {25};

@@ -42,7 +42,7 @@ life_adacMarker = [];
 life_adac_request = false;
 life_married = "";
 life_earplugs = false;
-lrl_version = "lakeside-reallifeDE_modinfo_ver_151708";
+lrl_version = "lakeside-reallifeDE_modinfo_ver_151808";
 
 
 //Persistent Saving
@@ -508,9 +508,8 @@ life_garage_prices =
 	["ALFR_GeK_Volvo_FH16_2012",12500],
 	["ALFR_GeK_MF1",18000],
 	["C_Rubberboat",1500],["C_Boat_Civil_01_F",8750],["B_Boat_Transport_01_F",375],["C_Boat_Civil_01_police_F",1000],["B_SDV_01_F",5000],
-	["A3L_Karts",1250],["C_Kart_01_Blu_F",1250],["C_Kart_01_Fuel_F",1250],["C_Kart_01_Red_F",1250],["C_Kart_01_Vrana_F",1250],
+	["C_Kart_01_Blu_F",1250],["C_Kart_01_Fuel_F",1250],["C_Kart_01_Red_F",1250],["C_Kart_01_Vrana_F",1250],
 	["A3L_AmberLamps",1250],["A3L_Laddertruck",2000],["mercedes_atego_pompier_ingame",2000],
-	["A3L_Cooper_concept_blue",4000],["A3L_Cooper_concept_black",4000],["A3L_Cooper_concept_red",4000],["A3L_Cooper_concept_white",4000],
 	["A3L_AMC",6800],["A3L_AMXRed",6800],["A3L_AMXWhite",6800],["A3L_AMXBlue",6800],["A3L_AMXGL",6800],
 	["A3L_VolvoS60RBlack",6800],["A3L_VolvoS60Rred",6800],
 	["S_Skyline_Red",7200],["S_Skyline_Blue",7200],["S_Skyline_Black",7200],["S_Skyline_Yellow",7200],["S_Skyline_Purple",7200],["S_Skyline_White",7200],
@@ -619,7 +618,7 @@ life_garage_prices =
 	["DAR_TahoePoliceDet",2750],
 	["A3L_CVPIFPBLBHP",2250],["A3L_CVPIFPBLBSM",2250],["A3L_CVPIFPBLBSP2",2250],
 	["ivory_rev_fbi",6000],["ivory_rev_fbi2",6000],["ivory_rev_fbi3",6000],["ivory_rev_fbi4",6000],["ivory_rev_fbi5",6000],["ivory_rev_fbi6",6000],["ivory_rev_fbi7",6000],["ivory_rev_fbi8",6000],["ivory_rev_fbi9",6000],["ivory_rev_fbi10",6000],["ivory_rev_fbi11",6000],
-	["ivory_rev",6000],
+	["IVORY_REV",6000],
 	["ivory_rev_black",15000],["ivory_rev_blue",15000],["ivory_rev_lime",15000],["ivory_rev_pink",15000],["ivory_rev_rot",15000],["ivory_rev_turkis",15000],["ivory_rev_orange",15000],["ivory_rev_sport1",15000],["ivory_rev_sport2",15000],["ivory_rev_sport3",15000],["ivory_rev_sport4",15000],
 	["I_Heli_light_03_unarmed_F",5000],
 	["B_Heli_Transport_01_F",10000],
@@ -628,7 +627,6 @@ life_garage_prices =
 	["O_Heli_Transport_04_covered_F",15000],
 	["IVORY_T6A_1",15000],
 	["A3L_Ship",35000],["A3L_Jetski",7500],["A3L_Jetski_yellow",7500],
-	["A3L_delorean",5000],
 	
 	["IVORY_PRIUS",5000],["C_Heli_Light_01_civil_F",70000],["B_Heli_Light_01_F",70000],["O_Heli_Light_02_unarmed_F",70000],["ivory_b206_rescue",70000],["ivory_b206",70000],
 	["ivory_b206_news",70000],["ivory_b206_police",70000],["EC635_Unarmed_BW",15000],["EC635_ADAC",15000],["EC635_SAR",15000],["EC635_Unarmed_CSAT",15000],["IVORY_BELL512_POLICE",70000],["IVORY_BELL512",70000],["IVORY_BELL512_RESCUE",70000]
@@ -653,9 +651,8 @@ life_garage_sell =
 	["ALFR_GeK_MF1",477500],
 	["ALFR_GeK_Volvo_FH16_2012",175000],
 	["C_Rubberboat",15000],["C_Boat_Civil_01_F",87500],["B_Boat_Transport_01_F",3750],["C_Boat_Civil_01_police_F",10000],["B_SDV_01_F",50000],
-	["A3L_Karts",12500],["C_Kart_01_Blu_F",12500],["C_Kart_01_Fuel_F",12500],["C_Kart_01_Red_F",12500],["C_Kart_01_Vrana_F",12500],
+	["C_Kart_01_Blu_F",12500],["C_Kart_01_Fuel_F",12500],["C_Kart_01_Red_F",12500],["C_Kart_01_Vrana_F",12500],
 	["A3L_AmberLamps",12500],["A3L_Laddertruck",20000],["mercedes_atego_pompier_ingame",20000],
-	["A3L_Cooper_concept_blue",40000],["A3L_Cooper_concept_black",40000],["A3L_Cooper_concept_red",40000],["A3L_Cooper_concept_white",40000],
 	["A3L_AMC",68000],["A3L_AMXRed",68000],["A3L_AMXWhite",68000],["A3L_AMXBlue",68000],["A3L_AMXGL",68000],
 	["A3L_VolvoS60RBlack",68000],["A3L_VolvoS60Rred",68000],
 	["S_Skyline_Red",72000],["S_Skyline_Blue",72000],["S_Skyline_Black",72000],["S_Skyline_Yellow",72000],["S_Skyline_Purple",72000],["S_Skyline_White",72000],
@@ -764,7 +761,7 @@ life_garage_sell =
 	["DAR_TahoePoliceDet",27500],
 	["A3L_CVPIFPBLBHP",22500],["A3L_CVPIFPBLBSM",22500],["A3L_CVPIFPBLBSP2",22500],["A3L_CVLac",22500],
 	["ivory_rev_fbi",50000],["ivory_rev_fbi2",50000],["ivory_rev_fbi3",50000],["ivory_rev_fbi4",50000],["ivory_rev_fbi5",50000],["ivory_rev_fbi6",50000],["ivory_rev_fbi7",50000],["ivory_rev_fbi8",50000],["ivory_rev_fbi9",50000],["ivory_rev_fbi10",50000],["ivory_rev_fbi11",50000],
-	["ivory_rev",50000],
+	["IVORY_REV",50000],
 	["ivory_rev_black",355000],["ivory_rev_blue",355000],["ivory_rev_lime",355000],["ivory_rev_pink",355000],["ivory_rev_rot",355000],["ivory_rev_turkis",355000],["ivory_rev_orange",355000],["ivory_rev_sport1",355000],["ivory_rev_sport2",355000],["ivory_rev_sport3",355000],["ivory_rev_sport4",355000],
 	["I_Heli_light_03_unarmed_F",50000],
 	["B_Heli_Transport_01_F",100000],
@@ -773,7 +770,6 @@ life_garage_sell =
 	["O_Heli_Transport_04_covered_F",150000],
 	["IVORY_T6A_1",150000],
 	["A3L_Ship",350000],["A3L_Jetski",75000],["A3L_Jetski_yellow",75000],
-	["A3L_delorean",5000],
 	
 	["IVORY_PRIUS",1200],["C_Heli_Light_01_civil_F",150000],["B_Heli_Light_01_F",100000],["O_Heli_Light_02_unarmed_F",175000],["ivory_b206_rescue",100000],["ivory_b206",100000],
 	["ivory_b206_news",100000],["ivory_b206_police",100000],["EC635_Unarmed_BW",35000],["EC635_ADAC",55000],["EC635_SAR",55000],["EC635_Unarmed_CSAT",50000],["IVORY_BELL512_POLICE",185000],["IVORY_BELL512",185000],["IVORY_BELL512_RESCUE",185000],["dar_tahoeems",10000]
