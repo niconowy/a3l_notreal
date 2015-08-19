@@ -19,7 +19,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[1,3,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_fresh_weed" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -35,7 +35,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[1.5,3.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_weed_bag" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -51,7 +51,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[2,4,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_heroin_bag" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -67,7 +67,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[2.5,4.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_fresh_Opium" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -83,7 +83,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[3,5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_glass" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -99,7 +99,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-0.5,-2.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_sand" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -115,7 +115,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-1,-2,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_cement" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -131,7 +131,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-1.5,-1.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_coal" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -147,7 +147,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-2,-1,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_coal" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -163,7 +163,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-2.5,-0.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_wood" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -179,7 +179,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[3,1,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_oil" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -195,7 +195,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[2.5,1.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_oil" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -211,7 +211,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[2,2,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_iron_ore" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -227,7 +227,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[1.5,2.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_ore_base" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -243,7 +243,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[1,3,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_lock_pick" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -259,7 +259,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-1,-3,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_coal" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -275,7 +275,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-1.5,-2.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_Battery_F" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -291,7 +291,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-2,-2,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_DrillAku_F" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -307,7 +307,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-2.5,-1.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_Axe_F" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -323,7 +323,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-3,-1,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_c4" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -339,7 +339,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[-3.5,-0.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_iron" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -355,7 +355,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[5,1,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_BottlePlastic_V1_F" createVehicle _pos;
 				//_obj setVariable["water",_value,true];
@@ -371,7 +371,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[4.5,1.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_TacticalBacon_F" createVehicle _pos;
 				[[_obj],"life_fnc_simDisable",nil,true] spawn life_fnc_MP;
@@ -386,7 +386,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[4,2,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_donut" createVehicle _pos;
 				[[_obj],"life_fnc_simDisable",nil,true] spawn life_fnc_MP;
@@ -401,7 +401,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[3.5,2.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_Can_V3_F" createVehicle _pos;
 				[[_obj],"life_fnc_simDisable",nil,true] spawn life_fnc_MP;
@@ -416,7 +416,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[3,3,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_CanisterFuel_F" createVehicle _pos;
 				[[_obj],"life_fnc_simDisable",nil,true] spawn life_fnc_MP;
@@ -431,7 +431,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[3.5,2.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_CanisterFuel_F" createVehicle _pos;
 				[[_obj],"life_fnc_simDisable",nil,true] spawn life_fnc_MP;
@@ -446,7 +446,7 @@ _unit = _this select 0;
 			if (_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[4,2,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_Can_V3_F" createVehicle _pos;
 				[[_obj],"life_fnc_simDisable",nil,true] spawn life_fnc_MP;
@@ -460,7 +460,7 @@ _unit = _this select 0;
 		{
 			if(ja_dzep > 0) then
 			{
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[4.5,1.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "Land_Money_F" createVehicle _pos;
 				_obj setVariable["item",["money",_value],true];
@@ -475,7 +475,7 @@ _unit = _this select 0;
 			if(_value > 0) then
 			{
 				_var = [_item,1] call life_fnc_varHandle;
-				_pos = _unit modelToWorld[0,3,0];
+				_pos = _unit modelToWorld[5,1,0];
 				_pos = [_pos select 0, _pos select 1, 0];
 				_obj = "cl_package" createVehicle _pos;
 				[[_obj],"life_fnc_simDisable",nil,true] spawn life_fnc_MP;
