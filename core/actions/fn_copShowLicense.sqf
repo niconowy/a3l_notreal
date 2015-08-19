@@ -4,7 +4,7 @@
 
 */
 
-private["_target", "_message","_rank","_coplevel","_mediclevel","_adaclevel"];
+private ["_target", "_message","_rank","_coplevel","_mediclevel","_adaclevel","_id","_pkw","_lkw","_presse"];
 
 _target = cursorTarget;
 
@@ -84,12 +84,13 @@ if(playerSide == east) then
 
 if(playerSide == civilian) then
 {
-	if(license_civ_presse) then {
-		_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>Presse</t><br/>", name player];
-		[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
-	} else {
-		_message = format["<color='#FFFFFF'/><t size='2'>%1</t>", name player];
-		[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
-	};
+	_id = "<img image='images\idcards\id_card.jpg' size='4.75'/>";
+	_presse = if(license_civ_presse) then {"<img image='images\idcards\id_presse.jpg' size='4.75'/>";} else {""};
+	_pkw = if(license_civ_driver) then {"<img image='images\idcards\id_pkw.jpg' size='4.75'/>";} else {""}; 
+	_lkw = if(license_civ_truck) then {"<img image='images\idcards\id_lkw.jpg' size='4.75'/>";} else {""}; 
+	
+	_message = ["<t size='1.25'>%1</t><br/><br/>%2<br/>%3<br/>%4<br/>%5<br/>",name player,_id,_presse,_pkw,_lkw];
+	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
+	
 };
 
