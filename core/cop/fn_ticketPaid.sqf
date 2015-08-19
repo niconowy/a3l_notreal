@@ -12,4 +12,6 @@ if(isNull _unit OR {_unit != life_ticket_unit}) exitWith {}; //NO
 if(isNull _cop OR {_cop != player}) exitWith {}; //Double NO
 
 ja_pare = ja_pare + (_value / 2);
-sleep 1.0;
+sleep 1;
+
+[0] call SOCK_fnc_updatePartial;

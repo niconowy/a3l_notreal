@@ -958,16 +958,16 @@
 			<Original>Verrechne %1</Original>
 		</Key>
 		<Key ID="STR_Cop_TicketNil">
-			<Original>Person für das Ticket ist nil</Original>
+			<Original>Person für das Ticket ist nil.</Original>
 		</Key>
 		<Key ID="STR_Cop_TicketExist">
-			<Original>Die Person für das Ticket gibt es nicht.</Original>
+			<Original>Die Person gibt es nicht? Wut.</Original>
 		</Key>
 		<Key ID="STR_pInAct_RemoveWeapons">
-			<Original>Waffen Beschlagnehmen</Original>
+			<Original>Waffen Beschlagnahmen</Original>
 		</Key>
 		<Key ID="STR_pInAct_TestIntox">
-			<Original>Alkoholtest</Original>
+			<Original>Drogentest</Original>
 		</Key>
 		<Key ID="STR_pInAct_AugenbindeAn">
 			<Original>Augenbinde Anlegen</Original>
@@ -979,7 +979,7 @@
 			<Original>Du hast keine echte Zahl eingegeben.</Original>
 		</Key>
 		<Key ID="STR_Cop_TicketOver100">
-			<Original>Strafzettel können nicht mehr als $100.000 betragen!</Original>
+			<Original>Strafzettel können nicht mehr als $500.000 betragen!</Original>
 		</Key>
 		<Key ID="STR_Cop_TicketGive">
 			<Original>%1 hat %3 einen Strafzettel über $%2 ausgestellt</Original>
