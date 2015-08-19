@@ -1,5 +1,5 @@
 ﻿/*
-	File: fn_ticketPrompt
+	File: fn_rechnungPrompt
 	Author: Bryan "Tonic" Boardwine
 	
 	Description:
@@ -19,7 +19,7 @@ _control = _display displayCtrl 8701;
 life_ticket_paid = false;
 life_ticket_val = _val;
 life_ticket_cop = _cop;
-_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>%1 hat dir eine Rechnung über $%2 ausgestellt",_cop getVariable["realname",name _cop],_val];
+_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>%1 hat dir eine Rechnung von $%2 ausgestellt",_cop getVariable["realname",name _cop],_val];
 
 [] spawn
 {
@@ -27,6 +27,6 @@ _control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px
 	waitUntil {life_ticket_paid OR (isNull (findDisplay 8700))};
 	if(isNull (findDisplay 8700) && !life_ticket_paid) then
 	{
-		[[1,format["%1 hat die Rechnung zerrissen.",profileName]],"life_fnc_broadcast",life_ticket_cop,false] spawn life_fnc_MP;
+		[[1,format["%1 weigert sich die Rechnung zu zahlen.",profileName]],"life_fnc_broadcast",life_ticket_cop,false] spawn life_fnc_MP;
 	};
 };

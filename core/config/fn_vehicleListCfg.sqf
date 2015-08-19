@@ -137,7 +137,7 @@ switch (_shop) do
 			["cl3_polo_gti_gold",35000],
 			["cl3_polo_gti_burgundy",35000],
 			["cl3_polo_gti_black",35000],
-			["Mrshounka_Volkswagen_Touareg_noir",125000],
+			["Mrshounka_Volkswagen_Touareg_noir",125000],	//Eventuell Buggy? Einparken = Auto Futsch
 			["Mrshounka_Volkswagen_Touareg_bleufonce",125000],
 			["Mrshounka_Volkswagen_Touareg_rouge",125000],
 			["Mrshounka_Volkswagen_Touareg_jaune",125000],
@@ -646,20 +646,32 @@ switch (_shop) do
 		if(__GETC__(life_adaclevel) < 10) exitWith { hint "Du bist nicht in der Justiz tätig." };
 		if(__GETC__(life_adaclevel) == 10) then //Staatsanwalt Auto
 		{
-			_return pushBack ["A3L_CVBlack",30000];
-			_return pushBack ["A3L_CVBlue",30000];
-			_return pushBack ["A3L_TaurusBlack",35000];
-			_return pushBack ["A3L_TaurusBlue",35000];
+			_return pushBack ["A3L_CVBlack",25000];
+			_return pushBack ["A3L_CVBlue",25000];
+			_return pushBack ["A3L_TaurusBlack",30000];
+			_return pushBack ["A3L_TaurusBlue",30000];
+			_return pushBack ["Mrshounka_bmwm6_noir",1372500];
+			_return pushBack ["wirk_cayenne",1575000];
+			_return pushBack ["cl3_e63_amg_black",27500];
+			_return pushBack ["cl3_e60_m5_black",27500];
+			_return pushBack ["shounka_a3_rs5_civ_noir",421000];
+			_return pushBack ["Mrshounka_bmwm6_noir",1372500];
 		};
 
 		if(__GETC__(life_adaclevel) == 11) then //Richter Auto
 		{
-			_return pushBack ["cl3_z4_2008_black",300000];		
-			_return pushBack ["wirk_h3_limo",350000];	
-			_return pushBack ["A3L_CVBlack",17500];
-			_return pushBack ["A3L_CVBlue",17500];
-			_return pushBack ["A3L_TaurusBlack",20000];
-			_return pushBack ["A3L_TaurusBlue",20000];
+			_return pushBack ["Nhz_audia8limo",3000000];
+			_return pushBack ["cl3_z4_2008_black",300000];
+			_return pushBack ["A3L_CVBlack",25000];
+			_return pushBack ["A3L_CVBlue",25000];
+			_return pushBack ["A3L_TaurusBlack",30000];
+			_return pushBack ["A3L_TaurusBlue",30000];
+			_return pushBack ["Mrshounka_bmwm6_noir",1372500];
+			_return pushBack ["wirk_cayenne",1575000];
+			_return pushBack ["cl3_e63_amg_black",27500];
+			_return pushBack ["cl3_e60_m5_black",27500];
+			_return pushBack ["shounka_a3_rs5_civ_noir",421000];
+			_return pushBack ["Mrshounka_bmwm6_noir",1372500];
 		};
 	};
 
