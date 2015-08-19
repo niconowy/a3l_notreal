@@ -103,7 +103,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	//OK, it wasn't a player so what is it?
 	private["_isVehicle","_miscItems","_money"];
 	_isVehicle = if((_curTarget isKindOf "landVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air")) then {true} else {false};
-	_miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","Land_Suitcase_F"];
+	_miscItems = ["Land_BottlePlastic_V1_F","Land_TacticalBacon_F","Land_Can_V3_F","Land_CanisterFuel_F","cl_fresh_weed","cl_weed_bag","cl_fresh_Opium","cl_heroin_bag","cl_glass","cl_sand","cl_cement","cl_coal","cl_wood","cl_oil","cl_donut","cl_iron_ore","cl_ore_base","cl_iron","cl_lock_pick","Land_Battery_F","Land_DrillAku_F","Land_Axe_F","cl_c4","cl_package"];
 	_animalTypes = ["Salema_F","Ornate_random_F","Mackerel_F","Tuna_F","Mullet_F","CatShark_F","Turtle_F"];
 	_money = "Land_Money_F";
 	

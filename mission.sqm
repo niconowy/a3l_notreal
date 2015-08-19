@@ -14,7 +14,6 @@ class Mission
 		"A3_Structures_F_Mil_Fortification",
 		"A3_Soft_F_Truck",
 		"A3_Structures_F_Civ_Market",
-		"A3_Structures_F_Furniture",
 		"A3_Structures_F_Items_Vessels",
 		"A3_Structures_F_Civ_Constructions",
 		"A3_Structures_F_Items_Electronics",
@@ -96,7 +95,8 @@ class Mission
 		"cg_mainvault",
 		"maa_uniform",
 		"A3_Structures_F_System",
-		"A3_Structures_F_EPB_Civ_Accessories"
+		"A3_Structures_F_EPB_Civ_Accessories",
+		"A3_Structures_F_Heli_Furniture"
 	};
 	addOnsAuto[]=
 	{
@@ -140,6 +140,7 @@ class Mission
 		"A3_Structures_F_Civ_Accessories",
 		"A3_Structures_F_EPA_Civ_Camping",
 		"A3_Structures_F_EPB_Civ_Accessories",
+		"A3_Structures_F_Heli_Furniture",
 		"lakesidevalley"
 	};
 	randomSeed=2004553;
@@ -2210,15 +2211,16 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={3162.7063,95.542007,7599.5566};
-					azimut=364.58301;
+					position[]={3159.0339,95.492081,7597.0205};
+					azimut=338.918;
+					offsetY=0.44;
 					id=92;
 					side="CIV";
 					vehicle="C_man_shorts_1_F_afro";
 					leader=1;
 					skill=0.60000002;
 					text="Dealer_2";
-					init="this allowDamage false; this enableSimulation false; this addAction[""Stoff Verticken"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Dealer Befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse '];";
+					init="this allowDamage false; this enableSimulation false; removeGoggles this; removeHeadgear this; this addAction[""Stoff Verticken"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Dealer Befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this forceaddUniform ""TRYK_U_B_PCUHsW3""; this addHeadgear ""kio_skl_msk""; this addVest ""V_PlateCarrier_heavy_F""; this addWeapon ""A3L_AK47sgold"";  [Dealer_2, ""SIT1"", ""ASIS""] call BIS_fnc_ambientanim;";
 				};
 			};
 		};
@@ -2230,15 +2232,15 @@ class Mission
 				items=1;
 				class Item0
 				{
-					position[]={8298.9873,10.679724,6297.3721};
-					azimut=357.50601;
+					position[]={8295.832,10.733458,6282.374};
+					azimut=62.285858;
 					id=93;
 					side="CIV";
 					vehicle="C_man_shorts_1_F_afro";
 					leader=1;
 					skill=0.60000002;
 					text="Dealer_1";
-					init="this allowDamage false; this enableSimulation false; removeHeadgear this; removeGoggles this; this addAction[""Stoff Verticken"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Dealer Befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse '];";
+					init="this allowDamage false; this enableSimulation false; removeHeadgear this; removeGoggles this; this addAction[""Stoff Verticken"",life_fnc_virt_menu,""heroin"",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == civilian ']; this addAction[""Dealer Befragen"",life_fnc_questionDealer,"""",0,false,false,"""",' vehicle player == player && player distance _target < 5 && playerSide == west && !life_action_inUse ']; this addUniform ""TRYK_U_B_PCUHsW3""; this addHeadgear ""kio_skl_msk""; this addVest ""V_PlateCarrier_heavy_F""; this addWeapon ""A3L_AK47sgold"";  [Dealer_1, ""LEAN"", ""ASIS""] call BIS_fnc_ambientanimCombat;";
 				};
 			};
 		};
@@ -3593,7 +3595,7 @@ class Mission
 	};
 	class Vehicles
 	{
-		items=279;
+		items=280;
 		class Item0
 		{
 			position[]={6852.6108,0.54103822,5370.6392};
@@ -6452,6 +6454,17 @@ class Mission
 			leader=1;
 			skill=0.60000002;
 			init="this setObjectTexture [0, ""images\taxi.jpg""]; this allowDamage false;";
+		};
+		class Item279
+		{
+			position[]={3159.0928,95.48481,7596.9351};
+			azimut=517.63098;
+			id=429;
+			side="EMPTY";
+			vehicle="Land_RattanChair_01_F";
+			leader=1;
+			skill=0.60000002;
+			init="this allowDamage false; this enableSimulation false;";
 		};
 	};
 	class Markers

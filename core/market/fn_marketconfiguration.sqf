@@ -12,7 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
 		
-	["diamondc", 4845, 1, 8435, 10, 1,
+	["diamondc", 3876, 1, 6845, 10, 1,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -26,7 +26,7 @@ life_market_resources = [
 			]
 	],
 	
-	["oilp", 4490, 1, 8025, 9, 2,
+	["oilp", 3592, 1, 6490, 9, 2,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -40,7 +40,7 @@ life_market_resources = [
 			]
 	],
 	
-	["iron_r", 4150, 1, 6750, 8, 3,
+	["iron_r", 3320, 1, 6150, 8, 3,
 			[
 					["diamondc",1],
 					["copper_r",1],
@@ -54,7 +54,7 @@ life_market_resources = [
 			]
 	],
    
-	["elektroteile", 4000, 1, 8550, 7, 4,
+	["elektroteile", 3200, 1, 6000, 7, 4,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -68,7 +68,7 @@ life_market_resources = [
 			]
 	],
 	
-	["cement", 3600, 1, 7150, 6, 5,
+	["cement", 2880, 1, 5600, 6, 5,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -82,7 +82,7 @@ life_market_resources = [
 			]
 	],
 	
-	["copper_r", 3075, 1, 6775, 5, 6,
+	["copper_r", 2460, 1, 5075, 5, 6,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -96,7 +96,7 @@ life_market_resources = [
 			]
 	],
 	
-	["laminat", 2895, 1, 6445, 4, 7,
+	["laminat", 2316, 1, 4895, 4, 7,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -110,7 +110,7 @@ life_market_resources = [
 			]
 	],
 	
-	["grillkohle", 1900, 1, 6450, 3, 8,
+	["grillkohle", 1520, 1, 3900, 3, 8,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -124,7 +124,7 @@ life_market_resources = [
 			]
 	],
 	
-	["glass", 1605, 1, 5155, 2, 9,
+	["glass", 1284, 1, 3605, 2, 9,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -138,7 +138,7 @@ life_market_resources = [
 			]
 	],
    
-	["salt_r", 1325, 1, 5875, 1, 10,
+	["salt_r", 1060, 1, 3325, 1, 10,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -152,7 +152,7 @@ life_market_resources = [
 			]
 	],
    
-	["sunflower", 649, 1, 3099, 4, 8,
+	["sunflower", 649, 1, 2649, 4, 8,
 			[
 					["wheat",1],
 					["corn",1],
@@ -163,7 +163,7 @@ life_market_resources = [
 			]
 	],
    
-	["corn", 870, 1, 3270, 8, 4,
+	["corn", 870, 1, 2870, 8, 4,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -174,7 +174,7 @@ life_market_resources = [
 			]
 	],
    
-	["pumpkin", 747, 1, 3197, 6, 6,
+	["pumpkin", 747, 1, 2747, 6, 6,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -185,7 +185,7 @@ life_market_resources = [
 			]
 	],
    
-	["wheat", 1045, 1, 3885, 10, 2,
+	["wheat", 1045, 1, 3045, 10, 2,
 			[
 					["sunflower",1],
 					["corn",1],
@@ -196,7 +196,7 @@ life_market_resources = [
 			]
 	],
    
-	["cotton", 645, 1, 2985, 2, 10,
+	["cotton", 645, 1, 2645, 2, 10,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -209,7 +209,7 @@ life_market_resources = [
 
 /////////////////////////
 
-	["cocainep", 4675, 1, 8215, 5, 4,
+	["cocainep", 4675, 1, 7675, 5, 1,
 			[
 					["marijuana",1],
 					["turtle",1],
@@ -218,7 +218,7 @@ life_market_resources = [
 			]
 	],
 	
-	["heroinp", 4505, 1, 8055, 4, 12,
+	["heroinp", 4505, 1, 7505, 4, 2,
 			[
 					["marijuana",1],
 					["turtle",1],
@@ -227,7 +227,7 @@ life_market_resources = [
 			]
 	],
 	
-	["schwarzpulver", 4600, 1, 8050, 3, 8,
+	["schwarzpulver", 4600, 1, 7600, 3, 3,
 			[
 					["marijuana",1],
 					["turtle",1],
@@ -245,7 +245,7 @@ life_market_resources = [
 			]
 	],
    
-	["marijuana", 4350, 1, 7900, 1, 16,
+	["marijuana", 4350, 1, 7350, 1, 5,
 			[
 					["turtle",1],
 					["cocainep",1],

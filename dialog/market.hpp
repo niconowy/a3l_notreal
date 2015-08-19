@@ -17,7 +17,7 @@ class marketView
 		class RscStructuredText_1100: RscStructuredText
 		{
 			idc = 1100;
-			text = "<t size='1.2' align='center'>Altis Markt</t>"; //--- ToDo: Localize;
+			text = "<t size='1.2' align='center'>Lakeside Valley Markt</t>"; //--- ToDo: Localize;
 			x = 5 * GUI_GRID_W + GUI_GRID_X;
 			y = 1 * GUI_GRID_H + GUI_GRID_Y;
 			w = 30 * GUI_GRID_W;
@@ -100,7 +100,7 @@ class marketView
 		class RscText_1002: RscText
 		{
 			idc = 1002;
-			text = "Seit Serverstart"; //--- ToDo: Localize;
+			text = "Allgemeine Kursänderung"; //--- ToDo: Localize;
 			x = 20.5 * GUI_GRID_W + GUI_GRID_X;
 			y = 10.5 * GUI_GRID_H + GUI_GRID_Y;
 			w = 13 * GUI_GRID_W;
