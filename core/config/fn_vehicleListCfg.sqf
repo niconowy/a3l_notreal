@@ -61,14 +61,14 @@ switch (_shop) do
 			["DAR_M3CivBlack",135000],
 			["DAR_M3CivWhite",135000],
 			["DAR_M3CivGrey",135000],
-			["Mrshounka_bmwm6_noir",1525000],
-			["Mrshounka_bmwm6_bleufonce",1525000],
-			["Mrshounka_bmwm6_rouge",1525000],
-			["Mrshounka_bmwm6_jaune",1525000],
-			["Mrshounka_bmwm6_rose",1525000],
-			["Mrshounka_bmwm6_grise",1525000],
-			["Mrshounka_bmwm6_violet",1525000],
-			["Mrshounka_bmwm6_orange",1525000]
+			["Mrshounka_bmwm6_noir",1225000],
+			["Mrshounka_bmwm6_bleufonce",1225000],
+			["Mrshounka_bmwm6_rouge",1225000],
+			["Mrshounka_bmwm6_jaune",1225000],
+			["Mrshounka_bmwm6_rose",1225000],
+			["Mrshounka_bmwm6_grise",1225000],
+			["Mrshounka_bmwm6_violet",1225000],
+			["Mrshounka_bmwm6_orange",1225000]
 		];
 	};
 	
@@ -89,7 +89,7 @@ switch (_shop) do
 			["cl3_carrera_gt_gold",600000],
 			["cl3_carrera_gt_burgundy",600000],
 			["cl3_carrera_gt_black",600000],
-			["wirk_cayenne",1750000],
+			["wirk_cayenne",1350000],
 			["ALFR_GeK_Panamera",825000]
 		];
 	};
@@ -200,13 +200,13 @@ switch (_shop) do
 			["ivory_rev_sport2",710000],
 			["ivory_rev_sport3",710000],
 			["ivory_rev_sport4",710000],
-			["Mrshounka_veneno_c_noir",1884230],
-			["Mrshounka_veneno_c_bleu",1884230],
-			["Mrshounka_veneno_c_jaune",1884230],
-			["Mrshounka_veneno_c_grau",1884230],
-			["Mrshounka_veneno_c_rot",1884230],
-			["Mrshounka_veneno_c_gruen",1884230],
-			["Mrshounka_veneno_c_violet",1884230]
+			["Mrshounka_veneno_c_noir",1584230],
+			["Mrshounka_veneno_c_bleu",1584230],
+			["Mrshounka_veneno_c_jaune",1584230],
+			["Mrshounka_veneno_c_grau",1584230],
+			["Mrshounka_veneno_c_rot",1584230],
+			["Mrshounka_veneno_c_gruen",1584230],
+			["Mrshounka_veneno_c_violet",1584230]
 		];
 	};
 	
@@ -595,13 +595,13 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["A3L_F350Black",70000],
-			["A3L_F350Blue",70000],
-			["A3L_F350Red",70000],
-			["A3L_F350White",70000],
+			["A3L_F350Black",160000],
+			["A3L_F350Blue",160000],
+			["A3L_F350Red",160000],
+			["A3L_F350White",160000],
 			["A3L_Dumptruck",200000],
-			["C_Van_01_box_F",90000],
-			["C_Van_01_transport_F",40000],
+			["C_Van_01_box_F",140000],
+			["C_Van_01_transport_F",110000],
 			["A3L_Bus",70000],
 			["A3L_SchoolBus",85000],
 			["ALFR_GeK_Volvo_FH16_2012",350000],
