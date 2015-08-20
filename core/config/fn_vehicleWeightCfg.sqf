@@ -445,10 +445,10 @@ switch (_className) do
 	case "A3L_GrandCaravanPurple": {25};
 	
 	case "Jonzie_Viper": {45};
-	case "A3L_F350Black": {60};
-	case "A3L_F350Blue": {60};
-	case "A3L_F350Red": {60};
-	case "A3L_F350White": {60};
+	case "A3L_F350Black": {150};
+	case "A3L_F350Blue": {150};
+	case "A3L_F350Red": {150};
+	case "A3L_F350White": {150};
 	case "A3L_Dumptruck": {275};
 
 	case "BMW_M5Black": {25};
