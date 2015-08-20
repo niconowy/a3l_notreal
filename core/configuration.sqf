@@ -597,9 +597,10 @@ life_garage_prices =
 	["cl3_veyron_blk_wht",20000],["cl3_veyron_lblue_dblue",20000],["cl3_veyron_lblue_lblue",20000],["cl3_veyron_brn_blk",20000],
 	["Mrshounka_bmwm6_noir",20000],["Mrshounka_bmwm6_bleufonce",20000],["Mrshounka_bmwm6_rouge",20000],["Mrshounka_bmwm6_jaune",20000],["Mrshounka_bmwm6_rose",20000],["Mrshounka_bmwm6_grise",20000],["Mrshounka_bmwm6_violet",20000],["Mrshounka_bmwm6_orange",20000],
 	["Mrshounka_megane_rs_2015_noir",8000],["Mrshounka_megane_rs_2015_bleufonce",8000],["Mrshounka_megane_rs_2015_rouge",8000],["Mrshounka_megane_rs_2015_jaune",8000],["Mrshounka_megane_rs_2015_rose",8000],["Mrshounka_megane_rs_2015_grise",8000],["Mrshounka_megane_rs_2015_violet",8000],["Mrshounka_megane_rs_2015_orange",8000],
-	["Mrshounka_Volkswagen_Touareg_noir",10000],["Mrshounka_Volkswagen_Touareg_bleufonce",10000],["Mrshounka_Volkswagen_Touareg_rouge",10000],["Mrshounka_Volkswagen_Touareg_jaune",10000],["Mrshounka_Volkswagen_Touareg_rose",10000],["Mrshounka_Volkswagen_Touareg_grise",10000],["Mrshounka_Volkswagen_Touareg_violet",10000],["Mrshounka_Volkswagen_Touareg_orange",10000],
+	/*["Mrshounka_Volkswagen_Touareg_noir",10000],["Mrshounka_Volkswagen_Touareg_bleufonce",10000],["Mrshounka_Volkswagen_Touareg_rouge",10000],["Mrshounka_Volkswagen_Touareg_jaune",10000],["Mrshounka_Volkswagen_Touareg_rose",10000],["Mrshounka_Volkswagen_Touareg_grise",10000],["Mrshounka_Volkswagen_Touareg_violet",10000],["Mrshounka_Volkswagen_Touareg_orange",10000],*/ //Buggy
 	["Mrshounka_hummer_civ_noir",13200],["Mrshounka_hummer_civ_bleufonce",13200],["Mrshounka_hummer_civ_rouge",13200],["Mrshounka_hummer_civ_jaune",13200],["Mrshounka_hummer_civ_rose",13200],["Mrshounka_hummer_civ_grise",13200],["Mrshounka_hummer_civ_violet",13200],["Mrshounka_hummer_civ_orange",13200],
-	["shounka_a3_audiq7_v2_gendarmerie",2250],["Mrshounka_Volkswagen_Touareg_police_police",2250],
+	["shounka_a3_audiq7_v2_gendarmerie",2250],
+	/*["Mrshounka_Volkswagen_Touareg_police_police",2250],*/ // Buggy
 	["Mrshounka_rs_2015_g",2250],
 	["A3L_CVPILBFD",500],
 	["Jonzie_Ambulance",1250],
@@ -740,9 +741,10 @@ life_garage_sell =
 	["cl3_veyron_blk_wht",500000],["cl3_veyron_lblue_dblue",500000],["cl3_veyron_lblue_lblue",500000],["cl3_veyron_brn_blk",500000],
 	["Mrshounka_bmwm6_noir",1143750],["Mrshounka_bmwm6_bleufonce",1143750],["Mrshounka_bmwm6_rouge",1143750],["Mrshounka_bmwm6_jaune",1143750],["Mrshounka_bmwm6_rose",1143750],["Mrshounka_bmwm6_grise",1143750],["Mrshounka_bmwm6_violet",1143750],["Mrshounka_bmwm6_orange",1143750],
 	["Mrshounka_megane_rs_2015_noir",92500],["Mrshounka_megane_rs_2015_bleufonce",92500],["Mrshounka_megane_rs_2015_rouge",92500],["Mrshounka_megane_rs_2015_jaune",92500],["Mrshounka_megane_rs_2015_rose",92500],["Mrshounka_megane_rs_2015_grise",92500],["Mrshounka_megane_rs_2015_violet",92500],["Mrshounka_megane_rs_2015_orange",92500],
-	["Mrshounka_Volkswagen_Touareg_noir",62500],["Mrshounka_Volkswagen_Touareg_bleufonce",62500],["Mrshounka_Volkswagen_Touareg_rouge",62500],["Mrshounka_Volkswagen_Touareg_jaune",62500],["Mrshounka_Volkswagen_Touareg_rose",62500],["Mrshounka_Volkswagen_Touareg_grise",62500],["Mrshounka_Volkswagen_Touareg_violet",62500],["Mrshounka_Volkswagen_Touareg_orange",62500],
+	/*["Mrshounka_Volkswagen_Touareg_noir",62500],["Mrshounka_Volkswagen_Touareg_bleufonce",62500],["Mrshounka_Volkswagen_Touareg_rouge",62500],["Mrshounka_Volkswagen_Touareg_jaune",62500],["Mrshounka_Volkswagen_Touareg_rose",62500],["Mrshounka_Volkswagen_Touareg_grise",62500],["Mrshounka_Volkswagen_Touareg_violet",62500],["Mrshounka_Volkswagen_Touareg_orange",62500],*/ // Buggy
 	["Mrshounka_hummer_civ_noir",262500],["Mrshounka_hummer_civ_bleufonce",262500],["Mrshounka_hummer_civ_rouge",262500],["Mrshounka_hummer_civ_jaune",262500],["Mrshounka_hummer_civ_rose",262500],["Mrshounka_hummer_civ_grise",262500],["Mrshounka_hummer_civ_violet",262500],["Mrshounka_hummer_civ_orange",262500],
-	["shounka_a3_audiq7_v2_gendarmerie",41250],["Mrshounka_Volkswagen_Touareg_police_police",41250],
+	["shounka_a3_audiq7_v2_gendarmerie",41250],
+	/*["Mrshounka_Volkswagen_Touareg_police_police",41250],*/ //Buggy
 	["Mrshounka_rs_2015_g",20250],
 	["A3L_CVPILBFD",5000],
 	["Jonzie_Ambulance",12500],

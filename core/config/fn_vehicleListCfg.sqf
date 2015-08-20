@@ -136,15 +136,15 @@ switch (_shop) do
 			["cl3_polo_gti_grey",35000],
 			["cl3_polo_gti_gold",35000],
 			["cl3_polo_gti_burgundy",35000],
-			["cl3_polo_gti_black",35000],
-			["Mrshounka_Volkswagen_Touareg_noir",125000],	//Eventuell Buggy? Einparken = Auto Futsch
+			["cl3_polo_gti_black",35000]
+			/*["Mrshounka_Volkswagen_Touareg_noir",125000],	//Eventuell Buggy? Einparken = Auto Futsch
 			["Mrshounka_Volkswagen_Touareg_bleufonce",125000],
 			["Mrshounka_Volkswagen_Touareg_rouge",125000],
 			["Mrshounka_Volkswagen_Touareg_jaune",125000],
 			["Mrshounka_Volkswagen_Touareg_rose",125000],
 			["Mrshounka_Volkswagen_Touareg_grise",125000],
 			["Mrshounka_Volkswagen_Touareg_violet",125000],
-			["Mrshounka_Volkswagen_Touareg_orange",125000]
+			["Mrshounka_Volkswagen_Touareg_orange",125000]*/
 		];
 	};
 	

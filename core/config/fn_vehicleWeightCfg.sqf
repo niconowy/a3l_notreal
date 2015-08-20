@@ -104,14 +104,16 @@ switch (_className) do
 	case "Mrshounka_hummer_civ_violet": {70};
 	case "Mrshounka_hummer_civ_orange": {70};
 	
-	case "Mrshounka_Volkswagen_Touareg_noir": {55};
+	//Buggy
+	
+	/*case "Mrshounka_Volkswagen_Touareg_noir": {55};
 	case "Mrshounka_Volkswagen_Touareg_bleufonce": {55};
 	case "Mrshounka_Volkswagen_Touareg_rouge": {55};
 	case "Mrshounka_Volkswagen_Touareg_jaune": {55};
 	case "Mrshounka_Volkswagen_Touareg_rose": {55};
 	case "Mrshounka_Volkswagen_Touareg_grise": {55};
 	case "Mrshounka_Volkswagen_Touareg_violet": {55};
-	case "Mrshounka_Volkswagen_Touareg_orange": {55};
+	case "Mrshounka_Volkswagen_Touareg_orange": {55};*/
 	
 	case "ivory_rev_black": {15};
 	case "ivory_rev_blue": {15};
@@ -137,7 +139,7 @@ switch (_className) do
 	case "ivory_rev_fbi11": {35};
 	case "IVORY_REV": {35};
 	
-	case "Mrshounka_Volkswagen_Touareg_police_police": {65};
+	/*case "Mrshounka_Volkswagen_Touareg_police_police": {65};*/ // Buggy
 	case "shounka_a3_audiq7_v2_gendarmerie": {65};
 	
 	case "Mrshounka_veneno_c_noir": {15};
