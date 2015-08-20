@@ -311,6 +311,7 @@ class Life_Client_Core
 		class setFuel {};
 		class setTexture {};
 		class say3D {};
+		class setHitGlobal {};
 	};
 	
 	class Civilian
@@ -457,6 +458,7 @@ class Life_Client_Core
 		class RoadConeStrip {};
 		class RoadConeB {};
 		class RoadConeStripB {};
+		class scheibeEinschlagen {};
 	};
 	
 	class Dialog_Controls

@@ -44,13 +44,22 @@ if(isDedicated && isNil("life_market_prices")) then
 	};
 };
 //#2 Ende
-
+//Cops
 WEST setFriend [INDEPENDENT,1];
 WEST setFriend [EAST,1];
+WEST setFriend [CIVILIAN,1];
+//LAC
 EAST setFriend [WEST,1];
 EAST setFriend [INDEPENDENT,1];
+EAST setFriend [CIVILIAN,1];
+//Medic
 INDEPENDENT setFriend [EAST,1];
 INDEPENDENT setFriend [WEST,1];
+INDEPENDENT setFriend [CIVILIAN,1];
+//Civ
+CIVILIAN setFriend [WEST,1];
+CIVILIAN setFriend [INDEPENDENT,1];
+CIVILIAN setFriend [EAST,1];
 
 StartProgress = true;
 

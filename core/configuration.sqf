@@ -227,7 +227,8 @@ life_inv_items =
 	"life_inv_grillkohle",
 	"life_inv_laminat",
 	"life_inv_holz",
-	"life_inv_presseformular"
+	"life_inv_presseformular",
+	"life_inv_nothammer"
 ];
 
 life_8_b4lls = 
@@ -294,7 +295,22 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["schwarzpulver",4250],["Blaulicht",16500],["spikeStrip",36500],["opium",2050],["heroinp",4780],["cocaine",2250],["cocainep",5560],["cannabis",975],["marijuana",4320],["turtle",2000],["blastingcharge",125000],["boltcutter",12000]];
+life_illegal_items = [
+	["schwarzpulver",4250],
+	["Blaulicht",16500],
+	["spikeStrip",36500],
+	["opium",2050],
+	["heroinp",4780],
+	["cocaine",2250],
+	["cocainep",5560],
+	["cannabis",975],
+	["marijuana",4320],
+	["turtle",2000],
+	["blastingcharge",125000],
+	["boltcutter",12000],
+	["nothammer",7520],
+	["lockpick",2250]
+];
 
 
 /*
@@ -366,7 +382,7 @@ sell_array =
 	["spikeStrip",1200],
 	["cement",3600],
 	["goldbar",95000], 
-	//Deo Additions
+
 	["zoobeer",25], 
 	["BarGate",500],
 	["RoadBlockConc",1000],
@@ -378,7 +394,8 @@ sell_array =
 	["cigarette",5],
 	["Rax's Rum",25],
 	["weddingring",1000],
-	["presseformular",1250]
+	["presseformular",1250],
+	["nothammer",1150]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -440,8 +457,10 @@ buy_array =
 	["RoadConeStripB",500],
 	["cigarette",25],
 	["Rax's Rum",50],
+
 	["weddingring",25000],
-	["presseformular",10000]
+	["presseformular",10000],
+	["nothammer",35850]
 ];
 __CONST__(buy_array,buy_array);
 

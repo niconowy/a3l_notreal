@@ -254,6 +254,12 @@ switch (true) do
 		closeDialog 0;
 	};
 	
+	case (_item == "nothammer"):
+	{
+		[] spawn life_fnc_scheibeEinschlagen;
+		closeDialog 0;
+	};
+	
 	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach"]):
 	{
 		[_item] call life_fnc_eatFood;

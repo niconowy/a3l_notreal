@@ -560,10 +560,10 @@
 	</Package>
 	<Package name="Ticket_Menu">
 		<Key ID="STR_Ticket_GiveTicket">
-			<Original>Ticket geben</Original>
+			<Original>Strafzettel</Original>
 		</Key>
 		<Key ID="STR_Ticket_GiveRechnung">
-			<Original>Rechnung ausstellen</Original>
+			<Original>Rechnung</Original>
 		</Key>
 		<Key ID="STR_Ticket_PayTicket">
 			<Original>Bezahlen</Original>
@@ -619,19 +619,19 @@
 	</Package>
 	<Package name="Notifications">
 		<Key ID="STR_NOTF_NE_1">
-			<Original>Du hast keine $%1 für einen %2</Original>
+			<Original>Du hast keine $%1 für einen %2.</Original>
 		</Key>
 		<Key ID="STR_NOTF_B_1">
-			<Original>Du hast einen %1 für $%2 gekauft</Original>
+			<Original>Du hast einen %1 für $%2 gekauft.</Original>
 		</Key>
 		<Key ID="STR_NOTF_Arrested_1">
-			<Original>%1 wurde von %2 verhaftet</Original>
+			<Original>%1 wurde von %2 verhaftet!</Original>
 		</Key>
 		<Key ID="STR_NOTF_Fishing">
-			<Original>Du hast einen %1 gefangen</Original>
+			<Original>Du hast einen %1 gefangen!</Original>
 		</Key>
 		<Key ID="STR_NOTF_CaughtTurtle">
-			<Original>Du hast etwas Schildkrötenfleisch bekommen</Original>
+			<Original>Du hast etwas Schildkrötenfleisch bekommen.</Original>
 		</Key>
 		<Key ID="STR_NOTF_Earned_1">
 			<Original>Du hast $%1 verdient</Original>
@@ -667,7 +667,7 @@
 			<Original>Liefere dieses Paket bei %1 ab</Original>
 		</Key>
 		<Key ID="STR_NOTF_DPFailed">
-			<Original>Du hast es nicht geschafft, das Paket abzuliefern, da du gestorben bist.</Original>
+			<Original>Der Inhalt des Paketes ist unbrauchbar geworden, da du gestorben bist.</Original>
 		</Key>
 		<Key ID="STR_NOTF_HS_NoCash">
 			<Original>Du hast keine $%1, um geheilt zu werden.</Original>
@@ -685,7 +685,7 @@
 			<Original>%1 dein %2 wird von der Polizei beschlagnahmt.</Original>
 		</Key>
 		<Key ID="STR_NOTF_BeingImpoundedAdac">
-			<Original>%1 dein %2 wird vom ADAC zurück in die Garage gebracht.</Original>
+			<Original>%1 dein %2 wird vom LAC zurück in die Garage gebracht.</Original>
 		</Key>
 		<Key ID="STR_NOTF_Impounding">
 			<Original>Fahrzeug wird beschlagnahmt</Original>
@@ -721,19 +721,19 @@
 			<Original>Sammeln beendet, das Gerät hat %1 gesammelt</Original>
 		</Key>
 		<Key ID="STR_NOTF_OutOfFuel">
-			<Original>Das Fahrzeug hat keinen Treibstoff mehr</Original>
+			<Original>Das Fahrzeug hat keinen Treibstoff mehr!</Original>
 		</Key>
 		<Key ID="STR_NOTF_SpikeStrip">
 			<Original>Du hast das Nagelband eingepackt.</Original>
 		</Key>
 		<Key ID="STR_NOTF_PickedEvidence">
-			<Original>%1 hat Beweise hinterlassen, du hast eine Belohnung von $%2 erhalten.</Original>
+			<Original>%1 hat Beweise hinterlassen. Du hast eine Belohnung von $%2 erhalten.</Original>
 		</Key>
 		<Key ID="STR_NOTF_PickedMoney">
 			<Original>Du hast $%1 aufgehoben</Original>
 		</Key>
 		<Key ID="STR_NOTF_Bail_Post">
-			<Original>Du musst mindestens 3 Minuten lang im Gefängnis bleiben, bevor du die Kaution beantragen kannst.</Original>
+			<Original>Du musst mindestens 3 Minuten lang im Gefängnis bleiben, bevor du Kaution beantragen kannst.</Original>
 		</Key>
 		<Key ID="STR_NOTF_Bail_NotEnough">
 			<Original>Du hast keine $%1 auf deinem Bankkonto, um die Kaution zu bezahlen.</Original>
@@ -742,7 +742,7 @@
 			<Original>%1 hat die Kaution bezahlt!</Original>
 		</Key>
 		<Key ID="STR_NOTF_VehicleNear">
-			<Original>Es ist kein Fahrzeug in der Nähe...</Original>
+			<Original>Es ist kein Fahrzeug in der Nähe!</Original>
 		</Key>
 		<Key ID="STR_NOTF_Restrained">
 			<Original>%1 wurde von %2 festgenommen</Original>
@@ -751,10 +751,10 @@
 			<Original>Suche...</Original>
 		</Key>
 		<Key ID="STR_NOTF_SearchVehFail">
-			<Original>Das Fahrzeug konnte nicht durchsucht werden</Original>
+			<Original>Das Fahrzeug konnte nicht durchsucht werden!</Original>
 		</Key>
 		<Key ID="STR_NOTF_VehCheat">
-			<Original>Über das Fahrzeug gibt es keine Informationen, es wurde vermutlich durch Cheats gespawnt. \n\nLösche Fahrzeuge.</Original>
+			<Original>Über das Fahrzeug gibt es keine Informationen. Vermutlich waren die Matrix-Master wieder am Werk. Fahrzeug wird in die Matrix gezogen...</Original>
 		</Key>
 		<Key ID="STR_NOTF_Action">
 			<Original>Du führst bereits eine Aktion aus. Bitte warte, bis diese beendet ist.</Original>
@@ -766,16 +766,16 @@
 			<Original>%2 wurde gerade um $%3 beraubt</Original>
 		</Key>
 		<Key ID="STR_NOTF_RobFail">
-			<Original>%1 hat kein Geld.</Original>
+			<Original>Die Person hat seine Geldbörse nicht dabei!</Original>
 		</Key>
 		<Key ID="STR_NOTF_Tazed">
 			<Original>%1 wurde von %2 getazert</Original>
 		</Key>
 		<Key ID="STR_NOTF_VehContraband">
-			<Original>Ein Fahrzeug wurde durchsucht und es wurde Illegale Ware im Wert von $%1 gefunden.</Original>
+			<Original>Ein Fahrzeug wurde durchsucht und es wurde illegale Ware im Wert von $%1 gefunden.</Original>
 		</Key>
 		<Key ID="STR_NOTF_PulledOut">
-			<Original>Du wurdest aus dem Fahrzeug gezogen</Original>
+			<Original>= Du wurdest aus dem Fahrzeug gezogen =</Original>
 		</Key>
 		<Key ID="STR_NOTF_GivenItem">
 			<Original>%1 hat dir %2 %3 gegeben</Original>
@@ -808,10 +808,10 @@
 			<Original>Du bist kein Rebell.</Original>
 		</Key>
 		<Key ID="STR_NOTF_NotAMedic">
-			<Original>Du bist kein Medic Mitglied.</Original>
+			<Original>Du bist kein EMS Mitarbeiter.</Original>
 		</Key>
 		<Key ID="STR_NOTF_NotAADAC">
-			<Original>Du bist kein Adac Mitglied.</Original>
+			<Original>Du bist kein LAC Mitarbeiter.</Original>
 		</Key>
 		<Key ID="STR_NOTF_NoRoom">
 			<Original>Du hast nicht genug Platz für den Gegenstand.</Original>
@@ -1538,6 +1538,9 @@
 		<Key ID="STR_Item_Bohrmaschine">
 			<Original>Bohrmaschine</Original>
 		</Key>
+		<Key ID="STR_Item_Nothammer">
+			<Original>Nothammer</Original>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
@@ -1670,7 +1673,7 @@
 			<Original>Du hast deinen %1 aufgetankt</Original>
 		</Key>
 		<Key ID="STR_ISTR_Lock_AlreadyHave">
-			<Original>Du hast diesen Fahrzeugschlüssen bereits in deinem Schlüsselbund.</Original>
+			<Original>Hierzu hast du einen Schlüssel!</Original>
 		</Key>
 		<Key ID="STR_ISTR_Lock_Process">
 			<Original>Wird aufgebrochen %1</Original>
@@ -1682,7 +1685,7 @@
 			<Original>Du hast nun einen Schlüssel zu diesem Fahrzeug.</Original>
 		</Key>
 		<Key ID="STR_ISTR_Lock_Failed">
-			<Original>Der Dietrich ist abgebrochen.</Original>
+			<Original>= Verdammt! Der Dietrich ist abgebrochen... =</Original>
 		</Key>
 		<Key ID="STR_ISTR_Lock_FailedNOTF">
 			<Original>%1 wurde beim Aufbrechen eines Auto erwischt.</Original>
@@ -2125,7 +2128,7 @@
 			<Original>Max. Geschwindigkeit:</Original>
 		</Key>
 		<Key ID="STR_Shop_Veh_UI_HPower">
-			<Original>Pferdestärken:</Original>
+			<Original>PS:</Original>
 		</Key>
 		<Key ID="STR_Shop_Veh_UI_PSeats">
 			<Original>Passagierplätze:</Original>
@@ -2134,7 +2137,7 @@
 			<Original>Kofferraumgröße:</Original>
 		</Key>
 		<Key ID="STR_Shop_Veh_UI_Fuel">
-			<Original>Tankgröße:</Original>
+			<Original>Tankgröße (in l):</Original>
 		</Key>
 		<Key ID="STR_Shop_Veh_UI_Armor">
 			<Original>Panzerungsbewertung:</Original>
@@ -2173,7 +2176,7 @@
 			<Original>Bargeld:</Original>
 		</Key>
 		<Key ID="STR_Shop_Virt_YourorGang">
-			<Original>Mit Bargeld oder Geld der Gang bezahlen</Original>
+			<Original>Mit Bargeld oder Geld der Gang bezahlen?</Original>
 		</Key>
 		<Key ID="STR_Shop_Virt_UI_GangFunds">
 			<Original>Geld der Gang</Original>
@@ -2225,7 +2228,7 @@
 			<Original>Fischernetz auswerfen</Original>
 		</Key>
 		<Key ID="STR_pAct_RobPerson">
-			<Original>Person ausrauben</Original>
+			<Original>Geldbörse Rauben</Original>
 		</Key>
 	</Package>
 	
@@ -2258,7 +2261,7 @@
 			<Original>Nachricht an:</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_Notruftitle">
-			<Original>NOTRUFE | Missbrauch führt zur Abschiebung!</Original>
+			<Original>LakesideValley v1.27 | NOTRUF-APP</Original>
 		</Key>
 		<Key ID="STR_SMARTPHONE_MissingMessage">
 			<Original>Du musst eine Nachricht zum Versenden eingeben!</Original>
@@ -2275,13 +2278,13 @@
 			<Original>Benötigte Stoffe</Original>
 		</Key>
 		<Key ID="STR_CRAFT_Button">
-			<Original>Bauen !</Original>
+			<Original>Bauen!</Original>
 		</Key>
 		<Key ID="STR_PM_NoMaterial">
 			<Original>Du hast nicht genug von diesem Rohstoff!</Original>
 		</Key>
 		<Key ID="STR_CRAFT_Process">
-			<Original>Du hast hergestellt : %1</Original>
+			<Original>Du hast folgendes hergestellt : %1</Original>
 		</Key>
 		<Key ID="STR_CRAFT_FILTER_Weapon">
 			<Original>Waffen</Original>
@@ -2296,10 +2299,10 @@
 			<Original>Items</Original>
 		</Key>
 		<Key ID="STR_CRAFT_AR_Backpack">
-			<Original>Du hast breits einen Rucksack an! Mach den erstmal weg!.</Original>
+			<Original>Du trägst bereits etwas auf dem Rücken. Mach das erst einmal weg!</Original>
 		</Key>
 		<Key ID="STR_CRAFT_AR_Uniform">
-			<Original>Du hast bereits Kleidung an! Mach dich erstmal nackt!</Original>
+			<Original>Du trägst bereits Kleidung. Mach dich erst einmal nackig!</Original>
 		</Key>
 	</Package>  
 </Project>

@@ -193,6 +193,20 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	class autoknacker
+	{
+		name = "autoknacker";
+		sound[] = {"sounds\autoknacker.ogg", 1.0, 1};
+		titles[] = {};
+	};
+	
+	class autoscheibe
+	{
+		name = "autoscheibe";
+		sound[] = {"sounds\autoscheibe.ogg", 0.85, 1};
+		titles[] = {};
+	};
+	
 };
 
 class CfgDebriefing
