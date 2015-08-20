@@ -4,7 +4,7 @@
 #include "common.hpp"
 #include "a3lcommon.hpp"
 
-#include "halloweenshop.hpp"
+//#include "halloweenshop.hpp"
 #include "bankc4.hpp"
 #include "shop_items.hpp"
 #include "player_inv.hpp"
