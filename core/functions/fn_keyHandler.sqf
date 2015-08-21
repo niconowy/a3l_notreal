@@ -83,7 +83,7 @@ switch (_code) do
 			case east: {if(!visibleMap) then {[] spawn life_fnc_adacMarkers; [] spawn life_fnc_adacMarker;}};
 		};
 	};
-	
+
 	//Holster / recall weapon.
 	case 35:
 	{
@@ -99,29 +99,21 @@ switch (_code) do
 			};
 		};
 	};
-	
+
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
-		if(_strg && _shift && (alive player)) then {
-			if(!dialog) then {
-				[] call life_fnc_openFarmingMenu;
-			};
-		};
-		
-		if(!_strg && !_shift) then {
-			if(!life_action_inUse) then {
-				[] spawn 
-				{
-					private["_handle"];
-					_handle = [] spawn life_fnc_actionKeyHandler;
-					waitUntil {scriptDone _handle};
-					life_action_inUse = false;
-				};
+		if(!life_action_inUse) then {
+			[] spawn 
+			{
+				private["_handle"];
+				_handle = [] spawn life_fnc_actionKeyHandler;
+				waitUntil {scriptDone _handle};
+				life_action_inUse = false;
 			};
 		};
 	};
-	
+
 	//Restraining (Shift + R)
 	case 19:
 	{
@@ -139,42 +131,24 @@ switch (_code) do
 	};
 
 	//Q Key
-/*    case 16:
+    case 16:
     {    
-        if((playerSide == civilian) && (!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
-        {
-            {
-                _str = [_x] call life_fnc_varToStr;
-                _val = missionNameSpace getVariable _x;
-                if(_val > 0 ) then
-                {
-                    if( _str == "Spitzhacke" || _str == "pickaxe" ) then
-                    {
-                        [] spawn life_fnc_pickAxeUse;
-                    };
-                };
-            } foreach life_inv_items;
-        }
-    }; */
+		if(_strg && _shift) then {
+			if(!dialog) then {
+				[] call life_fnc_openFarmingMenu;
+			};
+		};
+    };
 	
 	//E Key
-/*    case 18:
+    case 18:
     {    
-        if((playerSide == civilian) && (!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
-        {
-            {
-                _str = [_x] call life_fnc_varToStr;
-                _val = missionNameSpace getVariable _x;
-                if(_val > 0 ) then
-                {
-                    if( _str == "Axt" || _str == "axt" ) then
-                    {
-                        [] spawn life_fnc_axtUse;
-                    };
-                };
-            } foreach life_inv_items;
-        }
-    }; */
+		if(_strg && _shift) then {
+			if(!dialog) then {
+				[] call life_fnc_openFarmingMenu;
+			};
+		};
+    };
 	
 	//Niederschlagen
 	case 34:
