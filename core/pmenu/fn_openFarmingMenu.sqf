@@ -6,7 +6,10 @@
 	Description:
 	Einige Checks bevor das Farming-Menue aufgerufen wird.
 */
-
+#define Btn 1 40111
+#define Btn 2 40112
+#define Title 47400
+private ["_display"]
 if(!alive player) exitWith {}; //Toter Spieler
 
 //Tonnenweise scheiss-checks
@@ -16,5 +19,10 @@ if(player getVariable "surrender") exitWith {hint "Während du dich ergibst, kan
 
 if(life_knockout || life_tazed || life_action_inUse) exitWith {};
 
-createDialog "life_farming_menu";
+if(!dialog) then {
+	createDialog "vInteraction_Menu";
+};
 disableSerialization;
+_display = findDisplay 40100;
+_Btn1 = _display displayCtrl Btn1;
+_Btn2 = _display displayCtrl Btn2;
