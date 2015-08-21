@@ -135,17 +135,9 @@ switch (_code) do
     {    
 		if(_strg && _shift) then {
 			if(!dialog) then {
-				[] call life_fnc_openFarmingMenu;
-			};
-		};
-    };
-	
-	//E Key
-    case 18:
-    {    
-		if(_strg && _shift) then {
-			if(!dialog) then {
-				[] call life_fnc_openFarmingMenu;
+				if(playerside == civilian) then{
+					[] call life_fnc_openFarmingMenu;
+				};
 			};
 		};
     };

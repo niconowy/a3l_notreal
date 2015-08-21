@@ -2307,13 +2307,13 @@
 	</Package>
 	<Package name="FarmMenu">
 		<Key ID="STR_FarmMenu_Title">
-			<Original>Herstellungsmenü</Original>
+			<Original>Farmmenü</Original>
 		</Key>
 		<Key ID="STR_FarmMenu_AxeUse">
-			<Original>Sachen zum Bauen</Original>
+			<Original>Axt benutzen</Original>
 		</Key>
 		<Key ID="STR_FarmMenu_PickUse">
-			<Original>Benötigte Stoffe</Original>
+			<Original>Spitzhacke benutzen</Original>
 		</Key>
 	</Package>  
 </Project>
