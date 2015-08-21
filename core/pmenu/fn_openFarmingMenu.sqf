@@ -9,7 +9,7 @@
 #define Btn 1 40111
 #define Btn 2 40112
 #define Title 47400
-private ["_display"];
+private ["_display","_Btn1","_Btn2"];
 if(!alive player) exitWith {}; //Toter Spieler
 
 //Tonnenweise scheiss-checks
@@ -20,7 +20,7 @@ if(player getVariable "surrender") exitWith {hint "Während du dich ergibst, kan
 if(life_knockout || life_tazed || life_action_inUse) exitWith {};
 
 if(!dialog) then {
-	createDialog "vInteraction_Menu";
+	createDialog "Life_farming_menu";
 };
 disableSerialization;
 _display = findDisplay 40100;
