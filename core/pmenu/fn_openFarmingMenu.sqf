@@ -9,7 +9,7 @@
 #define Btn 1 40111
 #define Btn 2 40112
 #define Title 47400
-private ["_display"]
+private ["_display"];
 if(!alive player) exitWith {}; //Toter Spieler
 
 //Tonnenweise scheiss-checks
