@@ -242,6 +242,7 @@ class Life_Client_Core
 		class craft {};
 		class craft_update {};
 		class craft_updateFilter {};
+		class openFarmingMenu {};
 	};
 	
 	class Functions
@@ -296,6 +297,8 @@ class Life_Client_Core
 		class globalSound {};
 		class globalSoundClient {};
 		class openHandyMenu {};
+		class checkPickaxe {};
+		class checkAxe {};
 	};
 	
 	class Network

@@ -2304,5 +2304,16 @@
 		<Key ID="STR_CRAFT_AR_Uniform">
 			<Original>Du trägst bereits Kleidung. Mach dich erst einmal nackig!</Original>
 		</Key>
+	</Package>
+	<Package name="FarmMenu">
+		<Key ID="STR_FarmMenu_Title">
+			<Original>Herstellungsmenü</Original>
+		</Key>
+		<Key ID="STR_FarmMenu_AxeUse">
+			<Original>Sachen zum Bauen</Original>
+		</Key>
+		<Key ID="STR_FarmMenu_PickUse">
+			<Original>Benötigte Stoffe</Original>
+		</Key>
 	</Package>  
 </Project>

@@ -103,13 +103,21 @@ switch (_code) do
 	//Interaction key (default is Left Windows, can be mapped via Controls -> Custom -> User Action 10)
 	case _interactionKey:
 	{
-		if(!life_action_inUse) then {
-			[] spawn 
-			{
-				private["_handle"];
-				_handle = [] spawn life_fnc_actionKeyHandler;
-				waitUntil {scriptDone _handle};
-				life_action_inUse = false;
+		if(_strg && _shift && (alive player)) then {
+			if(!dialog) then {
+				[] call life_fnc_openFarmingMenu;
+			};
+		};
+		
+		if(!_strg && !_shift) then {
+			if(!life_action_inUse) then {
+				[] spawn 
+				{
+					private["_handle"];
+					_handle = [] spawn life_fnc_actionKeyHandler;
+					waitUntil {scriptDone _handle};
+					life_action_inUse = false;
+				};
 			};
 		};
 	};
@@ -131,7 +139,7 @@ switch (_code) do
 	};
 
 	//Q Key
-    case 16:
+/*    case 16:
     {    
         if((playerSide == civilian) && (!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
         {
@@ -147,10 +155,10 @@ switch (_code) do
                 };
             } foreach life_inv_items;
         }
-    };
+    }; */
 	
 	//E Key
-    case 18:
+/*    case 18:
     {    
         if((playerSide == civilian) && (!life_action_inUse) && (vehicle player == player)) then // +  && (!life_fnc_surrender)
         {
@@ -166,7 +174,7 @@ switch (_code) do
                 };
             } foreach life_inv_items;
         }
-    };
+    }; */
 	
 	//Niederschlagen
 	case 34:

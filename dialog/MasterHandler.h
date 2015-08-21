@@ -43,3 +43,4 @@
 #include "slot_machine.hpp"
 #include "blackjack.hpp"
 #include "craft.hpp"
+#include "farming.hpp"

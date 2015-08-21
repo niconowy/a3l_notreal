@@ -294,7 +294,7 @@ class CfgDebriefing
 	
 	class A3LCheat
 	{
-		title = "Lakeside-Reallife.de AntiCheat";
+		title = "LRL.DE - AntiCheat";
 		subTitle = "A3L AntiCheat - Bye bye Cheater";
 		description = "Unser AntiCheat hat dich dabei erwischt, wie du versucht hast Funktionen auszuführen, zu denen du gar keinen Zugriff hast.";
 		pictureBackground = "KIA";
@@ -304,9 +304,9 @@ class CfgDebriefing
 	
 	class LRLWrongModVersion
 	{
-		title = "Lakeside-Reallife.de AntiCheat";
+		title = "LRL.DE - AntiCheat";
 		subTitle = "Falsche Mod-Version installiert!";
-		description = "Du hast eine veraltete Version der Mods installiert! Bitte erkunde dich in unserem Forum [www.lakeside-reallife.de] auf Up-Dates und starte ggf. A3Sync um die Mods zu aktualisieren.";
+		description = "Du hast eine veraltete Version der Mods installiert! Bitte erkunde dich in unserem Forum [www.lakeside-reallife.de] nach Up-Dates und starte ggf. A3Sync um die Mods zu aktualisieren.";
 		pictureBackground = "KIA";
 		picture = "KIA";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -317,7 +317,7 @@ class CfgNotifications
 {
 	class MedicalRequestEmerg
 	{
-		title = "EMS Requested";
+		title = "EMS Notruf";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%1";
 		duration = 5;
@@ -326,7 +326,7 @@ class CfgNotifications
 	
 	class DeliveryAssigned
 	{
-		title = "Delivery Job Accepted";
+		title = "Lieferauftrag Angenommen";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcon_ca.paa";
 		description = "%1";
 		duration = 10;
@@ -335,7 +335,7 @@ class CfgNotifications
 	
 	class DeliveryFailed
 	{
-		title = "Delivery Job Failed";
+		title = "Lieferauftrag Fehlgeschlagen";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskiconfailed_ca.paa";
 		description = "%1";
 		duration = 7;
@@ -344,7 +344,7 @@ class CfgNotifications
 	
 	class DeliverySucceeded
 	{
-		title = "Delivery Job Completed";
+		title = "Lieferauftrag Erfuellt";
 		iconPicture = "\A3\ui_f\data\map\mapcontrol\taskIcondone_ca.paa";
 		description = "%1";
 		duration = 6;
@@ -353,7 +353,7 @@ class CfgNotifications
 	
 	class TextMessage
 	{
-		title = "Received A Text Message";
+		title = "SMS Erhalten";
 		iconPicture = "icons\messagenew.paa";
 		description = "%1";
 		duration = 10;
@@ -362,7 +362,7 @@ class CfgNotifications
 	
 	class PoliceDispatch
 	{
-		title = "911 Emergency Center";
+		title = "911 Notruf";
 		iconPicture = "icons\messagepolice.paa";
 		description = "%1";
 		duration = 10;
@@ -371,7 +371,7 @@ class CfgNotifications
 	
 	class AdminDispatch
 	{
-		title = "Admin Dispatch Center";
+		title = "Rundschreiben";
 		iconPicture = "icons\messageadmin.paa";
 		description = "%1";
 		duration = 10;
