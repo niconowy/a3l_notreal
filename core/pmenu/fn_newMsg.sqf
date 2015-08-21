@@ -126,7 +126,7 @@ switch(_type) do
 	//cop rundfunk
 	case 9: {
 		if(playerSide in [independent, east, civilian]) exitWith {hint "Du bist kein Polizist!"};
-		if(__GETC__(life_coplevel) < 8) exitWith {hint "Du musst mindestens den Rang Sergeant erreicht haben!"};
+		if(__GETC__(life_coplevel) <= 4) exitWith {hint "Du musst mindestens den Rang Sergeant erreicht haben!"};
 		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
 		[[ObjNull,_msg,player,7],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Rundmail: %1",_msg];
