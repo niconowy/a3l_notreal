@@ -242,7 +242,6 @@ class Life_Client_Core
 		class craft {};
 		class craft_update {};
 		class craft_updateFilter {};
-		class openFarmingMenu {};
 	};
 	
 	class Functions

@@ -130,15 +130,12 @@ switch (_code) do
 		};
 	};
 
-	//Q Key
-    case 16:
+	//C Key
+    case 15:
     {    
-		if(_strg && _shift) then {
-			if(!dialog) then {
-				if(playerside == civilian) then{
-					[] call life_fnc_openFarmingMenu;
-				};
-			};
+		if(!_alt && !_ctrlKey && !dialog && player == civilian) then 
+		{
+			createDialog "Life_farming_menu";
 		};
     };
 	
