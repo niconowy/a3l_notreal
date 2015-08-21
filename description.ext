@@ -295,7 +295,7 @@ class CfgDebriefing
 	class A3LCheat
 	{
 		title = "LRL.DE - AntiCheat";
-		subTitle = "A3L AntiCheat - Bye bye Cheater";
+		subTitle = "LRL AntiCheat - Bye bye Cheater";
 		description = "Unser AntiCheat hat dich dabei erwischt, wie du versucht hast Funktionen auszuführen, zu denen du gar keinen Zugriff hast.";
 		pictureBackground = "KIA";
 		picture = "KIA";
