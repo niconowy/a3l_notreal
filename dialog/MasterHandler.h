@@ -3,6 +3,7 @@
 */
 #include "common.hpp"
 #include "a3lcommon.hpp"
+#include "a3lmsgsys.hpp"
 
 //#include "halloweenshop.hpp"
 #include "bankc4.hpp"
@@ -31,11 +32,12 @@
 #include "settings.h"
 #include "federalReserve.h"
 #include "rechnung.hpp"
-//#include "tablet.hpp"
-//#include "smsmenu.hpp"
 #include "arrestmenu.hpp"
 #include "compensate.hpp"
 #include "smartphone.hpp"
+//A3L Scheiss
+#include "tablet.hpp"
+#include "smsmenu.hpp"
 //#2 2Zeilen
 #include "common_EditorWrapper.hpp"
 #include "market.hpp"
