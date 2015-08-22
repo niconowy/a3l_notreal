@@ -2015,6 +2015,9 @@
 		<Key ID="STR_vInAct_Einschlagen">
 			<Original>Einschlagen</Original>
 		</Key>
+		<Key ID="STR_vInAct_Aufbrechen">
+			<Original>Aufbrechen</Original>
+		</Key>
 	</Package>
 	<Package name="Session_Strings">
 		<Key ID="STR_Session_Query">

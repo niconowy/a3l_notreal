@@ -339,6 +339,18 @@ class vInteraction_Menu
 			w = 0.24;
 			h = 0.038;
 		};
+		
+		class ButtonEight : life_RscButtonMenu
+		{
+			idc = 37457;
+			colorBackground[] = {0.18,0.604,0.996,1};
+			text = "";
+			sizeEx = 0.025;
+			x = BGX + 0.47;
+			y = BGY + 0.12;
+			w = 0.24;
+			h = 0.038;
+		};
 
 	};
 };

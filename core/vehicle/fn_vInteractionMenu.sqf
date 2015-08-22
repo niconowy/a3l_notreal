@@ -12,8 +12,9 @@
 #define Btn5 37454
 #define Btn6 37455
 #define Btn7 37456
+#define Btn8 37457
 #define Title 37401
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7","_Btn8"];
 
 if(!dialog) then {
 	createDialog "vInteraction_Menu";
@@ -33,6 +34,7 @@ _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
+_Btn8 = _display displayCtrl Btn8;
 
 life_vInact_curTarget = _curTarget;
 
@@ -58,12 +60,7 @@ _Btn7 ctrlEnable false;
 */
 
 if(playerSide == civilian) then {
-	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
-	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
-	
-	_Btn3 ctrlSetText localize "STR_vInAct_SearchVehicle";
-	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_vehInvSearch;";
-	
+
 	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
 	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
@@ -88,8 +85,12 @@ if(playerSide == civilian) then {
 		_Btn2 ctrlSetText "ADAC Widerrufen";
 		_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestNotADAC; closeDialog 0;";*/
 	};
-		
-		
+	_Btn8 ctrlSetText localize "STR_vInAct_Aufbrechen";
+	_Btn8 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_lockpick;";
+	{
+	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
+	if(_val > 0 ) then {if( _str == "Dietrich" || _str == "lockpick" ) then {_Btn8 ctrlEnable true;};};
+	} foreach life_inv_items;	
 	
 	/*neu test
 	if(!life_adac_request) then
@@ -183,6 +184,7 @@ if(playerSide == west) then {
 	
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
+	_Btn8 ctrlShow false;
 };
 
 

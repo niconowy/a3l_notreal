@@ -123,8 +123,8 @@ _Btn6 buttonSetAction "[life_pInact_curTarget] call fnc_arrestmenu;";
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
 _Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
 
-_Btn8 ctrlSetText localize "STR_pInAct_RemoveWeapons";
-_Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_removeWeaponAction;";
+_Btn8 ctrlSetText localize "STR_pInAct_Foltern";
+_Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_TorturePlayer;";
 
 _Btn9 ctrlSetText localize "STR_pInAct_TestIntox";
 _Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_testIntox;";
@@ -148,5 +148,4 @@ if((_curTarget getVariable["isblinded",false])) then {
 if(!(player distance (getMarkerPos "jail_marker") < 50)) then 
 {
 	_Btn6 ctrlEnable false;
-	_Btn8 ctrlEnable false;
 };

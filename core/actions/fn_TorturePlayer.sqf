@@ -4,7 +4,6 @@
 private["_unit","_rand","_damage", "_fatigue"];
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit) exitWith {};
-if(playerSide == west) exitWith {};
 if(life_action_inUse) exitWith {};
 
 if(player distance _unit > 3 || !alive player || !alive _unit) exitWith {hint "Du kannst die Person nicht foltern."};
