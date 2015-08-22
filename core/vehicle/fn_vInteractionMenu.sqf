@@ -89,7 +89,7 @@ if(playerSide == civilian) then {
 	_Btn8 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_lockpick; closeDialog 0;";
 	{
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
-	if(_val > 0 ) then {if( _str == "Dietrich" || _str == "lockpick" ) then {_Btn8 ctrlEnable true;};};
+	if(_val > 0 ) then {if( _str == "lockpick" || _str == "lockpick" ) then {_Btn8 ctrlEnable true;};};
 	} foreach life_inv_items;	
 	
 	/*neu test
@@ -185,6 +185,7 @@ if(playerSide == west) then {
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
 	_Btn8 ctrlEnable false;
+	_Btn8 ctrlShow false;
 };
 
 
