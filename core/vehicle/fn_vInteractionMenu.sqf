@@ -122,7 +122,7 @@ if(playerSide == west) then {
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
 
 	
-	if({side _x == east} count playableUnits > 0) then
+	if({side _x == east} count playableUnits > 4) then
 	{
 		if(!life_adac_request) then
 		{
