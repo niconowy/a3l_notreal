@@ -101,7 +101,7 @@ switch (_mode) do
 			case "zoobeer": {"life_inv_zoobeer"}; // Duff Beer
 			case "Rax's Rum": {"life_inv_raxsrum"};
 			case "weddingring": {"life_inv_weddingring"};
-			case "blaulicht":{"life_inv_blaulicht"};
+			case "blaulicht": {"life_inv_blaulicht"};
 //			case "augenbinde":{"life_inv_augenbinde"};
 			case "schwarzpulver": {"life_inv_schwarzpulver"};
 			case "kohle": {"life_inv_kohle"};
