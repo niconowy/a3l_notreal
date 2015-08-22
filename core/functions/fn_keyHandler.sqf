@@ -133,13 +133,8 @@ switch (_code) do
 	//C Key
     case 15:
     {    
-		if(!_alt && _ctrlKey && player == civilian) then 
-		{
-			if(!life_action_inUse) then {
-				createDialog "Life_farming_menu";
-			} else {
-				hint localize "STR_NOTF_Action";
-			};
+		if(!_alt && !_ctrlKey && !dialog) then {
+			[] call life_fnc_Farmmenu;
 		};
     };
 	

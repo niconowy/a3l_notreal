@@ -223,6 +223,7 @@ class Life_Client_Core
 		class giveItem {};
 		class giveMoney {};
 		class p_openMenu {};
+		class Farmmenu {};
 		class p_updateMenu {};
 		class removeItem {};
 		class useItem {};
