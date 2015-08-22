@@ -12,22 +12,22 @@ class pInteraction_Menu
 	{
 		class RscTitleBackground:life_RscText 
 		{
-			colorBackground[] = {0.18,0.604,0.996,1};
+			colorBackground[] = {0,0,0,0.4};
 			idc = -1;
-			x = BGX;
+			x = BGX - (125 / 250);
 			y = BGY;
-			w = BGW;
+			w = BGW + (250 / 250);
 			h = (1 / 25);
 		};
 		
 		class MainBackground : life_RscText
 		{
 			idc = -1;
-			colorBackground[] = {0,0,0,0.7};
-			x = BGX;
+			colorBackground[] = {0,0,0,0.4};
+			x = BGX - (125 / 250);
 			y = BGY + (11 / 250);
-			w = BGW;
-			h = 0.7 - (22 / 250);
+			w = BGW + (250 / 250);
+			h = 0.45 - (22 / 250);
 		};
 		
 		class Title : life_RscTitle
@@ -62,7 +62,7 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
+			x = BGX - 0.43;
 			y = BGY + 0.07;
 			w = 0.24;
 			h = 0.038;
@@ -74,8 +74,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.12;
+			x = BGX - 0.13;
+			y = BGY + 0.07;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -86,8 +86,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.17;
+			x = BGX + 0.17;
+			y = BGY + 0.07;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -98,8 +98,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.22;
+			x = BGX + 0.47;
+			y = BGY + 0.07;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -110,8 +110,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.27;
+			x = BGX - 0.43;
+			y = BGY + 0.12;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -122,8 +122,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.32;
+			x = BGX - 0.13;
+			y = BGY + 0.12;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -134,8 +134,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.37;
+			x = BGX + 0.17;
+			y = BGY + 0.12;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -146,8 +146,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.42;
+			x = BGX + 0.47;
+			y = BGY + 0.12;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -158,8 +158,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.47;
+			x = BGX - 0.43;
+			y = BGY + 0.17;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -170,8 +170,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.52;
+			x = BGX - 0.13;
+			y = BGY + 0.17;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -182,8 +182,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.57;
+			x = BGX + 0.17;
+			y = BGY + 0.17;
 			w = 0.24;
 			h = 0.038;
 		};
@@ -194,8 +194,8 @@ class pInteraction_Menu
 			colorBackground[] = {0.18,0.604,0.996,1};
 			text = "";
 			sizeEx = 0.025;
-			x = BGX + 0.03;
-			y = BGY + 0.62;
+			x = BGX + 0.47;
+			y = BGY + 0.17;
 			w = 0.24;
 			h = 0.038;
 		};
