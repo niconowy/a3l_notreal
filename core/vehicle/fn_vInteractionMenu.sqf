@@ -51,6 +51,10 @@ if(playerSide == civilian) then {
 	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
 	
+	_Btn7 ctrlSetText localize "STR_vInAct_Einschlagen";
+	_Btn7 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_checkHammer; closeDialog 0;";
+	if (_val == 0) then {_Btn7 ctrlEnable false;};
+	
 	if({side _x == east} count playableUnits > 0) then
 	{
 		if(!life_adac_request) then
