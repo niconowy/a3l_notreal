@@ -1,12 +1,12 @@
-#define BGX 0.35
+#define BGX -0.5
 #define BGY 0.2
 #define BGW 0.3
 
 class Life_farming_menu
 {
 	idd = 40100;
-	movingEnabled = 0;
-	enableSimulation = 1;
+	movingEnabled = false;
+	enableSimulation = true;
    
 	class controlsBackground
 	{
@@ -17,7 +17,7 @@ class Life_farming_menu
 			x = BGX;
 			y = BGY + (11 / 250);
 			w = BGW;
-			h = 0.7 - (22 / 250);
+			h = 0.3 - (22 / 250);
 		};
 		
 		class background_top: Life_RscText
@@ -30,7 +30,7 @@ class Life_farming_menu
 			h = (1 / 25);
 		};
 		
-		class Text : life_RscTitle
+		class Title : life_RscTitle
 		{
 			colorBackground[] = {0,0,0,0};
 			idc = 47400;
@@ -44,14 +44,14 @@ class Life_farming_menu
 
 	class controls
 	{
-		class button_close: life_RscButtonMenu
+		class ButtonClose : life_RscButtonMenu 
 		{
 			idc = -1;
 			//shortcuts[] = {0x00050000 + 2};
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
 			x = BGX;
-			y = 0.9 - (1 / 25);
+			y = 0.35 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
@@ -60,8 +60,7 @@ class Life_farming_menu
 		{
 			idc = 40111;
 			colorBackground[] = {0.18,0.604,0.996,1};
-			text = "$STR_FarmMenu_PickUse";
-			onButtonClick = "[] spawn life_fnc_checkPickaxe";
+			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.07;
@@ -73,8 +72,7 @@ class Life_farming_menu
 		{
 			idc = 40112;
 			colorBackground[] = {0.18,0.604,0.996,1};
-			text = "$STR_FarmMenu_AxeUse";
-			onButtonClick = "[] spawn life_fnc_checkAxe";
+			text = "";
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.12;

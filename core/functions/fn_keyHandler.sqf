@@ -133,7 +133,7 @@ switch (_code) do
 	//C Key
     case 15:
     {    
-		if(!_alt && !_ctrlKey && !dialog) then {
+		if(!_alt && !_ctrlKey && playerside == civilian && !life_action_inUse) then {
 			[] call life_fnc_Farmmenu;
 		};
     };
