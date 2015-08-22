@@ -335,7 +335,7 @@ sell_array =
 	["donuts",60],
 	["marijuana",4350],
 	["tbacon",25],
-	["lockpick",250],
+	["lockpick",300],
 	["pickaxe",750],
 	["axt",750],
 	["redgull",200],
@@ -395,7 +395,7 @@ sell_array =
 	["Rax's Rum",25],
 	["weddingring",1000],
 	["presseformular",1250],
-	["nothammer",1150]
+	["nothammer",1500]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -416,7 +416,7 @@ buy_array =
 	["donuts",120],
 	["coffee",10],
 	["tbacon",75],
-	["lockpick",500],
+	["lockpick",850],
 	["pickaxe",1200],
 	["axt",1200],
 	["redgull",1500],
@@ -460,7 +460,7 @@ buy_array =
 
 	["weddingring",25000],
 	["presseformular",10000],
-	["nothammer",35850]
+	["nothammer",5700]
 ];
 __CONST__(buy_array,buy_array);
 

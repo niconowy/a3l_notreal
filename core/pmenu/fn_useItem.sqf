@@ -248,7 +248,7 @@ switch (true) do
 		[] spawn life_fnc_jerryRefuel;
 	};
 	
-	case (_item == "lockpick"):
+/*	case (_item == "lockpick"):
 	{
 		[] spawn life_fnc_lockpick;
 		closeDialog 0;
@@ -258,7 +258,7 @@ switch (true) do
 	{
 		[] spawn life_fnc_scheibeEinschlagen;
 		closeDialog 0;
-	};
+	};*/
 	
 	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach"]):
 	{
@@ -268,6 +268,11 @@ switch (true) do
 	case (_item == "pickaxe"):
 	{
 		[] spawn life_fnc_pickAxeUse;
+	};
+	
+	case (_item == "axt"):
+	{
+		[] spawn life_fnc_axtUse;
 	};
 	
 	case (_item == "weddingring"):
