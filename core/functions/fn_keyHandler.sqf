@@ -135,7 +135,11 @@ switch (_code) do
     {    
 		if(!_alt && _ctrlKey && player == civilian) then 
 		{
-			createDialog "Life_farming_menu";
+			if(!life_action_inUse) then {
+				createDialog "Life_farming_menu";
+			} else {
+				hint localize "STR_NOTF_Action";
+			};
 		};
     };
 	
