@@ -1,4 +1,4 @@
-#define BGX -0.5
+#define BGX -0.65
 #define BGY 0.2
 #define BGW 0.3
 
@@ -51,7 +51,7 @@ class Life_farming_menu
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
 			x = BGX;
-			y = 0.35 - (1 / 25);
+			y = 0.42 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
