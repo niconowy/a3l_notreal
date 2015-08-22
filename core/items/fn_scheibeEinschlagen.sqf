@@ -43,10 +43,19 @@ if(_isVeh) then {
 	[_target,"autoknacker"] call life_fnc_globalSound;
 	
 	_ran = random(10);
-	if(_ran > 2) then {
-		player setDammage 0.25;
-		player setFatigue 1;
-		player setBleedingRemaining 30;
-		hint "Autsch! Ich glaube ich hab mich am Glas geschnitten...";
+	if(playerSide == civilian) then {
+		if(_ran > 2) then {
+			player setHitPointDamage ["hitHands",0.35];
+			player setFatigue 1;
+			player setBleedingRemaining 30;
+			hint "Autsch! Ich glaube ich hab mich am Glas geschnitten...";
+		};
+	} else {
+		if(_ran > 7) then {
+			player setHitPointDamage ["hitHands",0.2];
+			player setFatigue 1;
+			player setBleedingRemaining 30;
+			hint "Autsch! Ich glaube ich hab mich am Glas geschnitten...";
+		};
 	};
 };

@@ -14,15 +14,18 @@
 #define Btn7 37456
 #define Title 37401
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
+
 if(!dialog) then {
 	createDialog "vInteraction_Menu";
 };
 disableSerialization;
+
 _curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
 _isVehicle = if((_curTarget isKindOf "landVehicle") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air") OR (_curTarget isKindOf "Motorcycle") OR (_curTarget isKindOf "A3L_Tahoe_Base")) then {true} else {false};
 if(!_isVehicle) exitWith {closeDialog 0;};
 _display = findDisplay 37400;
+
 _Btn1 = _display displayCtrl Btn1;
 _Btn2 = _display displayCtrl Btn2;
 _Btn3 = _display displayCtrl Btn3;
@@ -30,6 +33,7 @@ _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
 _Btn7 = _display displayCtrl Btn7;
+
 life_vInact_curTarget = _curTarget;
 
 //Set Repair Action
@@ -38,7 +42,20 @@ _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
 
 if("ToolKit" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
-// Civs
+_Btn7 ctrlSetText localize "STR_vInAct_Einschlagen";
+_Btn7 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_scheibeEinschlagen; closeDialog 0;";
+
+_Btn7 ctrlEnable false;
+
+{
+	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
+	if(_val > 0 ) then {if( _str == "nothammer" || _str == "Nothammer" ) then {_Btn7 ctrlEnable true;};};
+} foreach life_inv_items;
+
+
+/*
+	Z I V I L I S T E N
+*/
 
 if(playerSide == civilian) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
@@ -51,19 +68,15 @@ if(playerSide == civilian) then {
 	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
 	
-	_Btn7 ctrlSetText localize "STR_vInAct_Einschlagen";
-	_Btn7 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_checkHammer; closeDialog 0;";
-	if (_val == 0) then {_Btn7 ctrlEnable false;};
-	
-	if({side _x == east} count playableUnits > 0) then
+	if({side _x == east} count playableUnits > 2) then
 	{
 		if(!life_adac_request) then
 		{
-			_Btn5 ctrlSetText "ADAC Rufen";
+			_Btn5 ctrlSetText "LAC Rufen";
 			_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC; closeDialog 0;";
 			//_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC;"; orginal
 		} else {
-			_Btn2 ctrlSetText "ADAC Widerrufen";
+			_Btn2 ctrlSetText "LAC Widerrufen";
 			_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestNotADAC; closeDialog 0;"; // von deleteADAC in requestNotADAC geändert
 			//_Btn5 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
 			//_Btn2 buttonSetAction "[[cursorTarget],""life_fnc_requestNotADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
@@ -89,7 +102,11 @@ if(playerSide == civilian) then {
 	};*/
 };
 
-// Cops
+
+
+/*
+	P O L I Z I S T E N
+*/
 
 if(playerSide == west) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
@@ -101,21 +118,22 @@ if(playerSide == west) then {
 	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
 	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
+
 	
 	if({side _x == east} count playableUnits > 0) then
 	{
 		if(!life_adac_request) then
 		{
-			_Btn5 ctrlSetText "ADAC Rufen";
-			_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC;";
+			_Btn5 ctrlSetText "LAC Rufen";
+			_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC; closeDialog 0;";
 		} else {
-			_Btn5 ctrlSetText "ADAC Widerrufen";
-			_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deleteADAC;";
+			_Btn5 ctrlSetText "LAC Widerrufen";
+			_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deleteADAC; closeDialog 0;";
 		};
 		
 	} else {
 		_Btn5 ctrlSetText localize "STR_vInAct_Impound";
-		_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction;";
+		_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
 	};
 	
 	if(_curTarget isKindOf "Ship") then {
@@ -152,10 +170,10 @@ if(playerSide == west) then {
 	
 	if(!life_adac_request) then
 	{
-		_Btn3 ctrlSetText "ADAC Rufen";
+		_Btn3 ctrlSetText "LAC Rufen";
 		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC; closeDialog 0;";
 	} else {
-		_Btn3 ctrlSetText "ADAC Widerrufen";
+		_Btn3 ctrlSetText "LAC Widerrufen";
 		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deleteADAC; closeDialog 0;";
 	};
 	
@@ -165,16 +183,17 @@ if(playerSide == west) then {
 	
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
-	_Btn7 ctrlShow false;
 };
 
 
-
-
+/*
+	S A N I T Ä T E R
+*/
 
 if(playerSide == east) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Impound";
 	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";	
+	
 	if(_curTarget isKindOf "Ship") then {
 		_Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
 		_Btn6 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
