@@ -45,14 +45,14 @@ if(_isVeh) then {
 	_ran = random(10);
 	if(playerSide == civilian) then {
 		if(_ran > 2) then {
-			player setHitPointDamage ["hitHands",0.4];
+//			player setHitPointDamage ["hitHands",0.4];
 			player setFatigue 1;
 			player setBleedingRemaining 30;
 			hint "Autsch! Ich glaube ich hab mich am Glas geschnitten...";
 		};
 	} else {
 		if(_ran == 10) then {
-			player setHitPointDamage ["hitHands",0.2];
+//			player setHitPointDamage ["hitHands",0.2];
 			player setFatigue 1;
 			player setBleedingRemaining 30;
 			hint "Autsch! Ich glaube ich hab mich am Glas geschnitten...";
