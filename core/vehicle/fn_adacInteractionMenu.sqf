@@ -11,6 +11,8 @@
 #define Btn4 37453
 #define Btn5 37454
 #define Btn6 37455
+#define Btn7 37456
+#define Btn8 37457
 #define Title 37401
 private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6"];
 if(!dialog) then {
@@ -29,6 +31,8 @@ _Btn3 = _display displayCtrl Btn3;
 _Btn4 = _display displayCtrl Btn4;
 _Btn5 = _display displayCtrl Btn5;
 _Btn6 = _display displayCtrl Btn6;
+_Btn7 = _display displayCtrl Btn7;
+_Btn8 = _display displayCtrl Btn8;
 life_vInact_curTarget = _curTarget;
 
 //Set Repair Action
@@ -62,4 +66,14 @@ _Btn4 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",east,FALSE] spawn
 _Btn5 ctrlSetText localize "STR_vInAct_Registration";
 _Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 
-_Btn6 ctrlShow false;
+_Btn6 ctrlSetText localize "STR_vInAct_Einschlagen";
+_Btn6 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_scheibeEinschlagen;";
+_Btn6 ctrlEnable false;
+
+{
+	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
+	if(_val > 0 ) then {if( _str == "nothammer" || _str == "Nothammer" ) then {_Btn7 ctrlEnable true;};};
+} foreach life_inv_items;
+
+_Btn7 ctrlShow false;
+_Btn8 ctrlShow false;

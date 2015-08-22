@@ -212,4 +212,5 @@ if(playerSide == east) then {
 			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
 		};
 	};
+	_Btn8 ctrlShow false; 
 };

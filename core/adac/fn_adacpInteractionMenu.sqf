@@ -16,8 +16,8 @@
 #define Btn8 37457
 #define Btn9 37458
 #define Btn10 37459
-#define Btn11 374510
-#define Btn12 374511
+#define Btn11 37460
+#define Btn12 37461
 //#define Title 37401
 
 
