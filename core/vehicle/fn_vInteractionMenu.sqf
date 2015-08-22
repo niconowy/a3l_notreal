@@ -40,7 +40,7 @@ life_vInact_curTarget = _curTarget;
 
 //Set Repair Action
 _Btn1 ctrlSetText localize "STR_vInAct_Repair";
-_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck;";
+_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairTruck; closeDialog 0;";
 
 if("ToolKit" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
 
@@ -86,7 +86,7 @@ if(playerSide == civilian) then {
 		_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestNotADAC; closeDialog 0;";*/
 	};
 	_Btn8 ctrlSetText localize "STR_vInAct_Aufbrechen";
-	_Btn8 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_lockpick;";
+	_Btn8 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_lockpick; closeDialog 0;";
 	{
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
 	if(_val > 0 ) then {if( _str == "Dietrich" || _str == "lockpick" ) then {_Btn8 ctrlEnable true;};};
@@ -111,10 +111,10 @@ if(playerSide == civilian) then {
 
 if(playerSide == west) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
-	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
+	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction; closeDialog 0;";
 	
 	_Btn3 ctrlSetText localize "STR_vInAct_SearchVehicle";
-	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_vehInvSearch;";
+	_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_vehInvSearch; closeDialog 0;";
 	
 	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
 	_Btn4 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_pulloutAction; closeDialog 0;";
@@ -184,7 +184,7 @@ if(playerSide == west) then {
 	
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
-	_Btn8 ctrlShow false;
+	_Btn8 ctrlEnable false;
 };
 
 

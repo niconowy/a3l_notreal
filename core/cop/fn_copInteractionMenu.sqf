@@ -46,10 +46,10 @@ if(_curTarget isKindOf "House_F") exitWith {
 		life_pInact_curTarget = _curTarget;
 		
 		_Btn1 ctrlSetText localize "STR_pInAct_Repair";
-		_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_repairDoor;";
+		_Btn1 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_repairDoor; closeDialog 0;";
 		
 		_Btn2 ctrlSetText localize "STR_pInAct_CloseOpen";
-		_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_doorAnimate;";
+		_Btn2 buttonSetAction "[life_pInact_curTarget] call life_fnc_doorAnimate; closeDialog 0;";
 		_Btn3 ctrlShow false;
 		_Btn4 ctrlShow false;
 		_Btn5 ctrlShow false;
@@ -94,15 +94,15 @@ if(!(cursorTarget getVariable["restrained",false])) then
 
 //Set Unrestrain Button
 _Btn1 ctrlSetText localize "STR_pInAct_Unrestrain";
-_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain;";
+_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_unrestrain; closeDialog 0;";
 
 //Set Check Licenses Button
 _Btn2 ctrlSetText localize "STR_pInAct_checkLicenses";
-_Btn2 buttonSetAction "[[player],""life_fnc_licenseCheck"",life_pInact_curTarget,FALSE] spawn life_fnc_MP";
+_Btn2 buttonSetAction "[[player],""life_fnc_licenseCheck"",life_pInact_curTarget,FALSE] spawn life_fnc_MP; closeDialog 0;";
 
 //Set Search Button
 _Btn3 ctrlSetText localize "STR_pInAct_SearchPlayer";
-_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction;";
+_Btn3 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_searchAction; closeDialog 0;";
 
 //Set Escort Button
 if((_curTarget getVariable["Escorting",false])) then {
@@ -110,31 +110,31 @@ if((_curTarget getVariable["Escorting",false])) then {
 	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
 } else {
 	_Btn4 ctrlSetText localize "STR_pInAct_Escort";
-	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction;";
+	_Btn4 buttonSetAction "[life_pInact_curTarget] call life_fnc_escortAction; closeDialog 0;";
 };
 
 //Set Ticket Button
 _Btn5 ctrlSetText localize "STR_pInAct_TicketBtn";
-_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction;";
+_Btn5 buttonSetAction "[life_pInact_curTarget] call life_fnc_ticketAction; closeDialog 0;";
 
 _Btn6 ctrlSetText localize "STR_pInAct_Arrest";
-_Btn6 buttonSetAction "[life_pInact_curTarget] call fnc_arrestmenu;";
+_Btn6 buttonSetAction "[life_pInact_curTarget] call fnc_arrestmenu; closeDialog 0;";
 
 _Btn7 ctrlSetText localize "STR_pInAct_PutInCar";
-_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar;";
+_Btn7 buttonSetAction "[life_pInact_curTarget] call life_fnc_putInCar; closeDialog 0;";
 
 _Btn8 ctrlSetText localize "STR_pInAct_Foltern";
-_Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_TorturePlayer;";
+_Btn8 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_TorturePlayer; closeDialog 0;";
 
 _Btn9 ctrlSetText localize "STR_pInAct_TestIntox";
-_Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_testIntox;";
+_Btn9 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_testIntox; closeDialog 0;";
 
 _Btn10 ctrlSetText localize "STR_pInAct_RevokeLicense";
-_Btn10 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense;";
+_Btn10 buttonSetAction "[life_pInact_curTarget] call life_fnc_revokeLicense; closeDialog 0;";
 
 //Kommunikation Entfrnen
 _Btn11 ctrlSetText "Kommunikation entfernen";
-_Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen;";
+_Btn11 buttonSetAction "[life_pInact_curTarget] call life_fnc_HandyEntnehmen; closeDialog 0;";
 
 if((_curTarget getVariable["isblinded",false])) then {
 	_Btn12 ctrlSetText localize "STR_pInAct_AugenbindeAus";

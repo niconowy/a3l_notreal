@@ -51,7 +51,6 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 		
 		life_action_inUse = false;
 		5 cutText ["","PLAIN"];
-		player playActionNow "stop";
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
 		player removeItem "ToolKit";
