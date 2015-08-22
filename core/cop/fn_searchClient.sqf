@@ -5,7 +5,7 @@
 	Description:
 	Searches the player and he returns information back to the player.
 */
-private["_cop","_inv","_var","_val"];
+private["_cop","_inv","_var","_value"];
 _cop = [_this,0,Objnull,[objNull]] call BIS_fnc_param;
 if(isNull _cop) exitWith {};
 _inv = [];
@@ -13,11 +13,11 @@ _inv = [];
 //Illegal items
 {
 	_var = [_x select 0,0] call life_fnc_varHandle;
-	_val = missionNamespace getVariable _x;
-	if(_val > 0) then
+	_value = missionNamespace getVariable _var;
+	if(_value > 0) then
 	{
-		_inv pushBack [_x select 0,_val];
-		[false,(_x select 0),_val] call life_fnc_handleInv;
+		_inv pushBack [_x select 0,_value];
+		[false,(_x select 0),_value] call life_fnc_handleInv;
 	};
 } foreach life_illegal_items;
 

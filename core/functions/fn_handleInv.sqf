@@ -19,7 +19,7 @@ if(_math) then
 	if(_num <= 0) exitWith {false};
 };
 _weight = ([_item] call life_fnc_itemWeight) * _num;
-_value = missionNamespace getVariable _x;
+_value = missionNamespace getVariable _var;
 
 if(_math) then
 {
@@ -28,7 +28,7 @@ if(_math) then
 	{
 		missionNamespace setVariable[_var,(_value + _num)];
 		
-		if((missionNamespace getVariable _x) > _value) then
+		if((missionNamespace getVariable _var) > _value) then
 		{
 			life_carryWeight = life_carryWeight + _weight;
 			_return = true;
@@ -54,7 +54,7 @@ if(_math) then
 	{
 		missionNamespace setVariable[_var,(_value - _num)];
 		
-		if((missionNamespace getVariable _x) < _value) then
+		if((missionNamespace getVariable _var) < _value) then
 		{
 			life_carryWeight = life_carryWeight - _weight;
 			_return = true;
