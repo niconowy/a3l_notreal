@@ -100,6 +100,7 @@ switch (_item) do
 	case "grillkohle":{1};
 	case "presseformular":{1};
 	case "bohrmaschine":{5};
+	case "nothammer":{4};
 
 	default {1};
 };

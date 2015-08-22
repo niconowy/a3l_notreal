@@ -133,7 +133,7 @@ switch (_code) do
 	//C Key
     case 15:
     {    
-		if(!_alt && !_ctrlKey && !dialog && player == civilian) then 
+		if(!_alt && _ctrlKey && player == civilian) then 
 		{
 			createDialog "Life_farming_menu";
 		};
