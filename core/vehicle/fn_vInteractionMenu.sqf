@@ -87,6 +87,7 @@ if(playerSide == civilian) then {
 	};
 	_Btn8 ctrlSetText localize "STR_vInAct_Aufbrechen";
 	_Btn8 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_lockpick;";
+	_Btn8 ctrlEnable false;
 	{
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
 	if(_val > 0 ) then {if( _str == "lockpick" || _str == "lockpick" ) then {_Btn8 ctrlEnable true;};};
@@ -151,6 +152,7 @@ if(playerSide == west) then {
 			_Btn6 buttonSetAction "closeDialog 0; life_vInact_curTarget setPos [(getPos life_vInact_curTarget select 0)+0.025, (getPos life_vInact_curTarget select 1), (getPos life_vInact_curTarget select 2)+0.5];";
 		};
 	};
+	_Btn8 ctrlShow false;
 	
 } else {
 	
@@ -184,8 +186,6 @@ if(playerSide == west) then {
 	
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
-	_Btn8 ctrlEnable false;
-	_Btn8 ctrlShow false;
 };
 
 

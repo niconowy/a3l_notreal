@@ -46,7 +46,10 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 			if(_cP >= 1) exitWith {};
 			if(!alive player) exitWith {};
 			if(player != vehicle player) exitWith {};
-			if(life_interrupted) exitWith {};
+			if(life_interrupted) exitWith 
+			{
+			[[player,""],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+			};
 		};
 		
 		life_action_inUse = false;
