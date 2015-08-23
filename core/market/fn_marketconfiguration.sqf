@@ -12,7 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
 		
-	["diamondc", 3876, 1, 6845, 10, 1,
+	["diamondc", 3459, 1, 6855, 10, 1,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -138,7 +138,7 @@ life_market_resources = [
 			]
 	],
    
-	["salt_r", 1060, 1, 3325, 1, 10,
+	["salt_r", 956, 1, 3200, 1, 10,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -163,7 +163,7 @@ life_market_resources = [
 			]
 	],
    
-	["corn", 870, 1, 2870, 8, 4,
+	["corn", 870, 1, 2750, 8, 4,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -185,7 +185,7 @@ life_market_resources = [
 			]
 	],
    
-	["wheat", 1045, 1, 3045, 10, 2,
+	["wheat", 850, 1, 2000, 10, 2,
 			[
 					["sunflower",1],
 					["corn",1],
@@ -196,7 +196,7 @@ life_market_resources = [
 			]
 	],
    
-	["cotton", 645, 1, 2645, 2, 10,
+	["cotton", 645, 1, 1655, 2, 10,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -236,7 +236,7 @@ life_market_resources = [
 			]
 	],
 	
-	["turtle", 9575, 1, 9175, 2, 4,
+	["turtle", 7575, 1, 9500, 2, 4,
 			[
 					["marijuana",1],
 					["cocainep",1],

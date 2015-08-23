@@ -4,7 +4,6 @@ class playerSettings {
 
 	idd = playersys_DIALOG;
 	movingEnable = true;
-	onLoad = "[] spawn life_fnc_p_updateMenu;";
 	enableSimulation = true;
 	
 	class controlsBackground {

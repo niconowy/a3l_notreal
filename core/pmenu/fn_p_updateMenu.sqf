@@ -81,4 +81,3 @@ _lic ctrlSetStructuredText parseText format["
 %1
 </t>
 ",_struct];
-

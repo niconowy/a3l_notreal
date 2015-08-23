@@ -207,8 +207,7 @@ life_inv_items =
 	"life_inv_blaulicht",
 	"life_inv_rawsheepmeat",
 	"life_inv_rawrabbit",
-	//Additions
-	"life_inv_zoobeer", // Duff Beer
+	"life_inv_zoobeer",
 	"life_inv_RoadCone",
 	"life_inv_RoadConeStrip",
 	"life_inv_RoadConeB",
@@ -256,7 +255,7 @@ life_licenses =
 
 //Medic Licenses
 	["license_med_air","med"],
-	
+
 //Civilian Vehicular & Diving
 	["license_civ_driver","civ"],
 	["license_civ_air","civ"],
@@ -282,12 +281,12 @@ life_licenses =
 	["license_civ_elektriker","civ"],
 	["license_civ_grillmeister","civ"],
 	["license_civ_schreiner","civ"],
-	
+
 //Civilian Other
 	["license_civ_home","civ"],
 	["license_civ_presse","civ"],
 	["license_civ_taxischein","civ"]
-	
+
 ];
 
 //Setup License Variables
@@ -352,7 +351,7 @@ sell_array =
 	["laminat",2895],
 	["grillkohle",1900],
 	["schwarzpulver",4600],
-		
+
 	["wheat",255],
 	["sunflower",316],
 	["corn",860],
@@ -362,7 +361,7 @@ sell_array =
 	["opium",1000],
 	["cannabis",1000],
 	["pumpkin",825],
-	
+
 	["wheat seed",10],
 	["sunflower seed",10],
 	["corn seed",10],
@@ -378,7 +377,7 @@ sell_array =
 	["raw chicken",700],
 	["raw sheep meat",500],
 	["raw rabbit",700],
-	
+
 	["spikeStrip",1200],
 	["cement",3600],
 	["goldbar",95000], 

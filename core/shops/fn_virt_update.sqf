@@ -23,8 +23,6 @@ ctrlSetText[2403,format["%1", _shop_data select 0]];
 
 {
 	_name = [([_x,0] call life_fnc_varHandle)] call life_fnc_vartostr;
-	//#1
-	//_icon = [([_x,0] call life_fnc_varHandle)] call life_fnc_itemIcon;
 	_index = [_x,__GETC__(buy_array)] call TON_fnc_index;
 	if(_index != -1) then
 	{
@@ -48,16 +46,10 @@ ctrlSetText[2403,format["%1", _shop_data select 0]];
 	_var = [_x,0] call life_fnc_varHandle;
 	_val = missionNameSpace getVariable _var;
 	_name = [_var] call life_fnc_vartostr;
-	//#1
-	//_icon = [_var] call life_fnc_itemIcon;
+	
 	if(_val > 0) then
 	{
 		_gear_list lbAdd format["%1x %2",_val,_name];
 		_gear_list lbSetData [(lbSize _gear_list)-1,_x];
-		//#1
-		//_gear_list lbSetPicture [(lbSize _gear_list)-1,_icon];
 	};
 } foreach (_shop_data select 1);
-
-//#2
-//[_shop_data select 1] spawn life_fnc_marketShortView;
