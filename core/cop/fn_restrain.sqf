@@ -69,7 +69,7 @@ while {player getVariable "restrained"} do
 		
 if(alive player) then
 {
-	player switchMove "AmovPercMstpSlowWrflDnon_SaluteIn";
+	player switchMove "";
 	player setVariable ["Escorting",false,true];
 	player setVariable ["transporting",false,true];
 	detach player;
