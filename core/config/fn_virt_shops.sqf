@@ -18,7 +18,7 @@ switch (_shop) do
 	case "coffee": {["Cafe 'Tratsch und Klatsch'",["coffee","donuts"]]};
 	case "heroin": {["Mikey's Stoffecke",["cocainep","marijuana","heroinp"]]};
 	case "oil": {["Öl Ankauf",["oilp","pickaxe","fuelF"]]};
-	case "fishmarket": {["Fisch Markt",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
+	case "fishmarket": {["Aal-Dieter's Frischfisch",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
 	case "farmingmarket": {["Joe Jay's Gärtnerei",["wheat seed","sunflower seed","bean seed","cotton seed","pumpkin seed","opium seed","coke seed","cannabis seed","wheat","sunflower","corn","bean","cotton","olive","pumpkin"]]};	
 	case "glass": {["Glasshändler",["glass"]]};
 	case "iron": {["Förder-Industrie",["iron_r","copper_r","schwarzpulver","elektroteile"]]};
