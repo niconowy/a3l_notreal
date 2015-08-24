@@ -17,7 +17,6 @@ _inv = [];
 	if(_val > 0) then
 	{
 		_inv pushBack [_x select 0,_val];
-		ja_pare = ja_pare + _value;
 		[false,(_x select 0),_val] call life_fnc_handleInv;
 	};
 } foreach life_illegal_items;
