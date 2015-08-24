@@ -6,7 +6,9 @@
 	Impounds the vehicle
 */
 private["_vehicle","_uid","_owner","_type","_time","_price","_vehicleData","_upp","_ui","_progress","_pgText","_cP"];
+
 _vehicle = cursorTarget;
+
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindof "landVehicle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
 if(damage _vehicle == 1) exitWith {hint "Dieses Fahrzeug ist zerstört und kann nicht abgeschleppt werden."};

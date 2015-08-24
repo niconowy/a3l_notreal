@@ -22,14 +22,14 @@ switch (true) do
 //			player setFatigue 0; Unlogisch, oder?
 		};
 	};
-	
+
 	case (_item == "coffee"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			playsound "trinken";
 			life_thirst = 100;
-			player setFatigue 0;			
+			player setFatigue 0;
 		};
 	};
 
@@ -52,7 +52,7 @@ switch (true) do
 			life_intox = life_intox + 0.02;
 		};
 	};
-	
+
 	case (_item == "Rax's Rum"):
 	{
 		if(([false,_item,1] call life_fnc_handleInv)) then
@@ -62,17 +62,17 @@ switch (true) do
 			life_intox = life_intox + 0.06;
 		};
 	};
-	
+
 	case (_item == "boltcutter"): {
 		[cursorTarget] spawn life_fnc_boltcutter;
 		closeDialog 0;
 	};
-	
+
 	case (_item == "bohrmaschine"): {
 		[cursorTarget] spawn life_fnc_bohrmaschine;
 		closeDialog 0;
 	};
-	
+
 	case (_item == "blastingcharge"): {
 		player reveal fed_bank;
 		(group player) reveal fed_bank;
@@ -116,7 +116,7 @@ switch (true) do
 			[] spawn life_fnc_useHeroin;
 		};
 	};
-	
+
 	case (_item == "defusekit"): {
 		[cursorTarget] spawn life_fnc_defuseKit;
 	};
@@ -158,6 +158,7 @@ switch (true) do
 			};
 		};
 	};
+
 	case (_item == "RoadConeStrip"):
 	{
 		if(!isNull life_roadcone) exitWith {hint "Du hast bereits ein RoadCone-Strip in der Hand"};
@@ -170,6 +171,7 @@ switch (true) do
 			};
 		};
 	};
+
 	case (_item == "RoadConeStripB"):
 	{
 		if(!isNull life_roadcone) exitWith {hint "Du hast bereits eine blinkende RoadCone-Strip in der Hand"};

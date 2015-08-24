@@ -1087,7 +1087,7 @@
 			<Original>Radar</Original>
 		</Key>
 		<Key ID="STR_Cop_VehSpeed">
-			<Original>Geschwindigkeit %1 km/h</Original>
+			<Original>Geschwindigkeit: %1 km/h</Original>
 		</Key>
 		<Key ID="STR_Cop_ExcessiveRestrain">
 			<Original>Du wurdest automatisch freigelassen, da die maximale Verhaftungszeit überschritten wurde</Original>
@@ -1617,6 +1617,9 @@
 		</Key>
 		<Key ID="STR_License_TaxiSchein">
 			<Original>Personenbeförderungsschein</Original>
+		</Key>
+		<Key ID="STR_License_Fischerei">
+			<Original>Fischereischein</Original>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">

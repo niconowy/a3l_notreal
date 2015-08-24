@@ -84,7 +84,6 @@ switch (_var) do
 	case "life_inv_rawchicken": {(localize "STR_Item_rawchicken")};
 	case "life_inv_rawsheepmeat": {(localize "STR_Item_rawsheepmeat")};
 	case "life_inv_rawrabbit": {(localize "STR_Item_rawrabbit")};
-	case "life_inv_blaulicht": {"Blaulicht"};
 
 	case "life_inv_schwarzpulver": {(localize "STR_Item_Schwarzpulver")};
 	case "life_inv_kohle": {(localize "STR_Item_Kohle")};
@@ -137,4 +136,5 @@ switch (_var) do
 	case "license_civ_schreiner": {(localize "STR_License_Schreiner")};
 	case "license_civ_presse": {(localize "STR_License_Presse")};
 	case "license_civ_taxischein": {(localize "STR_License_TaxiSchein")};
+	case "license_civ_fischerei": {(localize "STR_License_Fischerei")};
 };

@@ -204,7 +204,6 @@ life_inv_items =
 	"life_inv_pumpkinseeds",
 	"life_inv_rawgoatmeat",
 	"life_inv_rawchicken",
-	"life_inv_blaulicht",
 	"life_inv_rawsheepmeat",
 	"life_inv_rawrabbit",
 	"life_inv_zoobeer",
@@ -285,7 +284,8 @@ life_licenses =
 //Civilian Other
 	["license_civ_home","civ"],
 	["license_civ_presse","civ"],
-	["license_civ_taxischein","civ"]
+	["license_civ_taxischein","civ"],
+	["license_civ_fischerei","civ"] //Nur zum Verkaufen von Fisch
 
 ];
 
@@ -293,10 +293,10 @@ life_licenses =
 {missionNamespace setVariable[(_x select 0),false];} foreach life_licenses;
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
+
 //[shortVar,reward]
 life_illegal_items = [
 	["schwarzpulver",4250],
-	["Blaulicht",16500],
 	["spikeStrip",36500],
 	["opium",2050],
 	["heroinp",4780],
@@ -346,7 +346,6 @@ sell_array =
 	["salt_r",1225],
 	["glass",2155],
 	["fuelF",1750],
-	["blaulicht",1000],
 	["elektroteile",4000],
 	["laminat",2895],
 	["grillkohle",1900],
@@ -427,7 +426,6 @@ buy_array =
 	["bean seed",25],
 	["cotton seed",25],
 	["olive seed",25],
-	["blaulicht",1500],
 	["opium seed",400],
 	["cannabis seed",400],
 	["pumpkin seed",150],

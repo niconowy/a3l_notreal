@@ -197,7 +197,8 @@ switch (_code) do
 	};
 	//L Key?
 	case 38:{
-		if(_veh != player)then{
+		if(!_alt && !_ctrlKey && _veh == player) exitWith {true; [] call life_fnc_radar;};
+	/*	if(_veh != player)then{
 			if(_shift && !_ctrlKey)exitWith{		
 				true;	// direct returns because its an exitWith
 				if((driver _veh) == player)then{				
@@ -234,8 +235,7 @@ switch (_code) do
 					};	
 				};
 			};
-		};	
-		if(!_alt && !_ctrlKey && _veh == player) exitWith {true; [] call life_fnc_radar; };		
+		};	*/
 	};
 	
 	// ENDE
