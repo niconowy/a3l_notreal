@@ -36,6 +36,36 @@ _Btn8 = _display displayCtrl Btn8;
 life_vInact_curTarget = _curTarget;
 
 //Set Repair Action
+_Btn1 ctrlSetText localize "STR_vInAct_RepairAdac";
+_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairAdac; closeDialog 0;";
+
+if("A3lSpanner" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
+
+_Btn2 ctrlSetText localize "STR_vInAct_Impound";
+_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
+
+if(_curTarget isKindOf "Ship") then {
+	_Btn3 ctrlSetText localize "STR_vInAct_PushBoat";
+	_Btn3 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
+	if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
+} else {
+	if(typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kart_01_Red_F","C_Kart_01_Fuel_F","C_Kart_01_Vrana_F"]) then {
+		_Btn3 ctrlSetText localize "STR_vInAct_GetInKart";
+		_Btn3 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
+		if(count crew _curTarget == 0 && {canMove _curTarget} && {locked _curTarget == 0}) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
+	} else {
+		_Btn3 ctrlSetText localize "STR_vInAct_Unflip";
+		_Btn3 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
+		if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
+	};
+};
+
+_Btn4 ctrlSetText "ADAC eingetroffen";
+_Btn4 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",east,FALSE] spawn life_fnc_MP; closeDialog 0;";
+
+_Btn5 ctrlSetText localize "STR_vInAct_Registration";
+_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
+
 _Btn6 ctrlSetText localize "STR_vInAct_Einschlagen";
 _Btn6 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_scheibeEinschlagen;";
 _Btn6 ctrlEnable false;
@@ -44,62 +74,5 @@ _Btn6 ctrlEnable false;
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
 	if(_val > 0 ) then {if( _str == "nothammer" || _str == "Nothammer" ) then {_Btn7 ctrlEnable true;};};
 } foreach life_inv_items;
-	
-if(playerside == east) then {
-	_Btn1 ctrlSetText localize "STR_vInAct_RepairAdac";
-	_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairAdac; closeDialog 0;";
-
-	if("A3lSpanner" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
-
-	_Btn2 ctrlSetText localize "STR_vInAct_Impound";
-	_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_impoundAction; closeDialog 0;";
-
-	if(_curTarget isKindOf "Ship") then {
-		_Btn3 ctrlSetText localize "STR_vInAct_PushBoat";
-		_Btn3 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
-		if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
-	} else {
-		if(typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kart_01_Red_F","C_Kart_01_Fuel_F","C_Kart_01_Vrana_F"]) then {
-			_Btn3 ctrlSetText localize "STR_vInAct_GetInKart";
-			_Btn3 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
-			if(count crew _curTarget == 0 && {canMove _curTarget} && {locked _curTarget == 0}) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
-		} else {
-			_Btn3 ctrlSetText localize "STR_vInAct_Unflip";
-			_Btn3 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
-			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
-		};
-	};
-
-	_Btn4 ctrlSetText "ADAC eingetroffen";
-	_Btn4 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",east,FALSE] spawn life_fnc_MP; closeDialog 0;";
-
-	_Btn5 ctrlSetText localize "STR_vInAct_Registration";
-	_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_searchVehAction;";
-
-	{
-		_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
-		if(_val > 0 ) then {if( _str == "nothammer" || _str == "Nothammer" ) then {_Btn7 ctrlEnable true;};};
-	} foreach life_inv_items;
-	_Btn7 ctrlShow false;
-	else {
-		if(_curTarget isKindOf "Ship") then {
-			_Btn3 ctrlSetText localize "STR_vInAct_PushBoat";
-			_Btn3 buttonSetAction "[] spawn life_fnc_pushObject; closeDialog 0;";
-			if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
-		} else {
-			if(typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kart_01_Red_F","C_Kart_01_Fuel_F","C_Kart_01_Vrana_F"]) then {
-				_Btn3 ctrlSetText localize "STR_vInAct_GetInKart";
-				_Btn3 buttonSetAction "player moveInDriver life_vInact_curTarget; closeDialog 0;";
-				if(count crew _curTarget == 0 && {canMove _curTarget} && {locked _curTarget == 0}) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
-			} else {
-				_Btn3 ctrlSetText localize "STR_vInAct_Unflip";
-				_Btn3 buttonSetAction "life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5]; closeDialog 0;";
-				if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
-			};
-		};
-		_Btn7 ctrlSetText localize "STR_vInAct_Repair";
-		_Btn7 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_repairTruck;";
-
-		if("ToolKit" in (items player) && (damage _curTarget < 1)) then {_Btn1 ctrlEnable true;} else {_Btn1 ctrlEnable false;};
-	};
+_Btn7 ctrlShow false;	
 _Btn8 ctrlShow false;
