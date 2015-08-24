@@ -4478,7 +4478,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this allowDamage false; this enableSimulation false; this addAction[""Taucherzubehör"",life_fnc_clothingMenu,""dive""]; this addAction[""Lizenzen"",life_fnc_licenses,[""dive""],0,true,true,"""",' playerSide == civilian '];";
+			init="this allowDamage false; this enableSimulation false; this addAction[""Taucherzubehör"",life_fnc_clothingMenu,""dive""]; this addAction[""Lizenzen"",life_fnc_licenses,[""dive"",""fischerei""],0,true,true,"""",' playerSide == civilian '];";
 		};
 		class Item84
 		{
@@ -5573,7 +5573,7 @@ class Mission
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this allowDamage false; this enableSimulation false; this addAction[""Justiz Kleidung"",life_fnc_clothingMenu,""justiz""];this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 3 ']; this addAction[""Kühlschrank"",life_fnc_virt_menu,""murdermarket""]; this addAction[""Justiz Fahrzeuge"",life_fnc_vehicleShopMenu,[""justiz_kfz"",east,[""justiz_veh_1""],""adac"",""Justiz Fahrzeuge - Sicher Unterwegs!""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""justiz_g_1""; }]; this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
+			init="this enableSimulation false; this allowDamage false; this allowDamage false; this enableSimulation false; this addAction[""Justiz Kleidung"",life_fnc_clothingMenu,""justiz""];this addAction[""<t color='#ADFF2F'>Konto</t>"",life_fnc_atmMenu,"""",0,FALSE,FALSE,"""",' vehicle player == player && player distance _target < 3 && playerSide == east']; this addAction[""Kühlschrank"",life_fnc_virt_menu,""murdermarket""]; this addAction[""Justiz Fahrzeuge"",life_fnc_vehicleShopMenu,[""justiz_kfz"",east,[""justiz_veh_1""],""adac"",""Justiz Fahrzeuge - Sicher Unterwegs!""]]; this addAction[""Fahrzeug Garage"",  {   [[getPlayerUID player,playerSide,""Car"",player],""TON_fnc_getVehicles"",false,false] spawn life_fnc_MP; life_garage_type = ""Car"";   createDialog ""Life_impound_menu"";   disableSerialization;   ctrlSetText[2802,""Fetching Vehicles....""];   life_garage_sp = ""justiz_g_1""; }]; this addAction[""Fahrzeug Einparken"",life_fnc_storeVehicle,"""",0,false,false,"""",'!life_garage_store'];";
 		};
 		class Item188
 		{
@@ -8159,7 +8159,7 @@ class Mission
 		{
 			position[]={-1596.3323,212.94568,10913.358};
 			name="funk_1";
-			text="Gruppe 1:   NOT: 51.6   LSPD: 38.4   Sheriff: 59.2   Short: 42.1";
+			text="Gruppe 1:   NOT: 62.7   LSPD: 35.2   Sheriff: 68.9   Short: 33.4";
 			type="A3L_PD_Icon";
 			colorName="ColorBlue";
 		};
@@ -8167,7 +8167,7 @@ class Mission
 		{
 			position[]={-1600.3652,208.60657,10754.161};
 			name="funk_2";
-			text="Gruppe 2:   NOT: 67.9   LSDP: 54.5   Sheriff: 78.1   Short: 52.2";
+			text="Gruppe 2:   NOT: 72.1   LSDP: 57.1   Sheriff: 54.8   Short: 36.8";
 			type="A3L_PD_Icon";
 			colorName="ColorBlue";
 		};
@@ -8175,7 +8175,7 @@ class Mission
 		{
 			position[]={-1600.3649,198.27711,10606.225};
 			name="funk_3";
-			text="Gruppe 3:   NOT: 31.9   LSPD: 71.6   Sheriff: 66.8   Short: 49.3";
+			text="Gruppe 3:   NOT: 56.2   LSPD: 39.3   Sheriff: 66.6   Short: 42.7";
 			type="A3L_PD_Icon";
 			colorName="ColorBlue";
 		};
@@ -8183,7 +8183,7 @@ class Mission
 		{
 			position[]={-1600.365,193.50264,10452.656};
 			name="funk_4";
-			text="Gruppe 4:   NOT: 48.2   LSPD: 38.6   Sheriff: 49.5   Short: 70.7";
+			text="Gruppe 4:   NOT: 34.3   LSPD: 67.7   Sheriff: 44.1   Short: 76.1";
 			type="A3L_PD_Icon";
 			colorName="ColorBlue";
 		};

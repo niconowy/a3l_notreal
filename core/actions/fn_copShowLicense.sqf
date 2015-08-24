@@ -44,7 +44,7 @@ if(playerSide == west) then
 // Don 2,3 = State Police/SWAT
 // Don 4,5 = FBI/Underkoffer
 //	if((_donlevel == 2) OR (_donlevel == 3)) then {_rankSpec = "<img image='images\idcards\cop\spec\swat.paa' size='8'/>";} else {""};
-	if((_donlevel == 4) OR (_donlevel == 5)) then {_rankSpec = "<img image='images\idcards\cop\spec\fbi.jpg' size='8'/>";} else {"<br/>"};
+	_rankSpec = if((_donlevel == 4) OR (_donlevel == 5)) then {"<img image='images\idcards\cop\spec\fbi.jpg' size='8'/>";} else {"<br/>"};
 
 	_message = format["<t size='1.25'>%1</t><br/><br/>%2<br/><br/>%3", name player, _rank, _rankSpec];
 	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;

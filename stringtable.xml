@@ -1622,7 +1622,7 @@
 			<Original>Personenbeförderungsschein</Original>
 		</Key>
 		<Key ID="STR_License_Fischerei">
-			<Original>Fischereischein</Original>
+			<Original>Fischerschein</Original>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
