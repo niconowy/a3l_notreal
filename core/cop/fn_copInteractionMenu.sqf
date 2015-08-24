@@ -90,6 +90,7 @@ if(!(cursorTarget getVariable["restrained",false])) then
 	_Btn6 ctrlEnable false;
 	_Btn7 ctrlEnable false;
 	_Btn8 ctrlEnable false;
+	_Btn12 ctrlEnable false;
 };
 
 //Set Unrestrain Button
