@@ -47,7 +47,7 @@ _Btn12 = _display displayCtrl Btn8;
 
 life_pInact_curTarget = _curTarget;
 
-if(playerside == east && call life_adaclvl <=9) then {
+if(playerside == east) then {
 
 	//Set Ticket Button
 	_Btn1 ctrlSetText "Rechnung";
@@ -63,20 +63,4 @@ if(playerside == east && call life_adaclvl <=9) then {
 	_Btn10 ctrlShow false;
 	_Btn11 ctrlShow false;
 	_Btn12 ctrlShow false;
-	else { 
-	_Btn1 ctrlSetText "Gerichtskosten";
-	_Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_rechnungAction;";
-	_Btn2 ctrlShow false;
-	_Btn3 ctrlShow false;
-	_Btn4 ctrlShow false;
-	_Btn5 ctrlShow false;
-	_Btn6 ctrlShow false;
-	_Btn7 ctrlShow false;
-	_Btn8 ctrlShow false;
-	_Btn9 ctrlShow false;
-	_Btn10 ctrlShow false;
-	_Btn11 ctrlShow false;
-	_Btn12 ctrlShow false;
-	};
-
 };
