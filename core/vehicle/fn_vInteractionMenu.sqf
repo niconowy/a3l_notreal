@@ -174,6 +174,7 @@ if(playerSide == west) then {
 	
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
+	_Btn8 ctrlShow false;
 };
 
 
