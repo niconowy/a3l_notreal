@@ -45,6 +45,7 @@ switch (_mode) do
 			case "schreiner": {_var = "license_civ_schreiner"};
 			case "presse": {_var = "license_civ_presse"};
 			case "taxischein": {_var = "license_civ_taxischein"};
+			case "fischerei": {_var = "license_civ_fischerei"};
 			default {_var = ""};
 		};
 	};
@@ -82,6 +83,7 @@ switch (_mode) do
 			case "license_civ_schreiner": {_var = "schreiner"};
 			case "license_civ_presse": {_var = "presse"};
 			case "license_civ_taxischein": {_var = "taxischein"};
+			case "license_civ_fischerei": {_var = "fischerei"};
 			default {_var = ""};
 		};
 	};
