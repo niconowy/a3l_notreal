@@ -13,7 +13,7 @@ _inv = [];
 //Illegal items
 {
 	_var = [_x select 0,0] call life_fnc_varHandle;
-	_val = missionNamespace setVariable _var;
+	_val = missionNamespace getVariable _var;
 	if(_val > 0) then
 	{
 		_inv pushBack [_x select 0,_val];
