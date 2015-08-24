@@ -12,7 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
 		
-	["diamondc", 3459, 1, 6855, 10, 1,
+	["diamondc", 3459, 1, 6459, 10, 1,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -26,7 +26,7 @@ life_market_resources = [
 			]
 	],
 	
-	["oilp", 3592, 1, 6490, 9, 2,
+	["oilp", 3592, 1, 6592, 9, 2,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -40,7 +40,7 @@ life_market_resources = [
 			]
 	],
 	
-	["iron_r", 3320, 1, 6150, 8, 3,
+	["iron_r", 3320, 1, 6320, 8, 3,
 			[
 					["diamondc",1],
 					["copper_r",1],
@@ -54,7 +54,7 @@ life_market_resources = [
 			]
 	],
    
-	["elektroteile", 3200, 1, 6000, 7, 4,
+	["elektroteile", 3200, 1, 6200, 7, 4,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -68,7 +68,7 @@ life_market_resources = [
 			]
 	],
 	
-	["cement", 2880, 1, 5600, 6, 5,
+	["cement", 2880, 1, 5880, 6, 5,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -82,7 +82,7 @@ life_market_resources = [
 			]
 	],
 	
-	["copper_r", 2460, 1, 5075, 5, 6,
+	["copper_r", 2460, 1, 5460, 5, 6,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -96,7 +96,7 @@ life_market_resources = [
 			]
 	],
 	
-	["laminat", 2316, 1, 4895, 4, 7,
+	["laminat", 2315, 1, 5315, 4, 7,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -110,7 +110,7 @@ life_market_resources = [
 			]
 	],
 	
-	["grillkohle", 1520, 1, 3900, 3, 8,
+	["grillkohle", 2220, 1, 5220, 3, 8,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -124,7 +124,7 @@ life_market_resources = [
 			]
 	],
 	
-	["glass", 1284, 1, 3605, 2, 9,
+	["glass", 1285, 1, 4285, 2, 9,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -138,7 +138,7 @@ life_market_resources = [
 			]
 	],
    
-	["salt_r", 956, 1, 3200, 1, 10,
+	["salt_r", 955, 1, 3955, 1, 10,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -152,7 +152,7 @@ life_market_resources = [
 			]
 	],
    
-	["sunflower", 649, 1, 2649, 4, 8,
+	["sunflower", 649, 1, 1649, 4, 8,
 			[
 					["wheat",1],
 					["corn",1],
@@ -163,7 +163,7 @@ life_market_resources = [
 			]
 	],
    
-	["corn", 870, 1, 2750, 8, 4,
+	["corn", 870, 1, 1750, 8, 4,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -174,7 +174,7 @@ life_market_resources = [
 			]
 	],
    
-	["pumpkin", 747, 1, 2747, 6, 6,
+	["pumpkin", 747, 1, 1747, 6, 6,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -185,7 +185,7 @@ life_market_resources = [
 			]
 	],
    
-	["wheat", 850, 1, 2000, 10, 2,
+	["wheat", 850, 1, 1850, 10, 2,
 			[
 					["sunflower",1],
 					["corn",1],

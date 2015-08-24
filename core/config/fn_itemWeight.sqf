@@ -56,11 +56,11 @@ switch (_item) do
 	case "defusekit": {2};
 	case "storagesmall": {5};
 	case "storagebig": {10};
-	case "wheat": {1};
-	case "sunflower": {1};
+	case "wheat": {2};
+	case "sunflower": {2};
 	case "corn": {2};
-	case "bean": {1};
-	case "cotton": {1};
+	case "bean": {2};
+	case "cotton": {2};
 	case "olive": {1};
 	case "opium": {3};
 	case "cannabis": {3};
@@ -91,7 +91,6 @@ switch (_item) do
 	case "Rax's Rum" : {1};
 	case "zoobeer": {1}; // Duff Beer
 	case "blaulicht":{5};
-	case "augenbinde":{2};
 	case "schwarzpulver":{2};
 	case "kohle":{3};
 	case "elektroteile":{1};
