@@ -153,8 +153,8 @@ if(playerSide == west) then {
 			_Btn6 ctrlSetText localize "STR_vInAct_Unflip";
 			_Btn6 buttonSetAction "closeDialog 0; life_vInact_curTarget setPos [(getPos life_vInact_curTarget select 0)+0.025, (getPos life_vInact_curTarget select 1), (getPos life_vInact_curTarget select 2)+0.5];";
 		};
+		_Btn8 ctrlShow false;
 	};
-	_Btn8 ctrlShow false;
 	
 } else {
 	
