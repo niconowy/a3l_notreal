@@ -28,10 +28,10 @@ switch(_type) do
 			{
 				switch(side _x) do
 				{
-					case west: {_type = "Cop"};
-					case civilian: {_type = "Civ"};
-					case independent: {_type = "Med"};
-					case east: {_type = "Adac"};
+					case west: {_type = "COP"};
+					case civilian: {_type = "ZIV"};
+					case independent: {_type = "EMS"};
+					case east: {_type = "LAC"};
 				};
 				_cPlayerList lbAdd format["%1 (%2)",_x getVariable["realname", name _x],_type];
 				_cPlayerList lbSetData [(lbSize _cPlayerList)-1,str(_x)];
