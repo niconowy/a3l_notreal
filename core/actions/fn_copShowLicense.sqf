@@ -44,7 +44,7 @@ if(playerSide == west) then
 // Don 2,3 = State Police/SWAT
 // Don 4,5 = FBI/Underkoffer
 //	if((_donlevel == 2) OR (_donlevel == 3)) then {_rankSpec = "<img image='images\idcards\cop\spec\swat.paa' size='8'/>";} else {""};
-	if((_donlevel == 4) OR (_donlevel == 5)) then {_rankSpec = "<img image='images\idcards\cop\spec\fbi.jpg' size='8'/>";} else {""};
+	if((_donlevel == 4) OR (_donlevel == 5)) then {_rankSpec = "<img image='images\idcards\cop\spec\fbi.jpg' size='8'/>";} else {"<br/>"};
 
 	_message = format["<t size='1.25'>%1</t><br/><br/>%2<br/><br/>%3", name player, _rank, _rankSpec];
 	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
@@ -96,12 +96,12 @@ if(playerSide == east) then
 if(playerSide == civilian) then
 {
 	
-	_id = _path + "<img image='images\idcards\civ\id_card.paa' size='8'/>";
-	_presse = if(license_civ_presse) then {"<img image='images\idcards\civ\id_presse.paa' size='8'/>";} else {};
-	_pkw = if(license_civ_driver) then {"<img image='images\idcards\civ\id_pkw.paa' size='8'/>";} else {}; 
-	_lkw = if(license_civ_truck) then {"<img image='images\idcards\civ\id_lkw.paa' size='8'/>";} else {};
-	_fish = if(getPlayerUID player == "76561198136538321") then {"<img image='images\idcards\cop\spec\our_dieter_kinder_ficker_lel.jpg' size='3.5'/>";} else {};
+	_id = "<img image='images\idcards\civ\id_card.paa' size='8'/>";
+	_presse = if(license_civ_presse) then {"<img image='images\idcards\civ\id_presse.paa' size='8'/>";} else {"<br/>"};
+	_pkw = if(license_civ_driver) then {"<img image='images\idcards\civ\id_pkw.paa' size='8'/>";} else {"<br/>"}; 
+	_lkw = if(license_civ_truck) then {"<img image='images\idcards\civ\id_lkw.paa' size='8'/>";} else {"<br/>"};
+	_fish = if(getPlayerUID player == "76561198136538321") then {"<img image='images\idcards\cop\spec\our_dieter_kinder_ficker_lel.jpg' size='3.5'/>";} else {"<br/>"};
 	
-	_message = ["<t size='1.25'>%1</t><br/><br/>%2<br/><br/>%3<br/><br/>%4<br/><br/>%5<br/><br/>",name player,_id,_pkw,_lkw,_presse,_fish];
+	_message = format["<t size='1.25'>%1</t><br/><br/>%2<br/><br/>%3<br/><br/>%4<br/><br/>%5<br/><br/>",name player,_id,_pkw,_lkw,_presse,_fish];
 	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
 };
