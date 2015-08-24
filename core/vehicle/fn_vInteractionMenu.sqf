@@ -89,7 +89,7 @@ if(playerSide == civilian) then {
 	
 	{
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
-	if(_val > 0 ) then {if( _str == "lockpick" || _str == "Lockpick" ) then {_Btn8 ctrlEnable true;};};
+	if(_val > 0 ) then {if( _str == "dietrich" || _str == "Dietrich" ) then {_Btn8 ctrlEnable true;};};
 	} foreach life_inv_items;
 };
 
