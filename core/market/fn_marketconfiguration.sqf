@@ -211,7 +211,7 @@ life_market_resources = [
 // F I S C H   Z E U G E S  [fishmarket]
 ///////////////////////////
  
-	["salema", 1550, 1, 3550, 2, 5,
+	["salema", 550, 1, 1550, 2, 5,
 			[
 					["ornate",1],
 					["mackerel",1],
@@ -221,7 +221,7 @@ life_market_resources = [
 			]
 	],
  
-	["ornate", 1890, 1, 3890, 3, 4,
+	["ornate", 890, 1, 1890, 3, 4,
 			[
 					["salema",1],
 					["mackerel",1],
@@ -231,7 +231,7 @@ life_market_resources = [
 			]
 	],
  
-	["mackerel", 2980, 1, 4980, 4, 3,
+	["mackerel", 1980, 1, 2980, 4, 3,
 			[
 					["ornate",1],
 					["salema",1],
@@ -241,7 +241,7 @@ life_market_resources = [
 			]
 	],
  
-	["tuna", 1320, 1, 3320, 1, 6,
+	["tuna", 320, 1, 1320, 1, 6,
 			[
 					["ornate",1],
 					["salema",1],
@@ -251,7 +251,7 @@ life_market_resources = [
 			]
 	],
  
-	["mullet", 3450, 1, 5450, 5, 2,
+	["mullet", 1450, 1, 2450, 5, 2,
 			[
 					["ornate",1],
 					["salema",1],
@@ -261,7 +261,7 @@ life_market_resources = [
 			]
 	],
  
-	["catshark", 3345, 1, 5345, 6, 1,
+	["catshark", 1345, 1, 2345, 6, 1,
 			[
 					["ornate",1],
 					["salema",1],

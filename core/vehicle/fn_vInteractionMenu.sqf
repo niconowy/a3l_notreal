@@ -78,32 +78,19 @@ if(playerSide == civilian) then {
 			//_Btn5 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
 			//_Btn2 buttonSetAction "[[cursorTarget],""life_fnc_requestNotADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
 			
-		};/*
-		_Btn5 ctrlSetText "ADAC Rufen";
-		_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC; closeDialog 0;";
-		
-		_Btn2 ctrlSetText "ADAC Widerrufen";
-		_Btn2 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestNotADAC; closeDialog 0;";*/
+		};
 	};
+	_Btn3 ctrlShow false;
+	_Btn6 ctrlShow false;
+		
 	_Btn8 ctrlSetText localize "STR_vInAct_Aufbrechen";
 	_Btn8 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_lockpick;";
-	_Btn8 ctrlEnable false;
+	_Btn8 ctrlEnable false;	
+	
 	{
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
 	if(_val > 0 ) then {if( _str == "lockpick" || _str == "lockpick" ) then {_Btn8 ctrlEnable true;};};
-	} foreach life_inv_items;	
-	
-	_Btn3 ctrlShow false;
-	_Btn6 ctrlShow false;
-	/*neu test
-	if(!life_adac_request) then
-	{
-		_Btn3 ctrlSetText "ADAC Rufen";
-		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC; closeDialog 0;";
-	} else {
-		_Btn3 ctrlSetText "ADAC Widerrufen";
-		_Btn3 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_deleteADAC; closeDialog 0;";
-	};*/
+	} foreach life_inv_items;
 };
 
 
@@ -153,7 +140,6 @@ if(playerSide == west) then {
 			_Btn6 ctrlSetText localize "STR_vInAct_Unflip";
 			_Btn6 buttonSetAction "closeDialog 0; life_vInact_curTarget setPos [(getPos life_vInact_curTarget select 0)+0.025, (getPos life_vInact_curTarget select 1), (getPos life_vInact_curTarget select 2)+0.5];";
 		};
-		_Btn8 ctrlShow false;
 	};
 	
 } else {
@@ -188,6 +174,7 @@ if(playerSide == west) then {
 	
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
+	_Btn8 ctrlShow false;
 };
 
 
