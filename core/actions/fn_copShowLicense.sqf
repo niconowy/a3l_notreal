@@ -102,6 +102,6 @@ if(playerSide == civilian) then
 	_lkw = if(license_civ_truck) then {"<img image='images\idcards\civ\id_lkw.paa' size='8'/>";} else {"<br/>"};
 	_fish = if(getPlayerUID player == "76561198136538321") then {"<img image='images\idcards\cop\spec\our_dieter_kinder_ficker_lel.jpg' size='3.5'/>";} else {"<br/>"};
 	
-	_message = format["<t size='1.25'>%1</t><br/><br/>%2<br/><br/>%3<br/><br/>%4<br/><br/>%5<br/><br/>",name player,_id,_pkw,_lkw,_presse,_fish];
+	_message = format["<t size='1.25'>%1</t><br/><br/>%2<br/>%3<br/>%4<br/>%5<br/>",name player,_id,_pkw,_lkw,_presse,_fish];
 	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
 };
