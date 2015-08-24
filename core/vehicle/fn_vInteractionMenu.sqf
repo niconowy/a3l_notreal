@@ -93,6 +93,8 @@ if(playerSide == civilian) then {
 	if(_val > 0 ) then {if( _str == "lockpick" || _str == "lockpick" ) then {_Btn8 ctrlEnable true;};};
 	} foreach life_inv_items;	
 	
+	_Btn3 ctrlShow false;
+	_Btn6 ctrlShow false;
 	/*neu test
 	if(!life_adac_request) then
 	{
