@@ -195,7 +195,7 @@ if(playerSide == west) then {
 	S A N I T Ä T E R
 */
 
-if(playerSide == east) then {
+if(playerSide == east && call life_adaclvl <= 9) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Impound";
 	_Btn2 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_impoundAction;";	
 	
@@ -214,5 +214,21 @@ if(playerSide == east) then {
 			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
 		};
 	};
+	else {
+	if(_curTarget isKindOf "Ship") then {
+		_Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
+		_Btn6 buttonSetAction "closeDialog 0; ] spawn life_fnc_pushObject;";
+		if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
+	} else {
+		if(typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kart_01_Red_F","C_Kart_01_Fuel_F","C_Kart_01_Vrana_F"]) then {
+			_Btn6 ctrlSetText localize "STR_vInAct_GetInKart";
+			_Btn6 buttonSetAction "closeDialog 0; player moveInDriver life_vInact_curTarget;";
+			if(count crew _curTarget == 0 && {canMove _curTarget} && {locked _curTarget == 0}) then {_Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
+		} else {
+			_Btn6 ctrlSetText localize "STR_vInAct_Unflip";
+			_Btn6 buttonSetAction "closeDialog 0; life_vInact_curTarget setPos [getPos life_vInact_curTarget select 0, getPos life_vInact_curTarget select 1, (getPos life_vInact_curTarget select 2)+0.5];";
+			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
+		};
+	};	
 	_Btn8 ctrlShow false; 
 };
