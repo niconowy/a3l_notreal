@@ -45,7 +45,7 @@ _Btn6 ctrlEnable false;
 	if(_val > 0 ) then {if( _str == "nothammer" || _str == "Nothammer" ) then {_Btn7 ctrlEnable true;};};
 } foreach life_inv_items;
 	
-if(playerside == east && call life_adaclvl <=9) then {
+if(playerside == east) then {
 	_Btn1 ctrlSetText localize "STR_vInAct_RepairAdac";
 	_Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairAdac; closeDialog 0;";
 
