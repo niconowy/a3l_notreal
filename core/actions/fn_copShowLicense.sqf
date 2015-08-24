@@ -27,24 +27,24 @@ if(playerSide == west) then
 	
 	switch (_coplevel) do
 	{
-		case 1: { _rank = "<img image='images\idcards\cop\1.jpg' size='3.5'/>";};
-		case 2: { _rank = "<img image='images\idcards\cop\2.jpg' size='3.5'/>";};
-		case 3: { _rank = "<img image='images\idcards\cop\3.jpg' size='3.5'/>";};
-		case 4: { _rank = "<img image='images\idcards\cop\4.jpg' size='3.5'/>";};
-		case 5: { _rank = "<img image='images\idcards\cop\5.jpg' size='3.5'/>";};
-		case 6: { _rank = "<img image='images\idcards\cop\6.jpg' size='3.5'/>";};
-		case 7: { _rank = "<img image='images\idcards\cop\7.jpg' size='3.5'/>";};
-		case 8: { _rank = "<img image='images\idcards\cop\8.jpg' size='3.5'/>";};
-		case 9: { _rank = "<img image='images\idcards\cop\9.jpg' size='3.5'/>";};
-		case 10: { _rank = "<img image='images\idcards\cop\10.jpg' size='3.5'/>";};
-		case 11: { _rank = "<img image='images\idcards\cop\11.jpg' size='3.5'/>";};
-		case 12: { _rank = "<img image='images\idcards\cop\12.jpg' size='3.5'/>";};
+		case 1: { _rank = "<img image='images\idcards\cop\1.jpg' size='8.5'/>";};
+		case 2: { _rank = "<img image='images\idcards\cop\2.jpg' size='8.5'/>";};
+		case 3: { _rank = "<img image='images\idcards\cop\3.jpg' size='8.5'/>";};
+		case 4: { _rank = "<img image='images\idcards\cop\4.jpg' size='8.5'/>";};
+		case 5: { _rank = "<img image='images\idcards\cop\5.jpg' size='8.5'/>";};
+		case 6: { _rank = "<img image='images\idcards\cop\6.jpg' size='8.5'/>";};
+		case 7: { _rank = "<img image='images\idcards\cop\7.jpg' size='8.5'/>";};
+		case 8: { _rank = "<img image='images\idcards\cop\8.jpg' size='8.5'/>";};
+		case 9: { _rank = "<img image='images\idcards\cop\9.jpg' size='8.5'/>";};
+		case 10: { _rank = "<img image='images\idcards\cop\10.jpg' size='8.5'/>";};
+		case 11: { _rank = "<img image='images\idcards\cop\11.jpg' size='8.5'/>";};
+		case 12: { _rank = "<img image='images\idcards\cop\12.jpg' size='8.5'/>";};
 	};
 
 // Don 2,3 = State Police/SWAT
 // Don 4,5 = FBI/Underkoffer
 //	if((_donlevel == 2) OR (_donlevel == 3)) then {_rankSpec = "<img image='images\idcards\cop\spec\swat.paa' size='8'/>";} else {""};
-	_rankSpec = if((_donlevel == 4) OR (_donlevel == 5)) then {"<img image='images\idcards\cop\spec\fbi.jpg' size='8'/>";} else {"<br/>"};
+	_rankSpec = if((_donlevel == 4) OR (_donlevel == 5)) then {"<img image='images\idcards\cop\spec\fbi.jpg' size='7.5'/>";} else {"<br/>"};
 
 	_message = format["<t size='1.25'>%1</t><br/><br/>%2<br/><br/>%3", name player, _rank, _rankSpec];
 	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
