@@ -21,10 +21,10 @@ switch (_item) do
 	case "rabbit": {1};
 	case "salema": {2};
 	case "ornate": {2};
-	case "mackerel": {4};
-	case "tuna": {6};
+	case "mackerel": {3};
+	case "tuna": {2};
 	case "mullet": {4};
-	case "catshark": {6};
+	case "catshark": {4};
 	case "turtle": {6};
 	case "fishing": {2};
 	case "turtlesoup": {2};

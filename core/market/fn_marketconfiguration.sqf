@@ -206,7 +206,76 @@ life_market_resources = [
 					["olive",1]
 			]
 	],
+	
+///////////////////////////
+// F I S C H   Z E U G E S  [fishmarket]
+///////////////////////////
+ 
+	["salema", 1550, 1, 3550, 2, 5,
+			[
+					["ornate",1],
+					["mackerel",1],
+					["tuna",1],
+					["mullet",1],
+					["catshark",1]
+			]
+	],
+ 
+	["ornate", 1890, 1, 3890, 3, 4,
+			[
+					["salema",1],
+					["mackerel",1],
+					["tuna",1],
+					["mullet",1],
+					["catshark",1]
+			]
+	],
+ 
+	["mackerel", 2980, 1, 4980, 4, 3,
+			[
+					["ornate",1],
+					["salema",1],
+					["tuna",1],
+					["mullet",1],
+					["catshark",1]
+			]
+	],
+ 
+	["tuna", 1320, 1, 3320, 1, 6,
+			[
+					["ornate",1],
+					["salema",1],
+					["mackerel",1],
+					["mullet",1],
+					["catshark",1]
+			]
+	],
+ 
+	["mullet", 3450, 1, 5450, 5, 2,
+			[
+					["ornate",1],
+					["salema",1],
+					["tuna",1],
+					["mackerel",1],
+					["catshark",1]
+			]
+	],
+ 
+	["catshark", 3345, 1, 5345, 6, 1,
+			[
+					["ornate",1],
+					["salema",1],
+					["tuna",1],
+					["mullet",1],
+					["mackerel",1]
+			]
+	],
 
+/////////////////////////
+/*
+        I L L E G A L E
+        S T O F F E
+*/
 /////////////////////////
 
 	["cocainep", 4675, 1, 7675, 5, 1,
