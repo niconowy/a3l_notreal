@@ -188,11 +188,13 @@ if(playerSide == west) then {
 	
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
+	_Btn8 ctrlShow false;
 };
 
 
-/*
-	A D A C
+/////////////////////////////
+	///	A D A C ///
+/////////////////////////////
 
 
 if(playerSide == east) then {
@@ -215,4 +217,4 @@ if(playerSide == east) then {
 		};
 	};
 	_Btn8 ctrlShow false; 
-};*/
+};

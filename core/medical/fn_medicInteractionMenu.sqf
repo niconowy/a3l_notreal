@@ -50,8 +50,17 @@ _Btn1 buttonSetAction "[life_pInact_curTarget] call life_fnc_rechnungAction;";
 _Btn2 ctrlSetText localize "STR_pInAct_TestIntox";
 _Btn2 buttonSetAction "[life_pInact_curTarget] spawn life_fnc_testIntox;";
 
-_Btn3 ctrlShow false;
-_Btn4 ctrlShow false;
+if((_curTarget getVariable["Escorting",false])) then {
+	_Btn3 ctrlSetText localize "STR_pInAct_StopEscort";
+	_Btn3 buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_stopEscorting; [life_pInact_curTarget] call life_fnc_copInteractionMenu;";
+} else {
+	_Btn3 ctrlSetText localize "STR_pInAct_Escort";
+	_Btn3 buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_escortAction;";
+};
+
+_Btn4 ctrlSetText localize "STR_pInAct_PutInCar";
+_Btn4 buttonSetAction "closeDialog 0; [life_pInact_curTarget] call life_fnc_putInCar;";
+
 _Btn5 ctrlShow false;
 _Btn6 ctrlShow false;
 _Btn7 ctrlShow false;
