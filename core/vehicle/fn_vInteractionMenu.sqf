@@ -86,7 +86,6 @@ if(playerSide == civilian) then {
 	_Btn8 ctrlSetText localize "STR_vInAct_Aufbrechen";
 	_Btn8 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_lockpick;";
 	_Btn8 ctrlEnable false;	
-	_Btn8 ctrlShow true;
 	
 	{
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
@@ -111,7 +110,7 @@ if(playerSide == west) then {
 	_Btn4 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_pulloutAction;";
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
 
-	
+	_Btn8 ctrlShow false;
 	if({side _x == east} count playableUnits > 4) then
 	{
 		if(!life_adac_request) then
@@ -175,7 +174,6 @@ if(playerSide == west) then {
 	
 	_Btn5 ctrlShow false;
 	_Btn6 ctrlShow false;
-	_Btn8 ctrlShow false;
 };
 
 
@@ -186,7 +184,8 @@ if(playerSide == west) then {
 
 if(playerSide == east) then {
 	_Btn2 ctrlSetText localize "STR_vInAct_Impound";
-	_Btn2 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_impoundAction;";	
+	_Btn2 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_impoundAction;";
+	_Btn8 ctrlShow false; 
 	
 	if(_curTarget isKindOf "Ship") then {
 		_Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
@@ -203,5 +202,4 @@ if(playerSide == east) then {
 			if(count crew _curTarget == 0 && {canMove _curTarget}) then { _Btn6 ctrlEnable false;} else {_Btn6 ctrlEnable true;};
 		};
 	};
-	_Btn8 ctrlShow false; 
 };
