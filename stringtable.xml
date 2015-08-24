@@ -861,6 +861,9 @@
  		<Key ID="STR_NOTF_CannotSearchPerson">
 			<Original>Diese Person kann nicht durchsucht werden.</Original>
 		</Key>
+ 		<Key ID="STR_NOTF_PersonTooFarAway">
+			<Original>Der Abstand zur ausgewählten Person ist zu groß.</Original>
+		</Key>
 		<Key ID="STR_NOTF_Repairing">
 			<Original>Wird repariert %1</Original>
  		</Key>
@@ -1682,7 +1685,7 @@
 			<Original>Wird aufgebrochen %1</Original>
 		</Key>
 		<Key ID="STR_ISTR_Lock_TooFar">
-			<Original>Du hast dich zu weit vom Ziel entfernt.</Original>
+			<Original>Du hast dich zu weit vom Fahrzeug entfernt.</Original>
 		</Key>
 		<Key ID="STR_ISTR_Lock_Success">
 			<Original>Du hast nun einen Schlüssel zu diesem Fahrzeug.</Original>

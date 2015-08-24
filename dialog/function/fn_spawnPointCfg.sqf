@@ -17,11 +17,11 @@ switch (_side) do
 	case west:
 	{
 		_return = [
-			["cop_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+			["cop_spawn_1","Lakeside City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 			["cop_spawn_2","Morrison Town","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
 			["cop_spawn_3","Los Diablos","\a3\ui_f\data\map\MapControl\fuelstation_ca.paa"],
-			["cop_spawn_4","Airfield","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
-			["cop_spawn_5","Gefängnis","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
+			["cop_spawn_4","Flughafen","\a3\ui_f\data\map\Markers\NATO\b_air.paa"],
+			["cop_spawn_5","Justizvollzugsanstalt","\a3\ui_f\data\map\GroupIcons\badge_rotate_0_gs.paa"]
 		];
 	};
 	
@@ -29,7 +29,7 @@ switch (_side) do
 	{
 		if(license_civ_rebel) then {
 			_return = [
-				["civ_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_1","Lakeside City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
@@ -39,7 +39,7 @@ switch (_side) do
 			];
 		} else {
 			_return = [
-				["civ_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["civ_spawn_1","Lakeside City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
@@ -59,7 +59,7 @@ switch (_side) do
 	
 	case independent: {
 		_return = [
-			["medic_spawn_2","Lakeside","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
+			["medic_spawn_2","Lakeside City","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_3","Los Diablos","\a3\ui_f\data\map\MapControl\hospital_ca.paa"],
 			["medic_spawn_1","Morrison Town","\a3\ui_f\data\map\MapControl\hospital_ca.paa"]
 		];
@@ -68,11 +68,11 @@ switch (_side) do
 	case east: {
 		if((call life_adaclevel) > 9) then {
 			_return = [
-				["justiz_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
+				["justiz_spawn_1","Lakeside Gericht","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		} else {
 			_return = [
-				["adac_spawn_1","Lakeside","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
+				["adac_spawn_1","Lakeside City","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["adac_spawn_2","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"]
 			];
 		};

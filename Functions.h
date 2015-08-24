@@ -386,8 +386,8 @@ class Life_Client_Core
 		class removeWeapons {};
 		class seizeObjects {};
 		class wantedGrab {};
-		class EinsatzLicht {};
-		class ULights {};
+//		class EinsatzLicht {};
+//		class ULights {};
 	};
 	
 	class Gangs
