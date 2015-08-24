@@ -86,6 +86,7 @@ if(playerSide == civilian) then {
 	_Btn8 ctrlSetText localize "STR_vInAct_Aufbrechen";
 	_Btn8 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_lockpick;";
 	_Btn8 ctrlEnable false;	
+	_Btn8 ctrlShow true;
 	
 	{
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
