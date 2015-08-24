@@ -101,7 +101,6 @@ switch (_mode) do
 			case "zoobeer": {"life_inv_zoobeer"}; // Duff Beer
 			case "Rax's Rum": {"life_inv_raxsrum"};
 			case "weddingring": {"life_inv_weddingring"};
-			case "blaulicht": {"life_inv_blaulicht"};
 			case "schwarzpulver": {"life_inv_schwarzpulver"};
 			case "kohle": {"life_inv_kohle"};
 			case "elektroteile": {"life_inv_elektroteile"};
@@ -203,7 +202,6 @@ switch (_mode) do
 			case "life_inv_cigarette": {"cigarette"};
 			case "life_inv_raxsrum": {"Rax's Rum"};
 			case "life_inv_weddingring": {"weddingring"};
-			case "life_inv_blaulicht": {"blaulicht"};
 			case "life_inv_schwarzpulver": {"schwarzpulver"};
 			case "life_inv_kohle": {"kohle"};
 			case "life_inv_elektroteile": {"elektroteile"};
