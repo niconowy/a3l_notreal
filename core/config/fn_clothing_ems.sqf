@@ -33,7 +33,8 @@ switch (_filter) do
 			//["emt_Uni1",nil, 1000],
 			["emt_Uni3",nil, 1000],
 			["U_O_Wetsuit",nil,1000],
-			["A3L_MotorUniM",nil,1000]
+			["A3L_MotorUniM",nil,1000],
+			["U_CivilianCoat_A","Arztkittel",1000]
 		
 		];
 	};
