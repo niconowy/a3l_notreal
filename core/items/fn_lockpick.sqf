@@ -63,9 +63,18 @@ while {true} do
 	_titleText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];
 	
 	if(_cP >= 1 OR !alive player) exitWith {};
-	if(life_istazed) exitWith {}; //Tazed
-	if(life_interrupted) exitWith {};
-	if((player getVariable["restrained",false])) exitWith {};
+	if(life_istazed) exitWith 
+	{
+	[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+	}; //Tazed
+	if(life_interrupted) exitWith 
+	{
+	[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+	};
+	if((player getVariable["restrained",false])) exitWith 
+	{
+	[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+	};
 	if(player distance _curTarget > _distance) exitWith {_badDistance = true;};
 };
 

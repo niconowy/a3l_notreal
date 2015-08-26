@@ -74,5 +74,6 @@ _Btn6 ctrlEnable false;
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
 	if(_val > 0 ) then {if( _str == "nothammer" || _str == "Nothammer" ) then {_Btn7 ctrlEnable true;};};
 } foreach life_inv_items;
+
 _Btn7 ctrlShow false;	
 _Btn8 ctrlShow false;

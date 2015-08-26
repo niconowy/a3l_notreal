@@ -50,6 +50,10 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 			{
 			[[player,""],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 			};
+			if(life_knockout) exitWith
+			{
+			[[player,""],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+			};
 		};
 		
 		life_action_inUse = false;
