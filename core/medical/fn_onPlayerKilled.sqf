@@ -11,8 +11,6 @@ disableSerialization;
 _unit = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 _killer = [_this,1,ObjNull,[ObjNull]] call BIS_fnc_param;
 
-diag_log format ["%1 wurde von %3 (UID: %2) getötet.",_unit getVariable["realname", name _unit],getPlayerUID _killer,_killer getVariable["realname",name _killer]];
-
 //Set some vars
 _unit setVariable["Revive",FALSE,TRUE]; //Set the corpse to a revivable state.
 _unit setVariable["name",profileName,TRUE]; //Set my name so they can say my name.
@@ -32,6 +30,8 @@ life_deathCamera camSetRelPos [0,3.5,4.5];
 life_deathCamera camSetFOV .5;
 life_deathCamera camSetFocus [50,0];
 life_deathCamera camCommit 0;
+
+diag_log format ["-- DEATH NOTIFICATION :: %1 wurde von %3 (UID: %2) killed.",_unit getVariable["realname", name _unit],getPlayerUID _killer,_killer getVariable["realname",name _killer]];
 
 (findDisplay 7300) displaySetEventHandler ["KeyDown","if((_this select 1) == 1) then {true}"]; //Block the ESC menu
 

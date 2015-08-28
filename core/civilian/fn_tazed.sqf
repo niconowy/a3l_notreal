@@ -14,6 +14,7 @@ if(_shooter isKindOf "Man" && alive player) then
 {
 	if(!life_istazed) then
 	{
+		diag_log format ["-- TAZER NOTIFICATION :: %1 wurde von %2 tazed.",name _unit, name _shooter];
 		life_istazed = true;
 		_curWep = currentWeapon player;
 		_curMags = magazines player;
