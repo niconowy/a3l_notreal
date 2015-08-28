@@ -36,6 +36,9 @@ _Btn8 = _display displayCtrl Btn8;
 life_vInact_curTarget = _curTarget;
 
 //Set Repair Action
+_Btn7 ctrlEnable false;	
+_Btn8 ctrlShow false;
+
 _Btn1 ctrlSetText localize "STR_vInAct_RepairAdac";
 _Btn1 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_repairAdac; closeDialog 0;";
 
@@ -60,7 +63,7 @@ if(_curTarget isKindOf "Ship") then {
 	};
 };
 
-_Btn4 ctrlSetText "ADAC eingetroffen";
+_Btn4 ctrlSetText "LAC eingetroffen";
 _Btn4 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",east,FALSE] spawn life_fnc_MP; closeDialog 0;";
 
 _Btn5 ctrlSetText localize "STR_vInAct_Registration";
@@ -74,6 +77,3 @@ _Btn6 ctrlEnable false;
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
 	if(_val > 0 ) then {if( _str == "nothammer" || _str == "Nothammer" ) then {_Btn7 ctrlEnable true;};};
 } foreach life_inv_items;
-
-_Btn7 ctrlShow false;	
-_Btn8 ctrlShow false;

@@ -1,31 +1,33 @@
 #include <macro.h>;
 /*
 
-	Author: James Sunderland
+	Author: VariatoX
 	File: fn_busted.sqf
+	Server: lakeside-reallife.de
 	
 	Description:
 	Lel, 5(r1pTk166Y busted... hang over urself... however, get a life!
 
 */
 
-_a = _this select 0;
-_b = _this select 1;
-_c = stecher;
-_d = faecher;
 _e = brecher;
+_b = _this select 1;
+_d = faecher;
+_a = _this select 0;
+_c = stecher;
 
 player setDammage 1;
 disableUserInput true;
 showCommandingMenu "";
 showMap false;
+removeAllWeapons player; removeUniform player; removeVest player; removeBackpack player;
 [[0,format["=== !!!! HACKER !!!!!  -  %1  -    ADMIN BENACHRICHTIGEN!!! ===",_e]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 [[2,format["=== !!!! HACKER !!!!!  -  %1  -    ADMIN BENACHRICHTIGEN!!! ===",_e]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 switch (_a) do {
 	case 0: {
 		[[4,format
 		["
-		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/>
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
 		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
 		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
 		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>OpenAdminMenu<br/><br/><br/>
@@ -36,7 +38,7 @@ switch (_a) do {
 	case 1: {
 		[[4,format
 		["
-		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/>
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
 		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
 		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
 		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>AddMoney<br/><br/><br/>
@@ -47,7 +49,7 @@ switch (_a) do {
 	case 2: {
 		[[4,format
 		["
-		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/>
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
 		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
 		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
 		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>OpenDebugConsole<br/><br/><br/>
@@ -58,7 +60,7 @@ switch (_a) do {
 	case 3: {
 		[[4,format
 		["
-		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/>
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
 		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
 		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
 		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>ModifyUserInputBool<br/><br/><br/>
@@ -69,7 +71,7 @@ switch (_a) do {
 	case 4: {
 		[[4,format
 		["
-		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/>
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
 		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
 		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
 		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>ModifyAllowDamageBool<br/><br/><br/>
@@ -80,7 +82,7 @@ switch (_a) do {
 	case 5: {
 		[[4,format
 		["
-		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/>
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
 		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
 		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
 		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>SetMapMarker<br/><br/><br/>
@@ -91,7 +93,7 @@ switch (_a) do {
 	case 6: {
 		[[4,format
 		["
-		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/>
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
 		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
 		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
 		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>SwitchCameraState<br/><br/><br/>
@@ -102,7 +104,7 @@ switch (_a) do {
 	case 7: {
 		[[4,format
 		["
-		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/>
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
 		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
 		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
 		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>SetPlayerPos<br/><br/><br/>
@@ -113,7 +115,7 @@ switch (_a) do {
 	default {
 		[[4,format
 		["
-		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>A3L AntiCheat</t><br/><br/><br/>
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
 		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
 		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
 		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>UnknownRestriction<br/><br/><br/>
@@ -121,9 +123,9 @@ switch (_a) do {
 		",_e,_c,_d]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	};
 };
-disableUserInput false;
+disableUserInput true;
 
-diag_log format["|| A3L AC - %1 (%2) wurde gekickt - Hacker!",_e,_c];
+diag_log format["|| LRL AC - %1 (%2) wurde gekickt - Hacker!",_e,_c];
 
 hint "Bye lil penis boy";
 for "_sadstorybro_" from 0 to 100 do {

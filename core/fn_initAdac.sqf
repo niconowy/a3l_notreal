@@ -46,10 +46,10 @@ switch(__GETC__(life_adaclevel)) do
 	case 5: {life_paycheck = life_paycheck + 2000;}; 	//KFZ Ausbilder
 	case 6: {life_paycheck = life_paycheck + 2000;}; 	//Personalleiter
 	case 7: {life_paycheck = life_paycheck + 2750;}; 	//Stellv. IPD Leitung
-	case 8: {life_paycheck = life_paycheck + 3250;}; 	//IPD Leitung
+	case 8: {life_paycheck = life_paycheck + 2850;}; 	//IPD Leitung
 	case 9: {life_paycheck = life_paycheck - 1500;}; 	//NICHT BELEGTER SLOT - NICHT VERWENDEN
-	case 10: {life_paycheck = life_paycheck + 3200;};	//Staatsanwalt
-	case 11: {life_paycheck = life_paycheck + 3550;}; 	//Richter
+	case 10: {life_paycheck = life_paycheck + 2850;};	//Staatsanwalt
+	case 11: {life_paycheck = life_paycheck + 2900;}; 	//Richter
 };
 
 

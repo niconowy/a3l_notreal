@@ -451,6 +451,7 @@ buy_array =
 
 	["weddingring",25000],
 	["presseformular",10000],
+	["taxischein",10000],
 	["nothammer",5700]
 ];
 __CONST__(buy_array,buy_array);

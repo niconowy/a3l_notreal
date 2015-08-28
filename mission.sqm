@@ -5413,7 +5413,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			skill=0.60000002;
 			text="h1_3_1";
-			init="this enableSimulation false;  this allowDamage false; this addaction [""Hund kaufen"",{[(_this select 1)] execVM ""dogFunctions.sqf""}];";
+			init="this enableSimulation false;  this allowDamage false;";
 		};
 		class Item173
 		{
