@@ -18,6 +18,7 @@ _list = _display displayctrl 2401;
 	_list lbAdd format["%1", _entry select 1];
 	_list lbSetData [(lbSize _list)-1,str(_entry)];
 } forEach _info;
+lbSort [_list,"ASC"];
 
 ctrlSetText[2404,"Verbunden!"];
 

@@ -27,12 +27,12 @@ if (_vehicle in ["C_Heli_Light_01_civil_F","B_Heli_Light_01_F","O_Heli_Light_02_
 	_retrievePrice = 15000;
 };
 
-_insurancePrice = _retrievePrice * 2.5;
+_insurancePrice = _retrievePrice * 2;
 
 (getControl(2800,2803)) ctrlSetStructuredText parseText format[
 	(localize "STR_Shop_Veh_UI_RetrievalP")+ " <t color='#8cff9b'>$%1</t><br/>
 	" +(localize "STR_Shop_Veh_UI_SellP")+ " <t color='#8cff9b'>$%2</t><br/>
-	" +(localize "STR_Shop_Veh_UI_InsuranceP")+ " <t color='#8cff9b'>%9€</t><br/>
+	" +(localize "STR_Shop_Veh_UI_InsuranceP")+ " <t color='#8cff9b'>$%9</t><br/>
 	" +(localize "STR_Shop_Veh_UI_Color")+ " %8<br/>
 	" +(localize "STR_Shop_Veh_UI_MaxSpeed")+ " %3 km/h<br/>
 	" +(localize "STR_Shop_Veh_UI_HPower")+ " %4<br/>
