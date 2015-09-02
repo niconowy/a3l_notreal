@@ -51,12 +51,9 @@ diag_log "::Life Client:: User actions completed";
 diag_log "::Life Client:: Waiting for server functions to transfer..";
 waitUntil {(!isNil {TON_fnc_clientGangLeader})};
 
-
-
 A3L_Fnc_Request = player;
 PublicvariableServer "A3L_Fnc_Request";
 waitUntil {(!isNil {A3L_fnc_dreDeta8})};
-
 
 _TFenabled = [] call TFAR_fnc_isTeamSpeakPluginEnabled;
 
@@ -170,7 +167,7 @@ if(_lrl_mods_version != lrl_version) then {
 diag_log "::Life Client:: Received server functions.";
 
 diag_log "::Life Client:: Executed custom client functions";
-0 cutText ["Warte auf den Server, bis dieser bereit ist...","BLACK FADED"];
+0 cutText ["Warte auf den Server, bis dieser bereit ist... -- Auf keinen Fall Respawnen! Ansonsten setzt du deinen Spielstand komplett zurück!","BLACK FADED"];
 0 cutFadeOut 99999999;
 diag_log "::Life Client:: Waiting for the server to be ready..";
 waitUntil{!isNil "life_server_isReady"};
@@ -184,7 +181,7 @@ if(!isNil "life_server_extDB_notLoaded") exitWith {
 [] call SOCK_fnc_dataQuery;
 
 waitUntil {life_session_completed};
-0 cutText["Vollende Client-Setup Prozedur...","BLACK FADED"];
+0 cutText["Vollende Client-Setup Prozedur... -- Auf keinen Fall Respawnen! Ansonsten setzt du deinen Spielstand komplett zurück!","BLACK FADED"];
 0 cutFadeOut 9999999;
 
 //diag_log "::Life Client:: Group Base Execution";
