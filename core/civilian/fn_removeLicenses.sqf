@@ -22,6 +22,7 @@ switch (_state) do
 	{
 		license_civ_gun = false;
 		license_civ_presse = false;
+		license_civ_taxischein = false;
 		hint localize "STR_Jail_LicenseNOTF";
 	};
 	

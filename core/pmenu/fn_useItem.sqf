@@ -314,7 +314,7 @@ switch (true) do
 	{
 		if(playerSide != civilian) exitWith {hint "Nur Zivilisten können den Taxi-Schein ausfüllen!"};
 		if([false,_item,1] call life_fnc_handleInv) then {
-			license_civ_presse = true;
+			license_civ_taxischein = true;
 			hint parseText format["Du bist nun offiziell als Taxi-Fahrer eingetragen.<br/><br/>Solltest du ins Gefängnis einwandern oder Personen überfallen, wird dir dieser Ausweis entzogen!"];
 		};
 	};
