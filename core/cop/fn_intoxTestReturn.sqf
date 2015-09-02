@@ -11,11 +11,11 @@ if(isnull _civ) exitWith {};
 
 if(_intox > 0.08) then 
 {
-	hint format["%1's Intox Level: %2\nNicht Verkehrssicher!",name _civ,_intox];
+	hint parseText format["<t size='1.75' color='#ff0000'>Drogen- / Alkoholtest</t><br/><br/><t size='1.3'>Getestet:</t><br/> %1<br/><br/><t size='1.3'>Intox-Level:</t><br/>%2<br/><t color='#ff0000'>Nicht Verkehrssicher!</t>",name _civ,_intox];
 } 
 else 
 {
-	hint format["%1's Intox Level: %2",name _civ,_intox];
+	hint parseText format["<t size='1.75' color='#ff0000'>Drogen- / Alkoholtest</t><br/><br/><t size='1.3'>Getestet:</t><br/> %1<br/><br/><t size='1.3'>Intox-Level:</t><br/>%2<br/>Verkehrssicher!",name _civ,_intox];
 };
 
 if (_intox > 0.20) then 

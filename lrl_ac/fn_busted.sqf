@@ -112,6 +112,17 @@ switch (_a) do {
 		",_e,_c,_d]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 	};
 	
+	case 8: {
+		[[4,format
+		["
+		<br/><br/><t size='2.1' color='#ff0000' align='center' font='PuristaBold'>LRL AntiCheat</t><br/><br/><br/>
+		<t size='1.6' font='PuristaBold'>Spieler:</t><br/><t size='1.5'> %1</t><br/><br/>
+		<t size='1.6' font='PuristaBold'>User-ID:</t><br/><t size='1.4'> %2<br/><br/>
+		<t size='1.6' font='PuristaBold'>Flagged:</t><br/><t size='1.4'>PermissionLevelPhone<br/><br/><br/>
+		<t size='1.2'>KONTAKTIERE UMGEHEND EINEN ADMIN</t>
+		",_e,_c,_d]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+	};
+	
 	default {
 		[[4,format
 		["
@@ -128,6 +139,7 @@ disableUserInput true;
 diag_log format["|| LRL AC - %1 (%2) wurde gekickt - Hacker!",_e,_c];
 
 hint "Bye lil penis boy";
+//Client-Crash. gg
 for "_sadstorybro_" from 0 to 100 do {
 	(findDisplay _sadstorybro_)closeDisplay 0;
 };

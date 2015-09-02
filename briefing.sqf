@@ -445,7 +445,7 @@ Unseren ChangeLog und weitere Informationen zu UpDates findest du in unserem For
 <font color='#D60000'>SHIFT + G</font><br/>Person niederschlagen (MIT WAFFE)<br/><br/>
 <font color='#D60000'>WINDOWSTASTE</font><br/>Interaktionsmenü aufrufen<br/>-- Sollte WINDOWSTASTE bei dir nicht funktionieren, öffne dein ESC-Menü > Konfigurieren > Steuerung > Indiv. Steuerung > Aktionstaste 10 anders belegen.<br/><br/>
 <font color='#D60000'>WINDOWSTASTE + T</font><br/>Sammeln<br/><br/>
-<font color='#D60000'>Q</font><br/>Abbauen (Spitzhacke)<br/><br/>
+<font color='#D60000'>TABULATOR TASTE</font><br/>Farm-Menü Aufrufen<br/><br/>
 <font color='#D60000'>SHIFT + C</font><br/>Ergeben (Hände nach oben nehmen)<br/>
 <font color='#D60000'>ENDE</font><br/>Ohrstöpsel reinstecken und rausziehen<br/>
 				"

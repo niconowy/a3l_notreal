@@ -35,9 +35,9 @@
 	
 	while{true} do
 	{
-		sleep 600;
+		sleep 580;
 		[] call _fnc_water;
-		sleep 250;
+		sleep 210;
 		[] call _fnc_food;
 	};
 };
@@ -103,7 +103,7 @@ private["_obj"];
 	{
 		waitUntil {life_intox > 0.08};
 		player setVariable["intoxicated",true,true];
-		[[0,format["%1 ist überdosiert.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 25],false] spawn life_fnc_MP;
+		[[0,format["%1 ist überdosiert.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 15],false] spawn life_fnc_MP;
 		while{life_intox > 0.08} do 
 		{
 			"dynamicBlur" ppEffectEnable true;
@@ -125,10 +125,10 @@ private["_obj"];
 		_obj setPosATL (getPosATL player);
 		[[player,"AinjPfalMstpSnonWnonDf_carried_fallwc"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		player attachTo [_obj,[0,0,0]];
-		[[0,format["%1 has passed out.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 50],false] spawn life_fnc_MP;
+		[[0,format["%1 fiel in Ohnmacht.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 15],false] spawn life_fnc_MP;
 		while{life_intox > 0.30} do 
 		{
-			hint "Dein Suchtfakto ist über 0.30 und du bist überdosiert. Wenn du über 0.40 kommst, stirbst du - eventuell.";
+			hint "Dein Suchtfaktor ist über 0.30 und du bist überdosiert. Wenn du über 0.40 kommst, stirbst du - eventuell.";
 			sleep 60;
 		};
 		detach player;
@@ -162,7 +162,7 @@ private["_obj"];
 	private["_walkDis","_myLastPos","_MaxWalk","_runHunger","_runDehydrate"];
 	_walkDis = 0;
 	_myLastPos = (getPos player select 0) + (getPos player select 1);
-	_MaxWalk = 1200;
+	_MaxWalk = 700;
 	while{true} do 
 	{
 		sleep 0.5;

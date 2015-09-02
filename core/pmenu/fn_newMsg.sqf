@@ -65,7 +65,7 @@ switch(_type) do
 	//emsrequest
 	case 4:
 	{
-		if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es später nochmal."];};
+		if(({side _x == independent} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein Arzt im Dienst. Bitte probiere es später erneut!"];};
 		ctrlShow[888899,false];
 		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";ctrlShow[888899,true];};
 		[[ObjNull,_msg,player,3],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
@@ -76,7 +76,7 @@ switch(_type) do
 	//adminToPerson
 	case 5:
 	{
-		if((call life_adminlevel) < 1) exitWith {[] call AC_fnc_checkThatShit;};
+		if((call life_adminlevel) < 1) exitWith {[8,player] call LRLAC_fnc_busted;};
 		if(isNULL life_smartphoneTarget) exitWith {hint format["Keine Person ausgwählt!"];};
 		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
 		[[life_smartphoneTarget,_msg,player,4],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
@@ -105,7 +105,7 @@ switch(_type) do
 	//adminMsgAll
 	case 7:
 	{
-		if((call life_adminlevel) < 1) exitWith {[] call AC_fnc_checkThatShit;};
+		if((call life_adminlevel) < 1) exitWith {[8,player] call LRLAC_fnc_busted;};
 		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
 		[[ObjNull,_msg,player,5],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["Admin-Rundruf An Alle: %1",_msg];
@@ -118,7 +118,7 @@ switch(_type) do
 		ctrlShow[888899,false];
 		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";ctrlShow[888899,true];};
 		[[ObjNull,_msg,player,6],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
-		hint format["Der IPD wurde benachrichtigt mit: %1",_msg];
+		hint format["Der IPD wurde wie folgt benachrichtigt: %1",_msg];
 		ctrlShow[888899,true];
 		closeDialog 887890;
 	};
