@@ -60,6 +60,8 @@ _Btn7 ctrlEnable false;
 */
 
 if(playerSide == civilian) then {
+	_Btn3 ctrlShow false;
+	_Btn6 ctrlShow false;
 
 	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
 	_Btn4 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_pulloutAction;";
@@ -80,8 +82,6 @@ if(playerSide == civilian) then {
 			
 		};
 	};
-	_Btn3 ctrlShow false;
-	_Btn6 ctrlShow false;
 		
 	_Btn8 ctrlSetText localize "STR_vInAct_Aufbrechen";
 	_Btn8 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_lockpick;";
@@ -100,6 +100,8 @@ if(playerSide == civilian) then {
 */
 
 if(playerSide == west) then {
+	_Btn8 ctrlShow false;
+
 	_Btn2 ctrlSetText localize "STR_vInAct_Registration";
 	_Btn2 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_searchVehAction;";
 	
@@ -110,7 +112,6 @@ if(playerSide == west) then {
 	_Btn4 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_pulloutAction;";
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
 
-	_Btn8 ctrlShow false;
 	if({side _x == east} count playableUnits > 4) then
 	{
 		if(!life_adac_request) then
@@ -143,7 +144,9 @@ if(playerSide == west) then {
 	};
 	
 } else {
-	
+	_Btn5 ctrlShow false;
+	_Btn6 ctrlShow false;
+
 	if(_curTarget isKindOf "Ship") then {
 		_Btn2 ctrlSetText localize "STR_vInAct_PushBoat";
 		_Btn2 buttonSetAction "closeDialog 0; [] spawn life_fnc_pushObject;";
@@ -170,10 +173,8 @@ if(playerSide == west) then {
 	
 	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
 	_Btn4 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_pulloutAction;";
+
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
-	
-	_Btn5 ctrlShow false;
-	_Btn6 ctrlShow false;
 };
 
 

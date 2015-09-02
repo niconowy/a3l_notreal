@@ -29,6 +29,9 @@ player setVariable["isblinded",false,true];
 life_earplugs = false;
 1 fadeSound 1;
 
+//Intoxication Level auf 0
+life_intox = 0.00;
+
 //CSE bedingter Fatigue + Damage Bug
 player setDammage 0;
 player setFatigue 0;

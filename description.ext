@@ -69,7 +69,7 @@ class CfgSounds
 	class 1ntr0
 	{
 		name = "1ntr0";
-		sound[] = {"\sounds\intro.ogg", 0.8, 1};
+		sound[] = {"\sounds\intro.ogg", 0.45, 1};
 		titles[] = {};
 	};
 	

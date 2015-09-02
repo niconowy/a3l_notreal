@@ -1,6 +1,6 @@
 /*
 	File: fn_scheibeEinsclagen.sqf
-	Author: Bryan "Tonic" Boardwine
+	Author: Bryan "Tonic" Boardwine (lockpick.sqf)
 			edited by VariatoX
 	Server: lakeside-reallife.de
 
@@ -19,14 +19,13 @@ _dis = ((boundingBox _target select 1) select 0) + 2;
 
 if(player distance _target > _dis) exitWith {}; //Too far
 
-_isVeh = if((_target isKindOf "LandVehicle") OR (_target isKindOf "Motorcycle") OR (_target isKindOf "A3L_Tahoe_Base")) then {true} else {false};
+_isVeh = if((_target isKindof "Car") OR (_target isKindOf "landVehicle") OR (_target isKindOf "Motorcycle") OR (_target isKindOf "A3L_Tahoe_Base")) then {true} else {false};
 if(!_isVeh) exitWith {};
 
 if(_isVeh && _target in life_vehicles) exitWith {hint localize "STR_ISTR_Lock_AlreadyHave"};
 
 if(!alive player OR life_istazed OR life_knockout) exitWith {};
-if(!isNil "_badDis") exitWith {titleText "Das Fahrzeug ist zu weit weg.","PLAIN";};
-if(!{(locked _target) == 2}) exitWith {hint "Das Fahrzeug ist bereits offen."};
+if(!isNil "_badDis") exitWith {titleText ["Das Fahrzeug ist zu weit weg.","PLAIN"]};
 if(!([false,"nothammer",1] call life_fnc_handleInv)) exitWith {};
 
 

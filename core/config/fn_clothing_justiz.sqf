@@ -33,7 +33,17 @@ switch (_filter) do
 	case 1:
 	{
 		[
-
+			["H_Hat_Taqiyah_A",nil,575],
+			["H_Hat_Taqiyah_B",nil,575],
+			["H_Hat_Taqiyah_C",nil,575],
+			["H_Hat_Taqiyah_D",nil,575],
+			["H_Hat_Taqiyah_E",nil,575],
+			
+			["H_Hat_Turban_A",nil,475],
+			["H_Hat_Turban_B",nil,475],
+			["H_Hat_Turban_C",nil,475],
+			["H_Hat_Turban_D",nil,475],
+			["H_Hat_Turban_E",nil,475]
 		];
 	};
 	
@@ -41,6 +51,7 @@ switch (_filter) do
 	case 2:
 	{
 		[
+			["G_Aviator",nil,100],
 			["SFG_Tac_BeardD","Bart (Dunkel)",275],
 			["SFG_Tac_BeardB","Bart (Blond)",275],
 			["SFG_Tac_BeardG","Bart (Ginger)",275],
