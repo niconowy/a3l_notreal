@@ -11,13 +11,6 @@ tf_no_auto_long_range_radio = true;
 
 private["_spawnPos"];
 
-if((str(player) in ["civ_71"])) then {
-	if((__GETC__(life_adminlevel) == 0)) then {
-		["NurAdmin",false,true] call BIS_fnc_endMission;
-		sleep 30;
-	};
-};
-
 switch (call(life_donator)) do {
 	case 0: {life_paycheck = life_paycheck};
 	case 1: {life_paycheck = life_paycheck + 1500};
