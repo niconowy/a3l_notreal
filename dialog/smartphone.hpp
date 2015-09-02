@@ -391,7 +391,7 @@ class Life_smartphone_notruf {
 			onButtonClick = "[8,-1,(ctrlText 888894)] call life_fnc_newMsg;";
 			
 			x = 0.11;
-			y = 0.28;
+			y = 0.40;
 			w = 0.2;
 			h = (1 / 25);
 		};
@@ -414,7 +414,7 @@ class Life_smartphone_notruf {
 			text = "$STR_Global_Close";
 			onButtonClick = "closeDialog 0;";
 			x = -0.06 + (6.25 / 40) + (1 / 250 / (safezoneW / safezoneH));
-			y = 0.30 + (1 / 50);
+			y = 0.36 + (1 / 50);
 			w = (6.25 / 40);
 			h = (1 / 25);
 		};
