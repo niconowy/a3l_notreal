@@ -370,8 +370,12 @@ switch(_shop) do
 						["A3L_M4mag",nil,1175],
 						
 						["A3L_MP5",nil,25335],
-						["A3L_MP5mag",nil,500],	
-						
+						["A3L_MP5mag",nil,500],
+
+						["R3F_HK416M",nil,27345],
+						["R3F_30Rnd_556x45_HK416",nil,545],
+						["R3F_SILENCIEUX_HK416",nil,4500],
+
 						["A3L_Glock17",nil,12000],
 						["A3L_Glock17mag",nil,730],
 						["RH_kimber",nil,15670],
@@ -384,6 +388,8 @@ switch(_shop) do
 						["RH_19Rnd_9x19_g18",nil,825],
 						
 						["Radar_Gun","Radarpistole",1000],
+						
+						["SUPER_flash",nil,7500],
 						
 						["Taser_26","Taser",5500],
 						["26_cartridge",nil,255],
@@ -437,11 +443,12 @@ switch(_shop) do
 						["A3L_M4mag",nil,1175],
 						
 						["A3L_MP5",nil,25335],
-						["A3L_MP5mag",nil,500],	
+						["A3L_MP5mag",nil,500],
 						
 						["R3F_HK416M",nil,27345],
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
+						
 						["A3L_Glock17",nil,12000],
 						["A3L_Glock17mag",nil,730],
 						["RH_kimber",nil,15670],
