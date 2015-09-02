@@ -2036,7 +2036,7 @@
 			<Original>Es gab einen Fehler beim Versuch, deinen Client einzurichten.</Original>
 		</Key>
 		<Key ID="STR_Session_Received">
-			<Original>Empfangene Daten vom Server... Überprüfe...</Original>
+			<Original>Empfangene Daten vom Server... Überprüfe... -- Auf keinen Fall Respawnen! Ansonsten setzt du deinen Spielstand komplett zurück!</Original>
 		</Key>
 		<Key ID="STR_Session_SyncdAlready">
 			<Original>Du hast bereits die Sync-Option verwendet, diese Funktion kann nur einmal alle 5 Minuten verwendet werden.</Original>
