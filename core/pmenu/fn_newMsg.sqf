@@ -111,14 +111,14 @@ switch(_type) do
 		hint format["Admin-Rundruf An Alle: %1",_msg];
 		closeDialog 887890;
 	};
-	//ADAC
+	//LAC
 	case 8:
 	{
-		if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein ADAC im Dienst. Bitte probiere es später nochmal."];};
+		if(({side _x == east} count playableUnits) == 0) exitWith {hint format["Zurzeit ist kein LAC im Dienst. Bitte probiere es später nochmal."];};
 		ctrlShow[888899,false];
 		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";ctrlShow[888899,true];};
 		[[ObjNull,_msg,player,6],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
-		hint format["Der IPD wurde wie folgt benachrichtigt: %1",_msg];
+		hint format["Der LAC wurde wie folgt benachrichtigt: %1",_msg];
 		ctrlShow[888899,true];
 		closeDialog 887890;
 	};

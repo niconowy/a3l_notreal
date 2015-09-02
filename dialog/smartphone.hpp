@@ -383,6 +383,19 @@ class Life_smartphone_notruf {
 			h = (1 / 25);
 		};
 		
+		class LACReq : life_RscButtonMenu
+		{
+			idc = 888893;
+			text = "LAC RUFEN";
+			colorBackground[] = {0.18,0.604,0.996,1};
+			onButtonClick = "[8,-1,(ctrlText 888894)] call life_fnc_newMsg;";
+			
+			x = 0.11;
+			y = 0.40;
+			w = 0.2;
+			h = (1 / 25);
+		};
+		
 		class copRundfunk : life_RscButtonMenu
 		{
 			idc = 888828;
