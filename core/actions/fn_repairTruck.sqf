@@ -46,20 +46,34 @@ if((_veh isKindOf "Car") OR (_veh isKindOf "Ship") OR (_veh isKindOf "Air") OR (
 			if(_cP >= 1) exitWith {};
 			if(!alive player) exitWith {};
 			if(player != vehicle player) exitWith {};
-			if(life_interrupted) exitWith 
-			{
-			[[player,""],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+			if(life_istazed OR life_knockout) exitWith {
+				[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 			};
-			if(life_knockout) exitWith
-			{
-			[[player,""],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
+
+			if(player != vehicle player) exitWith {
+				titleText [localize "STR_NOTF_RepairingInVehicle","PLAIN"];
+				[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+			};
+
+			if(life_interrupted) exitWith  {
+				[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+			};
+
+			if((player getVariable["restrained",false])) exitWith  {
+				[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 			};
 		};
-		
+
 		life_action_inUse = false;
+
 		5 cutText ["","PLAIN"];
+		
+		//Error Checks
 		if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
 		if(player != vehicle player) exitWith {titleText[localize "STR_NOTF_RepairingInVehicle","PLAIN"];};
+		if(!alive player OR life_istazed OR life_knockout) exitWith {life_action_inUse = false;};
+		if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
+
 		player removeItem "ToolKit";
 		[[player,""],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 		_veh setDamage 0;

@@ -24,8 +24,9 @@ if(!_isVeh) exitWith {};
 
 if(_isVeh && _target in life_vehicles) exitWith {hint localize "STR_ISTR_Lock_AlreadyHave"};
 
-if(!alive player OR life_istazed OR life_knockout) exitWith {};
-if(!isNil "_badDis") exitWith {titleText ["Das Fahrzeug ist zu weit weg.","PLAIN"]};
+if(!alive player OR life_istazed OR life_knockout) exitWith {life_action_inUse = false;};
+if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
+if(player != vehicle player) exitWith {titleText [localize "STR_NOTF_ActionInVehicle","PLAIN"]; life_action_inUse = false;};
 if(!([false,"nothammer",1] call life_fnc_handleInv)) exitWith {};
 
 

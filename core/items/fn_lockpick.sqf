@@ -63,29 +63,38 @@ while {true} do
 	_titleText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_title];
 	
 	if(_cP >= 1 OR !alive player) exitWith {};
-	if(life_istazed) exitWith 
-	{
-	[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+	if(life_istazed OR life_knockout) exitWith {
+		[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 	}; //Tazed
-	if(life_interrupted) exitWith 
-	{
-	[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+	
+	if(player != vehicle player) exitWith {
+		titleText [localize "STR_NOTF_ActionInVehicle","PLAIN"];
+		[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 	};
-	if((player getVariable["restrained",false])) exitWith 
-	{
-	[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+	
+	if(life_interrupted) exitWith  {
+		[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 	};
+	
+	if((player getVariable["restrained",false])) exitWith  {
+		[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+	};
+	
 	if(player distance _curTarget > _distance) exitWith {_badDistance = true;};
 };
 
 //Kill the UI display and check for various states
 5 cutText ["","PLAIN"];
 player playActionNow "stop";
+[[player,""],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 player setVariable ["lockpicking",false,true];
+
+//Error checks
 if(!alive player OR life_istazed OR life_knockout) exitWith {life_action_inUse = false;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
 if(!isNil "_badDistance") exitWith {titleText[localize "STR_ISTR_Lock_TooFar","PLAIN"]; life_action_inUse = false;};
 if(life_interrupted) exitWith {life_interrupted = false; titleText[localize "STR_NOTF_ActionCancel","PLAIN"]; life_action_inUse = false;};
+if(player != vehicle player) exitWith {titleText [localize "STR_NOTF_ActionInVehicle","PLAIN"]; life_action_inUse = false;};
 if(!([false,"lockpick",1] call life_fnc_handleInv)) exitWith {life_action_inUse = false;};
 
 life_action_inUse = false;

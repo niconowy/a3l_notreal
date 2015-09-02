@@ -22,7 +22,7 @@ if(!dialog) then {
 disableSerialization;
 _curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _curTarget) exitWith {closeDialog 0;}; //Bad target
-_isVehicle = if((_curTarget isKindOf "landVehicle") OR (_curTarget isKindof("Car")) OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air") OR (_curTarget isKindOf "Motorcycle") OR (_curTarget isKindOf "A3L_Tahoe_Base")) then {true} else {false};
+_isVehicle = if((_curTarget isKindOf "landVehicle") OR (_curTarget isKindof "Car") OR (_curTarget isKindOf "Ship") OR (_curTarget isKindOf "Air") OR (_curTarget isKindOf "Motorcycle") OR (_curTarget isKindOf "A3L_Tahoe_Base")) then {true} else {false};
 if(!_isVehicle) exitWith {closeDialog 0;};
 _display = findDisplay 37400;
 _Btn1 = _display displayCtrl Btn1;

@@ -868,7 +868,10 @@
 			<Original>Wird repariert %1</Original>
  		</Key>
  		<Key ID="STR_NOTF_RepairingInVehicle">
-			<Original>Du musst außerhalb des Fahrzeuges sein, um es zu reparieren. Entschuldigung, aber das soll verhindern, dass du das System missbrauchst, naja, nicht wirklich.</Original>
+			<Original>Du musst außerhalb des Fahrzeuges sein, um es zu reparieren.</Original>
+ 		</Key>
+ 		<Key ID="STR_NOTF_ActionInVehicle">
+			<Original>Du musst außerhalb des Fahrzeuges sein, um dies zu tun.</Original>
  		</Key>
  		<Key ID="STR_NOTF_RepairedVehicle">
 			<Original>Du hast dieses Fahrzeug repariert.</Original>
