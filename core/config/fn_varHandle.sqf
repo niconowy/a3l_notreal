@@ -108,7 +108,7 @@ switch (_mode) do
 			case "laminat": {"life_inv_laminat"};
 			case "holz": {"life_inv_holz"};
 			case "presseformular": {"life_inv_presseformular"};
-			case "taxischein": {"life_inv_taxischein"};
+			case "taxischeinformular": {"life_inv_taxischeinformular"};
 			case "bohrmaschine": {"life_inv_bohrmaschine"};
 			case "nothammer": {"life_inv_nothammer"};
 		};
@@ -210,7 +210,7 @@ switch (_mode) do
 			case "life_inv_laminat": {"laminat"};
 			case "life_inv_holz": {"holz"};
 			case "life_inv_presseformular": {"presseformular"};
-			case "life_inv_taxischein": {"taxischein"};
+			case "life_inv_taxischeinformular": {"taxischeinformular"};
 			case "life_inv_bohrmaschine": {"bohrmaschine"};
 			case "life_inv_nothammer": {"nothammer"};
 		};

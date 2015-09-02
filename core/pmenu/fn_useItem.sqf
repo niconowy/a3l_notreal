@@ -310,6 +310,15 @@ switch (true) do
 		};
 	};
 	
+	case (_item == "taxischein"):
+	{
+		if(playerSide != civilian) exitWith {hint "Nur Zivilisten können den Taxi-Schein ausfüllen!"};
+		if([false,_item,1] call life_fnc_handleInv) then {
+			license_civ_presse = true;
+			hint parseText format["Du bist nun offiziell als Taxi-Fahrer eingetragen.<br/><br/>Solltest du ins Gefängnis einwandern oder Personen überfallen, wird dir dieser Ausweis entzogen!"];
+		};
+	};
+	
 	default
 	{
 		hint localize "STR_ISTR_NotUsable";

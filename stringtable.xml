@@ -1541,6 +1541,9 @@
 		<Key ID="STR_Item_PresseForm">
 			<Original>Presseformular</Original>
 		</Key>
+		<Key ID="STR_Item_TaxiSchein">
+			<Original>Taxischeinformular</Original>
+		</Key>
 		<Key ID="STR_Item_Bohrmaschine">
 			<Original>Bohrmaschine</Original>
 		</Key>
