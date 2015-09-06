@@ -345,8 +345,8 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["A3L_policevest1","FBI Weste",150],
-			["Jamie_Sheriff1","Große FBI Weste",550],
+			["A3L_policevest1","FBI Weste",500],
+			["Jamie_Sheriff1","Große FBI Weste",1750],
 			["k_cut_1","Sinister Sons",2500],
 			["k_cut_2","Gold Gunners",2500],
 			["k_cut_3","Sons of Anarchy Mitglied",2500],
@@ -357,7 +357,7 @@ switch (_filter) do
 			["TRYK_V_tacv1",nil,12500],
 			["TRYK_V_tacSVD_BK",nil,15000],
 			["TRYK_V_tacSVD_OD",nil,15000],
-			["Jamie_Rebell","Fuck U Police",20000]
+			["Jamie_Rebell","Fuck U Police",50000]
 		];
 	};
 

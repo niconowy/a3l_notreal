@@ -120,9 +120,9 @@ switch (_filter) do
 	//Westen
 	case 3:
 	{
-		_ret pushBack ["do_polizeiguertel",nil,325];
-		_ret pushBack ["do_polizeiguertelMen",nil,545];
-		_ret pushBack ["A3L_policevest2","DOJ",325];
+		_ret pushBack ["do_polizeiguertel",nil,400];
+		_ret pushBack ["do_polizeiguertelMen",nil,585];
+		_ret pushBack ["A3L_policevest2","DOJ",500];
 		//_ret pushBack ["A3L_policevest1","FBI",150];
 		
 		_ret pushBack ["A3L_sheriffvest2","LVPD",500];
@@ -135,7 +135,7 @@ switch (_filter) do
 		//_ret pushBack ["A3L_fbivest1","FBI Vest",1000];
 		//_ret pushBack ["SWATvest1","SWAT",1000];
 		
-		_ret pushBack ["V_Press_F","Presseweste NUR Aushändigung",1000];
+		_ret pushBack ["V_Press_F","Presseweste",1000];
 	};
 	
 	//Backpacks

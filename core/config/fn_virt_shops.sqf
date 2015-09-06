@@ -32,5 +32,5 @@ switch (_shop) do
 	case "ems": {["EMS Notfallaustattung",["water","coffee","rabbit","apple","redgull","tbacon","peach","lockpick","nothammer","RoadCone","RoadConeB","RoadConeStrip","RoadConeStripB","RoadBlockWood","fuelF"]]};
 	case "butcher": {["Bob's Metzgerei",["raw goat meat","raw chicken","raw sheep meat","raw rabbit"]]};
 	case "adac": {["Joe's Werkbank",["water","rabbit","apple","redgull","tbacon","lockpick","nothammer","fuelF","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
-	case "coppresse": {["Firmen-Lizenzen",["presseformular","taxischein"]]};
+	case "coppresse": {["Firmen-Lizenzen",["presseformular","taxischeinformular"]]};
 };

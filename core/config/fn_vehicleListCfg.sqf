@@ -1513,6 +1513,23 @@ switch (_shop) do
 			["cl3_civic_vti_gold",15750],
 			["cl3_civic_vti_black",15750],
 			
+			["Mrshounka_hummer_civ_noir",325000],
+			["Mrshounka_hummer_civ_bleufonce",325000],
+			["Mrshounka_hummer_civ_rouge",325000],
+			["Mrshounka_hummer_civ_jaune",325000],
+			["Mrshounka_hummer_civ_rose",325000],
+			
+			["Mrshounka_mustang_mat",252620],
+			["Mrshounka_mustang_noir",252620],
+			["Mrshounka_mustang_mat_n",252620],
+			["Mrshounka_mustang_bleufonce",252620],
+			["Mrshounka_mustang_mat_b",252620],
+			
+			["Mrshounka_veneno_c_bleu",684230],
+			["Mrshounka_veneno_c_jaune",684230],
+			["Mrshounka_veneno_c_grau",684230],
+			["Mrshounka_veneno_c_rot",684230],
+			
 			["A3L_PuntoRed",39350],
 			["A3L_PuntoBlack",39350],
 			["A3L_PuntoWhite",39350],
@@ -1536,6 +1553,11 @@ switch (_shop) do
 			["cl3_range_rover_grey",10000],
 			["cl3_range_rover_burgundy",10000],
 			["cl3_range_rover_black",10000],
+			
+			["C_Kart_01_Blu_F",25000],
+			["C_Kart_01_Fuel_F",25000],
+			["C_Kart_01_Red_F",25000],
+			["C_Kart_01_Vrana_F",25000],
 			
 			["A3L_F350Black",45250],
 			["A3L_F350Blue",45250],

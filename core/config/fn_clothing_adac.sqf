@@ -19,7 +19,7 @@ switch (_filter) do
 	{
 		[
 			["A3L_Worker_Outfit","Allg Arbeitskleidung",850],
-			["A3L_lacpraktikant","Azubi Arbeitskleidung",850],
+			["A3L_lacpraktikant","Praktikant Arbeitskleidung",850],
 			["A3L_lacmechaniker","Mechaniker Arbeitskleidung",850],
 			["A3L_lacmechatroniker","Mechatroniker Arbeitskleidung",850],
 			["A3L_lacmeister","Meister Arbeitskleidung",850],
@@ -34,7 +34,8 @@ switch (_filter) do
 	case 1:
 	{
 		[
-
+			["H_PilotHelmetFighter_B","Pilotenhelm",150],
+			["H_RacingHelmet_1_black_F","Motorradhelm",250]
 		];
 	};
 	
