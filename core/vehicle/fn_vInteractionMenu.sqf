@@ -67,22 +67,6 @@ if(playerSide == civilian) then {
 	_Btn4 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_pulloutAction;";
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
 	
-	if({side _x == east} count playableUnits > 2) then
-	{
-		if(!life_adac_request) then
-		{
-			_Btn5 ctrlSetText "LAC Rufen";
-			_Btn5 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_requestADAC;";
-			//_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC;"; orginal
-		} else {
-			_Btn2 ctrlSetText "LAC Widerrufen";
-			_Btn2 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_requestNotADAC;"; // von deleteADAC in requestNotADAC geändert
-			//_Btn5 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
-			//_Btn2 buttonSetAction "[[cursorTarget],""life_fnc_requestNotADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
-			
-		};
-	};
-		
 	_Btn8 ctrlSetText localize "STR_vInAct_Aufbrechen";
 	_Btn8 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_lockpick;";
 	_Btn8 ctrlEnable false;	
@@ -91,6 +75,29 @@ if(playerSide == civilian) then {
 	_str = [_x] call life_fnc_varToStr; _val = missionNameSpace getVariable _x;
 	if(_val > 0 ) then {if( _str == "dietrich" || _str == "Dietrich" ) then {_Btn8 ctrlEnable true;};};
 	} foreach life_inv_items;
+	
+	if({side _x == east} count playableUnits > 2) then
+	{
+		if(!life_adac_request) then
+		{
+			_Btn5 ctrlSetText "LAC Rufen";
+			_Btn5 buttonSetAction "";
+			_Btn5 buttonSetAction "hint ""Bitte über die Notruf-App den LAC Rufen"";";
+			//_Btn5 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_requestADAC;"; original 2
+			
+			
+			//_Btn5 buttonSetAction "[life_vInact_curTarget] spawn life_fnc_requestADAC;"; altes orginal
+		} else {
+			_Btn2 ctrlSetText "LAC Widerrufen";
+			_Btn5 buttonSetAction "hint ""Bitte über die Notruf-App den LAC Rufen"";";
+			//_Btn2 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_requestNotADAC;"; // von deleteADAC in requestNotADAC geändert | alt
+			
+			
+			//_Btn5 buttonSetAction "[[cursorTarget],""life_fnc_deleteADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
+			//_Btn2 buttonSetAction "[[cursorTarget],""life_fnc_requestNotADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
+			
+		};
+	};
 };
 
 
@@ -190,7 +197,7 @@ if(playerSide == east) then {
 	
 	if(_curTarget isKindOf "Ship") then {
 		_Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
-		_Btn6 buttonSetAction "closeDialog 0; ] spawn life_fnc_pushObject;";
+		_Btn6 buttonSetAction "closeDialog 0; [] spawn life_fnc_pushObject;";
 		if(_curTarget isKindOf "Ship" && {local _curTarget} && {count crew _curTarget == 0}) then { _Btn6 ctrlEnable true;} else {_Btn6 ctrlEnable false};
 	} else {
 		if(typeOf (_curTarget) in ["C_Kart_01_Blu_F","C_Kart_01_Red_F","C_Kart_01_Fuel_F","C_Kart_01_Vrana_F"]) then {
