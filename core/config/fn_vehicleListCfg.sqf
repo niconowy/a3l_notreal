@@ -627,6 +627,8 @@ switch (_shop) do
 	
 	case "adac_veh":
 	{
+		if(playerSide != east) exitWith {hint "Du bist keine Justiz!"};
+		if(__GETC__(life_adaclevel) >= 9) exitWith {hint "Du bist als Justiz whitelisted, nicht als LAC!"};
 		_return =
 		[
 			["C_Offroad_01_F",10000],

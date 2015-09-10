@@ -261,6 +261,7 @@ switch(_shop) do
 		switch (true) do
 		{
 			case (playerSide != east): {"Du bist kein LAC!"};
+			case (__GETC__(life_adaclevel) >= 9): {"Du bist als Justiz whitelisted, nicht als LAC!"};
 			default {
 				["LAC Laden",
 					[
