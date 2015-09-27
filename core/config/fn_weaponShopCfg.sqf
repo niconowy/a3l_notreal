@@ -29,9 +29,9 @@ switch(_shop) do
 			{
 				["Praktikant",
 					[
-						["cse_bandage_basic",nil,50],
-						["cse_packing_bandage",nil,50],
-						["cse_bandageElastic",nil,50]
+						["cse_bandage_basic",nil,75],
+						["cse_packing_bandage",nil,1500]
+					//	["cse_bandageElastic",nil,50]
 					]
 				];
 			};
@@ -40,15 +40,15 @@ switch(_shop) do
 			{
 				["Sanitäter",
 					[
-						["cse_bandage_basic",nil,50],
-						["cse_packing_bandage",nil,50],
-						["cse_bandageElastic",nil,50],
-						["cse_tourniquet",nil,50],
-						["cse_quikclot",nil,50],
-						//["cse_splint",nil,50], Unnötig gibt keine Knochenbrüche zZ.
-						["cse_saline_iv",nil,50],
-						["cse_saline_iv_250",nil,50],
-						["cse_saline_iv_500",nil,50]
+						["cse_bandage_basic",nil,75],
+						["cse_packing_bandage",nil,1500],
+						["cse_quikclot",nil,200],
+					//	["cse_bandageElastic",nil,50],
+					//	["cse_tourniquet",nil,50],
+					//	["cse_splint",nil,50], Unnötig gibt keine Knochenbrüche zZ.
+						["cse_saline_iv",nil,250],
+					//	["cse_saline_iv_250",nil,50],
+						["cse_saline_iv_500",nil,150]
 					]
 				];
 			};
@@ -57,26 +57,26 @@ switch(_shop) do
 			{
 				["Rettungsassistent",
 					[
-						["cse_bandage_basic",nil,50],
-						["cse_packing_bandage",nil,50],
-						["cse_bandageElastic",nil,50],
-						["cse_saline_iv",nil,50],
-						["cse_saline_iv_250",nil,50],
-						["cse_saline_iv_500",nil,50],
-						["cse_plasma_iv",nil,50],
-						["cse_plasma_iv_250",nil,50],
-						["cse_plasma_iv_500",nil,50],
-						["cse_blood_iv_250",nil,50],
-						["cse_blood_iv_500",nil,50],
-						["cse_tourniquet",nil,50],
+						["cse_bandage_basic",nil,75],
+						["cse_packing_bandage",nil,1500],
+						["cse_quikclot",nil,200],
+					//	["cse_bandageElastic",nil,50],
+						["cse_saline_iv",nil,250],
+					//	["cse_saline_iv_250",nil,50],
+						["cse_saline_iv_500",nil,150],
+						["cse_plasma_iv",nil,250],
+					//	["cse_plasma_iv_250",nil,50],
+						["cse_plasma_iv_500",nil,150],
+					//	["cse_blood_iv_250",nil,50],
+						["cse_blood_iv_500",nil,500],
+					//	["cse_tourniquet",nil,50],
 						//["cse_splint",nil,50],
-						["cse_morphine",nil,50],
-						["cse_epinephrine",nil,50],
-						["cse_quikclot",nil,50],
+						["cse_morphine",nil,100],
+						["cse_epinephrine",nil,100],
 						//["cse_opa",nil,50], Funktioniert nicht
-						["cse_nasopharyngeal_tube",nil,50],
+						["cse_nasopharyngeal_tube",nil,500],
 						//["cse_chestseal",nil,50], Unnötig
-						["cse_surgical_kit",nil,50]
+						["cse_surgical_kit",nil,500]
 					]
 				];
 			};
@@ -85,29 +85,26 @@ switch(_shop) do
 			{
 				["Arzt",
 					[
-						["cse_bandage_basic",nil,50],
-						["cse_packing_bandage",nil,50],
-						["cse_tourniquet",nil,50],
+						["cse_bandage_basic",nil,75],
+						["cse_packing_bandage",nil,1500],
+						["cse_quikclot",nil,200],
+					//	["cse_bandageElastic",nil,50],
+						["cse_saline_iv",nil,250],
+					//	["cse_saline_iv_250",nil,50],
+						["cse_saline_iv_500",nil,150],
+						["cse_plasma_iv",nil,250],
+					//	["cse_plasma_iv_250",nil,50],
+						["cse_plasma_iv_500",nil,150],
+					//	["cse_blood_iv_250",nil,50],
+						["cse_blood_iv_500",nil,500],
+					//	["cse_tourniquet",nil,50],
 						//["cse_splint",nil,50],
-						["cse_morphine",nil,50],
-						["cse_atropine",nil,50],
-						["cse_epinephrine",nil,50],
-						["cse_plasma_iv",nil,50],
-						["cse_plasma_iv_250",nil,50],
-						["cse_plasma_iv_500",nil,50],
-						["cse_blood_iv",nil,50],
-						["cse_blood_iv_250",nil,50],
-						["cse_blood_iv_500",nil,50],
-						["cse_saline_iv",nil,50],
-						["cse_saline_iv_250",nil,50],
-						["cse_saline_iv_500",nil,50],
-						["cse_quikclot",nil,50],
-						["cse_nasopharyngeal_tube",nil,50],
-						//["cse_opa",nil,50],
-						["cse_bandageElastic",nil,50],
-						//["cse_liquidSkin",nil,50], Gibt keine Verbrennungen zZ.
-						//["cse_chestseal",nil,50],
-						["cse_surgical_kit",nil,50]
+						["cse_morphine",nil,100],
+						["cse_epinephrine",nil,100],
+						//["cse_opa",nil,50], Funktioniert nicht
+						["cse_nasopharyngeal_tube",nil,500],
+						//["cse_chestseal",nil,50], Unnötig
+						["cse_surgical_kit",nil,500]
 					]
 				];
 			};
@@ -120,30 +117,30 @@ switch(_shop) do
 						//["FirstAidKit",nil,500],
 						//["Medikit",nil,1000],
 						
-						["cse_bandage_basic",nil,50],
-						["cse_packing_bandage",nil,50],
-						["cse_bandageElastic",nil,50],
-						["cse_tourniquet",nil,50],
+						["cse_bandage_basic",nil,75],
+						["cse_packing_bandage",nil,1500],
+					//	["cse_bandageElastic",nil,50],
+					//	["cse_tourniquet",nil,50],
 						//["cse_splint",nil,50],
-						["cse_morphine",nil,50],
-						["cse_atropine",nil,50],
-						["cse_epinephrine",nil,50],
-						["cse_plasma_iv",nil,50],
-						["cse_plasma_iv_500",nil,50],
-						["cse_plasma_iv_250",nil,50],
-						["cse_blood_iv",nil,50],
-						["cse_blood_iv_500",nil,50],
-						["cse_blood_iv_250",nil,50],
-						["cse_saline_iv",nil,50],
-						["cse_saline_iv_500",nil,50],
-						["cse_saline_iv_250",nil,50],
-						["cse_quikclot",nil,50],
-						["cse_nasopharyngeal_tube",nil,50],
+						["cse_morphine",nil,100],
+					//	["cse_atropine",nil,100],
+						["cse_epinephrine",nil,100],
+						["cse_plasma_iv",nil,250],
+						["cse_plasma_iv_500",nil,150],
+					//	["cse_plasma_iv_250",nil,50],
+						["cse_blood_iv",nil,1000],
+						["cse_blood_iv_500",nil,500],
+					//	["cse_blood_iv_250",nil,50],
+						["cse_saline_iv",nil,250],
+						["cse_saline_iv_500",nil,150],
+					//	["cse_saline_iv_250",nil,50],
+						["cse_quikclot",nil,200],
+						["cse_nasopharyngeal_tube",nil,500],
 						//["cse_opa",nil,50],
 						//["cse_liquidSkin",nil,50],
 						//["cse_chestseal",nil,50],
-						["cse_personal_aid_kit",nil,50],
-						["cse_surgical_kit",nil,50]
+						["cse_personal_aid_kit",nil,500],
+						["cse_surgical_kit",nil,500]
 					]
 				]
 			};
@@ -190,10 +187,28 @@ switch(_shop) do
 		switch (true) do
 		{
 			case (playerSide != independent): {"Du bist kein EMS/FDP!"};
+			case (__GETC__(life_mediclevel) == 1): {
+				["EMS Praktika",
+					[
+						["A3L_Extinguisher","Feuerlöscher",350],
+						
+						["ItemMap",nil,10],
+						["ItemWatch",nil,20],
+						["ItemCompass",nil,30],
+						["ItemGPS",nil,250],
+						["Binocular",nil,1250],
+						["TRYK_headset2","Headset Groß (Nightvision)",2500],
+						["TRYK_Headset_NV","Headset Klein (Nightvision)",2500],
+						["ToolKit",nil,3500],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100]
+					]
+				];
+			};
+			
 			default {
 				["EMS Grundware",
 					[
-						["A3L_Extinguisher",nil,350],
+						["A3L_Extinguisher","Feuerlöscher",350],
 						
 						["ItemMap",nil,10],
 						["ItemWatch",nil,20],
@@ -205,51 +220,6 @@ switch(_shop) do
 						["ToolKit",nil,3500],
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000]
-						
-
-						//["cse_itemBodyBag",nil,0],
-						
-						//["cse_waterbottle",nil,0],
-						//["cse_canteen",nil,0],
-						//["cse_canteen_half",nil,0],
-						//["cse_canteen_empty",nil,0],
-						//["cse_waterbottle_half",nil,0],
-						//["cse_waterbottle_empty",nil,0],
-						//["cse_MRE_LambC",nil,0],
-						//["cse_MRE_Rice",nil,0],
-						//["cse_MRE_CreamTomatoSoup",nil,0],
-						//["cse_MRE_CreamChickenSoup",nil,0],
-						//["cse_MRE_ChickenTikkaMassala",nil,0],
-						//["cse_MRE_SteakVegetables",nil,0],
-						//["cse_MRE_MeatballsPasta",nil,0],
-						//["cse_MRE_ChickenHerbDumplings",nil,0],
-						//["cse_Humanitarian_Ration",nil,0],
-						//["cse_US_MRE_ChiliBeans",nil,0],
-						//["cse_US_MRE_ChickenFajita",nil,0],
-						//["cse_US_MRE_ChickenNoodles",nil,0],
-						//["cse_US_MRE_PorkSausageGravy",nil,0],
-						//["cse_US_MRE_MedChicen",nil,0],
-						//["cse_US_MRE_BeefRoastVeggies",nil,0],
-						//["cse_US_MRE_BeefBrisket",nil,0],
-						//["cse_US_MRE_MeatballMarinara",nil,0],
-						//["cse_US_MRE_BeefStew",nil,0],
-						//["cse_US_MRE_ChiliMacaroni",nil,0],
-						//["cse_US_MRE_VegetableLasagna",nil,0],
-						//["cse_US_MRE_SpicyPennePasta",nil,0],
-						//["cse_US_MRE_CheeseTortellini",nil,0],
-						//["cse_US_MRE_Ratatouille",nil,0],
-						//["cse_US_MRE_MexicanStyleChickenStew",nil,0],
-						//["cse_US_MRE_PorkRib",nil,0],
-						//["cse_US_MRE_MapleSausage",nil,0],
-						//["cse_US_MRE_BeefRavioli",nil,0],
-						//["cse_US_MRE_SloppyJoe",nil,0],
-						//["cse_US_MRE_SpaghettiMeatSauce",nil,0],
-						//["cse_US_MRE_SpaghettiMeatSauce",nil,0],
-						//["cse_US_MRE_LemonPepperTuna",nil,0],
-						//["cse_US_MRE_AsianBeefStrips",nil,0],
-						//["cse_US_MRE_ChickenPestoPasta",nil,0],
-						//["cse_US_MRE_SouthwestStyleBeefBlackBeans",nil,0],
-						//["cse_mre_c_ration",nil,0]
 					]
 				];
 			};
