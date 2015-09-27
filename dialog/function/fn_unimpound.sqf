@@ -34,7 +34,7 @@ _basePrice = _price;
 
 //next lines added for insureance
 if (_isInsured) then {
-    _price = _basePrice * 2.5;
+    _price = _basePrice * 2;
 } else {
     _price = _basePrice;
 };
