@@ -20,9 +20,11 @@ _units = [];
 lbClear _players;
 
 {
-    _side = switch(side _x) do {case west: {"LVPD"}; case civilian : {"ZIV"}; case independent : {"EMS"}; case east : {"LAC"}; default {"Unknown"};};
-    _players lbAdd format["%1 - %2", name _x,_side];
-    _players lbSetdata [(lbSize _players)-1,str(_x)];
+	if(side _x == civilian) then {
+    //_side = switch(side _x) do {case west: {"LVPD"}; case civilian : {"ZIV"}; case independent : {"EMS"}; case east : {"LAC"}; default {"Unknown"};};
+		_players lbAdd format["%1 - %2", name _x,_side];
+		_players lbSetdata [(lbSize _players)-1,str(_x)];
+	};
 } foreach playableUnits;
 lbSort [_players,"ASC"];
 
@@ -122,7 +124,7 @@ _crimes =
 	_list2 lbSetData [(lbSize _list2)-1,(_x select 2)];
 } foreach _crimes;
 
-ctrlSetText[2404,"Verbinde mit LPD..."];
+ctrlSetText[2404,"Verbinde mit LVPD..."];
 
 /*if(__GETC__(life_coplevel) < 3 && __GETC__(life_adminlevel) == 0) then
 {
