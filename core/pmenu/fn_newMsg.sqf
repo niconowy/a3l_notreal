@@ -101,6 +101,13 @@ switch(_type) do
 		} else {
 			ctrlShow[888828,true];
 		};
+
+	//EMS-Rundfunk Button
+		if(playerSide != independent) then {
+			ctrlShow[888829,false];	
+		} else {
+			ctrlShow[888829,true];
+		};
 	};
 	//adminMsgAll
 	case 7:
@@ -129,7 +136,17 @@ switch(_type) do
 		if(__GETC__(life_coplevel) < 4) exitWith {hint "Du musst mindestens den Rang Sergeant erreicht haben!"};
 		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
 		[[ObjNull,_msg,player,7],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
-		hint format["Rundmail: %1",_msg];
-		closeDialog 888828;
+		hint format["LVPD-Rundmail: %1",_msg];
+		closeDialog 887890;
+	};
+	
+	//ems rundfunk
+	case 10: {
+		if(playerSide in [west, east, civilian]) exitWith {hint "Du bist kein Sanitäter!"};
+		if(__GETC__(life_medicLevel) < 5) exitWith {hint "Du musst mindestens den Rang Oberarzt erreicht haben!"};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
+		[[ObjNull,_msg,player,8],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
+		hint format["EMS-Rundmail: %1",_msg];
+		closeDialog 887890;
 	};
 };

@@ -24,15 +24,19 @@ if(life_blacklisted) exitWith
 
 if((str(player) in ["cop_1","cop_2","cop_3"])) then {
 	if((__GETC__(life_adminlevel) == 0)) then {
+		disableUserInput true;
 		["NurAdmin",false,true] call BIS_fnc_endMission;
 		sleep 30;
+		disableUserInput false;
 	};
 };
 
 if(!(str(player) in ["cop_1","cop_2","cop_3"])) then {
 	if((__GETC__(life_coplevel) == 0)) then {
+		disableUserInput true;
 		["CopWhitelist",false,true] call BIS_fnc_endMission;
 		sleep 30;
+		disableUserInput false;
 	};
 };
 

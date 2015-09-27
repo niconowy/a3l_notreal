@@ -690,12 +690,13 @@ switch(_shop) do
 						["RH_qdss_nt4",nil,19880],
 
 						["A3L_CZ550",nil,220000],
-						["A3L_CZ550mag",nil,2050],
+						["A3L_CZ550mag",nil,1500],
 
 						["arifle_SDAR_F","Turtle Harpoon",50000],
-						["20Rnd_556x45_UW_mag","Underwater magazine",1500],
+						["20Rnd_556x45_UW_mag","UW-Geschosse",1500],
 
 						//["FirstAidKit",nil,2250],
+				//VISIERE
 						["optic_Hamr",nil,15500],
 						["optic_Yorris",nil,15500],
 						["A3L_RedDot",nil,15500],
@@ -705,20 +706,23 @@ switch(_shop) do
 						["A3L_CCO",nil,15500],
 						["A3L_CZ550Scope",nil,15500],
 						["hlc_optic_kobra",nil,15500],
+				//CSE ZEUGES
 						["cse_epinephrine",nil,50000],
 						["cse_morphine",nil,50000],
+						["cse_bandage_basic",nil,1425],
+				//STANDARD SACHEN, REPKITS, NAVIGATION
 						["ItemMap",nil,30],
 						["ItemWatch",nil,40],
 						["ItemCompass",nil,50],
 						["ToolKit",nil,6000],
 						["Binocular",nil,250],
 						["ItemGPS",nil,250],
+				//NV-Goggles
 						["TRYK_headset2","Headset Groß (Nightvision)",10000],
 						["TRYK_Headset_NV","Headset Klein (Nightvision)",10000],
-
+				//TFAR
 						["tf_fadak","Kurzstreckenfunk",100],
-						["tf_mr3000","Langstreckenfunk",5000],
-						["cse_bandage_basic",nil,1425]
+						["tf_mr3000","Langstreckenfunk",5000]
 					]
 				];
 			};

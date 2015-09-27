@@ -16,8 +16,10 @@ player addRating 99999999;
 waitUntil {!(isNull (findDisplay 46))};
 
 if((__GETC__(life_medicLevel)) < 1) exitWith {
+	disableUserInput true;
 	["MedicWhitelist",FALSE,TRUE] call BIS_fnc_endMission;
 	sleep 35;
+	disableUserInput false;
 };
 
 switch(__GETC__(life_mediclevel)) do

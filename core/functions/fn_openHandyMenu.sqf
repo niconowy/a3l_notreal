@@ -8,13 +8,18 @@
 */
 
 if(player getVariable "restrained") exitWith {
-	hint "Du kannst Handy nicht verwenden, während du gefesselt bist!"; 
 	closeDialog 0;
+	hint "Du kannst Handy nicht verwenden, während du gefesselt bist!"; 
 };
 
 if(player getVariable "isblinded") exitWith {
-	hint "Du kannst Handy nicht verwenden, während du eine Augenbinde trägst!"; 
 	closeDialog 0;
+	hint "Du kannst Handy nicht verwenden, während du eine Augenbinde trägst!"; 
+};
+
+if(life_is_arrested) exitWith {
+	closeDialog 0;
+	hint "Seit wann haben Gefangene im Gefängnis ein Handy??";
 };
 
 createDialog "Life_my_smartphone";

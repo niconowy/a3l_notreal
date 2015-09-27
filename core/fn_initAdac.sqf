@@ -18,22 +18,28 @@ _end = false;
 
 if((str(player) in ["ADAC_1","ADAC_2","ADAC_3","ADAC_4","ADAC_5","ADAC_6","ADAC_7","ADAC_8","ADAC_9","ADAC_10"])) then {
 	if((__GETC__(life_adaclevel) < 1)) then {
+		disableUserInput true;
 		["IPDWhitelist",false,true] call BIS_fnc_endMission;
 		sleep 35;
+		disableUserInput false;
 	};
 };
 
 if((str(player) in ["ADAC_11","ADAC_12"])) then {
 	if((__GETC__(life_adaclevel) < 10)) then {
+		disableUserInput true;
 		["StaatsanwaltWhitelist",false,true] call BIS_fnc_endMission;
 		sleep 35;
+		disableUserInput false;
 	};
 };
 
 if((str(player) in ["ADAC_13"])) then {
 	if((__GETC__(life_adaclevel) < 11)) then {
+		disableUserInput true;
 		["RichterWhitelist",false,true] call BIS_fnc_endMission;
 		sleep 35;
+		disableUserInput false;
 	};
 };
 

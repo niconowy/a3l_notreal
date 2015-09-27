@@ -408,6 +408,19 @@ class Life_smartphone_notruf {
 			w = 0.15;
 			h = (1 / 25);
 		};
+
+		class emsRundfunk : life_RscButtonMenu
+		{
+			idc = 888829;
+			text = "RUNDFUNK";
+			colorBackground[] = {0.18,0.604,0.996,1};
+			onButtonClick = "[10,-1,(ctrlText 888894)] call life_fnc_newMsg;";
+			
+			x = 0.745;
+			y = 0.30;
+			w = 0.15;
+			h = (1 / 25);
+		};
 		
 		class CloseButton : Life_RscButtonMenu {
 			idc = -1;
