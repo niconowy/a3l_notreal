@@ -141,12 +141,11 @@ switch (_code) do
 	//Niederschlagen
 	case 34:
 	{
-		if(_shift && playerSide != independent && !isNull _cursorT && _cursorT isKindOf "Man" && isPlayer _cursorT && alive _cursorT && _cursorT distance player <= 1.9 && _speed < 15) then
+		if(_shift && playerSide in [civilian, west] && !isNull _cursorT && _cursorT isKindOf "Man" && isPlayer _cursorT && alive _cursorT && _cursorT distance player <= 1.9 && _speed < 15) then
 		{
-			if((animationState _cursorT) != "static_dead" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed) then
+			if((animationState _cursorT) != "static_dead" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !life_knockout) then
 			{
 				[_cursorT] spawn life_fnc_knockoutAction;
-				//player say3D "knockout";
 				[player,"knockout"] call life_fnc_globalSound;
 			};
 			_handled = true;
@@ -443,7 +442,7 @@ switch (_code) do
 	case 79:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exerciseKata";
 		};
@@ -453,7 +452,7 @@ switch (_code) do
 	case 76:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
 		{
 			[[player,"cl3_dubstepdance"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 		};
@@ -463,7 +462,7 @@ switch (_code) do
 	case 77:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
 		{
 			[[player,"cl3_dubsteppop"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 		};
@@ -472,7 +471,7 @@ switch (_code) do
 	case 80:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
 		};
@@ -481,7 +480,7 @@ switch (_code) do
 	case 81:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
 		};
@@ -490,7 +489,7 @@ switch (_code) do
 	case 75:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && !(vehicle player != player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
 		};
@@ -500,10 +499,13 @@ switch (_code) do
 	{
 		if (_alt) then
 		{
-			diag_log format ["SERVER INFO: %1 verwendet ALT+F4 (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]];
-			[[1,format["SERVER INFO: %1 verwendet ALT+F4 (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			diag_log format ["SERVER_INFO | %1 (%2) verwendete ALT+F4",_player getVariable["realname",name _player],getPlayerUID _player];
+			[[0,format["%1 verwendet ALT+F4",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			if(!alive player) then {
-				[[1,format["SERVER INFO: %1 verwendet ALT+F4 während er tot ist - !GEAR.SAFE!(Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+				[[1,format[":: SERVER INFO :: %1 verwendet ALT+F4 während er tot ist - !GEAR_SAFE! (Screenshot machen und dem Support melden)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			};
+			if(player getVariable "restrained") then {
+				[[1,format[":: SERVER INFO :: %1 verwendet ALT+F4 während er gefesselt ist - !COMBAT_LOG! (Screenshot machen und dem Support melden)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			};
 			[] call SOCK_fnc_updateRequest;
 		};
@@ -522,7 +524,7 @@ switch (_code) do
 		if (_alt && _ctrlKey) then
 		{
 			diag_log format ["SERVER INFO: %1 verwendet CTRL + ALT + DEL (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]];
-			[[1,format["SERVER INFO: %1 verwendet CTRL + ALT + DEL (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			[[0,format["SERVER INFO: %1 verwendet CTRL + ALT + DEL (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			[] call SOCK_fnc_updateRequest;
 		};
 	};
@@ -530,9 +532,8 @@ switch (_code) do
 	case 1:
     {
 		if( _ctrlKey )  then {
-		diag_log format ["SERVER INFO: %1 verwendet CTRL + ESC (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]];
-		[[1,format["SERVER INFO: %1 verwendet CTRL + ESC (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
-		[] call SOCK_fnc_updateRequest;
+			diag_log format ["SERVER INFO: %1 verwendet CTRL + ESC (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]];
+			[] call SOCK_fnc_updateRequest;
 		};
 	};
 };
