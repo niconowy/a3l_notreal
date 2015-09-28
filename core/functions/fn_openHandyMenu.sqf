@@ -1,7 +1,7 @@
 /*
 	File: fn_openHandyMenu.sqf
 	Author: James Sunderland
-	Server: arma-3-life.de
+	Server: lakeside-reallife.de
 	
 	Description:
 	Hauptdatei zum öffnen des Handy-Menüs

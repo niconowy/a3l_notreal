@@ -1,5 +1,5 @@
 /*
-	Author: Bryan "Tonic" Boardwine, edit by arma-3-life.de
+	Author: Bryan "Tonic" Boardwine, edit by lakeside-reallife.de
 	
 	Description:
 	Start playing the siren for IPD - adac

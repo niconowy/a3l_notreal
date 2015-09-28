@@ -14,7 +14,7 @@ playsound "1ntr0";
 	[
 		[
 			["Unser Forum: ","align = 'center' shadow = '1' size = '0.52' font='PuristaBold'","#eb4be9"],
-			["arma-3-life.de","align = 'center' shadow = '1' size = '0.5'","#FFFFFF"],
+			["lakeside-reallife.de","align = 'center' shadow = '1' size = '0.5'","#FFFFFF"],
 			[" "," align = 'center' shadow = '1' size = '0.5'","#ff0000"]
 		]
 	] spawn BIS_fnc_typeText2;
