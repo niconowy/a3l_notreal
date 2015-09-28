@@ -79,8 +79,8 @@ if(playerSide == east) then
 		case 2: { _rank = "LAC-Mechaniker";};
 		case 3: { _rank = "LAC-Mechatroniker";};	
 		case 4: { _rank = "LAC-Meister";};
-		case 5: { _rank = "LAC-Ausbilder";};
-		case 6: { _rank = "Personalleiter";};
+		case 5: { _rank = "Betriebsleiter";};
+		case 6: { _rank = "Ausbilder";};
 		case 7: { _rank = "Co-LAC Leiter";};
 		case 8: { _rank = "LAC Leiter";};
 		case 9: { _rank = "!!REPORT ADMIN!!";};
