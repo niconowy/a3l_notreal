@@ -18,3 +18,4 @@ if((_this select 1)) then {
 
 enableRadio false; 
 enableSentences false;
+setTerrainGrid 50;
