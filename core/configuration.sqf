@@ -57,7 +57,7 @@ __CONST__(life_revive_cops,FALSE); //Set to false if you don't want cops to be a
 __CONST__(life_revive_fee,3500); //Fee for players to pay when revived.
 
 //House Limit
-__CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
+__CONST__(life_houseLimit,3); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
 //Gang related stuff?
 __CONST__(life_gangPrice,75000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
@@ -90,14 +90,19 @@ life_use_atm = true;
 life_is_arrested = false;
 life_delivery_in_progress = false;
 life_action_in_use = false;
+
 life_thirst = 100;
 life_hunger = 100;
 life_intox = 0.00;
+
 __CONST__(life_paycheck_period,5); //Five minutes
+
 ja_dzep = 0;
+
 __CONST__(life_impound_car,3000);
 __CONST__(life_impound_boat,1000);
 __CONST__(life_impound_air,3000);
+
 life_istazed = false;
 life_my_gang = ObjNull;
 life_smartphoneTarget = ObjNull;
