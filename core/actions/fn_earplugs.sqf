@@ -13,6 +13,7 @@ if(life_earplugs) then {
 	life_earplugs = false;
 	hintSilent "Du hast deine Ohrstöpsel rausgezogen.";
 	3 fadeSound 1;
+	playSound "plop";
 	
 } else {
 	life_earplugs = true;
