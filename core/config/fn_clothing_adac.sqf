@@ -12,7 +12,7 @@ _filter = [_this,0,0,[0]] call BIS_fnc_param;
 //Shop Title Name
 ctrlSetText[3103,"LAC Kleidungsladen"];
 
-if(__GETC__(life_adaclevel) >= 9) exitWith {closeDialog 0; hint "Du bist als Justiz whitelisted, nicht als LAC!"};
+if((call life_adaclevel) >= 9) exitWith {closeDialog 0; hint "Du bist als Justiz whitelisted, nicht als LAC!"};
 
 switch (_filter) do
 {
@@ -75,7 +75,7 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_RebreatherB",nil,5000]
+			["V_RebreatherB","Tauchgerät",5000]
 		];
 	};
 	

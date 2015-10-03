@@ -21,7 +21,7 @@ if((_this select 3) in ["cop"] && playerSide != west) exitWith {hint localize "D
 if((_this select 3) in ["state"] && playerSide != west) exitWith {hint localize "Du gehörst nicht zur LakesideValley SWAT-Einheit!"; closeDialog 0;};
 if((_this select 3) in ["dive"] && !license_civ_dive) exitWith { hint localize "STR_Shop_NotaDive"; closeDialog 0;};
 if((_this select 3) == "ems" && playerSide != independent) exitWith {hint "Du gehörst nicht zum LakesideValley EMS/FDP!"; closeDialog 0;};
-if((_this select 3) in ["adac"] && playerSide != east) exitWith {hint "Du gehörst nicht zum LakesideValley IPD!"; closeDialog 0;};
+if((_this select 3) in ["adac"] && playerSide != east) exitWith {hint "Du gehörst nicht zum LakesideValley LAC!"; closeDialog 0;};
 if((_this select 3) == "justiz" && playerSide != east) exitWith {hint "Du gehörst nicht zur LakesideValley Justiz-Abteilung!"; closeDialog 0;};
 
 life_clothing_store = _this select 3;

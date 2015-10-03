@@ -48,11 +48,13 @@ switch (_filter) do
 		[
 			["H_Cap_pmc","SWAT Mütze",25],
 			["H_Capbw_pmc","SWAT Mütze",25],
+			["do_swatcap","SWAT Kappe",50],
+			["TRYK_H_PASGT_BLK","SWAT Helm (black)",500],
 			["H_Bombsuit_Helmet","Bombensicherheitshelm",1500],
 			["RPIMA_helm","Schwerer Schutzhelm",550],
 			["gign_helm4","Leichter Schutzhelm",250],
 			["gign_Balaclava","Taktische Maske",50],
-			["Campaign_Hat_Dark","LVPD Swat Hut",350]	
+			["Campaign_Hat_Dark","LVPD Swat Hut",350]
 		];
 	};
 	
@@ -60,7 +62,11 @@ switch (_filter) do
 	case 2:
 	{
 		[
-			["TRYK_Spset_PHC2_Glasses","Kabelbinder",40],
+			["TRYK_Spset_PHC2_Glasses",nil,40],
+			["TRYK_kio_balaclava_ESS","Sturmhaube Brille",90],
+			["TRYK_US_ESS_Glasses_BLK","SWAT Brille (black)",90],
+			["TRYK_kio_balaclava_BLK_ear","Sturmhaube Headset (black)",150],
+			["TRYK_kio_balaclava_ear","Sturmhaube (ghost)",90],
 			["Mask_M40","Gasmaske",275],
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
@@ -68,6 +74,7 @@ switch (_filter) do
 			["G_Sport_Checkered",nil,20],
 			["G_Sport_Blackyellow",nil,20],
 			["G_Sport_BlackWhite",nil,20],
+			["G_Spectacles_Tinted",nil,20],
 			["G_Squares",nil,10],
 			["G_Aviator",nil,100],
 			["G_Lady_Mirror",nil,150],

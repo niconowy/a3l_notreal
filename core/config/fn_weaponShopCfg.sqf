@@ -296,6 +296,9 @@ switch(_shop) do
 						["A3L_MP5",nil,25335],
 						["A3L_MP5mag",nil,500],
 						
+						["SMG_02_F",nil,23250],
+						["30Rnd_9x21_Mag",nil,385],
+						
 						["A3L_Glock17",nil,12000],
 						["A3L_Glock17mag",nil,730],
 						["RH_kimber",nil,15670],
@@ -309,6 +312,8 @@ switch(_shop) do
 						["26_cartridge",nil,255],
 						
 						["A3L_RedDot",nil,7500],
+						["optic_ACO_grn_smg","ACO-G MP",4500],
+						["optic_ACO_grn","ACO-G",5000],
 						
 						//["FirstAidKit",nil,1500],
 						["ItemMap",nil,10],
@@ -331,18 +336,19 @@ switch(_shop) do
 			{
 				["Detective",
 					[
-						["RH_Mk12mod1",nil,37855],
 						["RH_30Rnd_556x45_Mk262",nil,1350],
 						["RH_spr_mbs",nil,4500],
-						["RH_M16A3",nil,34345],
-						["RH_m4",nil,32120],
 						["30Rnd_556x45_Stanag",nil,1175],
 						["A3L_M4A3",nil,32120],
 						["A3L_M4mag",nil,1175],
 						
 						["A3L_MP5",nil,25335],
 						["A3L_MP5mag",nil,500],
-
+						
+						["SMG_02_F",nil,23250],
+						["30Rnd_9x21_Mag",nil,385],
+						["muzzle_snds_L",nil,1950],
+						
 						["R3F_HK416M",nil,27345],
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
@@ -365,6 +371,9 @@ switch(_shop) do
 						["Taser_26","Taser",5500],
 						["26_cartridge",nil,255],
 						
+						["acc_pointer_IR",nil,1250],
+						["optic_ACO_grn_smg","ACO-G MP",4500],
+						["optic_ACO_grn","ACO-G",5000],
 						["A3L_CCO",nil,7500],
 						["A3L_RedDot",nil,7500],
 						["A3L_M4Flashlight",nil,4500],
@@ -404,7 +413,6 @@ switch(_shop) do
 			{
 				["Sergeant",
 					[
-						["RH_Mk12mod1",nil,37855],
 						["RH_30Rnd_556x45_Mk262",nil,1350],
 						["RH_spr_mbs",nil,4500],
 						["RH_M16A3",nil,34345],
@@ -415,6 +423,10 @@ switch(_shop) do
 						
 						["A3L_MP5",nil,25335],
 						["A3L_MP5mag",nil,500],
+						
+						["SMG_02_F",nil,23250],
+						["30Rnd_9x21_Mag",nil,385],
+						["muzzle_snds_L",nil,1950],
 						
 						["R3F_HK416M",nil,27345],
 						["R3F_30Rnd_556x45_HK416",nil,545],
@@ -437,6 +449,9 @@ switch(_shop) do
 						["Taser_26","Taser",5500],
 						["26_cartridge",nil,255],
 						
+						["acc_pointer_IR",nil,1250],
+						["optic_ACO_grn_smg","ACO-G MP",4500],
+						["optic_ACO_grn","ACO-G",5000],
 						["A3L_CCO",nil,7500],
 						["A3L_RedDot",nil,7500],
 						["A3L_M4Flashlight",nil,4500],
@@ -476,17 +491,21 @@ switch(_shop) do
 			{
 				["Lieutenant",
 					[
-						["RH_Mk12mod1",nil,37855],
 						["RH_30Rnd_556x45_Mk262",nil,1350],
 						["RH_spr_mbs",nil,4500],
 						["RH_M16A3",nil,34345],
 						["RH_m4",nil,32120],
 						["30Rnd_556x45_Stanag",nil,1175],
 						["A3L_M4A3",nil,32120],
+						["RH_M4A1_ris",nil,31255],
 						["A3L_M4mag",nil,1175],
 						
 						["A3L_MP5",nil,25335],
 						["A3L_MP5mag",nil,500],	
+						
+						["SMG_02_F",nil,23250],
+						["30Rnd_9x21_Mag",nil,385],
+						["muzzle_snds_L",nil,1950],
 						
 						["R3F_HK416M",nil,27345],
 						["R3F_30Rnd_556x45_HK416",nil,545],
@@ -508,6 +527,9 @@ switch(_shop) do
 						["Taser_26","Taser",5500],
 						["26_cartridge",nil,255],
 						
+						["acc_pointer_IR",nil,1250],
+						["optic_ACO_grn_smg","ACO-G MP",4500],
+						["optic_ACO_grn","ACO-G",5000],
 						["A3L_CCO",nil,7500],
 						["A3L_RedDot",nil,7500],
 						["A3L_M4Flashlight",nil,4500],
@@ -558,14 +580,25 @@ switch(_shop) do
 						["RH_m4",nil,32120],
 						["30Rnd_556x45_Stanag",nil,1175],
 						["A3L_M4A3",nil,32120],
+						["RH_M4A1_ris",nil,31255],
 						["A3L_M4mag",nil,1175],
 						
 						["A3L_MP5",nil,25335],
 						["A3L_MP5mag",nil,500],	
 						
+						["SMG_02_F",nil,23250],
+						["30Rnd_9x21_Mag",nil,385],
+						["muzzle_snds_L",nil,1950],
+						
+						["R3F_HK417L",nil,35255],
+						["R3F_HK417M",nil,34255],
+						["R3F_SILENCIEUX_HK417",nil,4500],
+						["R3F_20Rnd_762x51_HK417",nil,585],
+						
 						["R3F_HK416M",nil,27345],
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
+						
 						["A3L_Glock17",nil,12000],
 						["A3L_Glock17mag",nil,730],
 						["RH_kimber",nil,15670],
@@ -580,9 +613,12 @@ switch(_shop) do
 						["Radar_Gun","Radarpistole",1000],
 						["SUPER_flash",nil,7500],
 						
-						["Taser_26","Taser",5500],
-						["26_cartridge",nil,255],
+						["Taser_26","X26 Tazer",5500],
+						["26_cartridge","X26 Spannung",255],
 						
+						["acc_pointer_IR",nil,1250],
+						["optic_ACO_grn_smg","ACO-G MP",4500],
+						["optic_ACO_grn","ACO-G",5000],
 						["A3L_CCO",nil,7500],
 						["A3L_RedDot",nil,7500],
 						["A3L_M4Flashlight",nil,4500],
