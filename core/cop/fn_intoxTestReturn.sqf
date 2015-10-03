@@ -18,7 +18,7 @@ if(_intox > 0.08) then
 
 sleep 12;
 
-if(side _civ == civilian) {
+if(side _civ == civilian) then {
 	if (_intox > 0.20) then 
 	{
 		[[4,format["<t size='1.65' color='#00CD00'>LVPD-Fahndungsliste</t><br/><br/><t size='1.1' align='center'>=<br/>Eine Person wurde zur<br/>Fahndung augeschrieben<br/>=</t><br/><br/><br/><t size='0.95' align='left' color='#79CdCd'>Verbrecher:</t><t size='1.05' align='right'><br/>%1</t><br/><br/><t size='0.95' align='left' color='#79CDCD'>Ausgeschrieben Von:</t><t size='1.05' align='right'><br/>INTOX_TEST_DEVICE</t>",name _civ]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;

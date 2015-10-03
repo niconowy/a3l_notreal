@@ -73,8 +73,8 @@ switch (_code) do
 		};
 	};
 	
-	//Map Key
-	case _mapKey:
+	//Map Key		//NICHT VORHANDEN
+/*	case _mapKey:
 	{
 		switch (playerSide) do 
 		{
@@ -82,7 +82,7 @@ switch (_code) do
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 			case east: {if(!visibleMap) then {[] spawn life_fnc_adacMarkers;}};
 		};
-	};
+	};*/
 
 	//Holster / recall weapon.
 	case 35:
@@ -124,7 +124,7 @@ switch (_code) do
 		};
 		
 		//Rebellfesseln
-		if(_shift && playerSide == civilian && (license_civ_rebel) && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false]) && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "") then
+		if(_shift && playerSide == civilian && (license_civ_rebel) && !lrl_knockedOut&& !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false]) && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "") then
 		{
 			[] call life_fnc_restrainAction;
 		};
@@ -133,7 +133,7 @@ switch (_code) do
 	//C Key
     case 15:
     {    
-		if(!_alt && !_ctrlKey && playerside == civilian && !life_action_inUse) then {
+		if(!_alt && !_ctrlKey && playerside == civilian && !life_action_inUse && !lrl_knockedOut) then {
 			[] call life_fnc_Farmmenu;
 		};
     };
@@ -363,7 +363,7 @@ switch (_code) do
 
 	//Z - Spieler Menü
 	case 21: {
-		if(!_alt && !_ctrlKey && !dialog) then {
+		if(!_alt && !_ctrlKey && !dialog && !life_istazed) then {
 			[] call life_fnc_p_openMenu;
 		};
 	};
@@ -443,7 +443,7 @@ switch (_code) do
 	case 76:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded") && !life_knockout && !life_istazed && !lrl_knockedOut) then
 		{
 			[[player,"cl3_dubstepdance"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 		};
@@ -453,7 +453,7 @@ switch (_code) do
 	case 77:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded") && !life_knockout && !life_istazed && !lrl_knockedOut) then
 		{
 			[[player,"cl3_dubsteppop"],"life_fnc_animSync",nil,false] spawn life_fnc_MP;
 		};
@@ -462,7 +462,7 @@ switch (_code) do
 	case 80:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded") && !life_knockout && !life_istazed && !lrl_knockedOut) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendA";
 		};
@@ -471,7 +471,7 @@ switch (_code) do
 	case 81:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded") && !life_knockout && !life_istazed && !lrl_knockedOut) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisekneeBendB";
 		};
@@ -480,7 +480,7 @@ switch (_code) do
 	case 75:
 	{
 		if(_shift) then {_handled = true;};
-		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded")) then
+		if (_shift && !(player getVariable "restrained") && (vehicle player == player) && !(player getVariable "isblinded") && !life_knockout && !life_istazed && !lrl_knockedOut) then
 		{
 			player playMove "AmovPercMstpSnonWnonDnon_exercisePushup";
 		};

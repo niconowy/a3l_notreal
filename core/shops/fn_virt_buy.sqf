@@ -9,16 +9,8 @@
 private["_type","_price","_amount","_diff","_name","_hideout","_marketprice"];
 
 //Duping Schutz
-if(!lrl_buy) exitWith {titleText["Du kannst nur alle 2 Sekunden etwas kaufen!","PLAIN"]; closeDialog 0;};
-if(lrl_buy) then {
-	lrl_buy = false;
-	[] spawn {
-		titleText["Du kannst nur alle 2 Sekunden etwas kaufen!","PLAIN"];
-		sleep 2;
-		lrl_sell = true;
-	};
-};
-
+if(!lrl_buy) exitWith {titleText["Du kannst nur alle 2 Sekunden etwas kaufen!","PLAIN"];};
+lrl_buy = false;
 if((lbCurSel 2401) == -1) exitWith {hint localize "STR_Shop_Virt_Nothing"};
 _type = lbData[2401,(lbCurSel 2401)];
 _price = lbValue[2401,(lbCurSel 2401)];
@@ -83,5 +75,9 @@ if(([true,_type,_amount] call life_fnc_handleInv)) then
 	[] call life_fnc_virt_update;
 };
 
+[] spawn {
+	sleep 2;
+	lrl_buy = true;
+};
 [0] call SOCK_fnc_updatePartial;
 [3] call SOCK_fnc_updatePartial;
