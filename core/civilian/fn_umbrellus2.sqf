@@ -1,7 +1,7 @@
 /*
 	File: fn_umbrellus.sqf
 	Author: Bryan "Tonic" Boardwine
-	Edit by: James Sunderland
+	Edit by: Variatox Sandrox
 	
 	Description:
 	Starts the umbrella-theme song (hearable for other player)

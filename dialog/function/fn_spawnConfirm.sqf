@@ -42,7 +42,7 @@ if(count life_spawn_point == 0) then
 		[] call A3L_Fnc_HospitalSpawn;
 		};					
 	};
-	titleText[format["%2 %1",_sp select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
+	[_sp select 1] call life_fnc_spawnNotification;
 }
 	else
 {
@@ -74,11 +74,11 @@ if(count life_spawn_point == 0) then
 	{
 		player setPos (getMarkerPos (life_spawn_point select 0));
 	};
-	titleText[format["%2 %1",life_spawn_point select 1,localize "STR_Spawn_Spawned"],"BLACK IN"];
+	[life_spawn_point select 1] call life_fnc_spawnNotification;
 };
 
 if(life_firstSpawn) then {
 	life_firstSpawn = false;
-	[] call life_fnc_welcomeNotification;
+//	[] call life_fnc_welcomeNotification;
 };
 [] call life_fnc_hudSetup;

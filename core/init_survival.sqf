@@ -1,3 +1,12 @@
+/*
+	Author: Bryan "Tonic" Boardwine
+	File: init_survival.sqf
+	
+	Description:
+	Adds all the food 'n drink stuff to the game
+*/
+
+
 [] spawn  {
 	private["_fnc_food","_fnc_water"];
 	_fnc_food = 
@@ -11,7 +20,7 @@
 		switch(life_hunger) do {
 			case 30: {hint localize "STR_NOTF_EatMSG_1";};
 			case 20: {hint localize "STR_NOTF_EatMSG_2";};
-			case 10: {hint localize "STR_NOTF_EatMSG_3";player setFatigue 1;};
+			case 10: {hint localize "STR_NOTF_EatMSG_3"; player setFatigue 1;};
 			};
 		};
 	};
@@ -35,9 +44,9 @@
 	
 	while{true} do
 	{
-		sleep 580;
+		sleep 560;
 		[] call _fnc_water;
-		sleep 210;
+		sleep 200;
 		[] call _fnc_food;
 	};
 };
@@ -90,8 +99,8 @@ private["_obj"];
 			if(life_intox <= 0.02) then {life_intox = 0.00;} else {life_intox = life_intox - 0.02;};
 			[] call life_fnc_hudUpdate;
 			switch(true) do {
-				case (life_intox == 0.00): {hint "Du bist nun nüchtern!";};
-				case (life_intox == 0.08): {hint "Du darfst nun legal ein Fahrzeug bedienen.";};
+				case (life_intox == 0.00): {hint "Du hast nun einen Rauschlevel von 0,0%!";};
+				case (life_intox == 0.08): {hint "Du hast nun einen Rauschlevel von 0,08% und darfst legal ein Fahrzeug bedienen!";};
 			};
 		};
 	};
@@ -128,7 +137,7 @@ private["_obj"];
 		[[0,format["%1 fiel in Ohnmacht.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 15],false] spawn life_fnc_MP;
 		while{life_intox > 0.30} do 
 		{
-			hint "Dein Suchtfaktor ist über 0.30 und du bist überdosiert. Wenn du über 0.40 kommst, stirbst du - eventuell.";
+			hint "Dein Rauschlevel ist über 0,30%. Das ist ein gefährlich hohes Maß!";
 			sleep 60;
 		};
 		detach player;

@@ -7,6 +7,18 @@
 	Sell a virtual item to the store / shop
 */
 private["_type","_index","_price","_var","_amount","_name","_marketprice"];
+
+//Duping Schutz
+if(!lrl_sell) exitWith {titleText["Du kannst nur alle 2 Sekunden etwas verkaufen!","PLAIN"]; closeDialog 0;};
+if(lrl_sell) then {
+	lrl_sell = false;
+	[] spawn {
+		titleText["Du kannst nur alle 2 Sekunden etwas verkaufen!","PLAIN"];
+		sleep 2;
+		lrl_sell = true;
+	};
+};
+
 if((lbCurSel 2402) == -1) exitWith {};
 _type = lbData[2402,(lbCurSel 2402)];
 _index = [_type,__GETC__(sell_array)] call TON_fnc_index;
@@ -29,6 +41,7 @@ if(_amount > (missionNameSpace getVariable _var)) exitWith {hint localize "STR_S
 
 _price = (_price * _amount);
 _name = [_var] call life_fnc_vartostr;
+
 if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
 	hint format[localize "STR_Shop_Virt_SellItem",_amount,_name,[_price] call life_fnc_numberText];
@@ -63,6 +76,11 @@ if(life_shop_type == "heroin") then
 		_array pushBack [getPlayerUID player,profileName,_price];
 		life_shop_npc setVariable["sellers",_array,true];
 	};
+};
+
+[] spawn {
+
+
 };
 
 [0] call SOCK_fnc_updatePartial;

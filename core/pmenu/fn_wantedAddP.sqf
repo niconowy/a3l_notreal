@@ -10,6 +10,6 @@ if(side _unit != civilian) exitWith {hint "Du kannst nur Zivilisten auf die Fahn
 if(_unit == player) exitWith {hint "Du kannst dich nicht selbst auf die Fahndungsliste setzen... geh zum FBI und stelle dich.";};
 if(isNull _unit) exitWith {};
 
-[[1,format["%1 wurde zur Fahndung ausgeschrieben.",_unit getVariable["realname",name _unit],_amount,getPlayerUID _unit]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
+[[4,format["<t size='1.65' color='#00CD00'>LVPD-Fahndungsliste</t><br/><br/><t size='1.1' align='center'>=<br/>Eine Person wurde zur<br/>Fahndung augeschrieben<br/>=</t><br/><br/><br/><t size='0.95' align='left' color='#79CdCd'>Verbrecher:</t><t size='1.05' align='right'><br/>%1</t><br/><br/><t size='0.95' align='left' color='#79CDCD'>Ausgeschrieben Von:</t><t size='1.05' align='right'><br/>%3</t>",_unit getVariable["realname",name _unit],_amount,getPlayerUID _unit,profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP;
 
 [[getPlayerUID _unit,_unit getVariable["realname",name _unit],_amount],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP; 

@@ -25,7 +25,7 @@ _coplevel = if(__GETC__(life_donator) >= 2) then {true} else {false};	// Donator
 
 _interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0}; //46 war 219
 _mapKey = actionKeys "ShowMap" select 0;
-//hint str _code;
+
 _interruptionKeys = [17,30,31,32]; //A,S,W,D
 
 //Dachtaste ' ^° ' und Tactical View und Commander Modus deaktivieren!
@@ -79,8 +79,8 @@ switch (_code) do
 		switch (playerSide) do 
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
-			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers; [] spawn life_fnc_medMarkers;}};
-			case east: {if(!visibleMap) then {[] spawn life_fnc_adacMarkers; [] spawn life_fnc_adacMarker;}};
+			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+			case east: {if(!visibleMap) then {[] spawn life_fnc_adacMarkers;}};
 		};
 	};
 
@@ -143,7 +143,7 @@ switch (_code) do
 	{
 		if(_shift && playerSide in [civilian, west] && !isNull _cursorT && _cursorT isKindOf "Man" && isPlayer _cursorT && alive _cursorT && _cursorT distance player <= 1.9 && _speed < 15) then
 		{
-			if((animationState _cursorT) != "static_dead" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !life_knockout && !(player getVariable["restrained",false]) && !life_istazed && !life_knockout) then
+			if((animationState _cursorT) != "static_dead" && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "" && !(player getVariable["restrained",false]) && !life_istazed && !life_knockout && !lrl_knockedOut) then
 			{
 				[_cursorT] spawn life_fnc_knockoutAction;
 				[player,"knockout"] call life_fnc_globalSound;
@@ -194,6 +194,7 @@ switch (_code) do
 			};
 		};
 	};
+	
 	//L Key?
 	case 38:{
 		if(!_alt && !_ctrlKey && _veh == player) exitWith {true; [] call life_fnc_radar;};
@@ -359,8 +360,7 @@ switch (_code) do
 			};
 		};
 		*/
-	
-	
+
 	//Z - Spieler Menü
 	case 21: {
 		if(!_alt && !_ctrlKey && !dialog) then {
@@ -379,15 +379,6 @@ switch (_code) do
 			[] call life_fnc_p_openMenu;
 		};
 	};*/
-	
-	case 24:
-	{
-		if(_shift && _alt && _ctrlKey && !dialog) then
-		{
-			createdialog "life_admin_menu";
-		};
-
-	};
 
 	//U Key
 	case 22:

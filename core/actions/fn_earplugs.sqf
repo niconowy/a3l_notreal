@@ -1,5 +1,5 @@
 /*
-	Author: James Sunderland
+	Author: VariatoX
 	File: fn_earplugs.sqf
 	
 	Description:
@@ -17,5 +17,5 @@ if(life_earplugs) then {
 } else {
 	life_earplugs = true;
 	hint "Du hast deine Ohrstöpsel hineingesteckt.";
-	3 fadeSound 0.2;
+	3 fadeSound 0.1;
 };

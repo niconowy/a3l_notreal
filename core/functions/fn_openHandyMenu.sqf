@@ -1,6 +1,6 @@
 /*
 	File: fn_openHandyMenu.sqf
-	Author: James Sunderland
+	Author: Variatox Sandrox
 	Server: lakeside-reallife.de
 	
 	Description:

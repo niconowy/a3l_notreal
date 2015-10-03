@@ -468,6 +468,7 @@ class Life_Client_Core
 		class setMapPosition {};
 		class displayHandler {};
 		class spawnConfirm {};
+		class spawnNotification {};
 		class spawnMenu {};
 		class spawnPointCfg {};
 		class spawnPointSelected {};

@@ -6,10 +6,11 @@
 private["_force"];
 
 player setVariable["intoxicated",true,true];
-[[0,format["%1 is trippin balls on Heroin.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 25],false] spawn life_fnc_MP;
+[[0,format["%1 injiziert sich Heroin.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 10],false] spawn life_fnc_MP;
 
-for "_i" from 0 to 200 do
+for "_i" from 0 to 150 do
 {
+	if(!alive player) exitWith {"chromAberration" ppEffectEnable false;}
 	_force = random 15;
 	"chromAberration" ppEffectEnable true;
 	"chromAberration" ppEffectAdjust [_force / 24, _force / 24, false];

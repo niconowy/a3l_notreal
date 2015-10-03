@@ -9,7 +9,7 @@
 private["_smoke"];
 
 player setVariable["intoxicated",true,true];
-[[0,format["%1 raucht einen Joint.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 15],false] spawn life_fnc_MP;
+[[0,format["%1 raucht einen Joint.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 10],false] spawn life_fnc_MP;
 
 //	Rauchgranate entfernt > Client FPS > Abuse
 /*_smoke = "SmokeShellGreen" createVehicle position player;
@@ -30,6 +30,7 @@ enableCamShake true;
 
 for "_i" from 0 to 44 do
 {
+	if(!alive player) exitWith {"chromAberration" ppEffectEnable false; "radialBlur" ppEffectEnable false;resetCamShake;};
     "chromAberration" ppEffectAdjust [random 0.25,random 0.25,true];
     "chromAberration" ppEffectCommit 1;   
     "radialBlur" ppEffectAdjust  [random 0.02,random 0.02,0.15,0.15];
@@ -38,12 +39,8 @@ for "_i" from 0 to 44 do
     sleep 1;
 };
 
-"chromAberration" ppEffectAdjust [0,0,true];
-"chromAberration" ppEffectCommit 5;
-"radialBlur" ppEffectAdjust  [0,0,0,0];
-"radialBlur" ppEffectCommit 5;
-sleep 6;
-
 "chromAberration" ppEffectEnable false;
 "radialBlur" ppEffectEnable false;
 resetCamShake;
+
+if(life_intox <= 0.08) then {player setVariable["intoxicated",false,true];};

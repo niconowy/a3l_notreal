@@ -1,5 +1,5 @@
 author = "Tonic, Itsyuka | Edit by LRL.DE";
-onLoadName = "Lakeside Reallife v2.3.0.7";
+onLoadName = "Lakeside Reallife 3.0.0";
 onLoadMission = "Webseite: http://lakeside-reallife.de/";
 loadScreen = "textures\logo.paa";
 joinUnassigned = 1;
@@ -97,7 +97,7 @@ class CfgSounds
 	class tazersound
 	{
 		name = "Tazersound";
-		sound[] = {"\sounds\tazer.ogg", 0.25, 1};
+		sound[] = {"\sounds\tazer.ogg", 1.0, 1};
 		titles[] = {};
 	};
 
@@ -164,6 +164,12 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	class plop
+	{
+		name = "plop";
+		sound[] = {"sounds\plop.ogg", 0.9, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing

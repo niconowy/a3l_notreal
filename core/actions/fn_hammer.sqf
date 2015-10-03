@@ -1,6 +1,6 @@
 /*
 	File: fn_hammer.sqf
-	Author: James Sunderland
+	Author: Variatox Sandrox
 	
 	Description:
 	Die drei verschiedenen Hammer-Schlageffekte des Richterhammers abspielen.
