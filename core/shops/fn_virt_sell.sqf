@@ -9,7 +9,7 @@
 private["_type","_index","_price","_var","_amount","_name","_marketprice"];
 
 //Duping Schutz
-if(!lrl_sell) exitWith {titleText["Du kannst nur alle 2 Sekunden etwas verkaufen!","PLAIN"];};
+if(!lrl_sell) exitWith {titleText["Du kannst nur jede Sekunde etwas verkaufen!","PLAIN"];};
 lrl_sell = false;
 
 if((lbCurSel 2402) == -1) exitWith {};
@@ -72,7 +72,7 @@ if(life_shop_type == "heroin") then
 };
 
 [] spawn {
-	sleep 2;
+	sleep 1;
 	lrl_sell = true;
 };
 
