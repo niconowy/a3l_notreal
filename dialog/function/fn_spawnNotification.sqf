@@ -10,6 +10,8 @@
 private["_location","_AField","_JVA","_LDiablos","_LSCGericht",
 "_LSCity","_MTown","_RAField","_RBHof","_RPost","_SCristobal"];
 
+titleText ["Ts3 Channel Checked. Willkommen!","BLACK IN"];
+
 _location = _this select 0;
 
 _LSCity = "Lakeside City";
