@@ -56,6 +56,7 @@ switch(__GETC__(life_coplevel)) do
 };
 
 player setVariable["rank",(__GETC__(life_coplevel)),true];
+player setVariable ["copLevel",1,true];
 [] call life_fnc_spawnMenu;
 [] execVM "core\initJVM.sqf";
 waitUntil{!isNull (findDisplay 38500)}; //Wait for the spawn selection to be open.
