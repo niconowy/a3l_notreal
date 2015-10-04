@@ -26,7 +26,7 @@ switch(_type) do
 		{
 			if(alive _x && _x != player) then
 			{
-				_cPlayerList lbAdd format["%1 (%2)",_x getVariable["realname", name _x]];
+				_cPlayerList lbAdd format["%1",_x getVariable["realname", name _x]];
 				_cPlayerList lbSetData [(lbSize _cPlayerList)-1,str(_x)];
 			};
 			lbSort [_cPlayerList,"ASC"]; //Sortiert die Kontaktliste nach dem Alphabet

@@ -30,7 +30,7 @@ switch(_shop) do
 				["Praktikant",
 					[
 						["cse_bandage_basic",nil,50],
-						["cse_packing_bandage",nil,200],
+						["cse_packing_bandage",nil,200]
 					//	["cse_bandageElastic",nil,50]
 					]
 				];
@@ -144,10 +144,11 @@ switch(_shop) do
 						["cse_personal_aid_kit",nil,500],
 						["cse_surgical_kit",nil,500]
 					]
-				]
+				];
 			};			
 		};
 	};
+	
 	case "med_basic":
 	{
 		switch (true) do

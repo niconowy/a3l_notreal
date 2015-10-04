@@ -10,7 +10,7 @@ player setVariable["intoxicated",true,true];
 
 for "_i" from 0 to 150 do
 {
-	if(!alive player) exitWith {"chromAberration" ppEffectEnable false;}
+	if(!alive player) exitWith {"chromAberration" ppEffectEnable false;};
 	_force = random 15;
 	"chromAberration" ppEffectEnable true;
 	"chromAberration" ppEffectAdjust [_force / 24, _force / 24, false];
