@@ -29,8 +29,8 @@ switch(_shop) do
 			{
 				["Praktikant",
 					[
-						["cse_bandage_basic",nil,75],
-						["cse_packing_bandage",nil,1500]
+						["cse_bandage_basic",nil,50],
+						["cse_packing_bandage",nil,200],
 					//	["cse_bandageElastic",nil,50]
 					]
 				];
@@ -40,9 +40,9 @@ switch(_shop) do
 			{
 				["Sanitäter",
 					[
-						["cse_bandage_basic",nil,75],
-						["cse_packing_bandage",nil,1500],
-						["cse_quikclot",nil,200],
+						["cse_bandage_basic",nil,50],
+						["cse_packing_bandage",nil,200],
+					//	["cse_quikclot",nil,200],
 					//	["cse_bandageElastic",nil,50],
 					//	["cse_tourniquet",nil,50],
 					//	["cse_splint",nil,50], Unnötig gibt keine Knochenbrüche zZ.
@@ -57,18 +57,18 @@ switch(_shop) do
 			{
 				["Rettungsassistent",
 					[
-						["cse_bandage_basic",nil,75],
-						["cse_packing_bandage",nil,1500],
-						["cse_quikclot",nil,200],
+						["cse_bandage_basic",nil,50],
+						["cse_packing_bandage",nil,200],
+					//	["cse_quikclot",nil,200],
 					//	["cse_bandageElastic",nil,50],
 						["cse_saline_iv",nil,250],
 					//	["cse_saline_iv_250",nil,50],
-						["cse_saline_iv_500",nil,150],
-						["cse_plasma_iv",nil,250],
 					//	["cse_plasma_iv_250",nil,50],
+						["cse_plasma_iv",nil,250],
 						["cse_plasma_iv_500",nil,150],
 					//	["cse_blood_iv_250",nil,50],
-						["cse_blood_iv_500",nil,500],
+						["cse_blood_iv",nil,250],
+						["cse_blood_iv_500",nil,150],
 					//	["cse_tourniquet",nil,50],
 						//["cse_splint",nil,50],
 						["cse_morphine",nil,100],
@@ -85,18 +85,20 @@ switch(_shop) do
 			{
 				["Arzt",
 					[
-						["cse_bandage_basic",nil,75],
-						["cse_packing_bandage",nil,1500],
-						["cse_quikclot",nil,200],
+						["cse_bandage_basic",nil,50],
+						["cse_packing_bandage",nil,200],
+					//	["cse_quikclot",nil,200],
 					//	["cse_bandageElastic",nil,50],
 						["cse_saline_iv",nil,250],
 					//	["cse_saline_iv_250",nil,50],
 						["cse_saline_iv_500",nil,150],
 						["cse_plasma_iv",nil,250],
 					//	["cse_plasma_iv_250",nil,50],
+						["cse_plasma_iv",nil,250],
 						["cse_plasma_iv_500",nil,150],
 					//	["cse_blood_iv_250",nil,50],
-						["cse_blood_iv_500",nil,500],
+						["cse_blood_iv",nil,250],
+						["cse_blood_iv_500",nil,150],
 					//	["cse_tourniquet",nil,50],
 						//["cse_splint",nil,50],
 						["cse_morphine",nil,100],
@@ -117,8 +119,8 @@ switch(_shop) do
 						//["FirstAidKit",nil,500],
 						//["Medikit",nil,1000],
 						
-						["cse_bandage_basic",nil,75],
-						["cse_packing_bandage",nil,1500],
+						["cse_bandage_basic",nil,50],
+						["cse_packing_bandage",nil,200],
 					//	["cse_bandageElastic",nil,50],
 					//	["cse_tourniquet",nil,50],
 						//["cse_splint",nil,50],
@@ -128,13 +130,13 @@ switch(_shop) do
 						["cse_plasma_iv",nil,250],
 						["cse_plasma_iv_500",nil,150],
 					//	["cse_plasma_iv_250",nil,50],
-						["cse_blood_iv",nil,1000],
-						["cse_blood_iv_500",nil,500],
+						["cse_blood_iv",nil,500],
+						["cse_blood_iv_500",nil,250],
 					//	["cse_blood_iv_250",nil,50],
 						["cse_saline_iv",nil,250],
 						["cse_saline_iv_500",nil,150],
 					//	["cse_saline_iv_250",nil,50],
-						["cse_quikclot",nil,200],
+					//	["cse_quikclot",nil,200],
 						["cse_nasopharyngeal_tube",nil,500],
 						//["cse_opa",nil,50],
 						//["cse_liquidSkin",nil,50],
@@ -143,43 +145,7 @@ switch(_shop) do
 						["cse_surgical_kit",nil,500]
 					]
 				]
-			};
-			
-			/* case (__GETC__(life_mediclevel) == 6):
-			{
-				["Chefarzt",
-					[
-						//["FirstAidKit",nil,500],
-						//["Medikit",nil,1000],
-						
-						["cse_bandage_basic",nil,50],
-						["cse_packing_bandage",nil,50],
-						["cse_tourniquet",nil,50],
-						//["cse_splint",nil,50],
-						["cse_morphine",nil,50],
-						["cse_atropine",nil,50],
-						["cse_epinephrine",nil,50],
-						["cse_plasma_iv",nil,50],
-						["cse_plasma_iv_500",nil,50],
-						["cse_plasma_iv_250",nil,50],
-						["cse_blood_iv",nil,50],
-						["cse_blood_iv_500",nil,50],
-						["cse_blood_iv_250",nil,50],
-						["cse_saline_iv",nil,50],
-						["cse_saline_iv_500",nil,50],
-						["cse_saline_iv_250",nil,50],
-						["cse_quikclot",nil,50],
-						["cse_nasopharyngeal_tube",nil,50],
-						//["cse_opa",nil,50],
-						["cse_bandageElastic",nil,50],
-						//["cse_liquidSkin",nil,50],
-						//["cse_chestseal",nil,50],
-						["cse_personal_aid_kit",nil,50],
-						["cse_surgical_kit",nil,50]
-					]
-				]
-			}; */
-			
+			};			
 		};
 	};
 	case "med_basic":
@@ -190,17 +156,17 @@ switch(_shop) do
 			case (__GETC__(life_mediclevel) == 1): {
 				["EMS Praktika",
 					[
-						["A3L_Extinguisher","Feuerlöscher",350],
+						["TRYK_headset2","Headset Groß (Nightvision)",2500],
+						["TRYK_Headset_NV","Headset Klein (Nightvision)",2500],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
+						
+						["ToolKit",nil,3500],
 						
 						["ItemMap",nil,10],
 						["ItemWatch",nil,20],
 						["ItemCompass",nil,30],
 						["ItemGPS",nil,250],
-						["Binocular",nil,1250],
-						["TRYK_headset2","Headset Groß (Nightvision)",2500],
-						["TRYK_Headset_NV","Headset Klein (Nightvision)",2500],
-						["ToolKit",nil,3500],
-						["tf_anprc148jem_13","Kurzstreckenfunk",100]
+						["Binocular",nil,1250]
 					]
 				];
 			};
@@ -208,18 +174,21 @@ switch(_shop) do
 			default {
 				["EMS Grundware",
 					[
-						["A3L_Extinguisher","Feuerlöscher",350],
+						["A3L_Extinguisher","Feuerlöscher",300],
+						["30Rnd_test_mag_Tracer","Löschschaum",5000],
+						["acc_flashlight","Taschenlampe",100],
+						
+						["TRYK_headset2","Headset Groß (Nightvision)",2500],
+						["TRYK_Headset_NV","Headset Klein (Nightvision)",2500],
+						["ToolKit",nil,3500],
+						["tf_anprc148jem_13","Kurzstreckenfunk",100],
+						["tf_anprc155","Langstreckenfunk",1000],
 						
 						["ItemMap",nil,10],
 						["ItemWatch",nil,20],
 						["ItemCompass",nil,30],
 						["ItemGPS",nil,250],
-						["Binocular",nil,1250],
-						["TRYK_headset2","Headset Groß (Nightvision)",2500],
-						["TRYK_Headset_NV","Headset Klein (Nightvision)",2500],
-						["ToolKit",nil,3500],
-						["tf_anprc148jem_13","Kurzstreckenfunk",100],
-						["tf_anprc155","Langstreckenfunk",1000]
+						["Binocular",nil,1250]
 					]
 				];
 			};
@@ -284,7 +253,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1425]
+						["cse_bandage_basic",nil,1750]
 					]
 				];
 			};
@@ -327,7 +296,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1425]
+						["cse_bandage_basic",nil,1750]
 					]
 				];
 			};
@@ -403,7 +372,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1425]
+						["cse_bandage_basic",nil,1750]
 					
 					]
 				];
@@ -481,7 +450,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1425]
+						["cse_bandage_basic",nil,1750]
 					
 					]
 				];
@@ -559,7 +528,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1425]
+						["cse_bandage_basic",nil,1750]
 					
 					]
 				];
@@ -645,7 +614,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
-						["cse_bandage_basic",nil,1425]
+						["cse_bandage_basic",nil,1750]
 					]
 				];
 			};
@@ -715,7 +684,7 @@ switch(_shop) do
 				//CSE ZEUGES
 						["cse_epinephrine",nil,50000],
 						["cse_morphine",nil,50000],
-						["cse_bandage_basic",nil,1425],
+						["cse_bandage_basic",nil,2000],
 				//STANDARD SACHEN, REPKITS, NAVIGATION
 						["ItemMap",nil,30],
 						["ItemWatch",nil,40],

@@ -19,22 +19,22 @@ switch (_filter) do
 	{
 		[
 		
-			["EMTRM_uni",nil,1000],
+			["EMTRM_uni","Praktikant",750],
 			//["A3L_EMT1",nil,1000],
-			["A3L_Sani",nil,1000],
-			["A3L_Retass",nil,1000],
-			["A3L_Notarzt",nil,1000],
-			["A3L_Oberarzt",nil,1000],
-			["A3L_Chefarzt",nil,1000],
+			["A3L_Sani","Sanitöter",750],
+			["A3L_Retass","Rettungsassistent",750],
+			["A3L_Notarzt","Arzt",750],
+			["A3L_Oberarzt","Oberarzt",750],
+			["A3L_Chefarzt","Chefarzt",750],
 			//["A3L_EMT2",nil,1000],
-			["fire_uni2",nil,1000],
-			["fire_uni1",nil,1000],
-			["emsoff_uni",nil,1000],
+			["fire_uni2","PSA-Feuerwehr (orange)",750],
+			["fire_uni1","PSA-Feuerwehr (black)",750],
+			["emsoff_uni","LS-EMS Poloshirt",500],
 			//["emt_Uni1",nil, 1000],
-			["emt_Uni3",nil, 1000],
-			["U_O_Wetsuit",nil,1000],
-			["A3L_MotorUniM",nil,1000],
-			["U_CivilianCoat_A","Arztkittel",1000]
+			["emt_Uni3","LS-EMS-Dienstkleidung (rot)",750],
+			["U_O_Wetsuit","Taucheranzug",750],
+			["A3L_MotorUniM","LS-EMS Motorradkleidung",750],
+			["U_CivilianCoat_A","Arztkittel",500]
 		
 		];
 	};
@@ -43,16 +43,16 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["do_medcap","Medic Mütze",15],
-			["firehat",nil,20],
-			["A3L_medic_helmet",nil,20],
-			["H_MilCap_blue",nil,20],
-			["H_PilotHelmetHeli_B",nil,20],
-			["H_Cap_blu",nil,20],
-			["H_Cap_red",nil,20],
-			["H_RacingHelmet_1_red_F",nil,250],
-			["H_ALFR_Headset",nil,250],
-			["H_ALFR_Gasmask",nil,500]
+			["do_medcap","Paramedic Mütze (marineblau)",15],
+			["firehat","Feuerwehr Einsatzhelm",20],
+			["A3L_medic_helmet","Feuerwehr Kopfschutz",20],
+			["H_Cap_blu","Blaue Mütze",15],
+			["H_Cap_red","Rote Mütze",15],
+			["H_Beret_A","Rotes Beret",15],
+			["H_MilCap_blue","Blaue Funkmütze",15],
+			["H_PilotHelmetHeli_B","Pilotenhelm",250],
+			["H_RacingHelmet_1_red_F","Motorradhelm",50],
+			["H_ALFR_Headset","Headset",250]
 		];
 	};
 	
@@ -60,7 +60,8 @@ switch (_filter) do
 	case 2:
 	{
 		[
-			["Masque_Chirurgical","OP Maske",15],
+			["Masque_Chirurgical","Mundschutz",15],
+			["Mask_M40","Gasmaske",25],
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],
@@ -98,9 +99,10 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_BandollierB_blk",nil,1000],
+			["V_BandollierB_blk",nil,750],
 			["V_Rangemaster_belt",nil,250],
-			["V_RebreatherB",nil,5000]
+			["TRYK_V_ArmorVest_Winter","Einsatzleiter Weste",250],
+			["V_RebreatherB","Tauchgerät",2500]
 		];
 	};
 	
