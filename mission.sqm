@@ -3637,8 +3637,8 @@ class Mission
 		};
 		class Item12
 		{
-			position[]={2802.8123,164.53384,2695.3726};
-			azimut=501.60736;
+			position[]={2819.0437,164.35526,2718.5593};
+			azimut=540.8349;
 			id=162;
 			side="EMPTY";
 			vehicle="Land_Atm_02_F";
@@ -6861,7 +6861,7 @@ class Mission
 		};
 		class Item103
 		{
-			position[]={2783.6511,164.87878,2702.2007};
+			position[]={2786.1831,164.8195,2701.7449};
 			name="Rebelop_2";
 			text="Rebellen Posten";
 			type="A3L_Business_Icon";
@@ -7157,11 +7157,11 @@ class Mission
 		};
 		class Item140
 		{
-			position[]={2802.8293,164.5341,2695.3604};
+			position[]={2819.032,164.35544,2718.6526};
 			name="atm_marker_2_9";
 			type="A3L_ATM_Icon";
 			colorName="ColorGreen";
-			angle=358.72174;
+			angle=357.13272;
 		};
 		class Item141
 		{
@@ -7713,10 +7713,10 @@ class Mission
 		};
 		class Item213
 		{
-			position[]={2800.0518,164.49814,2698.1582};
+			position[]={2818.7195,164.35132,2710.1958};
 			name="reb_spawn_2";
 			type="Empty";
-			angle=-333.86099;
+			angle=-182.04337;
 		};
 		class Item214
 		{
