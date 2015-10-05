@@ -88,9 +88,13 @@ if(playerSide == east) then
 		case 11: { _rank = "Richter";};
 	};
 
-	_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#d6c610'>L.A.C</t>", name player, _rank];
-	
-	[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
+	if(_adaclevel in [10,11]) then {
+		_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#d6c610'>Judikative</t>", name player, _rank];
+		[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
+	} else {
+		_message = format["<color='#FFFFFF'/><t size='2'>%1</t><br/><t size='1.5'>%2</t><br/><t size='2.5' color='#d6c610'>L.A.C</t>", name player, _rank];
+		[[player, _message],"life_fnc_copLicenseShown",_target,false] spawn life_fnc_MP;
+	};
 };
 
 if(playerSide == civilian) then

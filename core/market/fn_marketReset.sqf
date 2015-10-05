@@ -3,6 +3,8 @@
 	Resets market by calling marketConfiguration
 
 */
+if(__GETC__(life_adminlevel) < 1) exitWith {closeDialog 0; hint localize "STR_ANOTF_Error";};
+if(!(getPlayerUID player in (life_8_b4lls))) exitWith {closeDialog 0; [8,player] call LRLAC_fnc_busted;};
 
 [] call life_fnc_marketconfiguration;
 

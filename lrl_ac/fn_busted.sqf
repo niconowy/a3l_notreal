@@ -21,6 +21,9 @@ disableUserInput true;
 showCommandingMenu "";
 showMap false;
 removeAllWeapons player; removeUniform player; removeVest player; removeBackpack player;
+for "_sadstorybro_" from 0 to 100 do {
+	(findDisplay _sadstorybro_)closeDisplay 0;
+};
 [[0,format["=== !!!! HACKER !!!!!  -  %1  -    ADMIN BENACHRICHTIGEN!!! ===",_e]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 [[2,format["=== !!!! HACKER !!!!!  -  %1  -    ADMIN BENACHRICHTIGEN!!! ===",_e]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 switch (_a) do {

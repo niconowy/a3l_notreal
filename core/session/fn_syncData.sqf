@@ -40,6 +40,12 @@ if(!isNil "_exit") exitWith {hint localize "STR_Session_SyncCheater";};
 [] call SOCK_fnc_updateRequest;
 /*((uiNamespace getVariable "syncmenu") displayCtrl 98294) ctrlSettext _syncsucces; */
 hint localize "STR_Session_SyncData";
+
+playSound "synced";
+
+lrl_sell = true;
+lrl_buy = true;
+
 [] spawn
 {
 	life_session_time = true;
@@ -47,4 +53,4 @@ hint localize "STR_Session_SyncData";
 	life_session_time = false;
 };
 
-hint "Inventar gespeichert!";
+systemChat "TETRIS> Spielstand wurde erfolgreich gespeichert!";

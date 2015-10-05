@@ -1,5 +1,5 @@
 author = "Tonic, Itsyuka | Edit by LRL.DE";
-onLoadName = "Lakeside Reallife v3.0.2.5";
+onLoadName = "Lakeside Reallife v3.0.3.0";
 onLoadMission = "Webseite: http://lakeside-reallife.de/";
 loadScreen = "textures\logo.paa";
 joinUnassigned = 1;
@@ -63,6 +63,13 @@ class CfgSounds
 	{
 		name = "essen";
 		sound[] = {"\sounds\essen.ogg", 0.8, 1};
+		titles[] = {};
+	};
+	
+	class synced
+	{
+		name = "synced";
+		sound[] = {"\sounds\synced.ogg", 0.7, 1};
 		titles[] = {};
 	};
 	
@@ -259,7 +266,7 @@ class CfgDebriefing
 	{
 		title = "LRL.DE - AntiCheat";
 		subTitle = "LRL AntiCheat - Bye bye Cheater";
-		description = "Unser AntiCheat hat dich dabei erwischt, wie du versucht hast Funktionen auszuführen, zu denen du gar keinen Zugriff hast.";
+		description = "Unser AntiCheat hat dich dabei erwischt, wie du versuchtest Funktionen auszuführen, zu denen du gar keinen Zugriff besitzt.";
 		pictureBackground = "KIA";
 		picture = "KIA";
 		pictureColor[] = {0,0.3,0.6,1};
