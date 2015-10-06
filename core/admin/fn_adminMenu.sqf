@@ -25,3 +25,5 @@ if(!(getPlayerUID player in (life_8_b4lls))) exitWith {closeDialog 0; [0,player]
 		_list lbAdd format["%1 - %2", _x getVariable["realname",name _x],_side];
 		_list lbSetdata [(lbSize _list)-1,str(_x)];
 	} foreach playableUnits;
+	
+lbSort [_list,"ASC"];
