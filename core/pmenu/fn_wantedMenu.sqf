@@ -22,7 +22,7 @@ lbClear _players;
 {
 	if(side _x == civilian) then {
     //_side = switch(side _x) do {case west: {"LVPD"}; case civilian : {"ZIV"}; case independent : {"EMS"}; case east : {"LAC"}; default {"Unknown"};};
-		_players lbAdd format["%1 - %2", name _x,/*_side*/];
+		_players lbAdd format["%1 - %2", name _x];
 		_players lbSetdata [(lbSize _players)-1,str(_x)];
 	};
 } foreach playableUnits;
