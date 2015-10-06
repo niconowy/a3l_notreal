@@ -39,7 +39,8 @@ if(!isNil "_exit") exitWith {hint localize "STR_Session_SyncCheater";};
 
 [] call SOCK_fnc_updateRequest;
 /*((uiNamespace getVariable "syncmenu") displayCtrl 98294) ctrlSettext _syncsucces; */
-hint localize "STR_Session_SyncData";
+//hint localize "STR_Session_SyncData";
+systemChat "TETRIS> Spielstand wurde erfolgreich gespeichert!";
 
 playSound "synced";
 
@@ -52,5 +53,3 @@ lrl_buy = true;
 	sleep (5 * 60);
 	life_session_time = false;
 };
-
-systemChat "TETRIS> Spielstand wurde erfolgreich gespeichert!";
