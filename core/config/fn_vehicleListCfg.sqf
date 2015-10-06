@@ -494,7 +494,6 @@ switch (_shop) do
 			["cl3_dodge_charger_f_purple",110000],
 			["cl3_dodge_charger_f_blue",110000],
 			["cl3_dodge_charger_f_lime",110000],
-			["cl3_dodge_charger_f_yellow",110000],
 			["cl3_dodge_charger_f_grey",110000],
 			["cl3_dodge_charger_f_black",110000],
 			["cl3_dodge_charger_f_darkgreen",110000],
@@ -629,12 +628,13 @@ switch (_shop) do
 		_return =
 		[
 			["C_Offroad_01_F",10000],
-			["A3L_Towtruck",35000],
-			["A3L_CVLac",45000],
+			["A3l_evoxADAC",45000],
+			["A3L_Towtruck",5000],
+			["A3L_CVLac",25000],
+			["cl3_dodge_charger_f_yellow",45000],
 			["B_Heli_Light_01_F",100000],
-			["EC635_ADAC",150000],
-			["A3L_TaurusWhite",35000],
-			["A3l_evoxADAC",70000]
+			["EC635_ADAC",100000],
+			["A3L_TaurusWhite",28000]
 			//["I_Heli_Transport_02_F",100000] Unnötig kein Liftsystem
 		];
 	};
@@ -1512,22 +1512,34 @@ switch (_shop) do
 			["cl3_civic_vti_gold",15750],
 			["cl3_civic_vti_black",15750],
 			
-			["Mrshounka_hummer_civ_noir",325000],
-			["Mrshounka_hummer_civ_bleufonce",325000],
-			["Mrshounka_hummer_civ_rouge",325000],
-			["Mrshounka_hummer_civ_jaune",325000],
-			["Mrshounka_hummer_civ_rose",325000],
+			["Mrshounka_hummer_civ_noir",125000],
+			["Mrshounka_hummer_civ_bleufonce",125000],
+			["Mrshounka_hummer_civ_rouge",125000],
+			["Mrshounka_hummer_civ_jaune",125000],
+			["Mrshounka_hummer_civ_rose",125000],
 			
-			["Mrshounka_mustang_mat",252620],
-			["Mrshounka_mustang_noir",252620],
-			["Mrshounka_mustang_mat_n",252620],
-			["Mrshounka_mustang_bleufonce",252620],
-			["Mrshounka_mustang_mat_b",252620],
+			["Mrshounka_mustang_mat",92620],
+			["Mrshounka_mustang_noir",92620],
+			["Mrshounka_mustang_mat_n",92620],
+			["Mrshounka_mustang_bleufonce",92620],
+			["Mrshounka_mustang_mat_b",92620],
 			
-			["Mrshounka_veneno_c_bleu",684230],
-			["Mrshounka_veneno_c_jaune",684230],
-			["Mrshounka_veneno_c_grau",684230],
-			["Mrshounka_veneno_c_rot",684230],
+			["Mrshounka_veneno_c_bleu",184230],
+			["Mrshounka_veneno_c_jaune",184230],
+			["Mrshounka_veneno_c_grau",184230],
+			["Mrshounka_veneno_c_rot",184230],
+			
+			["AM_2015C_Green",95000],
+			["AM_2015C_Red",95000],
+			["AM_2015C_Grey",95000],
+			["AM_2015C_Orange",95000],
+			
+			["cl3_carrera_gt_light_blue",100000],
+			["cl3_carrera_gt_grey",100000],
+			["cl3_carrera_gt_gold",100000],
+			["cl3_carrera_gt_burgundy",100000],
+			["cl3_carrera_gt_black",100000],
+			["wirk_cayenne",300000],
 			
 			["A3L_PuntoRed",39350],
 			["A3L_PuntoBlack",39350],

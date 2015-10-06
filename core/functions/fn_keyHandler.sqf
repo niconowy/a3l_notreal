@@ -299,7 +299,7 @@ switch (_code) do
 			if(vehicle player != player && !life_siren_active &&((driver vehicle player) == player)) then {
 				[] spawn {
 					life_siren_active = true;
-					sleep 4.7;
+					sleep 5.025;
 					life_siren_active = false;
 				};
 					_veh = vehicle player;
