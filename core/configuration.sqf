@@ -234,6 +234,7 @@ life_inv_items =
 	"life_inv_laminat",
 	"life_inv_holz",
 	"life_inv_presseformular",
+	"life_inv_taxischeinformular",
 	"life_inv_nothammer"
 ];
 

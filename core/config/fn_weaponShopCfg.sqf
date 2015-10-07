@@ -212,12 +212,13 @@ switch(_shop) do
 						["Binocular",nil,1250],
 						["TRYK_G_Shades_Black_NV","Brille Schwarz (Nightvision)",2500],
 						["TRYK_G_Shades_Blue_NV","Brille Blau (Nightvision)",2500],
-						["A3lspanner","Reparaturschlüssel",5500],
+						["A3lspanner","Reparaturschlüssel",1200],
 						["A3l_spanner",nil,1200],
 						//["FirstAidKit",nil,1500],
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
-						["cse_bandage_basic",nil,1300]
+						["cse_bandage_basic",nil,200],
+						["cse_packing_bandage",nil,500]
 					]
 				];
 			};

@@ -76,6 +76,7 @@ switch (_filter) do
 		_ret pushBack ["H_RacingHelmet_1_black_F","Motorradhelm",250];
 		_ret pushBack ["do_sheriffhut","Sheriff Hut",350];
 		_ret pushBack ["AM_PatrolHat","LVPD Hut",350];
+		_ret pushBack ["H_Beret_C","Beret (blau)",125];
 	};
 	
 	//Glasses

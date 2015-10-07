@@ -108,6 +108,13 @@ switch(_type) do
 		} else {
 			ctrlShow[888829,true];
 		};
+		
+	//LAC-Rundfunk Button
+		if(playerSide != east) then {
+			ctrlShow[888830,false];	
+		} else {
+			ctrlShow[888830,true];
+		};
 	};
 	//adminMsgAll
 	case 7:
@@ -118,6 +125,7 @@ switch(_type) do
 		hint format["Admin-Rundruf An Alle: %1",_msg];
 		closeDialog 887890;
 	};
+
 	//LAC
 	case 8:
 	{
@@ -147,6 +155,16 @@ switch(_type) do
 		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
 		[[ObjNull,_msg,player,8],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
 		hint format["EMS-Rundmail: %1",_msg];
+		closeDialog 887890;
+	};
+	
+	//lac rundfunk
+	case 11: {
+		if(playerSide in [west, independent, civilian]) exitWith {hint "Du bist kein LAC Beamter!"};
+		if(__GETC__(life_adaclevel) < 6) exitWith {hint "Du musst mindestens den Rang LAC-Ausbilder erreicht haben!"};
+		if(_msg == "") exitWith {hint localize "STR_SMARTPHONE_MissingMessage";};
+		[[ObjNull,_msg,player,9],"TON_fnc_handleMessages",false] spawn life_fnc_MP;
+		hint format["LAC-Rundmail: %1",_msg];
 		closeDialog 887890;
 	};
 };

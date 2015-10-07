@@ -36,8 +36,24 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["H_PilotHelmetFighter_B","Pilotenhelm",150],
-			["H_RacingHelmet_1_black_F","Motorradhelm",250]
+			["H_PilotHelmetHeli_O","Pilotenhelm",150],
+			["H_RacingHelmet_1_black_F","Motorradhelm",250],
+			["Kio_Afro_Hat","Afro",500],
+			["ALE_H_NewEra_Black",nil,1250],
+			["ALE_H_NewEra_Cyan",nil,1250],
+			["ALE_H_NewEra_Superman",nil,1250],
+			["ALE_H_NewEra_Monster",nil,1250],
+			["ALE_H_Cowboy_Brown",nil,1250],
+			["ALE_H_Cowboy_Black",nil,1250],
+			["ALE_H_Cowboy_White",nil,1250],
+			["ALE_H_NewEra_Lakers",nil,1250],
+			["ALE_H_NewEra_Redsox",nil,1250],
+			["H_ALFR_Headset",nil,250],
+			["H_Hat_Boonie_Cowboy","Cowboy Hut",1350],
+			["H_Beret_blk","Beret (black)",1350],
+			["A3L_longhairblack","Haar Schwarz",120],
+			["A3L_longhairblond","Haar Blond",120],
+			["A3L_longhairbrown","Haar Braun",120]
 		];
 	};
 	
@@ -45,6 +61,7 @@ switch (_filter) do
 	case 2:
 	{
 		[
+			["G_O_Diving",nil,100],
 			["G_Combat",nil,175],
 			["G_Shades_Black",nil,250],
 			["G_Shades_Blue",nil,200],
@@ -75,7 +92,9 @@ switch (_filter) do
 	case 3:
 	{
 		[
-			["V_RebreatherB","Tauchgerät",5000]
+			["V_RebreatherB","Tauchgerät",5000],
+			["SWATvest2","Unsichtbare Weste",1500],
+			["V_HarnessOGL_gry","Unsichtbare Weste",1000]
 		];
 	};
 	

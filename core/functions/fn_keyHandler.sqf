@@ -156,9 +156,9 @@ switch (_code) do
 	{
 		if(!_alt && !_ctrlKey && _shift) then
 		{
-			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "static_dead" && !life_istazed) then
+			if (vehicle player == player && !(player getVariable "restrained") && (animationState player) != "static_dead" && !life_istazed && !life_knockout && !lrl_knockedOut) then
 			{
-				if (player getVariable ["surrender", false]) then
+				if (!(player getVariable "surrender")) then
 				{
 					player setVariable ["surrender", false, true];
 				} 
@@ -181,14 +181,17 @@ switch (_code) do
 				{
 					[vehicle player] call life_fnc_openInventory;
 				};
-			}
-				else
-			{
-				if((_cursorT isKindOf "Car" OR _cursorT isKindOf "Air" OR _cursorT isKindOf "Ship" OR _cursorT isKindOf "House_F") && player distance _cursorT < 5 && vehicle player == player && alive _cursorT) then
-				{
-					if(_cursorT in life_vehicles OR {!(_cursorT getVariable ["locked",true])}) then
-					{
-						[_cursorT] call life_fnc_openInventory;
+			} else {
+				if((_cursorT isKindOf "Car" OR _cursorT isKindOf "Air" OR _cursorT isKindOf "Ship" OR _cursorT isKindOf "A3L_Tahoe_Base" OR _cursorT isKindOf "Motorcycle" OR _cursorT isKindOf "House_F") && player distance _cursorT < 5 && vehicle player == player && alive _cursorT) then {
+					if(!life_tazed && !life_knockout && !lrl_knockedOut && !(player getVariable "restrained")) then {
+						if((count (player nearObjects["Man",7]) <= 1)) then {
+							if(_cursorT in life_vehicles OR {!(_cursorT getVariable ["locked",true])}) then {
+								[_cursorT] call life_fnc_openInventory;
+							} else {
+							//Farm Bug Temp-Fix (TRUNK DUPING)
+								hint "Du kannst nicht auf den Kofferraum zugreifen, während eine Person bei dir im Umkreis (7 Meter) ist!";
+							};
+						};
 					};
 				};
 			};

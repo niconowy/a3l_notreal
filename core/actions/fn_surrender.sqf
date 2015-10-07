@@ -13,6 +13,16 @@ while { player getVariable ["surrender", false] }  do {
 	if (!alive player) then {
 		player setVariable ["surrender", false, true];
 	};
+	
+	if (!life_istazed && !life_knockout && !lrl_knockedOut) then {
+		player setVariable ["surrender", false, true];
+	};
+	
+	if (player getVariable "restrained") then {
+		player setVariable ["surrender", false, true];
+	};
 };
 
+//Safety Var Change
+player setVariable ["surrender", false, true];
 player playMoveNow "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon"; //Animation out

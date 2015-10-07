@@ -51,8 +51,8 @@ switch(__GETC__(life_coplevel)) do
 	case 7: {life_paycheck = life_paycheck + 3000;};
 	case 8: {life_paycheck = life_paycheck + 3000;};
 	case 9: {life_paycheck = life_paycheck + 3000;};
-	case 10: {life_paycheck = life_paycheck + 4000;};
-	case 11: {life_paycheck = life_paycheck + 5000;};
+	case 10: {life_paycheck = life_paycheck + 3500;};
+	case 11: {life_paycheck = life_paycheck + 3750;};
 };
 
 player setVariable["rank",(__GETC__(life_coplevel)),true];

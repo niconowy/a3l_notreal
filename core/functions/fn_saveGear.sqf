@@ -160,6 +160,7 @@ if(count (handGunItems player) > 0) then
     ["life_inv_donuts", life_inv_donuts],
     ["life_inv_turtlesoup", life_inv_turtlesoup],
     ["life_inv_coffee", life_inv_coffee],
+//Benzinkanister
     ["life_inv_fuelF", life_inv_fuelF],
     ["life_inv_fuelE", life_inv_fuelE],
     ["life_inv_pickaxe", life_inv_pickaxe],
@@ -170,7 +171,18 @@ if(count (handGunItems player) > 0) then
     ["life_inv_spikeStrip", life_inv_spikeStrip],
     ["life_inv_defusekit", life_inv_defusekit],
     ["life_inv_storagesmall", life_inv_storagesmall],
-    ["life_inv_storagebig", life_inv_storagebig]
+    ["life_inv_storagebig", life_inv_storagebig],
+//RoadCone Kacke
+	["life_inv_RoadCone", life_inv_RoadCone],
+	["life_inv_RoadConeStrip", life_inv_RoadConeStrip],
+	["life_inv_RoadConeB", life_inv_RoadConeB],
+	["life_inv_RoadConeStripB", life_inv_RoadConeStripB],
+	["life_inv_RoadBlockWood", life_inv_RoadBlockWood],
+	["life_inv_RoadBlockConc", life_inv_RoadBlockConc],
+	["life_inv_RoadBlockRebel", life_inv_RoadBlockRebel],
+	["life_inv_BarGate", life_inv_BarGate],
+//Nothammer Gedöns
+	["life_inv_nothammer", life_inv_nothammer]
 ];
 
 _return pushBack _uItems;

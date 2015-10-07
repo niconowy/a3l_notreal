@@ -77,13 +77,13 @@ switch (_shop) do
 	{
 		_return = [
 			["S_PorscheRS_Black",360000],
-			["S_PorscheRS_Yellow",360000],
+//			["S_PorscheRS_Yellow",360000],
 			["S_PorscheRS_White",360000],
 			["cl3_carrera_gt_white",600000],
 			["cl3_carrera_gt_purple",600000],
 			["cl3_carrera_gt_navy_blue",600000],
 			["cl3_carrera_gt_lime",600000],
-			["cl3_carrera_gt_light_yellow",600000],
+//			["cl3_carrera_gt_light_yellow",600000],
 			["cl3_carrera_gt_light_blue",600000],
 			["cl3_carrera_gt_grey",600000],
 			["cl3_carrera_gt_gold",600000],
@@ -623,18 +623,21 @@ switch (_shop) do
 	
 	case "adac_veh":
 	{
-		if(playerSide != east) exitWith {hint "Du bist keine Justiz!"};
-		if(__GETC__(life_adaclevel) >= 9) exitWith {hint "Du bist als Justiz whitelisted, nicht als LAC!"};
+		if(playerSide != east) exitWith {hint "Du bist kein LAC-Mitarbeiter!"};
+		if(__GETC__(life_adaclevel) >= 9) exitWith {hint "Du bist als Justiz freigeschalten; nicht als LAC!"};
 		_return =
 		[
 			["C_Offroad_01_F",10000],
 			["A3l_evoxADAC",45000],
-			["A3L_Towtruck",5000],
+//			["A3L_Towtruck",5000],
 			["A3L_CVLac",25000],
-			["cl3_dodge_charger_f_yellow",45000],
-			["B_Heli_Light_01_F",100000],
 			["EC635_ADAC",100000],
-			["A3L_TaurusWhite",28000]
+			["Mrshounka_hummer_civ_jaune",95000],
+			["cl3_dodge_charger_f_yellow",45000],
+			["cl3_enduro_yellow",48500],
+			["S_PorscheRS_Yellow",100000],
+			["cl3_carrera_gt_light_yellow",120000],
+			["B_Heli_Light_01_F",100000]
 			//["I_Heli_Transport_02_F",100000] Unnötig kein Liftsystem
 		];
 	};
@@ -1515,7 +1518,7 @@ switch (_shop) do
 			["Mrshounka_hummer_civ_noir",125000],
 			["Mrshounka_hummer_civ_bleufonce",125000],
 			["Mrshounka_hummer_civ_rouge",125000],
-			["Mrshounka_hummer_civ_jaune",125000],
+//			["Mrshounka_hummer_civ_jaune",125000],
 			["Mrshounka_hummer_civ_rose",125000],
 			
 			["Mrshounka_mustang_mat",92620],
