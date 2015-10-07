@@ -45,6 +45,7 @@ life_earplugs = false;
 lrl_buy = true;
 lrl_sell = true;
 lrl_knockedOut = false;
+lrl_spamcounter = 0;
 lrl_version = "lakeside-reallifeDE_modinfo_ver_150410";
 
 

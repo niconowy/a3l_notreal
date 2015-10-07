@@ -297,6 +297,7 @@ class Life_Client_Core
 		class globalSound {};
 		class globalSoundClient {};
 		class openHandyMenu {};
+		class commandSpam {};
 	};
 	
 	class Network

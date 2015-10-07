@@ -1,11 +1,11 @@
-author = "Tonic, Itsyuka | Edit by LRL.DE";
-onLoadName = "Lakeside Reallife v3.0.3.3";
+author = "Tonic, Itsyuka | Edited by LRL.DE";
+onLoadName = "Lakeside Reallife v3.0.3.8";
 onLoadMission = "Webseite: http://lakeside-reallife.de/";
 loadScreen = "textures\logo.paa";
 joinUnassigned = 1;
 respawn = BASE;
 disabledAI = true;
-disableChannels[]={1,2};
+disableChannels[]={0,1,2};
 enableDebugConsole = 1;
 respawnDialog = 0;
 
@@ -267,6 +267,16 @@ class CfgDebriefing
 		title = "LRL.DE - AntiCheat";
 		subTitle = "LRL AntiCheat - Bye bye Cheater";
 		description = "Unser AntiCheat hat dich dabei erwischt, wie du versuchtest Funktionen auszuführen, zu denen du gar keinen Zugriff besitzt.";
+		pictureBackground = "KIA";
+		picture = "KIA";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
+	class A3LCheatSpam
+	{
+		title = "LRL.DE - AntiCheat - Spam";
+		subTitle = "LRL AntiCheat - Spam";
+		description = "Unser AntiCheat warf dich vom Server, da du zu sehr Befehle gespammt hast. Angenehmen Tag noch.";
 		pictureBackground = "KIA";
 		picture = "KIA";
 		pictureColor[] = {0,0.3,0.6,1};

@@ -3,7 +3,7 @@
 */
 private["_vehicle","_data"];
 _vehicle = cursorTarget;
-if(getDammage _vehicle == 1) exitWith {hintSilent "Der Besitzer ist 'Schrottkarre' ... Funny oder? :P"};
+if(getDammage _vehicle == 1) exitWith {hintSilent "Der Besitzer ist 'Schrottkarre' ... Funny oder? :P"; deleteVehicle _vehicle};
 if((_vehicle isKindOf "Car") || (_vehicle isKindOf "landVehicle") || !(_vehicle isKindOf "Air") || !(_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base")) then
 {
 	_owners = _vehicle getVariable "vehicle_info_owners";
@@ -23,7 +23,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindOf "landVehicle") || !(_vehicle 
 	
 	if(_owners == "any<br/>") then
 	{
-		_owners = "No owners, impound it<br/>";
+		_owners = "Keine Halter. Beschlagnahmen!<br/>";
 	};
 	hint parseText format[localize "STR_NOTF_SearchVeh",_owners];
 };

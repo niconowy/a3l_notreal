@@ -6,7 +6,10 @@
 	Main key handler for event 'keyDown'
 */
 #include <macro.h>
-private ["_coplevel","_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh","_locked","_interactionKey","_mapKey","_interruptionKeys","_player","_copPlayer","_ipdPlayer","_medPlayer"];
+
+private ["_coplevel","_handled","_shift","_alt","_code","_ctrl","_alt","_ctrlKey","_veh",
+"_locked","_interactionKey","_mapKey","_interruptionKeys","_player","_copPlayer","_ipdPlayer","_medPlayer"];
+
 _player = player;
 _ctrl = _this select 0;
 _code = _this select 1;
@@ -495,6 +498,7 @@ switch (_code) do
 		{
 			diag_log format ["SERVER_INFO | %1 (%2) verwendete ALT+F4",_player getVariable["realname",name _player],getPlayerUID _player];
 			[[0,format["%1 verwendet ALT+F4",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			[] call life_fnc_commandSpam;
 			if(!alive player) then {
 				[[1,format[":: SERVER INFO :: %1 verwendet ALT+F4 während er tot ist - !GEAR_SAFE! (Screenshot machen und dem Support melden)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			};
