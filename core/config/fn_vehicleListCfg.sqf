@@ -632,7 +632,7 @@ switch (_shop) do
 //			["A3L_Towtruck",5000],
 			["A3L_CVLac",25000],
 			["EC635_ADAC",100000],
-			["Mrshounka_hummer_civ_jaune",95000],
+			["Mrshounka_hummer_civ_jaune",262000],
 			["cl3_dodge_charger_f_yellow",45000],
 			["cl3_enduro_yellow",48500],
 			["S_PorscheRS_Yellow",100000],

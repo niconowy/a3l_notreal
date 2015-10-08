@@ -14,7 +14,7 @@ while { player getVariable ["surrender", false] }  do {
 		player setVariable ["surrender", false, true];
 	};
 	
-	if (!life_istazed && !life_knockout && !lrl_knockedOut) then {
+	if (life_istazed && life_knockout && lrl_knockedOut) then {
 		player setVariable ["surrender", false, true];
 	};
 	
