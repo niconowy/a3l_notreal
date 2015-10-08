@@ -27,7 +27,7 @@ if(_isVeh && _target in life_vehicles) exitWith {hint localize "STR_ISTR_Lock_Al
 if(!alive player OR life_istazed OR life_knockout OR lrl_knockedOut) exitWith {life_action_inUse = false;};
 if((player getVariable["restrained",false])) exitWith {life_action_inUse = false;};
 if(player != vehicle player) exitWith {titleText [localize "STR_NOTF_ActionInVehicle","PLAIN"]; life_action_inUse = false;};
-if(playerSide != east) then {
+if(playerSide in [civilian,west]) then {
 	if(!([false,"nothammer",1] call life_fnc_handleInv)) exitWith {};
 };
 
