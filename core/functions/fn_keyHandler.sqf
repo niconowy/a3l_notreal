@@ -186,14 +186,13 @@ switch (_code) do
 				};
 			} else {
 				if((_cursorT isKindOf "Car" OR _cursorT isKindOf "Air" OR _cursorT isKindOf "Ship" OR _cursorT isKindOf "A3L_Tahoe_Base" OR _cursorT isKindOf "Motorcycle" OR _cursorT isKindOf "House_F") && player distance _cursorT < 5 && vehicle player == player && alive _cursorT) then {
-					if(!life_tazed && !life_knockout && !lrl_knockedOut && !(player getVariable "restrained")) then {
+					if(!life_istazed && !life_knockout && !lrl_knockedOut && !(player getVariable "restrained")) then {
 						if((count (player nearObjects["Man",7]) <= 1)) then {
 							if(_cursorT in life_vehicles OR {!(_cursorT getVariable ["locked",true])}) then {
 								[_cursorT] call life_fnc_openInventory;
-							} else {
-							//Farm Bug Temp-Fix (TRUNK DUPING)
-								hint "Du kannst nicht auf den Kofferraum zugreifen, während eine Person bei dir im Umkreis (7 Meter) ist!";
 							};
+						} else {
+							hint "Du kannst nicht auf den Kofferraum zugreifen, während eine Person bei dir im Umkreis (7 Meter) ist!";
 						};
 					};
 				};

@@ -8,11 +8,11 @@
 private["_vehicle","_veh_data","_position"];
 if(dialog) exitWith {};
 _vehicle = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
-_position = nearestObjects[getPos (_this select 0),["Man"],4];
+_position = nearestObjects[getPos (_this select 0),["Man"],6];
 if(isNull _vehicle OR !(_vehicle isKindOf "Car" OR _vehicle isKindOf "Air" OR _vehicle isKindOf "Ship" OR _vehicle isKindOf "House_F")) exitWith {}; //Either a null or invalid vehicle type.
 
 if (count crew _vehicle > 0) exitWith {hint "Nichts im Fahrzeug umpacken!"};
-if (count _position  > 1)  exitWith {hint "Jemand anderes steht in deiner nähe."};
+if (count _position  > 1)  exitWith {hint "Du kannst nicht auf den Kofferraum zugreifen, während eine Person bei dir im Umkreis (7 Meter) ist!"};
 
 if((_vehicle getVariable ["trunk_in_use",false])) exitWith {hint localize "STR_MISC_VehInvUse"};
 _vehicle setVariable["trunk_in_use",true,true];
