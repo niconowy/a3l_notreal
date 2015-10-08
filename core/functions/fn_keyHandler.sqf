@@ -498,7 +498,7 @@ switch (_code) do
 		{
 			diag_log format ["SERVER_INFO | %1 (%2) verwendete ALT+F4",_player getVariable["realname",name _player],getPlayerUID _player];
 			[[0,format["%1 verwendet ALT+F4",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
-			[] call life_fnc_commandSpam;
+			[] spawn life_fnc_commandSpam;
 			if(!alive player) then {
 				[[1,format[":: SERVER INFO :: %1 verwendet ALT+F4 während er tot ist - !GEAR_SAFE! (Screenshot machen und dem Support melden)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			};

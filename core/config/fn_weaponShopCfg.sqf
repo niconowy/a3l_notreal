@@ -205,11 +205,6 @@ switch(_shop) do
 			default {
 				["LAC Laden",
 					[
-						["ItemMap",nil,10],
-						["ItemWatch",nil,20],
-						["ItemCompass",nil,30],
-						["ItemGPS",nil,250],
-						["Binocular",nil,1250],
 						["TRYK_G_Shades_Black_NV","Brille Schwarz (Nightvision)",2500],
 						["TRYK_G_Shades_Blue_NV","Brille Blau (Nightvision)",2500],
 						["A3lspanner","Reparaturschlüssel",1200],
@@ -218,7 +213,12 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_bandage_basic",nil,200],
-						["cse_packing_bandage",nil,500]
+						["cse_packing_bandage",nil,500],
+						["ItemMap",nil,10],
+						["ItemWatch",nil,20],
+						["ItemCompass",nil,30],
+						["ItemGPS",nil,250],
+						["Binocular",nil,1250]
 					]
 				];
 			};
@@ -371,6 +371,8 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["Rangefinder",nil,1000],
 						["pmc_earpiece","Nachtsichtgerät",2000],
+						["TRYK_headset2","Headset Groß (Nightvision)",2000],
+						["TRYK_Headset_NV","Headset Klein (Nightvision)",2000],
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
@@ -449,6 +451,8 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["Rangefinder",nil,1000],
 						["pmc_earpiece","Nachtsichtgerät",2000],
+						["TRYK_headset2","Headset Groß (Nightvision)",2000],
+						["TRYK_Headset_NV","Headset Klein (Nightvision)",2000],
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
@@ -527,6 +531,8 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["Rangefinder",nil,1000],
 						["pmc_earpiece","Nachtsichtgerät",2000],
+						["TRYK_headset2","Headset Groß (Nightvision)",2000],
+						["TRYK_Headset_NV","Headset Klein (Nightvision)",2000],
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
@@ -613,6 +619,8 @@ switch(_shop) do
 						["Binocular",nil,150],
 						["Rangefinder",nil,1000],
 						["pmc_earpiece","Nachtsichtgerät",2000],
+						["TRYK_headset2","Headset Groß (Nightvision)",2000],
+						["TRYK_Headset_NV","Headset Klein (Nightvision)",2000],
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
