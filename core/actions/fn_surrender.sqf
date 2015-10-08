@@ -23,6 +23,5 @@ while { player getVariable ["surrender", false] }  do {
 	};
 };
 
-//Safety Var Change
-player setVariable ["surrender", false, true];
+
 player playMoveNow "AmovPercMstpSsurWnonDnon_AmovPercMstpSnonWnonDnon"; //Animation out
