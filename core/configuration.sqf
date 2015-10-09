@@ -392,6 +392,8 @@ sell_array =
 	["raw chicken",700],
 	["raw sheep meat",500],
 	["raw rabbit",700],
+	["mehl",100],
+	["brotteig",300],
 
 	["spikeStrip",1200],
 	["cement",3600],

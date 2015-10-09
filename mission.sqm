@@ -5854,7 +5854,7 @@ class Mission
 			vehicle="Land_InfoStand_V2_F";
 			leader=1;
 			skill=0.60000002;
-			init="this enableSimulation false; this allowDamage false; this addAction[""Weizen Mahlen"",life_fnc_processAction,""muhle"",0,false,false,"""",' life_inv_corn > 0 && !life_is_processing']; this addAction[""Lizenzen"",life_fnc_licenses,[""mehlmahl""],0,true,true,"""",' playerSide == civilian '];";
+			init="this enableSimulation false; this allowDamage false; this addAction[""Weizen Mahlen"",life_fnc_processAction,""muhle"",0,false,false,"""",' life_inv_wheat > 0 && !life_is_processing']; this addAction[""Lizenzen"",life_fnc_licenses,[""mehlmahl""],0,true,true,"""",' playerSide == civilian '];";
 		};
 	};
 	class Markers
