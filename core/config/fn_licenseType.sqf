@@ -85,6 +85,7 @@ switch (_mode) do
 			case "license_civ_presse": {_var = "presse"};
 			case "license_civ_taxischein": {_var = "taxischein"};
 			case "license_civ_fischerei": {_var = "fischerei"};
+			case "license_civ_mehlmahl": {_var = "mehlmahl"};
 			default {_var = ""};
 		};
 	};
