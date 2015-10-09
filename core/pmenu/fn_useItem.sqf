@@ -310,8 +310,6 @@ switch (true) do
 		else
 		{
 			hint "Du kannst nur einmal heiraten... DU FREMDGEHER DU!!!!";
-			[[0,format["== TRATSCH-UND-KLATSCH =="]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
-			[[0,format["%1 ist bereits verheiratet und möchte Fremdgehen...",profileName]],nil,false] spawn life_fnc_MP;
 		};
 	};
 
