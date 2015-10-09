@@ -13,9 +13,9 @@ switch (_shop) do
 	case "market": {["LakesideValley Markt",["cigarette","zoobeer","Rax's Rum","water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","axt","fuelF","peach","storagesmall","storagebig","weddingring"]]};
 	case "rebel": {["Rebellen Austatter",["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","axt","fuelF","peach","boltcutter"]]};
 	case "gang": {["Gang Markt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","axt","fuelF","peach","boltcutter"]]};
-	case "murdermarket": {["Murder King - So schnell wie nie!", ["water","rabbit","redgull"]]};
-	case "wongs": {["Wing-Weng Pong's Spezialitäten",["turtlesoup","turtle"]]};
-	case "coffee": {["Cafe 'Tratsch und Klatsch'",["coffee","donuts"]]};
+	case "murdermarket": {["Murder King - So schnell wie nie!", ["rabbit","redgull"]]};
+	case "wongs": {["Wing-Chi's Spezialitäten",["turtlesoup","turtle"]]};
+	case "coffee": {["Gunnmeier's Cafe",["coffee","donuts"]]};
 	case "heroin": {["Mikey's Stoffecke",["cocainep","marijuana","heroinp"]]};
 	case "oil": {["Öl Ankauf",["oilp","pickaxe","fuelF"]]};
 	case "fishmarket": {["Aal-Dieter's Frischfisch",["salema","ornate","mackerel","mullet","tuna","catshark"]]};
@@ -28,6 +28,7 @@ switch (_shop) do
 	case "itemfbi": {["FBI Austatter",["donuts","coffee","spikeStrip","redgull","fuelF","defusekit","lockpick","nothammer","BarGate","RoadBlockWood","RoadConeStripB"]]};
 	case "cement": {["Zementhändler",["cement"]]};
 	case "gold": {["Gold Ankauf",["goldbar"]]};
+	case "backer": {["Gunnmeier's Backhaus",["mehl","brotteig"]]};
 	case "baumarkt": {["Baumarkt",["laminat","grillkohle","axt"]]};
 	case "ems": {["EMS Notfallaustattung",["water","coffee","rabbit","apple","redgull","tbacon","peach","lockpick","nothammer","RoadCone","RoadConeB","RoadConeStrip","RoadConeStripB","RoadBlockWood","fuelF"]]};
 	case "butcher": {["Bob's Metzgerei",["raw goat meat","raw chicken","raw sheep meat","raw rabbit"]]};

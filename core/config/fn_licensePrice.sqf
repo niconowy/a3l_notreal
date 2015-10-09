@@ -40,5 +40,6 @@ switch (_type) do
 	case "grillmeister": {14225};
 	case "presse": {10000};
 	case "taxischein": {17500};
-	case "fischerei": {10000};
+	case "fischerei": {40000};
+	case "mehlmahl": {35000};
 };

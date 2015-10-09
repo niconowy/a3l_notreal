@@ -111,6 +111,8 @@ switch (_mode) do
 			case "taxischeinformular": {"life_inv_taxischeinformular"};
 			case "bohrmaschine": {"life_inv_bohrmaschine"};
 			case "nothammer": {"life_inv_nothammer"};
+			case "mehl": {"life_inv_mehl"};
+			case "brotteig": {"life_inv_brotteig"};
 		};
 	};
 	
@@ -213,6 +215,8 @@ switch (_mode) do
 			case "life_inv_taxischeinformular": {"taxischeinformular"};
 			case "life_inv_bohrmaschine": {"bohrmaschine"};
 			case "life_inv_nothammer": {"nothammer"};
+			case "life_inv_mehl": {"mehl"};
+			case "life_inv_brotteig": {"brotteig"};
 		};
 	};
 };

@@ -1550,6 +1550,12 @@
 		<Key ID="STR_Item_Nothammer">
 			<Original>Nothammer</Original>
 		</Key>
+		<Key ID="STR_Item_Mehl">
+			<Original>Mehl</Original>
+		</Key>
+		<Key ID="STR_Item_Brotteig">
+			<Original>Brotteig</Original>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">
@@ -1586,28 +1592,28 @@
 			<Original>Führerschein C</Original>
 		</Key>
 		<Key ID="STR_License_Diamond">
-			<Original>Diamantenschleifer</Original>
+			<Original>Diamantenschleifung</Original>
 		</Key>
 		<Key ID="STR_License_Copper">
-			<Original>Kupferverarbeiter</Original>
+			<Original>Kupferschmelzer</Original>
 		</Key>
 		<Key ID="STR_License_Iron">
 			<Original>Eisenschmelzer</Original>
 		</Key>
 		<Key ID="STR_License_Sand">
-			<Original>Glasbläser/In</Original>
+			<Original>Glasbläserei</Original>
 		</Key>
 		<Key ID="STR_License_Salt">
-			<Original>Salzverfeinerer/In</Original>
+			<Original>Salzverfeinerung</Original>
 		</Key>
 		<Key ID="STR_License_Cocaine">
-			<Original>Kokainchemiker/In</Original>
+			<Original>Kokainreinigung</Original>
 		</Key>
 		<Key ID="STR_License_Marijuana">
-			<Original>Marihuanatrockner/In</Original>
+			<Original>Marihuanatrocknung</Original>
 		</Key>
 		<Key ID="STR_License_Cement">
-			<Original>Bauarbeiter/In</Original>
+			<Original>Zementmischung</Original>
 		</Key>
 		<Key ID="STR_License_Home">
 			<Original>Eigentumsurkunde</Original>
@@ -1629,6 +1635,9 @@
 		</Key>
 		<Key ID="STR_License_Fischerei">
 			<Original>Fischerschein</Original>
+		</Key>
+		<Key ID="STR_License_Mehlmahl">
+			<Original>Weizenverarbeitung</Original>
 		</Key>
 	</Package>
 	<Package name="More_Item_Strings">
@@ -1784,6 +1793,9 @@
 		</Key>
 		<Key ID="STR_Process_Grillkohle">
 			<Original>Grillkohle wird zubereitet</Original>
+		</Key>
+		<Key ID="STR_Process_Mehlig">
+			<Original>Weizen wird gemahlen</Original>
 		</Key>
 		<Key ID="STR_Process_Stay">
 			<Original>Nicht weiter als 5 Meter vom Verarbeiter entfernen!</Original>

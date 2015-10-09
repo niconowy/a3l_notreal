@@ -159,14 +159,12 @@ switch (_code) do
 	{
 		if(!_alt && !_ctrlKey && _shift) then
 		{
-			if (vehicle player == player && !(player getVariable "restrained") && (animationState player) != "static_dead" && !life_istazed && !life_knockout && !lrl_knockedOut) then
+			if (vehicle player == player && !(player getVariable ["restrained", false]) && (animationState player) != "Incapacitated" && !life_istazed && !life_knockout && !lrl_knockedOut) then
 			{
-				if (!(player getVariable "surrender")) then
+				if (player getVariable ["surrender", false]) then
 				{
 					player setVariable ["surrender", false, true];
-				} 
-				else
-				{
+				} else {
 					[] spawn life_fnc_surrender;
 				};
 			};
@@ -250,7 +248,7 @@ switch (_code) do
 				if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
 					[] spawn {
 					life_umbrellus_active = true;
-						sleep 18;
+						sleep 13;
 						systemChat "Sirene kann deaktiviert werden.";
 					life_umbrellus_active = false;
 					};
@@ -274,7 +272,7 @@ switch (_code) do
 				if(vehicle player != player && !life_umbrellus2_active && ((driver vehicle player) == player)) then {
 					[] spawn {
 					life_umbrellus2_active = true;
-						sleep 11;
+						sleep 13;
 						systemChat "Sirene kann deaktiviert werden.";
 					life_umbrellus2_active = false;
 					};

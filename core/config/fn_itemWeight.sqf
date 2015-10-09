@@ -98,8 +98,11 @@ switch (_item) do
 	case "holz":{4};
 	case "grillkohle":{1};
 	case "presseformular":{1};
+	case "taxischeinformular":{1};
 	case "bohrmaschine":{5};
 	case "nothammer":{4};
+	case "mehl":{2};
+	case "brotteig":{4};
 
 	default {1};
 };

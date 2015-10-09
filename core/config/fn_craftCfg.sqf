@@ -85,7 +85,8 @@ switch(_craft) do
 				//[Object classname, [item #1,quantity item #1,item #2,quantity item #2]],]
 				["life_inv_blastingcharge", ["life_inv_elektroteile",9,"life_inv_schwarzpulver",8,"life_inv_ironr",8]],
 				["life_inv_bohrmaschine", ["life_inv_elektroteile",6,"life_inv_ironr",2,"life_inv_copperr",2]],
-				["life_inv_nothammer", ["life_inv_ironr",1,"life_inv_holz",2,"life_inv_copperr",3]]
+				["life_inv_nothammer", ["life_inv_ironr",1,"life_inv_holz",2,"life_inv_copperr",3]],
+				["life_inv_brotteig", ["life_inv_mehl",3,"life_inv_water",1]]
 		];
 	};
 };

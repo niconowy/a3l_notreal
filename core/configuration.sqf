@@ -236,7 +236,9 @@ life_inv_items =
 	"life_inv_holz",
 	"life_inv_presseformular",
 	"life_inv_taxischeinformular",
-	"life_inv_nothammer"
+	"life_inv_nothammer",
+	"life_inv_mehl",
+	"life_inv_brotteig"
 ];
 
 life_8_b4lls = 
@@ -293,6 +295,7 @@ life_licenses =
 	["license_civ_elektriker","civ"],
 	["license_civ_grillmeister","civ"],
 	["license_civ_schreiner","civ"],
+	["license_civ_mehlmahl","civ"],
 
 //Civilian Other
 	["license_civ_home","civ"],

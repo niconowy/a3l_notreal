@@ -14,6 +14,8 @@ life_market_resources = [
 		
 	["diamondc", 3359, 1, 6359, 10, 1,
 			[
+					["brotteig",1],
+					["mehl",1],
 					["iron_r",1],
 					["copper_r",1],
 					["cement",1],
@@ -28,6 +30,8 @@ life_market_resources = [
 	
 	["oilp", 3492, 1, 6492, 9, 2,
 			[
+					["brotteig",1],
+					["mehl",1],
 					["diamondc",1],
 					["iron_r",1],
 					["copper_r",1],
@@ -84,6 +88,8 @@ life_market_resources = [
 	
 	["copper_r", 1968, 1, 4123, 5, 6,
 			[
+					["brotteig",1],
+					["mehl",1],
 					["diamondc",1],
 					["iron_r",1],
 					["cement",1],
@@ -140,6 +146,8 @@ life_market_resources = [
    
 	["salt_r", 955, 1, 3755, 1, 10,
 			[
+					["brotteig",1],
+					["mehl",1],
 					["diamondc",1],
 					["iron_r",1],
 					["copper_r",1],
@@ -154,6 +162,8 @@ life_market_resources = [
    
 	["sunflower", 649, 1, 1249, 4, 8,
 			[
+					["brotteig",1],
+					["mehl",1],
 					["wheat",1],
 					["corn",1],
 					["bean",1],
@@ -165,6 +175,8 @@ life_market_resources = [
    
 	["corn", 870, 1, 1250, 8, 4,
 			[
+					["brotteig",1],
+					["mehl",1],
 					["wheat",1],
 					["sunflower",1],
 					["bean",1],
@@ -199,6 +211,26 @@ life_market_resources = [
 	["cotton", 645, 1, 1455, 2, 10,
 			[
 					["wheat",1],
+					["sunflower",1],
+					["corn",1],
+					["bean",1],
+					["pumpkin",1],
+					["olive",1]
+			]
+	],
+	
+	["mehl", 950, 1, 1600, 10, 2,
+			[
+					["sunflower",1],
+					["corn",1],
+					["bean",1],
+					["pumpkin",1],
+					["olive",1]
+			]
+	],
+	
+	["brotteig", 1000, 1, 1700, 10, 2,
+			[
 					["sunflower",1],
 					["corn",1],
 					["bean",1],

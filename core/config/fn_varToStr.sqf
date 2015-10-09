@@ -108,6 +108,10 @@ switch (_var) do
 	case "life_inv_taxischeinformular": {(localize "STR_Item_TaxiForm")};
 	case "life_inv_bohrmaschine": {(localize "STR_Item_Bohrmaschine")};
 	case "life_inv_nothammer": {(localize "STR_Item_Nothammer")};
+	case "life_inv_mehl": {(localize "STR_Item_Mehl")};
+	case "life_inv_brotteig": {(localize "STR_Item_Brotteig")};
+
+	
 
 	//License Block
 	case "license_civ_driver": {(localize "STR_License_Driver")};
@@ -138,4 +142,5 @@ switch (_var) do
 	case "license_civ_presse": {(localize "STR_License_Presse")};
 	case "license_civ_taxischein": {(localize "STR_License_TaxiSchein")};
 	case "license_civ_fischerei": {(localize "STR_License_Fischerei")};
+	case "license_civ_mehlmahl": {(localize "STR_License_Mehlmahl")};
 };

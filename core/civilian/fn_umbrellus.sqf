@@ -22,7 +22,7 @@ while {true} do
 
 	_vehicle say3D "umbrellam";
 
-	sleep 65;
+	sleep 30;
 
 	if(!(_vehicle getVariable "umbrellus")) exitWith {};
 };

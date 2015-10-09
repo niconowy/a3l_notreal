@@ -32,6 +32,16 @@ switch (true) do
 			player setFatigue 0;
 		};
 	};
+	
+	case (_item == "brotteig"):
+	{
+		if(([false,_item,1] call life_fnc_handleInv)) then
+		{
+			life_hunger = 95;
+			life_thirst = 80;
+			player setFatigue 0.95;
+		};
+	};
 
 	case (_item == "cigarette"):
 	{
