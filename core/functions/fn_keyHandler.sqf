@@ -24,6 +24,7 @@ _cursorT = cursorTarget;
 _copPlayer = if(playerSide == west) then {true} else {false};
 _medPlayer = if(playerSide == independent) then {true} else {false};
 _ipdPlayer = if(playerSide == east) then {true} else {false};
+
 _coplevel = if(__GETC__(life_donator) >= 2) then {true} else {false};	// Donator Level abhängig! 2-3 = State, 4-5 = FBI
 
 _interactionKey = if(count (actionKeys "User10") == 0) then {219} else {(actionKeys "User10") select 0}; //46 war 219
@@ -121,13 +122,13 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false])) then
+		if(_shift && playerSide == west && !lrl_knockedOut && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false])) then
 		{
 			[] call life_fnc_restrainAction;
 		};
 		
 		//Rebellfesseln
-		if(_shift && playerSide == civilian && (license_civ_rebel) && !lrl_knockedOut&& !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false]) && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "") then
+		if(_shift && playerSide == civilian && (license_civ_rebel) && !lrl_knockedOut && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false]) && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "") then
 		{
 			[] call life_fnc_restrainAction;
 		};
@@ -248,7 +249,7 @@ switch (_code) do
 				if(vehicle player != player && !life_umbrellus_active && ((driver vehicle player) == player)) then {
 					[] spawn {
 					life_umbrellus_active = true;
-						sleep 13;
+						sleep 25;
 						systemChat "Sirene kann deaktiviert werden.";
 					life_umbrellus_active = false;
 					};
@@ -520,6 +521,7 @@ switch (_code) do
 		{
 			diag_log format ["SERVER INFO: %1 verwendet CTRL + ALT + DEL (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]];
 			[[0,format["SERVER INFO: %1 verwendet CTRL + ALT + DEL (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			[] spawn life_fnc_commandSpam;
 			[] call SOCK_fnc_updateRequest;
 		};
 	};

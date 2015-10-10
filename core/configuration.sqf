@@ -238,7 +238,9 @@ life_inv_items =
 	"life_inv_taxischeinformular",
 	"life_inv_nothammer",
 	"life_inv_mehl",
-	"life_inv_brotteig"
+	"life_inv_brotteig",
+	"life_inv_keks",
+	"life_inv_pizza"
 ];
 
 life_8_b4lls = 
@@ -411,7 +413,9 @@ sell_array =
 	["Rax's Rum",25],
 	["weddingring",1000],
 	["presseformular",1250],
-	["nothammer",1500]
+	["nothammer",1500],
+	["keks",5],
+	["pizza",95]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -470,7 +474,9 @@ buy_array =
 	["weddingring",25000],
 	["presseformular",10000],
 	["taxischeinformular",10000],
-	["nothammer",5700]
+	["nothammer",5700],
+	["keks",1],
+	["pizza",25]
 ];
 __CONST__(buy_array,buy_array);
 

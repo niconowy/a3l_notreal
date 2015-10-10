@@ -87,7 +87,7 @@ switch (_item) do
 	case "RoadBlockWood": {2};
 	case "RoadBlockConc": {4};
 	case "RoadBlockRebel": {10};
-	case "BarGate": {6};
+	case "BarGate": {4};
 	case "Rax's Rum" : {1};
 	case "zoobeer": {1}; // Duff Beer
 	case "blaulicht":{5};
@@ -100,9 +100,11 @@ switch (_item) do
 	case "presseformular":{1};
 	case "taxischeinformular":{1};
 	case "bohrmaschine":{5};
-	case "nothammer":{4};
+	case "nothammer":{3};
 	case "mehl":{2};
 	case "brotteig":{4};
+	case "keks":{1};
+	case "pizza":{2};
 
 	default {1};
 };

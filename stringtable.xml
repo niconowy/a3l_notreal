@@ -1556,6 +1556,12 @@
 		<Key ID="STR_Item_Brotteig">
 			<Original>Brotteig</Original>
 		</Key>
+		<Key ID="STR_Item_Keks">
+			<Original>Keks</Original>
+		</Key>
+		<Key ID="STR_Item_Pizza">
+			<Original>Pizzabrötchen</Original>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">

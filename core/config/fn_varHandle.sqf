@@ -113,6 +113,8 @@ switch (_mode) do
 			case "nothammer": {"life_inv_nothammer"};
 			case "mehl": {"life_inv_mehl"};
 			case "brotteig": {"life_inv_brotteig"};
+			case "keks": {"life_inv_keks"};
+			case "pizza": {"life_inv_pizza"};
 		};
 	};
 	
@@ -217,6 +219,8 @@ switch (_mode) do
 			case "life_inv_nothammer": {"nothammer"};
 			case "life_inv_mehl": {"mehl"};
 			case "life_inv_brotteig": {"brotteig"};
+			case "life_inv_keks": {"keks"};
+			case "life_inv_pizza": {"pizza"};
 		};
 	};
 };

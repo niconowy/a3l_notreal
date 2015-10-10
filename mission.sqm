@@ -1435,7 +1435,7 @@ class Mission
 					side="CIV";
 					vehicle="C_man_polo_2_F_euro";
 					skill=0.60000002;
-					init="this allowDamage false; this enableSimulation false; removeHeadgear this; removeGoggles this; this addAction[""Gunnmeier's Backhandel"",life_fnc_virt_menu,""backer""]; this addAction[""Gunnmeier's Cafe"",life_fnc_virt_menu,""coffee""];";
+					init="this allowDamage false; this enableSimulation false; removeHeadgear this; removeGoggles this; this addAction[""Gunnmeier's Backlieferung"",life_fnc_virt_menu,""backer""]; this addAction[""Gunnmeier's Mahlzeiten"",life_fnc_virt_menu,""coffee""];";
 				};
 			};
 		};

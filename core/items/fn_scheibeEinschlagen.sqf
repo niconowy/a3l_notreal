@@ -15,7 +15,7 @@ _target = cursorTarget;
 if(life_action_inUse) exitWith {};
 if(isNull _target) exitWith {}; //Bad type
 
-_dis = ((boundingBox _target select 1) select 0) + 2;
+_dis = ((boundingBox _target select 1) select 0) + 3;
 
 if(player distance _target > _dis) exitWith {}; //Too far
 

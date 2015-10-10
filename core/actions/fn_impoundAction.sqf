@@ -16,9 +16,7 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindof "landVehicle") || (_vehicle i
 {
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
 	if(count _vehicleData == 0) exitWith {	//Fahrzeug Bug (keine Besitzer) - sprich: Falsches/Fehlendes MP Paket
-		hint "Fahrzeug wurde vermutlich durch eine höhere Macht erstellt... Das Fahrzeug wird nun von Aliens entführt."; sleep 4;	//RP muss sein. Auch im Script :P
-		deleteVehicle _vehicle; sleep 0.7;
-		hint "** Man In Black Stift **\nAlles was Sie die letzten 5 Minuten gesehen haben, vergessen Sie.\nHier stand nie ein Fahrzeug, das war eine Farta Morgana - ein Trugbild.\nSie sind hier, da Sie Ihren Hund und etwas zu Trinken suchen.";
+		hint "Fahrzeug wurde vermutlich durch eine höhere Macht erstellt...";
 	};
 	_uid = getPlayerUID player;
 	_owner = (_vehicleData select 0) select 0;

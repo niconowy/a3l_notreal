@@ -276,7 +276,7 @@ switch (true) do
 		};
 	};
 	
-	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach"]):
+	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach","keks","pizza"]):
 	{
 		[_item] call life_fnc_eatFood;
 	};

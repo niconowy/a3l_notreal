@@ -229,7 +229,7 @@ life_market_resources = [
 			]
 	],
 	
-	["brotteig", 1759, 1, 3128, 10, 2,
+	["brotteig", 1506, 1, 2828, 10, 2,
 			[
 					["sunflower",1],
 					["corn",1],
