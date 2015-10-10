@@ -9,5 +9,8 @@ _unit setVariable["restrained",FALSE,TRUE];
 _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE];
 detach _unit;
+_unit setVariable["restrained",FALSE,TRUE];
+_unit setVariable["Escorting",FALSE,TRUE];
+_unit setVariable["transporting",FALSE,TRUE];
 
 //[[0,format[localize "STR_NOTF_Unrestrain",_unit getVariable["realname",name _unit], profileName]],"life_fnc_broadcast",west,FALSE] call life_fnc_MP;
