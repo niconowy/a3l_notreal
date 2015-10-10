@@ -31,7 +31,7 @@ if([false,_food,1] call life_fnc_handleInv) then {
 	};
 	playsound "essen";
 	_sum = life_hunger + _val;
-	if(_sum > 100) then {_sum = 100; player setFatigue 1; hint "Du hast dich überfressen und bist jetzt erschöpft.";};
+	if(_sum > 100) then {_sum = 100; player setFatigue 1; titleText ["Ich fühle mich total überfressen...","PLAIN"];};
 	//TODO -- Herzinfarkt Risiko
 	life_hunger = _sum;
 };
