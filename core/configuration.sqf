@@ -414,8 +414,8 @@ sell_array =
 	["weddingring",1000],
 	["presseformular",1250],
 	["nothammer",1500],
-	["keks",5],
-	["pizza",95]
+	["keks",1],
+	["pizza",25]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -475,8 +475,8 @@ buy_array =
 	["presseformular",10000],
 	["taxischeinformular",10000],
 	["nothammer",5700],
-	["keks",1],
-	["pizza",25]
+	["keks",5],
+	["pizza",80]
 ];
 __CONST__(buy_array,buy_array);
 
