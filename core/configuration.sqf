@@ -42,10 +42,12 @@ life_adacMarker = [];
 life_adac_request = false;
 life_married = "";
 life_earplugs = false;
+
 lrl_buy = true;
 lrl_sell = true;
 lrl_knockedOut = false;
 lrl_spamcounter = 0;
+lrl_copLeitstelle = false;
 lrl_version = "lakeside-reallifeDE_modinfo_ver_150410";
 
 

@@ -78,15 +78,15 @@ switch (_code) do
 	};
 	
 	//Map Key		//NICHT VORHANDEN
-/*	case _mapKey:
+	case _mapKey:
 	{
 		switch (playerSide) do 
 		{
 			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
-			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
-			case east: {if(!visibleMap) then {[] spawn life_fnc_adacMarkers;}};
+	//		case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
+	//		case east: {if(!visibleMap) then {[] spawn life_fnc_adacMarkers;}};
 		};
-	};*/
+	};
 
 	//Holster / recall weapon.
 	case 35:
@@ -202,8 +202,9 @@ switch (_code) do
 	//L Key?
 	case 38:{
 		if(!_alt && !_ctrlKey && _veh == player) exitWith {true; [] call life_fnc_radar;};
-	/*	if(_veh != player)then{
-			if(_shift && !_ctrlKey)exitWith{		
+		
+		if(_veh != player)then{
+			if(_shift && !_ctrlKey && side player == west)exitWith{		
 				true;	// direct returns because its an exitWith
 				if((driver _veh) == player)then{				
 					if!(isNil{_veh getVariable "xcar"})then{	
@@ -216,7 +217,7 @@ switch (_code) do
 					};							
 				};												
 			};
-			if(_ctrlKey && !_shift)exitWith{	
+			if(_ctrlKey && !_shift && side player == west)exitWith{	
 				true;		
 				if((driver _veh) == player)then{
 					if!(isNil {_veh getVariable "xcar"})then{
@@ -239,7 +240,7 @@ switch (_code) do
 					};	
 				};
 			};
-		};	*/
+		};	
 	};
 	
 	// ENDE

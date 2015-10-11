@@ -32,6 +32,7 @@ switch(__GETC__(life_mediclevel)) do
     case 6: {life_paycheck = life_paycheck + 1500;};
 	//case 7: {life_paycheck = life_paycheck + 3000;};
 };
+
 player setVariable ["copLevel",1,true];
 [] call life_fnc_spawnMenu;
 [] execVM "core\initJVM.sqf";

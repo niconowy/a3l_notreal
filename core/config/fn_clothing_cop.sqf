@@ -144,6 +144,7 @@ switch (_filter) do
 	{
 		_ret =
 		[
+			["AM_PoliceBelt",nil,1000],
 			["domekappa_s",nil,500],
 			["domekappa_blau",nil,500],
 			["domekappa_p",nil,500],

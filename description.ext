@@ -90,7 +90,7 @@ class CfgSounds
 	class umbrellam
 	{
 		name = "umbrellam";
-		sound[] = {"\sounds\umbrella.ogg", 1.0, 1};
+		sound[] = {"\sounds\umbrella.ogg", 2, 1};
 		titles[] = {};
 	};
 	
@@ -191,6 +191,16 @@ class CfgDebriefing
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 	
+	class CopLStelleWhitelist
+	{
+		title = "Leitstelle - Whitelist";
+		subtitle = "Du hast keine Befugnis als Leitstelle zu spielen";
+		description = "Du hast keine Befugnis als Leitstelle zu spielen, da du nicht den Rang Officer erreicht hast!";
+		pictureBackground = "flag_NATO";
+		picture = "flag_NATO";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
 	class MedicWhitelist
 	{
 		title = "Medic - Whitelist";
@@ -203,9 +213,9 @@ class CfgDebriefing
 	
 	class IPDWhitelist
 	{
-		title = "IPD - Whitelist";
-		subtitle = "Du bist nicht als IPD freigeschalten";
-		description = "Du bist nicht für diesen IPD-Slot freigeschalten worden!";
+		title = "LAC - Whitelist";
+		subtitle = "Du bist nicht als LAC freigeschalten";
+		description = "Du bist nicht für diesen LAC-Slot freigeschalten worden!";
 		pictureBackground = "flag_CSAT";
 		picture = "flag_CSAT";
 		pictureColor[] = {0,0.3,0.6,1};
@@ -369,7 +379,7 @@ class CfgNotifications
 	
 	class AdacMessage
 	{
-		title = "IPD Center";
+		title = "LAC Center";
 		iconPicture = "icons\messagenew.paa";
 		description = "%1";
 		duration = 10;

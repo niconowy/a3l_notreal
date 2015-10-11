@@ -10,14 +10,14 @@ _markers = [];
 _cops = [];
 
 sleep 0.5;
-if(visibleMap) then {
-	{if(side _x == west) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
+if(visibleMap && lrl_copLeitstelle) then {
+	{if(side _x == west && ("ItemGPS" in assignedItems _x)) then {_cops pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
 	
 	//Create markers
 	{
 		_marker = createMarkerLocal [format["%1_marker",_x],visiblePosition _x];
 		_marker setMarkerColorLocal "ColorBlue";
-		_marker setMarkerTypeLocal "Mil_dot";
+		_marker setMarkerTypeLocal "mil_dot";
 		_marker setMarkerTextLocal format["%1", _x getVariable["realname",name _x]];
 	
 		_markers pushBack [_marker,_x];
@@ -43,7 +43,7 @@ if(visibleMap) then {
 			
 		} foreach _markers;
 		if(!visibleMap) exitWith {};
-		sleep 0.5;
+		sleep 2;
 	};
 
 	{deleteMarkerLocal (_x select 0);} foreach _markers;

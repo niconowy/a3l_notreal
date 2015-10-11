@@ -356,7 +356,7 @@ class Life_Client_Core
 	class Cop
 	{
 		file = "core\cop";
-		//class copMarkers {};
+		class copMarkers {};
 		class copLights {};
 		class vehInvSearch {};
 		class copSearch {};
