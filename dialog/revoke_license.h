@@ -33,7 +33,7 @@ class revokeLicense_Menu
 		{
 			colorBackground[] = {0,0,0,0};
 			idc = 41001;
-			text = "Dpt. of Motor Vehicles";
+			text = "LVPD - LIZENZ MANAGEMENT v2.5";
 			x = BGX;
 			y = BGY;
 			w = BGW;
@@ -146,6 +146,18 @@ class revokeLicense_Menu
 			sizeEx = 0.025;
 			x = BGX + 0.03;
 			y = BGY + 0.32;
+			w = 0.24;
+			h = 0.038;
+		};
+		
+		class ButtonSeven : life_RscButtonMenu
+		{
+			idc = 41008;
+			colorBackground[] = {0.18,0.604,0.996,1};
+			text = "Permanent";
+			sizeEx = 0.025;
+			x = BGX + 0.03;
+			y = BGY + 0.37;
 			w = 0.24;
 			h = 0.038;
 		};

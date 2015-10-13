@@ -42,4 +42,5 @@ switch (_type) do
 	case "taxischein": {17500};
 	case "fischerei": {40000};
 	case "mehlmahl": {35000};
+	case "permdriver": {75000};
 };

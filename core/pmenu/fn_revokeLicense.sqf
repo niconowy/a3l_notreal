@@ -5,7 +5,7 @@
 	Description:
 	Allows cops to revoke individual licenses, or all licenses. Vehicle related only.
 */
-private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6"];
+private["_display","_curTarget","_Btn1","_Btn2","_Btn3","_Btn4","_Btn5","_Btn6","_Btn7"];
 createDialog "revokeLicense_Menu";
 disableSerialization;
 _curTarget = [_this,0,ObjNull,[ObjNull]] call BIS_fnc_param;
@@ -19,6 +19,7 @@ _Btn3 = _display displayCtrl 41004;
 _Btn4 = _display displayCtrl 41005;
 _Btn5 = _display DisplayCtrl 41006;
 _Btn6 = _display DisplayCtrl 41007;
+_Btn7 = _display displayCtrl 41008;
 life_pInact_curTarget = _curTarget;
 
 //Driver License
@@ -38,3 +39,6 @@ _Btn5 buttonSetAction "[[14],""life_fnc_removeLicenses"",life_pInact_curTarget,F
 
 //Firearm License
 _Btn6 buttonSetAction "[[17],""life_fnc_removeLicenses"",life_pInact_curTarget,FALSE] spawn life_fnc_MP; closeDialog 0;";
+
+//Perm Führerschein
+_Btn7 buttonSetAction "[[19],""life_fnc_removeLicenses"",life_pInact_curTarget,FALSE] spawn life_fnc_MP; closeDialog 0;";

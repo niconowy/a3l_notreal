@@ -84,7 +84,7 @@ switch (_state) do
 	//Presseausweis --TODO: Cop Interaktionsmenü
 	case 19:
 	{
-		license_civ_presse = false;
-		hint localize "STR_Civ_RevokeLicense_Presse";
+		license_civ_permdriver = false;
+		hint localize "STR_Civ_RevokeLicense_PermF";
 	};
 };

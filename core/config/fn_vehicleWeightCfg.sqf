@@ -494,6 +494,8 @@ switch (_className) do
 	
 	case "B_Heli_Transport_03_F": {50};
 	case "I_Heli_Transport_02_F": {50};
+
+	case "C_SUV_01_F": {12};
 	
 	default {-1};
 };

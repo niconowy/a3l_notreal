@@ -1431,10 +1431,10 @@
 			<Original>Donuts</Original>
 		</Key>
 		<Key ID="STR_Item_FuelE">
-			<Original>Leerer Benzinkanister</Original>
+			<Original>Benzinkanister</Original>
 		</Key>
 		<Key ID="STR_Item_FuelF">
-			<Original>Benzinkanister</Original>
+			<Original>Notfall-Benzinkanister</Original>
 		</Key>
 		<Key ID="STR_Item_Pickaxe">
 			<Original>Spitzhacke</Original>
@@ -1561,6 +1561,9 @@
 		</Key>
 		<Key ID="STR_Item_Pizza">
 			<Original>Pizzabrötchen</Original>
+		</Key>
+		<Key ID="STR_Item_PermDrivingForm">
+			<Original>Führerscheinformular</Original>
 		</Key>
 	</Package>
 	<Package name="Life_License">
@@ -2006,6 +2009,9 @@
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Presse">
 			<Original>Dein Presseausweis wurde von der Polizei entzogen!</Original>
+		</Key>
+		<Key ID="STR_Civ_RevokeLicense_PermF">
+			<Original>Dein Permanenter Führerschein wurde von der Polizei entzogen!</Original>
 		</Key>
 	</Package>
 		<Package name="Vehicle_Interaction">

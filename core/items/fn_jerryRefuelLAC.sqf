@@ -1,6 +1,7 @@
 /*
-	File: fn_jerryRefuel.sqf
-	Author: Bryan "Tonic" Boardwine
+	File: fn_jerryRefuelLAC.sqf
+	Author: Bryan "Tonic" Boardwine (fn_jerryRefuel.sqf)
+	edit by	VariatoX SandroX
 	
 	Description:
 	Refuels the vehicle if the player has a fuel can.
@@ -8,6 +9,7 @@
 private["_vehicle","_displayName","_upp","_ui","_progress","_pgText","_cP","_previousState"];
 _vehicle = cursorTarget;
 life_interrupted = false;
+if(playerSide != east) exitWith {};
 if(isNull _vehicle) exitWith {hint localize "STR_ISTR_Jerry_NotLooking"};
 if(!(_vehicle isKindOF "LandVehicle") && !(_vehicle isKindOf "Air") && !(_vehicle isKindOf "Ship")) exitWith {};
 if(player distance _vehicle > 5) exitWith {hint localize "STR_ISTR_Jerry_NotNear"};
@@ -36,7 +38,7 @@ while{true} do
 		player playActionNow "stop";
 		player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
 	};
-	sleep 0.195;
+	sleep 0.295;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = uiNamespace getVariable "life_progress";
@@ -66,11 +68,11 @@ switch (true) do
 	{
 		if(!local _vehicle) then
 		{
-			[[_vehicle,(Fuel _vehicle) + 0.1],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+			[[_vehicle,(Fuel _vehicle) + 0.25],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
 		}
 			else
 		{
-			_vehicle setFuel ((Fuel _vehicle) + 0.1);
+			_vehicle setFuel ((Fuel _vehicle) + 0.25);
 		};
 	};
 	
@@ -78,11 +80,11 @@ switch (true) do
 	{
 		if(!local _vehicle) then
 		{
-			[[_vehicle,(Fuel _vehicle) + 0.2],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+			[[_vehicle,(Fuel _vehicle) + 0.4],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
 		}
 			else
 		{
-			_vehicle setFuel ((Fuel _vehicle) + 0.2);
+			_vehicle setFuel ((Fuel _vehicle) + 0.4);
 		};
 	};
 	
@@ -90,11 +92,11 @@ switch (true) do
 	{
 		if(!local _vehicle) then
 		{
-			[[_vehicle,(Fuel _vehicle) + 0.25],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
+			[[_vehicle,(Fuel _vehicle) + 0.4],"life_fnc_setFuel",_vehicle,false] spawn life_fnc_MP;
 		}
 			else
 		{
-			_vehicle setFuel ((Fuel _vehicle) + 0.25);
+			_vehicle setFuel ((Fuel _vehicle) + 0.4);
 		};
 	};
 };

@@ -447,6 +447,7 @@ class Life_Client_Core
 		class lockpick {};
 		class spikeStrip {};
 		class jerryRefuel {};
+		class jerryRefuelLAC {};
 		class flashbang {};
 		class boltcutter {};
 		class bohrmaschine {};

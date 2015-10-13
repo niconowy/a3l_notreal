@@ -242,7 +242,8 @@ life_inv_items =
 	"life_inv_mehl",
 	"life_inv_brotteig",
 	"life_inv_keks",
-	"life_inv_pizza"
+	"life_inv_pizza",
+	"life_inv_permdriverformular"
 ];
 
 life_8_b4lls = 
@@ -305,6 +306,7 @@ life_licenses =
 	["license_civ_home","civ"],
 	["license_civ_presse","civ"],
 	["license_civ_taxischein","civ"],
+	["license_civ_permdriver","civ"],
 	["license_civ_fischerei","civ"] //Nur zum Verkaufen von Fisch
 
 ];
@@ -366,6 +368,7 @@ sell_array =
 	["salt_r",1225],
 	["glass",2155],
 	["fuelF",1750],
+	["fuelF",200],
 	["elektroteile",4000],
 	["laminat",2895],
 	["grillkohle",1900],
@@ -417,7 +420,8 @@ sell_array =
 	["presseformular",1250],
 	["nothammer",1500],
 	["keks",1],
-	["pizza",25]
+	["pizza",25],
+	["permdriverformular",60000]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -436,7 +440,8 @@ buy_array =
 	["pickaxe",1200],
 	["axt",1200],
 	["redgull",1500],
-	["fuelF",5250],
+	["fuelF",7500],
+	["fuelE",1000],
 
 	["wheat seed",25],
 	["sunflower seed",25],
@@ -478,7 +483,8 @@ buy_array =
 	["taxischeinformular",10000],
 	["nothammer",5700],
 	["keks",5],
-	["pizza",80]
+	["pizza",80],
+	["permdriverformular",100000]
 ];
 __CONST__(buy_array,buy_array);
 
@@ -530,6 +536,7 @@ __CONST__(life_weapon_shop_array,life_weapon_shop_array);
 life_garage_prices =
 [
 	["I_Heli_Transport_02_F",5000],
+	["C_SUV_01_F",5000],
 	["cl3_enduro_yellow",8000],["cl3_enduro_black",8000],["cl3_enduro_blue",8000],["cl3_enduro_aqua",8000],["cl3_enduro_babypink",8000],["cl3_enduro_red",8000],["cl3_enduro_dark_green",8000],
 	["cl3_chopper_blue",8000],["cl3_chopper_green",8000],["cl3_chopper_red",8000],
 	["cl3_xr_1000_yellow",8000],["cl3_xr_1000_black",8000],["cl3_xr_1000_babypink",8000],["cl3_xr_1000_red",8000],["cl3_xr_1000_lime",8000],["cl3_xr_1000_flame",8000],["cl3_xr_1000_police",4000],["cl3_xr_1000_emt",4000],
@@ -674,6 +681,7 @@ __CONST__(life_garage_prices,life_garage_prices);
 life_garage_sell =
 [
 	["I_Heli_Transport_02_F",50000],
+	["C_SUV_01_F",1000],
 	["cl3_enduro_yellow",125000],["cl3_enduro_black",125000],["cl3_enduro_blue",125000],["cl3_enduro_aqua",125000],["cl3_enduro_babypink",125000],["cl3_enduro_red",125000],["cl3_enduro_dark_green",125000],
 	["cl3_chopper_blue",125000],["cl3_chopper_green",125000],["cl3_chopper_red",125000],
 	["cl3_xr_1000_yellow",125000],["cl3_xr_1000_black",125000],["cl3_xr_1000_babypink",125000],["cl3_xr_1000_red",125000],["cl3_xr_1000_lime",125000],["cl3_xr_1000_flame",125000],["cl3_xr_1000_police",50000],["cl3_xr_1000_emt",50000],

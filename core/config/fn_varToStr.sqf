@@ -104,8 +104,11 @@ switch (_var) do
 	case "life_inv_cigarette": {"Zigarette"};
 	case "life_inv_raxsrum": {"Rax's Rum"};
 	case "life_inv_weddingring": {(localize "STR_Item_WeddingRing")};
+//Formulare
 	case "life_inv_presseformular": {(localize "STR_Item_PresseForm")};
 	case "life_inv_taxischeinformular": {(localize "STR_Item_TaxiForm")};
+	case "life_inv_permdriverformular": {(localize "STR_Item_PermDrivingForm")};
+
 	case "life_inv_bohrmaschine": {(localize "STR_Item_Bohrmaschine")};
 	case "life_inv_nothammer": {(localize "STR_Item_Nothammer")};
 	case "life_inv_mehl": {(localize "STR_Item_Mehl")};
@@ -145,4 +148,5 @@ switch (_var) do
 	case "license_civ_taxischein": {(localize "STR_License_TaxiSchein")};
 	case "license_civ_fischerei": {(localize "STR_License_Fischerei")};
 	case "license_civ_mehlmahl": {(localize "STR_License_Mehlmahl")};
+	case "license_civ_permdriver": {(localize "STR_License_permdriver")};
 };

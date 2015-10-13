@@ -97,8 +97,9 @@ switch (_item) do
 	case "laminat":{2};
 	case "holz":{4};
 	case "grillkohle":{1};
-	case "presseformular":{1};
-	case "taxischeinformular":{1};
+	case "presseformular":{0.5};
+	case "taxischeinformular":{0.5};
+	case "permdriverformular":{0.5};
 	case "bohrmaschine":{5};
 	case "nothammer":{3};
 	case "mehl":{2};

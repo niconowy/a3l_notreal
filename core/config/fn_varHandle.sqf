@@ -109,6 +109,7 @@ switch (_mode) do
 			case "holz": {"life_inv_holz"};
 			case "presseformular": {"life_inv_presseformular"};
 			case "taxischeinformular": {"life_inv_taxischeinformular"};
+			case "permdriverformular": {"life_inv_permdriverformular"};
 			case "bohrmaschine": {"life_inv_bohrmaschine"};
 			case "nothammer": {"life_inv_nothammer"};
 			case "mehl": {"life_inv_mehl"};
@@ -213,8 +214,11 @@ switch (_mode) do
 			case "life_inv_grillkohle": {"grillkohle"};
 			case "life_inv_laminat": {"laminat"};
 			case "life_inv_holz": {"holz"};
+		//Formulare
 			case "life_inv_presseformular": {"presseformular"};
 			case "life_inv_taxischeinformular": {"taxischeinformular"};
+			case "life_inv_permdriverformular": {"permdriverformular"};
+
 			case "life_inv_bohrmaschine": {"bohrmaschine"};
 			case "life_inv_nothammer": {"nothammer"};
 			case "life_inv_mehl": {"mehl"};

@@ -260,6 +260,14 @@ switch (true) do
 		[] spawn life_fnc_jerryRefuel;
 	};
 	
+	case (_item == "fuelE"):
+	{
+		if(playerSide == east) then {
+			if(vehicle player != player) exitWith {hint localize "STR_ISTR_RefuelInVehicle"};
+			[] spawn life_fnc_jerryRefuelLAC;
+		};
+	};
+	
 /*	case (_item == "lockpick"):
 	{
 		[] spawn life_fnc_lockpick;
@@ -328,6 +336,19 @@ switch (true) do
 		if([false,_item,1] call life_fnc_handleInv) then {
 			license_civ_taxischein = true;
 			hint parseText format["Du bist nun offiziell als Taxi-Fahrer eingetragen.<br/><br/>Solltest du ins Gefängnis einwandern oder Personen überfallen, wird dir dieser Ausweis entzogen!"];
+		};
+	};
+	
+	case (_item == "permdrivingformular"):
+	{
+		if(playerSide != civilian) exitWith {hint "Nur Zivilisten können das Führerscheinformular ausfüllen!"};
+		if(license_civ_driver && license_civ_truck) then {
+			if([false,_item,1] call life_fnc_handleInv) then {
+				license_civ_permdriver = true;
+				hint parseText format["Du hast nun offiziell den PERMANENTEN FÜHRERSCHEIN.<br/><br/>Polizisten können dir diesen Führerschein abnehmen, wenn du gegen die StVO verstößt!"];
+			};
+		} else {
+			titleText ["Du benötigst einen gültigen FÜHRERSCHEIN B und C um das Formular auszufüllen!","PLAIN"];
 		};
 	};
 	
