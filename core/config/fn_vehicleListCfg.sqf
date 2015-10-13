@@ -624,23 +624,38 @@ switch (_shop) do
 	case "adac_veh":
 	{
 		if(playerSide != east) exitWith {hint "Du bist kein LAC-Mitarbeiter!"};
-		if(__GETC__(life_adaclevel) >= 9) exitWith {hint "Du bist als Justiz freigeschalten; nicht als LAC!"};
-		_return =
-		[
-			["C_Offroad_01_F",10000],
-			["A3l_evoxADAC",45000],
-//			["A3L_Towtruck",5000],
-			["A3L_CVLac",25000],
-			["EC635_ADAC",100000],
-			["C_SUV_01_F",12000],
-			["Mrshounka_hummer_civ_jaune",262000],
-			["cl3_dodge_charger_f_yellow",45000],
-			["cl3_enduro_yellow",48500],
-			["S_PorscheRS_Yellow",100000],
-			["cl3_carrera_gt_light_yellow",120000],
-			["B_Heli_Light_01_F",100000]
-			//["I_Heli_Transport_02_F",100000] Unnötig kein Liftsystem
-		];
+		if(__GETC__(life_adaclevel) == 0) exitWith {hint "Du bist kein LAC-Mitarbeiter!"};
+		if(__GETC__(life_adaclevel) >= 9) exitWith {hint "Du bist in der Justiz tätig, nicht im LAC!"};
+
+		if(__GETC__(life_adaclevel) > 0) then {
+			_return pushBack ["C_Offroad_01_F",10000],
+			_return pushBack ["A3L_CVLac",21000]
+		};
+
+		if(__GETC__(life_adaclevel) > 1) then {
+			_return pushBack ["cl3_enduro_yellow",48500],
+			_return pushBack ["A3L_CVLac",21000]
+		};
+
+		if(__GETC__(life_adaclevel) > 2) then {
+			_return pushBack ["A3l_evoxADAC",45000],
+			_return pushBack ["B_Heli_Light_01_F",100000]
+		};
+
+		if(__GETC__(life_adaclevel) > 3) then {
+			_return pushBack ["EC635_ADAC",100000],
+			_return pushBack ["Mrshounka_hummer_civ_jaune",262000]
+		};
+
+		if(__GETC__(life_adaclevel) > 5) then {
+			_return pushBack ["C_SUV_01_F",12000],
+			_return pushBack ["cl3_dodge_charger_f_yellow",45000]
+		};
+
+		if(__GETC__(life_adaclevel) > 6) then {
+			_return pushBack ["S_PorscheRS_Yellow",100000],
+			_return pushBack ["cl3_carrera_gt_light_yellow",120000]
+		};
 	};
 	
 	case "justiz_kfz":
