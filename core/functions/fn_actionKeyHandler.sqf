@@ -59,7 +59,7 @@ if (typeOf _curTarget IN ["A3L_Wheat","A3L_Corn","A3L_Beans","A3L_Cannabis","A3L
 
 //If target is a player then check if we can use the cop menu.
 if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
-	if(playerSide == west && player distance cursorTarget < 3) then //Wenn COP
+	if(playerSide == west && player distance cursorTarget < 4) then //Wenn COP
 	{
 		if(!dialog) then
 		{
@@ -68,7 +68,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 	}
 	else
 	{
-		if(playerSide == east && player distance cursorTarget < 3) then //Wenn ADAC
+		if(playerSide == east && player distance cursorTarget < 4) then //Wenn ADAC
 		{
 			if(!dialog) then
 			{
@@ -77,7 +77,7 @@ if(isPlayer _curTarget && _curTarget isKindOf "Man") then {
 		}
 		else
 		{
-			if(playerSide == independent && player distance cursorTarget < 3) then //Wenn Medic
+			if(playerSide == independent && player distance cursorTarget < 4) then //Wenn Medic
 			{
 				if(!dialog) then
 				{

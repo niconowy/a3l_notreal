@@ -46,9 +46,24 @@ while{true} do
 	_cP = _cP + 0.01;
 	_progress progressSetPosition _cP;
 	_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
-	if(_cP >= 1) exitWith {};
-	if(!alive player) exitWith {};
-	if(life_interrupted) exitWith {};
+	
+	if(_cP >= 1) exitWith {
+		5 cutText ["","PLAIN"];
+		player playActionNow "stop";
+		life_action_inUse = false;
+	};
+	
+	if(!alive player) exitWith {
+		5 cutText ["","PLAIN"];
+		player playActionNow "stop";
+		life_action_inUse = false;
+	};
+	
+	if(life_interrupted) exitWith {
+		5 cutText ["","PLAIN"];
+		player playActionNow "stop";
+		life_action_inUse = false;
+	};
 };
 
 if(!([false,"fuelF",1] call life_fnc_handleInv)) exitWith {};

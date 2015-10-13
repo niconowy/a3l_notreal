@@ -339,7 +339,7 @@ switch (true) do
 		};
 	};
 	
-	case (_item == "permdrivingformular"):
+	case (_item == "permdriverformular"):
 	{
 		if(playerSide != civilian) exitWith {hint "Nur Zivilisten können das Führerscheinformular ausfüllen!"};
 		if(license_civ_driver && license_civ_truck) then {

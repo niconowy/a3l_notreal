@@ -13,6 +13,7 @@ if(playerSide != east) exitWith {};
 if(isNull _vehicle) exitWith {hint localize "STR_ISTR_Jerry_NotLooking"};
 if(!(_vehicle isKindOF "LandVehicle") && !(_vehicle isKindOf "Air") && !(_vehicle isKindOf "Ship")) exitWith {};
 if(player distance _vehicle > 5) exitWith {hint localize "STR_ISTR_Jerry_NotNear"};
+if(!([false,"fuelE",1] call life_fnc_handleInv)) exitWith {};
 
 life_action_inUse = true;
 _displayName = getText(configFile >> "CfgVehicles" >> (typeOf _vehicle) >> "displayName");
@@ -38,7 +39,7 @@ while{true} do
 		player playActionNow "stop";
 		player playMove "AinvPknlMstpsnonWnonDnon_medic_1";
 	};
-	sleep 0.295;
+	sleep 0.395;
 	if(isNull _ui) then {
 		5 cutRsc ["life_progress","PLAIN"];
 		_ui = uiNamespace getVariable "life_progress";
@@ -48,12 +49,25 @@ while{true} do
 	_cP = _cP + 0.01;
 	_progress progressSetPosition _cP;
 	_pgText ctrlSetText format["%3 (%1%2)...",round(_cP * 100),"%",_upp];
-	if(_cP >= 1) exitWith {};
-	if(!alive player) exitWith {};
-	if(life_interrupted) exitWith {};
+	
+	if(_cP >= 1) exitWith {
+		5 cutText ["","PLAIN"];
+		player playActionNow "stop";
+		life_action_inUse = false;
+	};
+	
+	if(!alive player) exitWith {
+		5 cutText ["","PLAIN"];
+		player playActionNow "stop";
+		life_action_inUse = false;
+	};
+	
+	if(life_interrupted) exitWith {
+		5 cutText ["","PLAIN"];
+		player playActionNow "stop";
+		life_action_inUse = false;
+	};
 };
-
-if(!([false,"fuelF",1] call life_fnc_handleInv)) exitWith {};
 
 life_action_inUse = false;
 5 cutText ["","PLAIN"];
