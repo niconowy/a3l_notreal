@@ -1,6 +1,7 @@
 ﻿/*
 	File: fn_eatFood.sqf
 	Author: Bryan "Tonic" Boardwine
+	edit by: Variatox Sandrox
 	
 	Description:
 	Main handling system for eating food.
@@ -34,9 +35,12 @@ if([false,_food,1] call life_fnc_handleInv) then {
 	playsound "essen";
 	_sumH = life_hunger + _hungerP;
 	_sumW = life_thrist + _waterP;
+
 	if(_sumH > 100) then {_sumH = 100; player setFatigue 1; titleText ["Ich fühle mich total überfressen...","PLAIN"];};
 	if(_sumW > 100) then {_sumW = 100;};
-	//TODO -- Herzinfarkt Risiko
+	if(_sumW < 1) then {_sumW = 0;};
+	//TODO:: -- Herzinfarkt Risiko ://
+	
 	life_hunger = _sumH;
 	life_thrist = _sumW;
 };
