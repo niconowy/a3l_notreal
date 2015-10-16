@@ -9,7 +9,7 @@
 private["_vehicle","_vehicleInfo","_value"];
 _vehicle = cursorTarget;
 if(isNull _vehicle) exitWith {};
-if(!((_vehicle isKindOf "Air") OR (_vehicle isKindOf "Ship") OR (_vehicle isKindOf "LandVehicle"))) exitWith {};
+if(!((_vehicle isKindOf "Air") OR (_vehicle isKindOf "Ship") OR (_vehicle isKindOf "LandVehicle") OR (_vehicle isKindof "Car") OR (_vehicle isKindOf "Motorcycle") OR (_vehicle isKindOf "A3L_Tahoe_Base"))) exitWith { hint "Ungültiges Fahrzeug"};
 
 _vehicleInfo = _vehicle getVariable ["Trunk",[]];
 if(count _vehicleInfo == 0) exitWith {hint localize "STR_Cop_VehEmpty"};
