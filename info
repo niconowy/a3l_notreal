@@ -14,20 +14,23 @@
 ** I M P O R T A N T   N O T I C E **
 *************************************
 The server which is running this mission-file is not interested in any way to make profit.
-All users on our server have the opportunity to donate money that will be used for paying the server only.
+All users on our server have the opportunity to donate real-money that will be used only for paying the server.
 
-The person in this file who is named "Tonic" is just a pseudonym that stands for the real person Bryan Boardwine.
-The other person who is named "Itsyuka" is also a pseudonym that stands for the real person Dillon Modine-Thuen.
+The person in this file who is named "Tonic" is a pseudonym of Bryan Boardwine.
+The person in this file who is named "Itsyuka" is a pseudonym of Dillon Modine-Thuen.
 *************************************
 
-This mission-file is a modified version of the standard file of Altis Life RPG v3.1.4.8 which we downloaded from the hosting-service GitHub, Inc (c) , developed by Tonic and Itsyuka.
-The Altis Life RPG Framework was also developed by Tonic, now it is being developed by Itsyuka.
-For more information, please visit the homepage of Altis Life RPG:
+This mission-file is a modified version of the standard file Altis Life RPG v3.1.4.8, developed by Tonic and Itsyuka.
+You can download the vanilla Altis Life RPG v3.1.4.8 for free at https://github.com/TAWTonic/Altis-Life.
+If you wish to get more information, please visit the official homepage of Altis Life RPG:
 http://www.altisliferpg.com/page/index.html
+Altis Life RPG by Tonic is licensed under a Creative Commons Attribution-NonCommercial-NoDerivs 3.0 Unported License http://creativecommons.org/licenses/by-nc-nd/3.0/deed.en_US
 
-All functions which you will find in this file (this may also include the serverside life-server file) are copyright by the owner itself - in this case Tonic and Itsyuka.
-It might be, that some script-files (.SQF) of this mission may exactly look like another file.
-This is definetly wrong. The scripting language "SQF (=Status Quo Function)" which was created by Bohemia Interactive Studio (c) has their own syntax.
+All functions you will find in this file (this may also include the serverside life-server file) are copyright by the owner itself - in this case Tonic and Itsyuka.
+It might be, that some contents of files in this mission may exactly look like another file or just like 'copy-paste'.
+This might be true, but it is definetly wrong that we copy-pasted anything into the Altis Life RPG v3.1.4.8.
+The scripting language "SQF (=Status Quo Function)" which was created by Bohemia Interactive Studio (c) got their own syntax.
+
 So some syntax of a file may look like another ones code.
 Also this mission-file contains self-made scripts that are using functions created by Tonic and Itsyuka.
 Every file that contains a function which uses the prefix "life" or "TON" is a part of Tonic and Itsyukas Altis Life RPG Framework.
