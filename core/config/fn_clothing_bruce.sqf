@@ -36,11 +36,13 @@ switch (_filter) do
 			["TRYK_U_B_Denim_T_BG_BK",nil,2500],
 			["TRYK_U_B_BLK_T_BG_WH",nil,2500],
 			["TRYK_U_B_C02_Tsirt","Schwarze Jeans",450],
-			["KAEL_SUITS_BR_F13","Anzug (Weiss)",17500],
-			["KAEL_SUITS_BR_F4","Anzug (Lila)",17500],
-			["KAEL_SUITS_BR_F5","Anzug (Pink)",17500],
-			["KAEL_SUITS_BR_F","Anzug (Rot)",17500],
-			["KAEL_SUITS_BR_F3","Anzug (Blau)",17500],
+			["KAEL_SUITS_BR_F13","Anzug (eng, Weiss)",17500],
+			["KAEL_SUITS_BR_F4","Anzug (eng, Lila)",17500],
+			["KAEL_SUITS_BR_F5","Anzug (eng, Pink)",17500],
+			["KAEL_SUITS_BR_F","Anzug (eng, Rot)",17500],
+			["KAEL_SUITS_BR_F3","Anzug (eng, Blau)",17500],
+			["U_CivilianSuit_B","Anzug (weit, Braun)",17500],
+			["U_CivilianSuit_C","Anzug (weit, Blau)",17500],
 
 			["U_CivilianSport_A",nil,750],
 			["U_CivilianSport_B",nil,750],
@@ -267,7 +269,7 @@ switch (_filter) do
 	case 2:
 	{
 		[
-			["A3L_FatHead","Zigarette",25],
+			["A3L_FatHead","Smoke",25],
 			["G_Shades_Black",nil,25],
 			["G_Shades_Blue",nil,20],
 			["G_Sport_Blackred",nil,20],
@@ -326,8 +328,8 @@ switch (_filter) do
 	case 4:
 	{
 		[
-			["TRYK_B_Coyotebackpack","Wanderrucksack Braun",1000],
-			["TRYK_B_Coyotebackpack_BLK","Wanderrucksack Schwarz",1000],
+		/*	["TRYK_B_Coyotebackpack","Wanderrucksack Braun",1000], ** Nicht vorhanden
+			["TRYK_B_Coyotebackpack_BLK","Wanderrucksack Schwarz",1000], */
 			["domepokemon",nil,1000],
 			["domepony",nil,1000],
 			["domegraffiti",nil,1000],
@@ -352,8 +354,8 @@ switch (_filter) do
 			["domepu_p",nil,1000],
 			["domepu_t",nil,1000],
 			["domepu_w",nil,1000],
-			["B_Carryall_oli",nil,500],
-			["B_Carryall_khk",nil,500]
+			["B_Carryall_oli",nil,1000],
+			["B_Carryall_khk",nil,1000]
 		];
 	};
 };

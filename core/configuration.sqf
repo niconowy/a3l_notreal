@@ -243,6 +243,7 @@ life_inv_items =
 	"life_inv_brotteig",
 	"life_inv_keks",
 	"life_inv_pizzabrot",
+	"life_inv_pizza",
 	"life_inv_permdriverformular"
 ];
 

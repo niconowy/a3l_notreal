@@ -20,12 +20,14 @@ switch (_filter) do
 	case 0:
 	{
 		[
-			["A3L_Suit_Uniform","Anzug (Schwarz, trad.)",12750],
-			["KAEL_SUITS_BR_F13","Anzug (Weiss)",12750],
-			["KAEL_SUITS_BR_F4","Anzug (Lila)",12750],
-			["KAEL_SUITS_BR_F5","Anzug (Pink)",12750],
-			["KAEL_SUITS_BR_F","Anzug (Rot)",12750],
-			["KAEL_SUITS_BR_F3","Anzug (Blau)",12750]
+			["KAEL_SUITS_BR_F13","Anzug (eng, Weiss)",12750],
+			["KAEL_SUITS_BR_F4","Anzug (eng, Lila)",12750],
+			["KAEL_SUITS_BR_F5","Anzug (eng, Pink)",12750],
+			["KAEL_SUITS_BR_F","Anzug (eng, Rot)",12750],
+			["KAEL_SUITS_BR_F3","Anzug (eng, Blau)",12750],
+			["U_CivilianSuit_B","Anzug (weit, Braun)",12750],
+			["U_CivilianSuit_C","Anzug (weit, Blau)",12750],
+			["U_CivilianSuit_A","Anzug (weit, Schwarz)",12750]
 		];
 	};
 	
@@ -43,7 +45,11 @@ switch (_filter) do
 			["H_Hat_Turban_B",nil,475],
 			["H_Hat_Turban_C",nil,475],
 			["H_Hat_Turban_D",nil,475],
-			["H_Hat_Turban_E",nil,475]
+			["H_Hat_Turban_E",nil,475],
+			
+			["A3L_longhairblack","Lang-Haar Schwarz",120],
+			["A3L_longhairblond","Lang-Haar Blond",120],
+			["A3L_longhairbrown","Lang-Haar Braun",120]
 		];
 	};
 	

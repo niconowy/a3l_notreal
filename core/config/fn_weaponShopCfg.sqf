@@ -352,6 +352,7 @@ switch(_shop) do
 						["optic_DMS",nil,7500],
 						["RH_eotech553",nil,7500],
 						["RH_m3lr",nil,7500],
+						["RH_reflex",nil,7500],
 						["RH_qdss_nt4",nil,4500],
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
@@ -432,6 +433,7 @@ switch(_shop) do
 						["optic_DMS",nil,7500],
 						["RH_eotech553",nil,7500],
 						["RH_m3lr",nil,7500],
+						["RH_reflex",nil,7500],
 						["RH_qdss_nt4",nil,4500],
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
@@ -513,6 +515,8 @@ switch(_shop) do
 						["RH_eotech553",nil,7500],
 						["RH_m3lr",nil,7500],
 						["RH_qdss_nt4",nil,4500],
+						["RH_reflex",nil,7500],
+						["R3F_J4",nil,10000],
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
 						//["R3F_M4S90",nil,2500],
@@ -604,6 +608,8 @@ switch(_shop) do
 						["RH_eotech553",nil,7500],
 						["RH_m3lr",nil,7500],
 						["RH_qdss_nt4",nil,4500],
+						["RH_reflex",nil,7500],
+						["R3F_J4",nil,10000],
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
 						//["R3F_M4S90",nil,2500],
@@ -677,20 +683,22 @@ switch(_shop) do
 						["A3L_CZ550",nil,220000],
 						["A3L_CZ550mag",nil,1500],
 
-						["arifle_SDAR_F","Turtle Harpoon",50000],
-						["20Rnd_556x45_UW_mag","UW-Geschosse",1500],
+						["arifle_SDAR_F","UW-Waffe",25000],
+						["20Rnd_556x45_UW_mag","UW-Geschosse",1200],
 
 						//["FirstAidKit",nil,2250],
 				//VISIERE
-						["optic_Hamr",nil,15500],
-						["optic_Yorris",nil,15500],
-						["A3L_RedDot",nil,15500],
-						["RH_eotech553",nil,15500],
-						["RH_m3lr",nil,15500],
-						["RH_Delft",nil,15500],
-						["A3L_CCO",nil,15500],
-						["A3L_CZ550Scope",nil,15500],
-						["hlc_optic_kobra",nil,15500],
+						["optic_Hamr",nil,10000],
+						["optic_Yorris",nil,10000],
+						["A3L_RedDot",nil,10000],
+						["RH_eotech553",nil,10000],
+						["RH_m3lr",nil,10000],
+						["RH_Delft",nil,10000],
+						["A3L_CCO",nil,8500],
+						["A3L_CZ550Scope",nil,10000],
+						["hlc_optic_kobra",nil,8500],
+						["RH_reflex",nil,8500],
+						["R3F_J4",nil,10000],
 				//CSE ZEUGES
 						["cse_epinephrine",nil,50000],
 						["cse_morphine",nil,50000],
@@ -714,14 +722,14 @@ switch(_shop) do
 		};
 	};
 
-	/*case "don_reb":
+	case "don_reb":
 	{
 		switch(true) do
 		{
 			case (playerSide != civilian): {"Du bist kein Zivilist!"};
 			case (__GETC__(life_donator) == 0): {"Du bist kein Donator!"};
 			case (__GETC__(life_donator) == 1):
-			{["Muhli's Militärwaffen",
+			{hint "VIP-Features Coming Soon!";/*["Muhli's Militärwaffen",
 				[
 					["RH_Deaglem",nil,125000],
 					["RH_demz",nil,15375],
@@ -763,23 +771,23 @@ switch(_shop) do
 					["tf_fadak","Kurzstreckenfunk",80],
 					["tf_mr3000","Langstreckenfunk",4250],
 					["cse_bandage_basic",nil,1425]
-					]
-				];
+				]
+			 ];*/
 			};
 			
 			case (__GETC__(life_donator) == 3):
-			{["Muhli's Militärwaffen",
+			{hint "VIP-Features Coming Soon!";/*["Muhli's Militärwaffen",
 				[
-					["RH_Deaglem",nil,23375],
-					["RH_demz",nil,6375],
+					["RH_Deaglem",nil,125000],
+					["RH_demz",nil,15375],
 					
-					["RH_7Rnd_50_AE",nil,635],
-					["A3L_SA61",nil,38250],
-					["A3L_SA61mag",nil,765],
-					["A3L_UZI",nil,31660],
-					["A3L_UZImag",nil,805],
+					["RH_7Rnd_50_AE",nil,1635],
+					["A3L_SA61",nil,90250],
+					["A3L_SA61mag",nil,1165],
+					["A3L_UZI",nil,225000],
+					["A3L_UZImag",nil,2305],
 					
-					["A3L_AK47",nil,102000],
+					["A3L_AK47",nil,575000],
 					["A3L_AK47mag",nil,2125],
 					
 					["A3L_AK47s",nil,114750],
@@ -811,22 +819,22 @@ switch(_shop) do
 					["tf_mr3000","Langstreckenfunk",4250],
 					["cse_bandage_basic",nil,1425]
 				]
-			 ];
+			 ];*/
 			};
 			
 			case (__GETC__(life_donator) == 5):
-			{["Muhli's Militärwaffen",
+			{hint "VIP-Features Coming Soon!";/*["Muhli's Militärwaffen",
 				[
-					["RH_Deaglem",nil,23375],
-					["RH_demz",nil,6375],
+					["RH_Deaglem",nil,125000],
+					["RH_demz",nil,15375],
 					
-					["RH_7Rnd_50_AE",nil,635],
-					["A3L_SA61",nil,38250],
-					["A3L_SA61mag",nil,765],
-					["A3L_UZI",nil,31660],
-					["A3L_UZImag",nil,805],
+					["RH_7Rnd_50_AE",nil,1635],
+					["A3L_SA61",nil,90250],
+					["A3L_SA61mag",nil,1165],
+					["A3L_UZI",nil,225000],
+					["A3L_UZImag",nil,2305],
 					
-					["A3L_AK47",nil,102000],
+					["A3L_AK47",nil,575000],
 					["A3L_AK47mag",nil,2125],
 					
 					["A3L_AK47s",nil,114750],
@@ -834,13 +842,14 @@ switch(_shop) do
 					["A3L_AK47smag",nil,2335],		
 
 					["A3L_AKS74",nil,161500],
-					["A3L_AK47sMag",nil,2335],					
+					["A3L_AK47sMag",nil,2335],				
 					["RH_M4sbr_b",nil,170000],
 					["30Rnd_556x45_Stanag",nil,2380],
 					["RH_ar10",nil,191250],
 					["RH_20Rnd_762x51_AR10",nil,2550],
 					
-					["RH_qdss_nt4",nil,10625],					
+					["RH_qdss_nt4",nil,10625],
+					
 					["A3L_CZ550",nil,127500],
 					["A3L_CZ550mag",nil,40],
 
@@ -857,11 +866,11 @@ switch(_shop) do
 					["tf_mr3000","Langstreckenfunk",4250],
 					["cse_bandage_basic",nil,1425]
 				]
-			 ];
+			 ];*/
 			};
 			default {"Du bist kein Donator!"}; //Opfer lol
 		};
-	};*/ //Keine Donator mehr vorhanden!
+	};
  
 
 	case "gun":
@@ -874,22 +883,24 @@ switch(_shop) do
 			{
 				["Billy Joe's Feuerwaffen",
 					[
-						["A3L_Glock17",nil,25600],
-						["A3L_Glock17mag",nil,975],
-						["A3L_M9",nil,23900],
-						["A3L_M9mag",nil,868],
-						["A3L_makarov",nil,21575],
-						["A3L_makarovmag",nil,826],
-						["RH_mak",nil,22375],
-						["RH_8Rnd_9x18_Mak",nil,835],
+						["A3L_Glock17",nil,25500],
+						["A3L_Glock17mag",nil,900],
+						["A3L_M9",nil,24000],
+						["A3L_M9mag",nil,850],
+						["RH_gsh18",nil,22000],
+						["RH_18Rnd_9x19_gsh",nil,850],
+						["A3L_makarov",nil,21000],
+						["A3L_makarovmag",nil,800],
+						["RH_mak",nil,22000],
+						["RH_8Rnd_9x18_Mak",nil,800],
 						["RH_fn57_t",nil,29500],
-						["RH_20Rnd_57x28_FN",nil,1450],
-						["RH_cz75",nil,27380],
-						["RH_16Rnd_9x19_CZ",nil,1005],
-						["RH_m9c",nil,28030],
-						["RH_15Rnd_9x19_M9",nil,1090],
-						["RH_p226s",nil,28525],
-						["RH_15Rnd_9x19_SIG",nil,1105]
+						["RH_20Rnd_57x28_FN",nil,950],
+						["RH_cz75",nil,27500],
+						["RH_16Rnd_9x19_CZ",nil,1000],
+						["RH_m9c",nil,28000],
+						["RH_15Rnd_9x19_M9",nil,950],
+						["RH_p226s",nil,28000],
+						["RH_15Rnd_9x19_SIG",nil,1100]
 					]
 				];
 			};
@@ -906,12 +917,12 @@ switch(_shop) do
 			{
 				["Billy Joe's Hinterzimmer",
 					[
-						["A3L_1911",nil,29015],
-						["A3L_1911mag",nil,1245],
+						["A3L_1911",nil,29000],
+						["A3L_1911mag",nil,1200],
 						["RH_vp70",nil,23600],
-						["RH_18Rnd_9x19_VP",nil,848],
-						["A3L_Taurus",nil,29790],
-						["A3L_Taurusmag",nil,1305]
+						["RH_18Rnd_9x19_VP",nil,850],
+						["A3L_Taurus",nil,29700],
+						["A3L_Taurusmag",nil,1300]
 					]
 				];
 			};

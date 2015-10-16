@@ -62,6 +62,7 @@ switch (_filter) do
 	{
 		[
 			["G_O_Diving",nil,100],
+			["G_Goggles_VR","Augenschutz",100],
 			["G_Combat",nil,175],
 			["G_Shades_Black",nil,250],
 			["G_Shades_Blue",nil,200],
