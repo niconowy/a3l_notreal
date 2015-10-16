@@ -229,7 +229,7 @@ life_market_resources = [
 			]
 	],
 	
-	["brotteig", 1506, 1, 2828, 10, 2,
+	["brotteig", 1506, 1, 3028, 10, 2,
 			[
 					["sunflower",1],
 					["corn",1],
@@ -310,7 +310,7 @@ life_market_resources = [
 */
 /////////////////////////
 
-	["cocainep", 4475, 1, 7475, 5, 1,
+	["cocainep", 4475, 1, 7675, 5, 1,
 			[
 					["marijuana",1],
 					["turtle",1],
@@ -319,7 +319,7 @@ life_market_resources = [
 			]
 	],
 	
-	["heroinp", 4205, 1, 7205, 4, 2,
+	["heroinp", 4205, 1, 7405, 4, 2,
 			[
 					["marijuana",1],
 					["turtle",1],
@@ -328,7 +328,7 @@ life_market_resources = [
 			]
 	],
 	
-	["schwarzpulver", 4400, 1, 7400, 3, 3,
+	["schwarzpulver", 4400, 1, 7600, 3, 3,
 			[
 					["marijuana",1],
 					["turtle",1],
@@ -337,7 +337,7 @@ life_market_resources = [
 			]
 	],
 	
-	["turtle", 7750, 1, 9500, 2, 4,
+	["turtle", 7750, 1, 9800, 2, 4,
 			[
 					["marijuana",1],
 					["cocainep",1],
@@ -346,7 +346,7 @@ life_market_resources = [
 			]
 	],
    
-	["marijuana", 4050, 1, 6050, 1, 5,
+	["marijuana", 4050, 1, 6250, 1, 5,
 			[
 					["turtle",1],
 					["cocainep",1],
