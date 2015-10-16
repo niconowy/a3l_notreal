@@ -19,6 +19,7 @@ _unit setVariable["Escorting",FALSE,TRUE];
 _unit setVariable["transporting",FALSE,TRUE]; //Why the fuck do I have this? Is it used?
 _unit setVariable["steam64id",(getPlayerUID player),true]; //Set the UID.
 _unit setVariable["isblinded",false,true];
+_unit setVariable["intoxicated",false,true];
 
 //Setup our camera view
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
@@ -109,6 +110,7 @@ waitUntil {scriptDone _handle};
 life_hunger = 100;
 life_thirst = 100;
 life_carryWeight = 0;
+life_intox = 0.00;
 ja_dzep = 0;
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.

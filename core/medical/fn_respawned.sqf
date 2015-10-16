@@ -20,10 +20,12 @@ player playMove "amovpercmstpsnonwnondnon";
 life_corpse setVariable["Revive",nil,TRUE];
 life_corpse setVariable["name",nil,TRUE];
 life_corpse setVariable["Reviving",nil,TRUE];
+life_corpse setVariable["intoxicated",false,true];
 player setVariable["Revive",nil,TRUE];
 player setVariable["name",nil,TRUE];
 player setVariable["Reviving",nil,TRUE];
 player setVariable["isblinded",false,true];
+player setVariable["intoxicated",false,true];
 
 //Earplugs deaktivieren
 life_earplugs = false;

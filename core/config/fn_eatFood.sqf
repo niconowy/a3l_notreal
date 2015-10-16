@@ -38,7 +38,6 @@ if([false,_food,1] call life_fnc_handleInv) then {
 
 	if(_sumH > 100) then {_sumH = 100; player setFatigue 1; titleText ["Ich fühle mich total überfressen...","PLAIN"];};
 	if(_sumW > 100) then {_sumW = 100;};
-	if(_sumW < 1) then {_sumW = 0;};
 	//TODO:: -- Herzinfarkt Risiko ://
 	
 	life_hunger = _sumH;
