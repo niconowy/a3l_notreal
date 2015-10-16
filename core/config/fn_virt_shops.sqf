@@ -15,7 +15,7 @@ switch (_shop) do
 	case "gang": {["Gang Markt", ["water","rabbit","apple","redgull","tbacon","lockpick","pickaxe","axt","fuelF","peach","boltcutter"]]};
 	case "murdermarket": {["Murder King - So schnell wie nie!", ["rabbit","redgull"]]};
 	case "wongs": {["Wing-Chi's Spezialitäten",["turtlesoup","turtle"]]};
-	case "coffee": {["Gunnmeier's Mahlzeiten",["coffee","donuts","keks","pizza"]]};
+	case "coffee": {["Gunnmeier's Mahlzeiten",["coffee","donuts","keks","pizzabrot","pizza"]]};
 	case "heroin": {["Mikey's Stoffecke",["cocainep","marijuana","heroinp"]]};
 	case "oil": {["Öl Ankauf",["oilp","pickaxe","fuelF"]]};
 	case "fishmarket": {["Aal-Dieter's Frischfisch",["salema","ornate","mackerel","mullet","tuna","catshark"]]};

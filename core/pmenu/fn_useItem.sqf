@@ -32,16 +32,6 @@ switch (true) do
 			player setFatigue 0;
 		};
 	};
-	
-	case (_item == "brotteig"):
-	{
-		if(([false,_item,1] call life_fnc_handleInv)) then
-		{
-			life_hunger = 95;
-			life_thirst = 80;
-			player setFatigue 0.95;
-		};
-	};
 
 	case (_item == "cigarette"):
 	{
@@ -240,7 +230,8 @@ switch (true) do
 				player enableFatigue false;
 				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
 				player enableFatigue true;
-				hint "Puhh... mir geht langsam aber sicher wieder die Puste aus... glaube der EnergyDrink hat nachgelassen";
+				player setFatigue 0.35;
+				titleText ["Glaube der Energy-Drink hat nachgelassen","PLAIN"];
 			};
 		};
 	};
@@ -284,7 +275,7 @@ switch (true) do
 		};
 	};
 	
-	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach","keks","pizza"]):
+	case (_item in ["apple","rabbit","salema","ornate","mackerel","tuna","mullet","catshark","turtle","turtlesoup","donuts","tbacon","peach","keks","pizzabrot","pizza","brotteig"]):
 	{
 		[_item] call life_fnc_eatFood;
 	};
@@ -305,7 +296,7 @@ switch (true) do
 		{
 			if(([false,_item,1] call life_fnc_handleInv)) then
 			{
-				hint "Jemand möchte dich heiraten. Die Regierung gratuliert dem Paar und du bekommst $5000!";
+				hint "Du hast geheiratet. Die Regierung gratuliert dem Paar und du bekommst $5000!";
 				ja_pare = ja_pare + 5000;
 				if(life_married == "-1") then {
 					life_married = "jemand";

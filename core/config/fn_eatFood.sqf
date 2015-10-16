@@ -6,32 +6,37 @@
 	Main handling system for eating food.
 	*Needs to be revised and made more modular and more indept effects*
 */
-private["_food","_val","_sum"];
+private["_food","_hungerP","_waterP","_sumH"];
 _food = [_this,0,"",[""]] call BIS_fnc_param;
 if(_food == "") exitWith {};
 
 if([false,_food,1] call life_fnc_handleInv) then {
 	switch (_food) do
 	{
-		case "apple": {_val = 10};
-		case "rabbit":{ _val = 20};
-		case "salema": {_val = 30};
-		case "ornate": {_val = 25};
-		case "mackerel": {_val = 30};
-		case "tuna": {_val = 100};
-		case "mullet": {_val = 80};
-		case "catshark": {_val = 100};
-		case "turtle": {_val = 100};
-		case "turtlesoup": {_val = 100};
-		case "donuts": {_val = 35};
-		case "tbacon": {_val = 35};
-		case "peach": {_val = 10};
-		case "keks": {_val = 5};
-		case "pizza": {_val = 50};
+		case "apple": {_hungerP = 5; _waterP = 5;};
+		case "rabbit":{ _hungerP = 20; _waterP = 0;};
+		case "salema": {_hungerP = 35; _waterP = 0;};
+		case "ornate": {_hungerP = 35; _waterP = 0;};
+		case "mackerel": {_hungerP = 35; _waterP = 0;};
+		case "tuna": {_hungerP = 95; _waterP = 0;};
+		case "mullet": {_hungerP = 85; _waterP = 0;};
+		case "catshark": {_hungerP = 100; _waterP = 0;};
+		case "turtle": {_hungerP = 100; _waterP = 0;};
+		case "turtlesoup": {_hungerP = 100; _waterP = 25;};
+		case "donuts": {_hungerP = 20; _waterP = 0;};
+		case "tbacon": {_hungerP = 20; _waterP = 0;};
+		case "peach": {_hungerP = 5; _waterP = 5;};
+		case "keks": {_hungerP = 5; _waterP = 0;};
+		case "pizzabrot": {_hungerP = 25; _waterP = 0;};
+		case "pizza": {_hungerP = 45; _waterP = 0;};
+		case "brotteig": {_hungerP = 95; _waterP = -10;};
 	};
 	playsound "essen";
-	_sum = life_hunger + _val;
-	if(_sum > 100) then {_sum = 100; player setFatigue 1; titleText ["Ich fühle mich total überfressen...","PLAIN"];};
+	_sumH = life_hunger + _hungerP;
+	_sumW = life_thrist + _waterP;
+	if(_sumH > 100) then {_sumH = 100; player setFatigue 1; titleText ["Ich fühle mich total überfressen...","PLAIN"];};
+	if(_sumW > 100) then {_sumW = 100;};
 	//TODO -- Herzinfarkt Risiko
-	life_hunger = _sum;
+	life_hunger = _sumH;
+	life_thrist = _sumW;
 };

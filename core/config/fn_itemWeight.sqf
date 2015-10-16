@@ -105,7 +105,8 @@ switch (_item) do
 	case "mehl":{2};
 	case "brotteig":{4};
 	case "keks":{1};
-	case "pizza":{2};
+	case "pizzabrot":{2};
+	case "pizza":{3};
 
 	default {1};
 };

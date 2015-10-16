@@ -9,7 +9,7 @@
 #include <macro.h>
 
 player setVariable["intoxicated",true,true];
-[[0,format["%1 is all jacked up on Coke.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 25],false] spawn life_fnc_MP;
+[[0,format["%1 snifft Kokain.",name player]],"life_fnc_broadcast",(position player) nearEntities [["Man"], 10],false] spawn life_fnc_MP;
 for "_i" from 0 to 400 do
 {
 	"dynamicBlur" ppEffectEnable true;

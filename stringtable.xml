@@ -1559,8 +1559,11 @@
 		<Key ID="STR_Item_Keks">
 			<Original>Keks</Original>
 		</Key>
-		<Key ID="STR_Item_Pizza">
+		<Key ID="STR_Item_pizzabrot">
 			<Original>Pizzabrötchen</Original>
+		</Key>
+		<Key ID="STR_Item_pizza">
+			<Original>Pizza</Original>
 		</Key>
 		<Key ID="STR_Item_PermDrivingForm">
 			<Original>Führerscheinformular</Original>

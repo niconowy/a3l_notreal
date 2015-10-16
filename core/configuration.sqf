@@ -242,7 +242,7 @@ life_inv_items =
 	"life_inv_mehl",
 	"life_inv_brotteig",
 	"life_inv_keks",
-	"life_inv_pizza",
+	"life_inv_pizzabrot",
 	"life_inv_permdriverformular"
 ];
 
@@ -420,7 +420,8 @@ sell_array =
 	["presseformular",1250],
 	["nothammer",1500],
 	["keks",1],
-	["pizza",25],
+	["pizzabrot",25],
+	["pizza",35],
 	["permdriverformular",60000]
 ];
 __CONST__(sell_array,sell_array);
@@ -483,7 +484,8 @@ buy_array =
 	["taxischeinformular",10000],
 	["nothammer",5700],
 	["keks",5],
-	["pizza",80],
+	["pizzabrot",80],
+	["pizza",110],
 	["permdriverformular",100000]
 ];
 __CONST__(buy_array,buy_array);

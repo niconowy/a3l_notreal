@@ -161,6 +161,7 @@ if(count (handGunItems player) > 0) then
     ["life_inv_turtlesoup", life_inv_turtlesoup],
     ["life_inv_coffee", life_inv_coffee],
     ["life_inv_keks", life_inv_keks],
+    ["life_inv_pizzabrot", life_inv_pizzabrot],
     ["life_inv_pizza", life_inv_pizza],
 //Benzinkanister
     ["life_inv_fuelF", life_inv_fuelF],
