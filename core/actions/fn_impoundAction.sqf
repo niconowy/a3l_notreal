@@ -11,7 +11,7 @@ _vehicle = cursorTarget;
 
 if(!((_vehicle isKindOf "Car") || (_vehicle isKindof "landVehicle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base"))) exitWith {};
 if(player distance cursorTarget > 10) exitWith {};
-if(damage _vehicle == 1) exitWith {hint "Dieses Fahrzeug ist zerstört und kann nicht abgeschleppt werden."};
+if(damage _vehicle == 1) exitWith {hint "Dieses Fahrzeug ist zerstört und kann nicht abgeschleppt werden."; deleteVehicle _vehicle};
 if((_vehicle isKindOf "Car") || (_vehicle isKindof "landVehicle") || (_vehicle isKindOf "Air") || (_vehicle isKindOf "Ship") || (_vehicle isKindOf "Motorcycle") || (_vehicle isKindOf "A3L_Tahoe_Base")) then
 {
 	_vehicleData = _vehicle getVariable["vehicle_info_owners",[]];
