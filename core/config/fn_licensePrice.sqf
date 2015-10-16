@@ -11,7 +11,7 @@ if(_type == "") exitWith {-1};
 
 switch (_type) do
 {
-	case "driver": {10000}; //Drivers License cost
+	case "driver": {8500}; //Drivers License cost
 	case "boat": {15000}; //Boating license cost
 	case "pilot": {150000}; //Pilot/air license cost
 	case "gun": {175000}; //Firearm/gun license cost
@@ -25,7 +25,7 @@ switch (_type) do
 	case "medmarijuana": {1500}; //Medical Marijuana processing license cost
 	case "gang": {10000}; //Gang license cost
 	case "rebel": {1750000}; //Rebel license cost
-	case "truck": {50000}; //Truck license cost
+	case "truck": {40000}; //Truck license cost
 	case "diamond": {52500};
 	case "salt": {30000};
 	case "cocaine": {125000};

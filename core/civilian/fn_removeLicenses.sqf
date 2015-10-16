@@ -10,7 +10,7 @@ _state = [_this,0,1,[0]] call BIS_fnc_param;
 
 switch (_state) do
 {
-	//Death while being wanted
+	//B und C weg
 	case 0:
 	{
 		license_civ_driver = false;

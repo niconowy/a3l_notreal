@@ -34,6 +34,9 @@ life_earplugs = false;
 //Intoxication Level auf 0
 life_intox = 0.00;
 
+//Führerschein B und C entfernen
+[0] call life_fnc_removeLicenses;
+
 //CSE bedingter Fatigue + Damage Bug
 player setDammage 0;
 player setFatigue 0;
