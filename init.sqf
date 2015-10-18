@@ -28,7 +28,7 @@ StartProgress = false;
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
-life_versionInfo = "Lakeside Reallife v3.0.4.5";
+life_versionInfo = "Lakeside Reallife v3.0.4.6";
 
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
