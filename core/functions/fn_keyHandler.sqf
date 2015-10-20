@@ -186,7 +186,7 @@ switch (_code) do
 			} else {
 				if((_cursorT isKindOf "Car" OR _cursorT isKindOf "Air" OR _cursorT isKindOf "Ship" OR _cursorT isKindOf "A3L_Tahoe_Base" OR _cursorT isKindOf "Motorcycle" OR _cursorT isKindOf "House_F") && player distance _cursorT < 5 && vehicle player == player && alive _cursorT) then {
 					if(!life_istazed && !life_knockout && !lrl_knockedOut && !(player getVariable "restrained")) then {
-						if((count (player nearObjects["Man",7]) <= 1)) then {
+						if((count (player nearObjects["Man",4]) <= 1)) then {
 							if(_cursorT in life_vehicles OR {!(_cursorT getVariable ["locked",true])}) then {
 								[_cursorT] call life_fnc_openInventory;
 							};

@@ -21,7 +21,7 @@ switch (_filter) do
 		
 			["EMTRM_uni","Praktikant",750],
 			//["A3L_EMT1",nil,1000],
-			["A3L_Sani","Sanitöter",750],
+			["A3L_Sani","Sanitäter",750],
 			["A3L_Retass","Rettungsassistent",750],
 			["A3L_Notarzt","Arzt",750],
 			["A3L_Oberarzt","Oberarzt",750],

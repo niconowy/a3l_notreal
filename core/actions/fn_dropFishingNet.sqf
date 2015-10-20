@@ -7,7 +7,7 @@
 */
 private["_fish","_type","_typeName"];
 if(!(vehicle player isKindOf "Ship")) exitWith {};
-if(((position player) distance (getMarkerPos "fishing_1")) > 175) exitWith {hint "Du befindest dich in keinem Fischereigebiet."};
+if(((position player) distance (getMarkerPos "fishing_1")) > 175) exitWith {hint "Du befindest dich in keinem Fischereigebiet!"};
 _fish = (nearestObjects[getPos vehicle player,["Fish_Base_F"],20]);
 life_net_dropped = true;
 titleText[localize "STR_NOTF_NetDrop","PLAIN"];
