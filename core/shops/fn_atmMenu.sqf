@@ -30,17 +30,11 @@ _text ctrlSetStructuredText parseText format["<img size='1.7' image='icons\bank.
 {
 	if(alive _x) then
 	{
-		switch (side _x) do
-		{
-			case west: {_type = "Cop"};
-			case civilian: {_type = "Civ"};
-			case independent: {_type = "EMS"};
-			case east: {_type = "Adac"};
-		};
-		_units lbAdd format["%1 (%2)",_x getVariable["realname",name _x],_type];
+		_units lbAdd format["%1",_x getVariable["realname",name _x]];
 		_units lbSetData [(lbSize _units)-1,str(_x)];
 	};
 } foreach playableUnits;
+lbSort [_units,"ASC"];
 
 lbSetCurSel [2703,0];
 
