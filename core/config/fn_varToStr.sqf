@@ -116,6 +116,7 @@ switch (_var) do
 	case "life_inv_keks": {(localize "STR_Item_Keks")};
 	case "life_inv_pizzabrot": {(localize "STR_Item_pizzabrot")};
 	case "life_inv_pizza": {(localize "STR_Item_pizza")};
+	case "life_inv_sos": {(localize "STR_Item_sos")};
 
 	
 

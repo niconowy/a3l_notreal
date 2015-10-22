@@ -230,7 +230,7 @@ switch (true) do
 				player enableFatigue false;
 				waitUntil {!alive player OR ((time - life_redgull_effect) > (3 * 60))};
 				player enableFatigue true;
-				player setFatigue 0.35;
+				player setFatigue 0.25;
 				titleText ["Glaube der Energy-Drink hat nachgelassen","PLAIN"];
 			};
 		};
@@ -242,6 +242,12 @@ switch (true) do
 		if(([false,_item,1] call life_fnc_handleInv)) then
 		{
 			[] spawn life_fnc_spikeStrip;
+		};
+	};
+	
+	case (_item == "sos"): {
+		if(playerSide == west) then {
+			[_item] spawn life_fnc_SOS;
 		};
 	};
 	

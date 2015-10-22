@@ -117,6 +117,7 @@ switch (_mode) do
 			case "keks": {"life_inv_keks"};
 			case "pizzabrot": {"life_inv_pizzabrot"};
 			case "pizza": {"life_inv_pizza"};
+			case "sos": {"life_inv_sos"};
 		};
 	};
 	
@@ -227,6 +228,7 @@ switch (_mode) do
 			case "life_inv_keks": {"keks"};
 			case "life_inv_pizzabrot": {"pizzabrot"};
 			case "life_inv_pizza": {"pizza"};
+			case "life_inv_sos": {"sos"};
 		};
 	};
 };

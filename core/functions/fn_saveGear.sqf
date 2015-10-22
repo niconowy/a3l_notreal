@@ -185,7 +185,9 @@ if(count (handGunItems player) > 0) then
 	["life_inv_RoadBlockRebel", life_inv_RoadBlockRebel],
 	["life_inv_BarGate", life_inv_BarGate],
 //Nothammer Gedöns
-	["life_inv_nothammer", life_inv_nothammer]
+	["life_inv_nothammer", life_inv_nothammer],
+//SOS Knopf
+	["life_inv_sos", life_inv_sos]
 ];
 
 _return pushBack _uItems;

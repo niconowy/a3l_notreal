@@ -10,6 +10,7 @@ life_action_inUse = false;
 private["_civ","_invs","_license","_guns","_gun"];
 _civ = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _invs = [_this,1,[],[[]]] call BIS_fnc_param;
+_money = _this select 2;
 if(isNull _civ) exitWith {};
 
 _illegal = 0;
@@ -39,8 +40,8 @@ if(count _invs > 0) then
 };
 if(!alive _civ || player distance _civ > 5) exitWith {hint format[localize "STR_Cop_CouldntSearch",_civ getVariable["realname",name _civ]]};
 //hint format["%1",_this];
-hint parseText format["<t color='#FF0000'><t size='2'>%1</t></t><br/><t color='#FFD700'><t size='1.5'><br/>" +(localize "STR_Cop_IllegalItems")+ "</t></t><br/>%2<br/><br/>"
-,(_civ getVariable["realname",name _civ]),_inv];
+hint parseText format["<t color='#FF0000'><t size='1.6'>Personendurchsuchung</t></t><br/><br/><br/><t size='1.3' align='left' color='#00A2FF'>Name:</t><br/><t align='right' size='0.95'>%1<br/><br/><t size='1.3' align='left' color='#00CD00'>Bargeld (in $):</t><br/><t size='1.1' align='right'>%3</t><br/><br/><br/><t color='#FFD700'><t size='1.5' align='left'><br/>" +(localize "STR_Cop_IllegalItems")+ "</t></t><br/>%2<br/><br/>"
+,(_civ getVariable["realname",name _civ]),_inv,[_money] call life_fnc_numberText];
 
 /*if(_robber) then
 {

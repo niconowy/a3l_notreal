@@ -244,7 +244,8 @@ life_inv_items =
 	"life_inv_keks",
 	"life_inv_pizzabrot",
 	"life_inv_pizza",
-	"life_inv_permdriverformular"
+	"life_inv_permdriverformular",
+	"life_inv_sos"
 ];
 
 life_8_b4lls = 
@@ -334,7 +335,8 @@ life_illegal_items = [
 	["blastingcharge",125000],
 	["boltcutter",12000],
 	["nothammer",7520],
-	["lockpick",2250]
+	["lockpick",2250],
+	["sos",1250]
 ];
 
 
@@ -426,7 +428,8 @@ sell_array =
 	["keks",1],
 	["pizzabrot",25],
 	["pizza",35],
-	["permdriverformular",60000]
+	["permdriverformular",60000],
+	["sos",1000]
 ];
 __CONST__(sell_array,sell_array);
 
@@ -490,7 +493,8 @@ buy_array =
 	["keks",5],
 	["pizzabrot",80],
 	["pizza",110],
-	["permdriverformular",100000]
+	["permdriverformular",100000],
+	["sos",3500]
 ];
 __CONST__(buy_array,buy_array);
 

@@ -690,6 +690,10 @@ switch(_shop) do
 						["arifle_SDAR_F","UW-Waffe",25000],
 						["20Rnd_556x45_UW_mag","UW-Geschosse",1200],
 
+						["SMG_01_F",nil,50000],
+						["30Rnd_45ACP_Mag_SMG_01",nil,1300],
+						
+
 						//["FirstAidKit",nil,2250],
 				//VISIERE
 						["optic_Hamr",nil,10000],
@@ -926,7 +930,9 @@ switch(_shop) do
 						["RH_vp70",nil,23600],
 						["RH_18Rnd_9x19_VP",nil,850],
 						["A3L_Taurus",nil,29700],
-						["A3L_Taurusmag",nil,1300]
+						["A3L_Taurusmag",nil,1300],
+						["hgun_PDW2000_F",nil,31500],
+						["30Rnd_9x21_Mag",nil,1300]
 					]
 				];
 			};

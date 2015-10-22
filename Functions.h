@@ -462,6 +462,7 @@ class Life_Client_Core
 		class RoadConeB {};
 		class RoadConeStripB {};
 		class scheibeEinschlagen {};
+		class SOS {};
 	};
 	
 	class Dialog_Controls

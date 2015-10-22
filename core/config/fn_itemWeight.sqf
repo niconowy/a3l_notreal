@@ -107,6 +107,7 @@ switch (_item) do
 	case "keks":{1};
 	case "pizzabrot":{2};
 	case "pizza":{3};
+	case "sos":{2};
 
 	default {1};
 };

@@ -177,6 +177,13 @@ class CfgSounds
 		sound[] = {"sounds\plop.ogg", 0.9, 1};
 		titles[] = {};
 	};
+	
+	class sos_button
+	{
+		name = "sos_button";
+		sound[] = {"sounds\sos.ogg", 1.0, 1};
+		titles[] = {};
+	};
 };
 
 class CfgDebriefing
