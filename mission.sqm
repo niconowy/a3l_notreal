@@ -4125,7 +4125,6 @@ class Mission
 		{
 			position[]={7965.2607,100.67,6616.9912};
 			azimut=355;
-			offsetY=0.67000002;
 			id=207;
 			side="EMPTY";
 			vehicle="Land_InfoStand_V2_F";
