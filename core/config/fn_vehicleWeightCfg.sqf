@@ -496,6 +496,10 @@ switch (_className) do
 	case "I_Heli_Transport_02_F": {50};
 
 	case "C_SUV_01_F": {15};
+
+	case "shounka_a3_suburbangign": {25};
+	case "shounka_a3_mantgs": {45};
+	case "shounka_a3_brinks_noir": {25};
 	
 	default {-1};
 };

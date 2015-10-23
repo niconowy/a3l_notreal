@@ -1571,6 +1571,9 @@
 		<Key ID="STR_Item_sos">
 			<Original>SOS-Knopf</Original>
 		</Key>
+		<Key ID="STR_Item_blaulicht">
+			<Original>Blaulicht</Original>
+		</Key>
 	</Package>
 	<Package name="Life_License">
 		<Key ID="STR_License_Driver">

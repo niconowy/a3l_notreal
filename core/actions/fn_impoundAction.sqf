@@ -71,6 +71,14 @@ if((_vehicle isKindOf "Car") || (_vehicle isKindof "landVehicle") || (_vehicle i
 		};
 		if(playerSide == west && playersNumber east > 2) then {_vehicle setFuel 0}; //Wenn mehr als 2 IPDler da sind, und ein Cop das KFZ beschlagnahmt -> KFZ Fuel = 0
 		life_impound_inuse = true;
+		
+		//Blaulicht FBI Entfernen
+		{if(typeOf _x == "Land_Camping_Light_off_F")then{
+				detach _x;
+				deleteVehicle _x;
+			};
+		}forEach attachedObjects _vehicle;
+
 		[[_vehicle,true,player],"TON_fnc_vehicleStore",false,false] spawn life_fnc_MP;
 		waitUntil {!life_impound_inuse};
 		hint format[localize "STR_NOTF_Impounded",_type,_price];

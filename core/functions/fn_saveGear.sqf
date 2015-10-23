@@ -166,6 +166,7 @@ if(count (handGunItems player) > 0) then
 //Benzinkanister
     ["life_inv_fuelF", life_inv_fuelF],
     ["life_inv_fuelE", life_inv_fuelE],
+
     ["life_inv_pickaxe", life_inv_pickaxe],
     ["life_inv_tbacon", life_inv_tbacon],
     ["life_inv_lockpick", life_inv_lockpick],
@@ -186,8 +187,9 @@ if(count (handGunItems player) > 0) then
 	["life_inv_BarGate", life_inv_BarGate],
 //Nothammer Gedöns
 	["life_inv_nothammer", life_inv_nothammer],
-//SOS Knopf
-	["life_inv_sos", life_inv_sos]
+//Polizei Gegenstände
+	["life_inv_sos", life_inv_sos],
+	["life_inv_blaulicht", life_inv_blaulicht]
 ];
 
 _return pushBack _uItems;
