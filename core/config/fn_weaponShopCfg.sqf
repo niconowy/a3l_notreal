@@ -685,7 +685,7 @@ switch(_shop) do
 						["RH_qdss_nt4",nil,19880],
 
 						["A3L_CZ550",nil,220000],
-						["A3L_CZ550mag",nil,1500],
+						["A3L_CZ550mag",nil,1000],
 
 						["arifle_SDAR_F","UW-Waffe",25000],
 						["20Rnd_556x45_UW_mag","UW-Geschosse",1200],
@@ -696,15 +696,15 @@ switch(_shop) do
 
 						//["FirstAidKit",nil,2250],
 				//VISIERE
-						["optic_Hamr",nil,10000],
-						["optic_Yorris",nil,10000],
-						["A3L_RedDot",nil,10000],
-						["RH_eotech553",nil,10000],
-						["RH_m3lr",nil,10000],
-						["RH_Delft",nil,10000],
+						["optic_Hamr",nil,7500],
+						["optic_Yorris",nil,5000],
+						["A3L_RedDot",nil,7500],
+						["RH_eotech553",nil,7500],
+						["RH_m3lr",nil,7500],
+						["RH_Delft",nil,7500],
 						["A3L_CCO",nil,8500],
-						["A3L_CZ550Scope",nil,10000],
-						["hlc_optic_kobra",nil,8500],
+						["A3L_CZ550Scope",nil,9500],
+						["hlc_optic_kobra",nil,7500],
 						["RH_reflex",nil,8500],
 						["R3F_J4",nil,10000],
 				//CSE ZEUGES

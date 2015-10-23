@@ -248,6 +248,7 @@ switch (true) do
 	case (_item == "sos"): {
 		if(playerSide == west) then {
 			[_item] spawn life_fnc_SOS;
+			closeDialog 0;
 		};
 	};
 	
