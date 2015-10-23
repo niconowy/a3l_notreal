@@ -211,7 +211,7 @@ switch (_code) do
 						[_veh] spawn life_fnc_EinsatzLicht;				
 					}else{
 						if(life_inv_blaulicht != 0 )then{
-							life_inv_blaulicht = life_inv_blaulicht - 1;
+							[false,"blaulicht",1] call life_fnc_handleInv;	
 							_veh setVariable["xcar",["BL_car",false,nil],true];
 						};
 					};							
@@ -225,7 +225,7 @@ switch (_code) do
 						_xcar =_veh getVariable "xcar";		
 						if!(isNil{_xcar select 2})then{					
 							if(_xcar select 0 == "BL_car") then {								
-								life_inv_blaulicht = life_inv_blaulicht + 1;		
+								[true,"blaulicht",1] call life_fnc_handleInv;		
 								_veh setVariable["xcar",nil,true];
 							}else{
 								_veh setVariable["xcar",[_xcar select 0,false,nil],true];
