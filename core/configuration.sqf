@@ -338,7 +338,7 @@ life_illegal_items = [
 	["nothammer",7520],
 	["lockpick",2250],
 	["sos",1250],
-	["blaulicht",1250],
+	["blaulicht",1250]
 ];
 
 
