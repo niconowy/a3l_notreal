@@ -177,4 +177,8 @@ while{ (alive _veh)} do {
 		_light setLightBrightness 0.0;  		
 	};  
 	sleep (_this select 1);  
+
 }; //WHILE END
+
+deleteVehicle _light;
+
