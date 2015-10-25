@@ -346,7 +346,7 @@ life_market_resources = [
 			]
 	],
    
-	["marijuana", 4050, 1, 6690, 1, 5,
+	["marijuana", 4050, 1, 10253, 1, 5,
 			[
 					["turtle",1],
 					["cocainep",1],
