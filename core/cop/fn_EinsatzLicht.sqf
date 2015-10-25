@@ -250,7 +250,7 @@ if(_state) then {
 				};
 			};
 			_veh setVariable["xcar",[_type,true,true],TRUE];	
-			[[_veh,0.22],"life_fnc_ULights",true,false] call BIS_fnc_mp;
+			[[_veh,1],"life_fnc_ULights",true,false] call BIS_fnc_mp;
 		};
 	};
 };
