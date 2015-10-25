@@ -255,6 +255,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
+						["cse_morphine",nil,25000],
 						["cse_bandage_basic",nil,1750]
 					]
 				];
@@ -298,6 +299,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
+						["cse_morphine",nil,25000],
 						["cse_bandage_basic",nil,1750]
 					]
 				];
@@ -378,6 +380,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
+						["cse_morphine",nil,25000],
 						["cse_bandage_basic",nil,1750]
 					
 					]
@@ -460,6 +463,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
+						["cse_morphine",nil,25000],
 						["cse_bandage_basic",nil,1750]
 					
 					]
@@ -544,6 +548,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
+						["cse_morphine",nil,25000],
 						["cse_bandage_basic",nil,1750]
 					
 					]
@@ -635,6 +640,7 @@ switch(_shop) do
 						["tf_anprc148jem_13","Kurzstreckenfunk",100],
 						["tf_anprc155","Langstreckenfunk",1000],
 						["cse_epinephrine",nil,1500],
+						["cse_morphine",nil,25000],
 						["cse_bandage_basic",nil,1750]
 					]
 				];

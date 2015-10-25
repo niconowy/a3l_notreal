@@ -15,7 +15,7 @@ if !(alive _robber) exitWith {};
 
 _alarm = false;
 _rip = true;
-_kassa = 225000 + round(random 100000); //setting the money in the registry, anywhere from 3000 to 15000. 
+_kassa = 950000 + round(random 100000); //setting the money in the registry, anywhere from 3000 to 15000. 
 [[_shop,_robber,_action,-1],"TON_fnc_shopStateBank",false,false] spawn life_fnc_MP; //sending information to the server so the animations and removeaction can be performed for all players if the checks clear. 
 
 hint "Was? Ein Alarm? Die Cops werden sicherlich gleich hier sein!!";
