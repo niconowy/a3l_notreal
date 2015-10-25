@@ -178,13 +178,3 @@ while{ (alive _veh)} do {
 	};  
 	sleep (_this select 1);  
 }; //WHILE END
- 
-//Lösch das Blaulicht!
-if(!alive _veh) exitWith {
-deleteVehicle _light;
-	{ if(typeOf _x == "Land_Camping_Light_off_F" ) then {
-			detach _x;
-			deleteVehicle _x;
-		};
-	}forEach attachedObjects _veh;
-};

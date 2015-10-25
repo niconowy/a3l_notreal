@@ -1409,6 +1409,7 @@ switch (_shop) do
 			_return pushBack ["A3l_TaurusFPBLBCSO",25000],
 			//_return pushBack ["A3L_TaurusFPBPD",25000],
 			_return pushBack ["A3l_TaurusFPBLBPD",25000],
+			_return pushBack ["A3L_TaurusFPBLBSP",25000],
 			/*_return pushBack ["A3l_TaurusFPBLBSP",25000],*/
 			_return pushBack ["A3L_JailBus",32500],
 			_return pushBack ["Mrshounka_rs_2015_g",27000]
@@ -1419,6 +1420,7 @@ switch (_shop) do
 			_return pushBack ["A3L_CVPIFPBLBPD",45000],		
 			/*_return pushBack ["A3L_CVPIFPBLBFG",45000],*/
 			_return pushBack ["A3L_CVPIFPBLBCSO",45000],
+			_return pushBack ["A3L_CVPIFPBLBFG",45000],
 			_return pushBack ["A3L_CVPIFPBLBSM",45000],
 			_return pushBack ["A3L_CVPIFPBLBHP",45000]
 		};
@@ -1427,6 +1429,7 @@ switch (_shop) do
 		{
 			_return pushBack ["A3L_EvoXFPBLBPD",70000],
 			_return pushBack ["A3L_EvoXFPBLBSO",70000],
+			_return pushBack ["A3L_EvoXFPBLBSP",70000],
 			/*_return pushBack ["A3L_EvoXFPBLBSP",70000],*/
 			_return pushBack ["DAR_TahoePoliceDet",50000],
 			_return pushBack ["shounka_a3_audiq7_v2_gendarmerie",55000],
@@ -1441,21 +1444,22 @@ switch (_shop) do
 			_return pushBack ["DAR_TahoePolice", 50000],
 			/*_return pushBack ["charger_st",80000],*/
 			_return pushBack ["charger_sh",80000],
+			_return pushBack ["charger_st",80000],
 			_return pushBack ["charger_lvpd",80000],
 			_return pushBack ["charger_umb",80000],
 			_return pushBack ["charger_umw",80000],
-			_return pushBack ["shounka_a3_brinks_noir",125000],
-			_return pushBack ["shounka_a3_suburbangign",125000]
+			_return pushBack ["shounka_a3_brinks_noir",150000],
+			_return pushBack ["shounka_a3_suburbangign",150000]
+		};
+		
+		if(__GETC__(life_coplevel) >= 5) then
+		{	
+			_return pushBack ["cl3_xr_1000_police",75000]
 		};
 		
 		if(__GETC__(life_coplevel) >= 7) then
 		{	
 			_return pushBack ["IVORY_REV",100000]
-		};
-			
-		if(__GETC__(life_coplevel) >= 8) then
-		{	
-			_return pushBack ["cl3_xr_1000_police",75000]
 		};
 	};
 	
