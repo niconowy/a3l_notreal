@@ -10,6 +10,6 @@ if(playersNumber west < 6) exitWith {hint "Die Kasse ist derzeit noch elektronis
 if(isNull _shop OR isNull _robber) exitWith {}; //Shop ist entweder Null (Map Fehler) oder Räuber ist kein Spieler
 if(side _robber != civilian) exitWith {hint "Genau. Mach halt. Nein. Alter! DU HAST EINEN BEAMTENSTATUS!!!!"}; //Genau. Depp. xD
 if(vehicle player != _robber) exitWith {hint "Aus dem Auto ausrauben? Da könnte ja jeder kommen!"}; //Mehrfache Beschwerden, dass aus dem KFZ ausgeraubt wird
-if(currentWeapon _robber in ["","Rangefinder","Binocular","Radar_Gun","A3L_sign","A3L_sign2","Tv_Camera","gign_shield"]) exitWith {hint "Mach das du weg kommst du kleiner Schinken..."}; //Ausrauben ohne gueltige Waffe
+if(currentWeapon _robber in lrl_noWeapons) exitWith {hint "Mach das du weg kommst du kleiner Schinken..."}; //Ausrauben ohne gueltige Waffe
 if(_robber distance _shop > 3) exitWith {};
 [[_shop,_robber,_action],"TON_fnc_robShops",false,false] spawn life_fnc_MP;//now we send the info to the server to be processed further there.

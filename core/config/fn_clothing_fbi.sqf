@@ -243,9 +243,9 @@ switch (_filter) do
 			["ALE_H_NewEra_Redsox",nil,1250],
 			["kio_vfv_mask","Vendetta",2500],
 			["A3L_Legoman","Legokopf",10000],
-			/*["A3L_Halloween_Pumpkinhead","Pumpkin",10000],
-			["A3L_Halloween_PredatorMask","Predator",7500],		//Fehlerhaft :: weisse textur!
-			["A3L_Halloween_JigSaw","Jigsaw",7500],*/
+			["A3L_Halloween_Pumpkinhead","Pumpkin",10000],
+			["A3L_Halloween_PredatorMask","Predator",7500],		
+			["A3L_Halloween_JigSaw","Jigsaw",7500],
 			["jokermask","Clown",7500],
 			["A3L_soa_helmet","Biker Helm",4000],	
 			["A3L_gangster_hat","Gangster Maske",1000],

@@ -2,6 +2,8 @@
 	File: fn_copMarkers.sqf
 	Author: Bryan "Tonic" Boardwine
 	
+	edited by Marcel "Variatox" Koch (lsrl.de)
+	
 	Description:
 	Marks cops on the map for other cops. Only initializes when the actual map is open.
 */

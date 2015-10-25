@@ -21,6 +21,8 @@ _unit setVariable["steam64id",(getPlayerUID player),true]; //Set the UID.
 _unit setVariable["isblinded",false,true];
 _unit setVariable["intoxicated",false,true];
 
+if(headgear _unit == "mgsr_headbag") then {removeHeadgear _unit};
+
 //Setup our camera view
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
 showCinemaBorder TRUE;

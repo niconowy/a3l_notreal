@@ -99,7 +99,7 @@
 			<Original>Du hast $%1 an %2 überwiesen.\n\nEine Gebühr von $%3 wurde verrechnet.</Original>
  		</Key>
  		<Key ID="STR_ATM_WithdrawMax">
-			<Original>Du kannst nicht mehr als $999,999 abheben</Original>
+			<Original>Du kannst nicht mehr als $999.999 abheben</Original>
  		</Key>
  		<Key ID="STR_ATM_WithdrawMin">
 			<Original>Du kannst nicht weniger als $100 abheben</Original>
@@ -891,6 +891,9 @@
 		<Key ID="STR_NOTF_Interact2Fast">
 			<Original>Nicht so schnell...</Original>
 		</Key>
+		<Key ID="STR_NOTF_NoWeaponEquip">
+			<Original>Du trägst keine Waffe!</Original>
+		</Key>
 	</Package>
 	<Package name="Jail_Strings">
 		<Key ID="STR_Jail_Warn">
@@ -1545,7 +1548,7 @@
 			<Original>Taxischeinformular</Original>
 		</Key>
 		<Key ID="STR_Item_Bohrmaschine">
-			<Original>Bohrmaschine</Original>
+			<Original>Thermalbohrer</Original>
 		</Key>
 		<Key ID="STR_Item_Nothammer">
 			<Original>Nothammer</Original>

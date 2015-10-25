@@ -122,13 +122,13 @@ switch (_code) do
 	case 19:
 	{
 		if(_shift) then {_handled = true;};
-		if(_shift && playerSide == west && !lrl_knockedOut && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false])) then
+		if(_shift && playerSide == west && !lrl_knockedOut && !life_istazed && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false])) then
 		{
 			[] call life_fnc_restrainAction;
 		};
 		
 		//Rebellfesseln
-		if(_shift && playerSide == civilian && (license_civ_rebel) && !lrl_knockedOut && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false]) && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "") then
+		if(_shift && playerSide == civilian && (license_civ_rebel) && !lrl_knockedOut && !life_istazed && !isNull _cursorT && _cursorT isKindOf "Man" && (isPlayer _cursorT) && alive _cursorT && _cursorT distance player < 3 && !(_cursorT getVariable "Escorting") && !(_cursorT getVariable "restrained") && speed _cursorT < 1 && !(player getVariable ["restrained", false]) && (currentWeapon player == primaryWeapon player OR currentWeapon player == handgunWeapon player) && currentWeapon player != "") then
 		{
 			[] call life_fnc_restrainAction;
 		};
@@ -137,7 +137,7 @@ switch (_code) do
 	//C Key
     case 15:
     {    
-		if(!_alt && !_ctrlKey && playerside == civilian && !life_action_inUse && !lrl_knockedOut) then {
+		if(!_alt && !_ctrlKey && playerside == civilian && !life_action_inUse && !life_istazed && !lrl_knockedOut) then {
 			[] call life_fnc_Farmmenu;
 		};
     };
@@ -235,12 +235,12 @@ switch (_code) do
 									detach _x;
 									deleteVehicle _x;
 								};
-							} forEach attachedObjects _veh;						
-						};										
-					};	
+							} forEach attachedObjects _veh;
+						};
+					};
 				};
 			};
-		};	
+		};
 	};
 	
 	// ENDE

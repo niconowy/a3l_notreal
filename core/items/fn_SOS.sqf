@@ -21,4 +21,5 @@ if(!([false, _sosItem ,1] call life_fnc_handleInv)) exitWith {};
 [[0,format["SOS -- %1", profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; 
 [[0,format["SOS -- %1", profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; 
 [[0,format["SOS -- %1", profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; 
-[[player,"sos_buton"],"A3L_Fnc_NearestSound",false,false,false] call BIS_fnc_MP;
+[[0,format["SOS -- %1", profileName]],"life_fnc_broadcast",west,false] spawn life_fnc_MP; 
+[player,"sos_button"] call life_fnc_globalSound;

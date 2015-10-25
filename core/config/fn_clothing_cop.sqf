@@ -70,7 +70,8 @@ switch (_filter) do
 	case 1:
 	{
 		//_ret pushBack ["A3L_sargehat","Polizei Sargehat",150];
-		_ret pushBack ["H_Beret_Colonel","Ausbilderbarett",125];
+		//_ret pushBack ["H_Beret_Colonel","Ausbilderbarett",125];
+		_ret pushBack ["H_Hat_Cap_Thai","Ausbilder Mütze",100];
 		//_ret pushBack ["H_HelmetB_black","FBI Helm",50];
 		_ret pushBack ["H_PilotHelmetFighter_B","Piloten Helm",150];
 		_ret pushBack ["H_RacingHelmet_1_black_F","Motorradhelm",250];
