@@ -560,7 +560,7 @@ switch(_shop) do
 						
 					/*	["RH_Mk12mod1",nil,37855],
 						["RH_30Rnd_556x45_Mk262",nil,1350], */
-						["RH_spr_mbs",nil,4500],
+					//	["RH_spr_mbs",nil,4500],
 						["RH_M16A3",nil,34345],
 						["RH_m4",nil,32120],
 						["30Rnd_556x45_Stanag",nil,1175],

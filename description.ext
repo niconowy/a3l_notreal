@@ -73,6 +73,13 @@ class CfgSounds
 		titles[] = {};
 	};
 	
+	class maske
+	{
+		name = "maske";
+		sound[] = {"\sounds\maske.ogg", 1, 1};
+		titles[] = {};
+	};
+	
 	class 1ntr0
 	{
 		name = "1ntr0";

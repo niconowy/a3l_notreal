@@ -18,6 +18,7 @@ if(isNull _caller) exitWith {};
 
 removeHeadgear player;
 player addHeadgear "mgsr_headbag";
+[player,"maske"] call life_fnc_globalSound;
 
 while {player getVariable "isblinded"} do {
 

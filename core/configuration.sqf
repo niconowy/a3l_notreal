@@ -333,13 +333,14 @@ life_illegal_items = [
 	["cocainep",5560],
 	["cannabis",975],
 	["marijuana",4320],
-	["turtle",2000],
+	["turtle",8000],
 	["blastingcharge",125000],
 	["boltcutter",12000],
 	["nothammer",7520],
 	["lockpick",2250],
 	["sos",1250],
-	["blaulicht",1250]
+	["blaulicht",1250],
+	["bohrmaschine",3000]
 ];
 
 
