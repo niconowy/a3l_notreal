@@ -241,15 +241,15 @@ if (_playerstamina < 0.10) then {
         } else {
         if (_playerstamina < 0.30) then {
                 _staminacolor = "#BFFF00";
-                _staminatext = parseText format["Beginne zu Schwitzen"];
+                _staminatext = parseText format["Brauche eine Verschnaufpause"];
         } else {
         if (_playerstamina < 0.40) then {
                 _staminacolor = "#EAFF00";
-                _staminatext = parseText format["Brauche eine Verschnaufpause"];
+                _staminatext = parseText format["Beginne zu schwitzen"];
         } else {
         if (_playerstamina < 0.50) then {
                 _staminacolor = "#FF8400";
-                _staminatext = parseText format["Meine Fusssohlen tun weh"];
+                _staminatext = parseText format["Das ist so anstrengend"];
         } else {
         if (_playerstamina < 0.60) then {
                 _staminacolor = "#FF4000";
@@ -257,7 +257,7 @@ if (_playerstamina < 0.10) then {
         } else {
         if (_playerstamina > 0.59) then {
                 _staminacolor = "#590000";
-                _staminatext = parseText format["Ich, ich kann nicht mehr..."];
+                _staminatext = parseText format["Ich bekomme kaum noch Luft..."];
 };};};};};};};
  
  

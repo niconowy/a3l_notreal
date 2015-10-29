@@ -64,6 +64,7 @@ if(!(str(player) in ["cop_4"]) && !(lrl_copLeitstelle)) then {
 		case 9: {life_paycheck = life_paycheck + 3000;};
 		case 10: {life_paycheck = life_paycheck + 3500;};
 		case 11: {life_paycheck = life_paycheck + 3750;};
+		case 12: {life_paycheck = life_paycheck + 3850;};
 	};
 } else {
 	life_paycheck = life_paycheck + 3250;
