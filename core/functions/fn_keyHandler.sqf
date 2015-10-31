@@ -274,7 +274,7 @@ switch (_code) do
 				if(vehicle player != player && !life_umbrellus2_active && ((driver vehicle player) == player)) then {
 					[] spawn {
 					life_umbrellus2_active = true;
-						sleep 13;
+						sleep 20;
 						systemChat "Sirene kann deaktiviert werden.";
 					life_umbrellus2_active = false;
 					};
