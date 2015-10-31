@@ -167,7 +167,7 @@ _light setLightAttenuation [0.05, 0, 0, 500];
 _leftRed = true;  
 while{ (alive _veh)} do {  
 	_xcar = _veh getVariable "xcar";	
-	if((isNil{_xcar}) OR !(_xcar select 1))exitWith {};
+	if((isNil{_xcar}) OR !(_xcar select 1))exitWith {deleteVehicle _light;};
 	_bright = 10 * sunOrMoon^4 + 2,5; // HAHA  Math.... Never thought i could use ýou  	
 	if(_leftRed) then{  
 		_leftRed = false;
