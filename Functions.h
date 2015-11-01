@@ -82,6 +82,7 @@ class Life_Client_Core
 		//class revivePlayer {};
 		//class revived {};
 		//class medicMarkers {};
+		class medicMapMarker {};
 		class requestMedic {};
 		class medicRequest {};
 		class deathScreen {};
