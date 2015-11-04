@@ -48,6 +48,7 @@ lrl_sell = true;
 lrl_knockedOut = false;
 lrl_spamcounter = 0;
 lrl_copLeitstelle = false;
+lrl_emsLeitstelle = false;
 lrl_noWeapons = ["","Rangefinder","Binocular","Radar_Gun","A3L_sign","A3L_sign2","Tv_Camera","gign_shield"];
 lrl_version = "lakeside-reallifeDE_modinfo_ver_152510";
 

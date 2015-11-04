@@ -22,15 +22,23 @@ if((__GETC__(life_medicLevel)) < 1) exitWith {
 	disableUserInput false;
 };
 
-switch(__GETC__(life_mediclevel)) do
-{
-	case 1: {life_paycheck = life_paycheck - 2500;};
-    case 2: {life_paycheck = life_paycheck - 1500;};
-    case 3: {life_paycheck = life_paycheck - 1000;};
-    case 4: {life_paycheck = life_paycheck;};
-    case 5: {life_paycheck = life_paycheck + 500;};
-    case 6: {life_paycheck = life_paycheck + 1500;};
-	//case 7: {life_paycheck = life_paycheck + 3000;};
+if((str(player) in ["MEDIC_2"])) then {
+	lrl_emsLeitstelle = true;
+};
+
+if(!(str(player) in ["MEDIC_2"])) then {
+	switch(__GETC__(life_mediclevel)) do
+	{
+		case 1: {life_paycheck = life_paycheck - 2500;};
+		case 2: {life_paycheck = life_paycheck - 1500;};
+		case 3: {life_paycheck = life_paycheck - 1000;};
+		case 4: {life_paycheck = life_paycheck;};
+		case 5: {life_paycheck = life_paycheck + 500;};
+		case 6: {life_paycheck = life_paycheck + 1500;};
+		//case 7: {life_paycheck = life_paycheck + 3000;};
+	};
+} else {
+	life_paycheck = life_paycheck + 1250;
 };
 
 player setVariable ["copLevel",1,true];

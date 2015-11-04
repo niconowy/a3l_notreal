@@ -20,9 +20,9 @@ while {true} do
 	if(!alive _vehicle) exitWith {};
 	if(isNull _vehicle) exitWith {};
 
-	_vehicle say3D "masterofhalloween";
+	_vehicle say3D "umbrellam2";
 
-	sleep 28;
+	sleep 20;
 
 	if(!(_vehicle getVariable "umbrellus2")) exitWith {};
 };

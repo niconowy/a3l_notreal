@@ -2164,7 +2164,7 @@
 			<Original>Du hast kein Fahrzeug ausgewählt!</Original>
 		</Key>
 		<Key ID="STR_Shop_Veh_NotEnough">
-			<Original>Du hast nicht genug Geld, um das Fahrzeug zu kaufen.\n\nFehlender Betrag: $%1</Original>
+			<Original>Du hast nicht genug Geld auf dem Konto, um das Fahrzeug zu kaufen.\n\nFehlender Betrag: $%1</Original>
 		</Key>
 		<Key ID="STR_Shop_Veh_NoLicense">
 			<Original>Du besitzt die benötigte Lizenz nicht!</Original>

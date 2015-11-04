@@ -80,13 +80,6 @@ class CfgSounds
 		titles[] = {};
 	};
 	
-	class masterofhalloween
-	{
-		name = "masterofhalloween";
-		sound[] = {"\sounds\masterofhalloween.ogg", 1, 1};
-		titles[] = {};
-	};
-	
 	class 1ntr0
 	{
 		name = "1ntr0";

@@ -27,7 +27,7 @@ ctrlShow [2330,true];
 _vehicleInfo select 8,
 _vehicleInfo select 11,
 _vehicleInfo select 10,
-if(_trunkSpace == -1) then {"None"} else {_trunkSpace},
+if(_trunkSpace == -1) then {"Kein"} else {_trunkSpace},
 _vehicleInfo select 12,
 _vehicleInfo select 9
 ];
