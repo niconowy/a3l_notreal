@@ -15,7 +15,7 @@ _markers = [];
 _ems = [];
 
 sleep 0.5;
-if(visibleMap) then {
+if(visibleMap && lrl_emsLeitstelle) then {
 	{if(side _x == independent) then {_ems pushBack _x;}} foreach playableUnits; //Fetch list of cops / blufor
 	
 	//Create markers
