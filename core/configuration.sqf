@@ -43,6 +43,8 @@ life_adac_request = false;
 life_married = "";
 life_earplugs = false;
 
+delay_pickaxe = false; // Q-Spam Pickaxe Fix
+
 lrl_buy = true;
 lrl_sell = true;
 lrl_knockedOut = false;

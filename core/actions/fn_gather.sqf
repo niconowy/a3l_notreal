@@ -10,7 +10,7 @@ private["_gather","_itemWeight","_diff","_itemName","_val","_resourceZones","_zo
 _resourceZones = ["wheat_1","wheat_2","sunflower_1","sunflower_2","corn_1","bean_1","cotton_1","olive_1","opium_1","cannabis_1","pumpkin_1","coke_1"];
 _zone = "";
 
-if(life_action_inUse) exitWith {};
+if(life_action_gathering) exitWith {};
 
 {
 	if(player distance (getMarkerPos _x) < 30) exitWith {_zone = _x;};
@@ -18,7 +18,7 @@ if(life_action_inUse) exitWith {};
 
 if(_zone == "") exitWith {
 	hint localize "STR_NOTF_notNearResource";
-	life_action_inUse = false;
+	life_action_gathering = false;
 };
 
 //Get the resource that will be gathered from the zone name...
@@ -41,7 +41,7 @@ switch(true) do {
 //gather check??
 if(vehicle player != player) exitWith {hint localize "STR_NOTF_GatherVeh";};
 
-life_action_inUse = true;
+life_action_gathering = true;
 
 _plantnearby = false;
 
@@ -64,17 +64,17 @@ _plantclsnamearr = [
 
 if (_plantnearby) then {
 	["Zu nah an einer anderen Pflanze",20,"red"] call A3L_Fnc_Msg;
-	life_action_inUse = false;
+	life_action_gathering = false;
 } else {
 	if(!([false,_seeds,1] call life_fnc_handleInv)) exitWith {
 	["Du hast keine Samen mehr",20,"red"] call A3L_Fnc_Msg;
-	life_action_inUse = false;
+	life_action_gathering = false;
 	};
 
 	_plantedtext = format["Du hast %1 gesäet",_gather];
 	[_plantedtext,20,"green"] call A3L_Fnc_Msg;
 	[[player,_gather],"svr_plantseed",false,false,false] spawn life_fnc_MP;
-	life_action_inUse = false;
+	life_action_gathering = false;
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
 	waitUntil{animationState player != "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";};
 };

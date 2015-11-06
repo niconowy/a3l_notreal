@@ -24,7 +24,7 @@ _pumpkinZones = ["pumpkin_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[25,25,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Apples = player addAction[(localize ""STR_Gather_Apples""),life_fnc_gather,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Apples;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Apples = player addAction[(localize ""STR_Gather_Apples""),life_fnc_gather,'',0,false,false,'','!life_action_gathering'];","player removeAction LIFE_Action_Apples;"];
 } foreach _appleZones;
 
 //Create peach zones
@@ -32,7 +32,7 @@ _pumpkinZones = ["pumpkin_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[25,25,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Peaches = player addAction[(localize ""STR_Gather_Peaches""),life_fnc_gather,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Peaches;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Peaches = player addAction[(localize ""STR_Gather_Peaches""),life_fnc_gather,'',0,false,false,'','!life_action_gathering'];","player removeAction LIFE_Action_Peaches;"];
 } foreach _peachZones;
 
 //Create heroin zones
@@ -40,7 +40,7 @@ _pumpkinZones = ["pumpkin_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[50,50,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_heroin = player addAction[(localize ""STR_Gather_Heroin""),life_fnc_gather,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Heroin;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_heroin = player addAction[(localize ""STR_Gather_Heroin""),life_fnc_gather,'',0,false,false,'','!life_action_gathering'];","player removeAction LIFE_Action_Heroin;"];
 } foreach _heroinZones;
 
 //Create Weed zones
@@ -48,7 +48,7 @@ _pumpkinZones = ["pumpkin_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[50,50,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Cannabis = player addAction[(localize ""STR_Gather_Cannabis""),life_fnc_gather,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Cannabis;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Cannabis = player addAction[(localize ""STR_Gather_Cannabis""),life_fnc_gather,'',0,false,false,'','!life_action_gathering'];","player removeAction LIFE_Action_Cannabis;"];
 } foreach _weedZones;
 
 //Create cocaine zones
@@ -56,7 +56,7 @@ _pumpkinZones = ["pumpkin_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[50,50,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_Coke = player addAction[(localize ""STR_Gather_Cocaine""),life_fnc_gather,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_Coke;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_Coke = player addAction[(localize ""STR_Gather_Cocaine""),life_fnc_gather,'',0,false,false,'','!life_action_gathering'];","player removeAction LIFE_Action_Coke;"];
 } foreach _cocaineZones;
 
 //Create cocaine zones
@@ -64,5 +64,5 @@ _pumpkinZones = ["pumpkin_1"];
 	_zone = createTrigger ["EmptyDetector",(getMarkerPos _x)];
 	_zone setTriggerArea[50,50,0,false];
 	_zone setTriggerActivation["CIV","PRESENT",true];
-	_zone setTriggerStatements["player in thislist","LIFE_Action_pumpkin = player addAction[(localize ""STR_Gather_Pumpkin""),life_fnc_gather,'',0,false,false,'','!life_action_inUse'];","player removeAction LIFE_Action_pumpkin;"];
+	_zone setTriggerStatements["player in thislist","LIFE_Action_pumpkin = player addAction[(localize ""STR_Gather_Pumpkin""),life_fnc_gather,'',0,false,false,'','!life_action_gathering'];","player removeAction LIFE_Action_pumpkin;"];
 } foreach _pumpkinZones;

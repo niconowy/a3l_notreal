@@ -24,11 +24,12 @@ switch (true) do
 if(_mine == "") exitWith {hint localize "STR_ISTR_Pick_NotNear"};
 if(vehicle player != player) exitWith {hint localize "STR_ISTR_Pick_MineVeh";};
 
-if(life_action_inUse) exitWith {};
+if(life_action_gathering) exitWith {};
 
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};
-life_action_inUse = true;
+delay_pickaxe = true;
+life_action_gathering = true;
 for "_i" from 0 to 2 do
 {
 	player playMove "AinvPercMstpSnonWnonDnon_Putdown_AmovPercMstpSnonWnonDnon";
@@ -42,4 +43,5 @@ if(([true,_mine,_diff] call life_fnc_handleInv)) then
 	titleText[format[localize "STR_ISTR_Pick_Success",_itemName,_diff],"PLAIN"];
 };
 
-life_action_inUse = false;
+delay_pickaxe = false;
+life_action_gathering = false;
