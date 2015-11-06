@@ -138,8 +138,10 @@ switch (_code) do
 	//C Key
     case 15:
     {    
-		if(!_alt && !_ctrlKey && playerside == civilian && !life_action_inUse && !life_istazed && !lrl_knockedOut) then {
-			[] call life_fnc_Farmmenu;
+		if(!_alt && !_ctrlKey && playerside == civilian && !life_action_inUse && !life_istazed && !lrl_knockedOut && !delay_pickaxe) then {
+			if(!dialog) then {
+				[] call life_fnc_Farmmenu;
+			};
 		};
     };
 	

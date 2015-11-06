@@ -21,6 +21,7 @@ _Btn1 = _display displayCtrl Btn1;
 _Btn2 = _display displayCtrl Btn2;
 
 if(!alive player) exitWith {}; //Prevent them from opening this for exploits while dead.
+if(life_action_inUse || life_istazed || lrl_knockedOut || delay_pickaxe) exitWith {};
 //closedialog 0;
 
 _Btn1 ctrlSetText localize "STR_FarmMenu_PickUse";

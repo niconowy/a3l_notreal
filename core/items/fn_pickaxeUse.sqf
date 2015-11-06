@@ -24,7 +24,7 @@ switch (true) do
 if(_mine == "") exitWith {hint localize "STR_ISTR_Pick_NotNear"};
 if(vehicle player != player) exitWith {hint localize "STR_ISTR_Pick_MineVeh";};
 
-if(life_action_gathering) exitWith {};
+if(life_action_gathering || delay_pickaxe) exitWith {};
 
 _diff = [_mine,_val,life_carryWeight,life_maxWeight] call life_fnc_calWeightDiff;
 if(_diff == 0) exitWith {hint localize "STR_NOTF_InvFull"};

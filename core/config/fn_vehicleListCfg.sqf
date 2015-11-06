@@ -634,7 +634,6 @@ switch (_shop) do
 
 		if(__GETC__(life_adaclevel) > 1) then {
 			_return pushBack ["cl3_enduro_yellow",48500],
-			_return pushBack ["A3L_CVLac",21000],
 			_return pushBack ["C_SUV_01_F",12000],
 		};
 
