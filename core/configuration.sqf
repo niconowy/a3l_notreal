@@ -374,6 +374,7 @@ sell_array =
 	["axt",750],
 	["redgull",200],
 	["peach",55],
+	["cocaine",2250],
 	["cocainep",4675],
 	["diamondc",4845],
 	["iron_r",4150],
