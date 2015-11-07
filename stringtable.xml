@@ -49,7 +49,7 @@
 			<Original>Abfrage läuft...</Original>
 		</Key>
 		<Key ID="STR_ANOTF_QueryGarage">
-			<Original>Durchsuche nach Fahrzeugen...</Original>
+			<Original>Suche nach Fahrzeugen...</Original>
 		</Key>
 		<Key ID="STR_ANOTF_Query_2">
 			<Original>Du fragst bereits einen Spieler ab.</Original>
@@ -116,7 +116,7 @@
 	</Package>
 	<Package name="Cell_Phone">
 		<Key ID="STR_CELL_Title">
- 			<Original>Altis Mobilfunk</Original>
+ 			<Original>Lakeside Smartphone</Original>
 		</Key>
 		<Key ID="STR_CELL_TextToSend">
 			<Original>Deine Nachricht:</Original>
@@ -264,7 +264,7 @@
 	
 	<Package name="Gang_Notification">
 		<Key ID="STR_GNOTF_CreateGang">
-			<Original>Du musst erst in einer Gang sein, um einzunehmen zu können!</Original>	
+			<Original>Du musst erst in einer Gang sein, um dieses Versteck einnehmen zu können!</Original>	
 		</Key>
 		<Key ID="STR_GNOTF_Controlled">
 			<Original>Deine Gang hat bereits die Kontrolle über dieses Versteck!</Original>	
@@ -1837,22 +1837,22 @@
 		</Package>
 	<Package name="Gather_Items">
 		<Key ID="STR_Gather_Apples">
-			<Original>  Säe an...  </Original>
+			<Original>  Sähe an...  </Original>
 		</Key>
 		<Key ID="STR_Gather_Peaches">
-			<Original>  Säe an...  </Original>
+			<Original>  Sähe an...  </Original>
 		</Key>
 		<Key ID="STR_Gather_Heroin">
-			<Original>Säe Mohnsamen an.</Original>
+			<Original>Sähe Mohnsamen an.</Original>
 		</Key>
 		<Key ID="STR_Gather_Cannabis">
-			<Original>Säe Cannabissamen an.</Original> 
+			<Original>Sähe Cannabissamen an.</Original> 
 		</Key>
 		<Key ID="STR_Gather_Cocaine">
-			<Original>Säe Kokasamen an.</Original>
+			<Original>Sähe Kokasamen an.</Original>
 		</Key>
 		<Key ID="STR_Gather_Pumpkin">
-			<Original>Säe Kürbissamen an.</Original>
+			<Original>Sähe Kürbissamen an.</Original>
 		</Key>
 	</Package>
 	<Package name="Medical_Strings">
@@ -1915,7 +1915,7 @@
 			<Original>Eigentümer</Original>
 		</Key>
 		<Key ID="STR_GUI_PlayerReveal">
-			<Original>Zeigt automatisch nächstgelegene Objekte innerhalb von 15m an, deaktiviere dies, wenn du Leistungprobleme hast.</Original>
+			<Original>Zeigt automatisch nächstgelegene Objekte innerhalb von 15m an, deaktiviere dies, wenn du Leistungsprobleme hast.</Original>
 		</Key>
 		<Key ID="STR_GUI_PlayTags">
 			<Original>Regelt, ob Spieler Namensschilder über dem Kopf haben.</Original>
@@ -2002,7 +2002,7 @@
 		</Key>
 		
 		<Key ID="STR_pInAct_RevokeLicense">
-			<Orignal>Entziehen Lizenzen</Orignal>
+			<Orignal>Entziehe Lizenzen</Orignal>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Driver">
 			<Original>Dein Führerschein wurde von der Polizei entzogen!</Original>
@@ -2017,7 +2017,7 @@
 			<Original>Dein Bootsschein wurde von der Polizei entzogen!</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Diving">
-			<Original>Dein Tauscherschein wurde von der Polizei entzogen!</Original>
+			<Original>Dein Taucherschein wurde von der Polizei entzogen!</Original>
 		</Key>
 		<Key ID="STR_Civ_RevokeLicense_Firearm">
 			<Original>Dein Waffenschein wurde von der Polizei entzogen!</Original>
@@ -2274,7 +2274,7 @@
 			<Original>Du erhältst deinen nächsten Gehaltsscheck in %1 Minuten</Original>
 		</Key>
 		<Key ID="STR_FSM_MissedPay">
-			<Original>Du erhältst kein Gehaltsscheck, da du gestorben bist.</Original>
+			<Original>Du erhältst keinen Gehaltsscheck, da du gestorben bist.</Original>
 		</Key>
 		<Key ID="STR_FSM_ReceivedPay">
 			<Original>Du hast deinen Gehaltscheck in Höhe von $%1 erhalten</Original>
