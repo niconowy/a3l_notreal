@@ -1837,22 +1837,22 @@
 		</Package>
 	<Package name="Gather_Items">
 		<Key ID="STR_Gather_Apples">
-			<Original>  Sähe an...  </Original>
+			<Original>  Säe an...  </Original>
 		</Key>
 		<Key ID="STR_Gather_Peaches">
-			<Original>  Sähe an...  </Original>
+			<Original>  Säe an...  </Original>
 		</Key>
 		<Key ID="STR_Gather_Heroin">
-			<Original>Sähe Mohnsamen an.</Original>
+			<Original>Säe Mohnsamen an.</Original>
 		</Key>
 		<Key ID="STR_Gather_Cannabis">
-			<Original>Sähe Cannabissamen an.</Original> 
+			<Original>Säe Cannabissamen an.</Original> 
 		</Key>
 		<Key ID="STR_Gather_Cocaine">
-			<Original>Sähe Kokasamen an.</Original>
+			<Original>Säe Kokasamen an.</Original>
 		</Key>
 		<Key ID="STR_Gather_Pumpkin">
-			<Original>Sähe Kürbissamen an.</Original>
+			<Original>Säe Kürbissamen an.</Original>
 		</Key>
 	</Package>
 	<Package name="Medical_Strings">
