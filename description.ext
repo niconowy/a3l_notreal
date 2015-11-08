@@ -1,5 +1,5 @@
 author = "Tonic, Itsyuka | Edited by LSRL.DE";
-onLoadName = "Lakeside Reallife v3.0.5.0";
+onLoadName = "Lakeside Reallife v3.0.5.5";
 onLoadMission = "Webseite: http://lakeside-reallife.de/";
 loadScreen = "textures\logo.paa";
 joinUnassigned = 1;
