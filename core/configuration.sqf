@@ -52,7 +52,7 @@ lrl_spamcounter = 0;
 lrl_copLeitstelle = false;
 lrl_emsLeitstelle = false;
 lrl_noWeapons = ["","Rangefinder","Binocular","Radar_Gun","A3L_sign","A3L_sign2","Tv_Camera","gign_shield"];
-lrl_version = "lakeside-reallifeDE_modinfo_ver_152510";
+lrl_version = "lakeside-reallifeDE_modinfo_ver_150811";
 
 
 //Persistent Saving
@@ -125,7 +125,7 @@ switch (playerSide) do
 	};
 	case civilian: 
 	{
-		ja_pare = 15000; //Starting Bank Money
+		ja_pare = 17500; //Starting Bank Money
 		life_paycheck = 1500; //Paycheck Amount
 	};
 	
