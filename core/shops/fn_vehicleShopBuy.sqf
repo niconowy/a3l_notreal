@@ -119,6 +119,6 @@ if(_mode) then {
 	};
 };
 
-[1] call SOCK_fnc_updatePartial; //Sync silently because it's obviously silently..
+[6] call SOCK_fnc_updatePartial; //Sync silently because it's obviously silently..
 closeDialog 0; //Exit the menu.
 true;
