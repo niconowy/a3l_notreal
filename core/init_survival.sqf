@@ -195,6 +195,14 @@ private["_obj"];
 	};
 };
 
+//Auto Sync (alle 15 Minuten)
+[] spawn {
+	while {true} do {
+		sleep 900;
+		[] call SOCK_fnc_updateRequest;
+	};
+};
+
 
 _copmarkers = ["funk_1","funk_2","funk_3","funk_4","funk_5","funk_6","funk_7","funk_8","funk_9","funk_10","funk_11","funk_12","funk_13","funk_14","funk_15","funk_16","funk_17","funk_18","funk_19","funk_20","funk_21","funk_22","funk_23","funk_24","funk_25","funk_26","funk_27","funk_28","funk_29","funk_30","funk_31","funk_32","funk_33","funk_34","funk_35","funk_36","funk_37","funk_38","funk_39","funk_40"];
 _noleitmarkers = ["funk_3","funk_4","funk_7","funk_8","funk_11","funk_12","funk_15","funk_16","funk_18","funk_20","funk_23","funk_24","funk_27","funk_28","funk_31","funk_32","funk_35","funk_36","funk_39","funk_40"];

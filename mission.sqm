@@ -7564,7 +7564,7 @@ class Mission
 		{
 			position[]={-1583.4032,221.72,11120.227};
 			name="funk_1";
-			text="Gruppe 1:   NOT: 62.7   LSPD: 35.2   Sheriff: 68.9   Short: 33.4";
+			text="Gruppe 1:   NOT: 39.2   LSPD: 35.3   Sheriff: 41.8  Short: 48.2";
 			type="A3L_PD_Icon";
 			colorName="ColorWEST";
 		};
@@ -7572,7 +7572,7 @@ class Mission
 		{
 			position[]={-1587.4362,221.72,10961.029};
 			name="funk_2";
-			text="Gruppe 2:   NOT: 72.1   LSDP: 57.1   Sheriff: 54.8   Short: 36.8";
+			text="Gruppe 2:   NOT: 45.1   LSDP: 51.2   Sheriff: 64.8   Short: 51.5";
 			type="A3L_PD_Icon";
 			colorName="ColorWEST";
 		};
@@ -7580,7 +7580,7 @@ class Mission
 		{
 			position[]={-1587.4358,221.72,10813.093};
 			name="funk_3";
-			text="Gruppe 3:   NOT: 56.2   LSPD: 39.3   Sheriff: 66.6   Short: 42.7";
+			text="Gruppe 3:   NOT: 72.5   LSPD: 51.2   Sheriff: 66.6   Short: 58.6";
 			type="A3L_PD_Icon";
 			colorName="ColorWEST";
 		};
@@ -7588,7 +7588,7 @@ class Mission
 		{
 			position[]={-1587.4359,221.72,10659.524};
 			name="funk_4";
-			text="Gruppe 4:   NOT: 34.3   LSPD: 67.7   Sheriff: 44.1   Short: 76.1";
+			text="Gruppe 4:   NOT: 65.1   LSPD: 48.5   Sheriff: 58.2   Short: 34.9";
 			type="A3L_PD_Icon";
 			colorName="ColorWEST";
 		};
@@ -7687,7 +7687,7 @@ class Mission
 		{
 			position[]={-1586.3485,221.72,10509.554};
 			name="funk_22";
-			text="Gruppe 5:   NOT: 69.3   LSPD: 75.1   Sheriff: 38.6   Short: 50.9";
+			text="Gruppe 5:   NOT: 58.4   LSPD: 39.2   Sheriff: 46.7   Short: 55.1";
 			type="A3L_PD_Icon";
 			colorName="ColorWEST";
 		};
