@@ -53,7 +53,10 @@ switch (_filter) do
 			["U_IG_leader","Guerilla Leader",15000],
 			["U_B_GhillieSuit","Wookie-Anzug (Hell)",65000],
 			["U_I_GhillieSuit","Wookie-Anzug (Grün)",65000],
-			["U_O_GhillieSuit","Wookie-Anzug (Braun)",65000]
+			["U_O_GhillieSuit","Wookie-Anzug (Braun)",65000],
+			["U_I_FullGhillie_ard","Vollst. Ghillie (Trocken)",85000],
+			["U_I_FullGhillie_sard","Wookie-Anzug (Halbtrocken)",85000],
+			["U_I_FullGhillie_lsh","Wookie-Anzug (Grün)",85000]
 		];
 	};
 	

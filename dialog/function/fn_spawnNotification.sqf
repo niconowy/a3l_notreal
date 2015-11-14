@@ -21,8 +21,8 @@ _MTown = "Morrison Town";
 _LDiablos = "Los Diablos";
 _SCristobal = "San Cristobal";
 _AField = "Flughafen";
-_RAField = "Rebellen Flughafen";
-_RPost = "Rebellen Posten";
+_RAField = "Rebellen SW";
+_RPost = "Rebellen W";
 _RBHof = "Rebellen Bauernhof";
 _JVA = "Justizvollzugsanstalt";
 

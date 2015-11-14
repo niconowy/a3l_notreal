@@ -33,8 +33,8 @@ switch (_side) do
 				["civ_spawn_4","Los Diablos","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_2","Morrison Town","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
 				["civ_spawn_3","San Cristobal","\a3\ui_f\data\map\MapControl\watertower_ca.paa"],
-				["reb_spawn_1","Rebellen Posten SW","\A3L_Map_Markers\store_icon_red.paa"],
-				["reb_spawn_2","Rebellen Posten W","\A3L_Map_Markers\store_icon_red.paa"],
+				["reb_spawn_1","Rebellen SW","\A3L_Map_Markers\store_icon_red.paa"],
+				["reb_spawn_2","Rebellen W","\A3L_Map_Markers\store_icon_red.paa"],
 				["reb_spawn_3","Rebellen Bauernhof","\A3L_Map_Markers\store_icon_red.paa"]
 			];
 		} else {
