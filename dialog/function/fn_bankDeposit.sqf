@@ -12,10 +12,10 @@ _value = parseNumber(ctrlText 2702);
 if(_value > 999999) exitWith {hint localize "STR_ATM_GreaterThan";};
 if(_value < 250) exitWith {hint "You can't deposit less then 250€"};
 if(!([str(_value)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
-if(_value > ja_dzep) exitWith {hint localize "STR_ATM_NotEnoughCash"};
+if(_value > doofi_b4r5) exitWith {hint localize "STR_ATM_NotEnoughCash"};
 
-ja_dzep = ja_dzep - _value;
-ja_pare = ja_pare + _value;
+doofi_b4r5 = doofi_b4r5 - _value;
+man_ey_b4nK = man_ey_b4nK + _value;
 
 hint format[localize "STR_ATM_DepositMSG",[_value] call life_fnc_numberText];
 [] call life_fnc_atmMenu;

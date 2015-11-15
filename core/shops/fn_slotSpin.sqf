@@ -6,8 +6,8 @@
 */
 private["_slot","_slot1","_slot2","_slot3","_winnings","_slotcash","_betamt","_display"];
 _betamt = [_this,0,1,[0]] call BIS_fnc_param;
-if(ja_dzep < _betamt) exitWith {hint format["Du hast nicht den Betrag bei dir, den du setzten wolltest (%1$)",_betamt];};
-ja_dzep = ja_dzep - _betamt;
+if(doofi_b4r5 < _betamt) exitWith {hint format["Du hast nicht den Betrag bei dir, den du setzten wolltest (%1$)",_betamt];};
+doofi_b4r5 = doofi_b4r5 - _betamt;
 disableSerialization;
 _display = findDisplay 5780;
 
@@ -109,7 +109,7 @@ switch (_slot) do
 //multiple winnings by bet amount
 _slotcash = _winnings * ( _betamt / 1000 );
 
-ja_dzep = ja_dzep + _slotcash;
+doofi_b4r5 = doofi_b4r5 + _slotcash;
 _winningsText ctrlSetText format["%1",_slotcash];
 
 _bet1 ctrlEnable true;

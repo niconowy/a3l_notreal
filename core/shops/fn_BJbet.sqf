@@ -10,8 +10,8 @@ _betamt = [_this,0,1,[0]] call BIS_fnc_param;
 disableSerialization;
 _display = findDisplay 5980;
 
-if(ja_dzep < _betamt) exitWith {hint format["Du hast nicht den Betrag bei dir, den du setzten wolltest (%1$)",_betamt];};
-ja_dzep = ja_dzep - _betamt;
+if(doofi_b4r5 < _betamt) exitWith {hint format["Du hast nicht den Betrag bei dir, den du setzten wolltest (%1$)",_betamt];};
+doofi_b4r5 = doofi_b4r5 - _betamt;
 
 
 _Pcard1 = _display displayCtrl 5992;
@@ -186,7 +186,7 @@ _TOTALTXT ctrlSetText format["%1",_total];
 if( _total == 21 ) then 
 { 
 	_win = 3 * _betamt;
-	ja_dzep = ja_dzep + _win;
+	doofi_b4r5 = doofi_b4r5 + _win;
 	_winnings ctrlSetText format["%1",_win];
 	
 	_bet1 ctrlEnable true;

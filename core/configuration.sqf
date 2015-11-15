@@ -104,7 +104,7 @@ life_intox = 0.00;
 
 __CONST__(life_paycheck_period,5); //Five minutes
 
-ja_dzep = 0;
+doofi_b4r5 = 0;
 
 __CONST__(life_impound_car,3000);
 __CONST__(life_impound_boat,1000);
@@ -120,23 +120,23 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		ja_pare = 25000; //Starting Bank Money
+		man_ey_b4nK = 25000; //Starting Bank Money
 		life_paycheck = 1500; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		ja_pare = 17500; //Starting Bank Money
+		man_ey_b4nK = 17500; //Starting Bank Money
 		life_paycheck = 1500; //Paycheck Amount
 	};
 	
 	case independent: {
-		ja_pare = 15000;
+		man_ey_b4nK = 15000;
 		life_paycheck = 4500;
 	};
 
 	case east:
 	{
-		ja_pare = 15000; //Starting Bank Money
+		man_ey_b4nK = 15000; //Starting Bank Money
 		life_paycheck = 1500; //Paycheck Amount
 	};
 };

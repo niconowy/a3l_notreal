@@ -25,13 +25,13 @@ while {true} do
 		if(!(alive (vehicle player))) exitWith {};
 		if(isEngineOn (vehicle player)) exitWith {hint "Der Motor ist noch an! Abschalten, damit du Tanken kannst."};
 		if((player distance _fuelstation) > _fuel_min_distance) exitWith {};
-		if(ja_dzep < _fuel_price_one_step) exitWith {hint format["Du brauchst mehr Geld um weiter zu Tanken. Voller Tank kostet $%1",_fuel_price]; sleep 1;};
+		if(doofi_b4r5 < _fuel_price_one_step) exitWith {hint format["Du brauchst mehr Geld um weiter zu Tanken. Voller Tank kostet $%1",_fuel_price]; sleep 1;};
 
 		_fuel_old = fuel _veh;
 		_fuel_new = _fuel_old + (1 / _steps);
 		_veh setFuel _fuel_new;
 		
-		ja_dzep = ja_dzep - _fuel_price_one_step;
+		doofi_b4r5 = doofi_b4r5 - _fuel_price_one_step;
 		_spent_money = _spent_money + _fuel_price_one_step;
 		
 		hintSilent parseText format["<img image='images\fuel.jpg'/><br/><br/><t size='1.1' font='TahomaB'>Betankung Läuft:</t><br/><t size='1.2' color='#ff0000'>Status: %1%2<br/>Preis: %3€</t><br/>", ceil (_fuel_new * 100), "%", _spent_money];

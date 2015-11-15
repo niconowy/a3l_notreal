@@ -30,9 +30,9 @@ if((uiNamespace getVariable["Weapon_Shop_Filter",0]) == 1) then
 	else
 {
 	_price = _control lbValue _index;
-	if(_price > ja_dzep) then
+	if(_price > doofi_b4r5) then
 	{
-		_priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Preis: <t color='#ff0000'>$%1</t><br/>Es fehlen: <t color='#8cff9b'>$%2</t></t>",[(_price)] call life_fnc_numberText,[(_price - ja_dzep)] call life_fnc_numberText];
+		_priceTag ctrlSetStructuredText parseText format ["<t size='0.8'>Preis: <t color='#ff0000'>$%1</t><br/>Es fehlen: <t color='#8cff9b'>$%2</t></t>",[(_price)] call life_fnc_numberText,[(_price - doofi_b4r5)] call life_fnc_numberText];
 	}
 		else
 	{

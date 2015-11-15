@@ -80,7 +80,7 @@ if(_rip) then
     5 cutText ["","PLAIN"];
 	deleteMarker "Marker200";
     titleText[format["Du hast %1 geklaut, schüttel die Cops ab!",[_kassa] call life_fnc_numberText],"PLAIN"];
-    ja_dzep = ja_dzep + _kassa; 
+    doofi_b4r5 = doofi_b4r5 + _kassa; 
     _rip = false;
     life_use_atm = false;
     life_use_atm = true; // Robber can not use the ATM at this point.

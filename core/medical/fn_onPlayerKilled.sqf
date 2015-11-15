@@ -96,9 +96,9 @@ Life_request_timer = false;
 if(side _killer == west && playerSide != west) then {
 	life_copRecieve = _killer;
 	//Did I rob the federal reserve?
-	if(!life_use_atm && {ja_dzep > 0}) then {
-		[format[localize "STR_Cop_RobberDead",[ja_dzep] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-		ja_dzep = 0;
+	if(!life_use_atm && {doofi_b4r5 > 0}) then {
+		[format[localize "STR_Cop_RobberDead",[doofi_b4r5] call life_fnc_numberText],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		doofi_b4r5 = 0;
 	};
 };
 
@@ -113,7 +113,7 @@ life_hunger = 100;
 life_thirst = 100;
 life_carryWeight = 0;
 life_intox = 0.00;
-ja_dzep = 0;
+doofi_b4r5 = 0;
 
 [] call life_fnc_hudUpdate; //Get our HUD updated.
 [[player,life_sidechat,playerSide],"TON_fnc_managesc",false,false] spawn life_fnc_MP;

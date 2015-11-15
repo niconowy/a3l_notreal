@@ -20,11 +20,11 @@ if(!life_use_atm) exitWith {hint "Du darfst den ATM derzeit nicht verwenden.";ct
 if(!([_amount] call TON_fnc_isnumber)) exitWith {hint localize "STR_MISC_WrongNumFormat";ctrlShow[2001,true];};
 if(parseNumber(_amount) <= 0) exitWith {hint localize "STR_MISC_Under1";ctrlShow[2001,true];};
 if(player getVariable["restrained",true]) exitWith {hint "Du kannst keine Gegenstände entfernen während du gefesselt bist!"};
-if(parseNumber(_amount) > ja_dzep) exitWith {hint localize "STR_MISC_NotTooMuchDabei";ctrlShow[2001,true];};
+if(parseNumber(_amount) > doofi_b4r5) exitWith {hint localize "STR_MISC_NotTooMuchDabei";ctrlShow[2001,true];};
 if(isNull _unit) exitWith {ctrlShow[2001,true];};
 if(isNil "_unit") exitWith {ctrlShow[2001,true]; hint "Die ausgewählte Person ist nicht mehr in Reichweite.";};
 hint format["Du hast %2 insgesamt $%1 gegeben.",[(parseNumber(_amount))] call life_fnc_numberText,_unit getVariable["realname",name _unit]];
-ja_dzep = ja_dzep - (parseNumber(_amount));
+doofi_b4r5 = doofi_b4r5 - (parseNumber(_amount));
 [0] call SOCK_fnc_updatePartial;
 [[_unit,_amount,player],"life_fnc_receiveMoney",_unit,false] spawn life_fnc_MP;
 [] call life_fnc_p_updateMenu;

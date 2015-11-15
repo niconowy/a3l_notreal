@@ -16,4 +16,4 @@ _price = round(2.8 * _dis);
 ["DeliverySucceeded",[format[(localize "STR_NOTF_Earned_1"),[_price] call life_fnc_numberText]]] call bis_fnc_showNotification;
 life_cur_task setTaskState "Succeeded";
 player removeSimpleTask life_cur_task;
-ja_dzep = ja_dzep + _price;
+doofi_b4r5 = doofi_b4r5 + _price;

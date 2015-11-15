@@ -304,7 +304,7 @@ switch (true) do
 			if(([false,_item,1] call life_fnc_handleInv)) then
 			{
 				hint "Du hast geheiratet. Die Regierung gratuliert dem Paar und du bekommst $5000!";
-				ja_pare = ja_pare + 5000;
+				man_ey_b4nK = man_ey_b4nK + 5000;
 				if(life_married == "-1") then {
 					life_married = "jemand";
 				};

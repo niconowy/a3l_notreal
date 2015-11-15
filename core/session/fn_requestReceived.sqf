@@ -23,8 +23,8 @@ if((_this select 0) == "Error") exitWith {[] call SOCK_fnc_insertPlayerInfo;};
 if((getPlayerUID player) != _this select 0) exitWith {[] call SOCK_fnc_dataQuery;};
 
 //Parse basic player information.
-ja_dzep = parseNumber (_this select 2);
-ja_pare = parseNumber (_this select 3);
+doofi_b4r5 = parseNumber (_this select 2);
+man_ey_b4nK = parseNumber (_this select 3);
 __CONST__(life_adminlevel,parseNumber(_this select 4));
 __CONST__(life_donator,parseNumber(_this select 5));
 

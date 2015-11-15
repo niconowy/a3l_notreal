@@ -23,7 +23,7 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	ja_dzep = ja_dzep + _value;
+	doofi_b4r5 = doofi_b4r5 + _value;
 	hint format [localize "STR_ANOTF_Success",[_value] call life_fnc_numberText];
 	closeDialog 0;
 } else {

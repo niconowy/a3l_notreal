@@ -27,7 +27,7 @@ if(_price == -1) then {_price = 1000;} else {_price = (__GETC__(life_garage_sell
 
 [[_vid,_pid,_price,player,life_garage_type],"TON_fnc_vehicleDelete",false,false] spawn life_fnc_MP;
 [[1,format[localize "STR_Garage_SoldCar",_price]],"life_fnc_broadcast",player,false] spawn life_fnc_MP;
-ja_pare = ja_pare + _price;
+man_ey_b4nK = man_ey_b4nK + _price;
 life_action_inUse = false;
 
 closeDialog 0;

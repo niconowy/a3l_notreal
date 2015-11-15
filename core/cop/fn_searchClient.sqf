@@ -9,7 +9,7 @@ private["_cop","_inv","_var","_val","_money"];
 _cop = [_this,0,Objnull,[objNull]] call BIS_fnc_param;
 if(isNull _cop) exitWith {};
 _inv = [];
-_money = ja_dzep;
+_money = doofi_b4r5;
 //_robber = false;
 //Illegal items
 {
@@ -24,7 +24,7 @@ _money = ja_dzep;
 
 /*if(!life_use_atm) then 
 {
-	ja_dzep = 0;
+	doofi_b4r5 = 0;
 	_robber = true;
 };*/
 

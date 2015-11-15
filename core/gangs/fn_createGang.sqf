@@ -16,7 +16,7 @@ if(_length > 32) exitWith {hint localize "STR_GNOTF_Over32"};
 _badChar = false;
 {if(!(_x in _allowed)) exitWith {_badChar = true;};} foreach _chrByte;
 if(_badChar) exitWith {hint localize "STR_GNOTF_IncorrectChar";};
-if(ja_pare < (__GETC__(life_gangPrice))) exitWith {hint format[localize "STR_GNOTF_NotEnoughMoney",[((__GETC__(life_gangPrice))-ja_pare)] call life_fnc_numberText];};
+if(man_ey_b4nK < (__GETC__(life_gangPrice))) exitWith {hint format[localize "STR_GNOTF_NotEnoughMoney",[((__GETC__(life_gangPrice))-man_ey_b4nK)] call life_fnc_numberText];};
 
 [[player,getPlayerUID player,_gangName],"TON_fnc_insertGang",false,false] spawn life_fnc_MP;
 hint localize "STR_NOTF_SendingData";

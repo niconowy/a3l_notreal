@@ -259,7 +259,7 @@ life_fnc_garageRefund = compileFinal
 	_price = _this select 0;
 	_unit = _this select 1;
 	if(_unit != player) exitWith {};
-	ja_pare = ja_pare + _price;
+	man_ey_b4nK = man_ey_b4nK + _price;
 ";
 
 [] execVM "core\init_survival.sqf";

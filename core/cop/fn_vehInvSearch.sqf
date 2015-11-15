@@ -33,7 +33,7 @@ _value = 0;
 if(_value > 0) then
 {
 	[[0,format[localize "STR_NOTF_VehContraband",[_value] call life_fnc_numberText]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
-	ja_pare = ja_pare + _value;
+	man_ey_b4nK = man_ey_b4nK + _value;
 	_vehicle setVariable["Trunk",[],true];
 }
 	else

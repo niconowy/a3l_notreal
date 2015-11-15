@@ -19,10 +19,10 @@ life_deathCamera cameraEffect ["TERMINATE","BACK"];
 camDestroy life_deathCamera;
 
 //Take fee for services.
-if(ja_pare > (call life_revive_fee)) then {
-	ja_pare = ja_pare - (call life_revive_fee);
+if(man_ey_b4nK > (call life_revive_fee)) then {
+	man_ey_b4nK = man_ey_b4nK - (call life_revive_fee);
 } else {
-	ja_pare = 0;
+	man_ey_b4nK = 0;
 };
 
 //Retexturing of units clothing, vanilla files only retexture the EMS unit.

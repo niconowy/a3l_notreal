@@ -16,7 +16,7 @@ _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
 if(_basePrice < 0) exitWith {}; //Bad price entry
-if(ja_dzep < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough",[_basePrice - ja_dzep] call life_fnc_numberText];};
+if(doofi_b4r5 < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough",[_basePrice - doofi_b4r5] call life_fnc_numberText];};
 if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg_F") exitWith {hint localize "STR_Shop_Veh_NoLicense"};
 
 _spawnPoints = life_veh_shop select 1;
@@ -36,7 +36,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 
 
 if(_spawnPoint == "") exitWith {hint localize "STR_Shop_Veh_Block";};
-ja_dzep = ja_dzep - _basePrice;
+doofi_b4r5 = doofi_b4r5 - _basePrice;
 hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 
 //Spawn the vehicle and prep it.

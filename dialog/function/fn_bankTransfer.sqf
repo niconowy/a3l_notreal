@@ -14,11 +14,11 @@ if(isNil "_unit") exitWith {hint localize "STR_ATM_DoesntExist"};
 if(_val > 999999) exitWith {hint localize "STR_ATM_TransferMax";};
 if(_val < 250) exitWith {hint "You can't transfer less then 250€"};
 if(!([str(_val)] call life_fnc_isnumeric)) exitWith {hint localize "STR_ATM_notnumeric"};
-if(_val > ja_pare) exitWith {hint localize "STR_ATM_NotEnough"};
+if(_val > man_ey_b4nK) exitWith {hint localize "STR_ATM_NotEnough"};
 _tax = [_val] call life_fnc_taxRate;
-if((_val + _tax) > ja_pare) exitWith {hint format[localize "STR_ATM_SentMoneyFail",_val,_tax]};
+if((_val + _tax) > man_ey_b4nK) exitWith {hint format[localize "STR_ATM_SentMoneyFail",_val,_tax]};
 
-ja_pare = ja_pare - (_val + _tax);
+man_ey_b4nK = man_ey_b4nK - (_val + _tax);
 
 [[_val,profileName],"TON_fnc_clientWireTransfer",_unit,false] spawn life_fnc_MP;
 [] call life_fnc_atmMenu;

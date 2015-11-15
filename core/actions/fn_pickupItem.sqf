@@ -17,7 +17,7 @@ _illegal = [_itemInfo select 0,life_illegal_items] call TON_fnc_index;
 if(playerSide == west && _illegal != -1) exitWith
 {
 	titleText[format[localize "STR_NOTF_PickedEvidence",_itemName,[(life_illegal_items select _illegal) select 1] call life_fnc_numberText],"PLAIN"];
-	ja_pare = ja_pare + ((life_illegal_items select _illegal) select 1);
+	man_ey_b4nK = man_ey_b4nK + ((life_illegal_items select _illegal) select 1);
 	deleteVehicle _obj;
 	//waitUntil {isNull _obj};
 	life_action_delay = time;

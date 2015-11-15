@@ -13,7 +13,7 @@ life_use_atm = TRUE;
 life_hunger = 100;
 life_thirst = 100;
 life_carryWeight = 0;
-ja_dzep = 0; //Make sure we don't get our cash back.
+doofi_b4r5 = 0; //Make sure we don't get our cash back.
 life_respawned = false;
 player playMove "amovpercmstpsnonwnondnon";
 

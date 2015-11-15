@@ -84,11 +84,11 @@ class FSM
        "	if(player distance (getMarkerPos ""fed_reserve"") < 30 && playerSide == west) then" \n
        "	{" \n
        "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck) + 500] call life_fnc_numberText];" \n
-       "		ja_pare = ja_pare + (call life_paycheck) + 500;" \n
+       "		man_ey_b4nK = man_ey_b4nK + (call life_paycheck) + 500;" \n
        "	}" \n
        "		else" \n
        "	{" \n
-       "		ja_pare = ja_pare + (call life_paycheck);" \n
+       "		man_ey_b4nK = man_ey_b4nK + (call life_paycheck);" \n
        "		systemChat format[localize ""STR_FSM_ReceivedPay"",[(call life_paycheck)] call life_fnc_numberText];" \n
        "	};" \n
        "};" \n

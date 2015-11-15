@@ -85,7 +85,7 @@ if(_rip) then
     5 cutText ["","PLAIN"];
 	deleteMarker "Marker200";
     titleText[format["Du hast %1 geklaut, nichts wie weg hier, die Cops sind auf dem Weg!",[_kassa] call life_fnc_numberText],"PLAIN"];
-    ja_dzep = ja_dzep + _kassa; 
+    doofi_b4r5 = doofi_b4r5 + _kassa; 
     _rip = false;
     life_use_atm = false;
     sleep (30 + random(60)); //Clerk in the store takes between 30-210 seconds before he manage to warn the police about the robbery. 

@@ -456,9 +456,9 @@ _unit = _this select 0;
 			};
 		};
 		
-		case "ja_dzep":
+		case "doofi_b4r5":
 		{
-			if(ja_dzep > 0) then
+			if(doofi_b4r5 > 0) then
 			{
 				_pos = _unit modelToWorld[4.5,1.5,0];
 				_pos = [_pos select 0, _pos select 1, 0];
@@ -485,4 +485,4 @@ _unit = _this select 0;
 			};
 		};
 	};
-} foreach (life_inv_items + ["ja_dzep"]);
+} foreach (life_inv_items + ["doofi_b4r5"]);

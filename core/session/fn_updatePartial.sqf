@@ -15,11 +15,11 @@ _flag = switch(playerSide) do {case west: {"cop"}; case civilian: {"civ"}; case 
 
 switch(_mode) do {
 	case 0: {
-		_packet set[2,ja_dzep];
+		_packet set[2,doofi_b4r5];
 	};
 	
 	case 1: {
-		_packet set[2,ja_pare];
+		_packet set[2,man_ey_b4nK];
 	};
 	
 	case 2: {
@@ -47,8 +47,8 @@ switch(_mode) do {
 	};
 	
 	case 6: {
-		_packet set[2,ja_dzep];
-		_packet set[4,ja_pare];
+		_packet set[2,doofi_b4r5];
+		_packet set[4,man_ey_b4nK];
 	};
 };
 

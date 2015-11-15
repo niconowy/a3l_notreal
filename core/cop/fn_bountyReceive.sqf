@@ -18,4 +18,4 @@ if(_val == _total) then
 	titleText[format[localize "STR_Cop_BountyKill",[_val] call life_fnc_numberText,[_total] call life_fnc_numberText],"PLAIN"];
 };
 
-ja_pare = ja_pare + _val;
+man_ey_b4nK = man_ey_b4nK + _val;

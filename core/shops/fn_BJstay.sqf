@@ -263,7 +263,7 @@ if( !_gameover ) then
 if( _win != 0 ) then 
 {
 	_cash = _betamt * _win;
-	ja_dzep = ja_dzep + _cash;
+	doofi_b4r5 = doofi_b4r5 + _cash;
 	_winnings ctrlSetText  format["%1",_cash];
 	//you win, give money
 	//set text 

@@ -12,7 +12,7 @@ _data = "";
 _value = "";
 _exit = false;
 if (_death) then {
-	_data2 = life_inv_items + ["ja_dzep"];
+	_data2 = life_inv_items + ["doofi_b4r5"];
 } else {
 	_data = lbData[2005,(lbCurSel 2005)];
 	if (_data == "") exitWith{hint "Du musst ein Gegenstand auswählen";_exit = true;};
@@ -37,7 +37,7 @@ life_action_delay = time;
 	_total = missionNamespace getVariable _item;
 	if (_death) then {
 		_value = missionNamespace getVariable _item;
-		if(_item!="ja_dzep") then {
+		if(_item!="doofi_b4r5") then {
 			[false,_var,_value] call life_fnc_handleInv;
 		};
 	} else {
@@ -521,7 +521,7 @@ life_action_delay = time;
 			};
 		};
 		
-		case "ja_dzep":
+		case "doofi_b4r5":
 		{
 			if(_value > 0) then
 			{

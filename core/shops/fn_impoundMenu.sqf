@@ -33,7 +33,7 @@ for "_i" from 0 to (count life_vehicles)-1 do
 			case (_veh isKindOf "Ship") : {_price = _price + 50;};
 		};
 	
-		if(_price > ja_dzep) then
+		if(_price > doofi_b4r5) then
 		{
 			_price = _price + 200;
 		};

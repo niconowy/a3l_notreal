@@ -32,7 +32,7 @@ if(_ctrl == "goldbar" && {!(life_trunk_vehicle isKindOf "LandVehicle" OR life_tr
 if(_ctrl == "money") then
 {
 	_index = [_ctrl,_inv] call TON_fnc_index;
-	if(ja_dzep < _num) exitWith {hint "You don't have that much cash on you to store in the vehicle!"};
+	if(doofi_b4r5 < _num) exitWith {hint "You don't have that much cash on you to store in the vehicle!"};
 	if(_index == -1) then
 	{
 		_inv pushBack [_ctrl,_num];
@@ -43,7 +43,7 @@ if(_ctrl == "money") then
 		_inv set[_index,[_ctrl,_val + _num]];
 	};
 	
-	ja_dzep = ja_dzep - _num;
+	doofi_b4r5 = doofi_b4r5 - _num;
 	life_trunk_vehicle setVariable["Trunk",[_inv,(_veh_data select 1) + _itemWeight],true];
 	[life_trunk_vehicle] call life_fnc_vehInventory;
 }

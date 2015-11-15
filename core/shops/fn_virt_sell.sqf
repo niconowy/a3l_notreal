@@ -43,7 +43,7 @@ _name = [_var] call life_fnc_vartostr;
 if(([false,_type,_amount] call life_fnc_handleInv)) then
 {
 	hint format[localize "STR_Shop_Virt_SellItem",_amount,_name,[_price] call life_fnc_numberText];
-	ja_dzep = ja_dzep + _price;
+	doofi_b4r5 = doofi_b4r5 + _price;
 	//#2 Anfang
 	if(_marketprice != -1) then
     {

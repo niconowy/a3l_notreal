@@ -18,14 +18,14 @@ _action = [
 ] call BIS_fnc_guiMessage;
 
 if(_action) then {
-	if(ja_pare < _upgradePrice) exitWith {
+	if(man_ey_b4nK < _upgradePrice) exitWith {
 		hint parseText format[
 			(localize "STR_GNOTF_NotEoughMoney_2")+ "<br/><br/>" +(localize "STR_GNOTF_Current")+ " <t color='#8cff9b'>$%1</t><br/>" +(localize "STR_GNOTF_Lacking")+ " <t color='#FF0000'>$%2</t>",
-			[ja_pare] call life_fnc_numberText,
-			[_upgradePrice - ja_pare] call life_fnc_numberText
+			[man_ey_b4nK] call life_fnc_numberText,
+			[_upgradePrice - man_ey_b4nK] call life_fnc_numberText
 		];
 	};
-	__SUB__(ja_pare,_upgradePrice);
+	__SUB__(man_ey_b4nK,_upgradePrice);
 	grpPlayer setVariable["gang_maxMembers",_slotUpgrade,true];
 	hint parseText format[localize "STR_GNOTF_UpgradeSuccess",_maxMembers,_slotUpgrade,[_upgradePrice] call life_fnc_numberText];
 	[[2,grpPlayer],"TON_fnc_updateGang",false,false] spawn life_fnc_MP;

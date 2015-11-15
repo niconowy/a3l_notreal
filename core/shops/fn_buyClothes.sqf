@@ -16,8 +16,8 @@ _price = 0;
 	};
 } foreach life_clothing_purchase;
 
-if(_price > ja_dzep) exitWith {titleText[localize "STR_Shop_NotEnoughClothes","PLAIN"];};
-ja_dzep = ja_dzep - _price;
+if(_price > doofi_b4r5) exitWith {titleText[localize "STR_Shop_NotEnoughClothes","PLAIN"];};
+doofi_b4r5 = doofi_b4r5 - _price;
 
 life_clothesPurchased = true;
 closeDialog 0;

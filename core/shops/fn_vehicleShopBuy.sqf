@@ -16,7 +16,7 @@ _colorIndex = lbValue[2304,(lbCurSel 2304)];
 
 //Series of checks (YAY!)
 if(_basePrice < 0) exitWith {}; //Bad price entry
-if(ja_pare < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough",[_basePrice - ja_pare] call life_fnc_numberText];};
+if(man_ey_b4nK < _basePrice) exitWith {hint format[localize "STR_Shop_Veh_NotEnough",[_basePrice - man_ey_b4nK] call life_fnc_numberText];};
 if(!([_className] call life_fnc_vehShopLicenses) && _className != "B_MRAP_01_hmg_F") exitWith {hint localize "STR_Shop_Veh_NoLicense"};
 
 _spawnPoints = life_veh_shop select 1;
@@ -35,7 +35,7 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 };
 
 if(_spawnPoint == "") exitWith {hint localize "STR_Shop_Veh_Block";};
-ja_pare = ja_pare - _basePrice;
+man_ey_b4nK = man_ey_b4nK - _basePrice;
 hint format[localize "STR_Shop_Veh_Bought",getText(configFile >> "CfgVehicles" >> _className >> "displayName"),[_basePrice] call life_fnc_numberText];
 [[player,"buycarniggah"],"A3L_Fnc_NearestSound",false,false,false] call BIS_fnc_MP;
 

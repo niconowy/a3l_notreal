@@ -39,7 +39,7 @@ if (_isInsured) then {
     _price = _basePrice;
 };
 
-if(ja_pare < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
+if(man_ey_b4nK < _price) exitWith {hint format[(localize "STR_Garage_CashError"),[_price] call life_fnc_numberText];};
 
 if(typeName life_garage_sp == "ARRAY") then {
 	[[_vid,_pid,life_garage_sp select 0,_unit,_price,_isInsured,life_garage_sp select 1],"TON_fnc_spawnVehicle",false,false] spawn life_fnc_MP;
@@ -53,4 +53,4 @@ if(typeName life_garage_sp == "ARRAY") then {
 
 hint localize "STR_Garage_SpawningVeh";
 
-ja_pare = ja_pare - _price;
+man_ey_b4nK = man_ey_b4nK - _price;

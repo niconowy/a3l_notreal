@@ -41,8 +41,8 @@ _near_units = [];
 	};
 } foreach _near_units;
 
-_mstatus ctrlSetStructuredText parseText format["<t size='1.2px'>$%1</t>",[ja_pare] call life_fnc_numberText];
-_mstatus2 ctrlSetStructuredText parseText format["<t size='1.2'>$%1</t>",[ja_dzep] call life_fnc_numberText];
+_mstatus ctrlSetStructuredText parseText format["<t size='1.2px'>$%1</t>",[man_ey_b4nK] call life_fnc_numberText];
+_mstatus2 ctrlSetStructuredText parseText format["<t size='1.2'>$%1</t>",[doofi_b4r5] call life_fnc_numberText];
 ctrlSetText[2009,format["Gewicht: %1 / %2", life_carryWeight, life_maxWeight]];
 {
 	_str = [_x] call life_fnc_varToStr;
