@@ -591,17 +591,17 @@ switch (_shop) do
 	{
 		_return =
 		[
-			["A3L_F350Black",160000],
-			["A3L_F350Blue",160000],
-			["A3L_F350Red",160000],
-			["A3L_F350White",160000],
-			["A3L_Dumptruck",200000],
+			["A3L_F350Black",320000],
+			["A3L_F350Blue",320000],
+			["A3L_F350Red",320000],
+			["A3L_F350White",320000],
+			["A3L_Dumptruck",400000],
 			["C_Van_01_box_F",140000],
-			["C_Van_01_transport_F",110000],
-			["A3L_Bus",70000],
-			["A3L_SchoolBus",85000],
-			["ALFR_GeK_Volvo_FH16_2012",350000],
-			["shounka_a3_renaultmagnum_f",350000]
+			["C_Van_01_transport_F",100000],
+			["A3L_Bus",50000],
+			["A3L_SchoolBus",65000],
+			["ALFR_GeK_Volvo_FH16_2012",725000],
+			["shounka_a3_renaultmagnum_f",725000]
 		];
 	};
 	

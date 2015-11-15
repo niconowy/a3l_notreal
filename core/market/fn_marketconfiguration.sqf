@@ -12,7 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
 		
-	["diamondc", 3359, 1, 6359, 10, 1,
+	["diamondc", 2359, 1, 5359, 10, 1,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -28,7 +28,7 @@ life_market_resources = [
 			]
 	],
 	
-	["oilp", 3492, 1, 6492, 9, 2,
+	["oilp", 2492, 1, 5492, 9, 2,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -44,7 +44,7 @@ life_market_resources = [
 			]
 	],
 	
-	["iron_r", 2882, 1, 5625, 8, 3,
+	["iron_r", 1882, 1, 4625, 8, 3,
 			[
 					["diamondc",1],
 					["copper_r",1],
@@ -58,7 +58,7 @@ life_market_resources = [
 			]
 	],
    
-	["elektroteile", 3100, 1, 6105, 7, 4,
+	["elektroteile", 2100, 1, 5105, 7, 4,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -72,7 +72,7 @@ life_market_resources = [
 			]
 	],
 	
-	["cement", 2880, 1, 5980, 6, 5,
+	["cement", 1880, 1, 4980, 6, 5,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -86,7 +86,7 @@ life_market_resources = [
 			]
 	],
 	
-	["copper_r", 1968, 1, 4123, 5, 6,
+	["copper_r", 1968, 1, 3123, 5, 6,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -102,7 +102,7 @@ life_market_resources = [
 			]
 	],
 	
-	["laminat", 2315, 1, 5315, 4, 7,
+	["laminat", 1315, 1, 4315, 4, 7,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -116,7 +116,7 @@ life_market_resources = [
 			]
 	],
 	
-	["grillkohle", 2220, 1, 5120, 3, 8,
+	["grillkohle", 1220, 1, 4120, 3, 8,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -130,7 +130,7 @@ life_market_resources = [
 			]
 	],
 	
-	["glass", 1285, 1, 4185, 2, 9,
+	["glass", 952, 1, 3185, 2, 9,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -144,7 +144,7 @@ life_market_resources = [
 			]
 	],
    
-	["salt_r", 955, 1, 3755, 1, 10,
+	["salt_r", 855, 1, 2755, 1, 10,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -160,7 +160,7 @@ life_market_resources = [
 			]
 	],
    
-	["sunflower", 649, 1, 1249, 4, 8,
+	["sunflower", 449, 1, 786, 4, 8,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -173,7 +173,7 @@ life_market_resources = [
 			]
 	],
    
-	["corn", 870, 1, 1250, 8, 4,
+	["corn", 650, 1, 900, 8, 4,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -186,7 +186,7 @@ life_market_resources = [
 			]
 	],
    
-	["pumpkin", 747, 1, 1547, 6, 6,
+	["pumpkin", 547, 1, 1025, 6, 6,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -197,7 +197,7 @@ life_market_resources = [
 			]
 	],
    
-	["wheat", 850, 1, 1550, 10, 2,
+	["wheat", 650, 1, 1295, 10, 2,
 			[
 					["sunflower",1],
 					["corn",1],
@@ -208,7 +208,7 @@ life_market_resources = [
 			]
 	],
    
-	["cotton", 645, 1, 1455, 2, 10,
+	["cotton", 445, 1, 957, 2, 10,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -219,7 +219,7 @@ life_market_resources = [
 			]
 	],
 	
-	["mehl", 950, 1, 1600, 10, 2,
+	["mehl", 750, 1, 1423, 10, 2,
 			[
 					["sunflower",1],
 					["corn",1],
@@ -229,7 +229,7 @@ life_market_resources = [
 			]
 	],
 	
-	["brotteig", 1506, 1, 3028, 10, 2,
+	["brotteig", 1306, 1, 2861, 10, 2,
 			[
 					["sunflower",1],
 					["corn",1],

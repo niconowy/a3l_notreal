@@ -171,7 +171,7 @@ switch (_className) do
 	case "Mrshounka_mustang_violet": {15};
 	case "Mrshounka_mustang_orange": {15};
 	
-	case "shounka_a3_renaultmagnum_f": {350};
+	case "shounka_a3_renaultmagnum_f": {325};
 	
 	case "A3L_RX7_Blue": {25};
 	case "A3L_RX7_Red": {25};
@@ -260,7 +260,7 @@ switch (_className) do
 	case "cl3_458_black": {15};
 	
 	
-	case "ALFR_GeK_Volvo_FH16_2012": {350};
+	case "ALFR_GeK_Volvo_FH16_2012": {325};
 			
 	case "A3L_ChargerUC": {25};
 	case "A3L_ChargerUCWhite": {25};
@@ -475,9 +475,9 @@ switch (_className) do
 	case "B_G_Offroad_01_F": {65};
 	case "B_Quadbike_01_F": {25};
 	case "C_Hatchback_01_sport_F": {45};
-	case "C_Van_01_transport_F": {90};
+	case "C_Van_01_transport_F": {95};
 	case "I_G_Van_01_transport_F": {100};
-	case "C_Van_01_box_F": {140};
+	case "C_Van_01_box_F": {130};
 	case "C_Boat_Civil_01_F": {85};
 	case "C_Boat_Civil_01_police_F": {85};
 	case "C_Boat_Civil_01_rescue_F": {85};
