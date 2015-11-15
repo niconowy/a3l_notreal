@@ -694,7 +694,7 @@ switch(_shop) do
 						["A3L_CZ550",nil,220000],
 						["A3L_CZ550mag",nil,1000],
 
-						["arifle_SDAR_F","UW-Waffe",25000],
+						["arifle_SDAR_F","UW-Waffe",200000],
 						["20Rnd_556x45_UW_mag","UW-Geschosse",1200],
 
 						["SMG_01_F",nil,50000],

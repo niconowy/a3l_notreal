@@ -1,7 +1,7 @@
-private["_veh","_veh_type","_fuelstation","_fuel_old","_fuel_new","_fuel_price","_steps","_spent_money","_fuel_min_distance"];
+private["_veh","_fuelstation","_fuel_old","_fuel_new","_fuel_price","_steps","_spent_money","_fuel_min_distance"];
 _fuel_price = 13500;
 _steps = 100.0;
-_fuel_min_distance = 6;
+_fuel_min_distance = 5;
 _fuel_price_one_step = _fuel_price / _steps;
 
 
@@ -9,7 +9,8 @@ while {true} do
 {
 	waitUntil {sleep 5; ((vehicle player != player) && (!isEngineOn (vehicle player)) && ((driver (vehicle player)) == player) && (fuel (vehicle player)) < 0.99 && (speed (vehicle player)) < 0.1 && count (nearestObjects [player, ["Land_fs_feed_F"], _fuel_min_distance]) > 0)};
 	_veh = vehicle player;
-	_veh_type = typeof _veh;
+	
+	if(_veh isKindOf "Air") exitWith {};
 
 	_fuelstation = (nearestObjects [player, ["Land_fs_feed_F"], _fuel_min_distance]) select 0;
 	
