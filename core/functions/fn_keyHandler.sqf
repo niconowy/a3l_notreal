@@ -82,7 +82,7 @@ switch (_code) do
 	{
 		switch (playerSide) do 
 		{
-			case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
+	//		case west: {if(!visibleMap) then {[] spawn life_fnc_copMarkers;}};
 			case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMapMarker;}};
 	//		case independent: {if(!visibleMap) then {[] spawn life_fnc_medicMarkers;}};
 	//		case east: {if(!visibleMap) then {[] spawn life_fnc_adacMarkers;}};
