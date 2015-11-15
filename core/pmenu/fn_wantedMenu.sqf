@@ -7,6 +7,9 @@
 	Opens the Wanted menu and connects to the APD.
 */
 private["_display","_list","_name","_crimes","_bounty","_units"];
+
+if(vehicle player == player) exitWith {hint "Du kannst nur im Fahrzeug die Fahndungsliste öffnen!"};
+
 disableSerialization;
 
 createDialog "life_wanted_menu";

@@ -121,6 +121,13 @@ class CfgSounds
 		sound[] = {"\sounds\alert.ogg", 1.0, 1};
 		titles[] = {};
 	};
+	
+	class emsalert
+	{
+		name = "emsalert";
+		sound[] = {"\sounds\emsalert.ogg", 1.0, 1};
+		titles[] = {};
+	};
 
 	class punch
 	{
