@@ -7,17 +7,18 @@
 	Wandelt die verfügbaren Coins in Geld um und schreibt dem Benutzer das Geld zu.
 */
 
-private ["_coins","_points","_money"];
+private ["_coins","_points","_money","_lsrl_coins"];
 
 if(!lrl_coinsCheck) exitWith {hint "STR_LSRLC_CoinCheater"}; //Vorher keine Coins geprüft?
 
 _points = _this select 0;
+_lsrl_coins = _points;
 
-if(isNil "_points") exitWith {hint localize "STR_LSRLC_NoCoinsFound";}; //Keine Tickets gefunden
-if(_points < 1) exitWith {hint localize "STR_LSRLC_NoCoinsFound";}; //Punkte Wert ist 0 (?)
-if(!alive player) then {hint localize "STR_LSRLC_DeadAfterChecked";};
+if(isNil "_points") exitWith {hint localize "STR_LSRLC_NoCoinsFound"; lrl_coinsCheck = false;}; //Keine Tickets gefunden
+if(_lsrl_coins < 1) exitWith {hint localize "STR_LSRLC_NoCoinsFound"; lrl_coinsCheck = false;}; //Punkte Wert ist 0 (?)
+if(!alive player) then {hint localize "STR_LSRLC_DeadAfterChecked"; lrl_coinsCheck = false;};
 
-_money = _points * 100;
+_money = _lsrl_coins * 100;
 
 man_ey_b4nK = man_ey_b4nK + _money;
 
