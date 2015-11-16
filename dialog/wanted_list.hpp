@@ -122,7 +122,7 @@ class life_wanted_menu {
 		class ButtonWantedAdd : life_RscButtonMenu {
 			idc = 9800;
 			//shortcuts[] = {0x00050000 + 2};
-			text = "Wanted+";
+			text = "Fahnden";
 			onButtonClick = "[] call life_fnc_wantedAddP;";
 			x = 0.1 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
@@ -133,9 +133,9 @@ class life_wanted_menu {
 		class ButtonRefresh : life_RscButtonMenu {
 			idc = 9801;
 			//shortcuts[] = {0x00050000 + 2};
-			text = "Neu Laden";
+			text = "Neuladen";
 			onButtonClick = "[] call life_fnc_wantedMenu; closeDialog 0;";
-			x = 0.5 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
+			x = 0.3 + (6.25 / 19.8) + (1 / 250 / (safezoneW / safezoneH));
 			y = 0.8 - (1 / 25);
 			w = (6.25 / 40);
 			h = (1 / 25);
@@ -144,7 +144,7 @@ class life_wanted_menu {
 		class wantedText: Life_RscText
 		{
 			idc = 1000;
-			text = "Fahndungsliste";
+			text = "Aktive Fahndungen";
 			x = 0.12; 
 			y = 0.11;
 			w = 0.2; 

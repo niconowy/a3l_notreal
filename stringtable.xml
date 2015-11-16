@@ -114,6 +114,23 @@
 			<Original>Du hast $%1 auf dein Gang Konto überwiesen</Original>
  		</Key>
 	</Package>
+	<Package name="LSRL_Coins">
+		<Key ID="STR_LSRLC_NoCoinsFound">
+			<Original>Es wurden keine verfügbaren LSRL-Coins gefunden!</Original>
+		</Key>
+		<Key ID="STR_LSRLC_CoinsDelayActive">
+			<Original>Du kannst nur alle 15 Minuten deine verfügbaren LSRL-Coins überprüfen und umwandeln!</Original>
+		</Key>
+		<Key ID="STR_LSRLC_StillChecking">
+			<Original>Derzeit läuft bereits eine Abfrage/Umwandlung deiner LSRL-Coins. Habe ein wenig Geduld.</Original>
+		</Key>
+		<Key ID="STR_LSRLC_DeadAfterChecked">
+			<Original>Du warst zum Zeitpunkt als man dir das Geld überweisen wollte tot. Das Geld wurde aber auf dein Konto geladen.</Original>
+		</Key>
+		<Key ID="STR_LSRLC_CoinCheater">
+			<Original>Versucht sich da wer Coins zu cheaten?</Original>
+		</Key>
+	</Package>
 	<Package name="Cell_Phone">
 		<Key ID="STR_CELL_Title">
  			<Original>Lakeside Smartphone</Original>
@@ -588,7 +605,7 @@
 	</Package>
 	<Package name="Wanted_Menu">
 		<Key ID="STR_Wanted_Title">
-			<Original>Fahndungsliste</Original>
+			<Original>LVPD - Fahndungscomputer</Original>
 		</Key>
 		<Key ID="STR_Wanted_Pardon">
 			<Original>Erlassen</Original>
@@ -1093,7 +1110,7 @@
 			<Original>Die folgenden Leute haben kürzlich an diesen Dealer verkauft.</Original>
 		</Key>
 		<Key ID="STR_Cop_Radar">
-			<Original>Radar</Original>
+			<Original>Ray-Radar v1.2</Original>
 		</Key>
 		<Key ID="STR_Cop_VehSpeed">
 			<Original>Geschwindigkeit: %1 km/h</Original>

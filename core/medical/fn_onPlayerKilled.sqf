@@ -23,8 +23,6 @@ _unit setVariable["intoxicated",false,true];
 
 if(headgear _unit == "mgsr_headbag") then {removeHeadgear _unit};
 
-diag_log format ["= TOD :: %3 (%1) wurde von %4 (%2) getötet.",getPlayerUID _unit, getPlayerUID _killer,_unit getVariable["name"],name _killer];
-
 //Setup our camera view
 life_deathCamera  = "CAMERA" camCreate (getPosATL _unit);
 showCinemaBorder TRUE;

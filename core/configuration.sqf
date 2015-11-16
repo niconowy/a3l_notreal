@@ -52,11 +52,13 @@ lrl_spamcounter = 0;
 //lrl_copLeitstelle = false;
 lrl_emsLeitstelle = false;
 lrl_noWeapons = ["","Rangefinder","Binocular","Radar_Gun","A3L_sign","A3L_sign2","Tv_Camera","gign_shield"];
+lrl_coinsCheck = false;
+lrl_coinsDelay = false;
 lrl_version = "lakeside-reallifeDE_modinfo_ver_150811";
 
 
 //Persistent Saving
-__CONST__(life_save_civ,TRUE); //Save weapons for civs?
+__CONST__(life_save_civ,TRUE);  //Save weapons for civs?
 __CONST__(life_save_yinv,TRUE); //Save Y-Inventory for players?
 
 //Revive constant variables.
@@ -116,6 +118,9 @@ life_smartphoneTarget = ObjNull;
 
 life_vehicles = [];
 bank_robber = [];
+
+lrl_noAction = if((life_istazed) OR (lrl_knockedOut) OR (life_knockout)) then {true} else {false}; //Keine 100 Abfragen mehr im skript
+
 switch (playerSide) do
 {
 	case west: 

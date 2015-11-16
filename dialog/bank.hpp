@@ -104,16 +104,18 @@ class Life_atm_management {
 			w = (5.30 / 40);
 			h = (1 / 25);
 		};
-		
+
+//Gangs werden nie kommen, daher Coins Button
 		class GangDeposit : TransferButton
 		{
 			idc = 2705;
-			text = "$STR_pInAct_DepositToGang";
+			text = "LSRLCoins Einlösen";
 			colorBackground[] = {0.18,0.604,0.996,1};
-			onButtonClick = "[] call life_fnc_gangDeposit";
+			onButtonClick = "[] call life_fnc_bankLsrlCoinsCheck";
 			y = .7; x = 0.365;
 			w = 0.275;
 		};
+//*****************************************//
 		
 		class CloseButtonKey : Life_RscButtonMenu {
 			idc = -1;
