@@ -14,7 +14,7 @@ if(!lrl_coinsCheck) exitWith {hint "STR_LSRLC_CoinCheater"}; //Vorher keine Coin
 _points = _this select 0;
 
 if(isNil "_points") exitWith {hint localize "STR_LSRLC_NoCoinsFound"; lrl_coinsCheck = false;}; //Keine Tickets gefunden
-if(_lsrl_coins < 1) exitWith {hint localize "STR_LSRLC_NoCoinsFound"; lrl_coinsCheck = false;}; //Punkte Wert ist 0 (?)
+if(_points < 1) exitWith {hint localize "STR_LSRLC_NoCoinsFound"; lrl_coinsCheck = false;}; //Punkte Wert ist 0 (?)
 if(!alive player) then {hint localize "STR_LSRLC_DeadAfterChecked"; lrl_coinsCheck = false;};
 
 _lsrl_coins = _points;
@@ -22,8 +22,7 @@ _money = _lsrl_coins * 100;
 
 man_ey_b4nK = man_ey_b4nK + _money;
 
-hint format ["Es wurden dir %1 gutgeschrieben.", [_money] call life_fnc_numberText];
-
+hint parseText format ["<t size='1.6' color='#208208' align='center'>LSRL Coins-System</t><br/><br/><t align='center'><t size='1.1'>Es wurden dir <br/><t color='#62c736'>$%1</t><br/> gutgeschrieben.</t></t>", [_money] call life_fnc_numberText];
 lrl_coinsCheck = false; //Prozedur beendet.
 
 [1] call SOCK_fnc_updatePartial;

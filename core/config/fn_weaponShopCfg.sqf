@@ -287,6 +287,8 @@ switch(_shop) do
 						["optic_ACO_grn_smg","ACO-G MP",4500],
 						["optic_ACO_grn","ACO-G",5000],
 						
+						["acc_flashlight",2250],
+						
 						//["FirstAidKit",nil,1500],
 						["ItemMap",nil,10],
 						["ItemWatch",nil,20],
@@ -356,6 +358,9 @@ switch(_shop) do
 						["RH_eotech553",nil,7500],
 						["RH_m3lr",nil,7500],
 						["RH_reflex",nil,7500],
+						
+						["acc_flashlight",2250],
+						
 						["RH_qdss_nt4",nil,4500],
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
@@ -439,6 +444,9 @@ switch(_shop) do
 						["RH_eotech553",nil,7500],
 						["RH_m3lr",nil,7500],
 						["RH_reflex",nil,7500],
+						
+						["acc_flashlight",2250],
+						
 						["RH_qdss_nt4",nil,4500],
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
@@ -525,6 +533,9 @@ switch(_shop) do
 						["RH_qdss_nt4",nil,4500],
 						["RH_reflex",nil,7500],
 						["R3F_J4",nil,10000],
+						
+						["acc_flashlight",2250],
+						
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
 						//["R3F_M4S90",nil,2500],
@@ -620,6 +631,9 @@ switch(_shop) do
 						["RH_qdss_nt4",nil,4500],
 						["RH_reflex",nil,7500],
 						["R3F_J4",nil,10000],
+						
+						["acc_flashlight",2250],
+						
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
 						//["R3F_M4S90",nil,2500],
@@ -658,17 +672,17 @@ switch(_shop) do
 			{
 				["Muhli's Outlaw Laden",
 					[
-						["RH_Deaglem",nil,63750],
+						["RH_Deaglem",nil,75750],
 						["RH_demz",nil,17500],
 						["RH_7Rnd_50_AE",nil,1750],
-						["A3L_SA61",nil,60000],
+						["A3L_SA61",nil,95255],
 						["A3L_SA61mag",nil,1200],
-						["A3L_UZI",nil,125550],
+						["A3L_UZI",nil,185550],
 						["A3L_UZImag",nil,1925],
 						
-/*						["A3L_AK47",nil,120000],
+						["A3L_AK47",nil,395655],
 						["A3L_AK47mag",nil,2500],
-						
+/*						
 						["A3L_AK47s",nil,135000],											
 						["A3L_AK47smag",nil,2750],		
 
@@ -679,26 +693,27 @@ switch(_shop) do
 						["RH_ar10",nil,225000],
 						["RH_20Rnd_762x51_AR10",nil,3000],
 */
-						["hlc_rifle_akm",nil,375000],
+						["hlc_rifle_akm",nil,475000],
 						["hlc_30Rnd_762x39_b_ak",nil,2600],
-						["hlc_rifle_aks74u",nil,325000],
-						["hlc_rifle_ak12",nil,375000],
-						["hlc_rifle_aek971",nil,375000],
+						["hlc_rifle_aks74u",nil,425000],
+						["hlc_rifle_ak12",nil,475000],
+						["hlc_rifle_aek971",nil,475000],
 						["hlc_30Rnd_545x39_B_AK",nil,2600],
-						["RH_ar10",nil,415000],
+						["RH_ar10",nil,515000],
 						["RH_20Rnd_762x51_AR10",nil,3855],
-						["RH_M4sbr_b",nil,355000],
+						["RH_M4sbr_b",nil,455000],
 						["30Rnd_556x45_Stanag",nil,2485],
 						["RH_qdss_nt4",nil,19880],
 
-						["A3L_CZ550",nil,220000],
+						["A3L_CZ550",nil,325000],
 						["A3L_CZ550mag",nil,1000],
 
-						["arifle_SDAR_F","UW-Waffe",200000],
+						["arifle_SDAR_F","UW-Waffe",271000],
 						["20Rnd_556x45_UW_mag","UW-Geschosse",1200],
 
-						["SMG_01_F",nil,50000],
+						["SMG_01_F",nil,86755],
 						["30Rnd_45ACP_Mag_SMG_01",nil,1300],
+						
 						
 
 						//["FirstAidKit",nil,2250],
@@ -707,6 +722,7 @@ switch(_shop) do
 						["optic_Yorris",nil,5000],
 						["A3L_RedDot",nil,7500],
 						["RH_eotech553",nil,7500],
+						["optic_Holosight_smg",5500],
 						["RH_m3lr",nil,7500],
 						["RH_Delft",nil,7500],
 						["A3L_CCO",nil,8500],
@@ -714,6 +730,7 @@ switch(_shop) do
 						["hlc_optic_kobra",nil,7500],
 						["RH_reflex",nil,8500],
 						["R3F_J4",nil,10000],
+						["acc_flashlight",2250],
 				//CSE ZEUGES
 						["cse_epinephrine",nil,50000],
 						["cse_morphine",nil,50000],
