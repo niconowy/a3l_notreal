@@ -287,7 +287,7 @@ switch(_shop) do
 						["optic_ACO_grn_smg","ACO-G MP",4500],
 						["optic_ACO_grn","ACO-G",5000],
 						
-						["acc_flashlight",2250],
+						["acc_flashlight",nil,2250],
 						
 						//["FirstAidKit",nil,1500],
 						["ItemMap",nil,10],
@@ -359,7 +359,7 @@ switch(_shop) do
 						["RH_m3lr",nil,7500],
 						["RH_reflex",nil,7500],
 						
-						["acc_flashlight",2250],
+						["acc_flashlight",nil,2250],
 						
 						["RH_qdss_nt4",nil,4500],
 						["A3L_MP5Silencer",nil,4500],
@@ -445,7 +445,7 @@ switch(_shop) do
 						["RH_m3lr",nil,7500],
 						["RH_reflex",nil,7500],
 						
-						["acc_flashlight",2250],
+						["acc_flashlight",nil,2250],
 						
 						["RH_qdss_nt4",nil,4500],
 						["A3L_MP5Silencer",nil,4500],
@@ -534,7 +534,7 @@ switch(_shop) do
 						["RH_reflex",nil,7500],
 						["R3F_J4",nil,10000],
 						
-						["acc_flashlight",2250],
+						["acc_flashlight",nil,2250],
 						
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
@@ -632,7 +632,7 @@ switch(_shop) do
 						["RH_reflex",nil,7500],
 						["R3F_J4",nil,10000],
 						
-						["acc_flashlight",2250],
+						["acc_flashlight",nil,2250],
 						
 						["A3L_MP5Silencer",nil,4500],
 						["gign_shield","Einsatzschild",7500],
@@ -730,7 +730,7 @@ switch(_shop) do
 						["hlc_optic_kobra",nil,7500],
 						["RH_reflex",nil,8500],
 						["R3F_J4",nil,10000],
-						["acc_flashlight",2250],
+						["acc_flashlight",nil,2250],
 				//CSE ZEUGES
 						["cse_epinephrine",nil,50000],
 						["cse_morphine",nil,50000],
