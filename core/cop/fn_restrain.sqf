@@ -5,10 +5,10 @@
 	Description:
 	Retrains the client.
 */
-private["_cop","_player"];
-_cop = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
+private["_restrainer","_player"];
+_restrainer = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _player = player;
-if(isNull _cop) exitWith {};
+if(isNull _restrainer) exitWith {};
 
 //Monitor excessive restrainment
 /*[] spawn
@@ -30,7 +30,7 @@ if(isNull _cop) exitWith {};
 	};
 };*/
 
-titleText[format[localize "STR_Cop_Retrained",_cop getVariable["realname",name _cop]],"PLAIN"];
+titleText[format[localize "STR_Cop_Retrained",_restrainer getVariable["realname",name _restrainer]],"PLAIN"];
 [[player,"Cuffed"],"A3L_Fnc_NearestSound",false,false,false] call BIS_fnc_MP;
 				
 while {player getVariable "restrained"} do
@@ -53,15 +53,19 @@ while {player getVariable "restrained"} do
 		detach _player;
 	};
 	
-	if(!alive _cop) exitWith {
+	if(!alive _restrainer) then {
 		player setVariable ["Escorting",false,true];
+		player setVariable ["transporting",false,true];
 		detach player;
 	};
 	
 	if(vehicle player != player) then
 	{
 		//disableUserInput true;
-		if(driver (vehicle player) == player) then {player action["eject",vehicle player];};
+		if(driver (vehicle player) == player) then {
+			player action["eject",vehicle player]; 
+			player action["GetOut",vehicle player];	//Fix für Pilotensitz
+		};
 	};
 };
 
