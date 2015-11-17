@@ -22,6 +22,7 @@ _money = _lsrl_coins * 100;
 
 man_ey_b4nK = man_ey_b4nK + _money;
 
+playSound "coins";
 hint parseText format ["<t size='1.6' color='#208208' align='center'>LSRL Coins-System</t><br/><br/><t align='center'><t size='1.1'>Es wurden dir <br/><t color='#62c736'>$%1</t><br/> gutgeschrieben.</t></t>", [_money] call life_fnc_numberText];
 lrl_coinsCheck = false; //Prozedur beendet.
 
