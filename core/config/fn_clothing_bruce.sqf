@@ -43,6 +43,17 @@ switch (_filter) do
 			["KAEL_SUITS_BR_F3","Anzug (eng, Blau)",17500],
 			["U_CivilianSuit_B","Anzug (weit, Braun)",17500],
 			["U_CivilianSuit_C","Anzug (weit, Blau)",17500],
+			
+			["U_PMC_BlckPolo_BgPants","PG Polo (schwarz)",3000],
+			["U_PMC_WhtPolo_BluPants","PG Polo (weiss, blau Hose)",3000],
+			["U_PMC_WhtPolo_GrnPants","PG Polo (weiss, khaki Hose)",3000],
+			["U_PMC_BlkTShirt_SJeans","PG Sport (grau)",2500],
+			["U_PMC_BluTShirt_SJeans","PG Sport (blau)",2500],
+			["U_PMC_BlckPolo_BluPants","PG Polo (schwarz, blau Hose)",17500],
+			["U_PMC_BluePlaidShirt_BeigeCords","PG Hemd (kariert schwarz,blau,weiss)",2500],
+			["U_PMC_BluPolo_BgPants","PG Polo (blau)",3000],
+			["U_PMC_BlackPoloShirt_BeigeCords","PG Polo (schwarz, weiss Hose)",3000],
+			["U_PMC_GrnPolo_BgPants","PG Polo (grün, braun Hose)",3000],
 
 			["U_CivilianSport_A",nil,750],
 			["U_CivilianSport_B",nil,750],

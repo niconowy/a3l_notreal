@@ -235,8 +235,10 @@ switch(_shop) do
 			{
 				["Rekrut",
 					[
-						["A3L_Glock17",nil,12000],
-						["A3L_Glock17mag",nil,630],
+						["RH_m9",nil,10000],
+						["RH_15Rnd_9x19_M9",nil,500],
+
+						["RH_M6X","Taschenlampe (klein)",1000],
 						
 						["Radar_Gun","Radarpistole",1000],
 						
@@ -271,8 +273,11 @@ switch(_shop) do
 						["SMG_02_F",nil,23250],
 						["30Rnd_9x21_Mag",nil,385],
 						
-						["A3L_Glock17",nil,12000],
-						["A3L_Glock17mag",nil,730],
+						["RH_m9",nil,10000],
+						["RH_15Rnd_9x19_M9",nil,500],
+
+						["RH_M6X","Taschenlampe (klein)",1000],
+
 						["RH_kimber",nil,15670],
 						["RH_7Rnd_45cal_m1911",nil,762],
 						["RH_usp",nil,13400],
@@ -328,8 +333,11 @@ switch(_shop) do
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
 
-						["A3L_Glock17",nil,12000],
-						["A3L_Glock17mag",nil,730],
+						["RH_m9",nil,10000],
+						["RH_15Rnd_9x19_M9",nil,500],
+
+						["RH_M6X","Taschenlampe (klein)",1000],
+
 						["RH_kimber",nil,15670],
 						["RH_7Rnd_45cal_m1911",nil,762],
 						["RH_usp",nil,13400],
@@ -415,8 +423,11 @@ switch(_shop) do
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
 						
-						["A3L_Glock17",nil,12000],
-						["A3L_Glock17mag",nil,730],
+						["RH_m9",nil,10000],
+						["RH_15Rnd_9x19_M9",nil,500],
+
+						["RH_M6X","Taschenlampe (klein)",1000],
+
 						["RH_kimber",nil,15670],
 						["RH_7Rnd_45cal_m1911",nil,762],
 						["RH_usp",nil,13400],
@@ -502,8 +513,12 @@ switch(_shop) do
 						["R3F_HK416M",nil,27345],
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
-						["A3L_Glock17",nil,12000],
-						["A3L_Glock17mag",nil,730],
+
+						["RH_m9",nil,10000],
+						["RH_15Rnd_9x19_M9",nil,500],
+
+						["RH_M6X","Taschenlampe (klein)",1000],
+
 						["RH_kimber",nil,15670],
 						["RH_7Rnd_45cal_m1911",nil,762],
 						["RH_usp",nil,13400],
@@ -600,8 +615,11 @@ switch(_shop) do
 						["R3F_30Rnd_556x45_HK416",nil,545],
 						["R3F_SILENCIEUX_HK416",nil,4500],
 						
-						["A3L_Glock17",nil,12000],
-						["A3L_Glock17mag",nil,730],
+						["RH_m9",nil,10000],
+						["RH_15Rnd_9x19_M9",nil,500],
+
+						["RH_M6X","Taschenlampe (klein)",1000],
+
 						["RH_kimber",nil,15670],
 						["RH_7Rnd_45cal_m1911",nil,762],
 						["RH_usp",nil,13400],
