@@ -25,12 +25,12 @@ switch (_shop) do
 	case "diamond": {["Juwelier",["diamondc"]]};
 	case "salt": {["Salzhändler",["salt_r"]]};
 	case "cop": {["Polizei Austatter",["donuts","coffee","spikeStrip","water","rabbit","apple","redgull","fuelF","defusekit","sos","lockpick","nothammer","boltcutter","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
-	case "itemfbi": {["FBI Austatter",["donuts","coffee","spikeStrip","redgull","fuelF","defusekit","blaulicht","sos","lockpick","nothammer","BarGate","RoadBlockWood","RoadConeStripB"]]};
+	case "itemfbi": {["FBI Austatter",["donuts","coffee","spikeStrip","redgull","fuelF","defusekit","blaulicht","sos","lockpick","nothammer","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "cement": {["Zementhändler",["cement"]]};
 	case "gold": {["Gold Ankauf",["goldbar"]]};
 	case "backer": {["Gunnmeier's Backhaus",["mehl","brotteig"]]};
 	case "baumarkt": {["Baumarkt",["laminat","grillkohle","axt"]]};
-	case "ems": {["EMS Notfallaustattung",["water","coffee","rabbit","apple","redgull","tbacon","peach","lockpick","nothammer","RoadCone","RoadConeB","RoadConeStrip","RoadConeStripB","RoadBlockWood","fuelF"]]};
+	case "ems": {["EMS Notfallaustattung",["water","coffee","rabbit","apple","redgull","tbacon","peach","lockpick","nothammer","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB","fuelF"]]};
 	case "butcher": {["Bob's Metzgerei",["raw goat meat","raw chicken","raw sheep meat","raw rabbit"]]};
 	case "adac": {["LAC Werkbank",["water","rabbit","apple","redgull","tbacon","lockpick","nothammer","fuelE","BarGate","RoadBlockConc","RoadBlockWood","RoadCone","RoadConeStrip","RoadConeB","RoadConeStripB"]]};
 	case "adacdriver": {["LAC Formular Druck",["permdriverformular"]]};

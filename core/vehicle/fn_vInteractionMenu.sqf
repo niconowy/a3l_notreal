@@ -76,7 +76,7 @@ if(playerSide == civilian) then {
 	if(_val > 0 ) then {if( _str == "dietrich" || _str == "Dietrich" ) then {_Btn8 ctrlEnable true;};};
 	} foreach life_inv_items;
 	
-	if({side _x == east} count playableUnits > 2) then
+	/*if({side _x == east} count playableUnits > 2) then
 	{
 		if(!life_adac_request) then
 		{
@@ -97,7 +97,7 @@ if(playerSide == civilian) then {
 			//_Btn2 buttonSetAction "[[cursorTarget],""life_fnc_requestNotADAC"",civilian,FALSE] spawn life_fnc_MP; closeDialog 0;";
 			
 		};
-	};
+	};*/
 };
 
 
@@ -119,7 +119,7 @@ if(playerSide == west) then {
 	_Btn4 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_pulloutAction;";
 	if(count crew _curTarget == 0) then {_Btn4 ctrlEnable false;};
 
-	if({side _x == east} count playableUnits > 4) then
+	/*if({side _x == east} count playableUnits > 4) then
 	{
 		if(!life_adac_request) then
 		{
@@ -130,10 +130,10 @@ if(playerSide == west) then {
 			_Btn5 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_deleteADAC;";
 		};
 		
-	} else {
+	} else {*/
 		_Btn5 ctrlSetText localize "STR_vInAct_Impound";
 		_Btn5 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_impoundAction;";
-	};
+//	};
 	
 	if(_curTarget isKindOf "Ship") then {
 		_Btn6 ctrlSetText localize "STR_vInAct_PushBoat";
@@ -169,14 +169,14 @@ if(playerSide == west) then {
 		};
 	};
 	
-	if(!life_adac_request) then
+	/*if(!life_adac_request) then
 	{
 		_Btn3 ctrlSetText "LAC Rufen";
 		_Btn3 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_requestADAC;";
 	} else {
 		_Btn3 ctrlSetText "LAC Widerrufen";
 		_Btn3 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_deleteADAC;";
-	};
+	};*/
 	
 	_Btn4 ctrlSetText localize "STR_vInAct_PullOut";
 	_Btn4 buttonSetAction "closeDialog 0; [life_vInact_curTarget] spawn life_fnc_pulloutAction;";
