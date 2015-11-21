@@ -147,6 +147,8 @@ class Life_Client_Core
 		class hammer {};
 		class robBank {};
 		class robBank2 {};
+		class robBankLS {};
+		class robBankLS2 {};
 		class craftAction {};
 		class earplugs {};
 	};
