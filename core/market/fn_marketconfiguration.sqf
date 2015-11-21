@@ -186,7 +186,7 @@ life_market_resources = [
 			]
 	],
    
-	["pumpkin", 547, 1, 956, 6, 6,
+	["pumpkin", 547, 1, 956, 9, 7,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -197,7 +197,7 @@ life_market_resources = [
 			]
 	],
    
-	["wheat", 650, 1, 1198, 10, 2,
+	["wheat", 650, 1, 1198, 8, 4,
 			[
 					["sunflower",1],
 					["corn",1],
@@ -208,7 +208,7 @@ life_market_resources = [
 			]
 	],
    
-	["cotton", 445, 1, 917, 2, 10,
+	["cotton", 445, 1, 917, 6, 3,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -219,7 +219,7 @@ life_market_resources = [
 			]
 	],
 	
-	["mehl", 750, 1, 1423, 10, 2,
+	["mehl", 750, 1, 1423, 5, 4,
 			[
 					["sunflower",1],
 					["corn",1],
@@ -229,7 +229,7 @@ life_market_resources = [
 			]
 	],
 	
-	["brotteig", 1306, 1, 2661, 10, 2,
+	["brotteig", 1306, 1, 2661, 8, 6,
 			[
 					["sunflower",1],
 					["corn",1],

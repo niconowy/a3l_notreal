@@ -65,22 +65,26 @@ while {true} do
 	if(_cP >= 1 OR !alive player) exitWith {};
 	if(life_istazed OR life_knockout) exitWith {
 		[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+		life_action_inUse = false;
 	}; //Tazed
 	
 	if(player != vehicle player) exitWith {
 		titleText [localize "STR_NOTF_ActionInVehicle","PLAIN"];
 		[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+		life_action_inUse = false;
 	};
 	
 	if(life_interrupted) exitWith  {
 		[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+		life_action_inUse = false;
 	};
 	
 	if((player getVariable["restrained",false])) exitWith  {
 		[[player,""],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+		life_action_inUse = false;
 	};
 	
-	if(player distance _curTarget > _distance) exitWith {_badDistance = true;};
+	if(player distance _curTarget > _distance) exitWith {_badDistance = true; life_action_inUse = false;};
 };
 
 //Kill the UI display and check for various states
@@ -120,3 +124,5 @@ if(!_isVehicle) then {
 		player setVariable ["lockpicking",false,true];
 	};
 };
+
+life_action_inUse = false;

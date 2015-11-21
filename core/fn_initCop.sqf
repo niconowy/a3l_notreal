@@ -40,7 +40,7 @@ if(!(str(player) in ["cop_1","cop_2","cop_3"])) then {
 	};
 };
 
-/*if((str(player) in ["cop_4"])) then {
+if((str(player) in ["cop_4"])) then {
 	if((__GETC__(life_coplevel) <= 1)) then {
 		disableUserInput true;
 		["CopLStelleWhitelist",false,true] call BIS_fnc_endMission;
@@ -48,9 +48,9 @@ if(!(str(player) in ["cop_1","cop_2","cop_3"])) then {
 		disableUserInput false;
 	};
 	lrl_copLeitstelle = true;
-};*/
+};
 
-//if(!(str(player) in ["cop_4"]) && !(lrl_copLeitstelle)) then {
+if(!(str(player) in ["cop_4"]) && !(lrl_copLeitstelle)) then {
 	switch(__GETC__(life_coplevel)) do
 	{
 		case 1: {life_paycheck = life_paycheck;};
@@ -62,13 +62,13 @@ if(!(str(player) in ["cop_1","cop_2","cop_3"])) then {
 		case 7: {life_paycheck = life_paycheck + 3000;};
 		case 8: {life_paycheck = life_paycheck + 3000;};
 		case 9: {life_paycheck = life_paycheck + 3000;};
-		case 10: {life_paycheck = life_paycheck + 3500;};
-		case 11: {life_paycheck = life_paycheck + 3750;};
-		case 12: {life_paycheck = life_paycheck + 3850;};
+		case 10: {life_paycheck = life_paycheck + 3200;};
+		case 11: {life_paycheck = life_paycheck + 3450;};
+		case 12: {life_paycheck = life_paycheck + 3550;};
 	};
-/*} else {
-	life_paycheck = life_paycheck + 3250;
-};*/
+} else {
+	life_paycheck = life_paycheck + 3350;
+};
 
 player setVariable["rank",(__GETC__(life_coplevel)),true];
 player setVariable ["copLevel",1,true];

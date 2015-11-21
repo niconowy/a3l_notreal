@@ -49,8 +49,9 @@ lrl_buy = true;
 lrl_sell = true;
 lrl_knockedOut = false;
 lrl_spamcounter = 0;
-//lrl_copLeitstelle = false;
+lrl_copLeitstelle = false;
 lrl_emsLeitstelle = false;
+lrl_lacLeitstelle = false;
 lrl_noWeapons = ["","Rangefinder","Binocular","Radar_Gun","A3L_sign","A3L_sign2","Tv_Camera","gign_shield"];
 lrl_coinsCheck = false;
 lrl_coinsDelay = false;
@@ -136,7 +137,7 @@ switch (playerSide) do
 	
 	case independent: {
 		man_ey_b4nK = 15000;
-		life_paycheck = 4500;
+		life_paycheck = 1500;
 	};
 
 	case east:

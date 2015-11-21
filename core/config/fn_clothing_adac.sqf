@@ -28,7 +28,8 @@ switch (_filter) do
 			["A3L_lacausbilder","Ausbilder Arbeitskleidung",850],
 			["A3L_lacpersonal","Personal Arbeitskleidung",850],
 			["A3L_lacstell","Stellv.Leitung Arbeitskleidung",850],
-			["A3L_lacchef","Leitung Arbeitskleidung",850]
+			["A3L_lacchef","Leitung Arbeitskleidung",850],
+			["U_O_Wetsuit","Taucheranzug",1000]
 		];
 	};
 	
@@ -36,20 +37,22 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["H_PilotHelmetHeli_O","Pilotenhelm",150],
+			["H_PilotHelmetHeli_O","Pilotenhelm Mk I",1000],
+			["H_CrewHelmetHeli_O","Pilotenhelm Mk II",1050],
 			["H_RacingHelmet_1_black_F","Motorradhelm",250],
 			["Kio_Afro_Hat","Afro",500],
-			["ALE_H_NewEra_Black",nil,1250],
-			["ALE_H_NewEra_Cyan",nil,1250],
-			["ALE_H_NewEra_Superman",nil,1250],
-			["ALE_H_NewEra_Monster",nil,1250],
-			["ALE_H_Cowboy_Brown",nil,1250],
-			["ALE_H_Cowboy_Black",nil,1250],
-			["ALE_H_Cowboy_White",nil,1250],
-			["ALE_H_NewEra_Lakers",nil,1250],
-			["ALE_H_NewEra_Redsox",nil,1250],
+			["H_MilCap_blue","Blaue Funkmütze",350],
+			["ALE_H_NewEra_Black",nil,125],
+			["ALE_H_NewEra_Cyan",nil,125],
+			["ALE_H_NewEra_Superman",nil,125],
+			["ALE_H_NewEra_Monster",nil,125],
+			["ALE_H_Cowboy_Brown",nil,125],
+			["ALE_H_Cowboy_Black",nil,125],
+			["ALE_H_Cowboy_White",nil,125],
+			["ALE_H_NewEra_Lakers",nil,125],
+			["ALE_H_NewEra_Redsox",nil,125],
 			["H_ALFR_Headset",nil,250],
-			["H_Hat_Boonie_Cowboy","Cowboy Hut",1350],
+			["H_Hat_Boonie_Cowboy","Cowboy Hut",150],
 			["H_Beret_blk","Beret (black)",1350],
 			["A3L_longhairblack","Haar Schwarz",120],
 			["A3L_longhairblond","Haar Blond",120],
@@ -95,7 +98,8 @@ switch (_filter) do
 		[
 			["V_RebreatherB","Tauchgerät",5000],
 			["SWATvest2","Unsichtbare Weste",1500],
-			["V_HarnessOGL_gry","Unsichtbare Weste",1000]
+			["V_HarnessOGL_gry","Unsichtbare Weste",1000],
+			["V_Rangemaster_belt","Werkzeug-Gurt",500]
 		];
 	};
 	

@@ -2254,7 +2254,7 @@ class Mission
 					skill=0.60000002;
 					text="ADAC_3";
 					init="removeBackpack this; removeAllWeapons this; ";
-					description="LAC Mitarbeiter";
+					description="LAC Leitstelle";
 				};
 			};
 		};

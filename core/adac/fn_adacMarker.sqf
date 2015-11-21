@@ -34,16 +34,13 @@ if(visibleMap) then {
 			{
 				if(!isNull _unit) then
 				{
-					if ("ItemGPS" in assignedItems _unit) then
-					{
-						_marker setMarkerPosLocal (visiblePosition _unit);
-					};
+					_marker setMarkerPosLocal (visiblePosition _unit);
 				};
 			};
 			
 		} foreach _markers;
 		if(!visibleMap) exitWith {};
-		sleep 0.5;
+		sleep 2;
 	};
 
 	{deleteMarkerLocal (_x select 0);} foreach _markers;

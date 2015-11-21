@@ -32,9 +32,9 @@ switch (_filter) do
 			["emsoff_uni","LS-EMS Poloshirt",500],
 			//["emt_Uni1",nil, 1000],
 			["emt_Uni3","LS-EMS-Dienstkleidung (rot)",750],
-			["U_O_Wetsuit","Taucheranzug",750],
 			["A3L_MotorUniM","LS-EMS Motorradkleidung",750],
-			["U_CivilianCoat_A","Arztkittel",500]
+			["U_CivilianCoat_A","Arztkittel",500],
+			["U_O_Wetsuit","Taucheranzug",1000]
 		
 		];
 	};
@@ -43,16 +43,16 @@ switch (_filter) do
 	case 1:
 	{
 		[
-			["do_medcap","Paramedic Mütze (marineblau)",15],
-			["firehat","Feuerwehr Einsatzhelm",20],
-			["A3L_medic_helmet","Feuerwehr Kopfschutz",20],
-			["H_Cap_blu","Blaue Mütze",15],
-			["H_Cap_red","Rote Mütze",15],
-			["H_Beret_A","Rotes Beret",15],
-			["H_MilCap_blue","Blaue Funkmütze",15],
-			["H_PilotHelmetHeli_B","Pilotenhelm",250],
-			["H_RacingHelmet_1_red_F","Motorradhelm",50],
-			["H_ALFR_Headset","Headset",250]
+			["do_medcap","Paramedic Mütze (marineblau)",150],
+			["firehat","Feuerwehr Einsatzhelm",200],
+			["A3L_medic_helmet","Feuerwehr Kopfschutz",200],
+			["H_Cap_blu","Blaue Mütze",350],
+			["H_Cap_red","Rote Mütze",150],
+			["H_Beret_A","Rotes Beret",150],
+			["H_MilCap_blue","Blaue Funkmütze",150],
+			["H_PilotHelmetHeli_B","Pilotenhelm",2500],
+			["H_RacingHelmet_1_red_F","Motorradhelm",500],
+			["H_ALFR_Headset","Headset",750],
 		];
 	};
 	

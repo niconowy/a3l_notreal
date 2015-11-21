@@ -16,7 +16,7 @@ waitUntil {!(isNull (findDisplay 46))};
 
 _end = false;
 
-if((str(player) in ["ADAC_1","ADAC_2","ADAC_3","ADAC_4","ADAC_5","ADAC_6","ADAC_7","ADAC_8","ADAC_9","ADAC_10","ADAC_11","ADAC_12"])) then {
+if((str(player) in ["ADAC_1","ADAC_2","ADAC_4","ADAC_5","ADAC_6","ADAC_7","ADAC_8","ADAC_9","ADAC_10","ADAC_11","ADAC_12"])) then {
 	if((__GETC__(life_adaclevel) < 1)) then {
 		disableUserInput true;
 		["IPDWhitelist",false,true] call BIS_fnc_endMission;
@@ -43,19 +43,33 @@ if((str(player) in ["ADAC_15"])) then {
 	};
 };
 
-switch(__GETC__(life_adaclevel)) do
-{//Standard Paycheck: 1.500
-	case 1: {life_paycheck = life_paycheck + 101;};		//Auszubildender
-	case 2: {life_paycheck = life_paycheck + 550;}; 	//KFZ Mechaniker
-	case 3: {life_paycheck = life_paycheck + 1500;}; 	//KFZ Mechatroniker
-	case 4: {life_paycheck = life_paycheck + 1500;}; 	//KFZ Meister
-	case 5: {life_paycheck = life_paycheck + 2500;}; 	//KFZ Ausbilder
-	case 6: {life_paycheck = life_paycheck + 2500;}; 	//Personalleiter
-	case 7: {life_paycheck = life_paycheck + 2950;}; 	//Stellv. IPD Leitung
-	case 8: {life_paycheck = life_paycheck + 3050;}; 	//IPD Leitung
-	case 9: {life_paycheck = life_paycheck - 1500;}; 	//NICHT BELEGTER SLOT - NICHT VERWENDEN
-	case 10: {life_paycheck = life_paycheck + 3050;};	//Staatsanwalt
-	case 11: {life_paycheck = life_paycheck + 3250;}; 	//Richter
+if((str(player) in ["ADAC_3"])) then {
+	if((__GETC__(life_adaclevel) < 4)) then {
+		disableUserInput true;
+		["LACLStelleWhitelist",false,true] call BIS_fnc_endMission;
+		sleep 35;
+		disableUserInput false;
+	};
+	lrl_lacLeitstelle = true;
+};
+
+if(!(str(player) in ["ADAC_3"])) then {
+	switch(__GETC__(life_adaclevel)) do
+	{//Standard Paycheck: 1.500
+		case 1: {life_paycheck = life_paycheck + 101;};		//Auszubildender
+		case 2: {life_paycheck = life_paycheck + 550;}; 	//KFZ Mechaniker
+		case 3: {life_paycheck = life_paycheck + 1500;}; 	//KFZ Mechatroniker
+		case 4: {life_paycheck = life_paycheck + 1500;}; 	//KFZ Meister
+		case 5: {life_paycheck = life_paycheck + 2500;}; 	//KFZ Ausbilder
+		case 6: {life_paycheck = life_paycheck + 2500;}; 	//Personalleiter
+		case 7: {life_paycheck = life_paycheck + 2950;}; 	//Stellv. IPD Leitung
+		case 8: {life_paycheck = life_paycheck + 3050;}; 	//IPD Leitung
+		case 9: {life_paycheck = life_paycheck - 1500;}; 	//NICHT BELEGTER SLOT - NICHT VERWENDEN
+		case 10: {life_paycheck = life_paycheck + 3050;};	//Staatsanwalt
+		case 11: {life_paycheck = life_paycheck + 3250;}; 	//Richter
+	};
+} else {
+	life_paycheck = life_paycheck + 2500;
 };
 
 player setVariable ["copLevel",1,true];

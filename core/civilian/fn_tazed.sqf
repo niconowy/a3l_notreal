@@ -17,6 +17,7 @@ if(_shooter isKindOf "Man" && alive player) then
 	{
 		diag_log format ["= TAZER NOTIFICATION :: %1 wurde von %2 tazed.",name _unit, name _shooter];
 		life_istazed = true;
+		player setVariable ["tf_unable_to_use_radio", true];
 		_curWep = currentWeapon player;
 		_curMags = magazines player;
 		_attach = if(primaryWeapon player != "") then {primaryWeaponItems _unit} else {[]};
@@ -46,6 +47,7 @@ if(_shooter isKindOf "Man" && alive player) then
 		if(!(player getVariable["Escorting",false])) then {
 			detach player;
 		};
+		player setVariable ["tf_unable_to_use_radio", false];
 		life_istazed = false;
 		player allowDamage true;
 		disableUserInput false;
@@ -56,3 +58,5 @@ if(_shooter isKindOf "Man" && alive player) then
 	_unit allowDamage true;
 	life_iztazed = false;
 };
+
+player setVariable ["tf_unable_to_use_radio", false];

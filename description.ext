@@ -249,6 +249,16 @@ class CfgDebriefing
 		pictureColor[] = {0,0.3,0.6,1};
 	};
 	
+	class LACLStelleWhitelist
+	{
+		title = "Leitstelle - Whitelist";
+		subtitle = "Du hast keine Befugnis als Leitstelle zu spielen";
+		description = "Du hast keine Befugnis als Leitstelle zu spielen, da du nicht den Rang 4 erreicht hast!";
+		pictureBackground = "flag_CSAT";
+		picture = "flag_CSAT";
+		pictureColor[] = {0,0.3,0.6,1};
+	};
+	
 	class StaatsanwaltWhitelist
 	{
 		title = "Staatsanwalt - Whitelist";

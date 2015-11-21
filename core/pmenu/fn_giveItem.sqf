@@ -13,7 +13,7 @@ ctrlShow[2002,false];
 if((lbCurSel 2023) == -1) exitWith {hint localize "STR_Global_NoSelectionPerson";ctrlShow[2002,true];};
 _unit = lbData [2023,lbCurSel 2023];
 _unit = call compile format["%1",_unit];
-if((lbCurSel 2005) == -1) exitWith {hint "STR_Global_NoSelection";ctrlShow[2002,true];};
+if((lbCurSel 2005) == -1) exitWith {hint localize "STR_Global_NoSelection";ctrlShow[2002,true];};
 _item = lbData [2005,(lbCurSel 2005)];
 if(isNil "_unit") exitWith {ctrlShow[2002,true];};
 if(_unit == player) exitWith {ctrlShow[2002,true];};
@@ -22,7 +22,7 @@ if(isNull _unit) exitWith {ctrlShow[2002,true];};
 //A series of checks *ugh*
 if(!([_val] call TON_fnc_isnumber)) exitWith {hint localize "STR_MISC_WrongNumFormat";ctrlShow[2002,true];};
 if(parseNumber(_val) <= 0) exitWith {hint localize "STR_MISC_Under1";ctrlShow[2002,true];};
-if(isNil "_unit") exitWith {ctrlShow[2001,true]; hint "The selected player is not within range";};
+if(isNil "_unit") exitWith {ctrlShow[2001,true]; hint "Spieler ausser Reichweite!";};
 if(player getVariable["restrained",true]) exitWith {hint "Du kannst keine Gegenstände weitergeben während du gefesselt bist!"};
 if(!([false,_item,(parseNumber _val)] call life_fnc_handleInv)) exitWith {hint localize "STR_MISC_NotTooMuchDabei";ctrlShow[2002,true];};
 [[_unit,_val,_item,player],"life_fnc_receiveItem",_unit,false] spawn life_fnc_MP;
