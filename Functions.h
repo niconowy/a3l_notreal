@@ -539,6 +539,6 @@ class Life_Client_Core
 		class adacLights {};
 		class adacSirenLights {};
 		class adacSiren {};
-		//class adacMarker {};
+		class adacMarker {};
 	};
 };
