@@ -189,7 +189,7 @@ switch (true) do
 	{
 		if(!isNull life_roadblock) exitWith {hint "Du hast bereits ein Strassenblock in der Hand"};
 		//if cop override and allow use of item
-		if(playerSide == west) then 
+		if(playerSide != civilian) then 
 		{
 			if(([false,_item,1] call life_fnc_handleInv)) then 
 			{

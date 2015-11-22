@@ -589,8 +589,8 @@ switch(_shop) do
 						//["prpl_benelli_muzzle_break",nil,15000], Zu Op
 						//["prpl_6Rnd_12Gauge_Pellets",nil,250], Zu Op
 						
-					/*	["RH_Mk12mod1",nil,37855],
-						["RH_30Rnd_556x45_Mk262",nil,1350], */
+						["RH_Mk12mod1",nil,37855],
+						["RH_30Rnd_556x45_Mk262",nil,1350],
 					//	["RH_spr_mbs",nil,4500],
 						["RH_M16A3",nil,34345],
 						["RH_m4",nil,32120],

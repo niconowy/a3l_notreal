@@ -52,7 +52,7 @@ switch (_filter) do
 			["H_MilCap_blue","Blaue Funkmütze",150],
 			["H_PilotHelmetHeli_B","Pilotenhelm",2500],
 			["H_RacingHelmet_1_red_F","Motorradhelm",500],
-			["H_ALFR_Headset","Headset",750],
+			["H_ALFR_Headset","Headset",750]
 		];
 	};
 	
