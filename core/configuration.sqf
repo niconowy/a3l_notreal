@@ -55,7 +55,7 @@ lrl_lacLeitstelle = false;
 lrl_noWeapons = ["","Rangefinder","Binocular","Radar_Gun","A3L_sign","A3L_sign2","Tv_Camera","gign_shield"];
 lrl_coinsCheck = false;
 lrl_coinsDelay = false;
-lrl_version = "lakeside-reallifeDE_modinfo_ver_150811";
+lrl_version = "lakeside-reallifeDE_modinfo_ver_152211";
 
 
 //Persistent Saving
