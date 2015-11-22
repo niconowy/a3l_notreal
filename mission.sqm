@@ -1760,7 +1760,7 @@ class Mission
 					skill=0.60000002;
 					text="cop_4";
 					init="removeBackpack this; removeAllWeapons this;";
-					description="LVPD Police Officer";
+					description="LVPD Leitstelle";
 				};
 			};
 		};
@@ -6266,7 +6266,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=262;
+		items=266;
 		class Item0
 		{
 			position[]={9212.835,7.4904141,11523.635};
@@ -6351,7 +6351,7 @@ class Mission
 			name="Correctional Facility";
 			text="LakesideValley Justizvollzugsanstalt";
 			type="A3L_Jail_Icon";
-			colorName="ColorKhaki";
+			colorName="ColorUNKNOWN";
 			angle=-0.40692401;
 		};
 		class Item12
@@ -8254,7 +8254,7 @@ class Mission
 		};
 		class Item247
 		{
-			position[]={8792.4766,10.46,6730.4902};
+			position[]={8789.3818,10.46,6732.5537};
 			name="medic_lakesidecity";
 			text="KH LCity";
 			type="A3L_FD_Icon";
@@ -8270,10 +8270,10 @@ class Mission
 		};
 		class Item249
 		{
-			position[]={8772.3994,10.46,6704.415};
+			position[]={8797.29,10.46,6823.416};
 			name="med_air_garage";
 			type="Empty";
-			angle=106.91;
+			angle=210.54437;
 		};
 		class Item250
 		{
@@ -8370,6 +8370,38 @@ class Mission
 			text="Medic 37.8";
 			type="A3L_FD_Icon";
 			colorName="ColorRed";
+		};
+		class Item262
+		{
+			position[]={9289.3037,10.52,9569.8281};
+			name="jailblocka";
+			text="Block A";
+			type="loc_Bush";
+			colorName="ColorPink";
+		};
+		class Item263
+		{
+			position[]={9338.7607,10.52,9509.3916};
+			name="jailblocka_1";
+			text="Block B";
+			type="loc_Bush";
+			colorName="ColorPink";
+		};
+		class Item264
+		{
+			position[]={9245.1113,10.52,9427.3613};
+			name="jailblocka_2";
+			text="Block C";
+			type="loc_Bush";
+			colorName="ColorPink";
+		};
+		class Item265
+		{
+			position[]={9199.2012,10.52,9482.8613};
+			name="jailblocka_3";
+			text="Block D";
+			type="loc_Bush";
+			colorName="ColorPink";
 		};
 	};
 };
