@@ -7,9 +7,9 @@ fnc_arrestmenu = {
 	if(isNil "_unit") exitwith {}; 
 	if(!(_unit isKindOf "Man")) exitWith {}; 
 	if(!isPlayer _unit) exitWith {};
-	if((_unit getVariable "life_is_arrested")) exitWith {["This person is already arrested!",20,"red"] call A3L_Fnc_Msg;};
-	if(!(_unit getVariable "restrained")) exitWith {["This person is not restrained!",20,"red"] call A3L_Fnc_Msg;}; 
-	if(!((side _unit) in [civilian,independent])) exitWith {}; 
+	if((_unit getVariable "life_is_arrested")) exitWith {hint "Die Persn ist bereits im Gefängnis...";};
+	if(!(_unit getVariable "restrained")) exitWith {hint "Die Person trägt keine Handschellen";}; 
+	if(side _unit != civilian) exitWith {hint "Du kannst nur Zivilisten einsperren!"}; 
 	if(isNull _unit) exitWith {}; 
 
 	_display = findDisplay 5546;
@@ -63,6 +63,7 @@ fnc_sendtojail = {
 	if(life_inv_marijuana > 0) then {[false,"marijuana",life_inv_marijuana] call life_fnc_handleInv;};
 	[[player,_bad,life_arrestMinutes,life_arrestReason],"svr_sendtojail",false,false] spawn life_fnc_MP;
 	[5] call SOCK_fnc_updatePartial;
+	[2] call SOCK_fnc_updatePartial;
 };
 
 fnc_jailsetup = {
@@ -197,10 +198,14 @@ fnc_releaseprison = {
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 		player setPos (getMarkerPos "jail_release");
 		("A3LJAILTIME" call BIS_fnc_rscLayer) cutText ["","PLAIN"]; //remove
-		["Du hast deine Haftzeit abgesessen. Bau nicht wieder Scheisse!",20,"green"] call A3L_Fnc_Msg;
+		//["Du hast deine Haftzeit abgesessen. Bau nicht wieder Scheisse!",20,"green"] call A3L_Fnc_Msg;
+		hint ["Du hast deine Haftzeit abgesessen. Achte in der Zukunft auf das Gesetz!"];
 	} else {
 		//[[getPlayerUID player,profileName,"901"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
-		["You escaped the jail!",20,"orange"] call A3L_Fnc_Msg;
+		//["You escaped the jail!",20,"orange"] call A3L_Fnc_Msg;
+		hint ["Du bist aus dem Gefängnis ausgebrochen!"];
 		("A3LJAILTIME" call BIS_fnc_rscLayer) cutText ["","PLAIN"]; //remove
 	};
+	[5] call SOCK_fnc_updatePartial;
+	[2] call SOCK_fnc_updatePartial;
 };

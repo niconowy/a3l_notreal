@@ -56,14 +56,14 @@ if((str(player) in ["ADAC_3"])) then {
 if(!(str(player) in ["ADAC_3"])) then {
 	switch(__GETC__(life_adaclevel)) do
 	{//Standard Paycheck: 1.500
-		case 1: {life_paycheck = life_paycheck + 101;};		//Auszubildender
-		case 2: {life_paycheck = life_paycheck + 550;}; 	//KFZ Mechaniker
-		case 3: {life_paycheck = life_paycheck + 1500;}; 	//KFZ Mechatroniker
-		case 4: {life_paycheck = life_paycheck + 1500;}; 	//KFZ Meister
-		case 5: {life_paycheck = life_paycheck + 2500;}; 	//KFZ Ausbilder
-		case 6: {life_paycheck = life_paycheck + 2500;}; 	//Personalleiter
-		case 7: {life_paycheck = life_paycheck + 2950;}; 	//Stellv. IPD Leitung
-		case 8: {life_paycheck = life_paycheck + 3050;}; 	//IPD Leitung
+		case 1: {life_paycheck = life_paycheck + 350;};		//Auszubildender
+		case 2: {life_paycheck = life_paycheck + 750;}; 	//KFZ Mechaniker
+		case 3: {life_paycheck = life_paycheck + 1100;}; 	//KFZ Mechatroniker
+		case 4: {life_paycheck = life_paycheck + 1550;}; 	//KFZ Meister
+		case 5: {life_paycheck = life_paycheck + 1850;}; 	//KFZ Ausbilder
+		case 6: {life_paycheck = life_paycheck + 1750;}; 	//Personalleiter
+		case 7: {life_paycheck = life_paycheck + 2500;}; 	//Stellv. IPD Leitung
+		case 8: {life_paycheck = life_paycheck + 3000;}; 	//IPD Leitung
 		case 9: {life_paycheck = life_paycheck - 1500;}; 	//NICHT BELEGTER SLOT - NICHT VERWENDEN
 		case 10: {life_paycheck = life_paycheck + 3050;};	//Staatsanwalt
 		case 11: {life_paycheck = life_paycheck + 3250;}; 	//Richter

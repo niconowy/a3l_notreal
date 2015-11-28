@@ -61,6 +61,7 @@ switch (true) do
 		player setPos (getMarkerPos "jail_release");
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 		[5] call SOCK_fnc_updatePartial;
+		[2] call SOCK_fnc_updatePartial;
 	};
 	
 	case (_esc) :
@@ -70,6 +71,7 @@ switch (true) do
 		//[[0,format[localize "STR_Jail_EscapeNOTF",profileName]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 		//[[getPlayerUID player,profileName,"901"],"life_fnc_wantedAdd",false,false] spawn life_fnc_MP;
 		[5] call SOCK_fnc_updatePartial;
+		[2] call SOCK_fnc_updatePartial;
 	};
 	
 	case (alive player && !_esc && !_bail) :
@@ -80,5 +82,6 @@ switch (true) do
 		[[getPlayerUID player],"life_fnc_wantedRemove",false,false] spawn life_fnc_MP;
 		player setPos (getMarkerPos "jail_release");
 		[5] call SOCK_fnc_updatePartial;
+		[2] call SOCK_fnc_updatePartial;
 	};
 };
