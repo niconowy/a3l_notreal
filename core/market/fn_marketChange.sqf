@@ -6,7 +6,7 @@
 
 private["_rand","_modifier","_price", "_globalchange","_defaultprice","_shortname","_difference"];
 
-_rand = [0,200] call life_fnc_randomRound; //0-200
+_rand = [0,500] call life_fnc_randomRound; //0-200
 
 /*
 
