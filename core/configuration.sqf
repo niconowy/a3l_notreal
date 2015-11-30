@@ -55,7 +55,7 @@ lrl_lacLeitstelle = false;
 lrl_noWeapons = ["","Rangefinder","Binocular","Radar_Gun","A3L_sign","A3L_sign2","Tv_Camera","gign_shield"];
 lrl_coinsCheck = false;
 lrl_coinsDelay = false;
-lrl_version = "lakeside-reallifeDE_modinfo_ver_152211";
+lrl_version = "lakeside-reallifeDE_modinfo_ver_152911";
 
 
 //Persistent Saving
@@ -563,6 +563,7 @@ life_garage_prices =
 [
 	["I_Heli_Transport_02_F",5000],
 	["C_SUV_01_F",5000],
+	["cl3_mackr_del_blue",105000],
 	["shounka_a3_mantgs",9500],
 	["shounka_a3_suburbangign",20000],
 	["shounka_a3_brinks_noir",20000],
@@ -703,7 +704,7 @@ life_garage_prices =
 	["A3L_Ship",35000],["A3L_Jetski",7500],["A3L_Jetski_yellow",7500],
 	
 	["IVORY_PRIUS",5000],["C_Heli_Light_01_civil_F",70000],["B_Heli_Light_01_F",70000],["O_Heli_Light_02_unarmed_F",70000],["ivory_b206_rescue",70000],["ivory_b206",70000],
-	["ivory_b206_news",70000],["ivory_b206_police",70000],["EC635_Unarmed_BW",15000],["EC635_ADAC",15000],["EC635_SAR",15000],["EC635_Unarmed_CSAT",15000],["IVORY_BELL512_POLICE",70000],["IVORY_BELL512",70000],["IVORY_BELL512_RESCUE",70000]
+	["ivory_b206_news",70000],["ivory_b206_police",70000],["EC635_Unarmed_BW",15000],["EC635_ADAC",85000],["EC635_SAR",15000],["EC635_Unarmed_CSAT",15000],["IVORY_BELL512_POLICE",70000],["IVORY_BELL512",70000],["IVORY_BELL512_RESCUE",70000]
 ];
 __CONST__(life_garage_prices,life_garage_prices);
 
@@ -711,6 +712,7 @@ life_garage_sell =
 [
 	["I_Heli_Transport_02_F",50000],
 	["C_SUV_01_F",1000],
+	["cl3_mackr_del_blue",278000],
 	["shounka_a3_mantgs",45800],
 	["shounka_a3_suburbangign",95000],
 	["shounka_a3_brinks_noir",95000],

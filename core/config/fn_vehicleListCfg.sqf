@@ -601,7 +601,8 @@ switch (_shop) do
 			["A3L_Bus",50000],
 			["A3L_SchoolBus",65000],
 			["ALFR_GeK_Volvo_FH16_2012",725000],
-			["shounka_a3_renaultmagnum_f",725000]
+			["shounka_a3_renaultmagnum_f",725000],
+			["cl3_mackr_del_blue",955000]
 		];
 	};
 	

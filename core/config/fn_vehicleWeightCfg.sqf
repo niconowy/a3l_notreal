@@ -501,5 +501,7 @@ switch (_className) do
 	case "shounka_a3_mantgs": {45};
 	case "shounka_a3_brinks_noir": {25};
 	
+	case "cl3_mackr_del_blue": {355};
+	
 	default {-1};
 };
