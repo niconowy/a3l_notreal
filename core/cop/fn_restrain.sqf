@@ -57,6 +57,14 @@ while {player getVariable "restrained"} do
 		player setVariable ["Escorting",false,true];
 		player setVariable ["transporting",false,true];
 		detach player;
+
+//Auto-Unrestrain nach 5 min
+		[] spawn {
+			if(lrl_unrestrainTimerBool) exitWith {};
+				sleep (5 * 60);
+				lrl_unrestrainTimerBool = true;
+			};
+		};
 	};
 	
 	if(vehicle player != player) then
@@ -66,6 +74,12 @@ while {player getVariable "restrained"} do
 			player action["eject",vehicle player]; 
 			player action["GetOut",vehicle player];	//Fix für Pilotensitz
 		};
+	};
+	
+	if(lrl_unrestrainTimerBool) then {
+		player setVariable ["Escorting",false,true];
+		player setVariable ["transporting",false,true];
+		player setVariable ["restrained",false,true];
 	};
 };
 
