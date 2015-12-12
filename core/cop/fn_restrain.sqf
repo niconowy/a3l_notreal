@@ -5,9 +5,10 @@
 	Description:
 	Retrains the client.
 */
-private["_restrainer","_player"];
+private["_restrainer","_player","_autoUnRstCD"];
 _restrainer = [_this,0,Objnull,[Objnull]] call BIS_fnc_param;
 _player = player;
+_autoUnRstCD = false;
 if(isNull _restrainer) exitWith {};
 
 //Monitor excessive restrainment
@@ -58,9 +59,14 @@ while {player getVariable "restrained"} do
 		player setVariable ["transporting",false,true];
 		detach player;
 
-//Auto-Unrestrain nach 5 min
-		[] spawn {
-			if(lrl_unrestrainTimerBool) exitWith {};
+	//Auto-Unrestrain nach 5 min
+		if(!lrl_unrestrainTimerBool && !_autoUnRstCD) then {
+			if(lrl_unrestrainTimerBool) exitWith {}; //Obrige Abfrage wird ignoriert... wieso das?!?!
+			if(_autoUnRstCD) exitWith {};
+			
+			_autoUnRstCD = true;
+			
+			[] spawn {
 				sleep (5 * 60);
 				lrl_unrestrainTimerBool = true;
 			};
