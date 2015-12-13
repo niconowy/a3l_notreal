@@ -28,7 +28,7 @@ StartProgress = false;
 if(!isDedicated) then { X_Client = true;};
 enableSaving[false,false];
 
-life_versionInfo = "LS-Reallife v3.1.0.0";
+life_versionInfo = "LS-Reallife v3.1.0.1";
 
 [] execVM "briefing.sqf"; //Load Briefing
 [] execVM "KRON_Strings.sqf";
