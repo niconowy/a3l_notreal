@@ -36,8 +36,6 @@ if(_shooter isKindOf "Man" && alive player) then
 		};
 		
 		[[_unit],"life_fnc_tazeSound",true,false] spawn life_fnc_MP;
-		_obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL _unit);
-		_obj setPosATL (getPosATL _unit);
 		
 		// [[player,"AinjPfalMstpSnonWnonDf_carried_fallwc"],"life_fnc_animSync",true,false] spawn life_fnc_MP; /* Old Animation */
 		/* New Animation (Ragdoll Effect) */
@@ -59,12 +57,17 @@ if(_shooter isKindOf "Man" && alive player) then
 		};
 		sleep 0.5;
 		player allowDamage true;	//Double-Check
+		sleep 4;
+		_obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL _unit);
+		_obj setPosATL (getPosATL _unit);
+		
+		[[player,"static_dead"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		
 		//[[0,format[localize "STR_NOTF_Tazed", _unit getVariable["realname",name _unit], _shooter getVariable["realname",name _shooter]]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
 		
 		_unit attachTo [_obj,[0,0,0]];
 		disableUserInput true;
-		sleep 15;
+		sleep 12;
 		[[player,"amovppnemstpsraswrfldnon"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
 		if(!(player getVariable["Escorting",false])) then {
 			detach player;
