@@ -13,7 +13,7 @@ if(isNull _target) exitWith {};
 if(!isPlayer _target) exitWith {};
 if(player distance _target > 4) exitWith {};
 life_knockout = true;
-if((currentWeapon player == primaryWeapon player) && (currentWeapon player != lrl_noWeapons)) then {
+if((currentWeapon player == primaryWeapon player)) then {
 	[[player,"CL3_anim_WeaponHit"],"life_fnc_animSync",_target,false] spawn life_fnc_MP;
 } else {
 	_knockouts = ["CL3_anim_Punch1","CL3_anim_Punch2","CL3_anim_Punch3","CL3_anim_Punch4"] call BIS_fnc_selectRandom;
