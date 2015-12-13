@@ -8894,7 +8894,7 @@ class Mission
 	};
 	class Markers
 	{
-		items=271;
+		items=272;
 		class Item0
 		{
 			position[]={9212.835,7.4904141,11523.635};
@@ -11067,6 +11067,12 @@ class Mission
 		{
 			position[]={524.64111,477.96329,1221.6431};
 			name="air_g_flh_99";
+			type="Empty";
+		};
+		class Item271
+		{
+			position[]={9290.9219,10.52,9559.9434};
+			name="cop_spawn_5";
 			type="Empty";
 		};
 	};
