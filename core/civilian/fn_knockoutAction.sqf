@@ -22,5 +22,5 @@ if((currentWeapon player == primaryWeapon player)) then {
 sleep 0.08;
 [[_target,profileName],"life_fnc_knockedOut",_target,false] spawn life_fnc_MP;
 
-sleep 3;
+sleep 4;
 life_knockout = false;
