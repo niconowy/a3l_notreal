@@ -56,7 +56,7 @@ lrl_noWeapons = ["","Rangefinder","Binocular","Radar_Gun","A3L_sign","A3L_sign2"
 lrl_coinsCheck = false;
 lrl_coinsDelay = false;
 lrl_unrestrainTimerBool = false;
-lrl_version = "lakeside-reallifeDE_modinfo_ver_152911";
+lrl_version = "lakeside-reallifeDE_modinfo_ver_152211A";
 
 
 //Persistent Saving

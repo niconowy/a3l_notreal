@@ -522,8 +522,8 @@ switch (_code) do
 	{
 		if (_alt && _ctrlKey) then
 		{
-			diag_log format ["SERVER INFO: %1 verwendet CTRL + ALT + DEL (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]];
-			[[0,format["SERVER INFO: %1 verwendet CTRL + ALT + DEL (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
+			diag_log format ["SERVER INFO: %1 verwendet CTRL + ALT + DEL",_player getVariable["realname",name _player]];
+			[[0,format["SERVER INFO: %1 verwendet CTRL + ALT + DEL",_player getVariable["realname",name _player]]],"life_fnc_broadcast",nil,false] spawn life_fnc_MP;
 			[] spawn life_fnc_commandSpam;
 			[] call SOCK_fnc_updateRequest;
 		};
@@ -532,7 +532,7 @@ switch (_code) do
 	case 1:
     {
 		if( _ctrlKey )  then {
-			diag_log format ["SERVER INFO: %1 verwendet CTRL + ESC (Bitte Melde es einem Admin)",_player getVariable["realname",name _player]];
+			diag_log format ["SERVER INFO: %1 verwendet CTRL + ESC",_player getVariable["realname",name _player]];
 			[] call SOCK_fnc_updateRequest;
 		};
 	};
