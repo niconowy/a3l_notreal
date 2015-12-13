@@ -38,8 +38,30 @@ if(_shooter isKindOf "Man" && alive player) then
 		[[_unit],"life_fnc_tazeSound",true,false] spawn life_fnc_MP;
 		_obj = "Land_ClutterCutter_small_F" createVehicle (getPosATL _unit);
 		_obj setPosATL (getPosATL _unit);
-		[[player,"AinjPfalMstpSnonWnonDf_carried_fallwc"],"life_fnc_animSync",true,false] spawn life_fnc_MP;
+		
+		// [[player,"AinjPfalMstpSnonWnonDf_carried_fallwc"],"life_fnc_animSync",true,false] spawn life_fnc_MP; /* Old Animation */
+		/* New Animation (Ragdoll Effect) */
+		
+		player allowDamage false;
+		if (vehicle player == player) then {
+			private ["_ragdoll"];
+			player allowDamage false;
+			_ragdoll = "Land_Can_V3_F" createVehicleLocal [0,0,0];
+			_ragdoll setMass 1e10;
+			_ragdoll attachTo [player, [0,0,0], "Spine3"];
+			_ragdoll setVelocity [0,0,6];
+			player allowDamage false;
+			detach _ragdoll;
+			0 = _ragdoll spawn {
+				deleteVehicle _this;
+				player allowDamage true;
+			};
+		};
+		sleep 0.5;
+		player allowDamage true;	//Double-Check
+		
 		//[[0,format[localize "STR_NOTF_Tazed", _unit getVariable["realname",name _unit], _shooter getVariable["realname",name _shooter]]],"life_fnc_broadcast",true,false] spawn life_fnc_MP;
+		
 		_unit attachTo [_obj,[0,0,0]];
 		disableUserInput true;
 		sleep 15;
