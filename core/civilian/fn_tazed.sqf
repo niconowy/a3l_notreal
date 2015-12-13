@@ -38,7 +38,11 @@ if(_shooter isKindOf "Man" && alive player) then
 		[[_unit],"life_fnc_tazeSound",true,false] spawn life_fnc_MP;
 		
 		// [[player,"AinjPfalMstpSnonWnonDf_carried_fallwc"],"life_fnc_animSync",true,false] spawn life_fnc_MP; /* Old Animation */
-		/* New Animation (Ragdoll Effect) */
+	
+	/* New Animation (Ragdoll Effect) */
+	
+		enableCamshake true;
+		addCamShake [50,5,30];
 		
 		player allowDamage false;
 		if (vehicle player == player) then {
