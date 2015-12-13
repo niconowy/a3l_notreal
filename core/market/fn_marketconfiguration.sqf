@@ -12,7 +12,7 @@ life_market_resources = [
 	//Schema: SHORTNAME, DEFAULT-WERT, MIN-WERT, MAX-WERT, VERÄNDERUNG BEI AKTION [VERKAUF Multipliziert mit 1, Kauf multipliziert um -1
 	//["gold", 1500, 450, 2300, 8, 5],
 		
-	["diamondc", 2359, 1, 4596, 10, 1,
+	["diamondc", 2712, 1, 4596, 10, 1,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -28,7 +28,7 @@ life_market_resources = [
 			]
 	],
 	
-	["oilp", 2492, 1, 4492, 9, 2,
+	["oilp", 2092, 1, 4492, 9, 2,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -102,7 +102,7 @@ life_market_resources = [
 			]
 	],
 	
-	["laminat", 1315, 1, 4015, 4, 7,
+	["laminat", 1679, 1, 4015, 4, 7,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -116,7 +116,7 @@ life_market_resources = [
 			]
 	],
 	
-	["grillkohle", 1220, 1, 3820, 3, 8,
+	["grillkohle", 1404, 1, 3820, 3, 8,
 			[
 					["iron_r",1],
 					["copper_r",1],
@@ -130,7 +130,7 @@ life_market_resources = [
 			]
 	],
 	
-	["glass", 952, 1, 3541, 2, 9,
+	["glass", 1251, 1, 3541, 2, 9,
 			[
 					["diamondc",1],
 					["iron_r",1],
@@ -144,7 +144,7 @@ life_market_resources = [
 			]
 	],
    
-	["salt_r", 855, 1, 2654, 1, 10,
+	["salt_r", 1083, 1, 2654, 1, 10,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -160,7 +160,7 @@ life_market_resources = [
 			]
 	],
    
-	["sunflower", 449, 1, 786, 4, 8,
+	["sunflower", 516, 1, 886, 4, 8,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -173,7 +173,7 @@ life_market_resources = [
 			]
 	],
    
-	["corn", 650, 1, 846, 8, 4,
+	["corn", 747, 1, 946, 8, 4,
 			[
 					["brotteig",1],
 					["mehl",1],
@@ -186,7 +186,7 @@ life_market_resources = [
 			]
 	],
    
-	["pumpkin", 547, 1, 956, 9, 7,
+	["pumpkin", 630, 1, 956, 9, 7,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -197,7 +197,7 @@ life_market_resources = [
 			]
 	],
    
-	["wheat", 650, 1, 1198, 8, 4,
+	["wheat", 747, 1, 1198, 8, 4,
 			[
 					["sunflower",1],
 					["corn",1],
@@ -208,7 +208,7 @@ life_market_resources = [
 			]
 	],
    
-	["cotton", 445, 1, 917, 6, 3,
+	["cotton", 511, 1, 917, 6, 3,
 			[
 					["wheat",1],
 					["sunflower",1],
@@ -219,7 +219,7 @@ life_market_resources = [
 			]
 	],
 	
-	["mehl", 750, 1, 1423, 5, 4,
+	["mehl", 1095, 1, 1423, 5, 4,
 			[
 					["sunflower",1],
 					["corn",1],
@@ -229,7 +229,7 @@ life_market_resources = [
 			]
 	],
 	
-	["brotteig", 1306, 1, 2661, 8, 6,
+	["brotteig", 1706, 1, 3061, 8, 6,
 			[
 					["sunflower",1],
 					["corn",1],
