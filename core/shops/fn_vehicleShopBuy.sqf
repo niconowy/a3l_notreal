@@ -51,7 +51,8 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	[_vehicle] call life_fnc_clearVehicleAmmo;
 	[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 	[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
-	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	
+//	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
 } else {
 	_vehicle = createVehicle [_className, (getMarkerPos _spawnPoint), [], 0, "NONE"];
 	waitUntil {!isNil "_vehicle"}; //Wait?
@@ -64,7 +65,14 @@ if((life_veh_shop select 0) == "med_air_hs") then {
 	[_vehicle] call life_fnc_clearVehicleAmmo;
 	[[_vehicle,"trunk_in_use",false,true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
 	[[_vehicle,"vehicle_info_owners",[[getPlayerUID player,profileName]],true],"TON_fnc_setObjVar",false,false] spawn life_fnc_MP;
-	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+	
+//	_vehicle disableTIEquipment true; //No Thermals.. They're cheap but addictive.
+};
+
+if(_className in ["I_Heli_light_03_unarmed_F","EC635_Unarmed_BW","EC635_SAR"]) then {		//Cop Veh
+	_vehicle disableTIEquipment false;
+} else {
+	_vehicle disableTIEquipment true;
 };
 
 switch(playerSide) do {

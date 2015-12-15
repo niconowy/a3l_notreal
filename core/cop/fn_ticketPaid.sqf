@@ -11,7 +11,7 @@ _cop = [_this,2,ObjNull,[ObjNull]] call BIS_fnc_param;
 if(isNull _unit OR {_unit != life_ticket_unit}) exitWith {}; //NO
 if(isNull _cop OR {_cop != player}) exitWith {}; //Double NO
 
-man_ey_b4nK = man_ey_b4nK + (_value / 2);
+doofi_b4r5 = doofi_b4r5 + (_value / 8);	//Bargeld statt Konto; nur 20% vom Ticket
 sleep 1;
 
 [0] call SOCK_fnc_updatePartial;
