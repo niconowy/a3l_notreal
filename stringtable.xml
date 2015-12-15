@@ -563,16 +563,16 @@
 	</Package>
 	<Package name="Spawn_Menu">
 		<Key ID="STR_Spawn_Title">
-			<Original>Spawn Auswahl</Original>
+			<Original>Aufwachs-Ort Auswählen!</Original>
 		</Key>
 		<Key ID="STR_Spawn_Spawn">
-			<Original>Spawnen</Original>
+			<Original>Aufwachen!</Original>
 		</Key>
 		<Key ID="STR_Spawn_CSP">
-			<Original>Aktueller Spawnpunkt</Original>
+			<Original>Aktuell </Original>
 		</Key>
 		<Key ID="STR_Spawn_Spawned">
-			<Original>Du bist gespawnt in</Original>
+			<Original>Du bist erwacht in</Original>
 		</Key>
 	</Package>
 	<Package name="Ticket_Menu">
