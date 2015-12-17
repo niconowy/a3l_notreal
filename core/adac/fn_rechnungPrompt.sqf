@@ -19,8 +19,7 @@ _control = _display displayCtrl 8701;
 life_ticket_paid = false;
 life_ticket_val = _val;
 life_ticket_cop = _cop;
-_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>%1 hat dir eine Rechnung von $%2 ausgestellt",_cop getVariable["realname",name _cop],_val];
-
+_control ctrlSetStructuredText parseText format["<t align='center'>Quittung<t size='.8px'>Mit meiner Unterschrift bestätige ich, dass ich von %1 eine Rechnung in Höhe von $%2 ausgestellt<br/>bekommen und auch gezahlt habe. Des Weiteren gestatte ich, %3,<br/>einmalige Abbuchung des Betrages von meinem Bankkonto.",_cop getVariable["realname",name _cop],_val,name player];
 [] spawn
 {
 	disableSerialization;

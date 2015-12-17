@@ -19,7 +19,7 @@ _control = _display displayCtrl 2601;
 life_ticket_paid = false;
 life_ticket_val = _val;
 life_ticket_cop = _cop;
-_control ctrlSetStructuredText parseText format["<t align='center'><t size='.8px'>" +(localize "STR_Cop_Ticket_GUI_Given"),_cop getVariable["realname",name _cop],_val];
+_control ctrlSetStructuredText parseText format["<t align='center'>Strafzettel<t size='.8px'>Mit meiner Unterschrift bestätige ich, dass ich von %1 einen Strafzettel in Höhe von $%2 ausgestellt<br/>bekommen und auch gezahlt habe. Des Weiteren gestatte ich, %3,<br/>einmalige Abbuchung des Betrages von meinem Bankkonto.",_cop getVariable["realname",name _cop],_val,name player];
 
 [] spawn
 {

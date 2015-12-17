@@ -583,10 +583,10 @@
 			<Original>Rechnung</Original>
 		</Key>
 		<Key ID="STR_Ticket_PayTicket">
-			<Original>Bezahlen</Original>
+			<Original>Unterzeichnen</Original>
 		</Key>
 		<Key ID="STR_Ticket_RefuseTicket">
-			<Original>Ablehnen</Original>
+			<Original>Verweigern</Original>
 		</Key>
 	</Package>
 	<Package name="Trunk_Menu">
@@ -1967,25 +1967,25 @@
 			<Original>Eskortieren</Original>
 		</Key>
 		<Key ID="STR_pInAct_TicketBtn">
-			<Original>Strafzettel ausstellen</Original>
+			<Original>Strafzettel</Original>
 		</Key>
 		<Key ID="STR_pInAct_Arrest">
-			<Original>Ins Gefängnis stecken</Original>
+			<Original>Gefängnis</Original>
 		</Key>
 		<Key ID="STR_pInAct_Repair">
-			<Original>Tür reparieren</Original>
+			<Original>Tür Sperren</Original>
 		</Key>
 		<Key ID="STR_pInAct_CloseOpen">
 			<Original>Öffnen / Schließen</Original>
 		</Key>
 		<Key ID="STR_pInAct_BreakDown">
-			<Original>Tür aufbrechen</Original>
+			<Original>Aufbrechen</Original>
 		</Key>
 		<Key ID="STR_pInAct_SearchHouse">
-			<Original>Haus durchsuchen</Original>
+			<Original>Durchsuchen</Original>
 		</Key>
 		<Key ID="STR_pInAct_LockHouse">
-			<Original>Haus abschließen</Original>
+			<Original>Abschließen</Original>
 		</Key>
 		<Key ID="STR_pInAct_BuyHouse">
 			<Original>Haus kaufen</Original>
